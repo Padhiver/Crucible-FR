@@ -4,7 +4,7 @@ name: Sync en.json from original repo
 on:
   schedule:
     - cron: '0 3 * * *'  # Tous les jours à 3h
-  workflow_dispatch:
+  workflow_dispatch:     # Permet de déclencher manuellement aussi
 
 jobs:
   sync-en-json:
@@ -16,10 +16,6 @@ jobs:
       - name: Clone upstream repo
         run: |
           git clone --depth 1 https://github.com/foundryvtt/crucible upstream-repo
-
-      - name: Create lang directory if it doesn't exist
-        run: |
-          mkdir -p lang
 
       - name: Copy en.json
         run: |

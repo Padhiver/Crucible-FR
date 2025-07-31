@@ -59,7 +59,7 @@
   "ABILITIES.WisdomAbbr": "Sag",
   "ADVERSARY": {
     "THREAT_RANKS": {
-      "MINION": "Créature mineure",
+      "MINION": "Serviteur",
       "NORMAL": "Normal",
       "ELITE": "Élite",
       "BOSS": "Boss"
@@ -175,7 +175,7 @@
   "ACTOR": {
     "FIELDS": {
       "abilities": {
-        "label": "Scores de capacités"
+        "label": "Scores de caractéristiques"
       },
       "details": {
         "biography": {
@@ -306,7 +306,7 @@
         }
       },
       "abilities": {
-        "label": "Scores de capacités",
+        "label": "Scores de caractéristiques",
         "primary": {
           "label": "Capacité primaire",
           "hint": "Sélectionnez une capacité primaire qui commence à 3."
@@ -318,15 +318,11 @@
       },
       "resistances": {
         "label": "Résistances aux dégâts",
-        "hint": "Vous devez choisir à la fois une Résistance et une Vulnérabilité si vous sélectionnez l'une des deux."
-      },
-      "resistance": {
-        "label": "Résistance aux dégâts",
-        "hint": "Une résistance biologique (+3) à un certain type de dégâts."
-      },
-      "vulnerability": {
-        "label": "Vulnérabilité aux dégâts",
-        "hint": "Une vulnérabilité biologique (-3) à un certain type de dégâts."
+        "hint": "Vous devez choisir à la fois une Résistance et une Vulnérabilité si vous sélectionnez l'une des deux.",
+        "resistance": {
+        },
+        "vulnerability": {
+        }
       },
       "talents": {
         "label": "Progression de talents",
@@ -351,7 +347,7 @@
       "IDENTITY": "Identité"
     },
     "WARNINGS": {
-      "ABILITIES": "Les capacités primaire et secondaire d'une ascendance ne peuvent pas être les mêmes.",
+      "ABILITIES": "Les caractéristiques primaire et secondaire d'une ascendance ne peuvent pas être les mêmes.",
       "RESISTANCES_BOTH": "Vous devez assigner à la fois une Résistance et une Vulnérabilité si vous en définissez une.",
       "RESISTANCES_DIFFERENT": "La Résistance et la Vulnérabilité choisies pour une ascendance ne peuvent pas être les mêmes."
     }
@@ -475,8 +471,8 @@
   "ARCHETYPE": {
     "FIELDS": {
       "abilities": {
-        "label": "Évolution des capacités",
-        "hint": "Définissez comment les scores de capacités des créatures de cet archétype évoluent à mesure qu'elles montent de niveau. Allouez 12 points sur l'ensemble des scores de capacités. Chaque score de capacité doit être compris entre zéro et 6. Les adversaires augmenteront leurs capacités de 1 point à chaque niveau. Les scores ayant une valeur plus élevée évoluent plus fréquemment. Les scores à zéro n'évolueront jamais à partir de leur valeur de base."
+        "label": "Évolution des caractéristiques",
+        "hint": "Définissez comment les scores de caractéristiques des créatures de cet archétype évoluent à mesure qu'elles montent de niveau. Allouez 12 points sur l'ensemble des scores de caractéristiques. Chaque score de caractéristique doit être compris entre zéro et 6. Les adversaires augmenteront leurs caractéristiques de 1 point à chaque niveau. Les scores ayant une valeur plus élevée évoluent plus fréquemment. Les scores à zéro n'évolueront jamais à partir de leur valeur de base."
       },
       "identifier": {
         "label": "Identifiant",
@@ -537,7 +533,7 @@
   "ATTACK.RESULT_TYPES.RESIST": "Résistance",
   "ATTACK.RESULT_TYPES.GLANCE": "Éraflure",
   "ATTACK.RESULT_TYPES.HIT": "Touché",
-  "ATTRIBUTES.Abilities": "Scores de capacités",
+  "ATTRIBUTES.Abilities": "Scores de caractéristiques",
   "ATTRIBUTES.Pools": "Réservoirs de ressources",
   "ATTRIBUTES.Resistances": "Résistances aux dégâts",
   "BACKGROUND": {
@@ -1071,8 +1067,8 @@
   "TAXONOMY": {
     "FIELDS": {
       "abilities": {
-        "label": "Capacités de base",
-        "hint": "Définissez les scores de capacités initiaux pour les créatures de cette taxonomie. Allouez 12 points sur l'ensemble des scores de capacités. Chaque score de capacité doit être compris entre zéro et 6. Les scores de capacités à zéro ne peuvent jamais devenir non nuls pour les adversaires de cette taxonomie."
+        "label": "Caractéristiques de base",
+        "hint": "Définissez les scores de caractéristiques initiaux pour les créatures de cette taxonomie. Allouez 12 points sur l'ensemble des scores de caractéristiques. Chaque score de caractéristique doit être compris entre zéro et 6. Les scores de caractéristiques à zéro ne peuvent jamais devenir non nuls pour les adversaires de cette taxonomie."
       },
       "category": {
         "label": "Catégorie",
@@ -1241,7 +1237,7 @@
   },
   "WARNING.AbilityCannotIncrease": "Vous ne pouvez pas augmenter davantage cette capacité.",
   "WARNING.AbilityCannotDecrease": "Vous ne pouvez pas diminuer davantage cette capacité.",
-  "WARNING.AbilityRequireAncestry": "Vous devez assigner une ascendance avant de pouvoir acheter des augmentations de capacités.",
+  "WARNING.AbilityRequireAncestry": "Vous devez assigner une ascendance avant de pouvoir acheter des augmentations de caractéristiques.",
   "WARNING.CannotEquipSlotInUse": "L'acteur {actor} ne peut pas équiper {item} car l'emplacement d'objet {type} est déjà utilisé.",
   "WARNING.CannotEquipInCombat": "L'acteur {actor} ne peut pas équiper ou déséquiper {item} pendant une rencontre de combat.",
   "WARNING.CannotEquipActionCost": "Vous ne pouvez pas équiper d'arme car vous n'avez pas de points d'action disponibles.",

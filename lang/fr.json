@@ -7,26 +7,62 @@
     },
     "Item": {
       "accessory": "Accessoire",
+      "ancestry": "Ascendance",
       "archetype": "Archétype",
       "armor": "Armure",
+      "background": "Historique",
       "consumable": "Consommable",
       "loot": "Butin",
+      "spell": "Sort signature",
       "taxonomy": "Taxonomie",
       "talent": "Talent",
       "weapon": "Arme"
     },
     "JournalEntryPage": {
+      "skill": "Compétences de Crucible"
     }
   },
   "CRUCIBLE": {
     "Base": "Base",
+    "Bonus": "Bonus",
+    "Rules": "Règles de Crucible",
+    "Scaling": "Évolution",
+    "Scaled": "Évolué",
     "SHEETS": {
+      "Adversary": "Feuille d'adversaire de Crucible",
+      "Ancestry": "Feuille d'ascendance de Crucible",
+      "Archetype": "Feuille d'archétype de Crucible",
+      "Armor": "Feuille d'armure de Crucible",
+      "Background": "Feuille d'historique de Crucible",
+      "Group": "Feuille de groupe de Crucible",
+      "Hero": "Feuille de héros de Crucible",
+      "HeroCreation": "Feuille de création de héros de Crucible",
+      "Journal": "Feuille de journal de Crucible",
+      "Skill": "Feuille de compétences de Crucible",
+      "Spell": "Feuille de sorts de Crucible",
+      "Talent": "Feuille de talents de Crucible",
+      "Taxonomy": "Feuille de taxonomie de Crucible",
+      "Weapon": "Feuille d'arme de Crucible"
     }
   },
+  "ABILITIES.Strength": "Force",
+  "ABILITIES.StrengthAbbr": "For",
+  "ABILITIES.Toughness": "Robustesse",
+  "ABILITIES.ToughnessAbbr": "Rob",
+  "ABILITIES.Dexterity": "Dextérité",
+  "ABILITIES.DexterityAbbr": "Dex",
+  "ABILITIES.Intellect": "Intelligence",
+  "ABILITIES.IntellectAbbr": "Int",
+  "ABILITIES.Presence": "Présence",
+  "ABILITIES.PresenceAbbr": "Pré",
+  "ABILITIES.Wisdom": "Sagesse",
+  "ABILITIES.WisdomAbbr": "Sag",
   "ADVERSARY": {
     "THREAT_RANKS": {
       "MINION": "Serviteur",
-      "ELITE": "Élite"
+      "NORMAL": "Normal",
+      "ELITE": "Élite",
+      "BOSS": "Chef"
     }
   },
   "ACTION": {
@@ -39,6 +75,7 @@
           "hint": "Le coût de base de cette action en points d'action."
         },
         "focus": {
+          "label": "Concentration",
           "hint": "Le coût de base de cette action en points de Focus."
         },
         "heroism": {
@@ -67,10 +104,14 @@
         "hint": "Ajoutez des balises définissant les exigences, le comportement et les modificateurs de cette action. L'ordre des balises est important : les balises suivantes auront priorité sur les précédentes si elles modifient les mêmes propriétés de l'action."
       },
       "target": {
+        "label": "Cible de l'action",
         "scope": {
+          "label": "Portée d'effet",
+          "hint": " Quel type de cibles cette action peut-elle affecter ?"
         },
         "type": {
-          "label": "Type de cible"
+          "label": "Type de cible",
+          "hint": "Quel type de cible ou de zone cette action affecte-t-elle ?"
         },
         "number": {
           "label": "Numéro cible",

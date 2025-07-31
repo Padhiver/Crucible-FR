@@ -1,0 +1,30 @@
+# .github/workflows/sync-en-json.yml
+name: Sync en.json from original repo
+
+on:
+  schedule:
+    - cron: '0 3 * * *'  # Tous les jours à 3h
+  workflow_dispatch:     # Permet de déclencher manuellement aussi
+
+jobs:
+  sync-en-json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout your repo
+        uses: actions/checkout@v4
+
+      - name: Clone upstream repo
+        run: |
+          git clone --depth 1 https://github.com/foundryvtt/crucible upstream-repo
+
+      - name: Copy en.json
+        run: |
+          cp upstream-repo/lang/en.json lang/en.json
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add lang/en.json
+          git diff --cached --quiet || git commit -m "Mise à jour automatique de en.json"
+          git push

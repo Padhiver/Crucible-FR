@@ -320,8 +320,12 @@
         "label": "Résistances aux dégâts",
         "hint": "Vous devez choisir à la fois une Résistance et une Vulnérabilité si vous sélectionnez l'une des deux.",
         "resistance": {
+          "label": "Résistance aux dégâts",
+          "hint": "Une résistance biologique (+3) à un certain type de dégâts.\n"
         },
         "vulnerability": {
+          "label": "Vulnérabilité aux dégâts\t",
+          "hint": "Une vulnérabilité biologique (-3) à un certain type de dégâts."
         }
       },
       "talents": {

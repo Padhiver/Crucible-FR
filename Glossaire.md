@@ -89,7 +89,9 @@
 | **Archetype** | **Archétype** | Un modèle de progression pour les capacités et les compétences d'un personnage. |
 | **Ancestry** | **Ascendance** | L'origine biologique et culturelle d'un personnage. |
 | **Background** | **Historique** | Le passé d'un personnage, qui lui confère des connaissances et des talents. |
+| **Damage Resistance** | **Résistance aux dégâts** | Une résistance biologique (+3) à un certain type de dégâts. |
 | **Damage Type** | **Type de dégâts** | La nature des dégâts infligés (acide, feu, etc.). |
+| **Damage Vulnerability** | **Vulnérabilité aux dégâts** | Une vulnérabilité biologique (-3) à un certain type de dégâts. |
 | **Defenses** | **Défenses** | Les défenses d'un personnage (Armure, Esquive, Volonté, etc.). |
 | **Enchantment** | **Enchantement** | Le niveau d'enchantement d'un objet. |
 | **Engagement** | **Engagement** | Le nombre d'ennemis qu'un personnage peut engager simultanément. |

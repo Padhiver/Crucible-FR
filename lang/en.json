@@ -185,6 +185,10 @@
     "abilities": {
       "label": "Ability Scores"
     },
+    "currency": {
+      "label": "Currency Amount",
+      "hint": "The amount of currency possessed by this Actor."
+    },
     "details": {
       "biography": {
         "appearance": {
@@ -250,13 +254,16 @@
     "BIOGRAPHY": "Biography"
   },
   "LABELS": {
+    "CURRENCY": "Currency",
     "CURRENT_EQUIPMENT": "Current Equipment",
     "FAVORITE_ACTIONS": "Favorite Actions",
     "WEAPONS_HINT": "Equip weapons from your Backpack toggling the shield icon.",
     "ARMOR_HINT": "Equip armor from your Backpack toggling the shield icon.",
     "ACCESSORIES_HINT": "Equip up to {slots} accessories from your Backpack toggling the shield icon.",
     "CONSUMABLES_HINT": "Equip up to {slots} consumables from your Backpack toggling the shield icon.",
-    "BACKPACK_HINT": "Add items by dropping them from the provided Crucible system compendium packs."
+    "BACKPACK_HINT": "Add items by dropping them from the provided Crucible system compendium packs.",
+    "KNOWLEDGE": "Knowledge Areas",
+    "LANGUAGES": "Known Languages"
   }
 },
 
@@ -578,6 +585,10 @@
       "label": "Knowledge Areas",
       "hint": "Configure knowledge areas that this Background provides automatically. Typically, a Background features two knowledge areas."
     },
+    "languages": {
+      "label": "Known Languages",
+      "hint": "Configure languages that this Background provides automatically."
+    },
     "skills": {
       "label": "Granted Skills",
       "hint": "Configure skills which this Background provides automatically with novice training. Typically, a Background has training in two skills."
@@ -631,6 +642,25 @@
       "value.label": "Value",
       "max.label": "Maximum"
     }
+  }
+},
+
+"CURRENCY_DENOMINATIONS": {
+  "CP": {
+    "abbreviation": "CP",
+    "label": "Copper Pieces"
+  },
+  "SP": {
+    "abbreviation": "SP",
+    "label": "Silver Pieces"
+  },
+  "GP": {
+    "abbreviation": "GP",
+    "label": "Gold Pieces"
+  },
+  "PP": {
+    "abbreviation": "PP",
+    "label": "Platinum Pieces"
   }
 },
 

@@ -13,6 +13,7 @@
     "background": "Background",
     "consumable": "Consumable",
     "loot": "Loot",
+    "schematic": "Crafting Schematic",
     "spell": "Iconic Spell",
     "taxonomy": "Taxonomy",
     "talent": "Talent",
@@ -40,6 +41,7 @@
     "Hero": "Crucible Hero Sheet",
     "HeroCreation": "Crucible Hero Creation Sheet",
     "Journal": "Crucible Journal Sheet",
+    "Schematic": "Crucible Schematic Sheet",
     "Skill": "Crucible Skill Sheet",
     "Spell": "Crucible Spell Sheet",
     "Talent": "Crucible Talent Sheet",
@@ -841,6 +843,7 @@
     "EQUIPMENT": "Equipment"
   },
   "SHEET": {
+    "DETAILS": "Item Details",
     "TALENT_ADD": "Add Talent",
     "TALENT_REMOVE": "Remove Talent",
     "TALENT_DROP": "Add a talent by dragging and dropping a Talent item into this area.",
@@ -899,6 +902,81 @@
 },
 
 "RULER.CannotAffordMove": "You cannot afford to move {distance} spaces which costs {action} Action points.",
+
+"SCHEMATIC": {
+  "CATEGORIES": {
+    "ALCHEMY": "Alchemy Formula",
+    "COOKING": "Cooking Recipe",
+    "ENCHANTING": "Enchanting Glyph",
+    "FLETCHING": "Fletching Draft",
+    "JEWELCRAFT": "Jewelers Graph",
+    "RUNEWEAVING": "Runeweave Arcanum",
+    "SMITHING": "Smithing Blueprint",
+    "TAILORING": "Tailoring Pattern"
+  },
+  "FIELDS": {
+    "dc": {
+      "label": "Difficulty Challenge",
+      "hint": "Assign the value which must be exceeded on a crafting skill check to succeed on crafting this schematic."
+    },
+    "hours": {
+      "label": "Hours",
+      "hint": "The amount of time, in hours, that attempted crafting requires."
+    },
+    "inputs": {
+      "label": "Schematic Inputs",
+      "element": {
+        "ingredients": {
+          "label": "Ingredients",
+          "element": {
+            "item.label": "Ingredient Item UUID",
+            "consumed": {
+              "label": "Consumed",
+              "hint": "Are these ingredients consumed in the process of attempted crafting?"
+            },
+            "quality": {
+              "label": "Required Quality",
+              "hint": "A minimum quality of this ingredient that is required."
+            },
+            "quantity": {
+              "label": "Required Quantity"
+            }
+          }
+        },
+        "currency": {
+          "label": "Currency",
+          "hint": "Crafting this schematic may require some amount of currency used to represent required supplies or minor ingredients which are not explicitly modeled as items."
+        },
+        "mode.label": "Combination Mode"
+      }
+    },
+    "mode.label": "Combination Mode",
+    "outputs": {
+      "label": "Schematic Outputs",
+      "element": {
+        "items.element.label": "Created Item UUID",
+        "mode": "Mode"
+      }
+    }
+  },
+  "MODES": {
+    "ANY": "Any",
+    "ALL": "All",
+    "TEMPLATE": "Template"
+  },
+  "PROPERTIES": {
+    "COMMON": "Commonly Known"
+  },
+  "SHEET": {
+    "COMPONENTS": "Components",
+    "INPUT_ADD": "Add Input Group",
+    "INPUT_DROP": "Drop Input Item",
+    "INPUT_REMOVE": "Remove Input Group",
+    "OUTPUT_ADD": "Add Output Group",
+    "OUTPUT_DROP": "Drop Output Item",
+    "OUTPUT_REMOVE": "Remove Output Group"
+  }
+},
 
 "SETTINGS": {
   "AutoConfirmName": "Action Auto-Confirmation",

@@ -5,7 +5,7 @@ Hooks.once('init', async function() {
     Babele.get().register({
       module: 'crucible-fr',
       lang: 'fr',
-      dir: 'compendium'
+      dir: 'compendium/fr'
     });
 
     console.log('Crucible FR | Module de traduction chargé');

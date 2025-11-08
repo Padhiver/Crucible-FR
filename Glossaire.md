@@ -102,3 +102,75 @@
 | **Stride** | **Foulée** | La vitesse de déplacement par action. |
 | **Talent** | **Talent** | Une capacité spéciale ou un don qu'un personnage peut acquérir. |
 | **Taxonomy** | **Taxonomie** | La catégorie de créature à laquelle un adversaire appartient (Bête, Humanoïde, etc.). |
+
+### Runes (Spell Runes)
+
+| Terme original | Traduction |
+| :--- | :--- |
+| **Spirit** | **Esprit** |
+| **Spirited** | **Spirituel** |
+| **Death** | **Mort** |
+| **Deathly** | **Mortel** |
+| **Earth** | **Terre** |
+| **Earthen** | **Terrestre** |
+| **Flame** | **Flamme** |
+| **Flaming** | **Enflammé** |
+| **Frost** | **Givre** |
+| **Icy** | **Glacé** |
+| **Illumination** | **Illumination** |
+| **Illuminated** | **Illuminé** |
+| **Kinesis** | **Kinésie** |
+| **Kinetic** | **Kinétique** |
+| **Life** | **Vie** |
+| **Vital** | **Vital** |
+| **Lightning** | **Foudre** |
+| **Voltaic** | **Voltaïque** |
+| **Control** | **Contrôle** |
+| **Controlling** | **Contrôlant** |
+| **Shadow** | **Ombre** |
+| **Umbral** | **Ombral** |
+| **Stasis** | **Stase** |
+| **Static** | **Statique** |
+
+---
+
+### Gestes (Spell Gestures)
+
+| Terme original | Traduction |
+| :--- | :--- |
+| **Arrow** | **Flèche** |
+| **Aspect** | **Aspect** |
+| **Creation** | **Création** |
+| **Fan** | **Éventail** |
+| **Influence** | **Influence** |
+| **Pulse** | **Impulsion** |
+| **Ray** | **Rayon** |
+| **Step** | **Pas** |
+| **Strike** | **Frappe** |
+| **Touch** | **Contact** |
+| **Ward** | **Protection** |
+
+---
+
+### Inflexions (Spell Inflections)
+
+| Terme original | Traduction |
+| :--- | :--- |
+| **Compose** | **Composer** |
+| **Composed** | **Composé** |
+| **Determine** | **Déterminer** |
+| **Determined** | **Déterminé** |
+| **Extend** | **Étendre** |
+| **Extended** | **Étendu** |
+| **Elude** | **Éluder** |
+| **Eluding** | **Éludant** |
+| **Negate** | **Néguater** |
+| **Negated** | **Négué** |
+| **Pull** | **Tirer** |
+| **Attractive** | **Attractif** |
+| **Push** | **Pousser** |
+| **Repellent** | **Répulsif** |
+| **Quicken** | **Accélérer** |
+| **Quickened** | **Accéléré** |
+| **Reshape** | **Remodeler** |
+| **Shaped** | **Remodelé** |

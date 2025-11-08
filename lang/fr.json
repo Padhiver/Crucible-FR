@@ -612,7 +612,7 @@
   "DAMAGE.Bludgeoning": "Contondant",
   "DAMAGE.Cold": "Froid",
   "DAMAGE.Corruption": "Corruption",
-  "DAMAGE.Electricity": "Électricité",
+  "DAMAGE.Electricity": "Électrique",
   "DAMAGE.Elemental": "Élémentaire",
   "DAMAGE.Fire": "Feu",
   "DAMAGE.Physical": "Physique",
@@ -884,8 +884,8 @@
         "hint": "L'ensemble de gestes qui doivent être connus pour apprendre ce sort emblématique."
       },
       "inflections": {
-        "label": "Inflections",
-        "hint": "L'ensemble d'inflections qui doivent être connues pour apprendre ce sort emblématique."
+        "label": "Inflexions",
+        "hint": "L'ensemble d'inflexions qui doivent être connues pour apprendre ce sort emblématique."
       }
     },
     "SHEET": {
@@ -904,9 +904,9 @@
       "Gesture": "Geste somatique",
       "GesturePl": "Gestes somatiques",
       "GestureNone": "Aucun geste somatique connu.",
-      "Inflection": "Inflection métamagique",
-      "InflectionPl": "Inflections métamagiques",
-      "InflectionNone": "Aucune inflection métamagique connue."
+      "Inflection": "Inflexion métamagique",
+      "InflectionPl": "Inflexions métamagiques",
+      "InflectionNone": "Aucune inflexion métamagique connue."
     },
     "RUNES": {
       "Spirit": "Esprit",
@@ -964,8 +964,8 @@
       "PushAdj": "Répulsif",
       "Quicken": "Accélérer",
       "QuickenAdj": "Accéléré",
-      "Reshape": "Reformuler",
-      "ReshapeAdj": "Reformulé"
+      "Reshape": "Remodeler",
+      "ReshapeAdj": "Remodelé"
     }
   },
   "TALENT": {
@@ -990,8 +990,8 @@
         "hint": "L'obtention de ce talent confère la connaissance d'un geste de sorcellerie spécifique."
       },
       "inflection": {
-        "label": "Inflection",
-        "hint": "L'obtention de ce talent confère la connaissance d'une inflection de sorcellerie spécifique."
+        "label": "Inflexion",
+        "hint": "L'obtention de ce talent confère la connaissance d'une inflexion de sorcellerie spécifique."
       },
       "iconicSpells": {
         "label": "Sorts emblématiques",
@@ -1020,7 +1020,9 @@
       "Banned": "Vous ne pouvez pas acheter de talents signatures supplémentaires à ce nœud ou à ce rang.",
       "CannotAfford": "Vous n'avez pas assez de points de talent pour acheter {name} qui coûte {cost} points.",
       "Inaccessible": "Vous ne pouvez pas acquérir « {name} » car vous n'avez pas débloqué ce nœud de l'arbre de talents.",
-      "Locked": "Vous ne remplissez pas les conditions requises pour acquérir « {name} » qui nécessite {requires} {requirement}."
+      "Locked": "Vous ne remplissez pas les conditions requises pour acquérir « {name} » qui nécessite {requires} {requirement}.",
+      "RequiresRuneGesture": "Vous devez connaître une Rune de sorcellerie pour utiliser un Geste.",
+      "RequiresRuneInflection": "Vous devez connaître une Rune de sorcellerie pour utiliser une Inflexion."
     },
     "HOOKS": {
       "REGISTER": "Enregistrer la fonction de crochet",
@@ -1057,6 +1059,7 @@
       "MASTER": "Maître"
     },
     "PointsAvailable": "Points disponibles",
+    "Purchase": "<p>Dépenser 1 Point de Talent pour acheter <strong>{name}</strong>?</p>",
     "LABELS": {
       "Points": {
         "one": "Point",

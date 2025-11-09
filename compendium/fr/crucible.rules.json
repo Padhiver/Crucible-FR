@@ -182,7 +182,68 @@
                     "text": "<p>Certains terrains ou capacités peuvent temporairement durcir les défenses d'une créature. Quand une créature est <strong>Protégée</strong>, les attaques contre elle subissent +1 Fléau.</p>"
                 },
                 "Unaware": {
-                    "name": "Distrait"
+                    "name": "Distrait",
+                    "text": "<p>Une créature qui est <strong>Distraite</strong> agit au combat avec une Initiative de 1 et ne peut pas effectuer de Réactions.</p>"
+                },
+                "Bleeding": {
+                    "name": "Saignant",
+                    "text": "<p>Une créature <strong>Saignante</strong> subit des dégâts supplémentaires Perforant ou Tranchant, selon le type de dégâts déclencheurs, au début de ses tours suivants.</p>"
+                },
+                "Poisoned": {
+                    "name": "Empoisonné",
+                    "text": "<p>Une créature <strong>Empoisonnée</strong> subit des dégâts supplémentaires de Poison au début de ses tours suivants.</p>"
+                },
+                "Corroding": {
+                    "name": "Corrodé",
+                    "text": "<p>Une créature <strong>Corrodée</strong> subit des dégâts supplémentaires d'Acide au début de ses tours suivants.</p>"
+                },
+                "Burning": {
+                    "name": "Enflammé",
+                    "text": "<p>Une créature <strong>Enflammée</strong> subit des dégâts supplémentaires de Feu au début de ses tours suivants.</p>"
+                },
+                "Freezing": {
+                    "name": "Gelé",
+                    "text": "<p>Une créature <strong>Gelée</strong> subit des dégâts supplémentaires de Froid au début de ses tours suivants.</p>"
+                },
+                "Irradiated": {
+                    "name": "Irradié",
+                    "text": "<p>Une créature <strong>Irradiée</strong> subit des dégâts supplémentaires Radiants au début de ses tours suivants.</p>"
+                },
+                "Decaying": {
+                    "name": "Pourrissant",
+                    "text": "<p>Une créature <strong>Pourrissante</strong> subit des dégâts supplémentaires de Corruption au début de ses tours suivants.</p>"
+                },
+                "Hastened": {
+                    "name": "Accéléré",
+                    "text": "<p>Une créature qui est <strong>Accélérée</strong> traite la distance comme réduite de moitié pour les besoins du calcul du coût de l'action <strong>Déplacement</strong>. De plus, une créature qui est Accélérée a +1 <strong>Action</strong> maximum disponible chaque tour.</p>"
+                },
+                "Blinded": {
+                    "name": "Aveuglé",
+                    "text": "<p>Une créature qui est <strong>Aveuglée</strong> ne peut pas voir en utilisant la perception basée sur la lumière et ne peut pas utiliser d'Action nécessitant que la cible soit vue.</p>"
+                },
+                "Deafened": {
+                    "name": "Assourdi",
+                    "text": "<p>Une créature qui est <strong>Assourdie</strong> ne peut pas utiliser de perception basée sur le son et ne peut pas être affectée par une action avec le trait <strong>Vocal</strong>.</p><p>À FAIRE : Implémentation du trait Vocal à venir.</p>"
+                },
+                "Silenced": {
+                    "name": "Réduit au silence",
+                    "text": "<p>Une créature qui est <strong>Réduite au silence</strong> est incapable d'effectuer une action avec le trait <strong>Vocal</strong> ou de lancer un Sort qui inclut une métamagie <strong>Inflexion</strong>.</p>"
+                },
+                "Invisible": {
+                    "name": "Invisible",
+                    "text": "<p>Une créature qui est <strong>Invisible</strong> ne peut pas être détectée en utilisant la perception basée sur la vue.</p><p>À FAIRE : Des règles plus avancées pour l'invisibilité à venir.</p>"
+                },
+                "Asleep": {
+                    "name": "Assoupi",
+                    "text": "<p>Une créature qui est <strong>Assoupie</strong> est considérée comme neutralisée. Tout dégât sur les <strong>Points de vie</strong> ou les <strong>Blessures</strong> la réveille immédiatement. La créature est immunisée aux dégâts de <strong>Moral</strong> pendant son sommeil à moins qu'il n'en soit autrement spécifié.</p>"
+                },
+                "Shocked": {
+                    "name": "Électrocuté",
+                    "text": "<p>Une créature <strong>Électrocutée</strong> subit des dégâts d'<strong>Électrique</strong> sur le <strong>Moral</strong> au début de chaque tour.</p>"
+                },
+                "Exhausted": {
+                    "name": "Exténué",
+                    "text": "<p>Une créature qui est <strong>Exténuée</strong> ne peut plus se défendre activement. Ses défenses <strong>Esquive</strong> et <strong>Réflexe</strong> sont réduites de moitié.</p>"
                 }
             }
         }

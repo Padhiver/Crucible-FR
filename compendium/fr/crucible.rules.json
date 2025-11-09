@@ -103,7 +103,7 @@
                 },
                 "Weakened": {
                     "name": "Affaibli",
-                    "text": "<p>Une créature <strong>Affaiblie</strong> est vulnérable aux blessures mortelles. Les protagonistes deviennent affaiblis lorsqu'ils atteignent zéro en Points de vie. Tout dégât supplémentaire subi en Points de vie alors qu'ils sont affaiblis augmente les Blessures.</p><p>Tant qu'une créature est affaiblie, elle subit -1 au maximum d'Actions, perd l'accès à une action de Déplacement gratuite, et subit une vulnérabilité supplémentaire de <strong>2</strong> à tout dégât de<strong>Moral</strong> subi.</p>"
+                    "text": "<p>Une créature <strong>Affaiblie</strong> est vulnérable aux blessures mortelles. Les protagonistes deviennent affaiblis lorsqu'ils atteignent zéro en Points de vie. Tout dégât supplémentaire subi en Points de vie alors qu'ils sont affaiblis augmente les Blessures.</p><p>Tant qu'une créature est affaiblie, elle subit -1 au maximum d'Actions, perd l'accès à une action de Déplacement gratuite, et subit une vulnérabilité supplémentaire de <strong>2</strong> à tout dégât de <strong>Moral</strong> subi.</p>"
                 },
                 "Dead": {
                     "name": "Mort",

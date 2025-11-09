@@ -11,7 +11,7 @@ Hooks.once("init", async function () {
       categories: (categories, translations) => {
         if (!translations) return;
         for (const category of categories) {
-          registerTranslations(category, translations[category._id], {
+          registerTranslations(category, translations[category.name], {
             name: "name",
           });
         }

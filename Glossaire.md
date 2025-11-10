@@ -56,6 +56,34 @@
 | Rallying Threshold | Seuil de ralliement |
 | Healing Threshold | Seuil de guérison |
 | Restoration Thresholds | Seuils de restauration |
+| Overflow | Surplus |
+
+## Sorcellerie (Spellcraft)
+
+| Anglais | Français |
+|---------|----------|
+| Metamagic | Métamagie |
+| Inflection | Inflexion |
+| Gesture | Signe |
+
+## Runes
+
+| Anglais | Français |
+|---------|----------|
+| Chaotic | Chaos |
+| Orderly | Ordre |
+| Flame | Flamme |
+| Life | Vie |
+| Lightning | Foudre |
+| Illumination | Illumination |
+| Spirit | Esprit |
+| Kinesis | Kinésie |
+| Death | Mort |
+| Earth | Terre |
+| Frost | Givre |
+| Control | Contrôle |
+| Shadow | Ombre |
+| Stasis | Stase |
 
 ---
 

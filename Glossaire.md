@@ -1,150 +1,233 @@
-# Glossaire complet du système de jeu Crucible
+# Glossaire du Système Crucible
+
+> Traduction française des termes du jeu de rôle Crucible
 
 ---
 
-## Termes de Base
+## Termes Généraux
 
-Party, Groupe
-Sheet, Feuille
-Check, Jet
-Gamemasters, Maîtres du jeu
+| Anglais | Français |
+|---------|----------|
+| Party / Group | Groupe |
+| Sheet | Feuille |
+| Check | Jet |
+| Gamemasters | Maîtres du jeu |
+| Primary Adventuring Party | Groupe d'aventuriers principal |
+| Heroes | Héros |
+| Turn | Tour |
+| Rest | Repos |
+| Milestones | Jalons |
 
-### Lié à Crucible
-Boons, Faveurs
-Banes, Fléaux
-Enchantment, Enchantement
-Primary Adventuring Party, Groupe d'aventuriers principal
-Heroes, Héros
-Ancestry, Ascendance
-Ability, Caractéristique
-Skills, Compétences
-Conditions, Conditions
-Ancestry Features, Attribut d'ascendance
-Damage Vulnerability, Vulnérabilité aux dégâts
-Damage Resistance, Résistance aux dégâts
-Size, Taille
-Stride, Foulée
-Ancestral Talent, Talent ancestral
-Background, Historique
-Knowledge Areas, Domaines de connaissances
-Languages, Langues
-Talents, Talents
-Milestones, Jalons
-Rest, Repos
-Turn, Tour
-Wounds, Blessures
-Health, Points de vie
-Movement, Déplacement
-Morale, Moral
-Madness, Folie
-Engaged, Engagé
+---
 
-## Défenses
-Block, Blocage
-Parry, Parade
-Dodge, Esquive
+## Mécaniques de Jeu
+
+### Système de base
+| Anglais | Français |
+|---------|----------|
+| Boons | Faveurs |
+| Banes | Fléaux |
+| Enchantment | Enchantement |
+| Damage Vulnerability | Vulnérabilité aux dégâts |
+| Damage Resistance | Résistance aux dégâts |
+
+### Statistiques vitales
+| Anglais | Français |
+|---------|----------|
+| Wounds | Blessures |
+| Health | Points de vie |
+| Movement | Déplacement |
+| Morale | Moral |
+| Madness | Folie |
+| Engaged | Engagé |
+
+---
 
 ## Défenses
-Block, Blocage
-Parry, Parade
-Dodge, Esquive
 
-## Stats de défenses
-Fortitude, Fortitude
-Willpower, Volonté,
-Reflex, Réflexe
+### Actions défensives
+| Anglais | Français |
+|---------|----------|
+| Block | Blocage |
+| Parry | Parade |
+| Dodge | Esquive |
+
+### Statistiques de défense
+| Anglais | Français |
+|---------|----------|
+| Fortitude | Fortitude |
+| Willpower | Volonté |
+| Reflex | Réflexe |
+
+---
+
+## Création de Personnage
+
+### Éléments de base
+| Anglais | Français |
+|---------|----------|
+| Ancestry | Ascendance |
+| Ancestry Features | Attribut d'ascendance |
+| Ancestral Talent | Talent ancestral |
+| Background | Historique |
+| Talents | Talents |
+| Knowledge Areas | Domaines de connaissances |
+| Languages | Langues |
+| Ability | Caractéristique |
+| Size | Taille |
+| Stride | Foulée |
+
+### Ascendances spécifiques
+| Anglais | Français |
+|---------|----------|
+| Giantkin | Géant |
+| Devilkin | Diable |
+| Orcs | Orques |
+
+---
+
+## Caractéristiques (Abilities)
+
+| Anglais | Français |
+|---------|----------|
+| Strength | Force |
+| Dexterity | Dextérité |
+| Toughness | Robustesse |
+| Intellect | Intellect |
+| Wisdom | Sagesse |
+| Presence | Présence |
+
+---
+
+## Compétences (Skills)
+
+### Types de compétences
+| Anglais | Français |
+|---------|----------|
+| Exploration | Exploration |
+| Knowledge | Connaissances |
+| Social | Social |
+
+### Compétences spécifiques
+| Anglais | Français |
+|---------|----------|
+| Awareness | Vigilance |
+
+### Spécialisations
+| Anglais | Français |
+|---------|----------|
+| Detective | Détective |
+| Sentinel | Sentinelle |
+| Prescient | Préscient |
+| Herbalist | Herboriste |
+
+### Niveaux de formation
+| Anglais | Français |
+|---------|----------|
+| Untrained | Non formé |
+| Novice | Novice |
+| Apprentice | Apprenti |
+| Specialist | Spécialiste |
+| Adept | Adepte |
+| Master | Maître |
+| Journeyman | Compagnon |
+
+---
 
 ## Magie
-Metamagic, Métamagie
-Inflection, Inflexion
 
-# Type de dégâts
-## Élémentaire
-Radiant, Radiant
-Corruption, Corruption
-Acid, Acide
-Psychic, Psychique
-Orcs, Orques
-Cold, Froid
-Fire, Feu
-Electricity, Électrique
+| Anglais | Français |
+|---------|----------|
+| Metamagic | Métamagie |
+| Inflection | Inflexion |
 
-## Physique
-Piercing, Perforant 
-Slashing, Tranchant
+---
 
-# Ascendance
-Giantkin, Géant
-Devilkin, Diable
+## Types de Dégâts
 
-# Conditions
-Dead, Mort
-Diseased, Malade
-Invulnerable, Invulnérable
-Weakened, Affaibli
-Broken, Démoralisé
-Frightened, Paniqué
-Insane, Dément
-Resolute, Déterminé
-Hastened, Accéléré
-Prone, À terre
-Slowed, Ralenti
-Restrained, Entravé
-Disoriented, Désorienté
-Paralyzed, Paralysé
-Staggered, Ébranlé
-Stunned, Étourdi
-Asleep, Assoupi
-Enraged, Enragé
-Exposed, Exposée
-Flanked, Flanqué
-Incapacited, Neutralisé
-Guarded, Protégé
-Exhausted, Exténué
-Unaware, Distrait
-Blinded, Aveuglé
-Deafened, Assourdi
-Silenced, Réduit au silence
-Bleeding, Saignant
-Poisoned, Empoisonné
-Corroding, Corrodé
-Burning, Enflammé
-Freezing, Gelé
-Irradiated, Irradié
-Decaying, Pourrissant
-Shocked, Électrocuté
-Invisible, Invisible
+### Dégâts élémentaires
+| Anglais | Français |
+|---------|----------|
+| Fire | Feu |
+| Cold | Froid |
+| Electricity | Électrique |
+| Acid | Acide |
+| Radiant | Radiant |
+| Corruption | Corruption |
+| Psychic | Psychique |
 
-## Caractéristique
-Dexterity, Dextérité
-Strength, Force
-Intellect, Intelligence
-Wisdom, Sagesse
-Presence, Présence
-Toughness, Robustesse
+### Dégâts physiques
+| Anglais | Français |
+|---------|----------|
+| Slashing | Tranchant |
+| Piercing | Perforant |
 
-# Lié aux compétences
-## Compétences
-Awareness, Vigilance
+---
 
-## Spécialisation de compétence
-Detective, Détective
-Sentinel, Sentinelle
-Prescient, Préscient
-Herbalist, Herboriste
+## Conditions
 
-## Type de compétence
-Exploration, Exploration
-Knowledge, Connaissances
-Social, Social
+### Points de vie
+| Anglais | Français |
+|---------|----------|
+| Dead | Mort |
+| Diseased | Malade |
+| Invulnerable | Invulnérable |
+| Weakened | Affaibli |
 
-## Niveau de formation
-Untrained, Non formé
-Novice, Novice
-Apprentice, Apprenti
-Specialist, Spécialiste
-Adept, Adepte
-Master, Maître
+### Moral
+| Anglais | Français |
+|---------|----------|
+| Broken | Démoralisé |
+| Frightened | Paniqué |
+| Insane | Dément |
+| Resolute | Déterminé |
 
-## Niveau de spécialisation
-Journeyman, Compagnon
+### Déplacement
+| Anglais | Français |
+|---------|----------|
+| Hastened | Accéléré |
+| Prone | À terre |
+| Slowed | Ralenti |
+| Restrained | Entravé |
+
+### Actions
+| Anglais | Français |
+|---------|----------|
+| Disoriented | Désorienté |
+| Paralyzed | Paralysé |
+| Staggered | Ébranlé |
+| Stunned | Étourdi |
+| Asleep | Assoupi |
+
+### Défenses
+| Anglais | Français |
+|---------|----------|
+| Enraged | Enragé |
+| Exposed | Exposé |
+| Flanked | Flanqué |
+| Incapacitated | Neutralisé |
+| Guarded | Protégé |
+| Exhausted | Exténué |
+
+### Perception
+| Anglais | Français |
+|---------|----------|
+| Unaware | Distrait |
+| Blinded | Aveuglé |
+| Deafened | Assourdi |
+| Silenced | Réduit au silence |
+| Invisible | Invisible |
+
+### Dégâts sur la durée
+| Anglais | Français |
+|---------|----------|
+| Bleeding | Saignant |
+| Poisoned | Empoisonné |
+| Corroding | Corrodé |
+| Burning | Enflammé |
+| Freezing | Gelé |
+| Irradiated | Irradié |
+| Decaying | Pourrissant |
+| Shocked | Électrocuté |
+
+---

@@ -17,6 +17,7 @@
 | Turn | Tour |
 | Rest | Repos |
 | Milestones | Jalons |
+| Damage | Dégâts |
 
 ---
 
@@ -30,16 +31,31 @@
 | Enchantment | Enchantement |
 | Damage Vulnerability | Vulnérabilité aux dégâts |
 | Damage Resistance | Résistance aux dégâts |
+| Engaged | Engagé |
+| Movement | Déplacement |
 
-### Statistiques vitales
+### Ressources (Resources)
 | Anglais | Français |
 |---------|----------|
 | Wounds | Blessures |
 | Health | Points de vie |
-| Movement | Déplacement |
 | Morale | Moral |
 | Madness | Folie |
-| Engaged | Engagé |
+| Action | Action |
+| Focus | Concentration |
+| Heroism | Héroïsme |
+| Madness | Folie |
+
+## Rencontre de combat
+| Anglais | Français |
+|---------|----------|
+| Restoration | Restauration |
+| Recover | Récupération |
+| Deflected | Dévié |
+| Glancing Blow | Coup rasoir |
+| Rallying Threshold | Seuil de ralliement |
+| Healing Threshold | Seuil de guérison |
+| Restoration Thresholds | Seuils de restauration |
 
 ---
 
@@ -76,6 +92,10 @@
 | Ability | Caractéristique |
 | Size | Taille |
 | Stride | Foulée |
+| Resources | Ressources |
+| Carrying capacity | Capacité de charge |
+| Nodes | Nœuds |
+| Signature Talents | Talents signatures |
 
 ### Ascendances spécifiques
 | Anglais | Français |
@@ -152,15 +172,22 @@
 | Cold | Froid |
 | Electricity | Électrique |
 | Acid | Acide |
-| Radiant | Radiant |
-| Corruption | Corruption |
-| Psychic | Psychique |
 
 ### Dégâts physiques
 | Anglais | Français |
 |---------|----------|
 | Slashing | Tranchant |
 | Piercing | Perforant |
+| Bludgeoning | Contondant |
+| Poison | Poison |
+
+### Dégâts spirituels
+| Anglais | Français |
+|---------|----------|
+| Corruption | Corruption |
+| Psychic | Psychique |
+| Radiant | Radiant |
+| Void | Vide |
 
 ---
 

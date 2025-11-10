@@ -65,6 +65,8 @@
 | Metamagic | Métamagie |
 | Inflection | Inflexion |
 | Gesture | Signe |
+| Iconic Spells | Sorts iconiques |
+| Countermagic | Contre-magie |
 
 ## Runes
 
@@ -84,6 +86,35 @@
 | Control | Contrôle |
 | Shadow | Ombre |
 | Stasis | Stase |
+
+## Signes (Gestures)
+
+| Anglais | Français |
+|---------|----------|
+| Arrow | Flèche |
+| Aspect | Aspect |
+| Create | Création |
+| Fan | Souffle |
+| Influence | Influence |
+| Pulse | Onde |
+| Ray | Rayon |
+| Step | Pas |
+| Strike | Frappe |
+| Touch | Contact |
+| Ward | Gardien |
+
+## Inflexions (Inflections)
+
+| Anglais | Français |
+|---------|----------|
+| Compose | Façonner |
+| Determine | Sceller |
+| Extend | Perpétuer |
+| Elude | Éluder |
+| Negate | Inverser |
+| Pull | Rappeler |
+| Push | Rejeter |
+| Quicken | Hâter |
 
 ---
 
@@ -179,15 +210,6 @@
 | Adept | Adepte |
 | Master | Maître |
 | Journeyman | Compagnon |
-
----
-
-## Magie
-
-| Anglais | Français |
-|---------|----------|
-| Metamagic | Métamagie |
-| Inflection | Inflexion |
 
 ---
 

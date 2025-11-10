@@ -34,9 +34,9 @@
   },
   "languages": [
     {
-      "lang": "",
-      "name": "",
-      "path": ""
+      "lang": "fr",
+      "name": "français",
+      "path": "lang/fr.json"
     }
   ],
   "esmodules": [

@@ -37,7 +37,7 @@ Le projet original est en constante évolution, et de ce fait, une traduction co
                 - [ ] Crafting            (Crafting n'est pas assez avancé dans le développement pour bénéficier d'une traduction)
                 - [x] Conditions
                 - [ ] Combat
-                - [ ] Spellcraft
+                - [x] Spellcraft
                 - [ ] Equipment
                 - [ ] Adversaries
             - [ ] Getting Started

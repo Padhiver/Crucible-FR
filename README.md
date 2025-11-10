@@ -30,19 +30,19 @@ Le projet original est en constante évolution, et de ce fait, une traduction co
             - [ ] Equipment
         - [ ] Playtest
         - [ ] System Rules (en cours)
-            - [ ] Game Mechanics
-                - [ ] Dice Mechanics
-                - [ ] Character Mechanics
-                - [ ] Skills
-                - [ ] Crafting
-                - [ ] Conditions
+            - [x] Game Mechanics
+                - [x] Dice Mechanics
+                - [ ] Character Mechanics (Knowledge Area n'est pas assez avancé dans le développement pour bénéficier d'une traduction)
+                - [ ] Skills              (Skills n'est pas assez avancé dans le développement pour bénéficier d'une traduction)
+                - [ ] Crafting            (Crafting n'est pas assez avancé dans le développement pour bénéficier d'une traduction)
+                - [x] Conditions
                 - [ ] Combat
                 - [ ] Spellcraft
                 - [ ] Equipment
                 - [ ] Adversaries
             - [ ] Getting Started
-                - [ ] Welcome To Crucible
-                - [ ] Character Creation
+                - [x] Welcome To Crucible
+                - [x] Character Creation
 
 ---
 

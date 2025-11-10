@@ -10,7 +10,7 @@ Le projet original est en constante évolution, et de ce fait, une traduction co
 
 ### Avancement du projet de traduction
 
-- [X] Système (labels de l'interface, fiches de personnages, etc.)
+- [ ] Système (labels de l'interface, fiches de personnages, etc.)
 - [ ] Compendium
     - [ ] Crucible
         - [ ] Actors

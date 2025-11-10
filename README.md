@@ -30,6 +30,19 @@ Le projet original est en constante évolution, et de ce fait, une traduction co
             - [ ] Equipment
         - [ ] Playtest
         - [ ] System Rules (en cours)
+            - [ ] Game Mechanics
+                - [ ] Dice Mechanics
+                - [ ] Character Mechanics
+                - [ ] Skills
+                - [ ] Crafting
+                - [ ] Conditions
+                - [ ] Combat
+                - [ ] Spellcraft
+                - [ ] Equipment
+                - [ ] Adversaries
+            - [ ] Getting Started
+                - [ ] Welcome To Crucible
+                - [ ] Character Creation
 
 ---
 

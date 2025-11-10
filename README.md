@@ -40,7 +40,7 @@ Le projet original est en constante évolution, et de ce fait, une traduction co
                 - [x] Spellcraft
                 - [ ] Equipment
                 - [ ] Adversaries
-            - [ ] Getting Started
+            - [x] Getting Started
                 - [x] Welcome To Crucible
                 - [x] Character Creation
 

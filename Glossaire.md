@@ -15,6 +15,7 @@
 | Primary Adventuring Party | Groupe d'aventuriers principal |
 | Heroes | Héros |
 | Turn | Tour |
+| Round | Round |
 | Rest | Repos |
 | Milestones | Jalons |
 | Damage | Dégâts |
@@ -33,6 +34,7 @@
 | Damage Resistance | Résistance aux dégâts |
 | Engaged | Engagé |
 | Movement | Déplacement |
+| Taxonomy | Taxonomie |
 
 ### Ressources (Resources)
 | Anglais | Français |
@@ -44,7 +46,6 @@
 | Action | Action |
 | Focus | Concentration |
 | Heroism | Héroïsme |
-| Madness | Folie |
 
 ## Rencontre de combat
 | Anglais | Français |
@@ -57,6 +58,70 @@
 | Healing Threshold | Seuil de guérison |
 | Restoration Thresholds | Seuils de restauration |
 | Overflow | Surplus |
+
+## Type d'action
+| Anglais | Français |
+|---------|----------|
+| Blast | Explosion |
+| Cone | Cône |
+| Self | Soi-même |
+| None | Aucun |
+| Single | Unique |
+| Wall | Mur |
+| Ray | Rayon |
+| Fan | Souffle |
+
+## Étiquettes d'actions
+| Anglais | Français |
+|---------|----------|
+| Dual Wield | Ambidextrie |
+| One Handed | À une main |
+| Finesse | Finesse |
+| Heavy | Lourde |
+| Melee | Mêlée |
+| Ranged | À distance |
+| Shield | Bouclier |
+| Unarmed | Mains nues |
+| Unarmored | Sans armure |
+| Freehand | Main libre |
+| Movement | Déplacement |
+| Reaction | Réaction |
+| Spell | Sort |
+| Mainhand | Main principale |
+| Twohand | À deux mains |
+| Offhand | Main secondaire |
+| Reload | Rechargement |
+| Deadly | Mortel |
+| Difficult | Difficile |
+| Empowered | Amplifié |
+| Exposing | Exposant |
+| Harmless | Inoffensif |
+| Weakened | Affaibli |
+| Fortitude | Fortitude |
+| Reflex | Réflexe |
+| Willpower | Volonté |
+| Healing | Guérison |
+| Rallying | Ralliement |
+| <Damage Type> | <Type de dégâts> |
+| <Resource> | <Ressource> |
+| <Skill> | <Compétence> |
+
+## Artisanat (Crafting)
+| Anglais | Français |
+|---------|----------|
+| Crafting Schematic | Plan de fabrication |
+
+## Taxonomie (Taxonomy)
+
+### Menace (Threat)
+| Anglais | Français |
+|---------|----------|
+| Minion | Laquais |
+| Normal | Normal |
+| Elite | Élite |
+| Boss | Chef |
+
+---
 
 ## Sorcellerie (Spellcraft)
 
@@ -243,7 +308,7 @@
 
 ## Conditions
 
-### Points de vie
+### Santé
 | Anglais | Français |
 |---------|----------|
 | Dead | Mort |

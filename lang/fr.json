@@ -295,7 +295,121 @@
             "WEAPON": {
                 "header": "Armes",
                 "empty": "Équipez des armes de votre sac à dos en cliquant sur l'icône bouclier."
+            },
+            "TRAINING": {
+                "header": "Talents de formations"
             }
+        }
+    },
+    "ACTOR.GROUP": {
+        "FIELDS": {
+            "advancement": {
+                "label": "Avancement",
+                "milestones": {
+                    "label": "Jalons obtenus",
+                    "hint": "Un enregistrement des jalons qui ont été obtenus par ce groupe.",
+                    "element": {
+                        "number.label": "Nombre de récompense",
+                        "reason.label": "Raison de la récompense"
+                    }
+                }
+            },
+            "details": {
+                "biography": {
+                    "public.label": "Biographie publique",
+                    "private.label": "Biographie privée"
+                }
+            },
+            "members": {
+                "label": "Membres du groupe",
+                "one": "Membre",
+                "other": "Membres",
+                "actor.label": "ID de l'acteur"
+            },
+            "movement": {
+                "label": "Vitesse de déplacement",
+                "pace.label": "Allure de voyage",
+                "land.label": "Vitesse terrestre",
+                "water.label": "Vitesse aquatique",
+                "air.label": "Vitesse aérienne"
+            }
+        },
+        "LABELS": {
+            "medianLevel": "Niveau médian",
+            "cyclePace": "Changer l'allure",
+            "recover": "Récupération",
+            "rest": "Repos"
+        }
+    },
+    "ANCESTRY": {
+        "FIELDS": {
+            "description": {
+                "label": "Description de l'ascendance"
+            },
+            "identifier": {
+                "label": "Identifiant",
+                "hint": "Une chaîne d'identifiant utilisée pour faire référence de manière unique à cette Ascendance dans les étiquettes, les actions ou d'autres éléments de l'interface utilisateur. Cet identifiant doit être alphanumérique sans espaces ni caractères spéciaux."
+            },
+            "movement": {
+                "label": "Déplacement et stature",
+                "size": {
+                    "label": "Taille",
+                    "hint": "La taille de cette Ascendance en cases de grille."
+                },
+                "stride": {
+                    "label": "Foulée",
+                    "hint": "La vitesse de déplacement de départ de cette Ascendance en cases de grille."
+                }
+            },
+            "abilities": {
+                "label": "Scores de caractéristique",
+                "primary": {
+                    "label": "Caractéristique principale",
+                    "hint": "Sélectionnez une caractéristique principale qui commence à 3."
+                },
+                "secondary": {
+                    "hint": "Sélectionnez une caractéristique secondaire qui commence à 2.",
+                    "label": "Caractéristique secondaire"
+                }
+            },
+            "resistances": {
+                "label": "Résistances aux dégâts",
+                "hint": "Vous devez choisir à la fois une Résistance et une Vulnérabilité si vous sélectionnez l'une ou l'autre.",
+                "resistance": {
+                    "label": "Résistance aux dégâts",
+                    "hint": "Une Résistance biologique (+3) à un certain type de dégâts."
+                },
+                "vulnerability": {
+                    "label": "Vulnérabilité aux dégâts",
+                    "hint": "Une Vulnérabilité biologique (-3) à un certain type de dégâts."
+                }
+            },
+            "talents": {
+                "label": "Progression des Talents",
+                "hint": "Configurez un ou plusieurs Talents que cette Ascendance reçoit automatiquement."
+            },
+            "ui": {
+                "label": "Interface utilisateur",
+                "color": {
+                    "label": "Couleur de l'ascendance",
+                    "hint": "Une couleur représentative pour cette Ascendance utilisée lorsqu'on fait référence à elle dans l'interface utilisateur."
+                },
+                "icon": {
+                    "label": "Icône de l'Ascendance",
+                    "hint": "Une petite icône utilisée pour représenter cette Ascendance dans l'interface utilisateur."
+                }
+            }
+        },
+        "SHEET": {
+            "BROWSE": "Parcourir les Ascendances",
+            "CHOOSE": "Choisir l'Ascendance",
+            "CLEAR": "Effacer l'Ascendance",
+            "IDENTITY": "Identité"
+        },
+        "WARNINGS": {
+            "ABILITIES": "Les Caractéristiques principale et secondaire d'une Ascendance ne peuvent pas être les mêmes.",
+            "RESISTANCES_BOTH": "Vous devez attribuer à la fois la Résistance et la Vulnérabilité si vous définissez l'une ou l'autre.",
+            "RESISTANCES_DIFFERENT": "La Résistance et la Vulnérabilité choisies pour une Ascendance ne peuvent pas être les mêmes."
         }
     }
 }

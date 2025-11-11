@@ -1,7 +1,7 @@
 {
 "TYPES": {
   "Actor": {
-    "adversary": "Adversaryy",
+    "adversary": "Adversary",
     "hero": "Hero",
     "group": "Group"
   },

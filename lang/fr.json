@@ -73,7 +73,7 @@
                     "hint": "Le coût de base de cette action en Points d'héroïsme."
                 },
                 "weapon": {
-                    "hint": "Le coût en Points d'action de l'arme équipée est-il ajouté au coût de cette action ?",
+                    "hint": "Le coût en Points d'action de l'arme équipée est-il ajouté au coût de cette action?",
                     "label": "Ajouter le coût de l'arme"
                 }
             },
@@ -160,6 +160,21 @@
             "NORMAL": "Normal",
             "ELITE": "Élite",
             "BOSS": "Chef"
+        }
+    },
+    "ACCESSORY": {
+        "CATEGORIES": {
+            "CLOTHING": "Vêtement",
+            "JEWELRY": "Bijou",
+            "TRINKET": "Bibelot",
+            "OTHER": "Autre"
+        }
+    },
+    "ACTOR": {
+        "FIELDS": {
+            "abilities": {
+                "label": "Scores de caractéristique"
+            }
         }
     }
 }

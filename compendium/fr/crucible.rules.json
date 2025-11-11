@@ -302,6 +302,19 @@
                     "text": "<p>La Contre-magie est l'art de la défense magique, tissant une opposition par la sorcellerie pour annuler le sort lancé par un adversaire. Construire une contre-magie appropriée nécessite un certain degré de connaissance magique et une capacité à traiter cette connaissance de manière asymétrique, car vous n'aurez pas toujours toutes les informations nécessaires pour construire votre opposition correctement. Une personne avec une compréhension approfondie de la magie peut facilement identifier les signes révélateurs de Runes spécifiques utilisées, identifier un Signe, ou interpréter une Inflexion et deviner le but d'un sort. Une personne pratiquant la Contre-magie peut trouver des moyens uniques de perturber un sort en cours de lancement, y compris aspirer les énergies magiques dès leur initiation.</p><section class=\"construction\"><p>Le sous-système de Contre-magie n'a pas été inclus dans cette phase de test.</p></section>"
                 }
             }
+        },
+        "Adversaries": {
+            "pages": {
+                "Overview": {
+                    "name": "Aperçu"
+                },
+                "Taxonomy": {
+                    "name": "Taxonomie"
+                },
+                "Archetype": {
+                    "name": "Archétype"
+                }
+            }
         }
     }
 }

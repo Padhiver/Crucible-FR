@@ -38,7 +38,7 @@
 | Anglais | Français |
 |---------|----------|
 | Wounds | Blessures |
-| Health | Points de vie |
+| Health | Santé |
 | Morale | Moral |
 | Madness | Folie |
 | Action | Action |

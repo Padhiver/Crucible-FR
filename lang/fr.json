@@ -174,6 +174,127 @@
         "FIELDS": {
             "abilities": {
                 "label": "Scores de caractéristique"
+            },
+            "details": {
+                "biography": {
+                    "appearance": {
+                        "label": "Apparence",
+                        "hint": "Informations descriptives sur l'apparence extérieure de l'acteur qui est visible pour quiconque a au moins la permission Limitée."
+                    },
+                    "public": {
+                        "label": "Biographie publique",
+                        "hint": "Informations biographiques de l'acteur qui sont visibles pour quiconque a au moins la permission Limitée."
+                    },
+                    "private": {
+                        "label": "Biographie privée",
+                        "hint": "Informations privées de l'acteur qui ne sont visibles que pour les propriétaires de celui-ci."
+                    },
+                    "age.label": "Âge",
+                    "height.label": "Taille",
+                    "pronouns.label": "Pronoms",
+                    "weight.label": "Poids"
+                },
+                "languages": {
+                    "label": "Langues connues"
+                }
+            },
+            "movement": {
+                "size": {
+                    "label": "Taille",
+                    "tooltip": "Le nombre de cases de grille occupées par cette créature."
+                },
+                "sizeBonus": {
+                    "label": "Bonus de taille",
+                    "hint": "Un modificateur additif à la taille de base de la créature définie par l'ascendance ou la taxonomie."
+                },
+                "stride": {
+                    "label": "Foulée",
+                    "tooltip": "Distance de déplacement par Point d'action dépensé."
+                },
+                "strideBonus": {
+                    "label": "Bonus de foulée",
+                    "hint": "Un modificateur additif à la vitesse de Foulée de l'acteur définie par l'ascendance ou la taxonomie."
+                },
+                "engagement": {
+                    "label": "Engagement",
+                    "labelShort": "Engager",
+                    "tooltip": "Nombre d'ennemis engagés<br>(Taille - 2) + Bonus d'engagement"
+                },
+                "engagementBonus": {
+                    "label": "Bonus d'engagement",
+                    "hint": "Un modificateur additif à l'engagement de base."
+                }
+            },
+            "resistances": {
+                "label": "Résistances",
+                "bonus": {
+                    "label": "Bonus de résistance",
+                    "hint": "Un modificateur additif à la résistance de base de la créature définie par l'ascendance ou la taxonomie."
+                },
+                "immune": {
+                    "label": "Immunité",
+                    "hint": "Indique si cet acteur est immunisé contre ce type de dégât."
+                }
+            }
+        },
+        "TABS": {
+            "ACTIONS": "Actions",
+            "EFFECTS": "Effets",
+            "SKILLS": "Compétences",
+            "TALENTS": "Talents",
+            "INVENTORY": "Inventaire",
+            "SPELLS": "Sorts",
+            "BIOGRAPHY": "Biographie",
+            "ATTRIBUTES": "Attributs"
+        },
+        "LABELS": {
+            "CURRENCY": "Monnaie",
+            "CAPACITY": "Capacité de charge",
+            "CURRENT_CAPACITY": "Capacité actuelle",
+            "OVER_CAPACITY": "Dépassement de capacité",
+            "CURRENT_EQUIPMENT": "Équipement actuel",
+            "FAVORITE_ACTIONS": "Actions favorites",
+            "KNOWLEDGE": "Domaines de connaissances",
+            "KNOWLEDGE_HINT": "Apprenez certains domaines de connaissances à partir de votre historique ou modifiez votre Héros pour en acquérir.",
+            "LANGUAGES": "Langues connues"
+        },
+        "SECTIONS": {
+            "ACCESSORY": {
+                "header": "Accessoires",
+                "empty": "Équipez jusqu'à {slots} accessoires de votre sac à dos en cliquant sur l'icône bouclier."
+            },
+            "ACTIVE": {
+                "header": "Capacités actives"
+            },
+            "ARMOR": {
+                "header": "Armure",
+                "empty": "Équipez des armures de votre sac à dos en cliquant sur l'icône bouclier."
+            },
+            "BACKPACK": {
+                "header": "Sac à dos",
+                "empty": "Ajoutez des objets en les glissant depuis les compendium du système Crucible."
+            },
+            "ICONIC": {
+                "header": "Sorts iconiques",
+                "empty": "Ajoutez des sorts iconiques en parcourant les compendium du système Crucible.",
+                "none": "Aucun slot de sort iconique débloqué."
+            },
+            "PASSIVE": {
+                "header": "Talents passifs"
+            },
+            "SIGNATURE": {
+                "header": "Talents signatures"
+            },
+            "SPELL": {
+                "header": "Talents de Sorcellerie"
+            },
+            "TOOLBELT": {
+                "header": "Ceinture à outils",
+                "empty": "Équipez jusqu'à {slots} outils ou consommables de votre sac à dos en cliquant sur l'icône bouclier."
+            },
+            "WEAPON": {
+                "header": "Armes",
+                "empty": "Équipez des armes de votre sac à dos en cliquant sur l'icône bouclier."
             }
         }
     }

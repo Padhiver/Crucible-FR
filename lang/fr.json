@@ -1,1 +1,151 @@
-{}
+{
+    "TYPES": {
+        "Actor": {
+            "adversary": "Adversaire",
+            "hero": "Héros",
+            "group": "Groupe"
+        },
+        "Item": {
+            "accessory": "Accessoire",
+            "ancestry": "Ascendance",
+            "archetype": "Archétype",
+            "armor": "Armure",
+            "background": "Historique",
+            "consumable": "Consommable",
+            "loot": "Butin",
+            "schematic": "Plan de fabrication",
+            "spell": "Sort iconique",
+            "taxonomy": "Taxonomie",
+            "talent": "Talent",
+            "tool": "Outil",
+            "weapon": "Arme"
+        }
+    },
+    "CRUCIBLE": {
+        "Bonus": "Bonus",
+        "Base": "Base",
+        "SHEETS": {
+            "Adversary": "Feuille d'adversaire de Crucible",
+            "Ancestry": "Feuille d'ascendance de Crucible",
+            "Archetype": "Feuille d'archétype de Crucible",
+            "Armor": "Feuille d'armure de Crucible",
+            "Background": "Feuille d'historique de Crucible",
+            "Group": "Feuille de groupe de Crucible",
+            "Hero": "Feuille de héros de Crucible",
+            "HeroCreation": "Feuille de création de héros de Crucible",
+            "Journal": "Feuille de journal de Crucible",
+            "Schematic": "Feuille de schéma de Crucible",
+            "Skill": "Feuille de compétence de Crucible",
+            "Spell": "Feuille de sort de Crucible",
+            "Talent": "Feuille de talent de Crucible",
+            "Taxonomy": "Feuille de taxonomie de Crucible",
+            "Tool": "Feuille d'outil de Crucible",
+            "Weapon": "Feuille d'arme de Crucible"
+        }
+    },
+    "ABILITIES.Strength": "Force",
+    "ABILITIES.StrengthAbbr": "For",
+    "ABILITIES.Toughness": "Robustesse",
+    "ABILITIES.ToughnessAbbr": "Rob",
+    "ABILITIES.Dexterity": "Dextérité",
+    "ABILITIES.DexterityAbbr": "Dex",
+    "ABILITIES.Intellect": "Intellect",
+    "ABILITIES.IntellectAbbr": "Int",
+    "ABILITIES.Presence": "Présence",
+    "ABILITIES.PresenceAbbr": "Pré",
+    "ABILITIES.Wisdom": "Sagesse",
+    "ABILITIES.WisdomAbbr": "Sag",
+    "ACTION": {
+        "FIELDS": {
+            "cost": {
+                "focus": {
+                    "label": "Concentration",
+                    "hint": "Le coût de base de cette action en Points de concentration."
+                },
+                "label": "Coût de l'action",
+                "hint": "Configurez le coût d'utilisation de cette action en points d'action, points de concentration ou points d'héroïsme.",
+                "action": {
+                    "label": "Action",
+                    "hint": "Le coût de base de cette action en Points d'action."
+                },
+                "heroism": {
+                    "label": "Héroïsme",
+                    "hint": "Le coût de base de cette action en Points d'héroïsme."
+                },
+                "weapon": {
+                    "hint": "Le coût en Points d'action de l'arme équipée est-il ajouté au coût de cette action ?",
+                    "label": "Ajouter le coût de l'arme"
+                }
+            },
+            "id": {
+                "label": "Identifiant",
+                "hint": "Fournissez un identifiant alphanumérique standard en minuscule pour cette action. Cet identifiant doit être unique parmi toutes les actions du système."
+            },
+            "condition": {
+                "label": "Condition d'utilisation",
+                "hint": "Texte supplémentaire qui précise les conditions préalables d'utilisation dans lesquelles une action peut être utilisée."
+            },
+            "description": {
+                "label": "Description de l'action",
+                "hint": "Une description de la manière dont l'action fonctionne mécaniquement."
+            },
+            "tags": {
+                "label": "Étiquettes de l'action",
+                "hint": "Ajoutez des étiquettes qui définissent les prérequis, le comportement et les modificateurs de cette action. L'ordre des étiquettes est important car les étiquettes ultérieures auront la priorité sur les précédentes si elles modifient les mêmes propriétés de l'action."
+            },
+            "target": {
+                "label": "Cible de l'action",
+                "scope": {
+                    "label": "Cible concernée",
+                    "hint": "Quelle disposition de cible est affectée par cette action ?"
+                },
+                "type": {
+                    "label": "Type de cible",
+                    "hint": "Quel type de cible ou de zone est affecté par cette action ?"
+                },
+                "number": {
+                    "label": "Nombre de cibles",
+                    "hint": "Combien de cibles du type sélectionné sont affectées par cette action ?"
+                },
+                "size": {
+                    "label": "Taille de la cible",
+                    "hint": "Certains types de cibles sont en outre modifiés par une taille en pieds."
+                },
+                "limit": {
+                    "label": "Cibles maximales",
+                    "hint": "Limiter l'effet de cette action à un nombre maximum de personnages cibles individuels ? Par défaut, toutes les cibles seront affectées."
+                },
+                "multiple": {
+                    "label": "Applications multiples",
+                    "hint": "Appliquer les effets de cette action plusieurs fois par cible ? Par défaut, l'action s'appliquera une fois par cible."
+                },
+                "self": {
+                    "label": "Cible soi-même",
+                    "hint": "Vous cible automatiquement si cela convient à la portée et au type de cible configurés pour l'action."
+                }
+            },
+            "range": {
+                "label": "Portée de l'action",
+                "hint": "Définissez une portée minimale ou maximale en pieds à laquelle cette action peut être effectuée.",
+                "minimum": {
+                    "label": "Minimum"
+                },
+                "maximum": {
+                    "label": "Maximum"
+                },
+                "weapon": {
+                    "label": "Utiliser la portée de l'arme",
+                    "hint": "La portée de cette action est définie par la portée effective de l'arme utilisée."
+                }
+            }
+        }
+    },
+    "ADVERSARY": {
+        "THREAT_RANKS": {
+            "MINION": "Laquais",
+            "NORMAL": "Normal",
+            "ELITE": "Élite",
+            "BOSS": "Chef"
+        }
+    }
+}

@@ -318,6 +318,13 @@
                     "text": "<p>L'<strong>Archétype</strong> définit les compétences et le style de combat d'un <strong>Adversaire</strong> dans Crucible. Chaque Archétype définit en outre une taxonomie pour :</p><ul><li><p>Affiner la mise à l'échelle des @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.abilityScores000]{Caractéristiques} (au-delà de ceux définis par la Taxonomie), </p></li><li><p>Définir la progression des compétences</p></li><li><p>Configurer automatiquement l'équipement</p></li><li><p>Fournir un ensemble de @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.talents000000000]{Talents} acquis automatiquement</p></li></ul><section class=\"gameplay\"><h4>Exemple : Archétype Guerrier</h4><p>Combattants de mêlée endurcis, experts dans le maniement des armes à une main, du bouclier et des armures lourdes.</p><p>L'Archétype Guerrier définit une mise à l'échelle de manière à favoriser une progression plus rapide de la Force et de la Robustesse, une progression normale de la Présence et de la Dextérité, et une progression plus lente de la Sagesse et de l'Intellect.</p><p>De plus, l'Archétype Guerrier fournit les talents <strong>Formation aux armes martiales PLACEHOLDER</strong>, <strong>Rempart PLACEHOLDER</strong> et <strong>Efficacité blindée PLACEHOLDER</strong>.</p></section><p>De nombreux adversaires différents utiliseront le même Archétype. Par exemple, un <strong>Guerrier bandit</strong> de niveau 2, un <strong>Hobgobelin guerrier </strong> de niveau 4 et un <strong>Garde infernal</strong> de niveau 7 partagent tous l'Archétype Guerrier, mais ils ont chacun des Taxonomies différentes et donc des attributs et des talents différents, mais partagent tous un aspect commun de progression grâce à l'Archétype Guerrier.</p>"
                 }
             }
+        },
+        "Combat": {
+            "pages": {
+                "Initiative and Turn Order": {
+                    "name": "Initiative et ordre de tour"
+                }
+            }
         }
     }
 }

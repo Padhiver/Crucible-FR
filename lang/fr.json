@@ -137,7 +137,21 @@
                     "label": "Utiliser la portée de l'arme",
                     "hint": "La portée de cette action est définie par la portée effective de l'arme utilisée."
                 }
+            },
+            "actionHooks": {
+                "label": "Hooks d'action",
+                "hint": "ATTENTION ! Les hooks d'action sont une fonctionnalité AVANCÉE pour automatiser les mécaniques d'action. Une mauvaise configuration de ces hooks peut avoir des conséquences sérieuses. Ne tentez pas de faire des changements à moins d'être confiant dans vos connaissances."
             }
+        },
+        "SHEET": {
+            "TITLE": "Action"
+        },
+        "TABS": {
+            "DESCRIPTION": "Description",
+            "USAGE": "Utilisation",
+            "TARGET": "Cible",
+            "EFFECTS": "Effets",
+            "HOOKS": "Hooks"
         }
     },
     "ADVERSARY": {

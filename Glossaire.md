@@ -19,6 +19,7 @@
 | Rest | Repos |
 | Milestones | Jalons |
 | Damage | Dégâts |
+| Cover | Couverture |
 
 ---
 
@@ -58,6 +59,8 @@
 | Healing Threshold | Seuil de guérison |
 | Restoration Thresholds | Seuils de restauration |
 | Overflow | Surplus |
+| Disengagement Strike | Assaut opportuniste |
+| Move Cautiously | Repli mesuré |
 
 ## Type d'action
 | Anglais | Français |
@@ -346,7 +349,7 @@
 |---------|----------|
 | Enraged | Enragé |
 | Exposed | Exposé |
-| Flanked | Flanqué |
+| Flanked | Débordé |
 | Incapacitated | Neutralisé |
 | Guarded | Protégé |
 | Exhausted | Exténué |

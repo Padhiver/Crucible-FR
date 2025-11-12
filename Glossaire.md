@@ -10,7 +10,7 @@
 |---------|----------|
 | Party / Group | Groupe |
 | Sheet | Feuille |
-| Check | Jet |
+| Check | Test |
 | Gamemasters | Maîtres du jeu |
 | Primary Adventuring Party | Groupe d'aventuriers principal |
 | Heroes | Héros |

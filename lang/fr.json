@@ -217,7 +217,7 @@
                 },
                 "engagement": {
                     "label": "Engagement",
-                    "labelShort": "Engager",
+                    "labelShort": "Engagement",
                     "tooltip": "Nombre d'ennemis engagés<br>(Taille - 2) + Bonus d'engagement"
                 },
                 "engagementBonus": {
@@ -414,7 +414,8 @@
     },
     "ACTIVE_EFFECT": {
         "STATUSES": {
-            "Stunned": "Étourdi"
+            "Stunned": "Étourdi",
+            "Flanked": "Débordé"
         }
     }
 }

@@ -411,5 +411,10 @@
             "RESISTANCES_BOTH": "Vous devez attribuer à la fois la Résistance et la Vulnérabilité si vous définissez l'une ou l'autre.",
             "RESISTANCES_DIFFERENT": "La Résistance et la Vulnérabilité choisies pour une Ascendance ne peuvent pas être les mêmes."
         }
+    },
+    "ACTIVE_EFFECT": {
+        "STATUSES": {
+            "Stunned": "Étourdi"
+        }
     }
 }

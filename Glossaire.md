@@ -163,6 +163,9 @@
 | Reliable | Fiable |
 | Ambush | Sournoise |
 | Engaging | Engagée |
+| Refocus | Canalisation |
+| Reload | Rechargement |
+| Bulky | Encombrante |
 
 ---
 

@@ -114,6 +114,58 @@
 |---------|----------|
 | Crafting Schematic | Plan de fabrication |
 
+## Équipement 
+
+### Catégories d’Armes
+| Anglais | Français |
+|---------|----------|
+| One-Handed Melee | Mêlée à une main |
+| Two-Handed Melee | Mêlée à deux mains |
+| Natural | Naturelle |
+| Unarmed | Mains nues |
+| Light | Légère |
+| Simple | Simple |
+| Balanced | Équilibrée |
+| Heavy | Lourde |
+| Projectile | Projectile |
+| Talisman | Talisman |
+| Mechanical | Mécanique |
+| Light Shield | Bouclier léger |
+| Heavy Shield | Bouclier lourd |
+
+### Niveau de Qualité
+| Anglais | Français |
+|---------|----------|
+| Shoddy | Bâclée |
+| Standard | Commune |
+| Fine | Raffinée |
+| Superior | Supérieure |
+| Masterwork | Chef-d’œuvre |
+
+### Niveau d’Enchantement
+| Anglais | Français |
+|---------|----------|
+| Mundane | Profane |
+| Minor | Mineur |
+| Major | Majeur |
+| Legendary | Légendaire |
+
+### Propriétés Spéciales
+| Anglais | Français |
+|---------|----------|
+| Oversized | Colossale |
+| Reach | Allonge |
+| Parrying | Parade |
+| Blocking | Blocage |
+| Versatile | Flexible |
+| Thrown | Lancer |
+| Keen | Aiguisée |
+| Reliable | Fiable |
+| Ambush | Sournoise |
+| Engaging | Engagée |
+
+---
+
 ## Taxonomie (Taxonomy)
 
 ### Menace (Threat)
@@ -230,8 +282,6 @@
 | Giantkin | Géant |
 | Devilkin | Diable |
 | Orcs | Orques |
-
----
 
 ## Caractéristiques (Abilities)
 

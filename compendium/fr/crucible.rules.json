@@ -364,6 +364,21 @@
                 }
             },
             "name": "Combat"
+        },
+        "Equipment": {
+            "name": "Équipement",
+            "pages": {
+                "Weapons": {
+                    "name": "Armes"
+                },
+                "Equipment Overview": {
+                    "name": "Aperçu de l'équipement",
+                    "text": "<p>L'<strong>Équipement</strong> désigne les objets personnels, les armes, les armures, les potions, le matériel d'aventure et tout autre type d'objet pouvant être transporté par un personnage ou trouvé quelque part dans le monde.</p><p>Les types d'équipement partagent certaines propriétés communes à tous les types :</p><h4>Poids</h4><p>Chaque article a un poids unitaire, exprimé en livres.</p><h4>Coût de base</h4><p>Le coût de base d'un objet sert de référence pour tout ajustement de coût ultérieur. Pour certains objets, le coût de base et le coût ajusté sont toujours identiques, mais d'autres peuvent avoir une valeur réelle plusieurs fois supérieure à leur coût de base.</p><h4>Qualité matérielle</h4><p>De nombreux objets peuvent se voir attribuer un niveau de qualité qui reflète la qualité de fabrication ou la rareté naturelle d'une certaine marchandise.</p><h4>Niveau d'enchantement</h4><p>Les objets qui peuvent être améliorés par la magie ont un niveau d'enchantement qui reflète la puissance de la magie qui imprègne l'objet.</p><h4>Rareté</h4><p>La rareté d'un objet quantifie son caractère unique par rapport à sa forme la plus courante. Les objets présentant une meilleure qualité de fabrication, un enchantement magique plus puissant ou des propriétés rares auront une valeur de rareté plus élevée et donc une valeur plus importante.</p><h2 class=\"divider\">Échelle de valeur des objets</h2><p>Le coût de base d'une arme est défini par sa qualité <em>Commune</em> et son niveau d'enchantement <em>Profane</em>. Le coût monétaire de l'arme varie en fonction de son Score de rareté selon la formule suivante :</p><section class=\"formula\"><p class=\"value\">Valeur de l'objet</p><p class=\"equals\">=</p><p class=\"equation\">(1 + (Rareté^3) × Coût de base</p></section><section class=\"gameplay\"><p>Supposons qu'une épée longue de qualité <strong>Commune</strong> avec un niveau d'enchantement <strong>Profane</strong> (donc sans enchantement) a un coût de base de 50. Le même type d'arme fabriquée en qualité <strong>Chef-d'œuvre</strong> coûterait 3200. Si un enchantement <strong>Légendaire</strong> était ajouté à l'arme, elle coûterait alors 25,650. Une vraie fortune !</p></section>"
+                },
+                "Armor": {
+                    "name": "Armure"
+                }
+            }
         }
     }
 }

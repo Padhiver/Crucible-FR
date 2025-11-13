@@ -10,7 +10,7 @@ Le projet original est en constante évolution, et de ce fait, une traduction co
 
 ### Avancement du projet de traduction
 
-- [ ] Système (labels de l'interface, fiches de personnages, etc.)
+- [ ] Système (labels de l'interface, fiches de personnages, etc.) (en cours)
 - [ ] Compendium
     - [ ] Crucible
         - [ ] Actors
@@ -29,16 +29,16 @@ Le projet original est en constante évolution, et de ce fait, une traduction co
         - [ ] Items
             - [ ] Equipment
         - [ ] Playtest
-        - [ ] System Rules (en cours)
+        - [x] System Rules
             - [x] Game Mechanics
                 - [x] Dice Mechanics
                 - [x] Character Mechanics (Knowledge Area n'est pas assez avancé dans le développement pour bénéficier d'une traduction)
                 - [ ] Skills              (Skills n'est pas assez avancé dans le développement pour bénéficier d'une traduction)
                 - [ ] Crafting            (Crafting n'est pas assez avancé dans le développement pour bénéficier d'une traduction)
                 - [x] Conditions
-                - [ ] Combat
+                - [x] Combat
                 - [x] Spellcraft
-                - [ ] Equipment
+                - [x] Equipment
                 - [x] Adversaries
             - [x] Getting Started
                 - [x] Welcome To Crucible

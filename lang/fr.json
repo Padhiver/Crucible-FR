@@ -417,5 +417,7 @@
             "Stunned": "Étourdi",
             "Flanked": "Débordé"
         }
-    }
+    },
+    "ACTION.Action": "Action",
+    "ACTION.Condition": "Condition"
 }

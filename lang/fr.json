@@ -59,11 +59,11 @@
         "FIELDS": {
             "cost": {
                 "focus": {
-                    "label": "Concentration",
-                    "hint": "Le coût de base de cette action en Points de concentration."
+                    "label": "Focus",
+                    "hint": "Le coût de base de cette action en points de Focus."
                 },
                 "label": "Coût de l'action",
-                "hint": "Configurez le coût d'utilisation de cette action en points d'action, points de concentration ou points d'héroïsme.",
+                "hint": "Configurez le coût d'utilisation de cette action en points d'Action, Focus ou Héroïsme.",
                 "action": {
                     "label": "Action",
                     "hint": "Le coût de base de cette action en Points d'action."
@@ -306,8 +306,8 @@
             "advancement": {
                 "label": "Avancement",
                 "milestones": {
-                    "label": "Jalons obtenus",
-                    "hint": "Un enregistrement des jalons qui ont été obtenus par ce groupe.",
+                    "label": "Échelons obtenus",
+                    "hint": "Un enregistrement des échelons obtenus qui ont été obtenus par ce groupe.",
                     "element": {
                         "number.label": "Nombre de récompense",
                         "reason.label": "Raison de la récompense"

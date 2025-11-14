@@ -45,7 +45,7 @@
 | Morale | Moral |
 | Madness | Folie |
 | Action | Action |
-| Focus | Concentration |
+| Focus | Focus |
 | Heroism | Héroïsme |
 
 ## Rencontre de combat
@@ -54,7 +54,7 @@
 | Restoration | Restauration |
 | Recover | Récupération |
 | Deflected | Dévié |
-| Glancing Blow | Coup rasoir |
+| Glancing Blow | Coup superficiel |
 | Rallying Threshold | Seuil de ralliement |
 | Healing Threshold | Seuil de guérison |
 | Restoration Thresholds | Seuils de restauration |
@@ -214,17 +214,17 @@
 
 | Anglais | Français |
 |---------|----------|
-| Arrow | Flèche |
+| Arrow | Trait |
 | Aspect | Aspect |
 | Create | Création |
-| Fan | Souffle |
+| Fan | Souffle | Éventail ?
 | Influence | Influence |
 | Pulse | Onde |
 | Ray | Rayon |
-| Step | Pas |
+| Step | Charge |
 | Strike | Frappe |
 | Touch | Contact |
-| Ward | Gardien |
+| Ward | Protection |
 
 ## Inflexions (Inflections)
 

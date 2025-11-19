@@ -145,7 +145,7 @@
 ### Niveau d’Enchantement
 | Anglais | Français |
 |---------|----------|
-| Mundane | Profane |
+| Mundane | Trivial |
 | Minor | Mineur |
 | Major | Majeur |
 | Legendary | Légendaire |
@@ -153,7 +153,7 @@
 ### Propriétés Spéciales
 | Anglais | Français |
 |---------|----------|
-| Oversized | Colossale |
+| Oversized | Démesurée |
 | Reach | Allonge |
 | Parrying | Parade |
 | Blocking | Blocage |
@@ -166,6 +166,16 @@
 | Refocus | Canalisation |
 | Reload | Rechargement |
 | Bulky | Encombrante |
+
+### Types de déplacement
+| Anglais | Français |
+|---------|----------|
+| Walk | Marche |
+| Step | Marche prudente |
+| Crawl | Reptation |
+| Jump | Saut |
+| Swim | Nage |
+| Fly | Vol |
 
 ---
 
@@ -419,7 +429,7 @@
 ### Dégâts sur la durée
 | Anglais | Français |
 |---------|----------|
-| Bleeding | Saignant |
+| Bleeding | Ensanglantée |
 | Poisoned | Empoisonné |
 | Corroding | Corrodé |
 | Burning | Enflammé |

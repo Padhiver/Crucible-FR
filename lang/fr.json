@@ -19,6 +19,9 @@
             "talent": "Talent",
             "tool": "Outil",
             "weapon": "Arme"
+        },
+        "JournalEntryPage": {
+            "skill": "Compétence Crucible"
         }
     },
     "CRUCIBLE": {
@@ -41,7 +44,10 @@
             "Taxonomy": "Feuille de taxonomie de Crucible",
             "Tool": "Feuille d'outil de Crucible",
             "Weapon": "Feuille d'arme de Crucible"
-        }
+        },
+        "Rules": "Règles Crucible",
+        "Scaling": "Évolution",
+        "Scaled": "Évolué"
     },
     "ABILITIES.Strength": "Force",
     "ABILITIES.StrengthAbbr": "For",
@@ -75,6 +81,10 @@
                 "weapon": {
                     "hint": "Le coût en points d'Action de l'arme équipée est-il ajouté au coût de cette Action?",
                     "label": "Ajouter le coût de l'arme"
+                },
+                "hands": {
+                    "label": "Mains requises",
+                    "hint": "Le nombre de mains requises pour effectuer cette action."
                 }
             },
             "id": {
@@ -235,6 +245,10 @@
                     "label": "Immunité",
                     "hint": "Indique si cet acteur est immunisé contre ce type de dégât."
                 }
+            },
+            "currency": {
+                "label": "Montant de monnaie",
+                "hint": "La quantité de monnaie possédée par cet Acteur."
             }
         },
         "TABS": {
@@ -324,7 +338,8 @@
                 "label": "Membres du groupe",
                 "one": "Membre",
                 "other": "Membres",
-                "actor.label": "ID de l'acteur"
+                "actor.label": "ID de l'acteur",
+                "quantity.label": "Quantité d'Acteurs"
             },
             "movement": {
                 "label": "Vitesse de déplacement",
@@ -466,7 +481,7 @@
     "ACTION.TAG_CATEGORIES.MODIFIERS": "Modificateurs",
     "ACTION.TAG_CATEGORIES.DEFENSES": "Défenses",
     "ACTION.TAG_CATEGORIES.DAMAGE": "Dégâts",
-    "ACTION.TAG_CATEGORIES.SCALING": "",
+    "ACTION.TAG_CATEGORIES.SCALING": "Évolution",
     "ACTION.TAG_CATEGORIES.RESOURCES": "Ressources",
     "ACTION.TAG_CATEGORIES.SKILLS": "Compétences",
     "ACTION.TAG_CATEGORIES.SPELLCRAFT": "Sorcellerie",
@@ -576,7 +591,7 @@
             "Revoke": "Révoquer des Jalons",
             "GroupAward": "{number} {label} attribué(s) au groupe {name} et aux membres suivants :",
             "GroupRevoke": "{number} {label} révoqué(s) du groupe {name} et des membres suivants :",
-            "Recipients": "",
+            "Recipients": "Récipiendaires du Jalon",
             "RecipientsHint": "Désignez un ou plusieurs héros pour recevoir le jalon."
         },
         "SUMMARIES": {
@@ -595,7 +610,8 @@
             "CannotAfford": "Les acteurs suivants ne peuvent pas payer le coût de cet enrichisseur : {actors}",
             "InvalidTerms": "Impossible d'analyser {terms} comme termes de récompense valides.",
             "RequiresGM": "Vous devez être un Maître du jeu pour utiliser les enrichisseurs de Récompense."
-        }
+        },
+        "TitleReward": "Choisir le(s) Récipiendaire(s)"
     },
     "ARCHETYPE": {
         "FIELDS": {
@@ -1211,8 +1227,318 @@
                 "hint": "Associez les Actions qui sont disponibles pour les personnages possédant ce Talent."
             },
             "rune": {
-                "label": "Rune"
+                "label": "Rune",
+                "hint": "Obtenir ce talent accorde la connaissance d'une Rune de sorcellerie spécifique."
+            },
+            "gesture": {
+                "label": "Signe",
+                "hint": "Obtenir ce talent accorde la connaissance d'un Signe de sorcellerie spécifique."
+            },
+            "inflection": {
+                "label": "Inflexion",
+                "hint": "Obtenir ce talent accorde la connaissance d'une Inflexion de sorcellerie spécifique."
+            },
+            "iconicSpells": {
+                "label": "Sorts iconiques",
+                "hint": "Un nombre d'emplacements de Sort iconique accordés par ce Talent."
+            },
+            "actorHooks": {
+                "label": "Fonctions Hooked",
+                "hint": "Cet onglet de configuration implique des fonctionnalités avancées pour automatiser les effets de talent. Mal configurer les données de cet onglet peut avoir des conséquences sérieuses. Ne tentez pas de faire des changements ici à moins d'être confiant dans vos propres connaissances."
+            },
+            "training": {
+                "label": "Formation accordée",
+                "hint": "Ce talent accorde t'il un certain rang de formation dans un domaine particulier ?",
+                "type.label": "Type de formation",
+                "rank.label": "Rang de formation"
+            }
+        },
+        "ACTIONS": {
+            "ADD": "Ajouter une Action",
+            "DELETE": "Supprimer l'Action",
+            "EDIT": "Éditer l'Action",
+            "HOOK_ADD": "Ajouter un Hook",
+            "HOOK_DELETE": "Supprimer le Hook"
+        },
+        "WARNINGS": {
+            "AlreadyOwned": "Vous possédez déjà {name} et ne pouvez pas l'ajouter une seconde fois.",
+            "Banned": "Vous ne pouvez pas acheter de talents Signature supplémentaires à ce nœud ou palier.",
+            "CannotAfford": "Vous n'avez pas suffisamment de points de Talent pour acheter {name} qui coûte {cost} points.",
+            "Inaccessible": "Vous ne pouvez pas acquérir \"{name}\" car vous n'avez pas déverrouillé ce nœud de l'arbre de talents.",
+            "Locked": "Vous ne satisfaites pas les prérequis pour acquérir \"{name}\" qui nécessite {requires} {requirement}.",
+            "RequiresRuneGesture": "Vous devez connaître une Rune de sorcellerie afin d'utiliser un Signe.",
+            "RequiresRuneInflection": "Vous devez connaître une Rune de sorcellerie afin d'utiliser une Inflexion."
+        },
+        "HOOKS": {
+            "REGISTER": "Enregistrer la Fonction Hook",
+            "GROUP_PREPARATION": "Préparation des données de l'Acteur",
+            "GROUP_ACTION": "Utilisation d'Action",
+            "GROUP_COMBAT": "Tours de Combat"
+        },
+        "NODES": {
+            "ATTACK": "Attaque",
+            "MELEE": "Mêlée",
+            "RANGED": "À distance",
+            "MAGIC": "Magie",
+            "DEFENSE": "Défense",
+            "HEAL": "Guérison",
+            "MOVE": "Déplacement",
+            "ORIGIN": "Origine",
+            "SIGNATURE": "Signature",
+            "SPELL": "Sorcellerie",
+            "SKILL": "Compétence",
+            "TRAINING": "Formation",
+            "UTILITY": "Utilitaire"
+        },
+        "TRAINING": {
+            "SKILL": "Formation de Compétence",
+            "WEAPON": "Formation d'Arme",
+            "CRAFT": "Formation d'Artisanat",
+            "SPELL": "Formation de Sorcellerie"
+        },
+        "RANKS": {
+            "UNTRAINED": "Non formé",
+            "TRAINED": "Formé",
+            "PROFICIENT": "Compétent",
+            "EXPERT": "Expert",
+            "MASTER": "Maître"
+        },
+        "PointsAvailable": "Points disponibles",
+        "Purchase": "<p>Dépenser 1 point de Talent pour acheter <strong>{name}</strong> ?</p>",
+        "LABELS": {
+            "Points": {
+                "one": "Point",
+                "other": "Points"
+            },
+            "Talents": {
+                "one": "Talent",
+                "other": "Talents"
             }
         }
-    }
+    },
+    "TAXONOMY": {
+        "FIELDS": {
+            "abilities": {
+                "label": "Caractéristiques de base",
+                "hint": "Définissez les scores de caractéristique initiaux pour les créatures avec cette Taxonomie. Allouez 12 points parmi tous les scores de Caractéristique. Chaque score doit être compris entre zéro et 6. Les scores de caractéristique assignés à zéro ne pourront jamais être augmentés pour les adversaires de cette Taxonomie."
+            },
+            "category": {
+                "label": "Catégorie",
+                "hint": "La catégorie de créature à laquelle cette Taxonomie appartient."
+            },
+            "identifier": {
+                "label": "Identifiant",
+                "hint": "Un identifiant textuel utilisé pour référencer uniquement cette Taxonomie dans les étiquettes, actions ou autres éléments d'interface. Cet identifiant doit être alphanumérique sans espaces ni caractères spéciaux."
+            },
+            "resistances": {
+                "label": "Évolution des Résistances",
+                "hint": "Définissez comment les résistances et vulnérabilités pour les créatures de cette Taxonomie évoluent à mesure qu'elles progressent en niveau. Assignez des valeurs à chaque résistance entre -3 (le plus vulnérable) et +3 (le plus résistant). Les types de dégâts réglés à zéro ne sont ni résistants ni vulnérables. Accorder l'immunité à un type de dégâts est équivalent à une résistance de \"+4\". Le total de toutes les résistances & immunités doit sommer à zéro.",
+                "value": {
+                    "label": "Valeur d'évolution de Résistance",
+                    "hint": "Résistance numérique à ce type de dégâts, valeur entre -3 (le plus vulnérable) et 3 (le plus résistant). Évolue à mesure qu'une créature de cette Taxonomie progresse en niveau."
+                },
+                "immune": {
+                    "label": "Immunité aux dégâts",
+                    "hint": "Indique si une créature de cette taxonomie est immunisée à ce type de dégâts."
+                }
+            },
+            "movement": {
+                "label": "Déplacement",
+                "size": {
+                    "label": "Taille",
+                    "hint": "La taille de cet adversaire en nombre de case."
+                },
+                "stride": {
+                    "label": "Foulée",
+                    "tooltip": "Distance de déplacement par point d'Action dépensé."
+                }
+            },
+            "characteristics": {
+                "label": "Caractéristiques de Taxonomie",
+                "equipment.label": "Peut utiliser de l'équipement",
+                "spells.label": "Peut lancer des sorts"
+            }
+        },
+        "CATEGORIES": {
+            "BEAST": "Bête",
+            "CELESTIAL": "Céleste",
+            "CONSTRUCT": "Artificiel",
+            "DRAGON": "Dragon",
+            "ELEMENTAL": "Élémentaire",
+            "ELEMENTAL_EARTH": "Élémentaire de Terre",
+            "ELEMENTAL_FIRE": "Élémentaire de Feu",
+            "ELEMENTAL_FROST": "Élémentaire de Givre",
+            "ELEMENTAL_STORM": "Élémentaire de Tempête",
+            "FEY": "Fée",
+            "FIEND": "Fiélon",
+            "GIANT": "Géant",
+            "HUMANOID": "Humanoïde",
+            "MONSTROSITY": "Monstruosité",
+            "OOZE": "Vase",
+            "OUTSIDER": "Extérieur",
+            "UNDEAD": "Mort-vivant"
+        },
+        "SHEET": {
+            "CHOOSE": "Choisir une Taxonomie",
+            "CLEAR": "Effacer la Taxonomie",
+            "STATURE": "Stature de Taxonomie"
+        }
+    },
+    "TOOL": {
+        "CATEGORIES": {
+            "CRAFTING": "Kit d'Artisanat",
+            "IMPLEMENT": "Instrument"
+        },
+        "FIELDS": {
+            "skills": {
+                "label": "Compétences liées",
+                "hint": "Identifiez les compétences ou l'artisanat qui impliquent l'utilisation de cet outil en particulier."
+            }
+        }
+    },
+    "TRAVEL_PACES": {
+        "HIDDEN": "Caché",
+        "SLOW": "Prudent",
+        "NORMAL": "Normal",
+        "FAST": "Pressé",
+        "RECKLESS": "Téméraire"
+    },
+    "WEAPON": {
+        "CATEGORIES": {
+            "CATEGORY_HANDS": "{category} ({hands}h)",
+            "LIGHT": "Légère",
+            "SIMPLE": "Simple",
+            "BALANCED": "Équilibrée",
+            "HEAVY": "Lourde",
+            "PROJECTILE": "Projectile",
+            "MECHANICAL": "Mécanique",
+            "UNARMED": "Mains nues",
+            "SHIELD": "Bouclier",
+            "SHIELD_HEAVY": "Bouclier lourd",
+            "SHIELD_LIGHT": "Bouclier léger",
+            "TALISMAN": "Talisman"
+        },
+        "FIELDS": {
+            "damageType": {
+                "label": "Type de dégâts",
+                "hint": "Configurez le type de dégâts infligés par cette arme."
+            },
+            "dropped": {
+                "label": "Lâchée",
+                "hint": "Cette arme a-t-elle été lancée, désarmée, ou lâchée ?"
+            },
+            "loaded": {
+                "label": "Chargée",
+                "hint": "Si cette arme nécessite un chargement, suivez si elle est actuellement chargée."
+            },
+            "slot": {
+                "label": "Emplacement équipée",
+                "hint": "Spécifiez dans quel emplacement d'équipement cette arme est équipée."
+            }
+        },
+        "TAGS": {
+            "Ambush": "Sournoise",
+            "AmbushTooltip": "Cette arme est bien adaptée pour frapper avant que vos adversaires n'aient une chance de réagir. Lorsque vous attaquez une cible plus basse que vous dans l'ordre d'initiative, vous gagnez +1 Faveur.",
+            "Blocking": "Blocage",
+            "BlockingTooltip": "Cette arme fournit un bonus à votre défense de Blocage.",
+            "Engaging": "Engagée",
+            "EngagingTooltip": "Les armes de cette catégorie vous permettent de mieux combattre plusieurs ennemis, augmentant votre Engagement de +1.",
+            "Intuitive": "Intuitive",
+            "IntuitiveTooltip": "Cette arme est assez intuitive pour être utilisée sans formation. La pénalité de Compétence lors de l'utilisation de cette arme sans formation est seulement de -1 au lieu de -4.",
+            "Keen": "Aiguisée",
+            "KeenTooltip": "Cette arme est particulièrement mortelle lorsqu'elle réalise un coup critique. NOTE IMPORTANTE - la propriété aiguisée n'est pas encore implémentée dans le playtest.",
+            "Natural": "Naturelle",
+            "NaturalTooltip": "Les armes naturelles bénéficient de la Formation d'Arme naturelle plutôt que de la formation de leur catégorie réelle. Les armes naturelles ne peuvent pas être lâchées.",
+            "Oversized": "Démesurée",
+            "OversizedTooltip": "Cet objet est démesuré ou autrement encombrant à manier, vous empêchant d'agir rapidement. Vous avez +2 Fléaux à l'Initiative tant que cet objet est équipé.",
+            "Parrying": "Parade",
+            "ParryingTooltip": "Cette arme fournit un bonus à votre défense de Parade.",
+            "Reach": "Allonge",
+            "ReachTooltip": "Cette arme fournit une portée effective plus grande que la normale. Vous êtes capable d'effectuer des attaques de Frappe de base à deux fois votre portée normale.",
+            "Reload": "Rechargement",
+            "ReloadTooltip": "Cette arme nécessite un rechargement pour frapper. Lorsque l'arme n'est pas chargée, toutes les actions qui utilisent l'arme coûtent +1 point d'Action.",
+            "Reliable": "Fiable",
+            "ReliableTooltip": "Cette arme est digne de confiance et ne produit presque jamais de résultats spectaculairement mauvais. Le seuil d'échec critique de l'arme est réduit de 2 rendant moins probable que les Frappes infructueuses entraînent un échec critique.",
+            "Returning": "Retour",
+            "ReturningTooltip": "Cette arme est magiquement ou mécaniquement conçue pour revenir dans votre main après avoir été lancée. Utiliser l'action Lancer une Arme avec cette arme ne la rend pas Lâchée.",
+            "Thrown": "Lancer",
+            "ThrownTooltip": "Cette arme est conçue pour être adaptée au lancer et ne subit pas la pénalité de Fléaux qui est habituellement appliquée à l'action Lancer une Arme.",
+            "Versatile": "Flexible",
+            "VersatileTooltip": "Cette arme peut être maniée à une ou deux mains, et changée entre ces modes sans aucun coût en point d'Action. Lorsqu'elle est maniée à deux mains, l'arme gagne +2 dégâts de base supplémentaires mais occasionne 1 coût d'Action supplémentaire pour Frapper.",
+            "DamageTooltip": "Une représentation abrégée des capacités offensives de cette arme, exprimée sous la forme Bonus d'Attaque / Bonus de dégâts / Multiplicateur de dégâts."
+        },
+        "SHEET": {
+            "EQUIPMENT": "Détails de l'arme",
+            "TYPE": "Type d'arme"
+        },
+        "SLOTS": {
+            "EITHER": "L'une ou l'autre main",
+            "MAINHAND": "Main principale",
+            "OFFHAND": "Main secondaire",
+            "TWOHAND": "Deux mains"
+        }
+    },
+    "TOKEN": {
+        "MOVEMENT": {
+            "ACTIONS": {
+                "walk": {
+                    "label": "Marche",
+                    "description": "Déplacez-vous d'une distance jusqu'à votre attribut Foulée par Action."
+                },
+                "step": {
+                    "label": "Marche prudente",
+                    "description": "Déplacez-vous prudemment d'une distance jusqu'à la moitié de votre attribut Foulée par Action. Ce mouvement ne provoque pas de désengagement."
+                },
+                "crawl": {
+                    "label": "Reptation",
+                    "description": "Déplacez-vous en étant À terre d'une distance jusqu'à la moitié de votre attribut Foulée par Action."
+                },
+                "jump": {
+                    "label": "Saut",
+                    "description": "Bondissez pour traverser une distance jusqu'à la moitié de votre attribut Foulée par Action."
+                },
+                "climb": {
+                    "label": "Escalade",
+                    "description": "Grimpez ou descendez une surface, sur une distance ou élévation jusqu'à la moitié de votre attribut Foulée par Action. Les créatures avec une vitesse d'Escalade explicite utilisent cette vitesse au lieu de la moitié de leur Foulée."
+                },
+                "swim": {
+                    "label": "Nage",
+                    "description": "Déplacez-vous dans l'eau qui est à hauteur de taille ou plus profonde d'une distance jusqu'à la moitié de votre attribut Foulée par Action. Les créatures avec une vitesse de Nage explicite utilisent cette vitesse au lieu de la moitié de leur Foulée."
+                },
+                "fly": {
+                    "label": "Vol",
+                    "description": "Déplacez-vous dans les airs d'une distance jusqu'à votre attribut Vol par Action. Seules les créatures avec une vitesse de Vol peuvent utiliser ce mode de déplacement."
+                },
+                "slow.label": "Prudent",
+                "normal.label": "Normal",
+                "fast.label": "Pressé"
+            }
+        }
+    },
+    "WARNING.AbilityCannotIncrease": "Vous ne pouvez pas augmenter cette Caractéristique davantage.",
+    "WARNING.AbilityCannotDecrease": "Vous ne pouvez pas diminuer cette Caractéristique davantage.",
+    "WARNING.AbilityRequireAncestry": "Vous devez assigner une Ascendance avant de pouvoir acheter des augmentations de Caractéristique.",
+    "WARNING.CannotEquipSlotInUse": "L'acteur {actor} ne peut pas équiper {item} car l'emplacement d'objet {type} est déjà utilisé.",
+    "WARNING.CannotEquipInCombat": "L'acteur {actor} ne peut pas équiper ou déséquiper {item} durant une rencontre de combat.",
+    "WARNING.CannotEquipActionCost": "Vous ne pouvez pas équiper d'armement car vous n'avez pas de points d'Action disponibles.",
+    "WARNING.CannotEquipInvalidCategory": "L'acteur {actor} ne peut pas utiliser {item} dans l'emplacement d'équipement {type}.",
+    "WARNING.NoParty": "Vous devez avoir un groupe principal configuré pour cela.",
+    "WARNING.SkillRequireAncestryBackground": "Vous devez assigner à la fois une Ascendance et un Historique avant de pouvoir acheter des rangs de Compétence.",
+    "WALKTHROUGH.AddAncestry": "Choisissez une Ascendance depuis le compendium ou la barre latérale Objets et ajoutez-la via glisser-déposer.",
+    "WALKTHROUGH.AddBackground": "Choisissez un Historique depuis le compendium ou la barre latérale Objets et ajoutez-le via glisser-déposer.",
+    "WALKTHROUGH.ConfigureArchetype": "Configurez un Archétype pour cet adversaire.",
+    "WALKTHROUGH.ConfigureTaxonomy": "Configurez une Taxonomie pour cet adversaire.",
+    "WALKTHROUGH.AbilityPoints": "Dépensez les points de Caractéristique disponibles en augmentant vos scores de Caractéristique.",
+    "WALKTHROUGH.SkillPoints": "Dépensez les points de Compétence disponibles en augmentant vos rangs de Compétence.",
+    "WALKTHROUGH.TalentPoints": "Dépensez les points de Talent disponibles en ouvrant l'Arbre de Talents.",
+    "WALKTHROUGH.NextLevel": "Progression de l'avancement vers le niveau suivant",
+    "WALKTHROUGH.LevelZero": "Complétez toutes les étapes de création de personnage avant de faire avancer votre personnage au Niveau 1.",
+    "WALKTHROUGH.LevelOne": "Configurez votre personnage au Niveau 1 et commencez votre aventure !",
+    "WALKTHROUGH.LevelUp": "Vous avez fait assez de progrès pour avancer vers un nouveau niveau. Augmentez votre niveau de un quand vous êtes prêt !",
+    "WALKTHROUGH.LevelZeroIncomplete": "Vous ne pouvez pas avancer au Niveau 1 tant que vous n'avez pas fini toutes les étapes de création de personnage !",
+    "ACTOR.AppliedDetailItem": "A appliqué le {type} {name} à {actor}.",
+    "ACTOR.ClearedDetailItem": "A retiré le {type} de {actor}.",
+    "ACTION.TemplateTargets": "Cibles du Gabarit",
+    "ACTION.Confirmed": "Confirmé",
+    "ACTION.Unconfirmed": "Non confirmé"
 }

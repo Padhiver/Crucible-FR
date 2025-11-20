@@ -415,7 +415,33 @@
     "ACTIVE_EFFECT": {
         "STATUSES": {
             "Stunned": "Étourdi",
-            "Flanked": "Débordé"
+            "Flanked": "Débordé",
+            "Asleep": "Assoupi",
+            "Blind": "Aveuglé",
+            "Broken": "Démoralisé",
+            "Dead": "Mort",
+            "Deaf": "Assourdi",
+            "Diseased": "Malade",
+            "Disoriented": "Désorienté",
+            "Enraged": "Enragé",
+            "Exhausted": "Exténué",
+            "Exposed": "Exposé",
+            "Fear": "Paniqué",
+            "Guarded": "Protégé",
+            "Hastened": "Accéléré",
+            "Incapacitated": "Neutralisé",
+            "Insane": "Dément",
+            "Invisible": "Invisible",
+            "Mute": "Aphone",
+            "Paralyzed": "Paralysé",
+            "Prone": "À terre",
+            "Resolute": "Déterminé",
+            "Restrained": "Entravé",
+            "Slowed": "Ralenti",
+            "Staggered": "Ébranlé",
+            "Unaware": "Distrait",
+            "Weakened": "Affaibli",
+            "FlankedDescription": "Vous êtes débordé par plusieurs ennemis qui gagnent des Faveurs supplémentaires à leurs attaques !"
         }
     },
     "ACTION.Action": "Action",
@@ -529,5 +555,660 @@
     },
     "ADVANCEMENT.Level": "Niveau",
     "ADVANCEMENT.Progress": "Progression des Jalons",
-    "ADVANCEMENT.MilestoneTooltip": "{progress} sur {required} Jalons avant le niveau suivant"
+    "ADVANCEMENT.MilestoneTooltip": "{progress} sur {required} Jalons avant le niveau suivant",
+    "ADVANCEMENT.ExpectedLevel": "Niveau attendu",
+    "AWARD": {
+        "LABELS": {
+            "Award": "Attribuer",
+            "Revoke": "Révoquer"
+        },
+        "TOOLTIPS": {
+            "Currency": "Attribuer de la Monnaie",
+            "Milestone": "Attribuer un/des Jalon(s)"
+        },
+        "Each": "chacun",
+        "MILESTONE": {
+            "one": "Jalon",
+            "other": "Jalons",
+            "Identifier": "Identifiant",
+            "IdentifierHint": "Un identifiant unique pour l'attribution de jalon, doit être un slug (pas d'espaces ni de caractères spéciaux).",
+            "Award": "Attribuer des Jalons",
+            "Revoke": "Révoquer des Jalons",
+            "GroupAward": "{number} {label} attribué(s) au groupe {name} et aux membres suivants :",
+            "GroupRevoke": "{number} {label} révoqué(s) du groupe {name} et des membres suivants :",
+            "Recipients": "",
+            "RecipientsHint": "Désignez un ou plusieurs héros pour recevoir le jalon."
+        },
+        "SUMMARIES": {
+            "Cost": "Coût de {award} payé par :",
+            "CostSplit": "Coût de {award} partagé entre :",
+            "Reward": "{award} accordé à :",
+            "RewardSplit": "{award} partagé entre :",
+            "TABLE": {
+                "Label": "Monnaie",
+                "Formula": "Formule",
+                "Total": "Total"
+            }
+        },
+        "TitleCost": "Choisir le(s) Contributeur(s)",
+        "WARNINGS": {
+            "CannotAfford": "Les acteurs suivants ne peuvent pas payer le coût de cet enrichisseur : {actors}",
+            "InvalidTerms": "Impossible d'analyser {terms} comme termes de récompense valides.",
+            "RequiresGM": "Vous devez être un Maître du jeu pour utiliser les enrichisseurs de Récompense."
+        }
+    },
+    "ARCHETYPE": {
+        "FIELDS": {
+            "abilities": {
+                "hint": "Définissez comment les scores de caractéristique pour les créatures de cet Archétype évoluent à mesure qu'elles progressent en niveau. Allouez 12 points parmi tous les scores de Caractéristique. Chaque score doit être compris entre zéro et 6. Les Adversaires augmenteront leurs caractéristiques de 1 point à chaque niveau. Les scores avec une valeur plus élevée progressent plus fréquemment. Les scores à zéro ne progresseront jamais de leur valeur de base.",
+                "label": "Évolution des Caractéristiques"
+            },
+            "identifier": {
+                "label": "Identifiant",
+                "hint": "Un identifiant textuel utilisé pour référencer uniquement cet Archétype dans les étiquettes, actions ou autres éléments d'interface. Cet identifiant doit être alphanumérique sans espaces ni caractères spéciaux."
+            },
+            "talents": {
+                "label": "Talents de base",
+                "hint": "Configurez un ou plusieurs talents que cet Archétype reçoit automatiquement."
+            },
+            "equipment": {
+                "hint": "Configurez l'équipement que cet Archétype reçoit automatiquement.",
+                "label": "Équipement de base"
+            },
+            "skills": {
+                "label": "Compétences favorites",
+                "hint": "Configurez une sélection de compétences qui progresseront automatiquement leur rang de formation pour cet Archétype."
+            }
+        },
+        "SHEET": {
+            "CHOOSE": "Choisir un Archétype",
+            "CLEAR": "Effacer l'Archétype",
+            "SKILLS": "Progression des Compétences"
+        }
+    },
+    "ARMOR": {
+        "FIELDS": {
+            "armor": {
+                "label": "Armure",
+                "base": {
+                    "label": "Armure de base"
+                }
+            },
+            "properties": {
+                "label": "Propriétés de l'Armure"
+            }
+        },
+        "CATEGORIES": {
+            "UNARMORED": "Sans Armure",
+            "LIGHT": "Armure Légère",
+            "MEDIUM": "Armure Intermédiaire",
+            "HEAVY": "Armure Lourde",
+            "NATURAL": "Naturelle"
+        },
+        "SHEET": {
+            "DEFENSES": "Défenses de l'Armure",
+            "ARMOR_BONUS": "Bonus d'Armure",
+            "DODGE": "Esquive",
+            "DODGE_BASE": "Esquive de base",
+            "DODGE_SCALING": "Seuil d'Évolution"
+        },
+        "PROPERTIES": {
+            "BULKY": "Encombrante",
+            "ORGANIC": "Organique",
+            "NOISY": "Bruyante"
+        }
+    },
+    "ATTACK.RESULT_TYPES.MISS": "Manqué",
+    "ATTACK.RESULT_TYPES.DODGE": "Esquive",
+    "ATTACK.RESULT_TYPES.PARRY": "Parade",
+    "ATTACK.RESULT_TYPES.BLOCK": "Blocage",
+    "ATTACK.RESULT_TYPES.ARMOR": "Armure",
+    "ATTACK.RESULT_TYPES.RESIST": "Résistance",
+    "ATTACK.RESULT_TYPES.GLANCE": "Coup superficiel",
+    "ATTACK.RESULT_TYPES.HIT": "Touché",
+    "ATTRIBUTES.Abilities": "Scores de Caractéristique",
+    "ATTRIBUTES.Pools": "Réserves de Ressources",
+    "ATTRIBUTES.Resistances": "Résistances aux dégâts",
+    "BACKGROUND": {
+        "FIELDS": {
+            "description": {
+                "label": "Description de l'Historique"
+            },
+            "identifier": {
+                "label": "Identifiant",
+                "hint": "Un identifiant textuel utilisé pour référencer uniquement cet Historique dans les étiquettes, actions ou autres éléments d'interface. Cet identifiant doit être alphanumérique sans espaces ni caractères spéciaux."
+            },
+            "knowledge": {
+                "label": "Domaines de Connaissances",
+                "hint": "Configurez les domaines de connaissances que cet Historique fournit automatiquement. Typiquement, un Historique comporte deux domaines de connaissances."
+            },
+            "languages": {
+                "label": "Langues connues",
+                "hint": "Configurez les langues que cet Historique fournit automatiquement."
+            },
+            "skills": {
+                "label": "Compétences de base",
+                "hint": "Configurez les compétences que cet Historique fournit automatiquement avec une formation novice. Typiquement, un Historique a une formation dans deux compétences."
+            },
+            "talents": {
+                "label": "Talents acquis",
+                "hint": "Configurez un ou plusieurs talents que cet Historique reçoit automatiquement. Typiquement, un Historique reçoit deux talents."
+            },
+            "ui": {
+                "label": "Interface utilisateur",
+                "color": {
+                    "label": "Couleur d'Historique",
+                    "hint": "Une couleur représentative pour cet Historique utilisée lors de sa référence dans l'interface utilisateur."
+                },
+                "icon": {
+                    "label": "Icône d'Historique",
+                    "hint": "Un petit icône utilisé pour représenter cet Historique dans l'interface utilisateur."
+                }
+            }
+        },
+        "SHEET": {
+            "BROWSE": "Parcourir les Historiques",
+            "CLEAR": "Effacer l'Historique",
+            "CHOOSE": "Choisir un Historique",
+            "IDENTITY": "Identité",
+            "SKILLS": "Compétences",
+            "TALENT_ADD": "Ajouter un Talent",
+            "TALENT_REMOVE": "Retirer un Talent",
+            "TALENT_DROP": "Ajoutez un talent à cet Historique en glissant-déposant depuis le compendium des Talents."
+        },
+        "ERRORS": {
+            "APPLY": "Vous ne pouvez appliquer un Historique qu'à un personnage de niveau 0 n'ayant dépensé aucun point de compétence.",
+            "TALENT_TIER": "Les Historiques ne peuvent offrir que des Talents de départ de Tiers 0."
+        }
+    },
+    "COMBAT.WarningCannotChangeRound": "Seul un utilisateur Maître du jeu peut changer le round de Combat.",
+    "CONSUMABLE": {
+        "CATEGORIES": {
+            "AMMUNITION": "Munition",
+            "BOMB": "Bombe",
+            "FLASK": "Fiole",
+            "KIT": "Kit",
+            "OTHER": "Autre"
+        },
+        "FIELDS": {
+            "uses": {
+                "label": "Utilisations",
+                "hint": "Configurez un nombre limité d'utilisations de cet objet avant qu'il ne soit épuisé.",
+                "value.label": "Valeur",
+                "max.label": "Maximum"
+            }
+        }
+    },
+    "CURRENCY_DENOMINATIONS": {
+        "CP": {
+            "abbreviation": "PC",
+            "label": "Pièces de Cuivre"
+        },
+        "SP": {
+            "abbreviation": "PA",
+            "label": "Pièces d'Argent"
+        },
+        "GP": {
+            "abbreviation": "PO",
+            "label": "Pièces d'Or"
+        },
+        "PP": {
+            "abbreviation": "PP",
+            "label": "Pièces de Platine"
+        }
+    },
+    "DAMAGE.Damage": "Dégâts",
+    "DAMAGE.Restoration": "Restauration",
+    "DAMAGE.Acid": "Acide",
+    "DAMAGE.Bludgeoning": "Contondant",
+    "DAMAGE.Cold": "Froid",
+    "DAMAGE.Corruption": "Corruption",
+    "DAMAGE.Electricity": "Électrique",
+    "DAMAGE.Elemental": "Élémentaire",
+    "DAMAGE.Fire": "Feu",
+    "DAMAGE.Physical": "Physique",
+    "DAMAGE.Piercing": "Perforant",
+    "DAMAGE.Poison": "Poison",
+    "DAMAGE.Psychic": "Psychique",
+    "DAMAGE.Radiant": "Radiant",
+    "DAMAGE.Slashing": "Tranchant",
+    "DAMAGE.Spiritual": "Spirituel",
+    "DAMAGE.Void": "Vide",
+    "DEFENSES.Armor": "Armure",
+    "DEFENSES.Block": "Blocage",
+    "DEFENSES.Dodge": "Esquive",
+    "DEFENSES.Parry": "Parade",
+    "DEFENSES.Fortitude": "Fortitude",
+    "DEFENSES.Reflex": "Réflexe",
+    "DEFENSES.Willpower": "Volonté",
+    "DEFENSES.Physical": "Physique",
+    "DEFENSES.Wounds": "Blessures",
+    "DEFENSES.Madness": "Folie",
+    "DICE.DiceTotal": "Total des Dés",
+    "DICE.AbilityBonus": "Bonus de Caractéristique",
+    "DICE.SkillBonus": "Bonus de Compétence",
+    "DICE.EnchantmentBonus": "Bonus d'Enchantement",
+    "DICE.CircumstanceBonus": "Bonus de circonstance",
+    "DICE.Damage": "Dégâts",
+    "DICE.DamageOverflow": "Montant de Surplus",
+    "DICE.DamageBase": "{type} de Base",
+    "DICE.DamageBonus": "Bonus d'Action",
+    "DICE.DamageResistance": "Résistance aux dégâts",
+    "DICE.DamageVulnerability": "Vulnérabilité aux dégâts",
+    "DICE.DamageTotal": "Total des dégâts",
+    "DICE.Healing": "Guérison",
+    "DICE.Confirm": "Confirmer",
+    "DICE.Reverse": "Inverser",
+    "DICE.RollTotal": "Total du Jet",
+    "DICE.SetDifficulty": "Définir la difficulté",
+    "ITEM": {
+        "FIELDS": {
+            "identifier": {
+                "label": "Identifiant",
+                "hint": "Un identifiant textuel unique utilisé pour référencer cet Objet. Plusieurs copies de ce même objet partagent toutes le même identifiant."
+            },
+            "category": {
+                "label": "Catégorie"
+            },
+            "quantity": {
+                "label": "Quantité"
+            },
+            "weight": {
+                "label": "Poids"
+            },
+            "price": {
+                "label": "Prix de base"
+            },
+            "quality": {
+                "label": "Qualité"
+            },
+            "broken": {
+                "label": "Cassé"
+            },
+            "enchantment": {
+                "label": "Tiers d'Enchantement"
+            },
+            "equipped": {
+                "label": "Équipé"
+            },
+            "invested": {
+                "label": "Investi"
+            },
+            "properties": {
+                "label": "Propriétés de l'Objet"
+            },
+            "description": {
+                "public": {
+                    "label": "Description publique",
+                    "hint": "Une description de cet objet visible par tout utilisateur avec au moins la permission OBSERVATEUR."
+                },
+                "private": {
+                    "label": "Description secrète",
+                    "hint": "Une description de cet objet qui n'est visible que par les utilisateurs Maîtres du jeu."
+                }
+            },
+            "actions": {
+                "label": "Actions de l'Objet"
+            }
+        },
+        "TABS": {
+            "CONFIGURATION": "Configuration",
+            "ACTIONS": "Actions",
+            "DESCRIPTION": "Description",
+            "HOOKS": "Hooks",
+            "TALENTS": "Talents",
+            "SECRETS": "Secrets",
+            "EQUIPMENT": "Équipement"
+        },
+        "SHEET": {
+            "DETAILS": "Détails de l'Objet",
+            "TALENT_ADD": "Ajouter un Talent",
+            "TALENT_REMOVE": "Retirer un Talent",
+            "TALENT_DROP": "Ajoutez un talent en glissant-déposant un objet Talent dans cette zone.",
+            "EQUIPMENT": "Détails de l'Équipement",
+            "EQUIPMENT_REMOVE": "Retirer l'Équipement",
+            "EQUIPMENT_DROP": "Ajoutez de l'équipement de départ en glissant-déposant des objets dans cette zone.",
+            "TYPE": "Type d'Équipement",
+            "SCALED_PRICE": "Prix ajusté"
+        },
+        "PROPERTIES": {
+            "INVESTMENT": "Investissement",
+            "STACKABLE": "Empilable"
+        }
+    },
+    "ITEM.EnchantmentMundane": "Trivial",
+    "ITEM.EnchantmentMinor": "Mineur",
+    "ITEM.EnchantmentMajor": "Majeur",
+    "ITEM.EnchantmentLegendary": "Légendaire",
+    "ITEM.QualityShoddy": "Bâclée",
+    "ITEM.QualityStandard": "Commune",
+    "ITEM.QualityFine": "Raffinée",
+    "ITEM.QualitySuperior": "Supérieure",
+    "ITEM.QualityMasterwork": "Chef-d’œuvre",
+    "KEYBINDINGS.ConfirmAction": "Confirmer l'Action",
+    "KEYBINDINGS.ConfirmActionHint": "Confirmer les actions enregistrées dans les dernières 60 secondes dans l'ordre où elles ont été prises.",
+    "LANGUAGE_CATEGORIES": {
+        "NONSPOKEN": "Langues non-parlées",
+        "SPOKEN": "Langues parlées"
+    },
+    "LANGUAGES": {
+        "COMMON": "Commun",
+        "SIGN": "Signes"
+    },
+    "LOOT": {
+        "CATEGORIES": {
+            "TREASURE": "Trésor",
+            "INGREDIENT": "Ingrédient",
+            "OTHER": "Divers"
+        }
+    },
+    "RESOURCES": {
+        "HEALTH": "Santé",
+        "WOUNDS": "Blessures",
+        "MORALE": "Moral",
+        "MADNESS": "Folie",
+        "ACTION": "Action",
+        "FOCUS": "Focus",
+        "HEROISM": "Héroïsme"
+    },
+    "RULER.CannotAffordMove": "Vous ne pouvez pas effectuer le déplacement de {distance} cases qui coûte {action} Points d'Action.",
+    "SCHEMATIC": {
+        "CATEGORIES": {
+            "ALCHEMY": "Formule d'Alchimie",
+            "COOKING": "Recette de Cuisine",
+            "ENCHANTING": "Glyphe d'Enchantement",
+            "FLETCHING": "Croquis d'Empennage",
+            "JEWELCRAFT": "Graphique de Joaillerie",
+            "SMITHING": "Plan de Forgeron",
+            "RUNEWEAVING": "Arcane de Tisserune",
+            "TAILORING": "Patron de Couture"
+        },
+        "FIELDS": {
+            "dc": {
+                "label": "Difficulté du Défi",
+                "hint": "Assignez la valeur qui doit être dépassée lors d'un test de compétence d'artisanat pour réussir la fabrication de ce plan."
+            },
+            "hours": {
+                "label": "Heures",
+                "hint": "La quantité de temps, en heures, requise par la tentative de fabrication."
+            },
+            "inputs": {
+                "label": "",
+                "element": {
+                    "ingredients": {
+                        "label": "Ingrédients",
+                        "element": {
+                            "item.label": "UUID de l'Objet Ingrédient",
+                            "consumed": {
+                                "label": "Consommé",
+                                "hint": "Ces ingrédients sont-ils consommés dans le processus de tentative de fabrication ?"
+                            },
+                            "quality": {
+                                "label": "Qualité requise",
+                                "hint": "Une qualité minimale requise pour cet ingrédient."
+                            },
+                            "quantity": {
+                                "label": "Quantité requise"
+                            }
+                        }
+                    },
+                    "currency": {
+                        "label": "Monnaie",
+                        "hint": "Fabriquer ce plan peut nécessiter une certaine quantité de monnaie utilisée pour représenter des fournitures requises ou des ingrédients mineurs qui ne sont pas explicitement modélisés comme des objets."
+                    },
+                    "mode.label": "Mode de combinaison"
+                }
+            },
+            "mode.label": "Mode de combinaison",
+            "outputs": {
+                "label": "",
+                "element": {
+                    "items.element.label": "UUID de l'Objet créé",
+                    "mode": "Mode"
+                }
+            }
+        },
+        "MODES": {
+            "ANY": "N'importe lequel",
+            "ALL": "Tous",
+            "TEMPLATE": "Gabarit"
+        },
+        "PROPERTIES": {
+            "COMMON": "Communément connu"
+        },
+        "SHEET": {
+            "COMPONENTS": "Composants"
+        }
+    },
+    "SETTINGS": {
+        "AutoConfirmName": "Confirmation automatique des Actions",
+        "AutoConfirmHint": "Activer la confirmation automatique des actions en combat qui n'infligent pas de dégâts ou ne causent pas d'effets actifs. Cela peut accélérer les choses mais n'est pas recommandé pendant les tests de jeu.",
+        "AutoConfirmNone": "Pas de confirmation automatique",
+        "AutoConfirmSelf": "Actions ciblant Soi-même uniquement",
+        "AutoConfirmAll": "Confirmation automatique pour toutes les Actions",
+        "CruciblePartyLabel": "Groupe d'Aventuriers Principal",
+        "CruciblePartyHint": "Configurez quel groupe d'Acteurs est le groupe principal de protagonistes.",
+        "COMPENDIUM_SOURCES": {
+            "name": "Sources des compendium",
+            "label": "Configurer les sources des compendium",
+            "hint": "Configurez quels compendium peuvent être utilisés comme sources durant la création de personnage.",
+            "ancestry": {
+                "label": "Sources des Ascendances",
+                "hint": "Quels compendiums seront utilisés comme sources pour les ascendances durant la création de personnage."
+            },
+            "background": {
+                "label": "Sources des Historiques",
+                "hint": "Quels compendiums seront utilisés comme sources pour les historiques durant la création de personnage."
+            },
+            "spell": {
+                "label": "Sources des Sorts",
+                "hint": "Quels compendiums seront utilisés comme sources pour les sorts iconiques."
+            },
+            "talent": {
+                "label": "Sources des Talents",
+                "hint": "Quels compendiums seront utilisés comme sources pour les talents dans l'arbre de talents."
+            }
+        }
+    },
+    "SKILL": {
+        "CATEGORY": {
+            "EXPLORATION": {
+                "label": "Exploration",
+                "hint": "Les compétences d'exploration concernent votre capacité à traverser le monde et relever ses défis."
+            },
+            "KNOWLEDGE": {
+                "label": "Connaissances",
+                "hint": "Les compétences de connaissances concernent l'apprentissage et la compréhension de votre personnage sur une gamme de sujets."
+            },
+            "SOCIAL": {
+                "label": "Social",
+                "hint": "Les compétences sociales concernent la capacité de votre personnage à interagir avec d'autres personnes ou groupes."
+            },
+            "CRAFTING": {
+                "label": "Artisanat",
+                "hint": "Compétences artisanales reflétant la capacité de votre personnage à créer des objets ou de l'équipement."
+            }
+        },
+        "LABELS": {
+            "athletics": "Athlétisme",
+            "awareness": "Vigilance",
+            "stealth": "Discrétion",
+            "wilderness": "Nature",
+            "arcana": "Arcanes",
+            "medicine": "Médecine",
+            "science": "Science",
+            "society": "Société",
+            "deception": "Tromperie",
+            "diplomacy": "Diplomatie",
+            "intimidation": "Intimidation",
+            "performance": "Représentation",
+            "smithing": "Forgeron",
+            "tailoring": "Couture",
+            "fletching": "Empennage",
+            "jewelcraft": "Joaillerie",
+            "runeweaving": "Tisserune",
+            "alchemy": "Alchimie",
+            "cooking": "Cuisine",
+            "enchanting": "Enchantement"
+        },
+        "RANKS": {
+            "UNTRAINED": {
+                "label": "Non formé",
+                "hint": "Vous n'avez aucune formation formelle dans ce domaine. Tout succès que vous avez en appliquant cette compétence est dû au bon sens ou à la chance."
+            },
+            "UNSPECIALIZED": {
+                "label": "Non spécialisé",
+                "hint": "Vous n'avez pas encore atteint une voie de spécialisation pour cette compétence."
+            },
+            "NOVICE": {
+                "label": "Novice",
+                "hint": "Vous avez une formation formelle ou une expérience pratique dans les applications fondamentales de cette compétence."
+            },
+            "APPRENTICE": {
+                "label": "Apprenti",
+                "hint": "Vous avez affiné et aiguisé les techniques de cette compétence jusqu'à une forte compétence fonctionnelle."
+            },
+            "SPECIALIST": {
+                "label": "Spécialiste",
+                "hint": "Votre maîtrise de cette compétence est accrue par l'expertise dans une voie de spécialisation avancée."
+            },
+            "ADEPT": {
+                "label": "Adepte",
+                "hint": "Vous êtes un expert en la matière et maîtrisez toutes les compétences de base et applications de cette compétence."
+            },
+            "MASTER": {
+                "label": "Maître",
+                "hint": "Vous êtes sans égal dans votre maîtrise de cette compétence et de votre voie de spécialisation avancée."
+            }
+        },
+        "PageSheet": "Compétence Crucible",
+        "SheetTitle": "Compétence {skill} de [{actor}]",
+        "ChoosePath": "Vous devez choisir une voie de spécialisation avant de faire progresser cette Compétence davantage.",
+        "CantAfford": "Vous ne pouvez pas vous permettre d'augmenter cette compétence. Le prochain rang coûte {cost} points et vous avez {points} points de compétence disponibles.",
+        "RollFlavor": "{name} fait un test de {skill}",
+        "RollTitle": "Test de Compétence {skill} de [{name}]",
+        "TooltipCheck": "[({a1} + {a2}) / 4] + Bonus de Compétence + Bonus d'Enchantement",
+        "TooltipPassive": "12 + Score"
+    },
+    "SPELL": {
+        "FIELDS": {
+            "description": {
+                "label": "Description du Sort"
+            },
+            "actions": {
+                "label": "Actions de base",
+                "hint": "Associez les Actions qui sont disponibles pour les personnages connaissant ce Sort iconique."
+            },
+            "runes": {
+                "label": "Runes",
+                "hint": "L'ensemble de Runes qui doivent être connues afin d'apprendre ce Sort iconique."
+            },
+            "gestures": {
+                "label": "Signes",
+                "hint": "L'ensemble de Signes qui doivent être connus afin d'apprendre ce Sort iconique."
+            },
+            "inflections": {
+                "label": "Inflexions",
+                "hint": "L'ensemble d'Inflexions qui doivent être connues afin d'apprendre ce Sort iconique."
+            }
+        },
+        "SHEET": {
+            "KNOWLEDGE": "Connaissances requises"
+        },
+        "Iconic": "Sort iconique",
+        "IconicPl": "Sorts iconiques",
+        "DamageType": "Type de dégâts",
+        "NameFormatNoun": "{gesture} de {rune}",
+        "NameFormatAdj": "{gesture} {rune}",
+        "COMPONENTS": {
+            "Rune": "Rune arcanique",
+            "RunePl": "Runes arcaniques",
+            "RuneNone": "Aucune Rune arcanique connue.",
+            "Gesture": "Signe Somatique",
+            "GesturePl": "Signes Somatiques",
+            "GestureNone": "Aucun Signe Somatique connu.",
+            "Inflection": "Inflexion Métamagique",
+            "InflectionPl": "Inflexions Métamagiques",
+            "InflectionNone": "Aucune Inflexion Métamagique connue."
+        },
+        "RUNES": {
+            "Soul": "Âme",
+            "SoulAdj": "Spirituel",
+            "Death": "Mort",
+            "DeathAdj": "Mortel",
+            "Earth": "Terre",
+            "EarthAdj": "Terrestre",
+            "Flame": "Flamme",
+            "FlameAdj": "Flamboyant",
+            "Frost": "Givre",
+            "FrostAdj": "Glacé",
+            "Illumination": "Illumination",
+            "IlluminationAdj": "Illuminé",
+            "Illusion": "Illusion",
+            "IllusionAdj": "Illusoire",
+            "Kinesis": "Kinésie",
+            "KinesisAdj": "Cinétique",
+            "LifeAdj": "Vital",
+            "Life": "Vie",
+            "Lightning": "Foudre",
+            "LightningAdj": "Voltaïque",
+            "Oblivion": "Néant",
+            "OblivionAdj": "Annihilant",
+            "Control": "Contrôle",
+            "ControlAdj": "Contrôlant"
+        },
+        "GESTURES": {
+            "Arrow": "Trait",
+            "Aspect": "Aspect",
+            "Aura": "Aura",
+            "Blast": "Explosion",
+            "Cone": "Cône",
+            "Conjure": "Conjuration",
+            "Create": "Création",
+            "Fan": "Souffle",
+            "Influence": "Influence",
+            "Pulse": "Onde",
+            "Ray": "Rayon",
+            "Sense": "Sens",
+            "Step": "Charge",
+            "Strike": "Frappe",
+            "Surge": "Afflux",
+            "Touch": "Contact",
+            "Ward": "Protection"
+        },
+        "INFLECTIONS": {
+            "Compose": "Façonner",
+            "ComposeAdj": "Façonné",
+            "DetermineAdj": "Scellé",
+            "Determine": "Sceller",
+            "Extend": "Perpétuer",
+            "ExtendAdj": "Perpétué",
+            "Elude": "Éluder",
+            "EludeAdj": "Éludé",
+            "Negate": "Inverser",
+            "NegateAdj": "Inversé",
+            "Pull": "Rappeler",
+            "PullAdj": "Attractif",
+            "Push": "Rejeter",
+            "PushAdj": "Répulsif",
+            "Quicken": "Hâter",
+            "QuickenAdj": "Hâté",
+            "Reshape": "Remodeler",
+            "ReshapeAdj": "Remodelé"
+        }
+    },
+    "TALENT": {
+        "FIELDS": {
+            "nodes": {
+                "label": "Nœuds de Talent",
+                "hint": "Assignez ce Talent pour être acheté depuis un ou plusieurs nœuds particuliers dans l'Arbre de Talents."
+            },
+            "description": {
+                "label": "Description du Talent"
+            },
+            "actions": {
+                "label": "Actions de base"
+            }
+        }
+    }
 }

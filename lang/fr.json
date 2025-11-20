@@ -1207,7 +1207,11 @@
                 "label": "Description du Talent"
             },
             "actions": {
-                "label": "Actions de base"
+                "label": "Actions de base",
+                "hint": "Associez les Actions qui sont disponibles pour les personnages possédant ce Talent."
+            },
+            "rune": {
+                "label": "Rune"
             }
         }
     }

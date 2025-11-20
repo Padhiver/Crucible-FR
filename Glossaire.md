@@ -20,6 +20,9 @@
 | Milestones | Jalons |
 | Damage | Dégâts |
 | Cover | Couverture |
+| Slot | Emplacement |
+| Scaling / Scaled | Évolution / Évolué |
+| Stackable | Empilable |
 
 ---
 
@@ -105,14 +108,54 @@
 | Willpower | Volonté |
 | Healing | Guérison |
 | Rallying | Ralliement |
+| Brute | Brute |
 | <Damage Type> | <Type de dégâts> |
 | <Resource> | <Ressource> |
 | <Skill> | <Compétence> |
+| Organic | Organique |
+| Noisy | Bruyante |
 
 ## Artisanat (Crafting)
 | Anglais | Français |
 |---------|----------|
 | Crafting Schematic | Plan de fabrication |
+| Alchemy | Alchimie |
+| Cooking | Cuisine |
+| Enchanting | Enchantement |
+| Fletching | Empennage |
+| Jewelcraft | Joaillerie |
+| Runeweaving | Tissage de Runes |
+| Smithing | Forgeron |
+| Tailoring | Couture |
+| Medicine | Médecine |
+| Science | Science |
+| Society | Société |
+| Deception | Tromperie |
+| Diplomacy | Diplomatie |
+| Intimidation | Intimidation |
+| Performance | Représentation |
+| Athletics | Athlétisme |
+| Stealth | Discrétion |
+| Wilderness | Nature |
+
+## Progression & Récompenses
+| Anglais | Français |
+|---------|----------|
+| Advancement | Avancement |
+| Level | Niveau |
+| Award | Attribuer |
+| Revoke | Révoquer |
+| Currency | Monnaie |
+
+## Économie
+| Anglais | Français |
+|---------|----------|
+| Copper Pieces (CP) | Pièces de Cuivre (PC) |
+| Silver Pieces (SP) | Pièces d'Argent (PA) |
+| Gold Pieces (GP) | Pièces d'Or (PO) |
+| Platinum Pieces (PP) | Pièces de Platine (PP) |
+| Treasure | Trésor |
+| Ingredient | Ingrédient |
 
 ## Équipement 
 
@@ -166,6 +209,17 @@
 | Refocus | Canalisation |
 | Reload | Rechargement |
 | Bulky | Encombrante |
+| Intuitive | Intuitive |
+| Returning | Retour |
+
+### Types d'Objets
+| Anglais | Français |
+|---------|----------|
+| Ammunition | Munition |
+| Bomb | Bombe |
+| Flask | Fiole |
+| Kit | Kit |
+| Implement | Instrument |
 
 ### Types de déplacement
 | Anglais | Français |
@@ -174,12 +228,30 @@
 | Step | Marche prudente |
 | Crawl | Reptation |
 | Jump | Saut |
+| Climb | Escalade |
 | Swim | Nage |
 | Fly | Vol |
 
 ---
 
 ## Taxonomie (Taxonomy)
+
+## Catégories de Créatures
+| Anglais | Français |
+|---------|----------|
+| Beast | Bête |
+| Celestial | Céleste |
+| Construct | Construit |
+| Dragon | Dragon |
+| Elemental | Élémentaire |
+| Fey | Fée |
+| Fiend | Fiélon |
+| Giant | Géant |
+| Humanoid | Humanoïde |
+| Monstrosity | Monstruosité |
+| Ooze | Vase |
+| Outsider | Extérieur |
+| Undead | Mort-vivant |
 
 ### Menace (Threat)
 | Anglais | Français |
@@ -423,7 +495,7 @@
 | Unaware | Distrait |
 | Blinded | Aveuglé |
 | Deafened | Assourdi |
-| Silenced | Réduit au silence |
+| Silenced | Aphone |
 | Invisible | Invisible |
 
 ### Dégâts sur la durée

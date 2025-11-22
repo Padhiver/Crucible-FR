@@ -118,13 +118,13 @@
 ## Artisanat (Crafting)
 | Anglais | Français |
 |---------|----------|
-| Crafting Schematic | Plan de fabrication |
+| Crafting Schematic | Schémas de fabrication |
 | Alchemy | Alchimie |
 | Cooking | Cuisine |
 | Enchanting | Enchantement |
 | Fletching | Empennage |
 | Jewelcraft | Joaillerie |
-| Runeweaving | Tissage de Runes |
+| Runeweaving | Tisserune |
 | Smithing | Forgeron |
 | Tailoring | Couture |
 | Medicine | Médecine |
@@ -252,6 +252,7 @@
 | Ooze | Vase |
 | Outsider | Extérieur |
 | Undead | Mort-vivant |
+| Outsider | Extérieur |
 
 ### Menace (Threat)
 | Anglais | Français |
@@ -283,7 +284,7 @@
 | Life | Vie |
 | Lightning | Foudre |
 | Illumination | Illumination |
-| Spirit | Esprit |
+| Soul | Âme |
 | Kinesis | Kinésie |
 | Death | Mort |
 | Earth | Terre |
@@ -291,6 +292,7 @@
 | Control | Contrôle |
 | Shadow | Ombre |
 | Stasis | Stase |
+| Illusion | Illusion |
 
 ## Signes (Gestures)
 
@@ -302,11 +304,13 @@
 | Fan | Souffle | Éventail ?
 | Influence | Influence |
 | Pulse | Onde |
+| Surge | Afflux |
 | Ray | Rayon |
 | Step | Charge |
 | Strike | Frappe |
 | Touch | Contact |
 | Ward | Protection |
+| Conjure | Conjuration |
 
 ## Inflexions (Inflections)
 

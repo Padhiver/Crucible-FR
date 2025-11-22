@@ -13,7 +13,7 @@
             "background": "Historique",
             "consumable": "Consommable",
             "loot": "Butin",
-            "schematic": "Plan de fabrication",
+            "schematic": "Schémas de fabrication",
             "spell": "Sort iconique",
             "taxonomy": "Taxonomie",
             "talent": "Talent",
@@ -942,7 +942,7 @@
         "FIELDS": {
             "dc": {
                 "label": "Difficulté du Défi",
-                "hint": "Assignez la valeur qui doit être dépassée lors d'un test de compétence d'artisanat pour réussir la fabrication de ce plan."
+                "hint": "Assignez la valeur qui doit être dépassée lors d'un test de compétence d'artisanat pour réussir la fabrication de ce schémas."
             },
             "hours": {
                 "label": "Heures",

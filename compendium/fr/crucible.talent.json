@@ -183,7 +183,7 @@
             "description": "<p>Vous avez été formé aux bases de la vigilance situationnelle et êtes capable de remarquer des détails importants sur votre environnement. Vous gagnez le rang <strong>Novice</strong> dans la compétence <strong>Vigilance</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez vérifier les sorties en entrant dans une pièce, et comment chercher des armes dissimulées, des pièges cachés et autres menaces. Vous savez repérer quand vous êtes suivi et comment chercher les cachettes communes.</p>"
         },
         "Backstab": {
-            "name": "Attaque sournoise",
+            "name": "Frappe traîtresse",
             "description": "<p>Vous concentrez votre ruse pour exploiter les points faibles d'une cible débordée. Vous identifiez une opportunité et frappez avec une efficacité mortelle.</p>"
         },
         "Bard": {
@@ -191,7 +191,7 @@
             "description": "<p>Vous pratiquez les traditions orales et musicales du conte héroïque pour inspirer du courage à vos alliés, démoraliser vos ennemis et trouver rapidement des solutions non conventionnelles aux problèmes.</p><p>Vous apprenez la <strong>Rune : Âme</strong> si vous ne la connaissez pas déjà. Lorsque vous restaurez le moral des alliés en utilisant la Rune d'Âme, vous gagnez <strong>+2 Faveurs</strong> à votre jet.</p>"
         },
         "Battle Focus": {
-            "name": "Concentration de combat",
+            "name": "Focaliseur de bataille",
             "description": "Vous trouvez la concentration et le calme dans le frisson de la bataille. Lorsque vous réussissez un <strong>Coup Critique</strong> infligeant des dégâts à la Santé ou au Moral, vous gagnez +1 Focus. Ce bénéfice ne peut se produire qu'une fois par Round."
         },
         "Beastmaster": {
@@ -383,7 +383,7 @@
             "description": "Cette technique d'arme à distance difficile vous permet de tirer plusieurs coups avec votre arme dans un cône de balayage, ciblant chaque ennemi différent dans la zone d'effet."
         },
         "Feinting Strike": {
-            "name": "Frappe de feinte",
+            "name": "Frappe feintée",
             "description": "<p>Une technique à deux armes qui fait une feinte avec votre arme principale, exposant votre cible pour une attaque main gauche.</p>"
         },
         "Ferocious Leap": {
@@ -423,7 +423,7 @@
             "description": "L'anticipation mène à l'action décisive. Lorsque vous avez le score d'<strong>Initiative</strong> le plus élevé pour un Round de combat, vous gagnez <strong>+1 Focus</strong>.</p>"
         },
         "Fulcrum": {
-            "name": "Point d'appui",
+            "name": "Pivot",
             "description": "<p>L'équilibre, le positionnement et le levier sont vos plus grands alliés au combat. Vous savez comment utiliser l'élan d'un ennemi contre lui et qu'une petite redirection de force peut renverser le cours de la bataille.</p>"
         },
         "Gesture: Aura": {
@@ -503,11 +503,11 @@
             "description": "<p>Vous êtes sans égal pour manipuler l'arcane vital afin de traiter les blessures. Vous apprenez la <strong>Rune : Vie</strong> si vous ne la connaissez pas déjà. Lorsque vous soignez des alliés en utilisant la Rune de Vie, vous gagnez <strong>+2 Faveurs</strong> à votre jet.</p>"
         },
         "Heavy Weapon Proficiency": {
-            "name": "Maîtrise des armes lourdes",
+            "name": "Armes lourdes : Maîtrise",
             "description": "<p>Vous avez une éducation fluide dans l'utilisation de l'armement martial. Vous gagnez le rang d'entraînement <strong>Compagnon</strong> et un <strong>Bonus de Compétence de +1</strong> avec les armes des catégories <strong>Simple</strong>, <strong>Lourde</strong> et <strong>Équilibrée</strong>.</p>"
         },
         "Heavy Weapon Training": {
-            "name": "Entraînement aux armes lourdes",
+            "name": "Armes lourdes : Entraînement",
             "description": "<p>Vous avez une éducation de base dans l'utilisation de l'armement martial. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes des catégories <strong>Lourde</strong> ou <strong>Équilibrée</strong>.</p>"
         },
         "Heavy Strike": {
@@ -643,15 +643,15 @@
             "description": "<p>Votre robustesse prodigieuse transmet une capacité surnaturelle à récupérer des blessures rapidement. Au début de votre tour, si vous n'êtes pas Affaibli, vous gagnez <strong>+1 Santé</strong>.</p>"
         },
         "Light Weapon Proficiency": {
-            "name": "Maîtrise des armes légères",
+            "name": "Armes légères : Maîtrise",
             "description": "<p>Vous avez une éducation fluide dans l'utilisation de l'armement martial. Vous gagnez le rang d'entraînement <strong>Compagnon</strong> et un <strong>Bonus de Compétence de +1</strong> avec les armes des catégories <strong>Légère</strong> et <strong>Équilibrée</strong>.</p>"
         },
         "Light Weapon Training": {
-            "name": "Entraînement aux armes légères",
+            "name": "Armes légères : Entraînement",
             "description": "<p>Vous avez une éducation de base dans l'utilisation de l'armement de finesse. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes des catégories <strong>Légère</strong> et <strong>Équilibrée</strong>.</p>"
         },
         "Lightbringer": {
-            "name": "Porte-Lumière",
+            "name": "Porteur de lumière",
             "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Illumination. Les sorts utilisant cette Rune causent la condition @Condition[irradiated] sur les Coups Critiques.</p><p>L'effet Irradié dure <strong>1 Round</strong> et inflige votre score de <strong>Présence</strong> comme dégâts <strong>Radiants</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
         },
         "Lunge": {
@@ -667,11 +667,11 @@
             "description": "Vous avez affiné votre corps en une arme dangereuse. Vos poings nus sont traités comme des armes de qualité Raffinée, augmentant leurs dégâts de +1."
         },
         "Mechanical Weapon Proficiency": {
-            "name": "Maîtrise des armes mécaniques",
+            "name": "Armes mécaniques : Maîtrise",
             "description": "<p>Vous avez une éducation fluide dans l'utilisation des arbalètes, armes à feu et autres armes mécaniques. Vous gagnez le rang d'entraînement <strong>Compagnon</strong> et un <strong>Bonus de Compétence de +1</strong> avec les armes de la catégorie <strong>Mécanique</strong>.</p>"
         },
         "Mechanical Weapon Training": {
-            "name": "Entraînement aux armes mécaniques",
+            "name": "Armes mécaniques : Entraînement",
             "description": "<p>Vous avez une éducation de base dans les arbalètes, armes à feu et autres armes mécaniques. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes de la catégorie <strong>Mécanique</strong>.</p>"
         },
         "Medicine Adept": {
@@ -711,11 +711,11 @@
             "description": "<p>Vous équilibrez la discipline monastique avec l'expertise des arts martiaux, équilibrant attaque et défense en harmonie.</p><p>Tant que vous êtes Sans Armure, vous gagnez un bonus de +2 à vos défenses de Réflexe et Volonté.</p><p>Tant que vous êtes à Mains nues, vous pouvez utiliser l'action Double Coup de Poing.</p>"
         },
         "Natural Weapon Proficiency": {
-            "name": "Maîtrise des armes naturelles",
+            "name": "Armes naturelles : Maîtrise",
             "description": "<p>Vous avez une familiarité fluide avec l'utilisation des armes corporelles naturelles. Vous gagnez le rang d'entraînement <strong>Compagnon</strong> et un <strong>Bonus de Compétence de +1</strong> avec les armes de la catégorie <strong>Naturelle</strong>.</p>"
         },
         "Natural Weapon Training": {
-            "name": "Entraînement aux armes naturelles",
+            "name": "Armes naturelles : Entraînement",
             "description": "<p>Vous avez une familiarité développée avec l'utilisation de caractéristiques de votre propre corps comme armes naturelles incluant griffes, mâchoires, queues ou autres mécanismes d'autodéfense. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes de la catégorie <strong>Naturelle</strong>.</p>"
         },
         "Necromancer": {
@@ -735,11 +735,11 @@
             "description": "<p>Vous saisissez toute opportunité pour capitaliser sur un ennemi qui vous tourne le dos. Vous pouvez effectuer un <strong>Assaut Opportuniste</strong> même si vous êtes autrement <strong>Pleinement Engagé</strong>, mais vous le faites sans les 2 Faveurs qui s'appliqueraient ordinairement à une telle attaque.</p>"
         },
         "Opportunistic Spellcraft": {
-            "name": "Sorcellerie ppportuniste",
+            "name": "Sorcellerie opportuniste",
             "description": "<p>Votre réflexion rapide peut tisser la magie pour exploiter de brèves fenêtres d'opportunité. Vous pouvez effectuer un <strong>Assaut Opportuniste</strong> en utilisant le Signe <strong>Contact</strong> au lieu d'une attaque d'arme de mêlée.</p>"
         },
         "Overwatch": {
-            "name": "Surveillance",
+            "name": "Surveillant",
             "description": "<p>Vous êtes un expert en combat contre les utilisateurs de magie. Vous savez comment conserver l'énergie et frapper au moment précis pour contrecarrer leur incantation.</p>"
         },
         "Patient Deflection": {
@@ -811,11 +811,11 @@
             "description": "Votre rapidité d'esprit et de corps sont également impressionnantes. Vous gagnez +2 Faveurs à tous les tests d'Initiative."
         },
         "Projectile Weapon Proficiency": {
-            "name": "Maîtrise des armes de projectile",
+            "name": "Armes de projectile : Maîtrise",
             "description": "<p>Vous avez une éducation fluide dans l'utilisation de l'armement de projectile. Vous gagnez le rang d'entraînement <strong>Compagnon</strong> et un <strong>Bonus de Compétence de +1</strong> avec les armes de la catégorie <strong>Projectile</strong>.</p>"
         },
         "Projectile Weapon Training": {
-            "name": "Entraînement aux armes de projectile",
+            "name": "Armes de projectile : Entraînement",
             "description": "<p>Vous avez une éducation de base en archerie et autres armes de projectile. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes des catégories <strong>Projectile</strong>.</p>"
         },
         "Provocateur": {
@@ -967,15 +967,15 @@
             "description": "<p>Vous avez maîtrisé une technique spécialisée pour incorporer un bouclier physique dans le signe <strong>Protection</strong>. Vous pouvez ignorer l'exigence de main libre pour les sorts utilisant le signe Protection tant que vous avez un <strong>Bouclier</strong> équipé.</p>"
         },
         "Skirmisher": {
-            "name": "Tirailleur",
+            "name": "Querelleur",
             "description": "<p>Vous êtes adepte pour entrer et sortir de la mêlée. Lorsque vous sortez du rayon d'<strong>Engagement</strong> d'un ennemi, cet ennemi a 2 Fléaux à tout <strong>Assaut Opportuniste</strong> contre vous."
         },
         "Smithing Journeyman": {
-            "name": "Forgeron : Compagnon",
+            "name": "Forger : Compagnon",
             "description": "<p>Vous avez un niveau d'expérience professionnel avec la compétence de Forgeron et pouvez travailler à travers certaines des techniques et schémas les plus avancés avec du temps.</p><p>Les propriétés de base de la plupart des métaux courants sont faciles à retenir pour vous sans documents de référence, mais vous avez toujours besoin de livres pour les schémas et alliages plus rares.</p>"
         },
         "Smithing Novice": {
-            "name": "Forgeron : Novice",
+            "name": "Forge : Novice",
             "description": "<p>Vous avez reçu une formation dans les fondamentaux de Forgeron et êtes capable de travailler avec la plupart des métaux courants.</p><p>Vous avez toujours besoin de consulter des schémas et des livres pour identifier des alliages particuliers et leurs propriétés.</p>"
         },
         "Snakeblood": {
@@ -1031,7 +1031,7 @@
             "description": "<p>Vous avez reçu une formation dans les bases de la discrétion, de l'infiltration et du subterfuge. Vous gagnez le rang <strong>Novice</strong> dans la compétence <strong>Discrétion</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez comment utiliser la lumière et l'ombre pour masquer votre présence, répartir votre poids en marchant afin de vous déplacer plus silencieusement, et vous avez appris quelques astuces de déguisement pour vous fondre dans une foule. Vous pouvez paraître non suspect lorsque vous êtes entouré par d'autres, vous cacher dans une pièce sombre, et pouvez vous déplacer assez silencieusement pour éviter la détection par la personne moyenne.</p>"
         },
         "Still Lake": {
-            "name": "Lac immobile",
+            "name": "Lac impassible",
             "description": "<p>Vos expériences de vie fournissent une sérénité qui vous permet de résister à la manipulation tentée par d'autres.</p><p>Les <strong>Attaques de Compétence</strong> contre vous provenant de n'importe laquelle des compétences <strong>Sociales</strong> sont faites avec <strong>2 Fléaux</strong>.</p>"
         },
         "Strategic Repositioning": {
@@ -1083,11 +1083,11 @@
             "description": "<p>Vous avez reçu une formation dans les fondamentaux de la Couture et êtes capable de travailler avec la plupart des tissus et modèles courants.</p><p>Vous avez toujours besoin de consulter des recettes et des livres pour identifier les tissus, cuirs et leurs propriétés.</p>"
         },
         "Talisman Weapon Proficiency": {
-            "name": "Maîtrise des Armes Talisman",
+            "name": "Armes Talisman : Maîtrise",
             "description": "<p>Vous avez une éducation fluide dans l'utilisation des talismans, orbes, focalisateurs ou autres armes similaires. Vous gagnez le rang d'entraînement <strong>Compagnon</strong> et un <strong>Bonus de Compétence de +1</strong> avec les armes de la catégorie <strong>Talisman</strong>.</p>"
         },
         "Talisman Weapon Training": {
-            "name": "Entraînement aux Armes Talisman",
+            "name": "Armes Talisman : Entraînement",
             "description": "<p>Vous avez une éducation de base dans l'utilisation des talismans, orbes, focalisateurs ou autres armes similaires. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes de la catégorie <strong>Talisman</strong>.</p>"
         },
         "Testudo": {
@@ -1175,7 +1175,7 @@
             "description": "<p>Vous avez reçu une formation dans les bases de la survie en pleine nature et de la traversée. Vous gagnez le rang <strong>Novice</strong> dans la compétence <strong>Nature</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez comment trouver et construire un abri sûr contre les éléments, allumer un feu pour la chaleur, rester au frais dans des environnements chauds. Vous pouvez trouver de l'eau potable et sûre dans la plupart des endroits, et comment identifier quelles plantes et animaux peuvent servir de sources de nourriture sûres.</p>"
         },
         "Wildspeaker": {
-            "name": "Parleur sauvage",
+            "name": "Orateur sauvage",
             "description": "<p>Vous avez un don surnaturel pour communiquer avec les animaux. Par le langage corporel et les sons, vous êtes capable d'interpréter et de communiquer dans le langage de la nature.</p>"
         },
         "Wrestler": {
@@ -1183,7 +1183,7 @@
             "description": "Vous êtes capable de soumettre des adversaires en utilisant votre Force physique."
         },
         "Zealous Smite": {
-            "name": "Châtiment zélé",
+            "name": "Correction zélée",
             "description": "<p>Vous pouvez imprégner un pouvoir vertueux dans votre coup avec une arme lourde.</p>"
         }
     }

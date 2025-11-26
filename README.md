@@ -18,11 +18,11 @@ Le projet original est en constante évolution, et de ce fait, une traduction co
             - [ ] Summoned Creatures
         - [ ] Adversary Options
             - [ ] Adversary Talents
-            - [ ] Archetypes
-            - [ ] Taxonomies
+            - [x] Archetypes
+            - [x] Taxonomies
         - [ ] Character Options
-            - [ ] Ancestries
-            - [ ] Backgrounds
+            - [x] Ancestries
+            - [x] Backgrounds
             - [ ] Iconic Spells
             - [ ] Talents
         - [ ] Equipment

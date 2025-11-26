@@ -28,7 +28,7 @@
         "Tier 1": "Palier 1",
         "Weaponry": "Armement",
         "Parry": "Parade",
-        "Critical Hits": "Coups Critiques",
+        "Critical Hits": "Coups critiques",
         "Inflections": "Inflexions",
         "Training": "Formation",
         "Tradecraft": "Artisanat",
@@ -148,7 +148,7 @@
         },
         "Assess Strength": {
             "name": "Évaluer la force",
-            "description": "<p>Vous prenez un moment pour observer une créature que vous pouvez voir et développez une intuition sur ses points forts.</p>\n<p>Effectuez un <strong>Test de Connaissances</strong> utilisant une Compétence choisie par le Maître de Jeu. En cas de succès, vous apprenez quel type de Défense entre Physique, Fortitude, Volonté ou Réflexe est le plus élevé chez la créature. Sur une Réussite Critique, vous apprenez les deux types de défense les plus élevés.</p>"
+            "description": "<p>Vous prenez un moment pour observer une créature que vous pouvez voir et développez une intuition sur ses points forts.</p>\n<p>Effectuez un <strong>Test de Connaissances</strong> utilisant une Compétence choisie par le Maître du jeu. En cas de succès, vous apprenez quel type de Défense entre Physique, Fortitude, Volonté ou Réflexe est le plus élevé chez la créature. Sur une Réussite critique, vous apprenez les deux types de défense les plus élevés.</p>"
         },
         "Athletics Adept": {
             "name": "Athlétisme : Adepte",
@@ -216,7 +216,7 @@
         },
         "Blood Magic": {
             "name": "Magie du sang",
-            "description": "<p>Vous comptez sur des techniques occultes pour transformer la douleur physique en potentiel arcanique.</p><p>Vous lancez des sorts en dépensant de la <strong>Santé</strong> au lieu de <strong>Focus</strong>. Lors du lancement d'un sort, chaque point de Focus coûte 10 points de Santé à la place. Les sorts que vous lancez ne peuvent pas restaurer votre propre <strong>Santé</strong>.</p>"
+            "description": "<p>Vous comptez sur des techniques occultes pour transformer la douleur physique en potentiel arcanique.</p><p>Vous lancez des sorts en dépensant de la <strong>Santé</strong> à la place du <strong>Focus</strong>. Lors du lancement d'un sort, chaque point de Focus coûte 10 points de Santé à la place. Les sorts que vous lancez ne peuvent pas restaurer votre propre <strong>Santé</strong>.</p>"
         },
         "Body Block": {
             "name": "Opposition corporelle",
@@ -236,7 +236,7 @@
         },
         "Carefree": {
             "name": "Insouciant",
-            "description": "<p>Vous êtes capable de compartimenter et d'ignorer les revers, offrant une capacité remarquable à récupérer des dommages à votre Moral.</p>\n<p>Votre <strong>Seuil de Folie</strong> est réduit de 1, vous rendant plus facile à soigner.</p>"
+            "description": "<p>Vous êtes capable de compartimenter et d'ignorer les revers, offrant une capacité remarquable à récupérer des dégâts à votre Moral.</p>\n<p>Votre <strong>Seuil de Folie</strong> est réduit de 1, vous rendant plus facile à soigner.</p>"
         },
         "Clarify Intent": {
             "name": "Clarifier l'intention",
@@ -280,7 +280,7 @@
         },
         "Counterspell": {
             "name": "Contresort",
-            "description": "<p>Vous réagissez immédiatement à un sort en train d'être lancé et composez une rune et un signe conçus pour démêler et nier la sorcellerie d'un mage ennemi.</p><h2 class=\"divider\">Notes de test</h2><p>Cette action peut maintenant être utilisée en playtest, mais n'est pas encore <em>entièrement automatisée</em>. Le Contresort peut être effectué, mais il revient au Maître de Jeu d'annuler manuellement un sort précédemment appliqué et de déduire manuellement son coût en <strong>Action</strong> et <strong>Focus</strong>.</p>"
+            "description": "<p>Vous réagissez immédiatement à un sort en train d'être lancé et composez une rune et un signe conçus pour démêler et nier la sorcellerie d'un mage ennemi.</p><h2 class=\"divider\">Notes de test</h2><p>Cette action peut maintenant être utilisée en playtest, mais n'est pas encore <em>entièrement automatisée</em>. Le Contresort peut être effectué, mais il revient au Maître du jeu d'annuler manuellement un sort précédemment appliqué et de déduire manuellement son coût en <strong>Action</strong> et <strong>Focus</strong>.</p>"
         },
         "Counter Strike": {
             "name": "Contre-Attaque",
@@ -376,7 +376,7 @@
         },
         "Eye of the Storm": {
             "name": "Œil du cyclone",
-            "description": "<p>Après avoir retardé votre Tour, gagnez +2 Faveurs sur toute Frappe ou attaque magique contre un ennemi que vous avez laissé agir avant vous ce Round.</p><p>TODO: Nécessite automatisation. Pour l'instant, appliquez les faveurs manuellement.</p>"
+            "description": "<p>Après avoir retardé votre Tour, gagnez +2 Faveurs sur toute Frappe ou attaque magique contre un ennemi que vous avez laissé agir avant vous ce Round.</p><p>TODO : Nécessite automatisation. Pour l'instant, appliquez les faveurs manuellement.</p>"
         },
         "Fan of Arrows": {
             "name": "Éventail de flèches",
@@ -604,7 +604,7 @@
         },
         "Intuit Weakness": {
             "name": "Intuition de faiblesse",
-            "description": "<p>Vous calmez votre esprit et étudiez la physiologie de votre ennemi, cherchant une vulnérabilité dans ses défenses.</p><p>Effectuez un <strong>Test de Connaissances</strong> utilisant une Compétence appropriée choisie par le Maître de Jeu. En cas de succès, vous apprenez le type de Dégâts envers lequel la créature a la plus grande vulnérabilité, le cas échéant. Sur une Réussite Critique, vous apprenez les deux types de Dégâts qui ont la plus grande vulnérabilité.</p>"
+            "description": "<p>Vous calmez votre esprit et étudiez la physiologie de votre ennemi, cherchant une vulnérabilité dans ses défenses.</p><p>Effectuez un <strong>Test de Connaissances</strong> utilisant une Compétence appropriée choisie par le Maître du jeu. En cas de succès, vous apprenez le type de Dégâts envers lequel la créature a la plus grande vulnérabilité, le cas échéant. Sur une Réussite Critique, vous apprenez les deux types de Dégâts qui ont la plus grande vulnérabilité.</p>"
         },
         "Iramancer": {
             "name": "Furimancien",
@@ -704,7 +704,7 @@
         },
         "Mnemonic Realization": {
             "name": "Réalisation mnémonique",
-            "description": "<p>Votre esprit aiguisé est plein de secrets et de techniques pour s'en souvenir. Une fois par Jour vous pouvez focaliser vos pensées et tenter de vous rappeler un mot qui déclenche votre mémoire.</p>\n<p>Le Maître de Jeu doit vous fournir un indice d'un mot qui est approprié pour votre direction d'enquête. Il est laissé à la discrétion du Maître de Jeu d'être direct ou vague avec l'indice qu'il fournit.</p>"
+            "description": "<p>Votre esprit aiguisé est plein de secrets et de techniques pour s'en souvenir. Une fois par Jour vous pouvez focaliser vos pensées et tenter de vous rappeler un mot qui déclenche votre mémoire.</p>\n<p>Le Maître du jeu doit vous fournir un indice d'un mot qui est approprié pour votre direction d'enquête. Il est laissé à la discrétion du Maître du jeu d'être direct ou vague avec l'indice qu'il fournit.</p>"
         },
         "Monk": {
             "name": "Moine",
@@ -900,7 +900,7 @@
         },
         "Runewarden": {
             "name": "Gardien des Runes",
-            "description": "<p>Votre maîtrise de l'arcane vous rend plus résilient aux dommages élémentaires et spirituels. Vous gagnez un bonus de <strong>Résistance</strong> égal à la moitié de votre Sagesse pour chaque type de dégâts Élémentaire ou Spirituel où vous connaissez la Rune Arcanique harmonisée à ce type de dégâts.</p><p>Lorsque vous utilisez le signe <strong>Protection</strong>, la Résistance fournie par votre Protection augmente aussi de la moitié de votre Sagesse.</p>"
+            "description": "<p>Votre maîtrise de l'arcane vous rend plus résilient aux dégâts élémentaires et spirituels. Vous gagnez un bonus de <strong>Résistance</strong> égal à la moitié de votre Sagesse pour chaque type de dégâts Élémentaire ou Spirituel où vous connaissez la Rune Arcanique harmonisée à ce type de dégâts.</p><p>Lorsque vous utilisez le signe <strong>Protection</strong>, la Résistance fournie par votre Protection augmente aussi de la moitié de votre Sagesse.</p>"
         },
         "Runeweaving Journeyman": {
             "name": "Tisserune : Compagnon",
@@ -1056,7 +1056,7 @@
         },
         "Sundering Strike": {
             "name": "Frappe fracturante",
-            "description": "<p>Vous connaissez une technique martiale pour exploiter les points les plus faibles des défenses d'un ennemi, les exposant à davantage de dommages.</p>"
+            "description": "<p>Vous connaissez une technique martiale pour exploiter les points les plus faibles des défenses d'un ennemi, les exposant à davantage de dégâts.</p>"
         },
         "Surgeweaver": {
             "name": "Tissefoudre",
@@ -1096,7 +1096,7 @@
         },
         "Thick Skin": {
             "name": "Peau épaisse",
-            "description": "Votre robustesse physique vous rend plus résistant aux dommages. Vous gagnez +2 Résistance aux dégâts Contondants, Tranchants et Perforants."
+            "description": "Votre robustesse physique vous rend plus résistant aux dégâts. Vous gagnez +2 Résistance aux dégâts Contondants, Tranchants et Perforants."
         },
         "Thoughtbinder": {
             "name": "Censeur",
@@ -1152,7 +1152,7 @@
         },
         "War Mage": {
             "name": "Mage de guerre",
-            "description": "<p>Votre sorcellerie est affinée comme une arme de guerre pour contrecarrer les incantations d'autres mages. Vous pouvez demander au Maître de Jeu si vous connaissez une Rune capable de contrer un sort ennemi, même si vous ne reconnaissez pas le sort lancé. Vous gagnez +2 Faveurs à toute tentative de Contresort.</p>"
+            "description": "<p>Votre sorcellerie est affinée comme une arme de guerre pour contrecarrer les incantations d'autres mages. Vous pouvez demander au Maître du jeu si vous connaissez une Rune capable de contrer un sort ennemi, même si vous ne reconnaissez pas le sort lancé. Vous gagnez +2 Faveurs à toute tentative de Contresort.</p>"
         },
         "Weak Points": {
             "name": "Points faibles",

@@ -1,0 +1,88 @@
+{
+  "label": "Taxonomies",
+  "mapping": {
+    "description": "system.description"
+  },
+  "folders": {
+    "Dragon": "Dragon",
+    "Elemental": "Élémentaire",
+    "Monstrosity": "Monstruosité",
+    "Undead": "Mort-vivant",
+    "Giant": "Géant",
+    "Humanoid": "Humanoïde",
+    "Construct": "Artificiel",
+    "Beast": "Bête",
+    "Outsiders": "Extérieurs",
+    "Ooze": "Vase"
+  },
+  "entries": {
+    "Amphibian": {
+      "name": "Amphibien",
+      "description": "<p>Bêtes qui habitent dans ou près de l'eau. Les Amphibiens sont typiquement dextres, mais certaines variétés sont puissantes ou de grande taille.</p><ul><li><p><strong>Taille</strong> : variable</p></li><li><p><strong>Foulée</strong> : variable</p></li></ul>"
+    },
+    "Boar": {
+      "name": "Sanglier",
+      "description": "<p>Mammifères avec une peau épaisse, des défenses dangereuses et un centre de masse bas et puissant.</p>"
+    },
+    "Hyena": {
+      "name": "Hyène",
+      "description": "Mammifères de la famille des hyènes. Les hyènes sont des chasseurs de meute carnivores avec des cous et des mâchoires puissants."
+    },
+    "Drake": {
+      "name": "Drake",
+      "description": "<p>Créatures serpentines qui sont des parents moindres des dragons. Les Drakes vivent et chassent généralement en meute, contrairement aux dragons complets plus solitaires. Les Drakes vont des variétés plus jeunes et plus petites souvent appelées \"Draketeaux\" aux spécimens énormes parfois appelés \"Ultra Drakes\".</p><p>Variations de taille observées incluent :</p><ul><li><p><strong>Draketeau</strong> : Taille 3, Foulée 10</p></li><li><p><strong>Drake</strong> : Taille 6, Foulée 16</p></li><li><p><strong>Ultra Drake</strong> : Taille 9, Foulée 12</p></li></ul><p>Différents types de Drakes présentent une gamme différente de résistances et de vulnérabilités aux dégâts selon leur sous-espèce.</p>"
+    },
+    "Earth Elemental": {
+      "name": "Élémentaire de Terre",
+      "description": "<p>Créatures élémentaires correspondant à l'élément de la Terre.</p>"
+    },
+    "Fire Elemental": {
+      "name": "Élémentaire de Feu",
+      "description": "<p>Créatures élémentaires correspondant à l'élément du Feu.</p>"
+    },
+    "Frost Elemental": {
+      "name": "Élémentaire de Givre",
+      "description": "<p>Créatures élémentaires correspondant à l'élément du Givre.</p>"
+    },
+    "Harbinger": {
+      "name": "Annonciateur",
+      "description": "<p>Êtres d'un autre monde venant du vide au-delà.</p>"
+    },
+    "Hobgoblin": {
+      "name": "Hobgobelin",
+      "description": "Les Hobgobelins sont des humanoïdes qui se rassemblent typiquement dans des sociétés martiales qui sont ordonnées et disciplinées. Les Hobgobelins sont à la fois rusés et intransigeants, faisant des ennemis dangereux ou des alliés puissants."
+    },
+    "Ogre": {
+      "name": "Ogre",
+      "description": "<p>Géants massifs qui sont renommés pour leur force brute et leur approche directe de la résolution de problèmes.</p>"
+    },
+    "Skeleton": {
+      "name": "Squelette",
+      "description": "<p>Habitants mortels façonnés d'os et de tendons.</p>"
+    },
+    "Storm Elemental": {
+      "name": "Élémentaire de Tempête",
+      "description": "<p>Créatures élémentaires correspondant à l'élément de la Foudre.</p>"
+    },
+    "Crystal Spider": {
+      "name": "Araignée de Cristal",
+      "description": "<p>Arachnide composé de ou incrusté de plaques et formations cristallines réfractives.</p>"
+    },
+    "Slime": {
+      "name": "Limon",
+      "description": "<p>Créatures faites principalement de matière gélatineuse. Elles sont généralement lentes, de petite taille et incapables de sorcellerie ou de parole. Certaines exceptions ont été documentées avec des variations de limons qui sont grands, rapides ou capables de communication.</p>"
+    },
+    "War Machine": {
+      "name": "Machine de Guerre",
+      "description": "<p>Artificiels bâtis dans le but d'être des instruments de guerre ou des gardiens formidables.</p>"
+    },
+    "Werewolf": {
+      "name": "Loup-garou",
+      "description": "<p>Métamorphes lycanthropes qui marchent comme des hommes mais prennent une forme de loup.</p>"
+    },
+    "Winged Terror": {
+      "name": "Terreur Ailée",
+      "description": "<p>Créatures monstrueuses qui règnent sur les cieux et s'attaquent à ceux en dessous.</p>"
+    }
+  }
+}

@@ -324,6 +324,7 @@
 | Pull | Rappeler |
 | Push | Rejeter |
 | Quicken | Hâter |
+| Quicken | Remodeler |
 
 ---
 

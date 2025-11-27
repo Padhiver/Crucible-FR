@@ -119,6 +119,7 @@
 | Anglais | Français |
 |---------|----------|
 | Crafting Schematic | Schémas de fabrication |
+| Tradeskills | Savoir-faire |
 | Alchemy | Alchimie |
 | Cooking | Cuisine |
 | Enchanting | Enchantement |
@@ -384,6 +385,41 @@
 | Wisdom | Sagesse |
 | Presence | Présence |
 
+### Domaines de connaissances
+| Anglais | Français |
+|---------|----------|
+| Alchemy | Alchimie |
+| Celestials | Célestes |
+| Elementals | Élémentaires |
+| Fey | Fées |
+| Fiends | Fiélons |
+| Gods | Dieux |
+| Outsiders | Extérieurs |
+| Rituals | Rituels |
+| Souls | Âmes |
+| Forensics | Criminalistique |
+| Tracking | Pistage |
+| Intrigue | Intrigue |
+| Politics | Politique |
+| Warfare | Guerre |
+| Dragons | Dragons |
+| Monsters | Monstres |
+| Undeath | Non-mort |
+| Arts | Arts |
+| Cosmology | Cosmologie |
+| Machines | Machines |
+| Weather | Météo |
+| Ancients | Anciens |
+| Artifacts | Artefacts |
+| Crafts | Artisanat |
+| Crime | Crime |
+| Legends | Légendes |
+| Trade | Commerce |
+| Beasts | Bêtes |
+| Plants | Plantes |
+| Seafaring | Navigation |
+| Subterranea | Souterrains |
+
 ---
 
 ## Compétences (Skills)
@@ -398,7 +434,18 @@
 ### Compétences spécifiques
 | Anglais | Français |
 |---------|----------|
+| Athletics | Athlétisme |
 | Awareness | Vigilance |
+| Stealth | Discrétion |
+| Wilderness | Nature |
+| Arcana | Arcane |
+| Medicine | Médecine |
+| Science | Science |
+| Society | Société |
+| Deception | Tromperie |
+| Diplomacy | Diplomatie |
+| Intimidation | Intimidation |
+| Performance | Représentation |
 
 ### Spécialisations
 | Anglais | Français |
@@ -413,11 +460,11 @@
 |---------|----------|
 | Untrained | Non formé |
 | Novice | Novice |
-| Apprentice | Apprenti |
-| Specialist | Spécialiste |
+| Journeyman | Compagnon |
 | Adept | Adepte |
 | Master | Maître |
-| Journeyman | Compagnon |
+| Apprentice | Apprenti |
+| Specialist | Spécialiste |
 
 ---
 

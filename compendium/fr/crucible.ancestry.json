@@ -1,41 +1,40 @@
 {
-  "label": "Ascendances",
-  "mapping": {
-    "description": "system.description"
-  },
-  "folders": {},
-  "entries": {
-    "Devilkin": {
-      "name": "Diable",
-      "description": "<p>Vous êtes né avec une influence magique inattendue sur votre création. Votre apparence physique montre des signes révélateurs que les superstitieux associent aux êtres planaires - chair cramoisie, ailes inefficaces ou cornes, yeux reptiliens. Votre aversion pour la lumière et votre résistance surnaturelle au feu ne font pas grand-chose pour dissuader les gens de penser que vous êtes un véritable diable.</p>"
+    "label": "Ascendances",
+    "mapping": {
+        "description": "system.description"
     },
-    "Dwarven": {
-      "name": "Nain",
-      "description": "<p>Comme vos parents avant vous, vous êtes né avec la fortitude durable des Nains. Votre stature robuste et votre apparence physique costaude sont les marques d'un peuple né de la terre et de la pierre. Un héritage de résilience physique est vôtre à hériter, car dans votre poitrine bat un cœur de pierre.</p>"
-    },
-    "Elvish": {
-      "name": "Elfe",
-      "description": "<p>Gracieux dans le mouvement et rapide dans la pensée, vous êtes né un elfe à la longue vie. Votre cadre menu et agile et vos traits sculptés sont les traits hérités d'un peuple pour qui l'élégance est un mode de vie. Votre prédisposition à la réflexion rapide et au mouvement précis sont les résultats évolutifs de centaines d'années de tradition.</p>"
-    },
-    "Giantkin": {
-      "name": "Géant",
-      "description": "<p>Des forces élémentaires ont présidé à votre naissance, vous insufflant une vigueur surnaturelle. Votre grand cadre et votre constitution musculaire conduisent souvent les autres à croire que vous êtes une masse de muscles irréfléchie, mais le vôtre est un peuple connu surtout pour sa résilience physique et le puits profond de ses connaissances. Vous avez hérité de la force des montagnes.</p>"
-    },
-    "Gnome": {
-      "name": "Gnome",
-      "description": "<p>La vôtre fut une naissance de célébration exubérante. Votre corps diminutif et vos traits délicats sont associés à une propension presque surnaturelle à la découverte. Les traditions de votre peuple embrassent une soif de vie et l'importance de la réflexion rapide et de l'action rapide.</p>"
-    },
-    "Halfling": {
-      "name": "Halfelin",
-      "description": "<p>Vous avez été élevé dans une crèche entouré d'autres halfelins. Votre stature lilliputienne, vos pieds poilus à semelles épaisses, et la rapidité de votre esprit et de votre corps sont ce pour quoi votre peuple est le plus connu. Le vôtre est un peuple pour qui l'éducation et la tradition sont primordiales.</p>"
-    },
-    "Human": {
-      "name": "Humain",
-      "description": "<p>Trouvé parmi d'innombrables conditions et lieux éloignés, vous êtes né un humain toujours adaptable. Grand ou petit, mince, musclé ou rond, votre apparence physique n'est rien si ce n'est variée. Les humains sont surtout connus pour une prédisposition génétique à la détermination, avec des traditions qui poussent une volonté obstinée de survivre.</p>"
-    },
-    "Orcish": {
-      "name": "Orque",
-      "description": "<p>Votre naissance a été marquée par les étoiles et les traditions d'un peuple fier et endurant. Votre corps grand et bien tonique et votre propension naturelle à la robustesse ont des origines parmi un peuple exposé à la lutte implacable d'un climat nordique rude. Votre peuple est connu pour sa force et sa résilience avant tout.</p>"
+    "entries": {
+        "Devilkin": {
+            "name": "Diable",
+            "description": "<p>Vous êtes né avec une influence magique inattendue sur votre création. Votre apparence physique montre des signes révélateurs que les superstitieux associent aux êtres planaires - chair cramoisie, ailes inefficaces ou cornes, yeux reptiliens. Votre aversion pour la lumière et votre résistance surnaturelle au feu ne font pas grand-chose pour dissuader les gens de penser que vous êtes un véritable diable.</p>"
+        },
+        "Dwarven": {
+            "name": "Nain",
+            "description": "<p>Comme vos parents avant vous, vous êtes né avec la fortitude durable des Nains. Votre stature robuste et votre apparence physique costaude sont les marques d'un peuple né de la terre et de la pierre. Un héritage de résilience physique vous est légué, car dans votre poitrine bat un cœur de pierre.</p>"
+        },
+        "Elvish": {
+            "name": "Elfe",
+            "description": "<p>Gracieux dans le mouvement et rapide dans la pensée, vous êtes né elfe à la longue vie. Votre carrure menue et agile ainsi que vos traits sculptés sont les attributs hérités d'un peuple pour qui l'élégance est un mode de vie. Votre prédisposition à la réflexion rapide et au mouvement précis sont les résultats d'une évolution de centaines d'années de tradition.</p>"
+        },
+        "Giantkin": {
+            "name": "Géant",
+            "description": "<p>Des forces élémentaires ont présidé à votre naissance, vous insufflant une vigueur surnaturelle. Votre grande stature et votre constitution musculaire conduisent souvent les autres à croire que vous n'êtes qu'une masse de muscles irréfléchie, mais votre peuple est surtout connu pour sa résilience physique et le puits profond de ses connaissances. Vous avez hérité de la force des montagnes.</p>"
+        },
+        "Gnome": {
+            "name": "Gnome",
+            "description": "<p>Votre naissance fut une célébration exubérante. Votre petit corps et vos traits délicats sont associés à une propension presque surnaturelle à la découverte. Les traditions de votre peuple embrassent une soif de la vie ainsi que l'importance de la réflexion rapide et de l'action rapide.</p>"
+        },
+        "Halfling": {
+            "name": "Halfelin",
+            "description": "<p>Vous avez été élevé dans une crèche entouré d'autres halfelins. Votre stature lilliputienne, vos pieds poilus à plante épaisse, et la rapidité de votre esprit et de votre corps sont ce pour quoi votre peuple est le plus connu. L'éducation et la tradition sont primordiales pour votre peuple.</p>"
+        },
+        "Human": {
+            "name": "Humain",
+            "description": "<p>Trouvé parmi d'innombrables conditions et de lieux éloignés, vous êtes né humain toujours adaptable. Grand ou petit, mince, musclé ou rond, votre apparence physique peut être variée. Les humains sont surtout connus pour leur prédisposition génétique à la détermination, avec des traditions qui poussent à une volonté obstinée de survivre.</p>"
+        },
+        "Orcish": {
+            "name": "Orque",
+            "description": "<p>Votre naissance a été marquée par les étoiles et les traditions d'un peuple fier et endurant. Votre corps grand et tonique ainsi que votre propension naturelle à la robustesse ont des origines venant d'un peuple exposé à la lutte incessante d'un climat nordique rigoureux. Votre peuple est avant tout connu pour sa force et sa résilience.</p>"
+        }
     }
-  }
 }

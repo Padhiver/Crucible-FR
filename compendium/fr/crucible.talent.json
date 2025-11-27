@@ -1,7 +1,11 @@
 {
     "label": "Talents",
     "mapping": {
-        "description": "system.description"
+        "description": "system.description",
+        "actions": {
+            "path": "system.actions",
+            "converter": "actions_converter"
+        }
     },
     "folders": {
         "Runes": "Runes",
@@ -13,7 +17,6 @@
         "Other": "Autre",
         "Miscellaneous": "Divers",
         "Dodge": "Esquive",
-        "Upgrades": "Améliorations",
         "Willpower": "Volonté",
         "One-Handed": "À une main",
         "Resistances": "Résistances",
@@ -37,17 +40,11 @@
         "Heavy": "Lourd",
         "Unarmed": "Mains nues",
         "Projectile": "Projectile",
-        "Gestures": "Signes",
         "Armor": "Armure",
         "Focus": "Focus",
         "Health": "Santé",
         "Signature": "Signature",
-        "Melee": "Mêlée",
-        "Defense": "Défense",
-        "Movement": "Déplacement",
-        "Resources": "Ressources",
-        "Ranged": "À distance",
-        "Spellcraft": "Sorcellerie"
+        "Movement": "Déplacement"
     },
     "entries": {
         "Control Proficiency": {
@@ -92,15 +89,21 @@
         },
         "Soul Proficiency": {
             "name": "Maîtrise de l'Âme",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de le l'Âme. Vous gagnez un <strong>Bonus de Compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Évoquer</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune d'Âme. Vous gagnez un <strong>Bonus de Compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Évoquer</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "Alchemical Resolve": {
             "name": "Détermination alchimique",
-            "description": "Vous appliquez rapidement des vapeurs alchimiques qui insufflent à votre allié une bravoure supplémentaire face à l'horreur."
+            "description": "Vous appliquez rapidement des vapeurs alchimiques qui insufflent à votre allié une bravoure supplémentaire face à l'horreur.",
+            "actions": {
+                "alchemicalResolve": {
+                    "name": "Détermination alchimique",
+                    "description": "<p>Vous remontez rapidement le Moral d'un allié à 4 pieds en projetant des vapeurs. Effectuez un Test de <strong>Médecine</strong> contre le <strong>Seuil de Folie</strong> de la cible. Des réussites restaurent son <strong>Moral</strong>.</p>"
+                }
+            }
         },
         "Alchemy Journeyman": {
             "name": "Alchimie : Compagnon",
-            "description": "<p>Vous avez un niveau d'expérience professionnel avec les sciences alchimiques et pouvez réaliser certains des processus alchimiques les plus avancés avec suffisamment de temps.</p><p>Les propriétés de base de la plupart des ingrédients courants sont faciles à retenir pour vous sans documents de référence, mais vous avez toujours besoin de livres pour les recettes et ingrédients plus rares.</p>"
+            "description": "<p>Vous avez un niveau d'expérience professionnel avec les sciences alchimiques et pouvez réaliser certains des processus alchimiques les plus avancés avec suffisamment de temps.</p><p>Les propriétés de base de la plupart des ingrédients courants vous sont faciles à retenir sans documents de référence, mais vous avez toujours besoin de livres pour les recettes et ingrédients plus rares.</p>"
         },
         "Alchemy Novice": {
             "name": "Alchimie : Novice",
@@ -108,23 +111,30 @@
         },
         "Anticipate Harm": {
             "name": "Anticipation du danger",
-            "description": "Vos réflexes aiguisés et votre acuité vous permettent d'anticiper un danger imminent et de réagir pour l'éviter."
+            "description": "Vos réflexes aiguisés et votre acuité vous permettent d'anticiper un danger imminent et de réagir pour l'éviter.",
+            "actions": {
+                "anticipateHarm": {
+                    "name": "Anticipation du danger",
+                    "description": "<p>Vous pouvez bouger de 4 pieds immédiatement après que la zone d'effet de l'attaque soit déclarée. Si ce déplacement vous permet de sortir de la zone de l'attaque, vous n'êtes pas affecté par celle-ci.</p>",
+                    "condition": "Vous êtes ciblé par une attaque à zone d'effet, dont vous pouvez voir la source."
+                }
+            }
         },
         "Arcana Adept": {
             "name": "Arcanes : Adepte",
-            "description": "<p>Vous gagnez le rang <strong>Adepte</strong> dans la compétence <strong>Arcanes</strong>, fournissant un <strong>Bonus de Compétence de +2</strong>.</p>"
+            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Arcanes</strong>, fournissant un <strong>Bonus de Compétence de +2</strong>.</p>"
         },
         "Arcana Journeyman": {
             "name": "Arcanes : Compagnon",
-            "description": "<p>Vous gagnez le rang <strong>Compagnon</strong> dans la compétence <strong>Arcanes</strong>, fournissant un <strong>Bonus de Compétence de +1</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Arcanes</strong>, fournissant un <strong>Bonus de Compétence de +1</strong>.</p>"
         },
         "Arcana Master": {
             "name": "Arcanes : Maître",
-            "description": "<p>Vous gagnez le rang <strong>Maître</strong> dans la compétence <strong>Arcanes</strong>, fournissant un <strong>Bonus de Compétence de +3</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Arcanes</strong>, fournissant un <strong>Bonus de Compétence de +3</strong>.</p>"
         },
         "Arcana Novice": {
             "name": "Arcanes : Novice",
-            "description": "<p>Votre éducation a couvert les fondamentaux de la métaphysique et de la théorie magique, la relation entre les runes, la nature opposée de l'ordre et du chaos, et une introduction sommaire aux êtres spirituels, incluant les figures de culte déifiées et diabolisées les plus connues. Vous gagnez le rang <strong>Novice</strong> dans la compétence <strong>Arcanes</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Votre compréhension rudimentaire de la grammaire principale de la magie est suffisante pour identifier quelle rune mineure un sort ou un rituel peut utiliser, ainsi que le signe utilisé (si ce n'est l'inflexion). Vous pouvez identifier si une figure est influencée davantage par le chaos ou par l'ordre, et pouvez repérer les signes d'esprits communs (mineurs et majeurs). Vous en savez assez sur les coutumes religieuses pour communiquer avec ceux qui vénèrent un esprit ou une divinité particulière sans vous mettre dans l'embarras.</p>"
+            "description": "<p>Votre éducation a couvert les fondamentaux de la métaphysique et de la théorie magique, la relation entre les runes, la nature opposée de l'ordre et du chaos, et une introduction sommaire aux êtres spirituels, incluant les figures de culte déifiées et diabolisées les plus connues. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Arcanes</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Votre compréhension rudimentaire de la grammaire principale de la magie est suffisante pour identifier quelle rune mineure un sort ou un rituel peut utiliser, ainsi que le signe utilisé (si ce n'est l'inflexion). Vous pouvez identifier si une figure est influencée davantage par le chaos ou par l'ordre, et pouvez repérer les signes d'esprits communs (mineurs et majeurs). Vous en savez assez sur les coutumes religieuses pour communiquer avec ceux qui vénèrent un esprit ou une divinité particulière sans vous mettre dans l'embarras.</p>"
         },
         "Arcane Archer": {
             "name": "Archer arcanique",
@@ -132,63 +142,97 @@
         },
         "Armored Shell": {
             "name": "Coquille blindée",
-            "description": "<p>Vous êtes expert dans l'utilisation combinée de votre armure et de votre bouclier pour créer une coquille défensive.</p><p>Lorsque vous avez la condition <strong>Protégé</strong> et qu'un <strong>Bouclier Lourd</strong> est équipé, votre défense de base d'<strong>Armure</strong> est réduite de moitié mais votre défense de <strong>Blocage</strong> augmente d'un montant correspondant.</p>"
+            "description": "<p>Vous êtes expert dans l'utilisation combinée de votre armure et de votre bouclier pour créer une coquille défensive.</p><p>Lorsque vous avez la condition <strong>Protégé</strong> et êtes équipé d'un <strong>Bouclier Lourd</strong>, votre défense d'<strong>Armure</strong> de base est réduite de moitié mais votre défense de <strong>Blocage</strong> augmente d'un montant correspondant.</p>"
         },
         "Armored Efficiency": {
             "name": "Efficacité en armure",
-            "description": "<p>Vous êtes entraîné à porter les types d'armures les plus lourds tout en conservant votre mobilité. Vous pouvez utiliser une action de Déplacement gratuite une fois par Tour tout en portant une armure Lourde.</p>"
+            "description": "<p>Vous êtes entraîné à porter les types d'armures les plus lourds tout en conservant votre mobilité. Vous pouvez utiliser une action de Déplacement gratuit une fois par Tour tout en portant une armure Lourde.</p>"
         },
         "Artful Parry": {
             "name": "Parade artistique",
-            "description": "<p>Vous anticipez l'esquive d'une attaque, l'interceptant pour Parer intentionnellement la frappe.</p><p></p>"
+            "description": "<p>Vous anticipez l'esquive d'une attaque, l'interceptant pour Parer intentionnellement la frappe.</p><p></p>",
+            "actions": {
+                "artfulParry": {
+                    "name": "Parade artistique",
+                    "description": "<p>Lorsque vous vous défendez d'une attaque de mêlée avec la défense d'<strong>Esquive</strong>, vous pouvez réagir et dépenser du <strong>Focus</strong> pour <strong>Parer</strong> l'attaque à la place.</p>",
+                    "condition": "Vous Esquivez une Frappe de mêlée."
+                }
+            }
         },
         "Assassin": {
             "name": "Assassin",
-            "description": "<p>Vous vous spécialisez dans l'art d'apporter la mort aux imprudents. Toute Frappe ou attaque magique contre une cible <strong>Distraite</strong> devient <strong>Mortelle</strong>.</p><p>Une créature Distraite touchée par votre attaque ne peut pas alerter ses alliés avant son propre tour de Combat.</p>"
+            "description": "<p>Vous vous spécialisez dans l'art d'apporter la mort aux imprudents. Toute Frappe ou Attaque magique contre une cible <strong>Distraite</strong> devient <strong>Mortelle</strong>.</p><p>Une créature Distraite touchée par votre attaque ne peut pas alerter ses alliés avant son propre tour de Combat.</p>",
+            "actions": {
+                "markForDeath": {
+                    "description": "<p>Vous étudiez une créature pendant 1 minute. Effectuez un Test de Connaissance à propos de votre cible. Sur une réussite, vous apprenez toutes ses Vulnérabilités aux dégâts. Votre Initiative minimale pendant le premier round de Combat devient supérieure de 1 à l'Initiative de la cible que vous avez marqué.</p>",
+                    "name": "Marque pour la Mort",
+                    "condition": "Vous n'êtes pas observé."
+                }
+            }
         },
         "Assess Strength": {
             "name": "Évaluer la force",
-            "description": "<p>Vous prenez un moment pour observer une créature que vous pouvez voir et développez une intuition sur ses points forts.</p>\n<p>Effectuez un <strong>Test de Connaissances</strong> utilisant une Compétence choisie par le Maître du jeu. En cas de succès, vous apprenez quel type de Défense entre Physique, Fortitude, Volonté ou Réflexe est le plus élevé chez la créature. Sur une Réussite critique, vous apprenez les deux types de défense les plus élevés.</p>"
+            "description": "<p>Vous prenez un moment pour observer une créature que vous pouvez voir et développez une intuition sur ses points forts.</p>\n<p>Effectuez un <strong>Test de Connaissances</strong> utilisant une Compétence choisie par le Maître du jeu. En cas de succès, vous apprenez quel type de Défense entre Physique, Fortitude, Volonté ou Réflexe est le plus élevé chez la créature. Sur une Réussite critique, vous apprenez les deux types de défense les plus élevés.</p>",
+            "actions": {
+                "assessStrength": {
+                    "name": "Évaluer la force",
+                    "description": "<p>Vous observez une créature que vous pouvez voir pour évaluer ses points forts notables.</p>"
+                }
+            }
         },
         "Athletics Adept": {
             "name": "Athlétisme : Adepte",
-            "description": "<p>Vous gagnez le rang <strong>Adepte</strong> dans la compétence <strong>Athlétisme</strong>, fournissant un <strong>Bonus de Compétence de +2</strong>.</p>"
+            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Athlétisme</strong>, fournissant un <strong>Bonus de Compétence de +2</strong>.</p>"
         },
         "Athletics Journeyman": {
             "name": "Athlétisme : Compagnon",
-            "description": "<p>Vous gagnez le rang <strong>Compagnon</strong> dans la compétence <strong>Athlétisme</strong>, fournissant un <strong>Bonus de Compétence de +1</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Athlétisme</strong>, fournissant un <strong>Bonus de Compétence de +1</strong>.</p>"
         },
         "Athletics Master": {
             "name": "Athlétisme : Maître",
-            "description": "<p>Vous gagnez le rang <strong>Maître</strong> dans la compétence <strong>Athlétisme</strong>, fournissant un <strong>Bonus de Compétence de +3</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Athlétisme</strong>, fournissant un <strong>Bonus de Compétence de +3</strong>.</p>"
         },
         "Athletics Novice": {
             "name": "Athlétisme : Novice",
-            "description": "<p>Vous avez reçu une formation en athlétisme de base. Vous gagnez le rang <strong>Novice</strong> dans la compétence <strong>Athlétisme</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez si une surface peut supporter votre poids, comment trouver des prises en escaladant, et comment répartir votre poids pour flotter en nageant. Vous savez courir sur la distance et comment vous rythmer pour éviter l'épuisement.</p>"
+            "description": "<p>Vous avez reçu une formation en athlétisme de base. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Athlétisme</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez si une surface peut supporter votre poids, comment trouver des prises en escaladant, et comment répartir votre poids pour flotter en nageant. Vous savez courir sur la distance et comment vous rythmer pour éviter l'épuisement.</p>"
         },
         "Awareness Adept": {
             "name": "Vigilance : Adepte",
-            "description": "<p>Vous gagnez le rang <strong>Adepte</strong> dans la compétence <strong>Vigilance</strong>, fournissant un <strong>Bonus de Compétence de +2</strong>.</p>"
+            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Vigilance</strong>, fournissant un <strong>Bonus de Compétence de +2</strong>.</p>"
         },
         "Awareness Journeyman": {
             "name": "Vigilance : Compagnon",
-            "description": "<p>Vous gagnez le rang <strong>Compagnon</strong> dans la compétence <strong>Vigilance</strong>, fournissant un <strong>Bonus de Compétence de +1</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Vigilance</strong>, fournissant un <strong>Bonus de Compétence de +1</strong>.</p>"
         },
         "Awareness Master": {
             "name": "Vigilance : Maître",
-            "description": "<p>Vous gagnez le rang <strong>Maître</strong> dans la compétence <strong>Vigilance</strong>, fournissant un <strong>Bonus de Compétence de +3</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Vigilance</strong>, fournissant un <strong>Bonus de Compétence de +3</strong>.</p>"
         },
         "Awareness Novice": {
             "name": "Vigilance : Novice",
-            "description": "<p>Vous avez été formé aux bases de la vigilance situationnelle et êtes capable de remarquer des détails importants sur votre environnement. Vous gagnez le rang <strong>Novice</strong> dans la compétence <strong>Vigilance</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez vérifier les sorties en entrant dans une pièce, et comment chercher des armes dissimulées, des pièges cachés et autres menaces. Vous savez repérer quand vous êtes suivi et comment chercher les cachettes communes.</p>"
+            "description": "<p>Vous avez été formé aux bases de la vigilance situationnelle, et êtes capable de remarquer des détails importants de votre environnement. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Vigilance</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez vérifier les sorties en entrant dans une pièce, et comment chercher des armes dissimulées, des pièges cachés, et autres menaces. Vous savez repérer quand vous êtes suivi et comment chercher les cachettes communes.</p>"
         },
         "Backstab": {
             "name": "Frappe traîtresse",
-            "description": "<p>Vous concentrez votre ruse pour exploiter les points faibles d'une cible débordée. Vous identifiez une opportunité et frappez avec une efficacité mortelle.</p>"
+            "description": "<p>Vous concentrez votre ruse pour exploiter les points faibles d'une cible débordée. Vous identifiez une opportunité et frappez avec une efficacité mortelle.</p>",
+            "actions": {
+                "backstab": {
+                    "name": "Frappe traîtresse",
+                    "description": "<p>Vous <strong>Frappez</strong>, avec l'arme de votre main principale, une créature <strong>Débordée</strong>, lui infligeant des dégâts <strong>Mortels</strong>.</p>",
+                    "condition": "Vous attaquez une cible avec la condition Débordé."
+                }
+            }
         },
         "Bard": {
             "name": "Barde",
-            "description": "<p>Vous pratiquez les traditions orales et musicales du conte héroïque pour inspirer du courage à vos alliés, démoraliser vos ennemis et trouver rapidement des solutions non conventionnelles aux problèmes.</p><p>Vous apprenez la <strong>Rune : Âme</strong> si vous ne la connaissez pas déjà. Lorsque vous restaurez le moral des alliés en utilisant la Rune d'Âme, vous gagnez <strong>+2 Faveurs</strong> à votre jet.</p>"
+            "description": "<p>Vous pratiquez les traditions orales et musicales du conte héroïque pour inspirer du courage à vos alliés, démoraliser vos ennemis et trouver rapidement des solutions non conventionnelles aux problèmes.</p><p>Vous apprenez la <strong>Rune : Âme</strong> si vous ne la connaissez pas déjà. Lorsque vous restaurez le moral d'alliés en utilisant la Rune d'Âme, vous gagnez <strong>+2 Faveurs</strong> à votre jet.</p>",
+            "actions": {
+                "laughingMatter": {
+                    "description": "<p>Lorsqu'un ennemi rate une attaque vous affectant vous ou un de vos alliés, vous créez une plaisanterie mordante ou une pantomime qui ridiculise ses faibles efforts.</p><p>Effectuez une attaque de compétence de <strong>Représentation</strong> contre la <strong>Fortitude</strong> de la cible, lui infligeant des dégâts <strong>Psychiques</strong> au <strong>Moral</strong> sur un succès. De plus, sur une réussite, la cible souffre de 1 <strong>Fléau</strong> à tous ses jets jusqu'au début de son prochain tour.</p><p>La cible doit pouvoir vous voir et vous comprendre pour être affectée par cette capacité.</p>",
+                    "name": "Importance du rire",
+                    "condition": "Un ennemi ne parvient pas à vous affecter, vous ou un allié, avec une attaque."
+                }
+            }
         },
         "Battle Focus": {
             "name": "Focaliseur de bataille",
@@ -200,11 +244,24 @@
         },
         "Berserk Strike": {
             "name": "Frappe berserk",
-            "description": "<p>Vous canalisez votre soif de combat dans une frappe alimentée par l'adrénaline qui augmente en puissance à mesure que vous êtes blessé.</p>"
+            "description": "<p>Vous canalisez votre soif de combat en une frappe alimentée par l'adrénaline qui monte en puissance à mesure que vous êtes blessé.</p>",
+            "actions": {
+                "berserkStrike": {
+                    "name": "Frappe berserk",
+                    "description": "<p>Vous donnez à votre frappe force et intensité, augmentant le <strong>Bonus de dégâts</strong> de votre frappe en fonction de votre manque de <strong>Santé</strong>.</p><ul><li><p>Si votre Santé est à moins de 75%, votre Frappe inflige <strong>+1 Dégât</strong></p></li><li><p>Si votre Santé est à moins de 50%, votre Frappe inflige <strong>+2 Dégâts</strong></p></li><li><p>Si votre Santé est à moins de 25%, votre Frappe inflige <strong>+3 Dégâts</strong></p></li></ul><p>Ce bonus de dégâts est doublé si vous utilisez une arme <strong>À deux mains</strong>.</p>"
+                }
+            }
         },
         "Berserker": {
             "name": "Berserker",
-            "description": "<p>Vous vous délectez du frisson du combat, vous jetant dans la mêlée avec un abandon total.</p>"
+            "description": "<p>Vous vous délectez du frisson du combat, vous jetant dans la mêlée avec un abandon total.</p>",
+            "actions": {
+                "berserkerRage": {
+                    "name": "Rage de Berserker",
+                    "description": "Vous devenez Enragé. Tant que vous êtes Enragé, vous infligez 4 dégâts supplémentaires sur toutes vos attaques de mêlée. Vous pouvez tenter de mettre fin cet effet à votre propre tour en réussissant un test de Volonté contre un DD de 20. Cet effet se termine automatiquement à la fin du Combat.",
+                    "condition": "Vous avez subi des dégâts à votre réserve de Santé depuis votre dernier tour de Combat."
+                }
+            }
         },
         "Blood Frenzy": {
             "name": "Frénésie sanguinaire",
@@ -280,7 +337,7 @@
         },
         "Counterspell": {
             "name": "Contresort",
-            "description": "<p>Vous réagissez immédiatement à un sort en train d'être lancé et composez une rune et un signe conçus pour démêler et nier la sorcellerie d'un mage ennemi.</p><h2 class=\"divider\">Notes de test</h2><p>Cette action peut maintenant être utilisée en playtest, mais n'est pas encore <em>entièrement automatisée</em>. Le Contresort peut être effectué, mais il revient au Maître du jeu d'annuler manuellement un sort précédemment appliqué et de déduire manuellement son coût en <strong>Action</strong> et <strong>Focus</strong>.</p>"
+            "description": "<p>Vous réagissez immédiatement à un sort en train d'être lancé et composez une rune et un signe conçus pour démêler et nier la sorcellerie d'un mage ennemi.</p><h2 class=\"divider\">Notes de test</h2><p>Cette action peut maintenant être utilisée en playtest, mais n'est pas encore <em>entièrement automatisée</em>. Le Contresort peut être effectué, mais il revient au Maître du jeu d'annuler manuellement un sort précédemment appliqué et de déduire manuellement son coût en <strong>Action</strong> et <strong>Focus</strong>. Ces étapes du processus global de Contresort <em>seront automatisées</em> dans une prochaine mise à jour, de sorte qu'un Contresort confirmé confirmera également le sort qui a été contré, mais sans ses effets.</p>"
         },
         "Counter Strike": {
             "name": "Contre-Attaque",
@@ -428,27 +485,27 @@
         },
         "Gesture: Aura": {
             "name": "Signe : Aura",
-            "description": "<p>Vous concentrez le pouvoir arcanique d'une Rune pour créer un champ d'énergie maintenu qui baigne les alliés et ennemis proches de vous.</p><p>Le signe Aura évolue avec la <strong>Présence</strong> et produit une émanation de 20 pieds de rayon centrée sur le lanceur de sorts. Le centre de cette Aura se déplace avec le lanceur.</p><p>Selon la Rune utilisée, l'Aura inflige des dégâts ou fournit des soins à toute créature qui commence son tour à l'intérieur de l'Aura. Ce signe nécessite <strong>2 Mains</strong> pour être lancé, a un coût de base de <strong>5 Actions</strong> et <strong>1 Focus</strong>, et doit être <strong>Maintenu</strong> coûtant <strong>1 Focus</strong> supplémentaire chaque round suivant.</p>"
+            "description": "<p>Vous concentrez le pouvoir arcanique d'une Rune pour créer un champ d'énergie maintenu qui baigne les alliés et ennemis proches de vous.</p><p>Le signe Aura évolue avec la <strong>Présence</strong> et produit une émanation de 20 pieds de rayon centrée sur le lanceur de sorts. Le centre de cette Aura se déplace avec le lanceur.</p><p>Selon la Rune utilisée, l'Aura inflige des dégâts ou fournit des soins à toute créature qui commence son tour à l'intérieur de l'Aura. Ce signe nécessite <strong>2 Mains</strong> pour être lancé, a un coût de base de <strong>5 Actions</strong> et <strong>1 Focus</strong>, et doit être <strong>Maintenu</strong> coûtant <strong>1 Focus</strong> supplémentaire chaque round suivant.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent est actuellement placé au palier de <strong>niveau 4</strong>. Il ne sera accessible qu'à un niveau supérieur (probablement le niveau 6). Il est actuellement disponible en avant-première pour les tests.</p><p>Les modèles d'émanation liés au token et se déplaçant avec lui sont une fonctionnalité qui sera disponible dans la version 14 de Foundry VTT. L'automatisation du Signe d'Aura sera mise en place lorsque Crucible dépendra de la version 14 de Foundry VTT.</p>"
         },
         "Gesture: Blast": {
             "name": "Signe : Explosion",
-            "description": "<p>Vous projetez la puissance arcanique d'une Rune en une intense explosion d'énergie vers un point proche visible.</p><p>Le signe Explosion évolue avec l'<strong>Intellect</strong> et produit une explosion de 6 pieds de rayon centrée sur un point à moins de 60 pieds du lanceur. L'explosion inflige <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>5 Actions</strong> et <strong>2 Focus</strong>.</p>"
+            "description": "<p>Vous projetez la puissance arcanique d'une Rune en une intense explosion d'énergie vers un point proche visible.</p><p>Le signe Explosion évolue avec l'<strong>Intellect</strong> et produit une explosion de 6 pieds de rayon centrée sur un point à moins de 60 pieds du lanceur. L'explosion inflige <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>5 Actions</strong> et <strong>2 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent est actuellement placé au niveau de <strong>palier 4</strong>. Il ne sera accessible qu'à un niveau supérieur (probablement Niveau 6 requis). Il est actuellement disponible en avant-première pour les tests.</p>"
         },
         "Gesture: Cone": {
             "name": "Signe : Cône",
-            "description": "<p>Vous concentrez la puissance arcanique d'une Rune en un cône étroit qui se projette vers l'extérieur depuis votre position.</p><p>Le signe Cône évolue avec l'<strong>Intellect</strong> et produit un cône de 60 degrés avec un rayon de 30 pieds partant du lanceur. Le Cône inflige <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>5 Actions</strong> et <strong>2 Focus</strong>.</p>"
+            "description": "<p>Vous concentrez la puissance arcanique d'une Rune en un cône étroit qui se projette vers l'extérieur depuis votre position.</p><p>Le signe Cône évolue avec l'<strong>Intellect</strong> et produit un cône de 60 degrés avec un rayon de 30 pieds partant du lanceur. Le Cône inflige <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>5 Actions</strong> et <strong>2 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent est actuellement placé à un niveau de <strong>palier 4</strong> . Il ne sera accessible qu'à un niveau supérieur (probablement Niveau 6 requis). Il est actuellement disponible en avant-première pour les tests.</p>"
         },
         "Gesture: Conjure": {
             "name": "Signe : Conjuration",
-            "description": "<p>Vous coalescez la puissance arcanique en une forme supérieure, manifestant un <strong>Visiteur</strong> qui apparaît dans les 30 pieds et rejoint le Combat à l'<strong>Initiative</strong> 1. Votre Visiteur est un Laquais de niveau égal au vôtre.</p><p>Le signe Conjuration évolue avec la <strong>Sagesse</strong> et le Visiteur survit pendant <strong>12 Rounds</strong>. Vous ne pouvez avoir qu'un seul Visiteur actif. Lancer un autre sort utilisant le signe Conjuration remplace votre Visiteur précédent. Ce signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>5 Actions</strong> et <strong>2 Focus</strong>.</p>"
+            "description": "<p>Vous coalescez la puissance arcanique en une forme supérieure, manifestant un <strong>Visiteur</strong> qui apparaît dans les 30 pieds et rejoint le Combat à l'<strong>Initiative</strong> 1. Votre Visiteur est un Laquais de niveau égal au vôtre.</p><p>Le signe Conjuration évolue avec la <strong>Sagesse</strong> et le Visiteur survit pendant <strong>12 Rounds</strong>. Vous ne pouvez avoir qu'un seul Visiteur actif. Lancer un autre sort utilisant le signe Conjuration remplace votre Visiteur précédent. Ce signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>5 Actions</strong> et <strong>2 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent est actuellement placé à un niveau de <strong>palier 4</strong>. Il ne sera accessible qu'à un niveau supérieur (probablement Niveau 6 requis). Il est actuellement disponible en avant-première pour les tests.</p><p>Toutes les Runes n'ont pas encore d'acteur Visiteur défini. Les Runes qui n'ont pas encore de Conjuration définie manifesteront – pour l'instant – un <strong>Visiteur de Flamme</strong>.</p>"
         },
         "Gesture: Sense": {
             "name": "Signe : Sens",
-            "description": "<p>Vous harmonisez votre esprit avec la puissance arcanique d'une Rune pour sentir les sources d'énergie proches.</p><p>Le signe Sens évolue avec la <strong>Présence</strong> et produit une émanation de 30 pieds de rayon dont la position reste centrée sur le lanceur. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>. Il peut optionnellement être <strong>Maintenu</strong> au coût supplémentaire de <strong>1 Focus</strong> chaque round suivant.</p><p>Ce sort permet au lanceur de détecter la présence de sorcellerie utilisant la même Rune que celle incorporée dans ce sort. Le sens détectera aussi momentanément la présence de créatures selon leur type.</p><ul><li><p><strong>Contrôle</strong> : Fiélons</p></li><li><p><strong>Mort</strong> : Morts-vivants</p></li><li><p><strong>Terre</strong> : Vases et Élémentaires de Terre</p></li><li><p><strong>Flamme</strong> : Dragons et Élémentaires de Feu</p></li><li><p><strong>Givre</strong> : Géants et Élémentaires de Givre</p></li><li><p><strong>Illumination</strong> : Célestes</p></li><li><p><strong>Illusion</strong> : Fées</p></li><li><p><strong>Kinésie</strong> : Monstruosités</p></li><li><p><strong>Vie</strong> : Plantes et Bêtes</p></li><li><p><strong>Foudre</strong> : Artificiels et Élémentaires de Tempête</p></li><li><p><strong>Néant</strong> : Extérieurs</p></li><li><p><strong>Âme</strong> : Humanoïdes</p></li></ul>"
+            "description": "<p>Vous harmonisez votre esprit avec la puissance arcanique d'une Rune pour sentir les sources d'énergie proches.</p><p>Le signe Sens évolue avec la <strong>Présence</strong> et produit une émanation de 30 pieds de rayon dont la position reste centrée sur le lanceur. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>. Il peut optionnellement être <strong>Maintenu</strong> au coût supplémentaire de <strong>1 Focus</strong> chaque round suivant.</p><p>Ce sort permet au lanceur de détecter la présence de sorcellerie utilisant la même Rune que celle incorporée dans ce sort. Le sens détectera aussi momentanément la présence de créatures selon leur type.</p><ul><li><p><strong>Contrôle</strong> : Fiélons</p></li><li><p><strong>Mort</strong> : Morts-vivants</p></li><li><p><strong>Terre</strong> : Vases et Élémentaires de Terre</p></li><li><p><strong>Flamme</strong> : Dragons et Élémentaires de Feu</p></li><li><p><strong>Givre</strong> : Géants et Élémentaires de Givre</p></li><li><p><strong>Illumination</strong> : Célestes</p></li><li><p><strong>Illusion</strong> : Fées</p></li><li><p><strong>Kinésie</strong> : Monstruosités</p></li><li><p><strong>Vie</strong> : Plantes et Bêtes</p></li><li><p><strong>Foudre</strong> : Artificiels et Élémentaires de Tempête</p></li><li><p><strong>Néant</strong> : Extérieurs</p></li><li><p><strong>Âme</strong> : Humanoïdes</p></li></ul><h3 class=\"divider\">Notes de test</h3><p>Il n'y a pas d'automatisation pour le sens temporairement accordé par ce sort, mais une telle automatisation pourra être fournie à l'avenir via un Mode de Détection qui révèle temporairement les créatures du type approprié au lanceur pendant que le sort est maintenu.</p>"
         },
         "Gesture: Surge": {
             "name": "Signe : Afflux",
-            "description": "<p>Vous canalisez la puissance arcanique d'une Rune en une vague d'énergie précipitée qui déferle vers l'avant depuis votre position actuelle.</p><p>Le signe Afflux évolue avec la <strong>Sagesse</strong> et produit une ligne de 10 pieds de large et 15 pieds de long partant du lanceur, infligeant <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Le signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>5 Actions</strong> et <strong>2 Focus</strong>.</p>"
+            "description": "<p>Vous canalisez la puissance arcanique d'une Rune en une vague d'énergie précipitée qui déferle vers l'avant depuis votre position actuelle.</p><p>Le signe Afflux évolue avec la <strong>Sagesse</strong> et produit une ligne de 10 pieds de large et 15 pieds de long partant du lanceur, infligeant <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Le signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>5 Actions</strong> et <strong>2 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent est actuellement placé à un niveau de <strong>palier 4</strong>. Il ne sera accessible qu'à un niveau supérieur (probablement Niveau 6 requis). Il est actuellement disponible en avant-première pour les tests.</p>"
         },
         "Gesture: Arrow": {
             "name": "Signe : Trait",
@@ -460,7 +517,7 @@
         },
         "Gesture: Create": {
             "name": "Signe : Création",
-            "description": "<p>Vous coalescez la puissance arcanique en forme tangible, manifestant un <strong>Lutin</strong> qui apparaît dans les 10 pieds et rejoint le Combat à l'Initiative 1. Votre Lutin est un <strong>Laquais</strong> de la moitié de votre propre Niveau.</p><p>Le signe Création évolue avec la <strong>Sagesse</strong> et le Lutin survit pendant <strong>6 Rounds</strong>. Vous ne pouvez avoir qu'un seul Lutin actif, lancer un autre sort utilisant le signe Création remplace votre Lutin précédent. Ce signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>4 Actions</strong> et <strong>1 Focus</strong>.</p>"
+            "description": "<p>Vous coalescez la puissance arcanique en forme tangible, manifestant un <strong>Lutin</strong> qui apparaît dans les 10 pieds et rejoint le Combat à l'Initiative 1. Votre Lutin est un <strong>Laquais</strong> de la moitié de votre propre Niveau.</p><p>Le signe Création évolue avec la <strong>Sagesse</strong> et le Lutin survit pendant <strong>6 Rounds</strong>. Vous ne pouvez avoir qu'un seul Lutin actif, lancer un autre sort utilisant le signe Création remplace votre Lutin précédent. Ce signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>4 Actions</strong> et <strong>1 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Toutes les Runes n'ont pas encore d'acteur Lutin défini. Les Runes qui n'ont pas encore de Création définie manifesteront – pour l'instant – un <strong>Lutin de Flamme</strong>.</p>"
         },
         "Gesture: Fan": {
             "name": "Signe : Souffle",
@@ -472,7 +529,7 @@
         },
         "Gesture: Pulse": {
             "name": "Signe : Onde",
-            "description": "<p>Expulsez la puissance arcanique d'une Rune dans un rayon qui se propage vers l'extérieur avec vous en son centre.</p><p>Le signe Onde évolue avec la <strong>Présence</strong> et produit une émanation de 10 pieds de rayon, infligeant <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Le signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>5 Actions</strong> et <strong>2 Focus</strong>.</p>"
+            "description": "<p>Expulsez la puissance arcanique d'une Rune dans un rayon qui se propage vers l'extérieur avec vous en son centre.</p><p>Le signe Onde évolue avec la <strong>Présence</strong> et produit une émanation de 10 pieds de rayon, infligeant <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Le signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>5 Actions</strong> et <strong>2 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent est actuellement placé à un niveau de <strong>palier 4</strong>. Il ne sera accessible qu'à un niveau supérieur (probablement Niveau 6 requis). Il est actuellement disponible en avant-première pour les tests.</p>"
         },
         "Gesture: Ray": {
             "name": "Signe : Rayon",
@@ -480,7 +537,7 @@
         },
         "Gesture: Step": {
             "name": "Signe : Charge",
-            "description": "<p>Vous infusez le pouvoir runique dans un mouvement, traversant les frontières physiques et spatiales.</p><p>Le signe Charge évolue avec la <strong>Dextérité</strong> et vous permet de vous déplacer jusqu'à 20 pieds en ligne droite avec une largeur égale à votre <strong>Taille</strong>. Il inflige <strong>2 Dégâts de Base</strong> aux cibles le long de cette ligne qui échouent à Résister au sort. Ce signe ne nécessite aucune main libre pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
+            "description": "<p>Vous infusez le pouvoir runique dans un mouvement, traversant les frontières physiques et spatiales.</p><p>Le signe Charge évolue avec la <strong>Dextérité</strong> et vous permet de vous déplacer jusqu'à 20 pieds en ligne droite avec une largeur égale à votre <strong>Taille</strong>. Il inflige <strong>2 Dégâts de Base</strong> aux cibles le long de cette ligne qui échouent à Résister au sort. Ce signe ne nécessite aucune main libre pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>L'aspect déplacement de ce talent n'est pas encore automatisé et doit être effectué manuellement en conséquence du sort.</p>"
         },
         "Gesture: Strike": {
             "name": "Signe : Frappe",
@@ -540,11 +597,11 @@
         },
         "Inflection: Extend": {
             "name": "Inflexion : Perpétuer",
-            "description": "<p>Améliorez la durée d'un sort, augmentant la durée de son effet. Pour les sorts qui sont instantanés, toutes les conditions de statut correspondantes qu'ils causent sont augmentées en durée.</p>"
+            "description": "<p>Améliorez la durée d'un sort, augmentant la durée de son effet. Pour les sorts qui sont instantanés, toutes les conditions de statut correspondantes qu'ils causent sont augmentées en durée.</p><section class=\"construction\"><p>Les augmentations de durée d'effet provenant de l'inflexion Étendue ne sont pas encore automatisées dans le Playtest 1. Cette inflexion est incluse comme exemple de la direction visée pour le système de Sorcellerie.</p></section>"
         },
         "Inflection: Negate": {
             "name": "Inflexion : Inverser",
-            "description": "<p>Inversez l'effet d'un sort. Un sort de Contact de Vie Inversé qui soigne normalement une cible inflige des dégâts de Poison à la place. Un sort de Protection de Mort Inversé inflige une vulnérabilité aux dégâts de Corruption sur un ennemi adjacent.</p>"
+            "description": "<p>Inversez l'effet d'un sort. Un sort de Contact de Vie Inversé qui soigne normalement une cible inflige des dégâts de Poison à la place. Un sort de Protection de Mort Inversé inflige une vulnérabilité aux dégâts de Corruption sur un ennemi adjacent.</p><section class=\"construction\"><p>Les effets de l'inflexion Négation ne sont pas encore automatisés pour le Playtest 1. Cette inflexion est incluse comme exemple de la direction visée pour le système de Sorcellerie.</p></section>"
         },
         "Inflection: Pull": {
             "name": "Inflexion : Rappeler",
@@ -971,7 +1028,7 @@
             "description": "<p>Vous êtes adepte pour entrer et sortir de la mêlée. Lorsque vous sortez du rayon d'<strong>Engagement</strong> d'un ennemi, cet ennemi a 2 Fléaux à tout <strong>Assaut Opportuniste</strong> contre vous."
         },
         "Smithing Journeyman": {
-            "name": "Forger : Compagnon",
+            "name": "Forge : Compagnon",
             "description": "<p>Vous avez un niveau d'expérience professionnel avec la compétence de Forgeron et pouvez travailler à travers certaines des techniques et schémas les plus avancés avec du temps.</p><p>Les propriétés de base de la plupart des métaux courants sont faciles à retenir pour vous sans documents de référence, mais vous avez toujours besoin de livres pour les schémas et alliages plus rares.</p>"
         },
         "Smithing Novice": {

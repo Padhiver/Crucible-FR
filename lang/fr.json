@@ -949,7 +949,7 @@
                 "hint": "La quantité de temps, en heures, requise par la tentative de fabrication."
             },
             "inputs": {
-                "label": "",
+                "label": "Entrées du Schéma",
                 "element": {
                     "ingredients": {
                         "label": "Ingrédients",
@@ -977,7 +977,7 @@
             },
             "mode.label": "Mode de combinaison",
             "outputs": {
-                "label": "",
+                "label": "Sorties du Schéma",
                 "element": {
                     "items.element.label": "UUID de l'Objet créé",
                     "mode": "Mode"
@@ -993,7 +993,13 @@
             "COMMON": "Communément connu"
         },
         "SHEET": {
-            "COMPONENTS": "Composants"
+            "COMPONENTS": "Composants",
+            "INPUT_ADD": "Ajouter un Groupe d'Entrées",
+            "INPUT_DROP": "Déposer l'Objet d'Entrée",
+            "INPUT_REMOVE": "Retirer le Groupe d'Entrées",
+            "OUTPUT_ADD": "Ajouter un Groupe de Sorties",
+            "OUTPUT_DROP": "Déposer l'Objet de Sortie",
+            "OUTPUT_REMOVE": "Retirer le Groupe de Sorties"
         }
     },
     "SETTINGS": {

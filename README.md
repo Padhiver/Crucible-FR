@@ -32,9 +32,9 @@ Le projet original est en constante évolution, et de ce fait, une traduction co
         - [x] System Rules
             - [x] Game Mechanics
                 - [x] Dice Mechanics
-                - [x] Character Mechanics (Knowledge Area n'est pas assez avancé dans le développement pour bénéficier d'une traduction)
-                - [ ] Skills              (Skills n'est pas assez avancé dans le développement pour bénéficier d'une traduction)
-                - [ ] Crafting            (Crafting n'est pas assez avancé dans le développement pour bénéficier d'une traduction)
+                - [x] Character Mechanics
+                - [x] Skills
+                - [x] Crafting
                 - [x] Conditions
                 - [x] Combat
                 - [x] Spellcraft

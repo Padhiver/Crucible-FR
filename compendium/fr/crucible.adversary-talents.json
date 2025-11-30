@@ -1,3 +1,9 @@
 {
-  
+    "mapping": {
+        "description": "system.description"
+    },
+    "folders": {
+        "Construct": "Artificiel",
+        "Ooze": "Vase"
+    }
 }

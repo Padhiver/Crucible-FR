@@ -1,3 +1,5 @@
+import { DEFAULT_ACTION_TRANSLATIONS } from './default-actions.js';
+
 Hooks.once('init', async function() {
   if (typeof Babele !== 'undefined') {
     
@@ -29,3 +31,25 @@ Hooks.once('init', async function() {
     console.log('Crucible FR | Module de traduction chargé');
   }
 });
+
+
+// Patch des actions par défaut sur les acteurs
+Hooks.on("ready", () => {
+    // Acteurs existants
+    game.actors.contents.forEach(patchDefaultActions);
+
+    // Acteurs mis à jour ou créés
+    Hooks.on("updateActor", (actor) => patchDefaultActions(actor));
+});
+
+function patchDefaultActions(actor) {
+    if (!actor.actions) return;
+
+    Object.entries(DEFAULT_ACTION_TRANSLATIONS).forEach(([id, t]) => {
+        const action = actor.actions[id];
+        if (action && !action.item) {
+            if (t.name) action.name = t.name;
+            if (t.description) action.description = t.description;
+        }
+    });
+}

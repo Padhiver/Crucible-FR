@@ -16,7 +16,9 @@
         "Passive": "Passif",
         "Charge": "Charge",
         "Flight": "Vol",
-        "Bites": "Morsures"
+        "Bites": "Morsures",
+        "Claws": "Griffe",
+        "Attacks": "Attaques"
     },
     "label": "Talents d'Adversaire",
     "entries": {

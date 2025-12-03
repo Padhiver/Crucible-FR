@@ -1,3 +1,246 @@
 {
-  
+    "mapping": {
+        "description": "system.description",
+        "actions": {
+            "path": "system.actions",
+            "converter": "actions_converter"
+        }
+    },
+    "folders": {
+        "Construct": "Artificiel",
+        "Ooze": "Vase",
+        "Movement": "Déplacement",
+        "Resistances": "Résistances",
+        "Breath": "Souffle",
+        "Senses": "Sens",
+        "Passive": "Passif",
+        "Charge": "Charge",
+        "Flight": "Vol",
+        "Bites": "Morsures"
+    },
+    "label": "Talents d'Adversaire",
+    "entries": {
+        "Acid Absorption": {
+            "name": "Absorption d'Acide",
+            "description": "<p>La @ref[actor.name]{créature} possède une capacité exceptionnelle à prospérer dans des environnements acides. Sa résistance à l'<strong>Acide</strong> est doublée et si cette résistance réduit une quantité de dégâts en dessous de zéro, le montant négatif est reçu comme <strong>Guérison</strong> à la place.</p>"
+        },
+        "Acid Spit": {
+            "name": "Crachat acide",
+            "description": "<p>La créature possède des glandes salivaires qui produisent un acide caustique.</p>",
+            "actions": {
+                "acidSpit": {
+                    "name": "Crachat acide",
+                    "description": "<p>La @ref[actor.name]{créature} crache un globe de bile acide sur une cible à moins de 20 pieds.</p><p>Sur un <strong>Coup Critique</strong>, cette attaque cause la condition @Condition[corroding] pendant <strong>3 Tours</strong>.</p>"
+                }
+            }
+        },
+        "Acid Spray": {
+            "name": "Aspersion acide",
+            "description": "<p>La créature possède des glandes salivaires qui produisent un jet acide caustique.</p>",
+            "actions": {
+                "acidSpray": {
+                    "name": "Aspersion acide",
+                    "description": "<p>La créature expulse un jet de bile acide dans un cône de 10 pieds.</p><p>Sur un <strong>Coup Critique</strong>, cette attaque cause la condition @Condition[corroding] pendant <strong>3 Tours</strong>.</p>"
+                }
+            }
+        },
+        "Amorphous": {
+            "name": "Amorphe",
+            "description": "<p>La @ref[actor.name]{créature} peut se déplacer à travers un espace aussi étroit que 1 pouce de diamètre sans aucune pénalité à sa <strong>Foulée</strong>. Elle est immunisée contre la condition @Condition[restrained].</p>"
+        },
+        "Aqueous Transmission": {
+            "name": "Transmission aqueuse",
+            "description": "<p>La @ref[name] est capable de se déplacer instantanément à travers l'eau.</p>",
+            "actions": {
+                "aqueousTransmission": {
+                    "name": "Transmission aqueuse",
+                    "description": "<p>Lorsque la @ref[name] est dans l'eau, elle peut se transporter instantanément vers n'importe quel espace inoccupé dans la même étendue d'eau jusqu'à 120 pieds de distance. Elle n'a pas besoin de voir la destination pour effectuer ce <strong>Déplacement</strong>.</p>"
+                }
+            }
+        },
+        "Blood Sense": {
+            "name": "Traque sanguinaire",
+            "description": "<p>La @ref[actor.name] est définitivement <strong>Aveuglée</strong>, mais peut sentir précisément toute créature sanguine à moins de 20 pieds qui n'a pas tous ses points de vie.</p><p>Toute attaque d'arme ou de compétence contre une créature blessée ne subit pas les <strong>Fléaux</strong> qui s'appliqueraient normalement en étant <strong>Aveuglé</strong>.</p>"
+        },
+        "Cold Absorption": {
+            "name": "Absorption de Froid",
+            "description": "<p>La @ref[actor.name]{créature} possède une capacité exceptionnelle à prospérer dans des environnements glaciaux. Sa résistance au <strong>Froid</strong> est doublée et si cette résistance réduit une quantité de dégâts en dessous de zéro, le montant négatif est reçu comme <strong>Guérison</strong> à la place.</p>"
+        },
+        "Corruption Absorption": {
+            "name": "Absorption de Corruption",
+            "description": "<p>La @ref[actor.name]{créature} possède une capacité exceptionnelle à ignorer les effets de la magie de Mort. Sa résistance à la <strong>Corruption</strong> est doublée et si cette résistance réduit une quantité de dégâts en dessous de zéro, le montant négatif est reçu comme <strong>Guérison</strong> à la place.</p>"
+        },
+        "Electricity Absorption": {
+            "name": "Absorption d'Électricité",
+            "description": "<p>La @ref[actor.name]{créature} possède une capacité exceptionnelle à encaisser les décharges de foudre. Sa résistance à l'<strong>Électricité</strong> est doublée et si cette résistance réduit une quantité de dégâts en dessous de zéro, le montant négatif est reçu comme <strong>Guérison</strong> à la place.</p>"
+        },
+        "Elusive Flight": {
+            "name": "Vol insaisissable",
+            "description": "<p>Cette @ref[actor.name]{créature} est particulièrement insaisissable en vol, capable de plonger dans et hors du combat sans provoquer d'<strong>Assaut Opportuniste</strong>. Elle peut être engagée si elle atterrit au sol et l'Assaut Opportuniste peut s'appliquer si elle tente de retourner en vol.</p>"
+        },
+        "False Appearance": {
+            "name": "Faux-semblant",
+            "description": "<p>Tant qu'elle reste immobile, la @ref[actor.name]{créature} est indiscernable d'un autre objet ou matériau.</p>"
+        },
+        "Fire Absorption": {
+            "name": "Absorption de Feu",
+            "description": "<p>La @ref[actor.name]{créature} possède une capacité exceptionnelle à prospérer dans des environnements brûlants. Sa résistance au <strong>Feu</strong> est doublée et si cette résistance réduit une quantité de dégâts en dessous de zéro, le montant négatif est reçu comme <strong>Guérison</strong> à la place.</p>"
+        },
+        "Immuntable Form": {
+            "name": "Forme immuable",
+            "description": "<p>La @ref[actor.name] est immunisée contre tout sort ou effet qui altère sa forme physique.</p>"
+        },
+        "Corrode Weapon": {
+            "name": "Corrosion d’arme",
+            "description": "<p>Le métabolisme corrosif interne de la @ref[actor.name]{vase} menace de dissoudre les armes métalliques qui la frappent.</p>",
+            "actions": {
+                "oozeCorrodeWeapon": {
+                    "name": "Corrosion d’arme",
+                    "description": "<p>Lorsqu'elle est frappée par une arme de mêlée en métal, la vase tente de consommer l'arme elle-même, la brisant potentiellement.</p><p>Cette attaque est <strong>Inoffensive</strong>, mais si elle réussit, la <strong>Qualité</strong> de l'arme utilisée dans l'attaque est rétrogradée d'un rang. Sur une Réussite Critique ou si l'arme est déjà <strong>Bâclée</strong>, l'arme devient entièrement <strong>Brisée</strong>. Les armes enchantées sont protégées contre cet effet.</p>",
+                    "condition": "Frappée en mêlée par une arme faite de métal."
+                }
+            }
+        },
+        "Multiply": {
+            "name": "Multiplier",
+            "description": "<p>La @ref[actor.name]{vase} grandit rapidement, augmentant en santé et en taille.</p>",
+            "actions": {
+                "oozeMultiply": {
+                    "name": "Multiplier",
+                    "description": "<p>Les cellules de la vase se multiplient rapidement à mesure que la créature grandit. Sa <strong>Taille</strong> augmente de 1 et sa <strong>Santé</strong> augmente de sa valeur de <strong>Robustesse</strong>.</p>"
+                }
+            }
+        },
+        "Subdivide": {
+            "name": "Subdiviser",
+            "description": "<p>La @ref[actor.name]{vase} peut se diviser en plusieurs parties, chacune étant une copie indépendante de l'original.</p>",
+            "actions": {
+                "oozeSubdivide": {
+                    "name": "Subdiviser",
+                    "description": "<p>Les cellules de la vase se divisent rapidement et la créature se sépare en deux ! La créature originale et son clone divisent également sa <strong>Santé</strong> restante. La <strong>Taille</strong> de chaque créature résultante est diminuée de 1.</p><p>Si elle est en combat, la nouvelle créature agit comme une <strong>Invocation</strong> et rejoint l'<strong>Initiative</strong> 1. Cette Action ne peut être utilisée que si la créature a une Taille supérieure à 2. La vase créée n'a jamais un rang supérieur à <strong>Normal</strong>.</p>"
+                }
+            }
+        },
+        "Pack Hunter": {
+            "name": "Chasse en meute",
+            "description": "<p>Cette créature est un chasse en meute, comptant sur ses alliés pour déborder et harceler une cible afin de la rendre exposée à davantage de dégâts.</p><p>Cette créature double le nombre d'Avantages accordés en attaquant un ennemi <strong>Débordé</strong>.</p>"
+        },
+        "Pouncing Strike": {
+            "name": "Frappe bondissante",
+            "description": "<p>Cette créature se jette en avant, mettant tout son poids dans une frappe sautée.</p>",
+            "actions": {
+                "pouncingStrike": {
+                    "name": "Frappe bondissante",
+                    "description": "<p>Cette attaque peut être utilisée après un <strong>Déplacement</strong> qui rapproche la @ref[actor.name]{créature} d'au moins 10 pieds de sa cible. Si la créature était au-dessus de la cible, cette attaque gagne <strong>+1 Faveur</strong> par tranche de 10 pieds de diminution d'élévation dans ce mouvement.</p><p>Si cette attaque est un <strong>Coup Critique</strong>, la cible de l'attaque est immédiatement mise @Condition[prone].</p>"
+                }
+            }
+        },
+        "Psychic Absorption": {
+            "name": "Absorption Psychique",
+            "description": "<p>La @ref[actor.name]{créature} est exceptionnellement inflexible aux attaques sur son esprit. Sa résistance <strong>Psychique</strong> est doublée et si cette résistance réduit une quantité de dégâts en dessous de zéro, le montant négatif est reçu comme <strong>Guérison</strong> à la place.</p>"
+        },
+        "Radiant Absorption": {
+            "name": "Absorption Radiante",
+            "description": "<p>La @ref[actor.name]{créature} n'est pas étrangère à la force chaotique de la lumière. Sa résistance <strong>Radiante</strong> est doublée et si cette résistance réduit une quantité de dégâts en dessous de zéro, le montant négatif est reçu comme <strong>Guérison</strong> à la place.</p>"
+        },
+        "Raking Talons": {
+            "name": "Serres lacérantes",
+            "description": "<p>La @ref[actor.name]{créature} attaque rapidement avec ses serres, infligeant de multiples coups lacérants contre une cible unique.</p>",
+            "actions": {
+                "rakingTalons": {
+                    "name": "Serres lacérantes",
+                    "description": "<p>La @ref[actor.name]{créature} attaque rapidement avec ses deux serres.</p><p>Si au moins une attaque résulte en une <strong>Réussite Critique</strong>, elle inflige la condition @Condition[bleeding] pendant <strong>2 Rounds</strong>.</p>"
+                }
+            }
+        },
+        "Restraining Chomp": {
+            "name": "Morsure entravante",
+            "description": "<p>La @ref[actor.name]{créature} utilise ses puissantes mâchoires pour mordre et maintenir une cible avec sa morsure.</p>",
+            "actions": {
+                "restrainingChomp": {
+                    "name": "Morsure entravante",
+                    "description": "<p>La créature mord sa cible. Si l'attaque est réussie et que la cible est de <strong>Taille</strong> égale ou inférieure, la cible est également <strong>Entravée</strong> jusqu'à ce que cette créature choisisse de la relâcher ou que l'entrave soit brisée autrement. Une seule cible peut être entravée par cette action à un moment donné.</p>"
+                }
+            }
+        },
+        "Self-Repair": {
+            "name": "Auto-réparation",
+            "description": "<p>L'@ref[actor.name]{artificiel} active des mécanismes de réparation internes pour atténuer les dégâts qu'il a subis.</p>",
+            "actions": {
+                "selfRepair": {
+                    "name": "Auto-réparation",
+                    "description": "<p>L'artificiel récupère sa valeur de <strong>Robustesse</strong> en <strong>Santé</strong> et met immédiatement fin à une condition de statut unique de son choix qui l'affecte actuellement.</p>"
+                }
+            }
+        },
+        "Slippery Form": {
+            "name": "Forme glissante",
+            "description": "<p>Cette créature est en permanence glissante, lui donnant la capacité d'échapper à la capture par des entraves physiques.</p>",
+            "actions": {
+                "slipperyEscape": {
+                    "name": "Évasion glissante",
+                    "description": "<p>La créature utilise sa forme glissante pour échapper aux entraves, mettant immédiatement fin à la condition <strong>Entravé</strong>.</p>"
+                }
+            }
+        },
+        "Swooping Strike": {
+            "name": "Frappe en piqué",
+            "description": "<p>Cette créature fond depuis les hauteurs dans une attaque plongeante.</p>",
+            "actions": {
+                "swoopingStrike": {
+                    "name": "Frappe en piqué",
+                    "description": "<p>Cette attaque peut être utilisée après un <strong>Déplacement</strong> qui est descendu d'au moins 10 pieds vers la cible. L'attaque gagne <strong>+1 Faveur</strong> par tranche de 10 pieds de diminution d'élévation dans ce mouvement.</p><p>Si cette attaque est un <strong>Coup Critique</strong>, la cible de l'attaque est immédiatement mise @Condition[prone].</p>"
+                }
+            }
+        },
+        "Thrash": {
+            "name": "Violenter",
+            "description": "<p>Une fois que la @ref[actor.name]{créature} a un ennemi entravé, elle se débattra violemment infligeant des coups terribles à la victime saisie.</p>",
+            "actions": {
+                "thrash": {
+                    "name": "Violenter",
+                    "description": "<p>La créature inflige des dégâts <strong>Mortels</strong> à une cible qu'elle a actuellement <strong>Entravée</strong>.</p>",
+                    "condition": "La cible est Entravée par cette créature."
+                }
+            }
+        },
+        "Tusk Charge": {
+            "name": "Charge du sanglier",
+            "description": "Le Sanglier baisse la tête et charge à une vitesse frénétique, ses défenses dépassant sous un gosier baveux.",
+            "actions": {
+                "tuskCharge": {
+                    "name": "Charge du sanglier",
+                    "description": "<p>Chargez en ligne directe jusqu'à votre Foulée et effectuez une Frappe contre la première créature que vous rencontrez. En cas de succès, la cible est mise À terre.</p>"
+                }
+            }
+        },
+        "Magical Sight": {
+            "name": "Vision enchantée",
+            "description": "<p>La @ref[actor.name]{créature} a une vue d'un autre monde qui la rend particulièrement consciente des dangers ou des opportunités. Elle gagne +2 <strong>Faveurs</strong> à tout test de <strong>Vigilance</strong> et peut voir les créatures @Condition[invisible].</p>"
+        },
+        "Venomous Bite": {
+            "name": "Morsure venimeuse",
+            "description": "<p>La @ref[actor.name]{créature} injecte une toxine avec sa morsure.</p>",
+            "actions": {
+                "venomousBite": {
+                    "name": "Morsure venimeuse",
+                    "description": "<p>La @ref[actor.name]{créature} attaque, injecte une toxine qui, en cas de succès, inflige la condition @Condition[poisoned] pendant <strong>6 Tours</strong>.</p>"
+                }
+            }
+        },
+        "Void Absorption": {
+            "name": "Absorption du Vide",
+            "description": "<p>La @ref[actor.name]{créature} n'est pas étrangère à la force ordonnée des ténèbres. Sa résistance au <strong>Vide</strong> est doublée et si cette résistance réduit une quantité de dégâts en dessous de zéro, le montant négatif est reçu comme <strong>Guérison</strong> à la place.</p>"
+        },
+        "Web Spinner": {
+            "name": "Tisseur de toile",
+            "description": "<p>La @ref[actor.name]{créature} peut créer une toile puissamment adhésive. Elle ignore toutes les restrictions de mouvement ou entraves causées par la toile.</p><p>Tant qu'elle est en contact avec une toile, la @ref[actor.name]{créature} connaît la localisation précise de toute autre créature en contact avec la même toile.</p>",
+            "actions": {
+                "webSpinner": {
+                    "name": "Tisseur de toile",
+                    "description": "<p>La créature peut passer 10 minutes pour tisser une nouvelle section de toile qui couvre une zone de 5 pieds.</p>"
+                }
+            }
+        }
+    }
 }

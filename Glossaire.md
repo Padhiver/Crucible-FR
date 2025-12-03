@@ -305,7 +305,7 @@
 | Arrow | Trait |
 | Aspect | Aspect |
 | Create | Création |
-| Fan | Souffle | Éventail ?
+| Fan | Éventail |
 | Influence | Influence |
 | Pulse | Onde |
 | Surge | Afflux |

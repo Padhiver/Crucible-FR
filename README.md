@@ -16,18 +16,18 @@ Le projet original est en constante évolution, et de ce fait, une traduction co
         - [ ] Actors
             - [ ] Pregenerated Heroes
             - [ ] Summoned Creatures
-        - [ ] Adversary Options
-            - [ ] Adversary Talents
+        - [x] Adversary Options
+            - [x] Adversary Talents
             - [x] Archetypes
             - [x] Taxonomies
         - [ ] Character Options
             - [x] Ancestries
             - [x] Backgrounds
-            - [ ] Iconic Spells
-            - [ ] Talents
-        - [ ] Equipment
-        - [ ] Items
-            - [ ] Equipment
+            - [x] Iconic Spells
+            - [x] Talents
+        - [x] Items
+            - [x] Equipment
+            - [ ] Crafting (Vide pour le moment)
         - [ ] Playtest
         - [x] System Rules
             - [x] Game Mechanics

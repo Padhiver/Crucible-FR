@@ -14,7 +14,7 @@
         "Morale": "Moral",
         "Block": "Blocage",
         "Initiative": "Initiative",
-        "Other": "Autre",
+        "Other": "Autres",
         "Miscellaneous": "Divers",
         "Dodge": "Esquive",
         "Willpower": "Volonté",
@@ -40,11 +40,18 @@
         "Heavy": "Lourde",
         "Unarmed": "Mains nues",
         "Projectile": "Projectile",
-        "Armor": "Armure",
+        "Armor": "Armures",
         "Focus": "Focus",
         "Health": "Santé",
         "Signature": "Signature",
-        "Movement": "Déplacement"
+        "Movement": "Déplacement",
+        "Ranged": "À distance",
+        "Upgrades": "Améliorations",
+        "Gestures": "Signes",
+        "Melee": "Mêlée",
+        "Defense": "Défense",
+        "Resources": "Ressources",
+        "Spellcraft": "Sorcellerie"
     },
     "entries": {
         "Control Proficiency": {

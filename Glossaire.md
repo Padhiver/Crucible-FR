@@ -39,6 +39,8 @@
 | Engaged | Engagé |
 | Movement | Déplacement |
 | Taxonomy | Taxonomie |
+| Engagement radius/range | Rayon/Portée d'Engagement |
+| Bloodied | Blessé |
 
 ### Ressources (Resources)
 | Anglais | Français |
@@ -131,7 +133,7 @@
 | Medicine | Médecine |
 | Science | Science |
 | Society | Société |
-| Deception | Tromperie |
+| Deception | Duperie |
 | Diplomacy | Diplomatie |
 | Intimidation | Intimidation |
 | Performance | Représentation |
@@ -212,6 +214,7 @@
 | Bulky | Encombrante |
 | Intuitive | Intuitive |
 | Returning | Retour |
+| Slow | Lente |
 
 ### Types d'Objets
 | Anglais | Français |

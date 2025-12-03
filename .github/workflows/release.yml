@@ -25,7 +25,7 @@ jobs:
         changelog: https://github.com/${{github.repository}}/releases/tag/${{github.event.release.tag_name}}
     # Create a zip file with all files required by the module to add to the release
     - name: Create archive
-      run: zip crucible-fr.zip module.json babele-register.js CHANGELOG.md Glossaire.md README.md -r compendium lang -x ".*"
+      run: zip crucible-fr.zip module.json babele-register.js default-actions.js CHANGELOG.md Glossaire.md README.md -r compendium lang -x ".*"
     # Create a release for this specific version
     - name: Update Release with Files
       id: create_version_release

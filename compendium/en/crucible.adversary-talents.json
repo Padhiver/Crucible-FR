@@ -18,6 +18,8 @@
     "Flight": "Flight",
     "Bites": "Bites",
     "Construct": "Construct"
+    "Claws": "Claws",
+    "Attacks": "Attacks",  
   },
   "entries": {
     "Acid Absorption": {

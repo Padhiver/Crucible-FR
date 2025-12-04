@@ -12,6 +12,7 @@ Hooks.once('init', async function() {
 
     // 2. Converters
     Babele.get().registerConverters({
+        // Converter pour les actions (talents, sorts, consommables)
         "actions_converter": (actions, translations) => {
             if (!actions || !translations) return actions;
             
@@ -22,6 +23,20 @@ Hooks.once('init', async function() {
                     if (translation.name) item.name = translation.name;
                     if (translation.description) item.description = translation.description;
                     if (translation.condition) item.condition = translation.condition;
+                }
+                return item;
+            });
+        },
+
+        // Converter pour les catégories (JournalEntry)
+        "categories_converter": (categories, translations) => {
+            if (!categories || !translations) return categories;
+            
+            return categories.map(item => {
+                const translation = translations[item._id];
+                
+                if (translation) {
+                    if (translation.name) item.name = translation.name;
                 }
                 return item;
             });

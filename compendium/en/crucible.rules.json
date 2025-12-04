@@ -1,5 +1,11 @@
 {
   "label": "System Rules",
+  "mapping": {
+    "categories": {
+      "path": "categories",
+      "converter": "categories_converter"
+    }
+  },
   "folders": {
     "Getting Started": "Getting Started",
     "Game Mechanics": "Game Mechanics"
@@ -139,6 +145,32 @@
     },
     "Conditions": {
       "name": "Conditions",
+      "categories": {
+        "fO2oboVFGaNDqh8K": {
+          "name": "Health"
+        },
+        "84aHmNQvMBk7qXMZ": {
+          "name": "Morale"
+        },
+        "BuMJalJaEUNCX29d": {
+          "name": "Movement"
+        },
+        "J59YYFEcyNdGNrGQ": {
+          "name": "Actions"
+        },
+        "rpL70eBEekWih461": {
+          "name": "Damage Over Time"
+        },
+        "5rP6WfVYTY7yZlqe": {
+          "name": "Overview"
+        },
+        "SIxXwOOANW4yoN1D": {
+          "name": "Defenses"
+        },
+        "NJl3nJduFtxh3ijV": {
+          "name": "Perception"
+        }
+      },
       "pages": {
         "Conditions Overview": {
           "name": "Conditions Overview",
@@ -292,6 +324,14 @@
     },
     "Crafting": {
       "name": "Crafting",
+      "categories": {
+        "UaoYAtq1fyu6uiPf": {
+          "name": "Tradeskills"
+        },
+        "UbGiQAlGSH8iwZhE": {
+          "name": "Crafting"
+        }
+      },
       "pages": {
         "Alchemy": {
           "name": "Alchemy",

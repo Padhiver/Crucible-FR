@@ -369,11 +369,11 @@
                 "label": "Déplacement et stature",
                 "size": {
                     "label": "Taille",
-                    "hint": "La taille de cette Ascendance en cases de grille."
+                    "hint": "La taille de cette Ascendance en nombre de cases."
                 },
                 "stride": {
                     "label": "Foulée",
-                    "hint": "La vitesse de déplacement de départ de cette Ascendance en cases de grille."
+                    "hint": "La vitesse de déplacement de départ de cette Ascendance en nombre de cases."
                 }
             },
             "abilities": {

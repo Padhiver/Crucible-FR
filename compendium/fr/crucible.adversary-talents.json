@@ -10,7 +10,7 @@
         "Construct": "Artificiel",
         "Ooze": "Vase",
         "Movement": "Déplacement",
-        "Resistances": "Résistances",
+        "Resistances": "Résistance",
         "Breath": "Souffle",
         "Senses": "Sens",
         "Passive": "Passif",
@@ -18,7 +18,7 @@
         "Flight": "Vol",
         "Bites": "Morsures",
         "Claws": "Griffe",
-        "Attacks": "Attaques"
+        "Attacks": "Attaque"
     },
     "label": "Talents d'Adversaire",
     "entries": {

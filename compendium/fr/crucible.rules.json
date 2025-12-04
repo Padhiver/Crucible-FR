@@ -268,6 +268,32 @@
                     "name": "Exténué",
                     "text": "<p>Une créature <strong>Exténuée</strong> ne peut plus se défendre activement. Ses défenses d'<strong>Esquive</strong> et de <strong>Réflexe</strong> sont réduites de moitié.</p>"
                 }
+            },
+            "categories": {
+                "fO2oboVFGaNDqh8K": {
+                    "name": "Santé"
+                },
+                "84aHmNQvMBk7qXMZ": {
+                    "name": "Moral"
+                },
+                "BuMJalJaEUNCX29d": {
+                    "name": "Déplacement"
+                },
+                "J59YYFEcyNdGNrGQ": {
+                    "name": "Actions"
+                },
+                "rpL70eBEekWih461": {
+                    "name": "Dégâts sur la durée"
+                },
+                "5rP6WfVYTY7yZlqe": {
+                    "name": "Aperçu"
+                },
+                "SIxXwOOANW4yoN1D": {
+                    "name": "Défenses"
+                },
+                "NJl3nJduFtxh3ijV": {
+                    "name": "Perception"
+                }
             }
         },
         "Spellcraft": {
@@ -433,7 +459,21 @@
                     "text": "<p></p><p>L'<strong>Artisanat</strong> dans Crucible est réalisé à l'aide d'un ensemble de <strong>Savoir-faire</strong> qui, similaires aux @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.skills0000000000]{Compétences} d'aventure, sont des aspects investis de l'identité de votre personnage obtenus par la progression des @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.talents000000000]{Talents} et par l'accumulation de connaissances sous la forme de @UUID[Compendium.crucible.rules.JournalEntry.crucibleCrafting.JournalEntryPage.schematicDefinit]{Schémas}.</p><section class=\"construction\"><p>Le système d'artisanat de Crucible est actuellement en cours de développement précoce, les règles écrites ici sont sujettes à changement et de nombreux détails pourraient ne pas encore être finalisés. Veuillez considérer ces détails comme un aperçu de ce qui est à venir.</p></section><section class=\"gameplay\"><p>Il n'est pas obligatoire pour un personnage d'investir dans la maîtrise d'un savoir-faire, cependant il est généralement recommandé de sélectionner au moins un savoir-faire à suivre afin de profiter d'une expérience de jeu complète de Crucible, en particulier si votre partie est une campagne de longue durée.</p></section><p>Les informations de ce journal décrivent chacun des savoir-faire, comment les schémas sont définis et obtenus, et comment le processus d'artisanat fonctionne lors de l'utilisation d'un schéma pour transformer des ingrédients d'entrée en objets produits.</p><h2 class=\"divider\">Tableau des Savoir-faire</h2><table><tbody><tr><th><p>Savoir-faire</p></th><th><p>Caractéristique Primaire</p></th><th><p>Caractéristique Secondaire</p></th><th><p>Usage Général</p></th></tr><tr><td><p>@UUID[.alchemy000000000]{Alchimie}</p></td><td><p>Intellect</p></td><td><p>Robustesse</p></td><td><p>Potions, élixirs, huiles et onguents</p></td></tr><tr><td><p>@UUID[.cooking000000000]{Cuisine}</p></td><td><p>Sagesse</p></td><td><p>Robustesse</p></td><td><p>Nourriture et boisson</p></td></tr><tr><td><p>@UUID[.enchanting000000]{Enchantement}</p></td><td><p>Intellect</p></td><td><p>Présence</p></td><td><p>Application de Runes à l'équipement</p></td></tr><tr><td><p>@UUID[.fletching0000000]{Empennage}</p></td><td><p>Force</p></td><td><p>Sagesse</p></td><td><p>Arcs, bâtons et munitions</p></td></tr><tr><td><p>@UUID[.jewelcraft000000]{Joaillerie}</p></td><td><p>Sagesse</p></td><td><p>Force</p></td><td><p>Bijoux et autres accessoires</p></td></tr><tr><td><p>@UUID[.runeweaving00000]{Tisserune}</p></td><td><p>Présence</p></td><td><p>Dextérité</p></td><td><p>Runes utilisées pour enchanter</p></td></tr><tr><td><p>@UUID[.smithing00000000]{Forge}</p></td><td><p>Force</p></td><td><p>Intellect</p></td><td><p>Armes et armures en métal</p></td></tr><tr><td><p>@UUID[.tailoring0000000]{Couture}</p></td><td><p>Dextérité</p></td><td><p>Présence</p></td><td><p>Vêtements et armures légères</p></td></tr></tbody></table>",
                     "name": "Aperçu des Savoir-faire"
                 }
+            },
+            "categories": {
+                "UaoYAtq1fyu6uiPf": {
+                    "name": "Savoir-faire"
+                },
+                "UbGiQAlGSH8iwZhE": {
+                    "name": "Artisanat"
+                }
             }
+        }
+    },
+    "mapping": {
+        "categories": {
+            "path": "categories",
+            "converter": "categories_converter"
         }
     }
 }

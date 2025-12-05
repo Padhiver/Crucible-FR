@@ -28,7 +28,7 @@
             "actions": {
                 "dawnBeacon": {
                     "name": "Balise de l'Aube",
-                    "description": "<p>Vous créez un pilier de lumière magique centré sur votre position actuelle qui crée un cylindre de lumière générant 30 pieds de lumière vive et 30 pieds supplémentaires de lumière faible. Le pilier reste en place pendant 6 rounds ou jusqu'à ce qu'il soit dissipé.</p><p>Cette lumière magique contrecarre les ténèbres magiques et détruit toute source de ténèbres magiques dont l'origine est contenue dans sa zone.</p><p>Les ennemis dans la zone lorsque la lumière est créée pour la première fois doivent résister à une attaque contre leur <strong>Fortitude</strong> ou être @Condition[blinded] pendant un round.</p><p><strong>WIP : Ce sort ne crée pas encore automatiquement une source de lumière, ce qui doit être fait manuellement pour le moment. Cela sera éventuellement automatisé en utilisant une nouvelle feature de Foundry VTT version 14 pour le placement de gabarit.</strong></p>"
+                    "description": "<p>Vous créez un pilier de lumière magique centré sur votre position actuelle qui crée un cylindre de lumière générant 30 pieds de lumière vive et 30 pieds supplémentaires de lumière tamisée. Le pilier reste en place pendant 6 rounds ou jusqu'à ce qu'il soit dissipé.</p><p>Cette lumière magique contrecarre les ténèbres magiques et détruit toute source de ténèbres magiques dont l'origine est contenue dans sa zone.</p><p>Les ennemis dans la zone lorsque la lumière est créée pour la première fois doivent résister à une attaque contre leur <strong>Fortitude</strong> ou être @Condition[blinded] pendant un round.</p><p><strong>WIP : Ce sort ne crée pas encore automatiquement une source de lumière, ce qui doit être fait manuellement pour le moment. Cela sera éventuellement automatisé en utilisant une nouvelle capacité de Foundry VTT version 14 pour le placement de gabarit.</strong></p>"
                 }
             }
         },
@@ -38,7 +38,7 @@
             "actions": {
                 "engulfingDarkness": {
                     "name": "Ténèbres Engloutissantes",
-                    "description": "<p>Vous créez une sphère de ténèbres magiques autour de votre position actuelle avec un rayon de 20 pieds qui reste en place pendant 6 rounds ou jusqu'à ce qu'elle soit dissipée.</p><p>Dans la zone de ces ténèbres, toutes les sources de lumière non magiques sont éteintes et les créatures sont traitées comme @Condition[blinded].</p><p>La zone de cette sphère est contrainte par des murs solides. Les créatures à l'extérieur de cette zone ne peuvent pas voir à l'intérieur et la zone effective des sources de lumière à l'extérieur de cette zone s'arrête à son périmètre.</p><p><strong>WIP : Ce sort ne crée pas encore automatiquement une source de ténèbres, ce qui doit être fait manuellement pour le moment. Cela sera éventuellement automatisé en utilisant une nouvelle feature de Foundry VTT version 14 pour le placement de gabarit.</strong></p>"
+                    "description": "<p>Vous créez une sphère de ténèbres magiques autour de votre position actuelle avec un rayon de 20 pieds qui reste en place pendant 6 rounds ou jusqu'à ce qu'elle soit dissipée.</p><p>Dans la zone de ces ténèbres, toutes les sources de lumière non magiques sont éteintes et les créatures sont traitées comme @Condition[blinded].</p><p>La zone de cette sphère est contrainte par des murs solides. Les créatures à l'extérieur de cette zone ne peuvent pas voir à l'intérieur et la zone effective des sources de lumière à l'extérieur de cette zone s'arrête à son périmètre.</p><p><strong>WIP : Ce sort ne crée pas encore automatiquement une source de ténèbres, ce qui doit être fait manuellement pour le moment. Cela sera éventuellement automatisé en utilisant une nouvelle capacité de Foundry VTT version 14 pour le placement de gabarit.</strong></p>"
                 }
             }
         },
@@ -48,7 +48,7 @@
             "actions": {
                 "protectiveMirage": {
                     "name": "Mirage Protecteur",
-                    "description": "<p>Vous devenez entouré par trois duplicatas illusoires qui durent jusqu'à 10 Rounds. Toute <strong>Frappe</strong> entrante contre vous est faite avec un nombre de <strong>Fléaux</strong> égal à deux fois votre nombre de duplicatas restants. Chaque fois qu'une Frappe vous manque, un de vos duplicatas disparaît.</p>"
+                    "description": "<p>Vous vous entourez de trois duplicatas illusoires qui durent jusqu'à 10 Rounds. Toute <strong>Frappe</strong> entrante contre vous est faite avec un nombre de <strong>Fléaux</strong> égal à deux fois votre nombre de duplicatas restants. Chaque fois qu'une Frappe vous manque, un de vos duplicatas disparaît.</p>"
                 }
             }
         }

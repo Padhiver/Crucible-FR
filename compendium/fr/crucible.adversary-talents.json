@@ -119,13 +119,13 @@
             "actions": {
                 "oozeSubdivide": {
                     "name": "Subdiviser",
-                    "description": "<p>Les cellules de la vase se divisent rapidement et la créature se sépare en deux ! La créature originale et son clone divisent également sa <strong>Santé</strong> restante. La <strong>Taille</strong> de chaque créature résultante est diminuée de 1.</p><p>Si elle est en combat, la nouvelle créature agit comme une <strong>Invocation</strong> et rejoint l'<strong>Initiative</strong> 1. Cette Action ne peut être utilisée que si la créature a une Taille supérieure à 2. La vase créée n'a jamais un rang supérieur à <strong>Normal</strong>.</p>"
+                    "description": "<p>Les cellules de la vase se divisent rapidement et la créature se sépare en deux ! La créature originale et son clone divisent également sa <strong>Santé</strong> restante. La <strong>Taille</strong> de chaque créature résultante est diminuée de 1.</p><p>Si elle est en combat, la nouvelle créature agit comme une <strong>Invocation</strong> et rejoint le combat avec une <strong>Initiative</strong> de 1. Cette Action ne peut être utilisée que si la créature a une Taille supérieure à 2. La vase créée n'a jamais un rang supérieur à <strong>Normal</strong>.</p>"
                 }
             }
         },
         "Pack Hunter": {
             "name": "Chasse en meute",
-            "description": "<p>Cette créature est un chasse en meute, comptant sur ses alliés pour déborder et harceler une cible afin de la rendre exposée à davantage de dégâts.</p><p>Cette créature double le nombre d'Avantages accordés en attaquant un ennemi <strong>Débordé</strong>.</p>"
+            "description": "<p>Cette créature chasse en meute, comptant sur ses alliés pour déborder et harceler une cible afin de l'exposer à davantage de dégâts.</p><p>Cette créature double le nombre des Faveurs accordées en attaquant un ennemi <strong>Débordé</strong>.</p>"
         },
         "Pouncing Strike": {
             "name": "Frappe bondissante",
@@ -177,7 +177,7 @@
         },
         "Slippery Form": {
             "name": "Forme glissante",
-            "description": "<p>Cette créature est en permanence glissante, lui donnant la capacité d'échapper à la capture par des entraves physiques.</p>",
+            "description": "<p>Cette créature est glissante en permanence, lui donnant la capacité d'échapper à la capture par des entraves physiques.</p>",
             "actions": {
                 "slipperyEscape": {
                     "name": "Évasion glissante",
@@ -191,7 +191,7 @@
             "actions": {
                 "swoopingStrike": {
                     "name": "Frappe en piqué",
-                    "description": "<p>Cette attaque peut être utilisée après un <strong>Déplacement</strong> qui est descendu d'au moins 10 pieds vers la cible. L'attaque gagne <strong>+1 Faveur</strong> par tranche de 10 pieds de diminution d'élévation dans ce mouvement.</p><p>Si cette attaque est un <strong>Coup Critique</strong>, la cible de l'attaque est immédiatement mise @Condition[prone].</p>"
+                    "description": "<p>Cette attaque peut être utilisée après un <strong>Déplacement</strong> avec une descente d'au moins 10 pieds vers la cible. L'attaque gagne <strong>+1 Faveur</strong> par tranche de 10 pieds de diminution d'élévation dans ce déplacement.</p><p>Si cette attaque est un <strong>Coup Critique</strong>, la cible de l'attaque est immédiatement mise @Condition[prone].</p>"
                 }
             }
         },
@@ -212,7 +212,7 @@
             "actions": {
                 "tuskCharge": {
                     "name": "Charge du sanglier",
-                    "description": "<p>Chargez en ligne directe jusqu'à votre Foulée et effectuez une Frappe contre la première créature que vous rencontrez. En cas de succès, la cible est mise À terre.</p>"
+                    "description": "<p>Charge en ligne directe sur une distance égale à la Foulée au maximum pour effectuer une Frappe contre la première créature rencontrée. En cas de succès, la cible est mise À terre.</p>"
                 }
             }
         },
@@ -231,7 +231,7 @@
             }
         },
         "Void Absorption": {
-            "name": "Absorption du Vide",
+            "name": "Absorption de Vide",
             "description": "<p>La @ref[actor.name]{créature} n'est pas étrangère à la force ordonnée des ténèbres. Sa résistance au <strong>Vide</strong> est doublée et si cette résistance réduit une quantité de dégâts en dessous de zéro, le montant négatif est reçu comme <strong>Guérison</strong> à la place.</p>"
         },
         "Web Spinner": {
@@ -240,7 +240,7 @@
             "actions": {
                 "webSpinner": {
                     "name": "Tisseur de toile",
-                    "description": "<p>La créature peut passer 10 minutes pour tisser une nouvelle section de toile qui couvre une zone de 5 pieds.</p>"
+                    "description": "<p>La créature peut passer 10 minutes à tisser une nouvelle section de toile qui couvre une zone de 5 pieds.</p>"
                 }
             }
         }

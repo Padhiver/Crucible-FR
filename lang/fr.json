@@ -211,7 +211,7 @@
             "movement": {
                 "size": {
                     "label": "Taille",
-                    "tooltip": "Le nombre de cases de grille occupées par cette créature."
+                    "tooltip": "Le nombre de cases occupées par cette créature."
                 },
                 "sizeBonus": {
                     "label": "Bonus de taille",
@@ -291,7 +291,7 @@
             "ICONIC": {
                 "header": "Sorts iconiques",
                 "empty": "Ajoutez des sorts iconiques en parcourant les compendium du système Crucible.",
-                "none": "Aucun slot de sort iconique débloqué."
+                "none": "Aucun emplacement de sort iconique débloqué."
             },
             "PASSIVE": {
                 "header": "Talents passifs"
@@ -303,7 +303,7 @@
                 "header": "Talents de Sorcellerie"
             },
             "TOOLBELT": {
-                "header": "Ceinture à outils",
+                "header": "Ceinture porte-outils",
                 "empty": "Équipez jusqu'à {slots} outils ou consommables de votre sac à dos en cliquant sur l'icône bouclier."
             },
             "WEAPON": {
@@ -311,7 +311,7 @@
                 "empty": "Équipez des armes de votre sac à dos en cliquant sur l'icône bouclier."
             },
             "TRAINING": {
-                "header": "Talents de formations"
+                "header": "Talents de formation"
             }
         }
     },
@@ -466,7 +466,7 @@
     "ACTION.WarningCannotAffordCost": "{name} ne dispose pas de suffisamment de {resource} pour utiliser {action} !",
     "ACTION.WarningCannotAffordMove": "{name} n'a pas assez d'actions pour parcourir cette distance (coût : {cost}A).",
     "ACTION.WarningCannotSpendAction": "{name} ne peut pas dépenser d'Action car il est Paralysé !",
-    "ACTION.WarningCannotSpendFocus": "{name} ne peut pas dépenser de Concentration car il est actuellement {status} !",
+    "ACTION.WarningCannotSpendFocus": "{name} ne peut pas dépenser de Focus car il est actuellement {status} !",
     "ACTION.WarningInvalidTarget": "Vous devez désigner au moins une cible de type {type} pour l'action {action} !",
     "ACTION.WarningCannotTargetSelf": "Vous ne pouvez pas vous cibler avec cette Action !",
     "ACTION.WarningIncorrectTargets": "Vous ne pouvez désigner qu'un maximum de {number} cibles de type {type} pour l'action {action} !",
@@ -486,7 +486,7 @@
     "ACTION.TAG_CATEGORIES.SKILLS": "Compétences",
     "ACTION.TAG_CATEGORIES.SPELLCRAFT": "Sorcellerie",
     "ACTION.TAG_CATEGORIES.SPECIAL": "Spécial",
-    "ACTION.TagAfterStrike": "Après Frappe",
+    "ACTION.TagAfterStrike": "Post Frappe",
     "ACTION.TagAfterStrikeTooltip": "Cette action ne peut être effectuée qu'immédiatement après une attaque de Frappe de base qui n'a pas manqué de manière critique.",
     "ACTION.TagConsume": "Consommation",
     "ACTION.TagConsumeTooltip": "Cette action implique et nécessite la consommation d'un objet spécifique.",
@@ -569,8 +569,8 @@
         "DELETE_CONFIRM": "Êtes-vous certain de vouloir supprimer l'action <strong>{name}</strong> de l'objet <strong>{parent}</strong> de type {type} ?"
     },
     "ADVANCEMENT.Level": "Niveau",
-    "ADVANCEMENT.Progress": "Progression des Jalons",
-    "ADVANCEMENT.MilestoneTooltip": "{progress} sur {required} Jalons avant le niveau suivant",
+    "ADVANCEMENT.Progress": "Progression des Échelons",
+    "ADVANCEMENT.MilestoneTooltip": "{progress} sur {required} Échelons avant le niveau suivant",
     "ADVANCEMENT.ExpectedLevel": "Niveau attendu",
     "AWARD": {
         "LABELS": {
@@ -579,20 +579,20 @@
         },
         "TOOLTIPS": {
             "Currency": "Attribuer de la Monnaie",
-            "Milestone": "Attribuer un/des Jalon(s)"
+            "Milestone": "Attribuer un/des Échelon(s)"
         },
         "Each": "chacun",
         "MILESTONE": {
-            "one": "Jalon",
-            "other": "Jalons",
+            "one": "Échelon",
+            "other": "Échelons",
             "Identifier": "Identifiant",
-            "IdentifierHint": "Un identifiant unique pour l'attribution de jalon, doit être un slug (pas d'espaces ni de caractères spéciaux).",
-            "Award": "Attribuer des Jalons",
-            "Revoke": "Révoquer des Jalons",
+            "IdentifierHint": "Un identifiant unique pour l'attribution d'échelon, doit être un slug (pas d'espaces ni de caractères spéciaux).",
+            "Award": "Attribuer des Échelons",
+            "Revoke": "Révoquer des Échelons",
             "GroupAward": "{number} {label} attribué(s) au groupe {name} et aux membres suivants :",
             "GroupRevoke": "{number} {label} révoqué(s) du groupe {name} et des membres suivants :",
-            "Recipients": "Récipiendaires du Jalon",
-            "RecipientsHint": "Désignez un ou plusieurs héros pour recevoir le jalon."
+            "Recipients": "Récipiendaires de l'Échelon",
+            "RecipientsHint": "Désignez un ou plusieurs héros pour recevoir l'échelon."
         },
         "SUMMARIES": {
             "Cost": "Coût de {award} payé par :",
@@ -704,7 +704,7 @@
             },
             "skills": {
                 "label": "Compétences de base",
-                "hint": "Configurez les compétences que cet Historique fournit automatiquement avec une formation novice. Typiquement, un Historique a une formation dans deux compétences."
+                "hint": "Configurez les compétences que cet Historique fournit automatiquement avec une formation de novice. Typiquement, un Historique a une formation dans deux compétences."
             },
             "talents": {
                 "label": "Talents acquis",
@@ -718,7 +718,7 @@
                 },
                 "icon": {
                     "label": "Icône d'Historique",
-                    "hint": "Un petit icône utilisé pour représenter cet Historique dans l'interface utilisateur."
+                    "hint": "Une petite icône utilisé pour représenter cet Historique dans l'interface utilisateur."
                 }
             }
         },
@@ -842,7 +842,7 @@
                 "label": "Cassé"
             },
             "enchantment": {
-                "label": "Tiers d'Enchantement"
+                "label": "Niveau d'Enchantement"
             },
             "equipped": {
                 "label": "Équipé"
@@ -942,7 +942,7 @@
         "FIELDS": {
             "dc": {
                 "label": "Difficulté du Défi",
-                "hint": "Assignez la valeur qui doit être dépassée lors d'un test de compétence d'artisanat pour réussir la fabrication de ce schémas."
+                "hint": "Assignez la valeur qui doit être dépassée lors d'un test de compétence d'artisanat pour réussir la fabrication de ce schéma."
             },
             "hours": {
                 "label": "Heures",
@@ -1064,7 +1064,7 @@
             "diplomacy": "Diplomatie",
             "intimidation": "Intimidation",
             "performance": "Représentation",
-            "smithing": "Forgeron",
+            "smithing": "Forge",
             "tailoring": "Couture",
             "fletching": "Empennage",
             "jewelcraft": "Joaillerie",
@@ -1254,7 +1254,7 @@
             },
             "training": {
                 "label": "Formation accordée",
-                "hint": "Ce talent accorde t'il un certain rang de formation dans un domaine particulier ?",
+                "hint": "Ce talent accorde-t-il un certain rang de formation dans un domaine particulier ?",
                 "type.label": "Type de formation",
                 "rank.label": "Rang de formation"
             }
@@ -1393,7 +1393,7 @@
     "TOOL": {
         "CATEGORIES": {
             "CRAFTING": "Kit d'Artisanat",
-            "IMPLEMENT": "Instrument"
+            "IMPLEMENT": "Ustensile"
         },
         "FIELDS": {
             "skills": {
@@ -1411,7 +1411,7 @@
     },
     "WEAPON": {
         "CATEGORIES": {
-            "CATEGORY_HANDS": "{category} ({hands}h)",
+            "CATEGORY_HANDS": "{category} ({hands}m)",
             "LIGHT": "Légère",
             "SIMPLE": "Simple",
             "BALANCED": "Équilibrée",

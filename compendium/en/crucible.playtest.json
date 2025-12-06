@@ -1,8 +1,12 @@
 {
   "label": "Playtest",
   "mapping": {
-    "actors": {},
-    "items": {}
+    "actors": {
+      "items": {
+        "path": "items",
+        "converter": "adventure_items_converter"
+      }
+    }
   },
   "folders": {},
   "entries": {
@@ -10,25 +14,6 @@
       "name": "Playtest 1 - The Ring of Valor",
       "caption": "Test your mettle in the Ring of Valor, the first available playtest for the Crucible game system.",
       "description": "<p><em>The Ring of Valor</em> is a guided introduction to character development and combat mechanics in Crucible which places players in the role of a gladiatorial team facing a sequence of escalating challenges.</p>",
-      "scenes": {
-        "Arena of Valor": {
-          "name": "Arena of Valor"
-        }
-      },
-      "macros": {
-        "Recover": {
-          "name": "Recover",
-          "command": "game.system.api.documents.CrucibleActor.macroAction(actor, \"recover\");"
-        },
-        "Toggle Talent Tree": {
-          "name": "Toggle Talent Tree",
-          "command": "if ( actor?.type !== \"hero\" ) return;\nawait actor.toggleTalentTree();\nconst pack = game.packs.get(\"crucible.talent\");\npack.apps[0].render({force: true}, {left: window.innerWidth - 360, top: 10});"
-        },
-        "Full Rest": {
-          "name": "Full Rest",
-          "command": "if ( !actor ) return;\nawait actor.deleteEmbeddedDocuments(\"ActiveEffect\", [], {deleteAll: true});\nawait actor.rest({}, {allowDead: true});"
-        }
-      },
       "actors": {
         "Baizaz": {
           "name": "Baizaz",
@@ -1200,18 +1185,6 @@
           }
         }
       },
-      "folders": {
-        "Crucible Playtest": "Crucible Playtest",
-        "The Ring of Valor": "The Ring of Valor",
-        "Day 1": "Day 1",
-        "Day 2": "Day 2",
-        "Day 3": "Day 3",
-        "Day 4": "Day 4",
-        "Day 5": "Day 5",
-        "Pregenerated Heroes": "Pregenerated Heroes",
-        "Level 1": "Level 1",
-        "Level 6": "Level 6"
-      },
       "journals": {
         "Playtest One: The Ring of Valor": {
           "name": "Playtest One: The Ring of Valor",
@@ -1250,6 +1223,37 @@
             }
           }
         }
+      },
+      "scenes": {
+        "Arena of Valor": {
+          "name": "Arena of Valor"
+        }
+      },
+      "macros": {
+        "Recover": {
+          "name": "Recover",
+          "command": "game.system.api.documents.CrucibleActor.macroAction(actor, \"recover\");"
+        },
+        "Toggle Talent Tree": {
+          "name": "Toggle Talent Tree",
+          "command": "if ( actor?.type !== \"hero\" ) return;\nawait actor.toggleTalentTree();\nconst pack = game.packs.get(\"crucible.talent\");\npack.apps[0].render({force: true}, {left: window.innerWidth - 360, top: 10});"
+        },
+        "Full Rest": {
+          "name": "Full Rest",
+          "command": "if ( !actor ) return;\nawait actor.deleteEmbeddedDocuments(\"ActiveEffect\", [], {deleteAll: true});\nawait actor.rest({}, {allowDead: true});"
+        }
+      },
+      "folders": {
+        "Crucible Playtest": "Crucible Playtest",
+        "The Ring of Valor": "The Ring of Valor",
+        "Day 1": "Day 1",
+        "Day 2": "Day 2",
+        "Day 3": "Day 3",
+        "Day 4": "Day 4",
+        "Day 5": "Day 5",
+        "Pregenerated Heroes": "Pregenerated Heroes",
+        "Level 1": "Level 1",
+        "Level 6": "Level 6"
       }
     }
   }

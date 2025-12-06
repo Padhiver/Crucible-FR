@@ -1,0 +1,1251 @@
+{
+    "label": "Playtest",
+    "entries": {
+        "Playtest 1 - The Ring of Valor": {
+            "name": "Playtest 1 - L'Arène de la Vaillance",
+            "caption": "Mettez votre courage à l'épreuve dans L'Arène de la Vaillance, le premier Playtest disponible pour le système de jeu Crucible.",
+            "description": "<p><em>L'Arène de la Vaillance</em> est une introduction guidée au développement des personnages et aux mécaniques de combat de Crucible, qui place les joueurs dans le rôle d'une équipe de gladiateurs confrontée à une série de défis de plus en plus difficiles.</p>",
+            "scenes": {
+                "Arena of Valor": {
+                    "name": "Arène de la Vaillance"
+                }
+            },
+            "macros": {
+                "Recover": {
+                    "name": "Récupération",
+                    "command": "game.system.api.documents.CrucibleActor.macroAction(actor, \"recover\");"
+                },
+                "Toggle Talent Tree": {
+                    "name": "Afficher l'Arbre des Talents",
+                    "command": "if ( actor?.type !== \"hero\" ) return;\nawait actor.toggleTalentTree();\nconst pack = game.packs.get(\"crucible.talent\");\npack.apps[0].render({force: true}, {left: window.innerWidth - 360, top: 10});"
+                },
+                "Full Rest": {
+                    "name": "Repos complet",
+                    "command": "if ( !actor ) return;\nawait actor.deleteEmbeddedDocuments(\"ActiveEffect\", [], {deleteAll: true});\nawait actor.rest({}, {allowDead: true});"
+                }
+            },
+            "actors": {
+                "Baizaz": {
+                    "name": "Baizaz",
+                    "tokenName": "Baizaz",
+                    "items": {
+                        "Heavy Hide": {
+                            "name": "Armure de peau"
+                        },
+                        "Tusks": {
+                            "name": "Cornes"
+                        },
+                        "Tusk Charge": {
+                            "name": "Charge du sanglier",
+                            "description": "Le Sanglier baisse la tête et charge à une vitesse frénétique, ses défenses dépassant sous un gosier baveux.",
+                            "actions": {
+                                "tuskCharge": {
+                                    "name": "Charge du sanglier",
+                                    "description": "<p>Charge en ligne directe sur une distance égale à la Foulée au maximum pour effectuer une Frappe contre la première créature rencontrée. En cas de succès, la cible est mise À terre.</p>",
+                                    "effects": [
+                                        {
+                                            "name": "Charge du sanglier"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                },
+                "Huiana": {
+                    "name": "Huiana",
+                    "tokenName": "Huiana",
+                    "items": {
+                        "Bite": {
+                            "name": "Morsure"
+                        },
+                        "Fur": {
+                            "name": "Fourrure"
+                        },
+                        "Pack Hunter": {
+                            "name": "Chasse en meute",
+                            "description": "<p>Cette créature chasse en meute, comptant sur ses alliés pour déborder et harceler une cible afin de l'exposer à davantage de dégâts.</p><p>Cette créature double le nombre des Faveurs accordées en attaquant un ennemi <strong>Débordé</strong>.</p>"
+                        }
+                    }
+                },
+                "Anvil": {
+                    "name": "Enclume",
+                    "tokenName": "Enclume",
+                    "items": {
+                        "Heavy Hides": {
+                            "name": "Armure de peaux"
+                        },
+                        "Greatclub": {
+                            "name": "Massue"
+                        },
+                        "Powerful Physique": {
+                            "name": "Physique puissant",
+                            "description": "Vous pouvez manier des armes avec le trait Lent et porter des Armures avec le trait Encombrante sans subir de Fléaux à vos jets d'Initiative."
+                        },
+                        "Wrestler": {
+                            "name": "Lutteur",
+                            "description": "Vous êtes capable de soumettre des adversaires en utilisant votre Force physique.",
+                            "actions": {
+                                "grapple": {
+                                    "name": "Saisir",
+                                    "description": "<p>Effectuez une attaque de compétence d'<strong>Athlétisme</strong> contre une cible adjacente. sur un succès, votre cible et vous-même êtes Entravés pendant 1 Round.</p>",
+                                    "effects": [
+                                        {
+                                            "name": "Saisir"
+                                        },
+                                        {
+                                            "name": "Saisir"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "Leg Sweep": {
+                            "name": "Balayette",
+                            "description": "<p>Vous utilisez une arme basée sur la <strong>Force</strong> pour déséquilibrer votre ennemi, fauchant ses jambes pour le faire tomber.</p>",
+                            "actions": {
+                                "legSweep": {
+                                    "name": "Balayette",
+                                    "description": "<p>Vous effectuez une attaque de <strong>Frappe</strong> avec l'arme de votre main principale. Cette technique est <strong>Difficile</strong> à exécuter et inflige des dégâts réduits, mais votre cible tombe <strong>À terre</strong> en cas de réussite.</p>",
+                                    "effects": [
+                                        {
+                                            "name": "Balayette"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "Concussive Blows": {
+                            "name": "Coups concussifs",
+                            "description": "<p>Votre puissance physique avec des armes de mêlée infligeant des dégâts Contondants peut causer la condition <strong>Ébranlé</strong> sur les Coups Critiques infligeant des dégâts à la Santé.</p>\n<p>L'effet Ébranlé dure 1 round et réduit le maximum d'Actions de votre cible de 1.</p>"
+                        },
+                        "Strong Grip": {
+                            "name": "Prise solide",
+                            "description": "Votre prise sur votre armement est ferme et inflexible. Vous pouvez effectuer des Actions qui nécessitent une main libre tout en maniant une arme à deux mains. Les tentatives pour vous Désarmer sont faites avec +2 Fléaux."
+                        },
+                        "Hammer Toss": {
+                            "name": "Lancer de Marteau",
+                            "description": "Enclume s'empare de Marteau et projette l'Orque tête baissée dans la mêlée.",
+                            "actions": {
+                                "hammerToss": {
+                                    "name": "Lancer de Marteau",
+                                    "description": "<p>Marteau saisit Enclume et le projette jusqu'à 30 pieds, infligeant des dégâts dans la zone d'impact où le chef de guerre orque atterrit.</p>",
+                                    "condition": "Marteau est adjacent à Enclume."
+                                }
+                            }
+                        },
+                        "Heavy Strike": {
+                            "name": "Frappe lourde",
+                            "description": "<p>Vous savez comment utiliser une arme lourde pour délivrer des coups punitifs, mettant toute votre force derrière chaque balancement.</p>",
+                            "actions": {
+                                "heavyStrike": {
+                                    "name": "Frappe lourde",
+                                    "description": "<p>Vous libérez une <strong>Frappe</strong> puissante avec l'arme de votre main principale. L'attaque est plus lente à exécuter, mais est <strong>Améliorée</strong> pour délivrer des dégâts supplémentaires.</p>"
+                                }
+                            }
+                        },
+                        "Heavy Weapon Training": {
+                            "name": "Armes lourdes : Entraînement",
+                            "description": "<p>Vous avez une éducation de base dans l'utilisation de l'armement martial. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes des catégories <strong>Lourde</strong> ou <strong>Équilibrée</strong>.</p>"
+                        }
+                    }
+                },
+                "Hammer": {
+                    "name": "Marteau",
+                    "tokenName": "Marteau",
+                    "items": {
+                        "Hand Axe": {
+                            "name": "Hachette"
+                        },
+                        "Longsword": {
+                            "name": "Épée longue"
+                        },
+                        "Scale Mail": {
+                            "name": "Armure d’écailles"
+                        },
+                        "Skirmisher": {
+                            "name": "Querelleur",
+                            "description": "<p>Vous êtes adepte d'entrer et sortir de la mêlée. Lorsque vous sortez du rayon d'<strong>Engagement</strong> d'un ennemi, cet ennemi a 2 Fléaux à tout <strong>Assaut Opportuniste</strong> contre vous.</p>"
+                        },
+                        "Flurry": {
+                            "name": "Déluge de coups",
+                            "description": "<p>Une technique martiale utilisant deux armes pour submerger une cible unique avec une séquence implacable d'attaques.</p>",
+                            "actions": {
+                                "flurry": {
+                                    "name": "Déluge de coups",
+                                    "description": "<p>Vous <strong>Frappez</strong> deux fois avec chacune de vos armes, mais chaque frappe est <strong>Difficile</strong>.</p>"
+                                }
+                            }
+                        },
+                        "Hamstring": {
+                            "name": "Coupe-Jarret",
+                            "description": "<p>Vous utilisez une arme tranchante pour cibler les jambes d'un ennemi et paralyser son mouvement.</p>",
+                            "actions": {
+                                "hamstring": {
+                                    "name": "Coupe-Jarret",
+                                    "description": "<p>Vous effectuez une attaque de <strong>Frappe</strong> qui est <strong>Difficile</strong>, mais sur une réussite, elle inflige la condition <strong>Ralenti</strong> pendant <strong>3 Rounds</strong>.</p>",
+                                    "effects": [
+                                        {
+                                            "name": "Coupe-Jarret"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "Heavy Weapon Training": {
+                            "name": "Armes lourdes : Entraînement",
+                            "description": "<p>Vous avez une éducation de base dans l'utilisation de l'armement martial. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes des catégories <strong>Lourde</strong> ou <strong>Équilibrée</strong>.</p>"
+                        },
+                        "Dual Wield": {
+                            "name": "Ambidextrie",
+                            "description": "<p>Vous êtes adepte du combat à deux armes en simultané. Vous pouvez enchaîner les attaques pour frapper plus rapidement qu'il n'est possible avec une seule arme.</p>",
+                            "actions": {
+                                "offhandStrike": {
+                                    "name": "Frappe Main-secondaire",
+                                    "description": "<p>Immédiatement après avoir effectué une Frappe basique avec l'arme de votre main principale, vous réalisez une <strong>Frappe</strong> à coût réduit ave l'arme de votre <strong>main secondaire</strong>.</p>"
+                                }
+                            }
+                        },
+                        "Heavy Strike": {
+                            "name": "Frappe lourde",
+                            "description": "<p>Vous savez comment utiliser une arme lourde pour délivrer des coups punitifs, mettant toute votre force derrière chaque balancement.</p>",
+                            "actions": {
+                                "heavyStrike": {
+                                    "name": "Frappe lourde",
+                                    "description": "<p>Vous libérez une <strong>Frappe</strong> puissante avec l'arme de votre main principale. L'attaque est plus lente à exécuter, mais est <strong>Améliorée</strong> pour délivrer des dégâts supplémentaires.</p>"
+                                }
+                            }
+                        }
+                    }
+                },
+                "Orivech": {
+                    "name": "Orivech",
+                    "tokenName": "Orivech",
+                    "items": {
+                        "Mage Staff": {
+                            "name": "Bâton de Mage"
+                        },
+                        "Studded Leather Armor": {
+                            "name": "Armure de cuir cloutée"
+                        },
+                        "Gesture: Influence": {
+                            "name": "Signe : Influence",
+                            "description": "<p>Vous intensifiez la puissance arcanique d'une Rune en un contact direct concentré qui est généralement une évolution plus puissante du signe de Contact de base.</p><p>Le signe d'Influence évolue avec la <strong>Présence</strong> et cible une créature adjacente unique. Il inflige <strong>10 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                        },
+                        "Inflection: Compose": {
+                            "name": "Inflexion : Façonner",
+                            "description": "<p>Améliorez un sort en prenant plus de temps pour sa formation, réduisant d'autres coûts de ressources en échange. L'inflexion Façonner réduit le coût en <strong>Focus</strong> d'un sort de 1 tout en augmentant son coût en <strong>Action</strong> de 1 en échange.</p>"
+                        },
+                        "Gesture: Create": {
+                            "name": "Signe : Création",
+                            "description": "<p>Vous coalescez la puissance arcanique en forme tangible, manifestant un <strong>Lutin</strong> qui apparaît dans les 10 pieds et rejoint le Combat avec une Initiative de 1. Votre Lutin est un <strong>Laquais</strong> de la moitié de votre propre Niveau.</p><p>Le signe de Création évolue avec la <strong>Sagesse</strong> et le Lutin survit pendant <strong>6 Rounds</strong>. Vous ne pouvez avoir qu'un seul Lutin actif, lancer un autre sort utilisant le signe de Création remplace votre Lutin précédent. Ce signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>4 Actions</strong> et <strong>1 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Toutes les Runes n'ont pas encore d'acteur Lutin défini. Les Runes qui n'ont pas encore de Création définie manifesteront – pour l'instant – un <strong>Lutin de Flamme</strong>.</p>"
+                        },
+                        "Gesture: Arrow": {
+                            "name": "Signe : Trait",
+                            "description": "<p>Vous lancez un projectile imprégné du pouvoir magique d'une Rune sur une cible distante.</p><p>Le signe de Trait évolue avec l'<strong>Intellect</strong> et cible une créature unique jusqu'à une distance de 60 pieds, infligeant <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                        },
+                        "Conjurer": {
+                            "name": "Conjurateur",
+                            "description": "<p>Vous êtes un maître de la Conjuration et du Signe de Création pour manifester l'énergie arcanique sous forme physique. Vous pouvez maintenir jusqu'à 3 créations simultanément au lieu d'une seule.</p>"
+                        },
+                        "Inflection: Push": {
+                            "name": "Inflexion : Rejeter",
+                            "description": "<p>Amplifiez un sort pour repousser les créatures affectées loin du lanceur. Les créatures affectées par un sort avec l'inflexion Rejeter se déplacent de 1 case loin du lanceur de sorts si cette case de destination est inoccupée.</p>"
+                        },
+                        "Talisman Weapon Training": {
+                            "name": "Armes Talisman : Entraînement",
+                            "description": "<p>Vous avez une éducation de base dans l'utilisation des talismans, orbes, focalisateurs ou autres armes similaires. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes de la catégorie <strong>Talisman</strong>.</p>"
+                        },
+                        "Intercept": {
+                            "name": "Intercepter",
+                            "description": "Vous protégez vos alliés, interceptant les coups qui pourraient autrement être dirigés vers vos compagnons.",
+                            "actions": {
+                                "intercept": {
+                                    "name": "Intercepter",
+                                    "description": "<p>Vous interceptez la trajectoire d'un ennemi qui entre dans votre rayon d'<strong>Engagement</strong>, vous déplaçant immédiatement de votre <strong>Foulée</strong> pour vous interposer et bloquer son chemin.</p><p>Si l'ennemi sort de votre rayon d'Engagement ou attaque une autre créature pendant son tour, vous pouvez effectuer un <strong>Assaut opportuniste</strong> contre lui.</p>",
+                                    "condition": "Un ennemi se déplace dans ou à travers votre rayon d'Engagement."
+                                }
+                            }
+                        },
+                        "Gesture: Ray": {
+                            "name": "Signe : Rayon",
+                            "description": "<p>Vous canalisez la puissance arcanique d'une Rune en un point et la projetez vers l'extérieur en un faisceau.</p><p>Le signe de Rayon évolue avec la <strong>Sagesse</strong> et produit une ligne de 1 pied de large et 30 pieds de long partant du lanceur, infligeant <strong>6 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Le signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>4 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                        },
+                        "Rune: Death": {
+                            "name": "Rune : Mort",
+                            "description": "<p>La force ordonnée de la destruction, responsable de la corruption de toute matière biologique. La Rune de Mort gouverne la pourriture et la destruction.</p><p>La Rune de Mort évolue avec l'<strong>Intellect</strong>, cible la <strong>Fortitude</strong>, et inflige des dégâts de <strong>Corruption</strong> à la <strong>Santé</strong>. Elle est opposée par la rune chaotique de <strong>Vie</strong>.</p>"
+                        },
+                        "Rune: Oblivion": {
+                            "name": "Rune : Néant",
+                            "description": "<p>Une force chaotique de destruction et d'annihilation de l'existence. La Rune de Néant gouverne la destruction de la matière ou la décohérence de l'esprit.</p><p>La Rune de Néant évolue avec l'<strong>Intellect</strong>, cible la <strong>Volonté</strong>, et inflige des dégâts de <strong>Vide</strong> au <strong>Moral</strong>. Elle est opposée par la rune ordonnée de <strong>l'Esprit</strong>.</p>",
+                            "actions": {
+                                "erase": {
+                                    "name": "Effacer",
+                                    "description": "<p>Votre maîtrise de la Rune de Néant vous permet de détricoter de minuscules trous dans le tissu de l'existence, produisant l'un des effets suivants :</p><ul><li><p>Désintégrer un objet non magique que vous tenez entre vos mains, d'une taille inférieure à un cube de 6 pouces d'arrête, en le réduisant en une fine poussière composée de ses éléments constitutifs.</p></li><li><p>Anesthésier la capacité de ressentir des émotions, pour vous ou une cible consentante que vous touchez, la plongeant ainsi dans un état placide, stoïque ou détaché. Cet effet peut être maintenu tant que vous n'effectuez pas d'autre <strong>Action</strong>.</p></li><li><p>Atténuer la puissance d'une source lumineuse, réduisant de moitié son rayon de visibilité tant que vous maintenez un contact physique avec elle. Une seule source lumineuse peut être diminuée de cette manière à la fois.</p></li></ul><p>Effacer ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
+                                }
+                            }
+                        },
+                        "Rune: Soul": {
+                            "name": "Rune : Âme",
+                            "description": "<p>La force ordonnée de création et d'essence spirituelle. La Rune d'Âme gouverne la procession fondamentale des âmes à travers la vie et la mort et concerne les questions de sapience, de personnalité et de santé mentale.</p><p>La Rune d'Âme évolue avec la <strong>Présence</strong> et fournit une <strong>Restauration</strong> du <strong>Moral</strong> ou inflige des dégâts <strong>Psychiques</strong> opposés par la <strong>Volonté</strong>. Elle est opposée par la rune chaotique de <strong>Néant</strong>.</p>",
+                            "actions": {
+                                "evoke": {
+                                    "name": "Évoquer",
+                                    "description": "<p>Votre maîtrise de la Rune d'Âme vous permet faciliter les formes fondamentales d'influence spirituelle, produisant l'un des effets suivants :</p><ul><li><p>Vous permettre, ou à une autre personne consentante, de revivre un souvenir marquant d'un moment de son passé, d'une durée maximale d'une minute, comme s'il s'était produit récemment.</p></li><li><p>Identifier une condition spirituelle négative affectant une personne telle que @Condition[broken], @Condition[frightened], @Condition[confused], or @Condition[insane].</p></li><li><p>Créer un lien spirituel momentané avec une autre créature consentante qui lui permet de reconnaître une idée pouvant être exprimée par un seul mot.</p></li></ul><p>Les utilisations d'Évoquer ne peuvent affecter que vous-même ou une autre créature que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
+                                }
+                            }
+                        }
+                    }
+                },
+                "Skeletal Archer": {
+                    "name": "Archer squelettique",
+                    "tokenName": "Archer squelettique",
+                    "items": {
+                        "Deathly Armor": {
+                            "name": "Armure mortelle"
+                        },
+                        "Shortbow": {
+                            "name": "Arc court"
+                        },
+                        "Precision Shot": {
+                            "name": "Tir de précision",
+                            "description": "Vous prenez le temps de stabiliser votre visée et de cibler le point le plus faible d'un ennemi. Vous n'aurez peut-être qu'un seul tir, mais vous le faites compter.",
+                            "actions": {
+                                "precisionShot": {
+                                    "name": "Tir de précision",
+                                    "description": "<p>Vous stabilisez votre visée et tirez un seul coup précis.</p>"
+                                }
+                            }
+                        },
+                        "Evasive Shot": {
+                            "name": "Tir évasif",
+                            "description": "<p>Vous êtes un expert pour tirer avec des armes à distance tout en évitant les attaques ennemies. Après avoir effectué une attaque d'arme à distance, vous gagnez la moitié de votre <strong>Foulée</strong> en déplacement gratuit supplémentaire.</p>"
+                        },
+                        "Projectile Weapon Training": {
+                            "name": "Armes de projectile : Entraînement",
+                            "description": "<p>Vous avez une éducation de base en archerie et autres armes à projectile. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes des catégories <strong>Projectile</strong>.</p>"
+                        }
+                    }
+                },
+                "Skeletal Spearman": {
+                    "name": "Lancier squelettique",
+                    "tokenName": "Lancier squelettique",
+                    "items": {
+                        "Deathly Armor": {
+                            "name": "Armure mortelle"
+                        },
+                        "Spear": {
+                            "name": "Lance"
+                        },
+                        "Bulwark": {
+                            "name": "Rempart",
+                            "description": "<p>Vous êtes expert dans l'utilisation d'un <strong>Bouclier</strong> pour vous défendre et défendre les autres.</p><p>Une fois par Tour tant que vous avez un Bouclier équipé, vous pouvez utiliser l'action <strong>Défendre</strong> à un coût réduit de 1 Point d'Action.</p>"
+                        },
+                        "Armored Efficiency": {
+                            "name": "Efficacité en armure",
+                            "description": "<p>Vous êtes entraîné à porter les types d'armures les plus lourds tout en conservant votre mobilité. Vous pouvez utiliser une action de Déplacement gratuit une fois par Tour tout en portant une armure Lourde.</p>"
+                        },
+                        "Leg Sweep": {
+                            "name": "Balayette",
+                            "description": "<p>Vous utilisez une arme basée sur la <strong>Force</strong> pour déséquilibrer votre ennemi, fauchant ses jambes pour le faire tomber.</p>",
+                            "actions": {
+                                "legSweep": {
+                                    "name": "Balayette",
+                                    "description": "<p>Vous effectuez une attaque de <strong>Frappe</strong> avec l'arme de votre main principale. Cette technique est <strong>Difficile</strong> à exécuter et inflige des dégâts réduits, mais votre cible tombe <strong>À terre</strong> en cas de réussite.</p>",
+                                    "effects": [
+                                        {
+                                            "name": "Balayette"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "Light Weapon Training": {
+                            "name": "Armes légères : Entraînement",
+                            "description": "<p>Vous avez une éducation de base dans l'utilisation de l'armement de finesse. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes des catégories <strong>Légère</strong> et <strong>Équilibrée</strong>.</p>"
+                        }
+                    }
+                },
+                "Koy Rent": {
+                    "name": "Koy Rent",
+                    "tokenName": "Koy Rent",
+                    "items": {
+                        "Thick Fur": {
+                            "name": "Fourrure épaisse"
+                        },
+                        "Rending Claw": {
+                            "name": "Griffe déchirante"
+                        },
+                        "Thick Skin": {
+                            "name": "Peau épaisse",
+                            "description": "Votre robustesse physique vous rend plus résistant aux dégâts. Vous gagnez +2 Résistance aux dégâts Contondants, Tranchants et Perforants."
+                        },
+                        "Ferocious Howl": {
+                            "name": "Hurlement féroce",
+                            "description": "<p>Le loup-garou pousse un hurlement à glacer le sang qui vous fige sur place de peur.</p>",
+                            "actions": {
+                                "ferociousHowl": {
+                                    "name": "Hurlement féroce",
+                                    "description": "<p>Vous effectuez une attaque d'Intimidation contre la défense de <strong>Volonté</strong> de tous les ennemis à moins de 30 pieds, infligeant des dégâts du Vide à leur <strong>Moral</strong> et les soumettant à la condition Paniqué pendant <strong>3 Rounds</strong>.</p>",
+                                    "effects": [
+                                        {
+                                            "name": "Hurlement féroce"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "Intimidator": {
+                            "name": "Intimidateur",
+                            "description": "Vous vous spécialisez dans l'exercice de votre présence intimidante pour briser le moral de vos ennemis.",
+                            "actions": {
+                                "intimidate": {
+                                    "name": "Intimider",
+                                    "description": "<p>Vous intimidez physiquement un ennemi dans votre rayon d'engagement, effectuant une attaque de compétence d'Intimidation contre votre cible. Sur un succès, il subit des dégâts de Vide au Moral.</p>"
+                                }
+                            }
+                        },
+                        "Blood Frenzy": {
+                            "name": "Frénésie sanguinaire",
+                            "description": "<p>Votre soif de bataille vous pousse à des exploits d'action accrue. Lorsque vous réussissez un <strong>Coup Critique</strong> infligeant des dégâts à la Santé, vous gagnez immédiatement +1 Action. Ce bénéfice ne peut se produire qu'une fois par Round.</p>"
+                        },
+                        "Lesser Regeneration": {
+                            "name": "Régénération mineure",
+                            "description": "<p>Votre robustesse prodigieuse transmet une capacité surnaturelle à récupérer des blessures rapidement. Au début de votre tour, si vous n'êtes pas Affaibli, vous gagnez <strong>+1 Santé</strong>.</p>"
+                        },
+                        "Bloodletter": {
+                            "name": "Écorcheur",
+                            "description": "<p>Votre précision avec les armes infligeant des dégâts Tranchants ou Perforants peut causer la condition Ensanglantée sur les Coups Critiques infligeant des dégâts à la Santé.</p><p>L'effet Ensanglantée dure 1 round et inflige votre score de Dextérité en dégâts supplémentaires à la Santé.</p>"
+                        },
+                        "Ferocious Leap": {
+                            "name": "Bond féroce",
+                            "description": "<p>Vous bondissez puissamment dans la bataille pour délivrer un coup punitif à un ennemi proche avec l'arme de votre main principale.</p>",
+                            "actions": {
+                                "ferociousLeap": {
+                                    "name": "Bond féroce",
+                                    "description": "<p>Vous bondissez sur 10 pieds et effectuez une Frappe de mêlée contre un ennemi à portée de votre point de chute. Votre déplacement ignore les terrains difficiles et n'est pas bloqué par des créatures ennemies.</p>"
+                                }
+                            }
+                        },
+                        "Natural Weapon Proficiency": {
+                            "name": "Armes naturelles : Maîtrise",
+                            "description": "<p>Vous avez une familiarité fluide avec l'utilisation des armes corporelles naturelles. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de Compétence de +1</strong> avec les armes de la catégorie <strong>Naturelle</strong>.</p>"
+                        },
+                        "Heavy Strike": {
+                            "name": "Frappe lourde",
+                            "description": "<p>Vous savez comment utiliser une arme lourde pour délivrer des coups punitifs, mettant toute votre force derrière chaque balancement.</p>",
+                            "actions": {
+                                "heavyStrike": {
+                                    "name": "Frappe lourde",
+                                    "description": "<p>Vous libérez une <strong>Frappe</strong> puissante avec l'arme de votre main principale. L'attaque est plus lente à exécuter, mais est <strong>Améliorée</strong> pour délivrer des dégâts supplémentaires.</p>"
+                                }
+                            }
+                        },
+                        "Berserker": {
+                            "name": "Berserker",
+                            "description": "<p>Vous vous délectez du frisson du combat, vous jetant dans la mêlée avec un abandon total.</p>",
+                            "actions": {
+                                "berserkerRage": {
+                                    "name": "Rage de Berserker",
+                                    "description": "Vous devenez Enragé. Tant que vous êtes Enragé, vous infligez 4 dégâts supplémentaires sur toutes vos attaques de mêlée. Vous pouvez tenter de mettre fin cet effet à votre propre tour en réussissant un test de Volonté contre un DD de 20. Cet effet se termine automatiquement à la fin du Combat.",
+                                    "condition": "Vous avez subi des dégâts à votre réserve de Santé depuis votre dernier tour de Combat.",
+                                    "effects": [
+                                        {
+                                            "name": "Rage de Berserker"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "Frenzied Claws": {
+                            "name": "Griffes frénétiques",
+                            "description": "<p>La @ref[actor.name]{créature} se lance dans une série frénétique de coups de griffes sauvages.</p>",
+                            "actions": {
+                                "frenziedClaws": {
+                                    "name": "Griffes frénétiques",
+                                    "description": "<p>La @ref[actor.name]{créature} attaque quatre fois avec ses griffes contre une seule cible.</p>"
+                                }
+                            }
+                        },
+                        "Pouncing Strike": {
+                            "name": "Frappe bondissante",
+                            "description": "<p>Cette créature se jette en avant, mettant tout son poids dans une frappe sautée.</p>",
+                            "actions": {
+                                "pouncingStrike": {
+                                    "name": "Frappe bondissante",
+                                    "description": "<p>Cette attaque peut être utilisée après un <strong>Déplacement</strong> qui rapproche la @ref[actor.name]{créature} d'au moins 10 pieds de sa cible. Si la créature était au-dessus de la cible, cette attaque gagne <strong>+1 Faveur</strong> par tranche de 10 pieds de diminution d'élévation dans ce mouvement.</p><p>Si cette attaque est un <strong>Coup Critique</strong>, la cible de l'attaque est immédiatement mise @Condition[prone].</p>",
+                                    "effects": [
+                                        {
+                                            "name": "Frappe bondissante"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                },
+                "Harbinger of Disease": {
+                    "name": "Précurseur de la Maladie",
+                    "tokenName": "Précurseur de la Maladie",
+                    "items": {
+                        "Pestilent Tongue": {
+                            "name": "Langue pestilentielle"
+                        },
+                        "Claws": {
+                            "name": "Griffes"
+                        },
+                        "Void Chitin": {
+                            "name": "Chitine du Vide",
+                            "description": {
+                                "public": "<p>Descriptions de la Chitine du Vide.</p>"
+                            }
+                        },
+                        "Pestilent Lash": {
+                            "name": "Coup de fouet pestilentiel",
+                            "description": "Le Précurseur frappe en un large arc de cercle avec une langue venimeuse et infectée.",
+                            "actions": {
+                                "pestilentLash": {
+                                    "name": "Coup de fouet pestilentiel",
+                                    "description": "<p>Fouettez tous les ennemis à moins de <strong>10 pieds</strong> dans un arc de 120 degrés, leur infligeant des dégâts de poison et la condition <strong>Malade</strong> à l'impact.</p>",
+                                    "effects": [
+                                        {
+                                            "name": "Coup de fouet pestilentiel"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "Gesture: Influence": {
+                            "name": "Signe : Influence",
+                            "description": "<p>Vous intensifiez la puissance arcanique d'une Rune en un contact direct concentré qui est généralement une évolution plus puissante du signe de Contact de base.</p><p>Le signe d'Influence évolue avec la <strong>Présence</strong> et cible une créature adjacente unique. Il inflige <strong>10 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                        },
+                        "Gesture: Pulse": {
+                            "name": "Signe : Onde",
+                            "description": "<p>Expulsez la puissance arcanique d'une Rune dans un rayon qui se propage vers l'extérieur avec vous en son centre.</p><p>Le signe d'Onde évolue avec la <strong>Présence</strong> et produit une émanation de 10 pieds de rayon, infligeant <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Le signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>5 Actions</strong> et <strong>2 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent est actuellement placé au <strong>palier 4</strong>. Il ne sera accessible qu'à un niveau supérieur (probablement le Niveau 6). Il est actuellement disponible en avant-première pour les tests.</p>"
+                        },
+                        "Inflection: Pull": {
+                            "name": "Inflexion : Rappeler",
+                            "description": "<p>Amplifiez un sort pour attirer les créatures affectées vers le lanceur. Les créatures affectées par un sort avec l'inflexion Rappeler se déplacent de 1 case plus près du lanceur de sorts si cette case de destination est inoccupée.</p>"
+                        },
+                        "Rune: Death": {
+                            "name": "Rune : Mort",
+                            "description": "<p>La force ordonnée de la destruction, responsable de la corruption de toute matière biologique. La Rune de Mort gouverne la pourriture et la destruction.</p><p>La Rune de Mort évolue avec l'<strong>Intellect</strong>, cible la <strong>Fortitude</strong>, et inflige des dégâts de <strong>Corruption</strong> à la <strong>Santé</strong>. Elle est opposée par la rune chaotique de <strong>Vie</strong>.</p>"
+                        },
+                        "Rune: Oblivion": {
+                            "name": "Rune : Néant",
+                            "description": "<p>Une force chaotique de destruction et d'annihilation de l'existence. La Rune de Néant gouverne la destruction de la matière ou la décohérence de l'esprit.</p><p>La Rune de Néant évolue avec l'<strong>Intellect</strong>, cible la <strong>Volonté</strong>, et inflige des dégâts de <strong>Vide</strong> au <strong>Moral</strong>. Elle est opposée par la rune ordonnée de <strong>l'Esprit</strong>.</p>",
+                            "actions": {
+                                "erase": {
+                                    "name": "Effacer",
+                                    "description": "<p>Votre maîtrise de la Rune de Néant vous permet de détricoter de minuscules trous dans le tissu de l'existence, produisant l'un des effets suivants :</p><ul><li><p>Désintégrer un objet non magique que vous tenez entre vos mains, d'une taille inférieure à un cube de 6 pouces d'arrête, en le réduisant en une fine poussière composée de ses éléments constitutifs.</p></li><li><p>Anesthésier la capacité de ressentir des émotions, pour vous ou une cible consentante que vous touchez, la plongeant ainsi dans un état placide, stoïque ou détaché. Cet effet peut être maintenu tant que vous n'effectuez pas d'autre <strong>Action</strong>.</p></li><li><p>Atténuer la puissance d'une source lumineuse, réduisant de moitié son rayon de visibilité tant que vous maintenez un contact physique avec elle. Une seule source lumineuse peut être diminuée de cette manière à la fois.</p></li></ul><p>Effacer ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
+                                }
+                            }
+                        }
+                    }
+                },
+                "Harbinger of Fear": {
+                    "name": "Précurseur de la Peur",
+                    "tokenName": "Précurseur de la Peur",
+                    "items": {
+                        "Psychic Maw": {
+                            "name": "Gueule psychique"
+                        },
+                        "Void Chitin": {
+                            "name": "Chitine du Vide",
+                            "description": {
+                                "public": "<p>Descriptions de la Chitine du Vide.</p>"
+                            }
+                        },
+                        "Eldritch Emanation": {
+                            "name": "Émanation occulte",
+                            "description": "<p>Le Précurseur de la Peur projette un cône de désespoir malveillant de sa gueule ouverte.</p>",
+                            "actions": {
+                                "eldritchEmanation": {
+                                    "name": "Émanation occulte",
+                                    "description": "<p>Projetez une attaque en cône jusqu'à 10 pieds infligeant des dégâts psychiques au Moral et provoquant la condition Paniqué pendant <strong>1 Round</strong>.</p>",
+                                    "effects": [
+                                        {
+                                            "name": "Émanation occulte"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "Ethereal Warp": {
+                            "name": "Distorsion éthérée",
+                            "description": "Le Précurseur disparaît de la réalité, devenant incorporel pendant quelques instants avant de réapparaître à un endroit situé jusqu'à 30 pieds de distance.",
+                            "actions": {
+                                "etherealWarp": {
+                                    "name": "Distorsion éthérée",
+                                    "description": "<p>Disparaître et réapparaître jusqu'à <strong>30 Pieds</strong> de votre position actuelle. Ce mouvement ne permet aucun Assaut Opportuniste.</p>"
+                                }
+                            }
+                        }
+                    }
+                },
+                "Harbinger of Madness": {
+                    "name": "Précurseur de la Folie",
+                    "tokenName": "Précurseur de la Folie",
+                    "items": {
+                        "Inchoate Tendrils": {
+                            "name": "Tentacules embryonnaires"
+                        },
+                        "Void Chitin": {
+                            "name": "Chitine du Vide",
+                            "description": {
+                                "public": "<p>Descriptions de la Chitine du Vide.</p>"
+                            }
+                        },
+                        "Devour Thoughts": {
+                            "name": "Dévorer les pensées",
+                            "description": "Le Précurseur de la Folie se concentre sur une seule cible, s'y agrippant avec de multiples tentacules.",
+                            "actions": {
+                                "devourThoughts": {
+                                    "name": "Dévorer les pensées",
+                                    "description": "<p>S'enroule autour d'un unique ennemi avec de multiples tentacules, infligeant des dégâts psychiques et la condition Étourdi.</p>",
+                                    "effects": [
+                                        {
+                                            "name": "Dévorer les pensées"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "Mind Flay": {
+                            "name": "Fouet mental",
+                            "description": "Abattez vos ennemis proches d'un tourbillon de tentacules qui infligent des dégâts contondants et provoquent une désorientation psychologique.",
+                            "actions": {
+                                "mindFlay": {
+                                    "name": "Fouet mental",
+                                    "description": "<p>Déchaînez vos terribles tentacules sur tous les ennemis proches. Les cibles touchées sont <strong>Désorientées</strong> pendant un Round.</p>",
+                                    "effects": [
+                                        {
+                                            "name": "Fouet mental"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                },
+                "Zarajah": {
+                    "name": "Zarajah",
+                    "tokenName": "Zarajah",
+                    "items": {
+                        "Mage Staff": {
+                            "name": "Bâton de Mage"
+                        },
+                        "Ring Mail": {
+                            "name": "Broigne"
+                        },
+                        "Inspire Heroism": {
+                            "name": "Inspirer l'Héroïsme",
+                            "description": "Votre présence courageuse inspire vos alliés proches à frapper avec confiance.",
+                            "actions": {
+                                "inspireHeroism": {
+                                    "name": "Inspirer l'Héroïsme",
+                                    "description": "<p>Chaque allié, en vous excluant, dans un rayon de <strong>10 Pieds</strong> gagne <strong>+1 Faveur</strong> aux actions effectuées jusqu'à la fin de son prochain Tour.</p>",
+                                    "effects": [
+                                        {
+                                            "name": "Inspirer l'Héroïsme"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "Gesture: Influence": {
+                            "name": "Signe : Influence",
+                            "description": "<p>Vous intensifiez la puissance arcanique d'une Rune en un contact direct concentré qui est généralement une évolution plus puissante du signe de Contact de base.</p><p>Le signe d'Influence évolue avec la <strong>Présence</strong> et cible une créature adjacente unique. Il inflige <strong>10 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                        },
+                        "War Mage": {
+                            "name": "Mage de guerre",
+                            "description": "<p>Votre sorcellerie est affûtée comme une arme de guerre pour contrecarrer les incantations d'autres mages. Vous pouvez demander au Maître du jeu si vous connaissez une Rune capable de contrer un sort ennemi, même si vous ne reconnaissez pas le sort lancé. Vous gagnez +2 Faveurs à toute tentative de Contresort.</p>"
+                        },
+                        "Gesture: Arrow": {
+                            "name": "Signe : Trait",
+                            "description": "<p>Vous lancez un projectile imprégné du pouvoir magique d'une Rune sur une cible distante.</p><p>Le signe de Trait évolue avec l'<strong>Intellect</strong> et cible une créature unique jusqu'à une distance de 60 pieds, infligeant <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                        },
+                        "Impetus": {
+                            "name": "Impulsion",
+                            "description": "<p>Vous êtes doué pour exploiter la lenteur avec laquelle les autres pensent. Si vous êtes premier dans l'ordre d'Initiative durant un round de Combat, vous gagnez +1 Action actuelle ainsi qu'à votre maximum.</p>"
+                        },
+                        "Opportunistic Spellcraft": {
+                            "name": "Sorcellerie opportuniste",
+                            "description": "<p>Votre réflexion rapide peut tisser la magie pour exploiter de brèves fenêtres d'opportunité. Vous pouvez effectuer un <strong>Assaut Opportuniste</strong> en utilisant le Signe de <strong>Contact</strong> au lieu d'une attaque d'arme de mêlée.</p>"
+                        },
+                        "Pyromancer": {
+                            "name": "Pyromancien",
+                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Flamme. Les sorts utilisant cette Rune causent la condition @Condition[burning] sur les Coups Critiques.</p><p>L'effet Enflammé dure <strong>1 Round</strong> et inflige votre score d'<strong>Intellect</strong> comme dégâts de <strong>Feu</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
+                        },
+                        "Gesture: Pulse": {
+                            "name": "Signe : Onde",
+                            "description": "<p>Expulsez la puissance arcanique d'une Rune dans un rayon qui se propage vers l'extérieur avec vous en son centre.</p><p>Le signe d'Onde évolue avec la <strong>Présence</strong> et produit une émanation de 10 pieds de rayon, infligeant <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Le signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>5 Actions</strong> et <strong>2 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent est actuellement placé au <strong>palier 4</strong>. Il ne sera accessible qu'à un niveau supérieur (probablement le Niveau 6). Il est actuellement disponible en avant-première pour les tests.</p>"
+                        },
+                        "Performance Novice": {
+                            "name": "Représentation : Novice",
+                            "description": "<p>Vous avez appris les pratiques de base de l'art et du divertissement. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Représentation</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous connaissez quelques danses courantes, avez une collection de contes bien connus, et vous pourriez probablement chanter ou jouer quelques chansons populaires. Vous pouvez être formé à un instrument ou deux, et votre capacité avec un pinceau ou une plume est assez raisonnable pour que vous puissiez probablement créer une œuvre d'art passable.</p>"
+                        },
+                        "Deception Novice": {
+                            "name": "Duperie : Novice",
+                            "description": "<p>Vous êtes un menteur et un manipulateur, et la duperie est une compétence que vous avez pratiquée. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Duperie</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez monter des mensonges et arnaques de base, et reconnaître les signes révélateurs qui trahissent souvent les mauvais menteurs. Vous pouvez constituer une fausse documentation basique pour la plupart des documents courants, mais ils ne résisteront pas à un examen minutieux.</p>"
+                        },
+                        "Light Weapon Training": {
+                            "name": "Armes légères : Entraînement",
+                            "description": "<p>Vous avez une éducation de base dans l'utilisation de l'armement de finesse. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes des catégories <strong>Légère</strong> et <strong>Équilibrée</strong>.</p>"
+                        },
+                        "Arcana Novice": {
+                            "name": "Arcanes : Novice",
+                            "description": "<p>Votre éducation a couvert les fondamentaux de la métaphysique et de la théorie magique, la relation entre les runes, la nature opposée de l'ordre et du chaos, et une introduction sommaire aux êtres spirituels, incluant les figures de culte déifiées et diabolisées les plus connues. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Arcanes</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Votre compréhension rudimentaire de la grammaire principale de la magie est suffisante pour identifier quelle rune mineure un sort ou un rituel peut utiliser, ainsi que le signe utilisé (si ce n'est l'inflexion). Vous pouvez identifier si une figure est influencée davantage par le chaos ou par l'ordre, et pouvez repérer les signes d'esprits communs (mineurs et majeurs). Vous en savez assez sur les coutumes religieuses pour communiquer avec ceux qui vénèrent un esprit ou une divinité particulière sans vous mettre dans l'embarras.</p>"
+                        },
+                        "Strategic Repositioning": {
+                            "name": "Repositionnement stratégique",
+                            "description": "<p>Vous pensez toujours à l'avance à l'endroit où vous positionner si le danger menace. Avant le <strong>Tour 1</strong> d'une rencontre de Combat, à condition que vous ne soyez pas Distrait, vous pouvez immédiatement vous déplacer de 4 pieds dans n'importe quelle direction permise.</p><p>Si plusieurs combattants ont cette caractéristique, le repositionnement se produit dans l'ordre inverse de l'Initiative.</p>"
+                        },
+                        "Lightbringer": {
+                            "name": "Porteur de lumière",
+                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Illumination. Les sorts utilisant cette Rune causent la condition @Condition[irradiated] sur les Coups Critiques.</p><p>L'effet Irradié dure <strong>1 Round</strong> et inflige votre score de <strong>Présence</strong> comme dégâts <strong>Radiants</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
+                        },
+                        "Awareness Novice": {
+                            "name": "Vigilance : Novice",
+                            "description": "<p>Vous avez été formé aux bases de la vigilance situationnelle, et êtes capable de remarquer des détails importants de votre environnement. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Vigilance</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez vérifier les sorties en entrant dans une pièce, et comment chercher des armes dissimulées, des pièges cachés, et autres menaces. Vous savez repérer quand vous êtes suivi et comment chercher les cachettes communes.</p>"
+                        },
+                        "Versatile Translator": {
+                            "name": "Traducteur Polyvalent",
+                            "description": "<p>Vous avez un passé d'érudit en linguistique ou un don intuitif pour les langues. Vos capacités vous permettent de déchiffrer le sens de base d'un texte écrit dans une variété de langues.</p><p>Vous pouvez traduire un texte d'une langue que vous ne connaissez pas qui est écrit en un ensemble commun de glyphes ou de caractères vers une langue que vous connaissez. Créer une telle traduction nécessite de passer une minute par mot pour transcrire le texte dans une langue que vous comprenez.</p><p>Vos traductions sont rudimentaires et manquent souvent de nuance, mais elles contiennent tous les points essentiels du texte.</p>"
+                        },
+                        "Rune: Oblivion": {
+                            "name": "Rune : Néant",
+                            "description": "<p>Une force chaotique de destruction et d'annihilation de l'existence. La Rune de Néant gouverne la destruction de la matière ou la décohérence de l'esprit.</p><p>La Rune de Néant évolue avec l'<strong>Intellect</strong>, cible la <strong>Volonté</strong>, et inflige des dégâts de <strong>Vide</strong> au <strong>Moral</strong>. Elle est opposée par la rune ordonnée de <strong>l'Esprit</strong>.</p>",
+                            "actions": {
+                                "erase": {
+                                    "name": "Effacer",
+                                    "description": "<p>Votre maîtrise de la Rune de Néant vous permet de détricoter de minuscules trous dans le tissu de l'existence, produisant l'un des effets suivants :</p><ul><li><p>Désintégrer un objet non magique que vous tenez entre vos mains, d'une taille inférieure à un cube de 6 pouces d'arrête, en le réduisant en une fine poussière composée de ses éléments constitutifs.</p></li><li><p>Anesthésier la capacité de ressentir des émotions, pour vous ou une cible consentante que vous touchez, la plongeant ainsi dans un état placide, stoïque ou détaché. Cet effet peut être maintenu tant que vous n'effectuez pas d'autre <strong>Action</strong>.</p></li><li><p>Atténuer la puissance d'une source lumineuse, réduisant de moitié son rayon de visibilité tant que vous maintenez un contact physique avec elle. Une seule source lumineuse peut être diminuée de cette manière à la fois.</p></li></ul><p>Effacer ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
+                                }
+                            }
+                        },
+                        "Iramancer": {
+                            "name": "Furimancien",
+                            "description": "Vos exploits d'arcane sont alimentés par la colère. Tant que vous êtes Enragé, vous pouvez toujours dépenser du Focus et vous infligez 2 dégâts supplémentaires à toutes les attaques de sorts."
+                        },
+                        "Counterspell": {
+                            "name": "Contresort",
+                            "description": "<p>Vous réagissez immédiatement à un sort en train d'être lancé et composez une rune et un signe conçus pour démêler et nier la sorcellerie d'un mage ennemi.</p><h2 class=\"divider\">Notes de test</h2><p>Cette action peut maintenant être utilisée en playtest, mais n'est pas encore <em>entièrement automatisée</em>. Le Contresort peut être effectué, mais il revient au Maître du jeu d'annuler manuellement un sort précédemment appliqué et de déduire manuellement son coût en <strong>Action</strong> et <strong>Focus</strong>. Ces étapes du processus global de Contresort <em>seront automatisées</em> dans une prochaine mise à jour, de sorte qu'un Contresort confirmé confirmera également le sort qui a été contré, mais sans ses effets.</p>",
+                            "actions": {
+                                "counterspell": {
+                                    "name": "Contresort",
+                                    "description": "<p>Vous formez une énergie arcanique en une sorcellerie compensatrice, ciblant un lanceur de sort que vous pouvez voir à 30 pieds.</p><p>Désignez une <strong>Rune</strong> et un <strong>Signe</strong> que vous connaissez pour tenter de contrer le sort. Choisir une Rune opposée à celle utilisée par le sort offre <strong>+2 Faveurs</strong> à votre tentative. Sélectionner le même Signe que celui qui est en cours de lancement ajoute également <strong>+2 Faveurs</strong> à votre tentative.</p><p>Effectuez une Attaque de Sort inoffensive contre la défense de <strong>Volonté</strong> de votre cible. Si votre jet surpasse sa défense, le sort est contré et sa magie est annulée, ne produisant aucun effet.</p>",
+                                    "condition": "Une autre créature que vous pouvez voir est en train de lancer un sort."
+                                }
+                            }
+                        },
+                        "Rune: Flame": {
+                            "name": "Rune : Flamme",
+                            "description": "<p>La force chaotique de l'énergie élémentaire et thermique. La Rune de Flamme gouverne le feu et la chaleur.</p><p>La Rune de Flamme évolue avec l'Intellect, cible le <strong>Réflexe</strong>, et inflige des dégâts de <strong>Feu</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Givre</strong>.</p>",
+                            "actions": {
+                                "enkindle": {
+                                    "name": "Allumer",
+                                    "description": "<p>Votre maîtrise de la Rune de Flamme vous permet de manipuler le feu et les énergies thermales de manière créative, produisant l'un des effets suivants :</p><ul><li><p>Manifester une explosion de flamme élémentaire dans une sphère d'un pouce capable d'enflammer une bougie, une torche ou d'autres matériaux inflammables.</p></li><li><p>Imprégner votre corps d'une protection thermique momentanée qui vous immunise contre les dégâts de feu lors d'une action immédiatement suivante coûtant <strong>1 Action</strong> ou moins.</p></li><li><p>Contrôler le mouvement des flammes dans une petite zone, en les faisant vaciller, danser ou se déplacer en un spectacle animé de lumière et d'ombre.</p></li></ul><p>Allumer ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
+                                }
+                            }
+                        },
+                        "Flame Proficiency": {
+                            "name": "Maîtrise de la Flamme",
+                            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Flamme. Vous gagnez un <strong>Bonus de Compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Enflammer</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+                        },
+                        "Rune: Kinesis": {
+                            "name": "Rune : Kinésie",
+                            "description": "<p>La force chaotique de l'espace et du mouvement physique. La Rune de Kinésie gouverne toutes choses liées à l'acte de mouvement et à la physicalité.</p><p>La Rune de Kinésie évolue avec la <strong>Présence</strong>, cible la défense <strong>Physique</strong>, et inflige des dégâts <strong>Contondants</strong>, <strong>Perforants</strong>, ou <strong>Tranchants</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Contrôle</strong>.</p>",
+                            "actions": {
+                                "propel": {
+                                    "name": "Propulser",
+                                    "description": "<p>Votre maîtrise de la Rune de Kinésie vous permet d'exercer un contrôle local sur les forces gravitationnelles pour effectuer des manipulations télékinésiques de base, produisant l'un des effets suivants :</p><ul><li><p>Tirer vers vous un objet non fixé, d'un poids n'excédant pas 1 livre, situé à moins de 15 pieds et l'attraper. Un objet équipé ou possédé par une créature n'est jamais considéré comme non fixé, à moins que la créature soit disposée à le libérer.</p></li><li><p>Projeter un objet que vous tenez et dont le poids ne dépasse pas 1 livre vers une cible située à une distance maximale de 30 pieds. L'objet vole infailliblement en ligne droite vers cette cible à une vitesse modérée. Toute créature se trouvant sur la trajectoire de l'objet peut réagir pour l'attraper si elle a une main libre pour le faire.</p></li><li><p>Faire léviter un objet ou une créature consentante que vous touchez dont le poids est inférieur ou égal à 10 fois votre <strong>Presence</strong>, modifiant sa position jusqu'à 20 pieds dans n'importe quelle direction par rapport à son emplacement d'origine. Vous pouvez maintenir cette lévitation indéfiniment tant que vous ne faites pas d'autre Action et n'êtes pas @Condition[incapacitated].</p></li></ul><p>Propulser ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement à moins que cela ne soit autrement spécifié. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
+                                }
+                            }
+                        }
+                    }
+                },
+                "Agnath": {
+                    "name": "Agnath",
+                    "tokenName": "Agnath",
+                    "items": {
+                        "Greatsword": {
+                            "name": "Épée à deux mains"
+                        },
+                        "Splint Mail": {
+                            "name": "Clibanion"
+                        },
+                        "Cadence": {
+                            "name": "Cadence",
+                            "description": "<p>Vous êtes entraîné à effectuer des séquences d'attaques de mêlée avec une précision rythmique. Lorsque vous <strong>Frappez</strong> plusieurs fois de suite en utilisant une arme de mêlée à une main, vous gagnez une <strong>+1 Faveur</strong> cumulative pour chaque attaque successive.</p><p></p>"
+                        },
+                        "Heavy Strike": {
+                            "name": "Frappe lourde",
+                            "description": "<p>Vous savez comment utiliser une arme lourde pour délivrer des coups punitifs, mettant toute votre force derrière chaque balancement.</p>",
+                            "actions": {
+                                "heavyStrike": {
+                                    "name": "Frappe lourde",
+                                    "description": "<p>Vous libérez une <strong>Frappe</strong> puissante avec l'arme de votre main principale. L'attaque est plus lente à exécuter, mais est <strong>Améliorée</strong> pour délivrer des dégâts supplémentaires.</p>"
+                                }
+                            }
+                        },
+                        "Athletics Novice": {
+                            "name": "Athlétisme : Novice",
+                            "description": "<p>Vous avez reçu une formation en athlétisme de base. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Athlétisme</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez si une surface peut supporter votre poids, comment trouver des prises en escaladant, et comment répartir votre poids pour flotter en nageant. Vous savez courir sur la distance et comment vous rythmer pour éviter l'épuisement.</p>"
+                        },
+                        "Intimidation Novice": {
+                            "name": "Intimidation : Novice",
+                            "description": "<p>Vous comprenez les fondamentaux de comment les menaces et la coercition peuvent atteindre les résultats souhaités. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Intimidation</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez comment utiliser de simples démonstrations de violence ou des menaces ouvertes pour amener les autres à suivre votre direction, mais vous n'êtes pas très subtil.</p>"
+                        },
+                        "Heavy Weapon Training": {
+                            "name": "Armes lourdes : Entraînement",
+                            "description": "<p>Vous avez une éducation de base dans l'utilisation de l'armement martial. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes des catégories <strong>Lourde</strong> ou <strong>Équilibrée</strong>.</p>"
+                        },
+                        "Gesture: Arrow": {
+                            "name": "Signe : Trait",
+                            "description": "<p>Vous lancez un projectile imprégné du pouvoir magique d'une Rune sur une cible distante.</p><p>Le signe de Trait évolue avec l'<strong>Intellect</strong> et cible une créature unique jusqu'à une distance de 60 pieds, infligeant <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                        },
+                        "Rune: Flame": {
+                            "name": "Rune : Flamme",
+                            "description": "<p>La force chaotique de l'énergie élémentaire et thermique. La Rune de Flamme gouverne le feu et la chaleur.</p><p>La Rune de Flamme évolue avec l'Intellect, cible le <strong>Réflexe</strong>, et inflige des dégâts de <strong>Feu</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Givre</strong>.</p>"
+                        }
+                    }
+                },
+                "Belladonna": {
+                    "name": "Belladonna",
+                    "tokenName": "Belladonna",
+                    "items": {
+                        "Dagger": {
+                            "name": "Dague"
+                        },
+                        "Studded Leather Armor": {
+                            "name": "Armure de cuir cloutée"
+                        },
+                        "Diversionist": {
+                            "name": "Magouilleur",
+                            "description": "<p>Vous vous spécialisez dans l'utilisation de subterfuges pour distraire ou tromper votre adversaire pendant le combat.</p>",
+                            "actions": {
+                                "distract": {
+                                    "name": "Distraire",
+                                    "description": "<p>Vous effectuez une <strong>Attaque de Compétence</strong> basée sur la <strong>Duperie</strong> contre la défense de <strong>Volonté</strong> d'une cible à 30 pieds qui peut voir ou vous entendre. Sur un succès, la cible perd <strong>1 Focus</strong>.</p>"
+                                }
+                            }
+                        },
+                        "Dual Wield": {
+                            "name": "Ambidextrie",
+                            "description": "<p>Vous êtes adepte du combat à deux armes en simultané. Vous pouvez enchaîner les attaques pour frapper plus rapidement qu'il n'est possible avec une seule arme.</p>",
+                            "actions": {
+                                "offhandStrike": {
+                                    "name": "Frappe Main-secondaire",
+                                    "description": "<p>Immédiatement après avoir effectué une Frappe basique avec l'arme de votre main principale, vous réalisez une <strong>Frappe</strong> à coût réduit ave l'arme de votre <strong>main secondaire</strong>.</p>"
+                                }
+                            }
+                        },
+                        "Flurry": {
+                            "name": "Déluge de coups",
+                            "description": "<p>Une technique martiale utilisant deux armes pour submerger une cible unique avec une séquence implacable d'attaques.</p>",
+                            "actions": {
+                                "flurry": {
+                                    "name": "Déluge de coups",
+                                    "description": "<p>Vous <strong>Frappez</strong> deux fois avec chacune de vos armes, mais chaque frappe est <strong>Difficile</strong>.</p>"
+                                }
+                            }
+                        },
+                        "Intercept": {
+                            "name": "Intercepter",
+                            "description": "Vous protégez vos alliés, interceptant les coups qui pourraient autrement être dirigés vers vos compagnons.",
+                            "actions": {
+                                "intercept": {
+                                    "name": "Intercepter",
+                                    "description": "<p>Vous interceptez la trajectoire d'un ennemi qui entre dans votre rayon d'<strong>Engagement</strong>, vous déplaçant immédiatement de votre <strong>Foulée</strong> pour vous interposer et bloquer son chemin.</p><p>Si l'ennemi sort de votre rayon d'Engagement ou attaque une autre créature pendant son tour, vous pouvez effectuer un <strong>Assaut opportuniste</strong> contre lui.</p>",
+                                    "condition": "Un ennemi se déplace dans ou à travers votre rayon d'Engagement."
+                                }
+                            }
+                        },
+                        "Stealth Novice": {
+                            "name": "Discrétion : Novice",
+                            "description": "<p>Vous avez reçu une formation dans les bases de la discrétion, de l'infiltration et du subterfuge. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Discrétion</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez comment utiliser la lumière et l'ombre pour masquer votre présence, répartir votre poids en marchant afin de vous déplacer plus silencieusement, et vous avez appris quelques astuces de déguisement pour vous fondre dans une foule. Vous pouvez paraître non suspect lorsque vous êtes entouré par d'autres, vous cacher dans une pièce sombre, et vous déplacer assez silencieusement pour éviter d'être détecté par une personne lambda.</p>"
+                        },
+                        "Deception Novice": {
+                            "name": "Duperie : Novice",
+                            "description": "<p>Vous êtes un menteur et un manipulateur, et la duperie est une compétence que vous avez pratiquée. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Duperie</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez monter des mensonges et arnaques de base, et reconnaître les signes révélateurs qui trahissent souvent les mauvais menteurs. Vous pouvez constituer une fausse documentation basique pour la plupart des documents courants, mais ils ne résisteront pas à un examen minutieux.</p>"
+                        },
+                        "Light Weapon Training": {
+                            "name": "Armes légères : Entraînement",
+                            "description": "<p>Vous avez une éducation de base dans l'utilisation de l'armement de finesse. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes des catégories <strong>Légère</strong> et <strong>Équilibrée</strong>.</p>"
+                        },
+                        "Lunge": {
+                            "name": "Fente",
+                            "description": "Vous vous élancez agilement vers l'avant, effectuant une frappe avec une rapidité soudaine et inattendue.",
+                            "actions": {
+                                "lunge": {
+                                    "name": "Fente",
+                                    "description": "<p>Vous <strong>Frappez</strong> avec l'arme de votre main principale contre un unique ennemi à une porté augmentée de <strong>+2 pieds</strong>. L'attaque est <strong>Difficile</strong>, mais vous ne vous déplacez pas de votre position actuelle et cette attaque ne provoque aucun Désengagement.</p>"
+                                }
+                            }
+                        }
+                    }
+                },
+                "Duurath": {
+                    "name": "Duurath",
+                    "tokenName": "Duurath",
+                    "items": {
+                        "War Hammer": {
+                            "name": "Marteau de guerre"
+                        },
+                        "Heater Shield": {
+                            "name": "Bouclier chauffant"
+                        },
+                        "Scale Mail": {
+                            "name": "Armure d’écailles"
+                        },
+                        "Intimidator": {
+                            "name": "Intimidateur",
+                            "description": "Vous vous spécialisez dans l'exercice de votre présence intimidante pour briser le moral de vos ennemis.",
+                            "actions": {
+                                "intimidate": {
+                                    "name": "Intimider",
+                                    "description": "<p>Vous intimidez physiquement un ennemi dans votre rayon d'engagement, effectuant une attaque de compétence d'Intimidation contre votre cible. Sur un succès, il subit des dégâts de Vide au Moral.</p>"
+                                }
+                            }
+                        },
+                        "Shield Bash": {
+                            "name": "Coup de bouclier",
+                            "description": "<p>Vous êtes exercé au combat avec bouclier, l'utilisant pour percuter et déséquilibrer vos ennemis.</p>",
+                            "actions": {
+                                "shieldBash": {
+                                    "name": "Coup de bouclier",
+                                    "description": "<p>Suivant une Frappe basique avec l'arme de votre main principale, vous <strong>Frappez</strong> avec votre bouclier, infligeant la condition @Condition[staggered] pendant un Round.</p>",
+                                    "effects": [
+                                        {
+                                            "name": "Coup de bouclier"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "Second Wind": {
+                            "name": "Second souffle",
+                            "description": "Votre robustesse physique vous permet de vous pousser au-delà des limites conventionnelles.",
+                            "actions": {
+                                "secondWind": {
+                                    "name": "Second souffle",
+                                    "description": "<p>Vous concentrez votre énergie et recouvrez votre score de Robustesse à la Santé.</p>"
+                                }
+                            }
+                        },
+                        "Awareness Novice": {
+                            "name": "Vigilance : Novice",
+                            "description": "<p>Vous avez été formé aux bases de la vigilance situationnelle, et êtes capable de remarquer des détails importants de votre environnement. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Vigilance</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez vérifier les sorties en entrant dans une pièce, et comment chercher des armes dissimulées, des pièges cachés, et autres menaces. Vous savez repérer quand vous êtes suivi et comment chercher les cachettes communes.</p>"
+                        },
+                        "Intimidation Novice": {
+                            "name": "Intimidation : Novice",
+                            "description": "<p>Vous comprenez les fondamentaux de comment les menaces et la coercition peuvent atteindre les résultats souhaités. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Intimidation</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez comment utiliser de simples démonstrations de violence ou des menaces ouvertes pour amener les autres à suivre votre direction, mais vous n'êtes pas très subtil.</p>"
+                        },
+                        "Unarmed Combat Training": {
+                            "name": "Combat à mains nues : Entraînement",
+                            "description": "<p>Vous avez une éducation de base dans le combat au corps à corps et autres arts martiaux. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes de la catégorie <strong>Mains nues</strong>.</p>"
+                        },
+                        "Intercept": {
+                            "name": "Intercepter",
+                            "description": "Vous protégez vos alliés, interceptant les coups qui pourraient autrement être dirigés vers vos compagnons.",
+                            "actions": {
+                                "intercept": {
+                                    "name": "Intercepter",
+                                    "description": "<p>Vous interceptez la trajectoire d'un ennemi qui entre dans votre rayon d'<strong>Engagement</strong>, vous déplaçant immédiatement de votre <strong>Foulée</strong> pour vous interposer et bloquer son chemin.</p><p>Si l'ennemi sort de votre rayon d'Engagement ou attaque une autre créature pendant son tour, vous pouvez effectuer un <strong>Assaut opportuniste</strong> contre lui.</p>",
+                                    "condition": "Un ennemi se déplace dans ou à travers votre rayon d'Engagement."
+                                }
+                            }
+                        },
+                        "Bulwark": {
+                            "name": "Rempart",
+                            "description": "<p>Vous êtes expert dans l'utilisation d'un <strong>Bouclier</strong> pour vous défendre et défendre les autres.</p><p>Une fois par Tour tant que vous avez un Bouclier équipé, vous pouvez utiliser l'action <strong>Défendre</strong> à un coût réduit de 1 Point d'Action.</p>"
+                        }
+                    }
+                },
+                "Eliorwen": {
+                    "name": "Eliorwen",
+                    "tokenName": "Eliorwen",
+                    "items": {
+                        "Longbow": {
+                            "name": "Arc long"
+                        },
+                        "Scimitar": {
+                            "name": "Cimeterre"
+                        },
+                        "Studded Leather Armor": {
+                            "name": "Armure de cuir cloutée"
+                        },
+                        "Perspicacity": {
+                            "name": "Perspicacité",
+                            "description": "<p>Vous avez une perspicacité accrue sur les aspects de votre environnement. Vous gagnez +2 Faveurs à tout test de compétence de <strong>Vigilance</strong> qui ne repose pas sur la vue.</p>"
+                        },
+                        "Pinning Shot": {
+                            "name": "Tir de fixation",
+                            "description": "Vous réalisez un tir tactiquement placé pour épingler votre cible contre une surface proche.",
+                            "actions": {
+                                "pinningShot": {
+                                    "name": "Tir de fixation",
+                                    "description": "<p>Vous <strong>Frappez</strong> à distance. L'attaque est <strong>Difficile</strong>, mais si vous touchez votre cible, celle-ci devient <strong>Entravée</strong> jusqu'à la fin de son prochain Tour.</p>",
+                                    "effects": [
+                                        {
+                                            "name": "Tir de fixation"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "Wilderness Novice": {
+                            "name": "Nature : Novice",
+                            "description": "<p>Vous avez reçu une formation aux bases de la survie et de la traversée en milieu sauvage. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Nature</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez comment trouver et construire un abri sûr contre les éléments, allumer un feu pour la chaleur, rester au frais dans des environnements chauds. Vous pouvez trouver de l'eau potable et sûre dans la plupart des endroits, et comment identifier quelles plantes et animaux peuvent servir de sources de nourriture sûres.</p>"
+                        },
+                        "Athletics Novice": {
+                            "name": "Athlétisme : Novice",
+                            "description": "<p>Vous avez reçu une formation en athlétisme de base. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Athlétisme</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez si une surface peut supporter votre poids, comment trouver des prises en escaladant, et comment répartir votre poids pour flotter en nageant. Vous savez courir sur la distance et comment vous rythmer pour éviter l'épuisement.</p>"
+                        },
+                        "Projectile Weapon Training": {
+                            "name": "Armes de projectile : Entraînement",
+                            "description": "<p>Vous avez une éducation de base en archerie et autres armes à projectile. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes des catégories <strong>Projectile</strong>.</p>"
+                        },
+                        "Precision Shot": {
+                            "name": "Tir de précision",
+                            "description": "Vous prenez le temps de stabiliser votre visée et de cibler le point le plus faible d'un ennemi. Vous n'aurez peut-être qu'un seul tir, mais vous le faites compter.",
+                            "actions": {
+                                "precisionShot": {
+                                    "name": "Tir de précision",
+                                    "description": "<p>Vous stabilisez votre visée et tirez un seul coup précis.</p>"
+                                }
+                            }
+                        },
+                        "Stealth Novice": {
+                            "name": "Discrétion : Novice",
+                            "description": "<p>Vous avez reçu une formation dans les bases de la discrétion, de l'infiltration et du subterfuge. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Discrétion</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez comment utiliser la lumière et l'ombre pour masquer votre présence, répartir votre poids en marchant afin de vous déplacer plus silencieusement, et vous avez appris quelques astuces de déguisement pour vous fondre dans une foule. Vous pouvez paraître non suspect lorsque vous êtes entouré par d'autres, vous cacher dans une pièce sombre, et vous déplacer assez silencieusement pour éviter d'être détecté par une personne lambda.</p>"
+                        },
+                        "Rune: Illusion": {
+                            "name": "Rune : Illusion",
+                            "description": "<p>La force chaotique de la tromperie et de la fantaisie. La Rune d'Illusion gouverne les manifestations magiques de fausseté ou de mauvaise direction.</p><p>La Rune d'Illusion évolue avec l'<strong>Intellect</strong>, cible la défense de <strong>Volonté</strong>, et inflige des dégâts <strong>Psychiques</strong> au <strong>Moral</strong>. Elle est opposée par la rune ordonnée d'<strong>Illumination</strong>.</p>",
+                            "actions": {
+                                "seeming": {
+                                    "name": "Apparence trompeuse",
+                                    "description": "<p>Votre maîtrise de la Rune d'Illusion vous permet de créer des illusions d'optique de diverses manières simples et de manipuler l'ombre et la lumière pour créer une distraction ou un divertissement, produisant l'un des effets suivants :</p><ul><li><p>Modifier un unique aspect de votre apparence physique. Ces modifications pourraient inclure le changement de la tonalité de votre voix, la modification de la couleur de vos yeux, l'apparition de cornes illusoires, ou le fait de paraître légèrement plus grand ou plus petit. L'altération persiste jusqu'à votre Repos ou que vous décidiez d'une modification différente et peut être découverte comme illusoire par une inspection physique.</p></li><li><p>Recréer de manière convaincante un son bref ou une odeur unique dont vous vous souvenez clairement. L'illusion provient de votre position et dure 10 secondes. Vous pouvez contrôler le volume du son ou l'odeur du parfum pour être perceptible à une portée de 60 pieds ou moins.</p></li><li><p>Dissocier votre ombre de votre forme, en contrôlant spécifiquement ses mouvements indépendamment des vôtres. Vous pouvez maintenir cette illusion tant que vous n'effectuez aucune autre action qui consume du <strong>Focus</strong>.</p></li></ul><p>Apparence trompeuse ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
+                                }
+                            }
+                        }
+                    }
+                },
+                "Fizzit": {
+                    "name": "Fizzit",
+                    "tokenName": "Fizzit",
+                    "items": {
+                        "Ring Mail": {
+                            "name": "Broigne"
+                        },
+                        "Arcane Orb": {
+                            "name": "Orbe arcanique"
+                        },
+                        "Grimoire": {
+                            "name": "Grimoire"
+                        },
+                        "Rune: Lightning": {
+                            "name": "Rune : Foudre",
+                            "description": "<p>La force chaotique de l'énergie électrique brute. La Rune de Foudre gouverne les sources de charge et de décharge électrique.</p><p>La Rune de Foudre évolue avec l'<strong>Intellect</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts <strong>Électriques</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Terre</strong>.</p>"
+                        },
+                        "Gesture: Arrow": {
+                            "name": "Signe : Trait",
+                            "description": "<p>Vous lancez un projectile imprégné du pouvoir magique d'une Rune sur une cible distante.</p><p>Le signe de Trait évolue avec l'<strong>Intellect</strong> et cible une créature unique jusqu'à une distance de 60 pieds, infligeant <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                        },
+                        "Arcana Novice": {
+                            "name": "Arcanes : Novice",
+                            "description": "<p>Votre éducation a couvert les fondamentaux de la métaphysique et de la théorie magique, la relation entre les runes, la nature opposée de l'ordre et du chaos, et une introduction sommaire aux êtres spirituels, incluant les figures de culte déifiées et diabolisées les plus connues. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Arcanes</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Votre compréhension rudimentaire de la grammaire principale de la magie est suffisante pour identifier quelle rune mineure un sort ou un rituel peut utiliser, ainsi que le signe utilisé (si ce n'est l'inflexion). Vous pouvez identifier si une figure est influencée davantage par le chaos ou par l'ordre, et pouvez repérer les signes d'esprits communs (mineurs et majeurs). Vous en savez assez sur les coutumes religieuses pour communiquer avec ceux qui vénèrent un esprit ou une divinité particulière sans vous mettre dans l'embarras.</p>"
+                        },
+                        "Science Novice": {
+                            "name": "Science : Novice",
+                            "description": "<p>Vous avez appris à étudier le monde autour de vous à travers l'observation structurée, les mathématiques, la physique, la chimie et d'autres disciplines. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Science</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous êtes familier avec les principes de base des mathématiques, de la physique, de la chimie ou d'autres études scientifiques. Vous savez comment construire et utiliser des machines simples dans le but de rendre les tâches physiques plus faciles. Vous connaissez certaines des théories scientifiques les plus communément comprises, et avec le temps approprié pour étudier des machines plus complexes, vous pourriez être capable au moins de les faire fonctionner.</p>"
+                        },
+                        "Mechanical Weapon Training": {
+                            "name": "Armes mécaniques : Entraînement",
+                            "description": "<p>Vous avez une éducation de base dans les arbalètes, armes à feu et autres armes mécaniques. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes de la catégorie <strong>Mécanique</strong>.</p>"
+                        },
+                        "Rune: Kinesis": {
+                            "name": "Rune : Kinésie",
+                            "description": "<p>La force chaotique de l'espace et du mouvement physique. La Rune de Kinésie gouverne toutes choses liées à l'acte de mouvement et à la physicalité.</p><p>La Rune de Kinésie évolue avec la <strong>Présence</strong>, cible la défense <strong>Physique</strong>, et inflige des dégâts <strong>Contondants</strong>, <strong>Perforants</strong>, ou <strong>Tranchants</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Contrôle</strong>.</p>"
+                        },
+                        "Rune: Frost": {
+                            "name": "Rune : Givre",
+                            "description": "<p>La force ordonnée de l'eau et du froid. La Rune de Givre gouverne la création d'eau ou d'autres fluides et leur transfert entre les états liquide et gelé.</p><p>La Rune de Givre évolue avec la <strong>Sagesse</strong>, cible la <strong>Fortitude</strong>, et inflige des dégâts de <strong>Froid</strong> à la <strong>Santé</strong>. Elle est opposée par la rune chaotique de <strong>Flamme</strong>.</p>"
+                        },
+                        "Gesture: Create": {
+                            "name": "Signe : Création",
+                            "description": "<p>Vous coalescez la puissance arcanique en forme tangible, manifestant un <strong>Lutin</strong> qui apparaît dans les 10 pieds et rejoint le Combat avec une Initiative de 1. Votre Lutin est un <strong>Laquais</strong> de la moitié de votre propre Niveau.</p><p>Le signe de Création évolue avec la <strong>Sagesse</strong> et le Lutin survit pendant <strong>6 Rounds</strong>. Vous ne pouvez avoir qu'un seul Lutin actif, lancer un autre sort utilisant le signe de Création remplace votre Lutin précédent. Ce signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>4 Actions</strong> et <strong>1 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Toutes les Runes n'ont pas encore d'acteur Lutin défini. Les Runes qui n'ont pas encore de Création définie manifesteront – pour l'instant – un <strong>Lutin de Flamme</strong>.</p>"
+                        }
+                    }
+                },
+                "Kagura": {
+                    "name": "Kagura",
+                    "tokenName": "Kagura",
+                    "items": {
+                        "Mage Staff": {
+                            "name": "Bâton de Mage"
+                        },
+                        "Scale Mail": {
+                            "name": "Armure d’écailles"
+                        },
+                        "Gesture: Influence": {
+                            "name": "Signe : Influence",
+                            "description": "<p>Vous intensifiez la puissance arcanique d'une Rune en un contact direct concentré qui est généralement une évolution plus puissante du signe de Contact de base.</p><p>Le signe d'Influence évolue avec la <strong>Présence</strong> et cible une créature adjacente unique. Il inflige <strong>10 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                        },
+                        "Rune: Earth": {
+                            "name": "Rune : Terre",
+                            "description": "<p>La force ordonnée de la terre élémentaire, responsable de la matière physique. La Rune de Terre gouverne les minéraux, les métaux, les sols et autres composés physiques.</p><p>La Rune de Terre évolue avec la <strong>Sagesse</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts d'<strong>Acide</strong> à la <strong>Santé</strong>. Elle est opposée par la rune chaotique de <strong>Foudre</strong>.</p>"
+                        },
+                        "Medicine Novice": {
+                            "name": "Médecine : Novice",
+                            "description": "<p>Vous avez une éducation de base en anatomie, physiologie et médecine. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Médecine</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous avez appris les bases du traitement des blessures et maladies courantes, et tenez une liste courante des composés alchimiques et à base de plantes connus qui peuvent être utilisés pour traiter des maladies particulières. Avec un peu de temps pour étudier un individu blessé, malade ou autrement souffrant, vous pouvez effectuer un diagnostic de base et traiter en conséquence.</p>"
+                        },
+                        "Science Novice": {
+                            "name": "Science : Novice",
+                            "description": "<p>Vous avez appris à étudier le monde autour de vous à travers l'observation structurée, les mathématiques, la physique, la chimie et d'autres disciplines. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Science</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous êtes familier avec les principes de base des mathématiques, de la physique, de la chimie ou d'autres études scientifiques. Vous savez comment construire et utiliser des machines simples dans le but de rendre les tâches physiques plus faciles. Vous connaissez certaines des théories scientifiques les plus communément comprises, et avec le temps approprié pour étudier des machines plus complexes, vous pourriez être capable au moins de les faire fonctionner.</p>"
+                        },
+                        "Talisman Weapon Training": {
+                            "name": "Armes Talisman : Entraînement",
+                            "description": "<p>Vous avez une éducation de base dans l'utilisation des talismans, orbes, focalisateurs ou autres armes similaires. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes de la catégorie <strong>Talisman</strong>.</p>"
+                        },
+                        "Gesture: Ray": {
+                            "name": "Signe : Rayon",
+                            "description": "<p>Vous canalisez la puissance arcanique d'une Rune en un point et la projetez vers l'extérieur en un faisceau.</p><p>Le signe de Rayon évolue avec la <strong>Sagesse</strong> et produit une ligne de 1 pied de large et 30 pieds de long partant du lanceur, infligeant <strong>6 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Le signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>4 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                        },
+                        "Rune: Life": {
+                            "name": "Rune : Vie",
+                            "description": "<p>Une force chaotique de création, responsable de la matière vivante. La Rune de Vie gouverne la santé et les questions relatives à la croissance biologique.</p><p>La Rune de Vie évolue avec la <strong>Sagesse</strong> et fournit une <strong>Restauration</strong> de <strong>Santé</strong> ou inflige des dégâts de <strong>Poison</strong> opposés par la <strong>Fortitude</strong>. Elle est opposée par la rune ordonnée de <strong>Mort</strong>.</p>"
+                        },
+                        "Rune: Soul": {
+                            "name": "Rune : Âme",
+                            "description": "<p>La force ordonnée de création et d'essence spirituelle. La Rune d'Âme gouverne la procession fondamentale des âmes à travers la vie et la mort et concerne les questions de sapience, de personnalité et de santé mentale.</p><p>La Rune d'Âme évolue avec la <strong>Présence</strong> et fournit une <strong>Restauration</strong> du <strong>Moral</strong> ou inflige des dégâts <strong>Psychiques</strong> opposés par la <strong>Volonté</strong>. Elle est opposée par la rune chaotique de <strong>Néant</strong>.</p>",
+                            "actions": {
+                                "evoke": {
+                                    "name": "Évoquer",
+                                    "description": "<p>Votre maîtrise de la Rune d'Âme vous permet faciliter les formes fondamentales d'influence spirituelle, produisant l'un des effets suivants :</p><ul><li><p>Vous permettre, ou à une autre personne consentante, de revivre un souvenir marquant d'un moment de son passé, d'une durée maximale d'une minute, comme s'il s'était produit récemment.</p></li><li><p>Identifier une condition spirituelle négative affectant une personne telle que @Condition[broken], @Condition[frightened], @Condition[confused], or @Condition[insane].</p></li><li><p>Créer un lien spirituel momentané avec une autre créature consentante qui lui permet de reconnaître une idée pouvant être exprimée par un seul mot.</p></li></ul><p>Les utilisations d'Évoquer ne peuvent affecter que vous-même ou une autre créature que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
+                                }
+                            }
+                        }
+                    }
+                },
+                "Ulfen": {
+                    "name": "Ulfen",
+                    "tokenName": "Ulfen",
+                    "items": {
+                        "Scale Mail": {
+                            "name": "Armure d’écailles"
+                        },
+                        "Greataxe": {
+                            "name": "Hache à deux mains"
+                        },
+                        "Intimidator": {
+                            "name": "Intimidateur",
+                            "description": "Vous vous spécialisez dans l'exercice de votre présence intimidante pour briser le moral de vos ennemis.",
+                            "actions": {
+                                "intimidate": {
+                                    "name": "Intimider",
+                                    "description": "<p>Vous intimidez physiquement un ennemi dans votre rayon d'engagement, effectuant une attaque de compétence d'Intimidation contre votre cible. Sur un succès, il subit des dégâts de Vide au Moral.</p>"
+                                }
+                            }
+                        },
+                        "Uppercut": {
+                            "name": "Uppercut",
+                            "description": "Une technique d'arme à deux mains où vous balancez votre arme vers le haut, effectuant une seconde Frappe avec le retour de votre arme.",
+                            "actions": {
+                                "uppercut": {
+                                    "name": "Uppercut",
+                                    "description": "<p>À la suite d'une attaque de Frappe basique qui n'est pas un échec critique, vous <strong>Frappez</strong> encore la même cible avec un balancement arrière de votre arme avec un coût en <strong>Action</strong> réduit.</p>"
+                                }
+                            }
+                        },
+                        "Cleave": {
+                            "name": "Fendre",
+                            "description": "Cette technique martiale est une manœuvre de combat à deux mains spécialisée qui repose sur la force brute pour balancer votre arme en un large arc de cercle, frappant plusieurs ennemis sur son passage.",
+                            "actions": {
+                                "cleave": {
+                                    "name": "Fendre",
+                                    "description": "<p>Le balancement féroce d'une arme à deux mains fend les ennemis dans un arc de cercle de 120 degrés.</p>"
+                                }
+                            }
+                        },
+                        "Intercept": {
+                            "name": "Intercepter",
+                            "description": "Vous protégez vos alliés, interceptant les coups qui pourraient autrement être dirigés vers vos compagnons.",
+                            "actions": {
+                                "intercept": {
+                                    "name": "Intercepter",
+                                    "description": "<p>Vous interceptez la trajectoire d'un ennemi qui entre dans votre rayon d'<strong>Engagement</strong>, vous déplaçant immédiatement de votre <strong>Foulée</strong> pour vous interposer et bloquer son chemin.</p><p>Si l'ennemi sort de votre rayon d'Engagement ou attaque une autre créature pendant son tour, vous pouvez effectuer un <strong>Assaut opportuniste</strong> contre lui.</p>",
+                                    "condition": "Un ennemi se déplace dans ou à travers votre rayon d'Engagement."
+                                }
+                            }
+                        },
+                        "Awareness Novice": {
+                            "name": "Vigilance : Novice",
+                            "description": "<p>Vous avez été formé aux bases de la vigilance situationnelle, et êtes capable de remarquer des détails importants de votre environnement. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Vigilance</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez vérifier les sorties en entrant dans une pièce, et comment chercher des armes dissimulées, des pièges cachés, et autres menaces. Vous savez repérer quand vous êtes suivi et comment chercher les cachettes communes.</p>"
+                        },
+                        "Intimidation Novice": {
+                            "name": "Intimidation : Novice",
+                            "description": "<p>Vous comprenez les fondamentaux de comment les menaces et la coercition peuvent atteindre les résultats souhaités. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Intimidation</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez comment utiliser de simples démonstrations de violence ou des menaces ouvertes pour amener les autres à suivre votre direction, mais vous n'êtes pas très subtil.</p>"
+                        },
+                        "Unarmed Combat Training": {
+                            "name": "Combat à mains nues : Entraînement",
+                            "description": "<p>Vous avez une éducation de base dans le combat au corps à corps et autres arts martiaux. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes de la catégorie <strong>Mains nues</strong>.</p>"
+                        }
+                    }
+                }
+            },
+            "folders": {
+                "Crucible Playtest": "Playtest de Crucible",
+                "The Ring of Valor": "L'Arène de la Vaillance",
+                "Day 1": "Jour 1",
+                "Day 2": "Jour 2",
+                "Day 3": "Jour 3",
+                "Day 4": "Jour 4",
+                "Day 5": "Jour 5",
+                "Pregenerated Heroes": "Héros prétirés",
+                "Level 1": "Niveau 1",
+                "Level 6": "Niveau 6"
+            },
+            "journals": {
+                "Playtest One: The Ring of Valor": {
+                    "name": "Playtest un : L'Arène de la Vaillance",
+                    "pages": {
+                        "Introduction": {
+                            "name": "Introduction",
+                            "text": "<p><strong>Playtest Un : L'Arène de la Vaillance</strong> est une introduction guidée au développement de personnage et aux mécaniques de combat de Crucible, plaçant les joueurs dans le rôle d'une équipe de gladiateurs confrontée à une séquence de défis dans l'Arène de la Vaillance.</p><p>Les joueurs peuvent soit créer leurs propres personnages à partir de zéro en suivant le processus de @UUID[Compendium.crucible.rules.JournalEntry.gszlBVQ5fGh3y0I6]{Création de Personnage} (recommandé), soit utiliser les personnages pré-tirés de Niveau 1 fournis dans le compendium <strong>Héros Prédéfinis</strong>.</p><p>Ce défi est conçu et équilibré pour un groupe de quatre personnages joueurs, bien que nous vous encouragions à tester avec un groupe plus petit ou plus grand. La difficulté des défis peut être ajustée en manipulant le niveau de menace des @UUID[Compendium.crucible.rules.JournalEntry.v1dqTT3NI35lFNxM]{Adversaires}.</p><p>L'Arène de la Vaillance consiste en six batailles, une par jour, durant lesquelles le groupe affronte des opposants de plus en plus dangereux, culminant avec un match final contre les champions en titre - le dernier groupe de héros ayant triomphé de l'arène. Chaque rencontre est conçue pour introduire de nouvelles mécaniques de jeu et fournir une opportunité de tester de nouvelles capacités obtenues grâce à l'avancement de niveau.</p><h2 class=\"divider\">Fournir un retour</h2><p>Si vous testez Crucible et faites l'expérience de l'Arène de la Vaillance, merci de nous aider en prenant quelques instants pour @UUID[Compendium.crucible.rules.JournalEntry.5SgXrAKS2EnqVggJ.JournalEntryPage.4Ggutuh9uzhcEXSK]{Fournir un retour} dans le canal <strong>#crucible</strong> de notre serveur Discord communautaire.</p><h2 class=\"divider\">Concernant la défaite</h2><p>Normalement, dans Crucible - la défaite, qu'elle soit due à la <strong>Folie</strong> ou à la <strong>Mort</strong>, marquerait la fin du voyage d'un personnage. Dans le cas de ce playtest initial, cependant, nous recommandons qu'en tant que Maître du jeu, vous adoptiez une approche plus flexible.</p><p>Dans l'intérêt de tester le système et de recueillir des retours utiles, nous recommandons de permettre à un groupe qui subit une défaite de retenter le même défi jusqu'au succès OU d'être autorisé à passer au défi suivant malgré tout, si l'un des défis quotidiens s'avère trop difficile à surmonter.</p>"
+                        },
+                        "Day One - The Feral Scramble": {
+                            "name": "Jour 1 - La course effrénée",
+                            "text": "<p>Dans le défi du Jour Un, 4 héros de Niveau 1 affrontent une meute de bêtes frénétiques :</p><ul><li><p>4x @UUID[Actor.tqLT327VnrBXrLtj]{Huiana}<strong> </strong>(Niveau ½ Laquais)</p></li><li><p>4x @UUID[Actor.owg68yqumk7KxV9B]{Baizaz}<strong> </strong>(Niveau ½ Laquais)</p></li></ul><p><strong>Menace des Protagonistes</strong> : 1 × 4 = 4</p><p><strong>Menace des Adversaires</strong> : ⅓ × 8 = 2.66</p><p><strong>Difficulté de la Rencontre</strong> : Difficile</p><h2 class=\"divider\">Introduction</h2><p>Le groupe émerge sur le sable pour se retrouver dans une grande arène, entourée de gradins remplis d'une foule en délire. Un commentateur observe depuis une cabine surplombant les sables, où siège le propriétaire de l'arène. La voix du Commentateur est amplifiée par magie, portée à travers toute l'arène.</p><blockquote><p>Nous voici au premier jour de la Grande Exhibition à l'Arène de la Vaillance, et la foule est déjà déchaînée ! Le premier match de la journée est sur le point de commencer, et alors que les nouveaux venus foulent le sable pour la première fois, la foule est clairement impatiente de voir leur performance. La Ruée est toujours un favori du public - les nouveaux venus survivront-ils et triompheront-ils de ces bêtes sauvages affamées ?!</p></blockquote><p>Le groupe reçoit l'instruction de se tenir au centre de l'arène. Les Huiana et Baizas sont positionnés de chaque côté de l'arène par groupes de 4. Une fois le groupe au centre de l'arène, quelques instants sont laissés pour faire monter la tension, puis les bêtes émergent des tunnels des côtés Est et Ouest de la carte. Ajoutez tout le monde à une rencontre de <strong>Combat</strong> et lancez le combat pour lancer l'<strong>Initiative</strong> du <strong>Round 1</strong>.</p><h2 class=\"divider\">Tactiques</h2><p>Les <strong>Huiana</strong> sont des chasseurs de meute et comptent sur des tactiques d'encerclement pour entourer et harceler un unique protagoniste, bénéficiant de leur talent <strong>Chasse en meute</strong>. Ce défi sert d'introduction aux mécaniques de @UUID[Compendium.crucible.rules.JournalEntry.QhZgmBrdLAGwYy5c.JournalEntryPage.KGXiKFUWrPgb7wsx]{Déplacement et Débordement}.</p><p>Les <strong>Baisaz</strong> possèdent un élan et une puissance formidables dans leur charge. Les Baisaz chargeront une cible en utilisant leur <strong>Charge de sanglier</strong> tout en utilisant leur déplacement ou toute action restante pour reprendre de la distance avec leur cible afin de charger à nouveau.</p><p>Les Huiana et les Baisaz sont faibles contre les dégâts infligés à leur @UUID[Compendium.crucible.rules.JournalEntry.gszlBVQ5fGh3y0I6.JournalEntryPage.FmmADsI9qo1uIIT3]{Moral}. Lorsque les bêtes deviennent démoralisées, elles fuient l'arène, battant en retraite dans le tunnel le plus proche vers les catacombes en dessous. Ce défi initial peut servir d'expérience d'apprentissage montrant que démoraliser vos ennemis est une voie utile vers la victoire.</p><h2 class=\"divider\">Avancement</h2><p>Le combat se termine lorsque les huit bêtes ont été vaincues. La foule est satisfaite de la performance du groupe, et le Commentateur annonce que le groupe reviendra demain pour un autre match.</p><p>Une fois prêts à continuer, les personnages doivent chacun utiliser l'action de <strong>Récupération</strong> pour regagner les ressources perdues et tous les personnages doivent gagner un niveau, passant au niveau 2 pour affronter @UUID[.eQdArtcrGi4wobap]{Jour Deux - Marteau et Enclume}.</p>"
+                        },
+                        "Day Two - Hammer and Anvil": {
+                            "name": "Jour 2 - Le Marteau et l'Enclume",
+                            "text": "<p>Dans le défi du Jour Deux, 4 héros de Niveau 2 affrontent le duo de gladiateurs Marteau et Enclume (Challenge 9).</p><ul><li><p>@UUID[Actor.XA9W38PGmAs3ZLDa]{Marteau} (Niveau 3 Élite)</p></li><li><p>@UUID[Actor.KSoJR8uwT5Qzka7p]{Enclume} (Niveau 3 Élite)</p></li></ul><p><strong>Menace des Protagonistes</strong> : 2 × 4 = 8</p><p><strong>Menace des Adversaires</strong> : 4 × 2 = 8</p><p><strong>Difficulté de la Rencontre</strong> : Mortel</p><h2 class=\"divider\">Introduction</h2><blockquote><p>\"C'est une belle journée dans l'Arène de la Vaillance, et il semble que nous allons nous régaler. Le match d'aujourd'hui marque le retour de ce duo mortel, les géants du jeu, le duo terrible : Marteau et Enclume.\"</p><p>L'annonceur fait une pause alors que la foule rugit avant de continuer : \"Quel accueil ! On peut entendre à quel point les fans sont impatients de voir ces deux-là en action à nouveau. Voyons si nos nouveaux concurrents peuvent relever le défi !\"</p></blockquote><p>Le groupe reçoit l'instruction de se rassembler devant le tunnel du côté ouest de l'arène. Une fois le groupe en position, Marteau et Enclume émergent du tunnel du côté opposé à l'est et la bataille commence !</p><h2 class=\"divider\">Tactiques</h2><p>Marteau et Enclume sont une paire d'adversaires qui combattent en équipe coordonnée.</p><p>Les tactiques d'<strong>Enclume</strong> se concentrent principalement sur la tentative de se rapprocher et de lutter avec un ennemi afin de créer des opportunités pour Marteau d'attaquer. Enclume utilisera <strong>Lancer de Marteau</strong> pour envoyer rapidement Marteau dans la mêlée, puis utilisera <strong>Lutteur</strong> pour entraver les ennemis et <strong>Frappe Lourde</strong> pour délivrer des coups punitifs.</p><p><strong>Marteau</strong> est un tirailleur, entrant et sortant du combat pour saisir les opportunités de déchaîner une séquence dévastatrice d'attaques en ambidextrie utilisant <strong>Déluge</strong> ou utilisant un combo <strong>Frappe + Frappe main secondaire</strong>. Tout ennemi qui tente un Repli mesuré, Marteau le soumettra en utilisant <strong>Coupe-jarret.</strong></p><h2 class=\"divider\">Avancement</h2><p>Le combat se termine lorsque Marteau et Enclume ont tous deux été vaincus. La foule est satisfaite de la performance du groupe, et le Commentateur annonce que le groupe reviendra demain pour un autre match.</p><p>Le groupe a la possibilité de se reposer, d'utiliser l'action de <strong>Récupération</strong>, et de gagner un niveau en passant au Niveau 3 pour affronter @UUID[.v5EIDeTtHdQ7Wb5J]{Jour Trois - L'Armée Squelettique}.</p>"
+                        },
+                        "Day Three - The Skeletal Army": {
+                            "name": "Jour Trois - L'Armée Squelettique",
+                            "text": "<p>Dans le troisième défi, 4 héros de Niveau 3 affrontent le nécromancien Orivech et son armée squelettique !</p><ul><li><p>@UUID[Actor.JuobjWohGACVeoyn]{Orivech} (Niveau 3 Chef)</p><ul><li><p>Invoque @UUID[Compendium.crucible.summons.Actor.56puGK932Qc0cowe]{Création de la Mort} (Niveau 1 Laquais)</p></li></ul></li><li><p>6x @UUID[Actor.aQkmEcwfImmdUINF]{Lancier Squelettique} (Niveau 1 Laquais)</p></li><li><p>6x @UUID[Actor.7jL3UmgXbqxXKClM]{Archer Squelettique} (Niveau 1 Laquais)</p></li></ul><p><strong>Menace des Protagonistes</strong> : 3 × 4 = 12</p><p><strong>Menace des Adversaires</strong> : 6 + (½ × 6) + (½ × 6) = 12</p><p><strong>Difficulté de la Rencontre</strong> : Mortel</p><h2 class=\"divider\">Introduction</h2><p>Pour ce défi, le groupe reçoit l'instruction de se rassembler dos à la falaise sur le côté Nord de l'arène.</p><blockquote><p>\"Bon retour - à toutes et à tous - à l'Arène de la Vaillance pour le troisième jour de notre épreuve captivante ! Aujourd'hui, nous célébrons la reconstitution de l'une des batailles historiques de notre histoire. Ces quelques braves champions, le dos au bord de l'oubli, faisant face au redoutable nécromancien Orivech et son armée squelettique !\"</p><p>La foule rugit d'anticipation alors qu'Orivech et ses laquais squelettiques émergent des escaliers sud et entrent dans l'arène.</p></blockquote><p>Orivech et les squelettes émergent de l'entrée sud et se déploient en formation de bataille avant que la rencontre ne commence !</p><h2 class=\"divider\">Tactiques</h2><p>Orivech jouera défensivement et comptera sur sa légion de squelettes pour soumettre ses ennemis. En tant qu'ennemi de type Chef, Orivech a <strong>10 Actions</strong> par round et utilisera l'inflexion <strong>Façonner</strong> sur la plupart des sorts afin de conserver son <strong>Focus</strong> et dépensera l'Action restante pour <strong>Récupérer du Focus</strong>.</p><p>Les tactiques d'Orivech tournent autour de l'utilisation du signe <strong>Création</strong> pour conjurer plus de laquais @UUID[Compendium.crucible.summons.Actor.56puGK932Qc0cowe]{Création de la Mort}. Orivech peut maintenir jusqu'à 3 de ces laquais à la fois grâce au talent <strong>Conjurateur</strong>. Lorsqu'il est menacé directement, il utilisera l'inflexion <strong>Rejeter </strong>pour forcer les ennemis à reculer.</p><p>Les Archers Squelettiques utiliseront <strong>Frappe</strong> pour concentrer leurs tirs sur la cible désignée par Orivech, utilisant <strong>Tir Évasif</strong> pour se repositionner. Les Lanciers Squelettiques se rueront en avant pour engager les combattants ennemis et bloquer leur chemin, essayant de les faire trébucher avec <strong>Balayette</strong>.</p><h2 class=\"divider\">Avancement</h2><p>Le combat se termine lorsqu'Orivech est vaincu. Lorsque le nécromancien tombe, ses laquais squelettiques se désintègrent en poussière à ses côtés. La foule est satisfaite de la performance du groupe, et le Commentateur annonce que le groupe reviendra demain pour un autre match.</p><p>Le groupe a la possibilité de se reposer, d'utiliser l'action de Récupération, et de gagner un niveau en passant au Niveau 4. Tous les héros peuvent également augmenter la qualité de leurs Armes équipées à <strong>Raffinée</strong>. Après s'être reposé, l'épreuve continue avec @UUID[.hEpGF7rbNFVUMm86]{Jour Quatre - Koy Rent}.</p>"
+                        },
+                        "Day Four - Koy Rent": {
+                            "name": "Jour Quatre - Koy Rent",
+                            "text": "<p>Dans ce quatrième défi, 4 héros de niveau 4 affrontent la menace lycanthropique Koy Rent.</p><ul><li><p>@UUID[Actor.3sGYsiKtgYLLkadw]{Koy Rent} (Niveau 7 Chef)</p></li></ul><p><strong>Menace des Protagonistes</strong> : 4 × 4 = 16</p><p><strong>Menace des Adversaires</strong> : 14</p><p><strong>Difficulté de la Rencontre</strong> : Difficile</p><h2 class=\"divider\">Introduction</h2><p>Pour ce défi, le groupe se rassemble du côté est de l'Arène.</p><blockquote><p>\"Le match d'aujourd'hui est spécial - avec le retour d'un champion retraité pour une exhibition d'un jour unique ! Les amis, vous le connaissez, vous l'aimez, il est ici, il est là, il est PAR-TOUT !--- Koy Rent ! Rent a quitté l'arène après une grave blessure, acclamé à sa sortie du champ de victoire par une foule compréhensive. Avec son retour dans les jeux, nous devons nous demander : se hissera-t-il au rang de champion ou tombera-t-il face à ces nouveaux concurrents ?\"</p></blockquote><p>Koy Rent entre dans l'arène par l'entrée Ouest et attaque immédiatement !</p><h2 class=\"divider\">Tactiques</h2><p>Koy Rent est un combattant formidable. En tant que Chef de Niveau 7 avec des réserves significatives de Santé et de Moral, le groupe aura peu d'espoir de résister à son assaut en combat de mêlée direct.</p><p>Rent utilisera <strong>Hurlement Féroce </strong>pour infliger la condition <strong>Paniqué </strong>et se déplacera rapidement pour réduire la distance à portée de mêlée avec autant d'ennemis que possible. Rent utilisera <strong>Déluge</strong> lorsqu'il fera face à une cible unique pour la soumettre rapidement avec un assaut implacable d'attaques de griffes, infligeant des dégâts supplémentaires d'<strong>Ensanglantée</strong> grâce au talent <strong>Écorcheur</strong>.</p><p>Le groupe ne peut espérer résister à cet assaut en combat de mêlée et devra réfléchir soigneusement à la manière de ralentir Koy Rent.</p><h2 class=\"divider\">Avancement</h2><p>Le combat se termine lorsque Koy Rent est vaincu. La foule est satisfaite de la performance du groupe, et le Commentateur annonce que le groupe reviendra demain pour un autre match.</p><p>Le groupe a la possibilité de se reposer, d'utiliser l'action de <strong>Récupération</strong>, et de gagner un niveau ; passant au Niveau 5. Tous les héros peuvent également augmenter la qualité de leur Armure équipée à <strong>Raffinée</strong>. Le groupe revient le jour suivant pour affronter @UUID[.sISxZXCLNvpjkY02]{Jour Cinq - Précurseurs du Vide}.</p>"
+                        },
+                        "Day Five - Void Harbingers": {
+                            "name": "Jour Cinq - Précurseurs du Vide",
+                            "text": "<p>Dans ce défi, 4 héros de Niveau 5 affrontent un trio de Précurseurs du Vide :</p><ul><li><p>@UUID[Actor.YVvIKp7fUIduZchE]{Précurseur de la Peur} (N4 Élite)</p></li><li><p>@UUID[Actor.TZT7ybsmI8yV5hWg]{Précurseur de la Maladie} (N4 Élite)</p></li><li><p>@UUID[Actor.CTpEm0WlmFAAosBD]{Précurseur de la Folie} (N4 Élite)</p></li></ul><p><strong>Menace des Protagonistes</strong> : 4 × 5 = 20</p><p><strong>Menace des Adversaires</strong> : 3 × 6 = 18</p><p><strong>Difficulté de la Rencontre</strong> : Mortel</p><h2 class=\"divider\">Introduction</h2><blockquote><p>\"Ce soir, nous allons vivre une véritable excitation car les invocateurs ont conjuré un nouveau défi depuis des royaumes au-delà du voile ombral ! Mesdames et messieurs, depuis les recoins les plus sombres et les espaces liminaux au-delà du bord de la réalité, bienvenue dans l'Arène de la Vaillance : les Précurseurs du Vide !\"</p></blockquote><h2 class=\"divider\">Tactiques</h2><p>Le <strong>Précurseur de la Peur</strong> est un prédateur mobile qui se festoie de pensées effrayantes. Il utilisera <strong>Distorsion Éthérée</strong> pour se déplacer librement sur le champ de bataille et <strong>Émanation Occulte</strong> pour infliger la peur à des groupes d'ennemis. Une fois qu'il a isolé un ennemi paniqué, il utilisera <strong>Frappe</strong> avec sa Gueule Psychique.</p><p>Le <strong>Précurseur de la Maladie </strong>est un porteur de pestilence qui inflige la condition <strong>Malade</strong> en utilisant sa capacité <strong>Fouet Pestilentiel</strong>. Ce Héraut possède également une capacité de lancement de sorts qu'il utilisera pour saper davantage la vie et le moral, ciblant des groupes d'ennemis avec le signe <strong>Onde</strong> ou des cibles individuelles utilisant <strong>Influence</strong>.</p><p>Le <strong>Précurseur de la Folie</strong> est un prédateur psychologique qui se rapprochera à portée de mêlée avant d'utiliser la capacité <strong>Fouet Mental </strong>contre des groupes d'ennemis ou <strong>Dévorer les Pensées</strong> contre un ennemi unique.</p><h2 class=\"divider\">Avancement</h2><p>Le combat se termine lorsque les trois Précurseurs ont été vaincus. La foule est satisfaite de la performance du groupe, et le Commentateur annonce que le groupe reviendra demain pour un autre match.</p><p>Le groupe a la possibilité de se reposer, d'utiliser l'action de Récupération, et de gagner un niveau ; passant au Niveau 6. Tous les héros peuvent également augmenter la qualité de leur Armure équipée à <strong>Raffinée</strong>. Le groupe revient le jour suivant pour affronter @UUID[.UxIXSvvJCdqx2Tar]{Jour Six - Match Miroir}.</p>"
+                        },
+                        "Day Six - Mirror Match": {
+                            "name": "Jour Six - Match Miroir",
+                            "text": "<p>Dans ce défi final, 4 héros de Niveau 6 se retrouvent face-à-face avec un groupe d'aventuriers rival composé de 4 héros de Niveau 6.</p><ul><li><p>@UUID[Actor.iLUfMcYjAbZFY4CJ]{Duurath} (Niveau 6)</p></li><li><p>@UUID[Actor.0crVYYsPvV9KDEJ2]{Belladonna} (Niveau 6)</p></li><li><p>@UUID[Actor.2lvTCCOj4dnBI774]{Eliorwen} (Niveau 6)</p></li><li><p>@UUID[Actor.Il4NDaNBdHNcjJ9d]{Kagura} (Niveau 6)</p></li></ul><p><strong>Menace des Protagonistes</strong> : 4 × 6 = 24</p><p><strong>Menace des Adversaires</strong> : 4 × 6 = 24</p><p><strong>Difficulté de la Rencontre</strong> : Mortel</p><h2 class=\"divider\">Introduction</h2><blockquote><p>\"Ce soir, l'arène retient son souffle pour le défi ultime ! Oubliez les bêtes sauvages et les horreurs invoquées. Le véritable test de maîtrise est d'affronter ses pairs. Mesdames et messieurs, parfois l'ennemi le plus dangereux est son propre reflet. Accueillez vos rivaux, un groupe de héros prêts à tout pour revendiquer le titre de champions !\"</p></blockquote><p>Ceci est un défi particulièrement difficile car les quatre héros adverses sont optimisés individuellement et travaillent bien en équipe.</p><h2 class=\"divider\">Tactiques</h2><p>Chacun des opposants dans ce défi fonctionne comme un protagoniste héroïque avec son propre éventail de talents, d'actions et d'équipement.</p><h4>Duurath</h4><p><strong>Duurath </strong>est un combattant de mêlée dangereux avec un fort <strong>Engagement</strong>, une défense physique solide, et le talent signature <strong>Seigneur de l'Effroi</strong> qui démoralise et panique les ennemis. Duurath se rapprochera des combattants ennemis en utilisant <strong>Charge de Bouclier</strong> et les verrouillera en utilisant <strong>Cadence</strong> pour délivrer des dégâts élevés ou <strong>Contre-Attaque</strong> pour riposter lors du <strong>Blocage</strong> des coups entrants. Défensivement, Duurath peut utiliser <strong>Garde Cinétique</strong> pour se protéger d'un type de dégâts physiques choisi.</p><h4>Belladonna</h4><p><strong>Belladonna</strong> est une combattante de mêlée rusée et insaisissable avec le talent <strong>Empoisonneur</strong>. Au début de la bataille, elle activera <strong>Lames Empoisonnées</strong>. Elle utilisera <strong>Distraction</strong> contre les lanceurs de sorts ennemis pour saper leur Focus, et <strong>Médecine de Combat</strong> pour restaurer la santé de ses alliés. Belladonna cherchera les combattants ennemis les plus vulnérables, se rapprochant à portée de mêlée en utilisant <strong>Acrobatie</strong> si nécessaire et <strong>Déluge</strong> pour appliquer des dégâts rapides et des conditions d'empoisonnement.</p><h4>Eliorwen</h4><p><strong>Eliorwen</strong> est une archère mortelle, infusant les tirs de son Arc long avec des sorts de foudre utilisant son talent <strong>Archer Arcanique</strong>. Eliorwen identifiera un ennemi dangereux et le ciblera avec <strong>Marquer la proie</strong> pour réduire ses défenses pour elle-même et ses alliés. Elle utilisera <strong>Tir de Précision</strong> couplé à un <strong>Trait Voltaïque</strong> à coût réduit pour délivrer des dégâts soutenus et fiables à distance.</p><h4>Kagura</h4><p><strong>Kagura</strong> est un personnage de soutien polyvalent capable de guérir à la fois l'esprit et le corps de ses alliés. Elle lancera la rune de <strong>Vie</strong> en utilisant les signes <strong>Influence</strong>, <strong>Onde</strong>, ou <strong>Rayon</strong> pour déclencher des soins supplémentaires grâce à son talent <strong>Guérisseur</strong>. Kagura peut maintenir les soins presque indéfiniment grâce à une utilisation réfléchie de l'inflexion <strong>Façonner</strong> ainsi que <strong>Économie d'Effort</strong>. Kagura évite la confrontation directe et se désengagera plutôt du combat pour chercher la protection de ses alliés.</p><h2 class=\"divider\">Avancement</h2><p>Le combat se termine lorsque les quatre adversaires sont vaincus. La foule est ravie de la performance du groupe et les célèbre comme les champions éternels de l'Arène de la Vaillance. Il n'y a pas d'autres événements prévus dans l'Arène de la Vaillance pour le moment, mais veuillez consulter @UUID[.aNlzMnfUkwpLrSox]{Défis Supplémentaires} si vous souhaitez continuer les tests en improvisant de nouveaux défis à affronter pour le groupe.</p>"
+                        },
+                        "Further Challenges": {
+                            "name": "Défis supplémentaires",
+                            "text": "<p>Merci d'avoir terminé le <strong>Playtest de Crucible</strong>. Nous espérons que vous et vos joueurs avez apprécié l'expérience de test. Pour des défis supplémentaires afin d'évaluer le système, nous recommandons ce qui suit :</p><ol><li><p>Répétez le défi @UUID[.UxIXSvvJCdqx2Tar]{Jour Six - Match Miroir} mais avec différentes combinaisons de personnages Prédéfinis de Niveau 6 comme adversaires.</p></li><li><p>Créez vos propres @UUID[Compendium.crucible.rules.JournalEntry.v1dqTT3NI35lFNxM]{Adversaires} en testant le système initial de Taxonomies et d'Archétypes.</p></li></ol><p>Veuillez envisager de prendre le temps de @UUID[Compendium.crucible.rules.JournalEntry.5SgXrAKS2EnqVggJ.JournalEntryPage.4Ggutuh9uzhcEXSK]{Fournir un Retour} ce qui peut nous aider à développer et améliorer davantage ce nouveau système de jeu de rôle.</p>"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

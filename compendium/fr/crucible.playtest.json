@@ -1247,5 +1247,13 @@
                 }
             }
         }
+    },
+    "mapping": {
+        "actors": {
+            "items": {
+                "path": "items",
+                "converter": "adventure_items_converter"
+            }
+        }
     }
 }

@@ -1546,5 +1546,7 @@
     "ACTOR.ClearedDetailItem": "A retiré le {type} de {actor}.",
     "ACTION.TemplateTargets": "Cibles du Gabarit",
     "ACTION.Confirmed": "Confirmé",
-    "ACTION.Unconfirmed": "Non confirmé"
+    "ACTION.Unconfirmed": "Non confirmé",
+    "ACTION.TagMaintained": "Maintenu",
+    "ACTION.TagMaintainedTooltip": "Cette action peut être maintenue, ce qui entraîne son coût de concentration au début de vos tours."
 }

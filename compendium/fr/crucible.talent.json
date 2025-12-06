@@ -1467,7 +1467,7 @@
         },
         "Skirmisher": {
             "name": "Querelleur",
-            "description": "<p>Vous êtes adepte d'entrer et sortir de la mêlée. Lorsque vous sortez du rayon d'<strong>Engagement</strong> d'un ennemi, cet ennemi a 2 Fléaux à tout <strong>Assaut Opportuniste</strong> contre vous."
+            "description": "<p>Vous êtes adepte d'entrer et sortir de la mêlée. Lorsque vous sortez du rayon d'<strong>Engagement</strong> d'un ennemi, cet ennemi a 2 Fléaux à tout <strong>Assaut Opportuniste</strong> contre vous.</p>"
         },
         "Smithing Journeyman": {
             "name": "Forge : Compagnon",

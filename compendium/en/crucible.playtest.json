@@ -1,0 +1,1256 @@
+{
+  "label": "Playtest",
+  "mapping": {
+    "actors": {},
+    "items": {}
+  },
+  "folders": {},
+  "entries": {
+    "Playtest 1 - The Ring of Valor": {
+      "name": "Playtest 1 - The Ring of Valor",
+      "caption": "Test your mettle in the Ring of Valor, the first available playtest for the Crucible game system.",
+      "description": "<p><em>The Ring of Valor</em> is a guided introduction to character development and combat mechanics in Crucible which places players in the role of a gladiatorial team facing a sequence of escalating challenges.</p>",
+      "scenes": {
+        "Arena of Valor": {
+          "name": "Arena of Valor"
+        }
+      },
+      "macros": {
+        "Recover": {
+          "name": "Recover",
+          "command": "game.system.api.documents.CrucibleActor.macroAction(actor, \"recover\");"
+        },
+        "Toggle Talent Tree": {
+          "name": "Toggle Talent Tree",
+          "command": "if ( actor?.type !== \"hero\" ) return;\nawait actor.toggleTalentTree();\nconst pack = game.packs.get(\"crucible.talent\");\npack.apps[0].render({force: true}, {left: window.innerWidth - 360, top: 10});"
+        },
+        "Full Rest": {
+          "name": "Full Rest",
+          "command": "if ( !actor ) return;\nawait actor.deleteEmbeddedDocuments(\"ActiveEffect\", [], {deleteAll: true});\nawait actor.rest({}, {allowDead: true});"
+        }
+      },
+      "actors": {
+        "Baizaz": {
+          "name": "Baizaz",
+          "tokenName": "Baizaz",
+          "items": {
+            "Heavy Hide": {
+              "name": "Heavy Hide"
+            },
+            "Tusks": {
+              "name": "Tusks"
+            },
+            "Tusk Charge": {
+              "name": "Tusk Charge",
+              "description": "The Boar lowers its head and charges with frantic speed, it's tusks protruding from beneath a drooling gullet.",
+              "actions": {
+                "tuskCharge": {
+                  "name": "Tusk Charge",
+                  "description": "<p>Charge in a direct line up to your Stride and make a Strike against the first creature you encounter. If successful, the target is knocked Prone.</p>",
+                  "effects": [
+                    {
+                      "name": "Tusk Charge"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "Huiana": {
+          "name": "Huiana",
+          "tokenName": "Huiana",
+          "items": {
+            "Bite": {
+              "name": "Bite"
+            },
+            "Fur": {
+              "name": "Fur"
+            },
+            "Pack Hunter": {
+              "name": "Pack Hunter",
+              "description": "<p>This creature is a pack hunter, relying on its allies to flank and harrass a target to render it exposed to further harm.</p><p>This creature doubles number of Boons awarded from attacking a <strong>Flanked</strong> enemy.</p>"
+            }
+          }
+        },
+        "Anvil": {
+          "name": "Anvil",
+          "tokenName": "Anvil",
+          "items": {
+            "Heavy Hides": {
+              "name": "Heavy Hides"
+            },
+            "Greatclub": {
+              "name": "Greatclub"
+            },
+            "Powerful Physique": {
+              "name": "Powerful Physique",
+              "description": "You can wield weapons with the Slow trait and wear Armor with the Bulky trait without suffering Banes to your Initiative rolls."
+            },
+            "Wrestler": {
+              "name": "Wrestler",
+              "description": "You are able to subdue opponents using your physical Strength.",
+              "actions": {
+                "grapple": {
+                  "name": "Grapple",
+                  "description": "<p>Perform a <strong>Athletics</strong> skill attack against an adjacent target. If successful, both you and your target are Restrained for 1 Round.</p>",
+                  "effects": [
+                    {
+                      "name": "Grapple"
+                    },
+                    {
+                      "name": "Grapple"
+                    }
+                  ]
+                }
+              }
+            },
+            "Leg Sweep": {
+              "name": "Leg Sweep",
+              "description": "<p>You use a weapon which scales using <strong>Strength </strong>to sweep your enemy off balance, swinging low to knock them from their feet.</p>",
+              "actions": {
+                "legSweep": {
+                  "name": "Leg Sweep",
+                  "description": "<p>You make a <strong>Strike</strong> attack with your mainhand weapon. This technique is <strong>Difficult</strong> to execute and deals reduced damage, but if successful renders your target <strong>Prone</strong>.</p>",
+                  "effects": [
+                    {
+                      "name": "Leg Sweep"
+                    }
+                  ]
+                }
+              }
+            },
+            "Concussive Blows": {
+              "name": "Concussive Blows",
+              "description": "<p>Your physical power wielding melee weapons which deal Bludgeoning damage can cause the <strong>Staggered</strong> condition on Critical Hits which deal damage to Health.</p>\n<p>The Staggered effect lasts for 1 round and reduces your target's maximum Action by 1.</p>"
+            },
+            "Strong Grip": {
+              "name": "Strong Grip",
+              "description": "Your grasp of your weaponry is firm and unyielding. You can perform Actions which require a free hand while wielding a two-handed weapon. Attempts to Disarm you are made with +2 Banes."
+            },
+            "Hammer Toss": {
+              "name": "Hammer Toss",
+              "description": "Anvil grabs Hammer and hurls the Orc headlong into the fray.",
+              "actions": {
+                "hammerToss": {
+                  "name": "Hammer Toss",
+                  "description": "<p>Hammer grabs Anvil and hurls him up to 10 spaces, dealing damage in an area of effect where the Orc warchief lands.</p>",
+                  "condition": "Hammer is adjacent to Anvil."
+                }
+              }
+            },
+            "Heavy Strike": {
+              "name": "Heavy Strike",
+              "description": "<p>You know how to use a heavy weapon to deliver punishing blows, putting your entire strength behind every swing.</p>",
+              "actions": {
+                "heavyStrike": {
+                  "name": "Heavy Strike",
+                  "description": "<p>You unleash a powerful <strong>Strike</strong> with your mainhand weapon. The attack is slower to execute, but is <strong>Empowered</strong> to deliver additional damage.</p>"
+                }
+              }
+            },
+            "Heavy Weapon Training": {
+              "name": "Heavy Weapon Training",
+              "description": "<p>You have a basic education in the use of martial weaponry. You are no longer treated as <strong>Untrained</strong> with weapons in the <strong>Heavy</strong>, or <strong>Balanced</strong> categories.</p>"
+            }
+          }
+        },
+        "Hammer": {
+          "name": "Hammer",
+          "tokenName": "Hammer",
+          "items": {
+            "Hand Axe": {
+              "name": "Hand Axe"
+            },
+            "Longsword": {
+              "name": "Longsword"
+            },
+            "Scale Mail": {
+              "name": "Scale Mail"
+            },
+            "Skirmisher": {
+              "name": "Skirmisher",
+              "description": "<p>You are adept at entering and exiting the fray. When moving out of the <strong>Engagement</strong> radius of an enemy, that enemy has 2 Banes to any <strong>Disengagement Strike</strong> against you.</p>"
+            },
+            "Flurry": {
+              "name": "Flurry",
+              "description": "<p>A martial technique using two weapons to overwhelm a single target with a relentless sequence of attacks.</p>",
+              "actions": {
+                "flurry": {
+                  "name": "Flurry",
+                  "description": "<p>You <strong>Strike</strong> twice with each weapon, but each strike is <strong>Difficult</strong>.</p>"
+                }
+              }
+            },
+            "Hamstring": {
+              "name": "Hamstring",
+              "description": "<p>You use a slashing weapon to target the legs of an enemy and cripple their movement.</p>",
+              "actions": {
+                "hamstring": {
+                  "name": "Hamstring",
+                  "description": "<p>You make <strong>Strike</strong> attack which is <strong>Difficult</strong>, but if successful, inflicts the <strong>Slowed</strong> condition for <strong>3 Rounds</strong>.</p>",
+                  "effects": [
+                    {
+                      "name": "Hamstring"
+                    }
+                  ]
+                }
+              }
+            },
+            "Heavy Weapon Training": {
+              "name": "Heavy Weapon Training",
+              "description": "<p>You have a basic education in the use of martial weaponry. You are no longer treated as <strong>Untrained</strong> with weapons in the <strong>Heavy</strong>, or <strong>Balanced</strong> categories.</p>"
+            },
+            "Dual Wield": {
+              "name": "Dual Wield",
+              "description": "<p>You are adept at fighting with two weapons simultaneously. You can weave attacks together to strike more rapidly than possible with a single weapon.</p>",
+              "actions": {
+                "offhandStrike": {
+                  "name": "Offhand Strike",
+                  "description": "<p>Immediately after you perform a basic Strike with your mainhand weapon, you make a reduced-cost fullow-up <strong>Strike</strong> with your <strong>offhand</strong> weapon.</p>"
+                }
+              }
+            },
+            "Heavy Strike": {
+              "name": "Heavy Strike",
+              "description": "<p>You know how to use a heavy weapon to deliver punishing blows, putting your entire strength behind every swing.</p>",
+              "actions": {
+                "heavyStrike": {
+                  "name": "Heavy Strike",
+                  "description": "<p>You unleash a powerful <strong>Strike</strong> with your mainhand weapon. The attack is slower to execute, but is <strong>Empowered</strong> to deliver additional damage.</p>"
+                }
+              }
+            }
+          }
+        },
+        "Orivech": {
+          "name": "Orivech",
+          "tokenName": "Orivech",
+          "items": {
+            "Mage Staff": {
+              "name": "Mage Staff"
+            },
+            "Studded Leather Armor": {
+              "name": "Studded Leather Armor"
+            },
+            "Gesture: Influence": {
+              "name": "Gesture: Influence",
+              "description": "<p>You intensify the arcane power of a Rune into a concentrated direct contact which is generally a more powerful evolution of the basic Touch gesture.</p><p>The Influence gesture scales using <strong>Presence</strong> and targets a single adjacent creature. It deals <strong>10 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
+            },
+            "Inflection: Compose": {
+              "name": "Inflection: Compose",
+              "description": "<p>Enhance a spell by taking extra time in its formation, reducing other resource costs in exchange. The Compose inflection reduces the <strong>Focus</strong> cost of a spell by 1 while increasing its <strong>Action</strong> cost by 1 in exchange.</p>"
+            },
+            "Gesture: Create": {
+              "name": "Gesture: Create",
+              "description": "<p>You coalesce arcane power into tangible form, manifesting a <strong>Sprite</strong> which appears within 10 feet and joins Combat at Initiative 1. Your Sprite is a <strong>Minion</strong> of half your own Level.</p><p>The Create gesture scales with <strong>Wisdom</strong> and the Sprite survives for <strong>6 Rounds</strong>. You may only have one active Sprite, casting another spell using the Create gesture replaces your previous Sprite. This gesture requires <strong>2 Hands</strong> to cast and has a base cost of <strong>4 Action</strong> and <strong>1 Focus</strong>.</p><h3 class=\"divider\">Playtest Notes</h3><p>Not all Runes have a Sprite actor defined yet. Runes that do not yet have a defined Creation will — for now — manifest a <strong>Flame Sprite</strong>.</p>"
+            },
+            "Gesture: Arrow": {
+              "name": "Gesture: Arrow",
+              "description": "<p>You hurl a projectile imbued with the magical power of a Rune at a distant target.</p><p>The Arrow gesture scales using <strong>Intellect</strong> and targets a single creature up to a distance of 60 feet, dealing <strong>8 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
+            },
+            "Conjurer": {
+              "name": "Conjurer",
+              "description": "<p>You are a master of Conjuration and the Gesture of Creation to manifest arcane energy as physical form. You can maintain up to 3 such creations simultaneously rather than only one.</p>"
+            },
+            "Inflection: Push": {
+              "name": "Inflection: Push",
+              "description": "<p>Empower a spell to repel affected creatures away from the caster. Creatures affected by a spell with the Push inflection move 1 space away from the spellcaster if that destination space is unoccupied.</p>"
+            },
+            "Talisman Weapon Training": {
+              "name": "Talisman Weapon Training",
+              "description": "<p>You have a basic education in the use of talismans, orbs, foci, or other similar weapons. You are no longer treated as <strong>Untrained</strong> with weapons in the <strong>Talisman</strong> categories.</p>"
+            },
+            "Intercept": {
+              "name": "Intercept",
+              "description": "You protect your allies, intercepting blows that might otherwise be directed towards your companions.",
+              "actions": {
+                "intercept": {
+                  "name": "Intercept",
+                  "description": "<p>You intercept the path of an enemy which enters your <strong>Engagement</strong> radius, immediatly moving up to your <strong>Stride</strong> to interpose yourself and block their path.</p><p>If the enemy moves out of your Engagement radius or attacks any other creature during their turn, you may make a <strong>Disengagement Strike</strong> against them.</p>",
+                  "condition": "An enemy moves into or through your Engagement radius."
+                }
+              }
+            },
+            "Gesture: Ray": {
+              "name": "Gesture: Ray",
+              "description": "<p>You funnel the arcane power of a Rune into a point and project it outwards in a beam.</p><p>The Ray gesture scales using <strong>Wisdom</strong> and produces a line that is 1 foot wide and 30 feet long originating from the spellcaster, dealing <strong>6 Base Damage</strong> to targets which fail to Resist the spell. The gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>4 Action</strong> and <strong>1 Focus</strong>.</p>"
+            },
+            "Rune: Death": {
+              "name": "Rune: Death",
+              "description": "<p>The orderly force of destruction, responsible for the corruption of all biological matter. The Death rune governs decay and destruction.</p><p>The Death rune scales using <strong>Intellect</strong>, targets <strong>Fortitude</strong>, and deals <strong>Corruption</strong> damage to <strong>Health</strong>. It is opposed by the chaotic rune of <strong>Life</strong>.</p>"
+            },
+            "Rune: Oblivion": {
+              "name": "Rune: Oblivion",
+              "description": "<p>A chaotic force of destruction and annihilation of existence. The Oblivion rune governs unmaking of matter or decoherence of spirit.</p><p>The Oblivion rune scales using <strong>Intellect</strong>, targets <strong>Willpower</strong>, and deals <strong>Void</strong> damage to <strong>Morale</strong>. It is opposed by the orderly rune of <strong>Soul</strong>.</p>",
+              "actions": {
+                "erase": {
+                  "name": "Erase",
+                  "description": "<p>Your command of the Rune of Oblivion allows you to unravel tiny holes in the fabric of existence, producing one of the following effects:</p><ul><li><p>Disintegrate a non-magical object you hold smaller than a 6-inch cube, sundering it to a fine particulate dust of its component elements.</p></li><li><p>Anesthetize the ability to feel emotion from yourself or a willing target that you touch, causing it to enter a placid, stoic, or dispassionate state. This effect can be maintained as long as you make no further <strong>Action</strong>.</p></li><li><p>Subdue the potency of a light source, causing its visible radius to be reduced by half for as long as you maintain physical contact with it. Only one light source may be dampened in this way at a given time.</p></li></ul><p>Erase may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
+                }
+              }
+            },
+            "Rune: Soul": {
+              "name": "Rune: Soul",
+              "description": "<p>An orderly force of creation and spiritual essence. The Soul rune governs the fundamental procession of souls through life and death and relates to matters of sapience, personality, and mental health.</p><p>The Soul rune scales using <strong>Presence</strong> and provides <strong>Restoration</strong> of <strong>Morale</strong> or inflicts <strong>Psychic</strong> damage opposed by <strong>Willpower</strong>. It is opposed by the chaotic rune of <strong>Oblivion</strong>.</p>",
+              "actions": {
+                "evoke": {
+                  "name": "Evoke",
+                  "description": "<p>Your command of the Rune of Soul allows you to facilitate basic forms of spiritual influence, producing one of the following effects:</p><ul><li><p>Enable yourself or another willing person to revisit a core memory of a moment from their past up to one minute in duration as if it happened recently.</p></li><li><p>Identify a negative spiritual condition that is affecting a person such as @Condition[broken], @Condition[frightened], @Condition[confused], or @Condition[insane].</p></li><li><p>Create a momentary spiritual connection with another willing creature that allows them to recognize an idea which can be expressed as a single word.</p></li></ul><p>Uses of Evoke may only affect yourself or another creature which you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
+                }
+              }
+            }
+          }
+        },
+        "Skeletal Archer": {
+          "name": "Skeletal Archer",
+          "tokenName": "Skeletal Archer",
+          "items": {
+            "Deathly Armor": {
+              "name": "Deathly Armor"
+            },
+            "Shortbow": {
+              "name": "Shortbow"
+            },
+            "Precision Shot": {
+              "name": "Precision Shot",
+              "description": "You take time to steady your aim and target the weakest point of a foe. You may only get one shot, but you make it count.",
+              "actions": {
+                "precisionShot": {
+                  "name": "Precision Shot",
+                  "description": "<p>You steady your aim and fire a single accurate shot.</p>"
+                }
+              }
+            },
+            "Evasive Shot": {
+              "name": "Evasive Shot",
+              "description": "<p>You are an expert at firing shots with ranged weaponry while evading enemy attacks. After performing a ranged weapon attack, you gain half your <strong>Stride</strong> in additional free movement.</p>"
+            },
+            "Projectile Weapon Training": {
+              "name": "Projectile Weapon Training",
+              "description": "<p>You have a basic education in archery and other projectile weaponry. You are no longer treated as <strong>Untrained</strong> with weapons in the <strong>Projectile </strong>categories.</p>"
+            }
+          }
+        },
+        "Skeletal Spearman": {
+          "name": "Skeletal Spearman",
+          "tokenName": "Skeletal Spearman",
+          "items": {
+            "Deathly Armor": {
+              "name": "Deathly Armor"
+            },
+            "Spear": {
+              "name": "Spear"
+            },
+            "Bulwark": {
+              "name": "Bulwark",
+              "description": "<p>You have expertise in using a <strong>Shield</strong> to defend yourself and others.</p><p>Once per Turn while you have a Shield equipped, you may use the <strong>Defend</strong> action at a reduced cost of 1 Action Point.</p>"
+            },
+            "Armored Efficiency": {
+              "name": "Armored Efficiency",
+              "description": "<p>You are trained in wearing the heaviest types of armor while still retaining mobility. You are able to use a free Movement action once per Turn while wearing Heavy armor.</p>"
+            },
+            "Leg Sweep": {
+              "name": "Leg Sweep",
+              "description": "<p>You use a weapon which scales using <strong>Strength </strong>to sweep your enemy off balance, swinging low to knock them from their feet.</p>",
+              "actions": {
+                "legSweep": {
+                  "name": "Leg Sweep",
+                  "description": "<p>You make a <strong>Strike</strong> attack with your mainhand weapon. This technique is <strong>Difficult</strong> to execute and deals reduced damage, but if successful renders your target <strong>Prone</strong>.</p>",
+                  "effects": [
+                    {
+                      "name": "Leg Sweep"
+                    }
+                  ]
+                }
+              }
+            },
+            "Light Weapon Training": {
+              "name": "Light Weapon Training",
+              "description": "<p>You have a basic education in the use of finesse weaponry. You are no longer treated as <strong>Untrained</strong> with weapons in the <strong>Light</strong> and <strong>Balanced</strong> categories.</p>"
+            }
+          }
+        },
+        "Koy Rent": {
+          "name": "Koy Rent",
+          "tokenName": "Koy Rent",
+          "items": {
+            "Thick Fur": {
+              "name": "Thick Fur"
+            },
+            "Rending Claw": {
+              "name": "Rending Claw"
+            },
+            "Thick Skin": {
+              "name": "Thick Skin",
+              "description": "Your physical toughness makes you more resistant to harm. You gain +2 Resistance to Bludgeoning, Slashing, and Piercing damage."
+            },
+            "Ferocious Howl": {
+              "name": "Ferocious Howl",
+              "description": "<p>The Werewolf lets out a blood-curdling howl that stops you in your tracks with fear.</p>",
+              "actions": {
+                "ferociousHowl": {
+                  "name": "Ferocious Howl",
+                  "description": "<p>You make an Intimidation skill attack against the <strong>Willpower</strong> defense of all enemies within 30 feet, dealing Void damage to <strong>Morale</strong> and causing the Frightened condition for <strong>3 Rounds</strong>.</p>",
+                  "effects": [
+                    {
+                      "name": "Ferocious Howl"
+                    }
+                  ]
+                }
+              }
+            },
+            "Intimidator": {
+              "name": "Intimidator",
+              "description": "You specialize in exerting your intimidating presence to break the morale of your foes.",
+              "actions": {
+                "intimidate": {
+                  "name": "Intimidate",
+                  "description": "<p>You physically intimidate an enemy that is within your engagement range, performing an Intimidation skill attack against your target. On a success they sustain Void damage to Morale.</p>"
+                }
+              }
+            },
+            "Blood Frenzy": {
+              "name": "Blood Frenzy",
+              "description": "<p>Your battle lust spurs you to feats of heightened action. When you achieve a <strong>Critical Hit</strong> that deals damage to Health you immediately gain +1 Action. This benefit may only happen once per Round.</p>"
+            },
+            "Lesser Regeneration": {
+              "name": "Lesser Regeneration",
+              "description": "<p>Your prodigious hardiness conveys a supernatural capability to recover from wounds quickly. At the start of your turn if you are not Weakened you gain <strong>+1 Health</strong>.</p>"
+            },
+            "Bloodletter": {
+              "name": "Bloodletter",
+              "description": "<p>Your precision with weapons which deal Slashing or Piercing damage can cause the Bleeding condition on Critical Hits which deal damage to Health.</p><p>The Bleeding effect lasts for 1 round and deals your Dexterity score as additional damage to Health.</p>"
+            },
+            "Ferocious Leap": {
+              "name": "Ferocious Leap",
+              "description": "<p>You leap powerfully into battle to deliver a punishing blow to a nearby enemy with your mainhand weapon.</p>",
+              "actions": {
+                "ferociousLeap": {
+                  "name": "Ferocious Leap",
+                  "description": "<p>You leap up to 10 feet and perform a Strike against an enemy within melee range of where you land. Your movement ignores difficult terrain and is not blocked by enemy creatures.</p>"
+                }
+              }
+            },
+            "Natural Weapon Proficiency": {
+              "name": "Natural Weapon Proficiency",
+              "description": "<p>You have a fluent familiarity with the use of natural bodily weapons. You gain the <strong>Journeyman</strong> training rank and a <strong>+1 Skill Bonus</strong> with weapons in the <strong>Natural </strong>category.</p>"
+            },
+            "Heavy Strike": {
+              "name": "Heavy Strike",
+              "description": "<p>You know how to use a heavy weapon to deliver punishing blows, putting your entire strength behind every swing.</p>",
+              "actions": {
+                "heavyStrike": {
+                  "name": "Heavy Strike",
+                  "description": "<p>You unleash a powerful <strong>Strike</strong> with your mainhand weapon. The attack is slower to execute, but is <strong>Empowered</strong> to deliver additional damage.</p>"
+                }
+              }
+            },
+            "Berserker": {
+              "name": "Berserker",
+              "description": "<p>You revel in the thrill of combat, hurling yourself into the fray with reckless abandon.</p>",
+              "actions": {
+                "berserkerRage": {
+                  "name": "Berserker Rage",
+                  "description": "You become Enraged. While Enraged you deal 4 additional damage on all melee attacks. You may attempt to end the effect on your own turn by succeeding on a Willpower test against a DC of 20. The effect ends automatically when Combat is concluded.",
+                  "condition": "You have suffered damage to your Health pool since your last turn in Combat.",
+                  "effects": [
+                    {
+                      "name": "Berserker Rage"
+                    }
+                  ]
+                }
+              }
+            },
+            "Frenzied Claws": {
+              "name": "Frenzied Claws",
+              "description": "<p>The @ref[actor.name]{creature} launches into a frenzied sequence of wild swipes with its claws.</p>",
+              "actions": {
+                "frenziedClaws": {
+                  "name": "Frenzied Claws",
+                  "description": "<p>The @ref[actor.name]{creature} attacks four times with its claws against a single target.</p>"
+                }
+              }
+            },
+            "Pouncing Strike": {
+              "name": "Pouncing Strike",
+              "description": "<p>This creature lunges forward, putting its whole weight behind a leaping strike.</p>",
+              "actions": {
+                "pouncingStrike": {
+                  "name": "Pouncing Strike",
+                  "description": "<p>This attack may be used after a <strong>Move</strong> that brings the @ref[actor.name]{creature} at least 10 feet closer to its target. If the creature was above the target, this attack gains <strong>+1 Boon</strong> per 10 feet of elevation decrease in that movement.</p><p>If this attack is a <strong>Critical Hit</strong>, the target of the attack is immediately knocked @Condition[prone].</p>",
+                  "effects": [
+                    {
+                      "name": "Pouncing Strike"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "Harbinger of Disease": {
+          "name": "Harbinger of Disease",
+          "tokenName": "Harbinger of Disease",
+          "items": {
+            "Pestilent Tongue": {
+              "name": "Pestilent Tongue"
+            },
+            "Claws": {
+              "name": "Claws"
+            },
+            "Void Chitin": {
+              "name": "Void Chitin",
+              "description": {
+                "public": "<p>Some void chitin description.</p>"
+              }
+            },
+            "Pestilent Lash": {
+              "name": "Pestilent Lash",
+              "description": "The Harbinger lashes out in a wide arc with a venomous and disease-ridden tongue.",
+              "actions": {
+                "pestilentLash": {
+                  "name": "Pestilent Lash",
+                  "description": "<p>Lash all enemies within <strong>10 feet</strong> in a 120 degree arc, inflicting Poison damage and the <strong>Diseased</strong> condition on hit.</p>",
+                  "effects": [
+                    {
+                      "name": "Pestilent Lash"
+                    }
+                  ]
+                }
+              }
+            },
+            "Gesture: Influence": {
+              "name": "Gesture: Influence",
+              "description": "<p>You intensify the arcane power of a Rune into a concentrated direct contact which is generally a more powerful evolution of the basic Touch gesture.</p><p>The Influence gesture scales using <strong>Presence</strong> and targets a single adjacent creature. It deals <strong>10 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
+            },
+            "Gesture: Pulse": {
+              "name": "Gesture: Pulse",
+              "description": "<p>Expel the arcane power of a Rune in a radius that travels outward with you at its center.</p><p>The Pulse gesture scales using <strong>Presence</strong> and produces an emanation with 10 foot radius, dealing <strong>8 Base Damage</strong> to targets which fail to Resist the spell. The gesture requires <strong>2 Hands</strong> to cast and has a base cost of <strong>5 Action</strong> and <strong>2 Focus</strong>.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent is currently placed at a <strong>Tier 4</strong> node. It will eventually only be attainable at a higher level (probably Level 6 required). It is currently available \"early\" for testing.</p>"
+            },
+            "Inflection: Pull": {
+              "name": "Inflection: Pull",
+              "description": "<p>Empower a spell to attract affected creatures toward the caster. Creatures affected by a spell with the Pull inflection move 1 space closer towards the spellcaster if that destination space is unoccupied.</p>"
+            },
+            "Rune: Death": {
+              "name": "Rune: Death",
+              "description": "<p>The orderly force of destruction, responsible for the corruption of all biological matter. The Death rune governs decay and destruction.</p><p>The Death rune scales using <strong>Intellect</strong>, targets <strong>Fortitude</strong>, and deals <strong>Corruption</strong> damage to <strong>Health</strong>. It is opposed by the chaotic rune of <strong>Life</strong>.</p>"
+            },
+            "Rune: Oblivion": {
+              "name": "Rune: Oblivion",
+              "description": "<p>A chaotic force of destruction and annihilation of existence. The Oblivion rune governs unmaking of matter or decoherence of spirit.</p><p>The Oblivion rune scales using <strong>Intellect</strong>, targets <strong>Willpower</strong>, and deals <strong>Void</strong> damage to <strong>Morale</strong>. It is opposed by the orderly rune of <strong>Soul</strong>.</p>",
+              "actions": {
+                "erase": {
+                  "name": "Erase",
+                  "description": "<p>Your command of the Rune of Oblivion allows you to unravel tiny holes in the fabric of existence, producing one of the following effects:</p><ul><li><p>Disintegrate a non-magical object you hold smaller than a 6-inch cube, sundering it to a fine particulate dust of its component elements.</p></li><li><p>Anesthetize the ability to feel emotion from yourself or a willing target that you touch, causing it to enter a placid, stoic, or dispassionate state. This effect can be maintained as long as you make no further <strong>Action</strong>.</p></li><li><p>Subdue the potency of a light source, causing its visible radius to be reduced by half for as long as you maintain physical contact with it. Only one light source may be dampened in this way at a given time.</p></li></ul><p>Erase may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
+                }
+              }
+            }
+          }
+        },
+        "Harbinger of Fear": {
+          "name": "Harbinger of Fear",
+          "tokenName": "Harbinger of Fear",
+          "items": {
+            "Psychic Maw": {
+              "name": "Psychic Maw"
+            },
+            "Void Chitin": {
+              "name": "Void Chitin",
+              "description": {
+                "public": "<p>Some void chitin description.</p>"
+              }
+            },
+            "Eldritch Emanation": {
+              "name": "Eldritch Emanation",
+              "description": "<p>The Harbinger of Fear projects a cone of malevolent despair from its blossoming maw.</p>",
+              "actions": {
+                "eldritchEmanation": {
+                  "name": "Eldritch Emanation",
+                  "description": "<p>Project a cone attack up to 10 feet dealing Psychic damage to Morale and causing the Frightened condition on hit for <strong>1 Round</strong>.</p>",
+                  "effects": [
+                    {
+                      "name": "Eldritch Emanation"
+                    }
+                  ]
+                }
+              }
+            },
+            "Ethereal Warp": {
+              "name": "Ethereal Warp",
+              "description": "The Harbinger fades out of reality, becoming incorporeal for a few moments before re-appearing in a location up to 6 spaces away.",
+              "actions": {
+                "etherealWarp": {
+                  "name": "Ethereal Warp",
+                  "description": "<p>Disappear and re-emerge up to <strong>30 Feet </strong>away from your current location. This movement does not allow for any Disengagement Attack.</p>"
+                }
+              }
+            }
+          }
+        },
+        "Harbinger of Madness": {
+          "name": "Harbinger of Madness",
+          "tokenName": "Harbinger of Madness",
+          "items": {
+            "Inchoate Tendrils": {
+              "name": "Inchoate Tendrils"
+            },
+            "Void Chitin": {
+              "name": "Void Chitin",
+              "description": {
+                "public": "<p>Some void chitin description.</p>"
+              }
+            },
+            "Devour Thoughts": {
+              "name": "Devour Thoughts",
+              "description": "The Harbinger of Madness focuses on a single target, latching onto them with multiple tendrils.",
+              "actions": {
+                "devourThoughts": {
+                  "name": "Devour Thoughts",
+                  "description": "<p>Lash onto a single enemy with multiple tendrils, dealing Psychic damage and inflicting the Stunned condition.</p>",
+                  "effects": [
+                    {
+                      "name": "Devour Thoughts"
+                    }
+                  ]
+                }
+              }
+            },
+            "Mind Flay": {
+              "name": "Mind Flay",
+              "description": "Flay nearby foes with a whirling lash of tentacles which inflict bludgeoning damage and cause psychological disorientation.",
+              "actions": {
+                "mindFlay": {
+                  "name": "Mind Flay",
+                  "description": "<p>Lash out with terrible tentacles against all nearby foes. Those hit by the attack become <strong>Disoriented</strong> for one Round.</p>",
+                  "effects": [
+                    {
+                      "name": "Mind Flay"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "Zarajah": {
+          "name": "Zarajah",
+          "tokenName": "Zarajah",
+          "items": {
+            "Mage Staff": {
+              "name": "Mage Staff"
+            },
+            "Ring Mail": {
+              "name": "Ring Mail"
+            },
+            "Inspire Heroism": {
+              "name": "Inspire Heroism",
+              "description": "Your courageous presence inspires your nearby allies to strike with confidence.",
+              "actions": {
+                "inspireHeroism": {
+                  "name": "Inspire Heroism",
+                  "description": "<p>Each ally, excluding yourself, within <strong>10 Feet</strong> gains <strong>+1 Boon</strong> to actions performed until the end of their next Turn.</p>",
+                  "effects": [
+                    {
+                      "name": "Inspire Heroism"
+                    }
+                  ]
+                }
+              }
+            },
+            "Gesture: Influence": {
+              "name": "Gesture: Influence",
+              "description": "<p>You intensify the arcane power of a Rune into a concentrated direct contact which is generally a more powerful evolution of the basic Touch gesture.</p><p>The Influence gesture scales using <strong>Presence</strong> and targets a single adjacent creature. It deals <strong>10 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
+            },
+            "War Mage": {
+              "name": "War Mage",
+              "description": "<p>Your spellcraft is honed as a weapon of war to thwart the incantations of other magi. You may ask the Gamemaster if you know a Rune capable of countering an enemy spell, even if you do not recognize the spell being cast. You gain +2 Boons to any Counterspell attempt.</p>"
+            },
+            "Gesture: Arrow": {
+              "name": "Gesture: Arrow",
+              "description": "<p>You hurl a projectile imbued with the magical power of a Rune at a distant target.</p><p>The Arrow gesture scales using <strong>Intellect</strong> and targets a single creature up to a distance of 60 feet, dealing <strong>8 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
+            },
+            "Impetus": {
+              "name": "Impetus",
+              "description": "<p>You are gifted at exploiting the slowness with which others think. If you are first in Initiative order during a round of Combat, you gain +1 current and maximum Action.</p>"
+            },
+            "Opportunistic Spellcraft": {
+              "name": "Opportunistic Spellcraft",
+              "description": "<p>Your quick thinking can weave magic to exploit brief windows of opportunity. You may make a <strong>Disengagement Attack</strong> using the <strong>Touch</strong> Gesture instead of a melee weapon attack.</p>"
+            },
+            "Pyromancer": {
+              "name": "Pyromancer",
+              "description": "<p>You are highly skilled in weaving the Rune of Flame. Spells which use this Rune cause @Condition[burning] on Critical Hits.</p><p>The Burning effect lasts for <strong>1 Round</strong> and deals your <strong>Intellect</strong> score as <strong>Fire</strong> damage to both <strong>Health</strong> and <strong>Morale</strong>.</p>"
+            },
+            "Gesture: Pulse": {
+              "name": "Gesture: Pulse",
+              "description": "<p>Expel the arcane power of a Rune in a radius that travels outward with you at its center.</p><p>The Pulse gesture scales using <strong>Presence</strong> and produces an emanation with 10 foot radius, dealing <strong>8 Base Damage</strong> to targets which fail to Resist the spell. The gesture requires <strong>2 Hands</strong> to cast and has a base cost of <strong>5 Action</strong> and <strong>2 Focus</strong>.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent is currently placed at a <strong>Tier 4</strong> node. It will eventually only be attainable at a higher level (probably Level 6 required). It is currently available \"early\" for testing.</p>"
+            },
+            "Performance Novice": {
+              "name": "Performance Novice",
+              "description": "<p>You have learned the basic practices of art and entertainment. You gain the <strong>Novice</strong> rank in the <strong>Performance </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</p><p>You know a few common dances, have a collection of well-known tales, and you could probably sing or play a few popular songs. You may be trained in an instrument or two, and your capability with a brush or pen is reasonable enough that you could probably create a passable work of art.</p>"
+            },
+            "Deception Novice": {
+              "name": "Deception Novice",
+              "description": "<p>You are a liar and manipulator, and deception is a skill you've practiced. You gain the <strong>Novice</strong> rank in the <strong>Deception </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</p><p>You know how to construct basic lies and cons, and the telltale signs that tend to give away poor liars. You can construct a basic forgery for most common documents, but they won't stand up to any measure of close scrutiny.</p>"
+            },
+            "Light Weapon Training": {
+              "name": "Light Weapon Training",
+              "description": "<p>You have a basic education in the use of finesse weaponry. You are no longer treated as <strong>Untrained</strong> with weapons in the <strong>Light</strong> and <strong>Balanced</strong> categories.</p>"
+            },
+            "Arcana Novice": {
+              "name": "Arcana Novice",
+              "description": "<p>Your education covered the fundamentals of metaphysics and magical theory, the relationship between the runes, the opposing nature of order and chaos, and a cursory introduction to spiritual beings including the most commonly known deified and demonized figures of worship. You gain the <strong>Novice</strong> rank in the <strong>Arcana </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</p><p>Your rudimentary understanding of the principle grammar of magic is sufficient to identify which lesser rune a spell or ritual may be using, as well as the gesture used (if not the inflection). You can identify whether a figure is influenced more by chaos or by order, and can spot the signs of common spirits (both lesser and greater). You know enough about religious customs to communicate with those who worship a particular spirit or deity without embarrassing yourself.</p>"
+            },
+            "Strategic Repositioning": {
+              "name": "Strategic Repositioning",
+              "description": "<p>You are always thinking ahead about where to position yourself should danger loom. Before <strong>Turn 1</strong> of a Combat encounter, provided that you are not Unaware, you may immediately move 4 feet in any permitted direction.</p><p>If multiple combatants have this feature, repositioning occurs in reverse order of Initiative.</p>"
+            },
+            "Lightbringer": {
+              "name": "Lightbringer",
+              "description": "<p>You are highly skilled in weaving the Rune of Illumination. Spells which use this Rune cause the @Condition[irradiated] condition on Critical Hits.</p><p>The Irradiated effect lasts for <strong>1 Round</strong> and deals your <strong>Presence</strong> score as <strong>Radiant</strong> damage to both <strong>Health</strong> and <strong>Morale</strong>.</p>"
+            },
+            "Awareness Novice": {
+              "name": "Awareness Novice",
+              "description": "<p>You have been trained in the basics of situational awareness, and are able to notice important details about your environment. You gain the <strong>Novice</strong> rank in the <strong>Awareness </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</p><p>You know to check for exits when you enter a room, and how to look for concealed weapons, hidden traps, and other threats. You know how to spot when you are being followed, and how to search for common hiding places.</p>"
+            },
+            "Versatile Translator": {
+              "name": "Versatile Translator",
+              "description": "<p>You have a scholarly background in linguistics or an intuitive knack for languages. Your capabilities enable you to decipher the basic meaning of text written in a variety of languages.</p><p>You can translate text of a language you do not know that is written using a common set of glyphs or characters to a language that you do know. Creating such a translation requires spending one minute per word to transcribe the text into a language which you understand.</p><p>Your translations are rudimentary and often lack nuance, but they do contain all essential points of the text.</p>"
+            },
+            "Rune: Oblivion": {
+              "name": "Rune: Oblivion",
+              "description": "<p>A chaotic force of destruction and annihilation of existence. The Oblivion rune governs unmaking of matter or decoherence of spirit.</p><p>The Oblivion rune scales using <strong>Intellect</strong>, targets <strong>Willpower</strong>, and deals <strong>Void</strong> damage to <strong>Morale</strong>. It is opposed by the orderly rune of <strong>Soul</strong>.</p>",
+              "actions": {
+                "erase": {
+                  "name": "Erase",
+                  "description": "<p>Your command of the Rune of Oblivion allows you to unravel tiny holes in the fabric of existence, producing one of the following effects:</p><ul><li><p>Disintegrate a non-magical object you hold smaller than a 6-inch cube, sundering it to a fine particulate dust of its component elements.</p></li><li><p>Anesthetize the ability to feel emotion from yourself or a willing target that you touch, causing it to enter a placid, stoic, or dispassionate state. This effect can be maintained as long as you make no further <strong>Action</strong>.</p></li><li><p>Subdue the potency of a light source, causing its visible radius to be reduced by half for as long as you maintain physical contact with it. Only one light source may be dampened in this way at a given time.</p></li></ul><p>Erase may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
+                }
+              }
+            },
+            "Iramancer": {
+              "name": "Iramancer",
+              "description": "Your feats of arcana are fueled by anger. While Enraged you may still spend Focus and you deal 2 additional damage to all spell attacks."
+            },
+            "Counterspell": {
+              "name": "Counterspell",
+              "description": "<p>You immediately react to a spell being cast and compose a rune and gesture designed to unravel and negate the spellcraft of an enemy mage.</p><h2 class=\"divider\">Playtest Notes</h2><p>This action can now be used in playtesting, but it is not yet <em>fully automated</em>. The Counterspell can be performed, but it is up to the Gamemaster to manually reverse a previously applied spell and to manually deduct its <strong>Action</strong> and <strong>Focus</strong> cost. These steps of the overall Counterspell workflow <em>will be automated</em> in a subsequent update such that a confirmed Counterspell will also confirm the spell that was countered, but with its effects removed.</p>",
+              "actions": {
+                "counterspell": {
+                  "name": "Counterspell",
+                  "description": "<p>You form arcane energy into a countervailing spellcraft, targeting a spellcaster you can see within 30 feet.</p><p>Designate a <strong>Rune</strong> and <strong>Gesture</strong> which you know to attempt to counter the spell. Choosing a Rune which is opposed to one used in the spell grants <strong>+2 Boons</strong> to your attempt. Selecting the identical Gesture as the one being cast also adds <strong>+2 Boons</strong> to your attempt.</p><p>Perform a harmless Spell Attack against your target's <strong>Willpower</strong> defense. If your roll exceeds their defense, the spell is countered and its magic is nullified, producing no effects.</p>",
+                  "condition": "Another creature which you can see is casting a spell."
+                }
+              }
+            },
+            "Rune: Flame": {
+              "name": "Rune: Flame",
+              "description": "<p>The chaotic force of elemental, thermal energy. The Flame rune governs fire and heat.</p><p>The Flame rune scales using Intellect, targets <strong>Reflex</strong>, and deals <strong>Fire</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Frost</strong>.</p>",
+              "actions": {
+                "enkindle": {
+                  "name": "Enkindle",
+                  "description": "<p>Your command of the Rune of Flame allows you to manipulate fire and thermal energy in creative ways, producing one of the following effects:</p><ul><li><p>Manifest a burst of elemental flame in one inch sphere which can ignite a candle, torch, or other flammable materials.</p></li><li><p>Imbue your body with momentary thermal shielding which provides you with immunity to fire damage on an immediately subsequent action that costs <strong>1 Action</strong> or less.</p></li><li><p>Control the movement of flames within a small area, causing them to flicker, dance, or shift in an animated performance of light and shadow.</p></li></ul><p>Enkindle may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
+                }
+              }
+            },
+            "Flame Proficiency": {
+              "name": "Flame Proficiency",
+              "description": "<p>You have fluency in weaving spellcraft using the Rune of Flame. You gain a <strong>+1 Skill Bonus</strong> for spells cast using this Rune.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent will eventually also provide an upgrade to the <strong>Enkindle</strong> action, expanding its effectiveness or including new options for how to use it.</p>"
+            },
+            "Rune: Kinesis": {
+              "name": "Rune: Kinesis",
+              "description": "<p>The chaotic force of space and physical movement. The Kinesis rune governs all things related to the act of movement and physicality.</p><p>The Kinesis rune scales using <strong>Presence</strong>, targets <strong>Physical</strong> defense, and deals <strong>Bludgeoning</strong>, <strong>Piercing</strong>, or <strong>Slashing</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Control</strong>.</p>",
+              "actions": {
+                "propel": {
+                  "name": "Propel",
+                  "description": "<p>Your command of the Rune of Kinesis allows you to exert local control over gravitational forces to perform basic telekinetic manipulations, producing one of the following effects:</p><ul><li><p>Pull an unsecured object within 15 feet and with weight no greater than 1 towards you and catch it. An object that is equipped or possessed by a creature is never treated as unsecured unless that creature is willing to release it.</p></li><li><p>Flick an object that you hold with weight no greater than 1 towards a target up to 30 feet away. The object flies unerringly in a straight line towards that target at a moderate speed. Any creature along the object's path can react to catch it as long as they have a free hand with which to do so.</p></li><li><p>Suspend in midair an object or willing creature that you touch with weight less than or equal to 10 times your <strong>Presence</strong>, altering its position up to 20 feet in any direction from its original location. You can maintain this suspension indefinitely as long as you take no further Action and are not @Condition[incapacitated].</p></li></ul><p>Propel may only affect a creature or object you can physically touch unless otherwise specified. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
+                }
+              }
+            }
+          }
+        },
+        "Agnath": {
+          "name": "Agnath",
+          "tokenName": "Agnath",
+          "items": {
+            "Greatsword": {
+              "name": "Greatsword"
+            },
+            "Splint Mail": {
+              "name": "Splint Mail"
+            },
+            "Cadence": {
+              "name": "Cadence",
+              "description": "<p>You are drilled in performing sequences of melee attacks with rhythmic precision. When you <strong>Strike</strong> multiple times in sequence using a one-handed melee weapon you gain a stacking <strong>+1 Boon</strong> for each successive attack.</p><p></p>"
+            },
+            "Heavy Strike": {
+              "name": "Heavy Strike",
+              "description": "<p>You know how to use a heavy weapon to deliver punishing blows, putting your entire strength behind every swing.</p>",
+              "actions": {
+                "heavyStrike": {
+                  "name": "Heavy Strike",
+                  "description": "<p>You unleash a powerful <strong>Strike</strong> with your mainhand weapon. The attack is slower to execute, but is <strong>Empowered</strong> to deliver additional damage.</p>"
+                }
+              }
+            },
+            "Athletics Novice": {
+              "name": "Athletics Novice",
+              "description": "<p>You have received training in basic athletics. You gain the <strong>Novice</strong> rank in the <strong>Athletics</strong> skill and are no longer considered <strong>Untrained</strong> in that skill.</p><p>You know whether a surface can support your weight or not, how to find handholds while climbing, and how to distribute your weight for buoyancy when swimming. You know how to run for distance, and how to pace yourself to avoid exhaustion.</p>"
+            },
+            "Intimidation Novice": {
+              "name": "Intimidation Novice",
+              "description": "<p>You understand the fundamentals of how threats and coercion can achieve desired outcomes. You gain the <strong>Novice</strong> rank in the <strong>Intimidation </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</p><p>You know how to use simple displays of violence or overt threats to get others to follow your lead, but you aren't very subtle.</p>"
+            },
+            "Heavy Weapon Training": {
+              "name": "Heavy Weapon Training",
+              "description": "<p>You have a basic education in the use of martial weaponry. You are no longer treated as <strong>Untrained</strong> with weapons in the <strong>Heavy</strong>, or <strong>Balanced</strong> categories.</p>"
+            },
+            "Gesture: Arrow": {
+              "name": "Gesture: Arrow",
+              "description": "<p>You hurl a projectile imbued with the magical power of a Rune at a distant target.</p><p>The Arrow gesture scales using <strong>Intellect</strong> and targets a single creature up to a distance of 60 feet, dealing <strong>8 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
+            },
+            "Rune: Flame": {
+              "name": "Rune: Flame",
+              "description": "<p>The chaotic force of elemental, thermal energy. The Flame rune governs fire and heat.</p><p>The Flame rune scales using Intellect, targets <strong>Reflex</strong>, and deals <strong>Fire</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Frost</strong>.</p>"
+            }
+          }
+        },
+        "Belladonna": {
+          "name": "Belladonna",
+          "tokenName": "Belladonna",
+          "items": {
+            "Dagger": {
+              "name": "Dagger"
+            },
+            "Studded Leather Armor": {
+              "name": "Studded Leather Armor"
+            },
+            "Diversionist": {
+              "name": "Diversionist",
+              "description": "<p>You specialize in using subterfuge to distract or trick your opponent during combat.</p>",
+              "actions": {
+                "distract": {
+                  "name": "Distract",
+                  "description": "<p>You make a <strong>Deception</strong> based <strong>Skill Attack</strong> against the <strong>Willpower </strong>defense of a target within 30 feet which can see or hear you. On a success, the target loses <strong>1 Focus</strong>.</p>"
+                }
+              }
+            },
+            "Dual Wield": {
+              "name": "Dual Wield",
+              "description": "<p>You are adept at fighting with two weapons simultaneously. You can weave attacks together to strike more rapidly than possible with a single weapon.</p>",
+              "actions": {
+                "offhandStrike": {
+                  "name": "Offhand Strike",
+                  "description": "<p>Immediately after you perform a basic Strike with your mainhand weapon, you make a reduced-cost fullow-up <strong>Strike</strong> with your <strong>offhand</strong> weapon.</p>"
+                }
+              }
+            },
+            "Flurry": {
+              "name": "Flurry",
+              "description": "<p>A martial technique using two weapons to overwhelm a single target with a relentless sequence of attacks.</p>",
+              "actions": {
+                "flurry": {
+                  "name": "Flurry",
+                  "description": "<p>You <strong>Strike</strong> twice with each weapon, but each strike is <strong>Difficult</strong>.</p>"
+                }
+              }
+            },
+            "Intercept": {
+              "name": "Intercept",
+              "description": "You protect your allies, intercepting blows that might otherwise be directed towards your companions.",
+              "actions": {
+                "intercept": {
+                  "name": "Intercept",
+                  "description": "<p>You intercept the path of an enemy which enters your <strong>Engagement</strong> radius, immediatly moving up to your <strong>Stride</strong> to interpose yourself and block their path.</p><p>If the enemy moves out of your Engagement radius or attacks any other creature during their turn, you may make a <strong>Disengagement Strike</strong> against them.</p>",
+                  "condition": "An enemy moves into or through your Engagement radius."
+                }
+              }
+            },
+            "Stealth Novice": {
+              "name": "Stealth Novice",
+              "description": "<p>You have received training in the basics of stealth, infiltration, and subterfuge. You gain the <strong>Novice</strong> rank in the <strong>Stealth </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</p><p>You know how to use light and shadow to mask your presence, to distribute your weight when walking in order to move more quietly, and you have learned a few tricks of disguise in order to blend into a crowd. You can appear unsuspicious when surrounded by others, hide in a darkened room, and can move silently enough to avoid detection by the average person.</p>"
+            },
+            "Deception Novice": {
+              "name": "Deception Novice",
+              "description": "<p>You are a liar and manipulator, and deception is a skill you've practiced. You gain the <strong>Novice</strong> rank in the <strong>Deception </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</p><p>You know how to construct basic lies and cons, and the telltale signs that tend to give away poor liars. You can construct a basic forgery for most common documents, but they won't stand up to any measure of close scrutiny.</p>"
+            },
+            "Light Weapon Training": {
+              "name": "Light Weapon Training",
+              "description": "<p>You have a basic education in the use of finesse weaponry. You are no longer treated as <strong>Untrained</strong> with weapons in the <strong>Light</strong> and <strong>Balanced</strong> categories.</p>"
+            },
+            "Lunge": {
+              "name": "Lunge",
+              "description": "You dart forward nimbly, making a strike with sudden and unexpected swiftness.",
+              "actions": {
+                "lunge": {
+                  "name": "Lunge",
+                  "description": "<p>You <strong>Strike</strong> with your mainhand weapon against a single foe with an increased range of <strong>+2 feet</strong>. The attack is <strong>Difficult</strong>, but you do not move from your current position nor does this attack provoke any Disengagement.</p>"
+                }
+              }
+            }
+          }
+        },
+        "Duurath": {
+          "name": "Duurath",
+          "tokenName": "Duurath",
+          "items": {
+            "War Hammer": {
+              "name": "War Hammer"
+            },
+            "Heater Shield": {
+              "name": "Heater Shield"
+            },
+            "Scale Mail": {
+              "name": "Scale Mail"
+            },
+            "Intimidator": {
+              "name": "Intimidator",
+              "description": "You specialize in exerting your intimidating presence to break the morale of your foes.",
+              "actions": {
+                "intimidate": {
+                  "name": "Intimidate",
+                  "description": "<p>You physically intimidate an enemy that is within your engagement range, performing an Intimidation skill attack against your target. On a success they sustain Void damage to Morale.</p>"
+                }
+              }
+            },
+            "Shield Bash": {
+              "name": "Shield Bash",
+              "description": "<p>You are practiced at fighting with shield, using it to slam into and imbalance your foes.</p>",
+              "actions": {
+                "shieldBash": {
+                  "name": "Shield Bash",
+                  "description": "<p>Following a basic Strike with your mainhand weapon, you <strong>Strike</strong> with your shield, causing the <strong>Staggered</strong> condition for one Round.</p>",
+                  "effects": [
+                    {
+                      "name": "Shield Bash"
+                    }
+                  ]
+                }
+              }
+            },
+            "Second Wind": {
+              "name": "Second Wind",
+              "description": "Your physical hardiness allows you to push yourself beyond conventional limits.",
+              "actions": {
+                "secondWind": {
+                  "name": "Second Wind",
+                  "description": "<p>You focus your energy and recover your Toughness score in Health.</p>"
+                }
+              }
+            },
+            "Awareness Novice": {
+              "name": "Awareness Novice",
+              "description": "<p>You have been trained in the basics of situational awareness, and are able to notice important details about your environment. You gain the <strong>Novice</strong> rank in the <strong>Awareness </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</p><p>You know to check for exits when you enter a room, and how to look for concealed weapons, hidden traps, and other threats. You know how to spot when you are being followed, and how to search for common hiding places.</p>"
+            },
+            "Intimidation Novice": {
+              "name": "Intimidation Novice",
+              "description": "<p>You understand the fundamentals of how threats and coercion can achieve desired outcomes. You gain the <strong>Novice</strong> rank in the <strong>Intimidation </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</p><p>You know how to use simple displays of violence or overt threats to get others to follow your lead, but you aren't very subtle.</p>"
+            },
+            "Unarmed Combat Training": {
+              "name": "Unarmed Combat Training",
+              "description": "<p>You have a basic education in hand-to-hand combat and other martial arts. You are no longer treated as <strong>Untrained</strong> with weapons in the <strong>Unarmed </strong>category.</p>"
+            },
+            "Intercept": {
+              "name": "Intercept",
+              "description": "You protect your allies, intercepting blows that might otherwise be directed towards your companions.",
+              "actions": {
+                "intercept": {
+                  "name": "Intercept",
+                  "description": "<p>You intercept the path of an enemy which enters your <strong>Engagement</strong> radius, immediatly moving up to your <strong>Stride</strong> to interpose yourself and block their path.</p><p>If the enemy moves out of your Engagement radius or attacks any other creature during their turn, you may make a <strong>Disengagement Strike</strong> against them.</p>",
+                  "condition": "An enemy moves into or through your Engagement radius."
+                }
+              }
+            },
+            "Bulwark": {
+              "name": "Bulwark",
+              "description": "<p>You have expertise in using a <strong>Shield</strong> to defend yourself and others.</p><p>Once per Turn while you have a Shield equipped, you may use the <strong>Defend</strong> action at a reduced cost of 1 Action Point.</p>"
+            }
+          }
+        },
+        "Eliorwen": {
+          "name": "Eliorwen",
+          "tokenName": "Eliorwen",
+          "items": {
+            "Longbow": {
+              "name": "Longbow"
+            },
+            "Scimitar": {
+              "name": "Scimitar"
+            },
+            "Studded Leather Armor": {
+              "name": "Studded Leather Armor"
+            },
+            "Perspicacity": {
+              "name": "Perspicacity",
+              "description": "<p>You have heightened insight into aspects of your surroundings. You gain +2 Boons to any <strong>Awareness</strong> skill test which does not rely upon eyesight.</p>"
+            },
+            "Pinning Shot": {
+              "name": "Pinning Shot",
+              "description": "You fire a tactically placed shot to pin your target against a nearby surface.",
+              "actions": {
+                "pinningShot": {
+                  "name": "Pinning Shot",
+                  "description": "<p>You <strong>Strike</strong> from distance. The attack is <strong>Difficult</strong>, however if your target is it it becomes <strong>Restrained</strong> until the end of their next Turn.</p>",
+                  "effects": [
+                    {
+                      "name": "Pinning Shot"
+                    }
+                  ]
+                }
+              }
+            },
+            "Wilderness Novice": {
+              "name": "Wilderness Novice",
+              "description": "<p>You have received training in the basics of wilderness survival and traversal. You gain the <strong>Novice</strong> rank in the <strong>Wilderness </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</p><p>You know how to find and construct safe shelter from the elements, to start a fire for warmth, to keep cool in hot environments. You can find safe, drinkable water in most places, and how to identify which plants and animals can serve as safe food sources.</p>"
+            },
+            "Athletics Novice": {
+              "name": "Athletics Novice",
+              "description": "<p>You have received training in basic athletics. You gain the <strong>Novice</strong> rank in the <strong>Athletics</strong> skill and are no longer considered <strong>Untrained</strong> in that skill.</p><p>You know whether a surface can support your weight or not, how to find handholds while climbing, and how to distribute your weight for buoyancy when swimming. You know how to run for distance, and how to pace yourself to avoid exhaustion.</p>"
+            },
+            "Projectile Weapon Training": {
+              "name": "Projectile Weapon Training",
+              "description": "<p>You have a basic education in archery and other projectile weaponry. You are no longer treated as <strong>Untrained</strong> with weapons in the <strong>Projectile </strong>categories.</p>"
+            },
+            "Precision Shot": {
+              "name": "Precision Shot",
+              "description": "You take time to steady your aim and target the weakest point of a foe. You may only get one shot, but you make it count.",
+              "actions": {
+                "precisionShot": {
+                  "name": "Precision Shot",
+                  "description": "<p>You steady your aim and fire a single accurate shot.</p>"
+                }
+              }
+            },
+            "Stealth Novice": {
+              "name": "Stealth Novice",
+              "description": "<p>You have received training in the basics of stealth, infiltration, and subterfuge. You gain the <strong>Novice</strong> rank in the <strong>Stealth </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</p><p>You know how to use light and shadow to mask your presence, to distribute your weight when walking in order to move more quietly, and you have learned a few tricks of disguise in order to blend into a crowd. You can appear unsuspicious when surrounded by others, hide in a darkened room, and can move silently enough to avoid detection by the average person.</p>"
+            },
+            "Rune: Illusion": {
+              "name": "Rune: Illusion",
+              "description": "<p>The chaotic force of trickery and whimsy. The illusion rune governs magical manifestations of falsehood or misdirection.</p><p>The Illusion rune scales using <strong>Intellect</strong>, targets <strong>Willpower</strong> defense, and deals <strong>Psychic</strong> damage to <strong>Morale</strong>. It is opposed by the orderly rune of <strong>Illumination</strong>.</p>",
+              "actions": {
+                "seeming": {
+                  "name": "Seeming",
+                  "description": "<p>Your command of the Rune of Illusion allows you to fabricate perception in various simple ways and to manipulate shadow and light to create distraction or entertainment, producing one of the following effects:</p><ul><li><p>Modify a single aspect of your own physical appearance. Such alterations might include adjusting the sound of your voice, changing the color of your eyes, gaining illusory horns, or appearing slightly taller or shorter. The alteration persists until you Rest or enact a different alteration and can be verified as illusory by physical inspection.</p></li><li><p>Manifest a convincing recreation of a short sound or single scent that you can clearly recall. The illusion originates from your position and lasts for 10 seconds. You can control the volume of the sound or odorousness of the scent to be perceptible up to a range of 60 feet or shorter.</p></li><li><p>Decouple your shadow from your form, specifically controlling its movements separately from your own. You can maintain this illusion as long as you do not perform any other action that consumes <strong>Focus</strong>.</p></li></ul><p>Seeming may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
+                }
+              }
+            }
+          }
+        },
+        "Fizzit": {
+          "name": "Fizzit",
+          "tokenName": "Fizzit",
+          "items": {
+            "Ring Mail": {
+              "name": "Ring Mail"
+            },
+            "Arcane Orb": {
+              "name": "Arcane Orb"
+            },
+            "Grimoire": {
+              "name": "Grimoire"
+            },
+            "Rune: Lightning": {
+              "name": "Rune: Lightning",
+              "description": "<p>The chaotic force of raw electrical energy. The Lightning rune governs sources of electrical charge and discharge.</p><p>The Lightning rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electrical</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Earth</strong>.</p>"
+            },
+            "Gesture: Arrow": {
+              "name": "Gesture: Arrow",
+              "description": "<p>You hurl a projectile imbued with the magical power of a Rune at a distant target.</p><p>The Arrow gesture scales using <strong>Intellect</strong> and targets a single creature up to a distance of 60 feet, dealing <strong>8 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
+            },
+            "Arcana Novice": {
+              "name": "Arcana Novice",
+              "description": "<p>Your education covered the fundamentals of metaphysics and magical theory, the relationship between the runes, the opposing nature of order and chaos, and a cursory introduction to spiritual beings including the most commonly known deified and demonized figures of worship. You gain the <strong>Novice</strong> rank in the <strong>Arcana </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</p><p>Your rudimentary understanding of the principle grammar of magic is sufficient to identify which lesser rune a spell or ritual may be using, as well as the gesture used (if not the inflection). You can identify whether a figure is influenced more by chaos or by order, and can spot the signs of common spirits (both lesser and greater). You know enough about religious customs to communicate with those who worship a particular spirit or deity without embarrassing yourself.</p>"
+            },
+            "Science Novice": {
+              "name": "Science Novice",
+              "description": "<p>You've learned to study the world around you through structured observation, mathematics, physics, chemistry, and other disciplines. You gain the <strong>Novice</strong> rank in the <strong>Science </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</p><p>You are familiar with the basic principles of mathematics, physics, chemistry, or other scientific studies. You know how to construct and use simple machines for the purposes of making physical tasks easier. You know some of the more commonly understood scientific theories, and given suitable time to study more complex machines you might be able to at least operate them.</p>"
+            },
+            "Mechanical Weapon Training": {
+              "name": "Mechanical Weapon Training",
+              "description": "<p>You have a basic education in crossbows, firearms, and other mechanical weapons. You are no longer treated as <strong>Untrained</strong> with weapons in the <strong>Mechanical </strong>category.</p>"
+            },
+            "Rune: Kinesis": {
+              "name": "Rune: Kinesis",
+              "description": "<p>The chaotic force of space and physical movement. The Kinesis rune governs all things related to the act of movement and physicality.</p><p>The Kinesis rune scales using <strong>Presence</strong>, targets <strong>Physical</strong> defense, and deals <strong>Bludgeoning</strong>, <strong>Piercing</strong>, or <strong>Slashing</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Control</strong>.</p>"
+            },
+            "Rune: Frost": {
+              "name": "Rune: Frost",
+              "description": "<p>The orderly force of water and cold. The Frost rune governs the creation of water or other fluids and their transfer between liquid and frozen states.</p><p>The Frost rune scales using <strong>Wisdom</strong>, targets <strong>Fortitude</strong>, and deals <strong>Cold</strong> damage to <strong>Health</strong>. It is opposed by the chaotic rune of <strong>Flame</strong>.</p>"
+            },
+            "Gesture: Create": {
+              "name": "Gesture: Create",
+              "description": "<p>You coalesce arcane power into tangible form, manifesting a <strong>Sprite</strong> which appears within 10 feet and joins Combat at Initiative 1. Your Sprite is a <strong>Minion</strong> of half your own Level.</p><p>The Create gesture scales with <strong>Wisdom</strong> and the Sprite survives for <strong>6 Rounds</strong>. You may only have one active Sprite, casting another spell using the Create gesture replaces your previous Sprite. This gesture requires <strong>2 Hands</strong> to cast and has a base cost of <strong>4 Action</strong> and <strong>1 Focus</strong>.</p><h3 class=\"divider\">Playtest Notes</h3><p>Not all Runes have a Sprite actor defined yet. Runes that do not yet have a defined Creation will — for now — manifest a <strong>Flame Sprite</strong>.</p>"
+            }
+          }
+        },
+        "Kagura": {
+          "name": "Kagura",
+          "tokenName": "Kagura",
+          "items": {
+            "Mage Staff": {
+              "name": "Mage Staff"
+            },
+            "Scale Mail": {
+              "name": "Scale Mail"
+            },
+            "Gesture: Influence": {
+              "name": "Gesture: Influence",
+              "description": "<p>You intensify the arcane power of a Rune into a concentrated direct contact which is generally a more powerful evolution of the basic Touch gesture.</p><p>The Influence gesture scales using <strong>Presence</strong> and targets a single adjacent creature. It deals <strong>10 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
+            },
+            "Rune: Earth": {
+              "name": "Rune: Earth",
+              "description": "<p>The orderly force of elemental earth, responsible for physical matter. The Earth rune governs minerals, metals, soils, and other physical compounds.</p><p>The Earth rune scales using <strong>Wisdom</strong>, targets <strong>Reflex</strong>, and deals <strong>Acid</strong> damage to <strong>Health</strong>. It is opposed by the chaotic rune of <strong>Lightning</strong>.</p>"
+            },
+            "Medicine Novice": {
+              "name": "Medicine Novice",
+              "description": "<p>You have a basic education in anatomy, physiology, and medicine. You gain the <strong>Novice</strong> rank in the <strong>Medicine </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</p><p>You’ve learned the basics of treating common wounds and illnesses, and keep a running list of known alchemical and herbal compounds that can be used for treating particular illnesses. With a little time studying an injured, diseased, or otherwise ill individual you can perform a basic diagnosis and treat accordingly.</p>"
+            },
+            "Science Novice": {
+              "name": "Science Novice",
+              "description": "<p>You've learned to study the world around you through structured observation, mathematics, physics, chemistry, and other disciplines. You gain the <strong>Novice</strong> rank in the <strong>Science </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</p><p>You are familiar with the basic principles of mathematics, physics, chemistry, or other scientific studies. You know how to construct and use simple machines for the purposes of making physical tasks easier. You know some of the more commonly understood scientific theories, and given suitable time to study more complex machines you might be able to at least operate them.</p>"
+            },
+            "Talisman Weapon Training": {
+              "name": "Talisman Weapon Training",
+              "description": "<p>You have a basic education in the use of talismans, orbs, foci, or other similar weapons. You are no longer treated as <strong>Untrained</strong> with weapons in the <strong>Talisman</strong> categories.</p>"
+            },
+            "Gesture: Ray": {
+              "name": "Gesture: Ray",
+              "description": "<p>You funnel the arcane power of a Rune into a point and project it outwards in a beam.</p><p>The Ray gesture scales using <strong>Wisdom</strong> and produces a line that is 1 foot wide and 30 feet long originating from the spellcaster, dealing <strong>6 Base Damage</strong> to targets which fail to Resist the spell. The gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>4 Action</strong> and <strong>1 Focus</strong>.</p>"
+            },
+            "Rune: Life": {
+              "name": "Rune: Life",
+              "description": "<p>A chaotic force of creation, responsible for living matter. The Life rune governs health and matters relating to biological growth.</p><p>The Life rune scales using <strong>Wisdom</strong> and provides <strong>Restoration</strong> of <strong>Health</strong> or inflicts <strong>Poison</strong> damage opposed by <strong>Fortitude</strong>. It is opposed by the orderly rune of <strong>Death</strong>.</p>"
+            },
+            "Rune: Soul": {
+              "name": "Rune: Soul",
+              "description": "<p>An orderly force of creation and spiritual essence. The Soul rune governs the fundamental procession of souls through life and death and relates to matters of sapience, personality, and mental health.</p><p>The Soul rune scales using <strong>Presence</strong> and provides <strong>Restoration</strong> of <strong>Morale</strong> or inflicts <strong>Psychic</strong> damage opposed by <strong>Willpower</strong>. It is opposed by the chaotic rune of <strong>Oblivion</strong>.</p>",
+              "actions": {
+                "evoke": {
+                  "name": "Evoke",
+                  "description": "<p>Your command of the Rune of Soul allows you to facilitate basic forms of spiritual influence, producing one of the following effects:</p><ul><li><p>Enable yourself or another willing person to revisit a core memory of a moment from their past up to one minute in duration as if it happened recently.</p></li><li><p>Identify a negative spiritual condition that is affecting a person such as @Condition[broken], @Condition[frightened], @Condition[confused], or @Condition[insane].</p></li><li><p>Create a momentary spiritual connection with another willing creature that allows them to recognize an idea which can be expressed as a single word.</p></li></ul><p>Uses of Evoke may only affect yourself or another creature which you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
+                }
+              }
+            }
+          }
+        },
+        "Ulfen": {
+          "name": "Ulfen",
+          "tokenName": "Ulfen",
+          "items": {
+            "Scale Mail": {
+              "name": "Scale Mail"
+            },
+            "Greataxe": {
+              "name": "Greataxe"
+            },
+            "Intimidator": {
+              "name": "Intimidator",
+              "description": "You specialize in exerting your intimidating presence to break the morale of your foes.",
+              "actions": {
+                "intimidate": {
+                  "name": "Intimidate",
+                  "description": "<p>You physically intimidate an enemy that is within your engagement range, performing an Intimidation skill attack against your target. On a success they sustain Void damage to Morale.</p>"
+                }
+              }
+            },
+            "Uppercut": {
+              "name": "Uppercut",
+              "description": "A two-handed weapon technique where you swing your weapon upwards, making a second Strike with the backswing of your weapon.",
+              "actions": {
+                "uppercut": {
+                  "name": "Uppercut",
+                  "description": "<p>Following a basic Strike attack which did not critically miss, you <strong>Strike</strong> the same target again with the backswing of your weapon at reduced <strong>Action</strong> cost.</p>"
+                }
+              }
+            },
+            "Cleave": {
+              "name": "Cleave",
+              "description": "This martial technique is a specialized two-handed fighting maneuver which relies upon brute strength to swing your weapon in a wide arc, hitting multiple enemies in its path.",
+              "actions": {
+                "cleave": {
+                  "name": "Cleave",
+                  "description": "<p>A ferocious two-handed swing cleaves through foes in a 120 degree arc.</p>"
+                }
+              }
+            },
+            "Intercept": {
+              "name": "Intercept",
+              "description": "You protect your allies, intercepting blows that might otherwise be directed towards your companions.",
+              "actions": {
+                "intercept": {
+                  "name": "Intercept",
+                  "description": "<p>You intercept the path of an enemy which enters your <strong>Engagement</strong> radius, immediatly moving up to your <strong>Stride</strong> to interpose yourself and block their path.</p><p>If the enemy moves out of your Engagement radius or attacks any other creature during their turn, you may make a <strong>Disengagement Strike</strong> against them.</p>",
+                  "condition": "An enemy moves into or through your Engagement radius."
+                }
+              }
+            },
+            "Awareness Novice": {
+              "name": "Awareness Novice",
+              "description": "<p>You have been trained in the basics of situational awareness, and are able to notice important details about your environment. You gain the <strong>Novice</strong> rank in the <strong>Awareness </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</p><p>You know to check for exits when you enter a room, and how to look for concealed weapons, hidden traps, and other threats. You know how to spot when you are being followed, and how to search for common hiding places.</p>"
+            },
+            "Intimidation Novice": {
+              "name": "Intimidation Novice",
+              "description": "<p>You understand the fundamentals of how threats and coercion can achieve desired outcomes. You gain the <strong>Novice</strong> rank in the <strong>Intimidation </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</p><p>You know how to use simple displays of violence or overt threats to get others to follow your lead, but you aren't very subtle.</p>"
+            },
+            "Unarmed Combat Training": {
+              "name": "Unarmed Combat Training",
+              "description": "<p>You have a basic education in hand-to-hand combat and other martial arts. You are no longer treated as <strong>Untrained</strong> with weapons in the <strong>Unarmed </strong>category.</p>"
+            }
+          }
+        }
+      },
+      "folders": {
+        "Crucible Playtest": "Crucible Playtest",
+        "The Ring of Valor": "The Ring of Valor",
+        "Day 1": "Day 1",
+        "Day 2": "Day 2",
+        "Day 3": "Day 3",
+        "Day 4": "Day 4",
+        "Day 5": "Day 5",
+        "Pregenerated Heroes": "Pregenerated Heroes",
+        "Level 1": "Level 1",
+        "Level 6": "Level 6"
+      },
+      "journals": {
+        "Playtest One: The Ring of Valor": {
+          "name": "Playtest One: The Ring of Valor",
+          "pages": {
+            "Introduction": {
+              "name": "Introduction",
+              "text": "<p><strong>Playtest One: The Ring of Valor </strong>is a guided introduction to character development and combat mechanics in Crucible which places players in the role of a gladiatorial team facing a sequence of challenges in the Ring of Valor.</p><p>Players may either create their own characters from scratch following the @UUID[Compendium.crucible.rules.JournalEntry.gszlBVQ5fGh3y0I6]{Character Creation} process (recommended) or use the Level 1 premade characters provided in the <strong>Pregenerated Heroes</strong> compendium pack.</p><p>This challenge is designed and balanced for a party of four player characters, although we encourage you to test with a smaller or larger party as well. The difficulty of challenges can be adjusted by manipulating the threat level of @UUID[Compendium.crucible.rules.JournalEntry.v1dqTT3NI35lFNxM]{Adversaries}.</p><p>The Ring of Valor consists of six battles, one each day, during which the party faces increasingly dangerous opponents culminating in a final match against the reigning champions - the last group of heroes to overcome the arena. After each encounter, the party advances in level before facing their next test. Each battle is designed to introduce new gameplay mechanics and provide an opportunity to test out new abilities gained through level advancement.</p><h2 class=\"divider\">Providing Feedback</h2><p>If you test Crucible and experience the Ring of Valor, please help us by taking a few moments to @UUID[Compendium.crucible.rules.JournalEntry.5SgXrAKS2EnqVggJ.JournalEntryPage.4Ggutuh9uzhcEXSK]{Provide Feedback} in the <strong>#crucible</strong> channel of our community Discord server.</p><h2 class=\"divider\">Regarding Defeat</h2><p>Normally, in Crucible - defeat whether by <strong>Insanity</strong> or <strong>Death</strong> would be the end of a character's journey. In the case of this initial playtest, however, we recommend that you as the Gamemaster adopt a more flexible approach.</p><p>In the interest of testing the system and collecting useful feedback, we recommend allowing a party who experiences defeat to re-attempt the same challenge until successful OR to be permitted to advance to the next challenge regardless should one of the daily challenges prove too difficult to be surmounted.</p>"
+            },
+            "Day One - The Feral Scramble": {
+              "name": "Day One - The Feral Scramble",
+              "text": "<p>In the Day One challenge, 4 Level 1 heroes face off against a pack of frenzied beasts:</p><ul><li><p>4x @UUID[Actor.tqLT327VnrBXrLtj]{Huiana}<strong> </strong>(Level ½ Minion)</p></li><li><p>4x @UUID[Actor.owg68yqumk7KxV9B]{Baizaz}<strong> </strong>(Level ½ Minion)</p></li></ul><p><strong>Protagonist Threat</strong>: 1 × 4 = 4</p><p><strong>Adversary Threat</strong>: ⅓ × 8 = 2.66</p><p><strong>Encounter Difficulty</strong>: Difficult</p><h2 class=\"divider\">Introduction</h2><p>The party emerges onto the sand to find themselves in a large arena, surrounded by stands containing a cheering crowd. A commentator spectates from a booth overlooking the sands, where the arena's owner sits. The Commentator's voice is amplified by magic, carried throughout the arena.</p><blockquote><p>We're here on the first day of the Grand Exhibition at the Ring of Valor, and the crowd is already going wild! The first match of the day is about to begin, and as the newcomers step onto the sand for the first time, the crowd is clearly eager to see how they perform. The Scramble is always an audience favorite- will the newcomers survive and triumph against these ravenous wild beasts?!</p></blockquote><p>The party is instructed to proceed to stand in the center of the arena. The Huiana and Baizas are positioned on either side of the arena in groups of 4. Once the party reaches the center of the arena, a few moments are given to build tension and then the beasts emerge from the tunnels on the East and West sides of the map. Add everyone to a <strong>Combat</strong> encounter and start the combat to roll <strong>Initiative</strong> for <strong>Round 1</strong>.</p><h2 class=\"divider\">Tactics</h2><p>The <strong>Huiana</strong> are pack hunters and rely on flanking tactics to surround and harry a single protagonist, benefitting from their <strong>Pack Hunter</strong> talent. This challenge serves as an introduction to @UUID[Compendium.crucible.rules.JournalEntry.QhZgmBrdLAGwYy5c.JournalEntryPage.KGXiKFUWrPgb7wsx]{Movement and Flanking} mechanics.</p><p>The <strong>Baisaz</strong> have formidable momentum and power in their charge. The Baisaz will charge a target using their <strong>Tusk Charge</strong> while using their movement or any remaining action to regain separation from their target to charge again.</p><p>Both Huiana and Baisaz are weak against damage to their @UUID[Compendium.crucible.rules.JournalEntry.gszlBVQ5fGh3y0I6.JournalEntryPage.FmmADsI9qo1uIIT3]{Morale}. When the beasts become broken they will flee the arena, retreating down the nearest tunnel into the catacombs below. This initial challenge can serve as a learning experince that demoralizing your foes is a useful path towards victory.</p><h2 class=\"divider\">Advancement</h2><p>The fight ends when all eight beasts have been defeated. The crowd is pleased with the party's performance, and the Commentator announces that the party will be returning tomorrow for another match.</p><p>When ready to proceed, characters should each use the <strong>Recover</strong> action to regain lost resources and all characters should gain a level, advancing to level 2 to face @UUID[.eQdArtcrGi4wobap]{Day Two - Hammer and Anvil}.</p>"
+            },
+            "Day Two - Hammer and Anvil": {
+              "name": "Day Two - Hammer and Anvil",
+              "text": "<p>In the Day Two challenge, 4 Level 2 heroes face off against the gladiatorial duo of Hammer and Anvil (Challenge 9).</p><ul><li><p>@UUID[Actor.XA9W38PGmAs3ZLDa]{Hammer} (Level 3 Elite)</p></li><li><p>@UUID[Actor.KSoJR8uwT5Qzka7p]{Anvil} (Level 3 Elite)</p></li></ul><p><strong>Protagonist Threat</strong>: 2 × 4 = 8</p><p><strong>Adversary Threat</strong>: 4 × 2 = 8</p><p><strong>Encounter Difficulty</strong>: Deadly</p><h2 class=\"divider\">Introduction</h2><blockquote><p>\"It's a beautiful day in the Ring of Valor, and it's looking like we're in for a treat. Today's match marks the return of that deadly duo, the giants of the game, the terrible two: Hammer and Anvil.\"</p><p>The announcer pauses as the crowd roars before continuing: \"What a welcome! You can just hear how eager the fans are to see these two in action again. Let's see if our new contenders can stand up to the challenge!\"</p></blockquote><p>The party is instructed to gather in front of the tunnel on the west side of the arena. Once the party is in position, Hammer and Anvil emerge from the tunnel on the opposite east side and the battle begins!</p><h2 class=\"divider\">Tactics</h2><p>Hammer and Anvil are a pair of adversaries which fight as a coordinated team.</p><p><strong>Anvil's</strong> tactics primarily focus on trying to get close and grapple an enemy in order to create opportunities for Hammer to attack. Anvil will use <strong>Hammer Toss</strong> to get Hammer quickly into the fray and then use <strong>Wrestler</strong> to restrain enemies and <strong>Heavy Strike</strong> to deliver punishing blows.</p><p><strong>Hammer</strong> is a skirmisher, moving in and out of combat to capture opportunities to unleash a devastating sequence of dual-wield attacks using <strong>Flurry</strong> or using a <strong>Strike + Offhand Strike</strong> combo. Any enemies that attempt to disengage, Hammer will subdue using <strong>Hamstring.</strong></p><h2 class=\"divider\">Advancement</h2><p>The fight ends when both Hammer and Anvil have been defeated. The crowd is pleased with the party's performance, and the Commentator announces that the party will be returning tomorrow for another match.</p><p>The party is given a chance to rest, use the <strong>Recover</strong> action, and gain a level advancing to Level 3 to face @UUID[.v5EIDeTtHdQ7Wb5J]{Day Three - The Skeletal Army}.</p>"
+            },
+            "Day Three - The Skeletal Army": {
+              "name": "Day Three - The Skeletal Army",
+              "text": "<p>In the third challenge, 4 Level 3 heroes face off against the necromancer Orivech and his skeleton army!</p><ul><li><p>@UUID[Actor.JuobjWohGACVeoyn]{Orivech} (Level 3 Boss)</p><ul><li><p>Summoned @UUID[Compendium.crucible.summons.Actor.56puGK932Qc0cowe]{Creation of Death} (Level 1 Minion)</p></li></ul></li><li><p>6x @UUID[Actor.aQkmEcwfImmdUINF]{Skeletal Spearman} (Level 1 Minion)</p></li><li><p>6x @UUID[Actor.7jL3UmgXbqxXKClM]{Skeletal Archer} (Level 1 Minion)</p></li></ul><p><strong>Protagonist Threat</strong>: 3 × 4 = 12</p><p><strong>Adversary Threat</strong>: 6 + (½ × 6) + (½ × 6) = 12</p><p><strong>Encounter Difficulty</strong>: Deadly</p><h2 class=\"divider\">Introduction</h2><p>For this challenge the party is instructed to assemble with their backs to the cliff on the North side of the arena.</p><blockquote><p>\"Welcome back - one and all - to the Ring of Valor for day three of our gripping gauntlet! Today we celebrate the reenactment of one of the historic battles of our history. These few brave champions, their backs to the edge of oblivion, facing down against the dread necromancer Orivech and his skeletal army!\"</p><p>The crowd roars in eager anticipation as Orivech and his skeletal minions emerge from the south stairs and enter the arena.</p></blockquote><p>Orivech and the skeletons emerge from the south entrance and array themselves in a battle formation before the encounter begins!</p><h2 class=\"divider\">Tactics</h2><p>Orivech will play defensively and rely upon his legion of skeletons to subdue his enemies. As a Boss enemy, Orivech has <strong>10 Action</strong> per round and will use the <strong>Compose</strong> inflection on most spells in order to conserve <strong>Focus</strong> and will spend leftover Action on <strong>Recover Focus</strong>.</p><p>Orivech' tactics revolve around using the <strong>Create</strong> gesture to conjure more @UUID[Compendium.crucible.summons.Actor.56puGK932Qc0cowe]{Creation of Death} minions. Orivech can sustain up to 3 such minions at a time because of the <strong>Conjurer</strong> talent. When threatened directly he will use the <strong>Push </strong>inflection to force enemies backwards.</p><p>The Skeletal Archers will <strong>Strike</strong> to focus fire at whichever target Orivech designates, using <strong>Evasive Shot</strong> to reposition themselves. The Skeletal Spearman will rush forward to engage enemy fighters and block their path, trying to trip them with <strong>Leg Sweep</strong>.</p><h2 class=\"divider\">Advancement</h2><p>The fight ends when Orivech is defeated. When the necromancer falls, his skeletal minions disintegrate to dust alongside him. The crowd is pleased with the party's performance, and the Commentator announces that the party will be returning tomorrow for another match.</p><p>The party is given a chance to rest, use the Recover action, and gain a level advancing to Level 4. All heroes may also increase the quality of their equipped Weapons to <strong>Fine</strong>. After resting, the gauntlet continues with @UUID[.hEpGF7rbNFVUMm86]{Day Four - Koy Rent}.</p>"
+            },
+            "Day Four - Koy Rent": {
+              "name": "Day Four - Koy Rent",
+              "text": "<p>In this fourth challenge, 4 level 4 heroes square off against the lycanthropic menace Koy Rent.</p><ul><li><p>@UUID[Actor.3sGYsiKtgYLLkadw]{Koy Rent} (Level 7 Boss)</p></li></ul><p><strong>Protagonist Threat</strong>: 4 × 4 = 16</p><p><strong>Adversary Threat</strong>: 14</p><p><strong>Encounter Difficulty</strong>: Difficult</p><h2 class=\"divider\">Introduction</h2><p>For this challenge, the party assembles on the east side of the Arena.</p><blockquote><p>\"Today's match is a special one- featuring the return of a retired champion in a one-day-only exhibition! Folks, you know him, you love him, he's here, he's there, he is EV-ERY-WHERE!--- Koy Rent! Rent left the ring after a grievous injury, cheered off the field of victory by an understanding crowd. With him back in the games we have to wonder: will he climb to champion or will he fall to these new contenders?\"</p></blockquote><p>Koy Rent enters the arena from the West entrance and immediately attacks!</p><h2 class=\"divider\">Tactics</h2><p>Koy Rent is a formidable fighter. As a Level 7 Boss with significant Health and Morale pools, the party will have little hope of withstanding his onslaught in direct melee combat.</p><p>Rent will use <strong>Ferocious Howl </strong>to inflict the <strong>Frightened </strong>condition and move quickly to close distance into melee range with as many enemies as possible. Rent will use <strong>Flurry</strong> when facing a single target to subdue them quickly with a relentless onslaught of claw attacks, dealing additional bleeding damage through the <strong>Bloodletter</strong> talent.</p><p>The party cannot hope to withstand this onslaught in melee combat and will need to think carefully about how to slow Koy Rent down.</p><h2 class=\"divider\">Advancement</h2><p>The fight ends when Koy Rent is defeated. The crowd is pleased with the party's performance, and the Commentator announces that the party will be returning tomorrow for another match.</p><p>The party is given a chance to rest, use the <strong>Recover</strong> action, and gain a level; advancing to Level 5. All heroes may also increase the quality of their equipped Armor to <strong>Fine</strong>. The party returns the next day to face @UUID[.sISxZXCLNvpjkY02]{Day Five - Void Harbingers}.</p>"
+            },
+            "Day Five - Void Harbingers": {
+              "name": "Day Five - Void Harbingers",
+              "text": "<p>In this challenge, 4 Level 5 heroes face off against a trio of Void Harbingers:</p><ul><li><p>@UUID[Actor.YVvIKp7fUIduZchE]{Harbinger of Fear} (L4 Elite)</p></li><li><p>@UUID[Actor.TZT7ybsmI8yV5hWg]{Harbinger of Disease} (L4 Elite)</p></li><li><p>@UUID[Actor.CTpEm0WlmFAAosBD]{Harbinger of Madness} (L4 Elite)</p></li></ul><p><strong>Protagonist Threat</strong>: 4 × 5 = 20</p><p><strong>Adversary Threat</strong>: 3 × 6 = 18</p><p><strong>Encounter Difficulty</strong>: Deadly</p><h2 class=\"divider\">Introduction</h2><blockquote><p>\"Tonight we're in for some true excitement as the summoners have conjured a new challenge from realms beyond the umbral veil! Ladies and gentlemen, from the darkest recesses and liminal spaces beyond the edge of reality, welcome to the Ring of Valor: the Void Harbingers!\"</p></blockquote><h2 class=\"divider\">Tactics</h2><p>The <strong>Harbinger of Fear</strong> is a mobile predator that feasts on fearful thoughts. It will use <strong>Ethereal Warp</strong> to move freely about the battlefield and <strong>Eldritch Emanataion</strong> to inflict fear on groups of enemies. Once it has isolated a frightened enemy it will <strong>Strike</strong> with it's Psychic Maw.</p><p>The <strong>Harbinger of Disease </strong>is a bearer of pestilence that inflicts the <strong>Diseased</strong> condition using it's <strong>Pestilent Lash</strong> ability. This Harbinger also has spellcasting ability which it will use to further sap life and morale, targeting groups of enemies with the <strong>Pulse</strong> gesture or individual targets using <strong>Influence</strong>.</p><p>The <strong>Harbinger of Madness</strong> is a psychological predator which will close to melee range before using the <strong>Mind Flay </strong>ability against groups of enemies or <strong>Devour Thoughts</strong> against a single foe.</p><h2 class=\"divider\">Advancement</h2><p>The fight ends when all three Harbingers are defeated. The crowd is pleased with the party's performance, and the Commentator announces that the party will be returning tomorrow for another match.</p><p>The party is given a chance to rest, use the Recover action, and gain a level; advancing to Level 6. All heroes may also increase the quality of their equipped Armor to <strong>Fine</strong>. The party returns the next day to face @UUID[.UxIXSvvJCdqx2Tar]{Day Six - Mirror Match}.</p>"
+            },
+            "Day Six - Mirror Match": {
+              "name": "Day Six - Mirror Match",
+              "text": "<p>In this final challenge, 4 Level 6 heroes come head-to-head with a rival adventuring party comprised of 4 Level 6 heroes.</p><ul><li><p>@UUID[Actor.iLUfMcYjAbZFY4CJ]{Duurath} (Level 6)</p></li><li><p>@UUID[Actor.0crVYYsPvV9KDEJ2]{Belladonna} (Level 6)</p></li><li><p>@UUID[Actor.2lvTCCOj4dnBI774]{Eliorwen} (Level 6)</p></li><li><p>@UUID[Actor.Il4NDaNBdHNcjJ9d]{Kagura} (Level 6)</p></li></ul><p><strong>Protagonist Threat</strong>: 4 × 6 = 24</p><p><strong>Adversary Threat</strong>: 4 × 6 = 24</p><p><strong>Encounter Difficulty</strong>: Deadly</p><h2 class=\"divider\">Introduction</h2><blockquote><p>\"Tonight we're in for some true excitement as the summoners have conjured a new challenge from realms beyond the umbral veil! Ladies and gentlemen, from the darkest recesses and liminal spaces beyond the edge of reality, welcome to the Ring of Valor: the Void Harbingers!\"</p></blockquote><p>This is an especially difficult challenge because all four opposing heroes are individually optimized and work well as a team.</p><h2 class=\"divider\">Tactics</h2><p>Each of the opponents in this challenge functions as a heroic protagonist with their own array of talents, actions, and equipment.</p><h4>Duurath</h4><p><strong>Duurath </strong>is a dangerous melee combatant with high <strong>Engagement</strong>, strong physical defense, and the <strong>Dread Lord</strong> signature talent which demoralizes and frightens foes. Duurath will close on enemy combatants using <strong>Shield Charge</strong> and lock them down using <strong>Cadence</strong> to deliver high damage or <strong>Counter Strike</strong> to retaliate when blocking incoming blows. Defensively, Duurath can use <strong>Kinetic Ward</strong> to protect himself from a chosen type of physical damage.</p><h4>Belladonna</h4><p><strong>Belladonna</strong> is a cunning and elusive melee combatant with the <strong>Poisoner</strong> talent. At the beginning of the battle she will activate <strong>Poison Blades</strong>. She will use <strong>Distract</strong> against enemy spellcasters to sap their Focus, and <strong>Combat Medicine</strong> to restore the health of her allies. Belladonna will seek out more vulnerable enemy combatants, closing to melee range using <strong>Tumble </strong>if necessary and <strong>Flurry</strong> to apply rapid damage and poisoned conditions.</p><h4>Eliorwen</h4><p><strong>Eliorwen</strong> is a deadly archer, infusing shots from her Longbow with lightning spells using her <strong>Arcane Archer</strong> talent. Eliorwen will identify a dangerous enemy and target them with <strong>Mark Prey</strong> to reduce their defenses for herself and her allies. She will use <strong>Precision Shot</strong> coupled with reduced cost <strong>Voltaic Arrow</strong> to deliver reliable sustained damage from a distance.</p><h4>Kagura</h4><p><strong>Kagura</strong> is a versatile support character able to heal both mind and body of her allies. She will cast the <strong>Life</strong> rune using either the <strong>Influence</strong>, <strong>Pulse</strong>, or <strong>Ray</strong> gestures to trigger additional healing from her <strong>Mender</strong> talent. Kagura can sustain healing nearly indefinitely through thoughtful use of the <strong>Compose</strong> inflection as well as <strong>Conserve Effort</strong>. Kagura avoids direct confrontation and instead will disengage from combat and seek protection from her allies.</p><h2 class=\"divider\">Advancement</h2><p>The fight ends when all four adversaries are defeated. The crowd is thrilled with the party's performance and celebrates them as eternal champions of the Ring of Valor. There are not any more planned events in the Ring of Valor at this time, but please see @UUID[.aNlzMnfUkwpLrSox]{Further Challenges} if you wish to continue testing by improvising new challenges for the party to face.</p>"
+            },
+            "Further Challenges": {
+              "name": "Further Challenges",
+              "text": "<p>Thank you for completing the <strong>Crucible Playtest</strong>. We hope that you and your players enjoyed the testing experience. For further challenges to evaluate the system, we recommend the following:</p><ol><li><p>Repeat the @UUID[.UxIXSvvJCdqx2Tar]{Day Six - Mirror Match} challenge but with different combinations of Level 6 Pregen characters as adversaries.</p></li><li><p>Create your own @UUID[Compendium.crucible.rules.JournalEntry.v1dqTT3NI35lFNxM]{Adversaries} by testing out the initial system of Taxonomies and Archetypes.</p></li></ol><p>Please consider taking the time to @UUID[Compendium.crucible.rules.JournalEntry.5SgXrAKS2EnqVggJ.JournalEntryPage.4Ggutuh9uzhcEXSK]{Provide Feedback} which can help us further develop and improve this new role-playing game system.</p>"
+            }
+          }
+        }
+      }
+    }
+  }
+}

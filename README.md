@@ -28,7 +28,7 @@ Le projet original est en constante évolution, et de ce fait, une traduction co
         - [x] Items
             - [x] Equipment
             - [ ] Crafting (Vide pour le moment)
-        - [ ] Playtest
+        - [x] Playtest
         - [x] System Rules
             - [x] Game Mechanics
                 - [x] Dice Mechanics

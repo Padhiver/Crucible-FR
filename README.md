@@ -11,11 +11,11 @@ Le projet original est en constante évolution, et de ce fait, une traduction co
 ### Avancement du projet de traduction
 
 - [x] Système (labels de l'interface, fiches de personnages, etc.)
-- [ ] Compendium
-    - [ ] Crucible
-        - [ ] Actors
-            - [ ] Pregenerated Heroes
-            - [ ] Summoned Creatures
+- [x] Compendium
+    - [x] Crucible
+        - [x] Actors
+            - [x] Pregenerated Heroes
+            - [x] Summoned Creatures
         - [x] Adversary Options
             - [x] Adversary Talents
             - [x] Archetypes

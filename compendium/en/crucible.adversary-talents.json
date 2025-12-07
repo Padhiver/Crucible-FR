@@ -8,18 +8,18 @@
     }
   },
   "folders": {
-    "Resistances": "Resistances",
-    "Breath": "Breath",
-    "Movement": "Movement",
-    "Senses": "Senses",
-    "Passive": "Passive",
     "Ooze": "Ooze",
     "Charge": "Charge",
-    "Flight": "Flight",
+    "Passive": "Passive",
     "Bites": "Bites",
-    "Construct": "Construct",
     "Claws": "Claws",
-    "Attacks": "Attacks"
+    "Construct": "Construct",
+    "Attacks": "Attacks",
+    "Breath": "Breath",
+    "Flight": "Flight",
+    "Movement": "Movement",
+    "Resistances": "Resistances",
+    "Senses": "Senses"
   },
   "entries": {
     "Acid Absorption": {

@@ -1,9 +1,13 @@
 {
   "label": "Playtest",
-  "mapping": {
-    "actors": {},
-    "items": {}
-  },
+    "mapping": {
+        "actors": {
+            "items": {
+                "path": "items",
+                "converter": "adventure_items_converter"
+            }
+        }
+    },
   "folders": {},
   "entries": {
     "Playtest 1 - The Ring of Valor": {

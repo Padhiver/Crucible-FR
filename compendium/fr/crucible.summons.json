@@ -154,7 +154,7 @@
                     "description": "<p>La @ref[actor.name]{créature} possède une capacité exceptionnelle à prospérer dans des environnements glaciaux. Sa résistance au <strong>Froid</strong> est doublée et si cette résistance réduit une quantité de dégâts en dessous de zéro, le montant négatif est reçu comme <strong>Guérison</strong> à la place.</p>"
                 },
                 "Amorphous": {
-                    "name": "Amorphe",
+                    "name": "Informe",
                     "description": "<p>La @ref[actor.name]{créature} peut se déplacer à travers un espace aussi étroit que 1 pouce de diamètre sans aucune pénalité à sa <strong>Foulée</strong>. Elle est immunisée contre la condition @Condition[restrained].</p>"
                 },
                 "Rune: Frost": {
@@ -209,7 +209,7 @@
                     "description": "<p>La @ref[actor.name]{créature} possède une capacité exceptionnelle à prospérer dans des environnements glaciaux. Sa résistance au <strong>Froid</strong> est doublée et si cette résistance réduit une quantité de dégâts en dessous de zéro, le montant négatif est reçu comme <strong>Guérison</strong> à la place.</p>"
                 },
                 "Amorphous": {
-                    "name": "Amorphe",
+                    "name": "Informe",
                     "description": "<p>La @ref[actor.name]{créature} peut se déplacer à travers un espace aussi étroit que 1 pouce de diamètre sans aucune pénalité à sa <strong>Foulée</strong>. Elle est immunisée contre la condition @Condition[restrained].</p>"
                 },
                 "Aqueous Transmission": {

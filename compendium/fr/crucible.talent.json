@@ -642,7 +642,7 @@
         },
         "Focused Anticipation": {
             "name": "Anticipation focalisée",
-            "description": "L'anticipation mène à l'action décisive. Lorsque vous avez le score d'<strong>Initiative</strong> le plus élevé pour un Round de combat, vous gagnez <strong>+1 Focus</strong>.</p>"
+            "description": "<p>L'anticipation mène à l'action décisive. Lorsque vous avez le score d'<strong>Initiative</strong> le plus élevé pour un Round de combat, vous gagnez <strong>+1 Focus</strong>.</p>"
         },
         "Fulcrum": {
             "name": "Pivot",

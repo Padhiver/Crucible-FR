@@ -47,7 +47,7 @@
             }
         },
         "Amorphous": {
-            "name": "Amorphe",
+            "name": "Informe",
             "description": "<p>La @ref[actor.name]{créature} peut se déplacer à travers un espace aussi étroit que 1 pouce de diamètre sans aucune pénalité à sa <strong>Foulée</strong>. Elle est immunisée contre la condition @Condition[restrained].</p>"
         },
         "Aqueous Transmission": {

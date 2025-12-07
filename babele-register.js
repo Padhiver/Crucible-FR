@@ -122,7 +122,7 @@ Hooks.on("ready", () => {
     game.actors.contents.forEach(patchDefaultActions);
 
     // Acteurs mis à jour ou créés
-    Hooks.on("updateActor", (actor) => patchDefaultActions(actor));
+    Hooks.on("renderDocumentSheetV2", (actor) => patchDefaultActions(actor));
 });
 
 function patchDefaultActions(actor) {

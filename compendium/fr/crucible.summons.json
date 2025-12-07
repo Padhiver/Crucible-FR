@@ -1,0 +1,294 @@
+{
+    "label": "Créatures invoquées",
+    "mapping": {
+        "items": {
+            "path": "items",
+            "converter": "adventure_items_converter"
+        }
+    },
+    "folders": {
+        "Gesture: Create": "Signe : Création",
+        "Gesture: Conjure": "Signe : Conjuration"
+    },
+    "entries": {
+        "Moldy Skeleton": {
+            "name": "Squelette moisi",
+            "items": {
+                "Deathly Armor": {
+                    "name": "Armure mortelle"
+                },
+                "Bony Claws": {
+                    "name": "Griffes osseuses"
+                },
+                "Rune: Death": {
+                    "name": "Rune : Mort",
+                    "description": "<p>La force ordonnée de la destruction, responsable de la corruption de toute matière biologique. La Rune de Mort gouverne la pourriture et la destruction.</p><p>La Rune de Mort évolue avec l'<strong>Intellect</strong>, cible la <strong>Fortitude</strong>, et inflige des dégâts de <strong>Corruption</strong> à la <strong>Santé</strong>. Elle est opposée par la rune chaotique de <strong>Vie</strong>.</p>"
+                },
+                "Gesture: Fan": {
+                    "name": "Signe : Éventail",
+                    "description": "<p>Vous façonnez l'essence d'une Rune en un arc de cercle balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate.</p><p>Le signe Éventail évolue avec l'<strong>Intellect</strong> et cible un arc de 120 degrés avec un rayon de 6 pieds. Il inflige <strong>6 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                },
+                "False Appearance": {
+                    "name": "Faux-semblant",
+                    "description": "<p>Tant qu'elle reste immobile, la @ref[actor.name]{créature} est indiscernable d'un autre objet ou matériau.</p>"
+                }
+            }
+        },
+        "Flame Visitor": {
+            "name": "Visiteur de Flamme",
+            "items": {
+                "Rune: Flame": {
+                    "name": "Rune : Flamme",
+                    "description": "<p>La force chaotique de l'énergie élémentaire et thermique. La Rune de Flamme gouverne le feu et la chaleur.</p><p>La Rune de Flamme évolue avec l'Intellect, cible le <strong>Réflexe</strong>, et inflige des dégâts de <strong>Feu</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Givre</strong>.</p>"
+                },
+                "Fire Absorption": {
+                    "name": "Absorption de Feu",
+                    "description": "<p>La @ref[actor.name]{créature} possède une capacité exceptionnelle à prospérer dans des environnements brûlants. Sa résistance au <strong>Feu</strong> est doublée et si cette résistance réduit une quantité de dégâts en dessous de zéro, le montant négatif est reçu comme <strong>Guérison</strong> à la place.</p>"
+                },
+                "Gesture: Fan": {
+                    "name": "Signe : Éventail",
+                    "description": "<p>Vous façonnez l'essence d'une Rune en un arc de cercle balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate.</p><p>Le signe Éventail évolue avec l'<strong>Intellect</strong> et cible un arc de 120 degrés avec un rayon de 6 pieds. Il inflige <strong>6 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                },
+                "Elemental Armor": {
+                    "name": "Armure élémentaire"
+                },
+                "Flame Claw": {
+                    "name": "Griffe de Flamme"
+                },
+                "Gesture: Aspect": {
+                    "name": "Signe : Aspect",
+                    "description": "<p>Vous infusez l'essence d'une Rune dans votre corps, renforçant votre propre forme physique ou psyché.</p><p>Lorsque vous assumez un certain Aspect, vous devenez plus étroitement harmonisé avec le type de dégâts de la Rune utilisée dans votre sort. Vous gagnez <strong>+2 Résistance</strong> à ce type de dégâts, et infligez <strong>+2 Dégâts</strong> supplémentaires lorsque vous infligez des dégâts de ce type.</p><p>Votre Aspect dure <strong>6 Rounds</strong>. Vous ne pouvez avoir qu'un seul Aspect actif, lancer un autre sort utilisant le signe d'Aspect remplace l'effet précédent. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>2 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                }
+            }
+        },
+        "Storm Sprite": {
+            "name": "Lutin de Tempête",
+            "items": {
+                "Elemental Armor": {
+                    "name": "Armure élémentaire"
+                },
+                "Voltaic Claw": {
+                    "name": "Griffe Voltaïque"
+                },
+                "Gesture: Arrow": {
+                    "name": "Signe : Trait",
+                    "description": "<p>Vous lancez un projectile imprégné du pouvoir magique d'une Rune sur une cible distante.</p><p>Le signe de Trait évolue avec l'<strong>Intellect</strong> et cible une créature unique jusqu'à une distance de 60 pieds, infligeant <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                },
+                "Rune: Lightning": {
+                    "name": "Rune : Foudre",
+                    "description": "<p>La force chaotique de l'énergie électrique brute. La Rune de Foudre gouverne les sources de charge et de décharge électrique.</p><p>La Rune de Foudre évolue avec l'<strong>Intellect</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts <strong>Électriques</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Terre</strong>.</p>"
+                },
+                "Electricity Absorption": {
+                    "name": "Absorption d'Électricité",
+                    "description": "<p>La @ref[actor.name]{créature} possède une capacité exceptionnelle à encaisser les décharges de foudre. Sa résistance à l'<strong>Électricité</strong> est doublée et si cette résistance réduit une quantité de dégâts en dessous de zéro, le montant négatif est reçu comme <strong>Guérison</strong> à la place.</p>"
+                },
+                "False Appearance": {
+                    "name": "Faux-semblant",
+                    "description": "<p>Tant qu'elle reste immobile, la @ref[actor.name]{créature} est indiscernable d'un autre objet ou matériau.</p>"
+                },
+                "Gesture: Fan": {
+                    "name": "Signe : Éventail",
+                    "description": "<p>Vous façonnez l'essence d'une Rune en un arc de cercle balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate.</p><p>Le signe Éventail évolue avec l'<strong>Intellect</strong> et cible un arc de 120 degrés avec un rayon de 6 pieds. Il inflige <strong>6 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                }
+            }
+        },
+        "Flame Sprite": {
+            "name": "Lutin de Flamme",
+            "items": {
+                "Rune: Flame": {
+                    "name": "Rune : Flamme",
+                    "description": "<p>La force chaotique de l'énergie élémentaire et thermique. La Rune de Flamme gouverne le feu et la chaleur.</p><p>La Rune de Flamme évolue avec l'Intellect, cible le <strong>Réflexe</strong>, et inflige des dégâts de <strong>Feu</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Givre</strong>.</p>"
+                },
+                "Gesture: Fan": {
+                    "name": "Signe : Éventail",
+                    "description": "<p>Vous façonnez l'essence d'une Rune en un arc de cercle balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate.</p><p>Le signe Éventail évolue avec l'<strong>Intellect</strong> et cible un arc de 120 degrés avec un rayon de 6 pieds. Il inflige <strong>6 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                },
+                "Flame Claw": {
+                    "name": "Griffe de Flamme"
+                },
+                "Elemental Armor": {
+                    "name": "Armure élémentaire"
+                },
+                "Fire Absorption": {
+                    "name": "Absorption de Feu",
+                    "description": "<p>La @ref[actor.name]{créature} possède une capacité exceptionnelle à prospérer dans des environnements brûlants. Sa résistance au <strong>Feu</strong> est doublée et si cette résistance réduit une quantité de dégâts en dessous de zéro, le montant négatif est reçu comme <strong>Guérison</strong> à la place.</p>"
+                },
+                "False Appearance": {
+                    "name": "Faux-semblant",
+                    "description": "<p>Tant qu'elle reste immobile, la @ref[actor.name]{créature} est indiscernable d'un autre objet ou matériau.</p>"
+                }
+            }
+        },
+        "Storm Visitor": {
+            "name": "Visiteur de Tempête",
+            "items": {
+                "Rune: Lightning": {
+                    "name": "Rune : Foudre",
+                    "description": "<p>La force chaotique de l'énergie électrique brute. La Rune de Foudre gouverne les sources de charge et de décharge électrique.</p><p>La Rune de Foudre évolue avec l'<strong>Intellect</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts <strong>Électriques</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Terre</strong>.</p>"
+                },
+                "Electricity Absorption": {
+                    "name": "Absorption d'Électricité",
+                    "description": "<p>La @ref[actor.name]{créature} possède une capacité exceptionnelle à encaisser les décharges de foudre. Sa résistance à l'<strong>Électricité</strong> est doublée et si cette résistance réduit une quantité de dégâts en dessous de zéro, le montant négatif est reçu comme <strong>Guérison</strong> à la place.</p>"
+                },
+                "Gesture: Fan": {
+                    "name": "Signe : Éventail",
+                    "description": "<p>Vous façonnez l'essence d'une Rune en un arc de cercle balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate.</p><p>Le signe Éventail évolue avec l'<strong>Intellect</strong> et cible un arc de 120 degrés avec un rayon de 6 pieds. Il inflige <strong>6 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                },
+                "Voltaic Claw": {
+                    "name": "Griffe Voltaïque"
+                },
+                "Elemental Armor": {
+                    "name": "Armure élémentaire"
+                },
+                "Gesture: Aspect": {
+                    "name": "Signe : Aspect",
+                    "description": "<p>Vous infusez l'essence d'une Rune dans votre corps, renforçant votre propre forme physique ou psyché.</p><p>Lorsque vous assumez un certain Aspect, vous devenez plus étroitement harmonisé avec le type de dégâts de la Rune utilisée dans votre sort. Vous gagnez <strong>+2 Résistance</strong> à ce type de dégâts, et infligez <strong>+2 Dégâts</strong> supplémentaires lorsque vous infligez des dégâts de ce type.</p><p>Votre Aspect dure <strong>6 Rounds</strong>. Vous ne pouvez avoir qu'un seul Aspect actif, lancer un autre sort utilisant le signe d'Aspect remplace l'effet précédent. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>2 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                }
+            }
+        },
+        "Frost Visitor": {
+            "name": "Visiteur de Givre",
+            "items": {
+                "Cold Absorption": {
+                    "name": "Absorption de Froid",
+                    "description": "<p>La @ref[actor.name]{créature} possède une capacité exceptionnelle à prospérer dans des environnements glaciaux. Sa résistance au <strong>Froid</strong> est doublée et si cette résistance réduit une quantité de dégâts en dessous de zéro, le montant négatif est reçu comme <strong>Guérison</strong> à la place.</p>"
+                },
+                "Amorphous": {
+                    "name": "Amorphe",
+                    "description": "<p>La @ref[actor.name]{créature} peut se déplacer à travers un espace aussi étroit que 1 pouce de diamètre sans aucune pénalité à sa <strong>Foulée</strong>. Elle est immunisée contre la condition @Condition[restrained].</p>"
+                },
+                "Rune: Frost": {
+                    "name": "Rune : Givre",
+                    "description": "<p>La force ordonnée de l'eau et du froid. La Rune de Givre gouverne la création d'eau ou d'autres fluides et leur transfert entre les états liquide et gelé.</p><p>La Rune de Givre évolue avec la <strong>Sagesse</strong>, cible la <strong>Fortitude</strong>, et inflige des dégâts de <strong>Froid</strong> à la <strong>Santé</strong>. Elle est opposée par la rune chaotique de <strong>Flamme</strong>.</p>"
+                },
+                "Aqueous Transmission": {
+                    "name": "Transmission aqueuse",
+                    "description": "<p>La @ref[name] est capable de se déplacer instantanément à travers l'eau.</p>",
+                    "actions": {
+                        "aqueousTransmission": {
+                            "name": "Transmission aqueuse",
+                            "description": "<p>Lorsque la @ref[name] est dans l'eau, elle peut se transporter instantanément vers n'importe quel espace inoccupé dans la même étendue d'eau jusqu'à 120 pieds de distance. Elle n'a pas besoin de voir la destination pour effectuer ce <strong>Déplacement</strong>.</p>"
+                        }
+                    }
+                },
+                "Gesture: Fan": {
+                    "name": "Signe : Éventail",
+                    "description": "<p>Vous façonnez l'essence d'une Rune en un arc de cercle balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate.</p><p>Le signe Éventail évolue avec l'<strong>Intellect</strong> et cible un arc de 120 degrés avec un rayon de 6 pieds. Il inflige <strong>6 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                },
+                "Elemental Armor": {
+                    "name": "Armure élémentaire"
+                },
+                "Frost Claw": {
+                    "name": "Griffe de Givre"
+                },
+                "Gesture: Aspect": {
+                    "name": "Signe : Aspect",
+                    "description": "<p>Vous infusez l'essence d'une Rune dans votre corps, renforçant votre propre forme physique ou psyché.</p><p>Lorsque vous assumez un certain Aspect, vous devenez plus étroitement harmonisé avec le type de dégâts de la Rune utilisée dans votre sort. Vous gagnez <strong>+2 Résistance</strong> à ce type de dégâts, et infligez <strong>+2 Dégâts</strong> supplémentaires lorsque vous infligez des dégâts de ce type.</p><p>Votre Aspect dure <strong>6 Rounds</strong>. Vous ne pouvez avoir qu'un seul Aspect actif, lancer un autre sort utilisant le signe d'Aspect remplace l'effet précédent. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>2 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                }
+            }
+        },
+        "Frost Sprite": {
+            "name": "Lutin de Givre",
+            "items": {
+                "Elemental Armor": {
+                    "name": "Armure élémentaire"
+                },
+                "Icy Claw": {
+                    "name": "Griffe Glacée"
+                },
+                "Rune: Frost": {
+                    "name": "Rune : Givre",
+                    "description": "<p>La force ordonnée de l'eau et du froid. La Rune de Givre gouverne la création d'eau ou d'autres fluides et leur transfert entre les états liquide et gelé.</p><p>La Rune de Givre évolue avec la <strong>Sagesse</strong>, cible la <strong>Fortitude</strong>, et inflige des dégâts de <strong>Froid</strong> à la <strong>Santé</strong>. Elle est opposée par la rune chaotique de <strong>Flamme</strong>.</p>"
+                },
+                "Gesture: Influence": {
+                    "name": "Signe : Influence",
+                    "description": "<p>Vous intensifiez la puissance arcanique d'une Rune en un contact direct concentré qui est généralement une évolution plus puissante du signe de Contact de base.</p><p>Le signe d'Influence évolue avec la <strong>Présence</strong> et cible une créature adjacente unique. Il inflige <strong>10 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                },
+                "Cold Absorption": {
+                    "name": "Absorption de Froid",
+                    "description": "<p>La @ref[actor.name]{créature} possède une capacité exceptionnelle à prospérer dans des environnements glaciaux. Sa résistance au <strong>Froid</strong> est doublée et si cette résistance réduit une quantité de dégâts en dessous de zéro, le montant négatif est reçu comme <strong>Guérison</strong> à la place.</p>"
+                },
+                "Amorphous": {
+                    "name": "Amorphe",
+                    "description": "<p>La @ref[actor.name]{créature} peut se déplacer à travers un espace aussi étroit que 1 pouce de diamètre sans aucune pénalité à sa <strong>Foulée</strong>. Elle est immunisée contre la condition @Condition[restrained].</p>"
+                },
+                "Aqueous Transmission": {
+                    "name": "Transmission aqueuse",
+                    "description": "<p>La @ref[name] est capable de se déplacer instantanément à travers l'eau.</p>",
+                    "actions": {
+                        "aqueousTransmission": {
+                            "name": "Transmission aqueuse",
+                            "description": "<p>Lorsque la @ref[name] est dans l'eau, elle peut se transporter instantanément vers n'importe quel espace inoccupé dans la même étendue d'eau jusqu'à 120 pieds de distance. Elle n'a pas besoin de voir la destination pour effectuer ce <strong>Déplacement</strong>.</p>"
+                        }
+                    }
+                },
+                "False Appearance": {
+                    "name": "Faux-semblant",
+                    "description": "<p>Tant qu'elle reste immobile, la @ref[actor.name]{créature} est indiscernable d'un autre objet ou matériau.</p>"
+                },
+                "Gesture: Fan": {
+                    "name": "Signe : Éventail",
+                    "description": "<p>Vous façonnez l'essence d'une Rune en un arc de cercle balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate.</p><p>Le signe Éventail évolue avec l'<strong>Intellect</strong> et cible un arc de 120 degrés avec un rayon de 6 pieds. Il inflige <strong>6 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                }
+            }
+        },
+        "Earth Visitor": {
+            "name": "Visiteur de Terre",
+            "items": {
+                "Rune: Earth": {
+                    "name": "Rune : Terre",
+                    "description": "<p>La force ordonnée de la terre élémentaire, responsable de la matière physique. La Rune de Terre gouverne les minéraux, les métaux, les sols et autres composés physiques.</p><p>La Rune de Terre évolue avec la <strong>Sagesse</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts d'<strong>Acide</strong> à la <strong>Santé</strong>. Elle est opposée par la rune chaotique de <strong>Foudre</strong>.</p>"
+                },
+                "Acid Absorption": {
+                    "name": "Absorption d'Acide",
+                    "description": "<p>La @ref[actor.name]{créature} possède une capacité exceptionnelle à prospérer dans des environnements acides. Sa résistance à l'<strong>Acide</strong> est doublée et si cette résistance réduit une quantité de dégâts en dessous de zéro, le montant négatif est reçu comme <strong>Guérison</strong> à la place.</p>"
+                },
+                "Gesture: Fan": {
+                    "name": "Signe : Éventail",
+                    "description": "<p>Vous façonnez l'essence d'une Rune en un arc de cercle balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate.</p><p>Le signe Éventail évolue avec l'<strong>Intellect</strong> et cible un arc de 120 degrés avec un rayon de 6 pieds. Il inflige <strong>6 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                },
+                "Earthen Claw": {
+                    "name": "Griffe de Terre"
+                },
+                "Elemental Armor": {
+                    "name": "Armure élémentaire"
+                },
+                "Gesture: Aspect": {
+                    "name": "Signe : Aspect",
+                    "description": "<p>Vous infusez l'essence d'une Rune dans votre corps, renforçant votre propre forme physique ou psyché.</p><p>Lorsque vous assumez un certain Aspect, vous devenez plus étroitement harmonisé avec le type de dégâts de la Rune utilisée dans votre sort. Vous gagnez <strong>+2 Résistance</strong> à ce type de dégâts, et infligez <strong>+2 Dégâts</strong> supplémentaires lorsque vous infligez des dégâts de ce type.</p><p>Votre Aspect dure <strong>6 Rounds</strong>. Vous ne pouvez avoir qu'un seul Aspect actif, lancer un autre sort utilisant le signe d'Aspect remplace l'effet précédent. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>2 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                }
+            }
+        },
+        "Earth Sprite": {
+            "name": "Lutin de Terre",
+            "items": {
+                "Elemental Armor": {
+                    "name": "Armure élémentaire"
+                },
+                "Earthen Claw": {
+                    "name": "Griffe de Terre"
+                },
+                "Rune: Earth": {
+                    "name": "Rune : Terre",
+                    "description": "<p>La force ordonnée de la terre élémentaire, responsable de la matière physique. La Rune de Terre gouverne les minéraux, les métaux, les sols et autres composés physiques.</p><p>La Rune de Terre évolue avec la <strong>Sagesse</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts d'<strong>Acide</strong> à la <strong>Santé</strong>. Elle est opposée par la rune chaotique de <strong>Foudre</strong>.</p>"
+                },
+                "Gesture: Ray": {
+                    "name": "Signe : Rayon",
+                    "description": "<p>Vous canalisez la puissance arcanique d'une Rune en un point et la projetez vers l'extérieur en un faisceau.</p><p>Le signe de Rayon évolue avec la <strong>Sagesse</strong> et produit une ligne de 1 pied de large et 30 pieds de long partant du lanceur, infligeant <strong>6 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Le signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>4 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                },
+                "Acid Absorption": {
+                    "name": "Absorption d'Acide",
+                    "description": "<p>La @ref[actor.name]{créature} possède une capacité exceptionnelle à prospérer dans des environnements acides. Sa résistance à l'<strong>Acide</strong> est doublée et si cette résistance réduit une quantité de dégâts en dessous de zéro, le montant négatif est reçu comme <strong>Guérison</strong> à la place.</p>"
+                },
+                "False Appearance": {
+                    "name": "Faux-semblant",
+                    "description": "<p>Tant qu'elle reste immobile, la @ref[actor.name]{créature} est indiscernable d'un autre objet ou matériau.</p>"
+                },
+                "Gesture: Fan": {
+                    "name": "Signe : Éventail",
+                    "description": "<p>Vous façonnez l'essence d'une Rune en un arc de cercle balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate.</p><p>Le signe Éventail évolue avec l'<strong>Intellect</strong> et cible un arc de 120 degrés avec un rayon de 6 pieds. Il inflige <strong>6 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                }
+            }
+        }
+    }
+}

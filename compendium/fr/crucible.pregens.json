@@ -1,0 +1,666 @@
+{
+    "mapping": {
+        "items": {
+            "path": "items",
+            "converter": "adventure_items_converter"
+        }
+    },
+    "label": "Héros prétirés",
+    "folders": {
+        "Level 6": "Niveau 6",
+        "Level 1": "Niveau 1"
+    },
+    "entries": {
+        "Belladonna": {
+            "name": "Belladonna",
+            "items": {
+                "Dagger": {
+                    "name": "Dague"
+                },
+                "Studded Leather Armor": {
+                    "name": "Armure de cuir cloutée"
+                },
+                "Diversionist": {
+                    "name": "Magouilleur",
+                    "description": "<p>Vous vous spécialisez dans l'utilisation de subterfuges pour distraire ou tromper votre adversaire pendant le combat.</p>",
+                    "actions": {
+                        "distract": {
+                            "name": "Distraire",
+                            "description": "<p>Vous effectuez une <strong>Attaque de Compétence</strong> basée sur la <strong>Duperie</strong> contre la défense de <strong>Volonté</strong> d'une cible à 30 pieds qui peut voir ou vous entendre. Sur un succès, la cible perd <strong>1 Focus</strong>.</p>"
+                        }
+                    }
+                },
+                "Dual Wield": {
+                    "name": "Ambidextrie",
+                    "description": "<p>Vous êtes adepte du combat à deux armes en simultané. Vous pouvez enchaîner les attaques pour frapper plus rapidement qu'il n'est possible avec une seule arme.</p>",
+                    "actions": {
+                        "offhandStrike": {
+                            "name": "Frappe Main-secondaire",
+                            "description": "<p>Immédiatement après avoir effectué une Frappe basique avec l'arme de votre main principale, vous réalisez une <strong>Frappe</strong> à coût réduit ave l'arme de votre <strong>main secondaire</strong>.</p>"
+                        }
+                    }
+                },
+                "Flurry": {
+                    "name": "Déluge de coups",
+                    "description": "<p>Une technique martiale utilisant deux armes pour submerger une cible unique avec une séquence implacable d'attaques.</p>",
+                    "actions": {
+                        "flurry": {
+                            "name": "Déluge de coups",
+                            "description": "<p>Vous <strong>Frappez</strong> deux fois avec chacune de vos armes, mais chaque frappe est <strong>Difficile</strong>.</p>"
+                        }
+                    }
+                },
+                "Intercept": {
+                    "name": "Intercepter",
+                    "description": "Vous protégez vos alliés, interceptant les coups qui pourraient autrement être dirigés vers vos compagnons.",
+                    "actions": {
+                        "intercept": {
+                            "name": "Intercepter",
+                            "description": "<p>Vous interceptez la trajectoire d'un ennemi qui entre dans votre rayon d'<strong>Engagement</strong>, vous déplaçant immédiatement de votre <strong>Foulée</strong> pour vous interposer et bloquer son chemin.</p><p>Si l'ennemi sort de votre rayon d'Engagement ou attaque une autre créature pendant son tour, vous pouvez effectuer un <strong>Assaut opportuniste</strong> contre lui.</p>",
+                            "condition": "Un ennemi se déplace dans ou à travers votre rayon d'Engagement."
+                        }
+                    }
+                },
+                "Stealth Novice": {
+                    "name": "Discrétion : Novice",
+                    "description": "<p>Vous avez reçu une formation dans les bases de la discrétion, de l'infiltration et du subterfuge. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Discrétion</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez comment utiliser la lumière et l'ombre pour masquer votre présence, répartir votre poids en marchant afin de vous déplacer plus silencieusement, et vous avez appris quelques astuces de déguisement pour vous fondre dans une foule. Vous pouvez paraître non suspect lorsque vous êtes entouré par d'autres, vous cacher dans une pièce sombre, et vous déplacer assez silencieusement pour éviter d'être détecté par une personne lambda.</p>"
+                },
+                "Deception Novice": {
+                    "name": "Duperie : Novice",
+                    "description": "<p>Vous êtes un menteur et un manipulateur, et la duperie est une compétence que vous avez pratiquée. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Duperie</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez monter des mensonges et arnaques de base, et reconnaître les signes révélateurs qui trahissent souvent les mauvais menteurs. Vous pouvez constituer une fausse documentation basique pour la plupart des documents courants, mais ils ne résisteront pas à un examen minutieux.</p>"
+                },
+                "Light Weapon Training": {
+                    "name": "Armes légères : Entraînement",
+                    "description": "<p>Vous avez une éducation de base dans l'utilisation de l'armement de finesse. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes des catégories <strong>Légère</strong> et <strong>Équilibrée</strong>.</p>"
+                },
+                "Lunge": {
+                    "name": "Fente",
+                    "description": "Vous vous élancez agilement vers l'avant, effectuant une frappe avec une rapidité soudaine et inattendue.",
+                    "actions": {
+                        "lunge": {
+                            "name": "Fente",
+                            "description": "<p>Vous <strong>Frappez</strong> avec l'arme de votre main principale contre un unique ennemi à une porté augmentée de <strong>+2 pieds</strong>. L'attaque est <strong>Difficile</strong>, mais vous ne vous déplacez pas de votre position actuelle et cette attaque ne provoque aucun Désengagement.</p>"
+                        }
+                    }
+                }
+            }
+        },
+        "Eliorwen": {
+            "name": "Eliorwen",
+            "items": {
+                "Longbow": {
+                    "name": "Arc long"
+                },
+                "Scimitar": {
+                    "name": "Cimeterre"
+                },
+                "Studded Leather Armor": {
+                    "name": "Armure de cuir cloutée"
+                },
+                "Perspicacity": {
+                    "name": "Perspicacité",
+                    "description": "<p>Vous avez une perspicacité accrue sur les aspects de votre environnement. Vous gagnez +2 Faveurs à tout test de compétence de <strong>Vigilance</strong> qui ne repose pas sur la vue.</p>"
+                },
+                "Pinning Shot": {
+                    "name": "Tir de fixation",
+                    "description": "Vous réalisez un tir tactiquement placé pour épingler votre cible contre une surface proche.",
+                    "actions": {
+                        "pinningShot": {
+                            "name": "Tir de fixation",
+                            "description": "<p>Vous <strong>Frappez</strong> à distance. L'attaque est <strong>Difficile</strong>, mais si vous touchez votre cible, celle-ci devient <strong>Entravée</strong> jusqu'à la fin de son prochain Tour.</p>",
+                            "effects": [
+                                {
+                                    "name": "Tir de fixation"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "Wilderness Novice": {
+                    "name": "Nature : Novice",
+                    "description": "<p>Vous avez reçu une formation aux bases de la survie et de la traversée en milieu sauvage. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Nature</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez comment trouver et construire un abri sûr contre les éléments, allumer un feu pour la chaleur, rester au frais dans des environnements chauds. Vous pouvez trouver de l'eau potable et sûre dans la plupart des endroits, et comment identifier quelles plantes et animaux peuvent servir de sources de nourriture sûres.</p>"
+                },
+                "Athletics Novice": {
+                    "name": "Athlétisme : Novice",
+                    "description": "<p>Vous avez reçu une formation en athlétisme de base. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Athlétisme</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez si une surface peut supporter votre poids, comment trouver des prises en escaladant, et comment répartir votre poids pour flotter en nageant. Vous savez courir sur la distance et comment vous rythmer pour éviter l'épuisement.</p>"
+                },
+                "Projectile Weapon Training": {
+                    "name": "Armes de projectile : Entraînement",
+                    "description": "<p>Vous avez une éducation de base en archerie et autres armes à projectile. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes des catégories <strong>Projectile</strong>.</p>"
+                },
+                "Precision Shot": {
+                    "name": "Tir de précision",
+                    "description": "Vous prenez le temps de stabiliser votre visée et de cibler le point le plus faible d'un ennemi. Vous n'aurez peut-être qu'un seul tir, mais vous le faites compter.",
+                    "actions": {
+                        "precisionShot": {
+                            "name": "Tir de précision",
+                            "description": "<p>Vous stabilisez votre visée et tirez un seul coup précis.</p>"
+                        }
+                    }
+                },
+                "Stealth Novice": {
+                    "name": "Discrétion : Novice",
+                    "description": "<p>Vous avez reçu une formation dans les bases de la discrétion, de l'infiltration et du subterfuge. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Discrétion</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez comment utiliser la lumière et l'ombre pour masquer votre présence, répartir votre poids en marchant afin de vous déplacer plus silencieusement, et vous avez appris quelques astuces de déguisement pour vous fondre dans une foule. Vous pouvez paraître non suspect lorsque vous êtes entouré par d'autres, vous cacher dans une pièce sombre, et vous déplacer assez silencieusement pour éviter d'être détecté par une personne lambda.</p>"
+                },
+                "Rune: Illusion": {
+                    "name": "Rune : Illusion",
+                    "description": "<p>La force chaotique de la tromperie et de la fantaisie. La Rune d'Illusion gouverne les manifestations magiques de fausseté ou de mauvaise direction.</p><p>La Rune d'Illusion évolue avec l'<strong>Intellect</strong>, cible la défense de <strong>Volonté</strong>, et inflige des dégâts <strong>Psychiques</strong> au <strong>Moral</strong>. Elle est opposée par la rune ordonnée d'<strong>Illumination</strong>.</p>",
+                    "actions": {
+                        "seeming": {
+                            "name": "Apparence trompeuse",
+                            "description": "<p>Votre maîtrise de la Rune d'Illusion vous permet de créer des illusions d'optique de diverses manières simples et de manipuler l'ombre et la lumière pour créer une distraction ou un divertissement, produisant l'un des effets suivants :</p><ul><li><p>Modifier un unique aspect de votre apparence physique. Ces modifications pourraient inclure le changement de la tonalité de votre voix, la modification de la couleur de vos yeux, l'apparition de cornes illusoires, ou le fait de paraître légèrement plus grand ou plus petit. L'altération persiste jusqu'à votre Repos ou que vous décidiez d'une modification différente et peut être découverte comme illusoire par une inspection physique.</p></li><li><p>Recréer de manière convaincante un son bref ou une odeur unique dont vous vous souvenez clairement. L'illusion provient de votre position et dure 10 secondes. Vous pouvez contrôler le volume du son ou l'odeur du parfum pour être perceptible à une portée de 60 pieds ou moins.</p></li><li><p>Dissocier votre ombre de votre forme, en contrôlant spécifiquement ses mouvements indépendamment des vôtres. Vous pouvez maintenir cette illusion tant que vous n'effectuez aucune autre action qui consume du <strong>Focus</strong>.</p></li></ul><p>Apparence trompeuse ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
+                        }
+                    }
+                }
+            }
+        },
+        "Agnath": {
+            "name": "Agnath",
+            "items": {
+                "Greatsword": {
+                    "name": "Épée à deux mains"
+                },
+                "Splint Mail": {
+                    "name": "Clibanion"
+                },
+                "Cadence": {
+                    "name": "Cadence",
+                    "description": "<p>Vous êtes entraîné à effectuer des séquences d'attaques de mêlée avec une précision rythmique. Lorsque vous <strong>Frappez</strong> plusieurs fois de suite en utilisant une arme de mêlée à une main, vous gagnez une <strong>+1 Faveur</strong> cumulative pour chaque attaque successive.</p><p></p>"
+                },
+                "Heavy Strike": {
+                    "name": "Frappe lourde",
+                    "description": "<p>Vous savez comment utiliser une arme lourde pour délivrer des coups punitifs, mettant toute votre force derrière chaque balancement.</p>",
+                    "actions": {
+                        "heavyStrike": {
+                            "name": "Frappe lourde",
+                            "description": "<p>Vous libérez une <strong>Frappe</strong> puissante avec l'arme de votre main principale. L'attaque est plus lente à exécuter, mais est <strong>Améliorée</strong> pour délivrer des dégâts supplémentaires.</p>"
+                        }
+                    }
+                },
+                "Athletics Novice": {
+                    "name": "Athlétisme : Novice",
+                    "description": "<p>Vous avez reçu une formation en athlétisme de base. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Athlétisme</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez si une surface peut supporter votre poids, comment trouver des prises en escaladant, et comment répartir votre poids pour flotter en nageant. Vous savez courir sur la distance et comment vous rythmer pour éviter l'épuisement.</p>"
+                },
+                "Intimidation Novice": {
+                    "name": "Intimidation : Novice",
+                    "description": "<p>Vous comprenez les fondamentaux de comment les menaces et la coercition peuvent atteindre les résultats souhaités. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Intimidation</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez comment utiliser de simples démonstrations de violence ou des menaces ouvertes pour amener les autres à suivre votre direction, mais vous n'êtes pas très subtil.</p>"
+                },
+                "Heavy Weapon Training": {
+                    "name": "Armes lourdes : Entraînement",
+                    "description": "<p>Vous avez une éducation de base dans l'utilisation de l'armement martial. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes des catégories <strong>Lourde</strong> ou <strong>Équilibrée</strong>.</p>"
+                },
+                "Gesture: Arrow": {
+                    "name": "Signe : Trait",
+                    "description": "<p>Vous lancez un projectile imprégné du pouvoir magique d'une Rune sur une cible distante.</p><p>Le signe de Trait évolue avec l'<strong>Intellect</strong> et cible une créature unique jusqu'à une distance de 60 pieds, infligeant <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                },
+                "Rune: Flame": {
+                    "name": "Rune : Flamme",
+                    "description": "<p>La force chaotique de l'énergie élémentaire et thermique. La Rune de Flamme gouverne le feu et la chaleur.</p><p>La Rune de Flamme évolue avec l'Intellect, cible le <strong>Réflexe</strong>, et inflige des dégâts de <strong>Feu</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Givre</strong>.</p>"
+                }
+            }
+        },
+        "Kagura": {
+            "name": "Kagura",
+            "items": {
+                "Mage Staff": {
+                    "name": "Bâton de Mage"
+                },
+                "Scale Mail": {
+                    "name": "Armure d’écailles"
+                },
+                "Gesture: Influence": {
+                    "name": "Signe : Influence",
+                    "description": "<p>Vous intensifiez la puissance arcanique d'une Rune en un contact direct concentré qui est généralement une évolution plus puissante du signe de Contact de base.</p><p>Le signe d'Influence évolue avec la <strong>Présence</strong> et cible une créature adjacente unique. Il inflige <strong>10 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                },
+                "Rune: Earth": {
+                    "name": "Rune : Terre",
+                    "description": "<p>La force ordonnée de la terre élémentaire, responsable de la matière physique. La Rune de Terre gouverne les minéraux, les métaux, les sols et autres composés physiques.</p><p>La Rune de Terre évolue avec la <strong>Sagesse</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts d'<strong>Acide</strong> à la <strong>Santé</strong>. Elle est opposée par la rune chaotique de <strong>Foudre</strong>.</p>"
+                },
+                "Medicine Novice": {
+                    "name": "Médecine : Novice",
+                    "description": "<p>Vous avez une éducation de base en anatomie, physiologie et médecine. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Médecine</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous avez appris les bases du traitement des blessures et maladies courantes, et tenez une liste courante des composés alchimiques et à base de plantes connus qui peuvent être utilisés pour traiter des maladies particulières. Avec un peu de temps pour étudier un individu blessé, malade ou autrement souffrant, vous pouvez effectuer un diagnostic de base et traiter en conséquence.</p>"
+                },
+                "Science Novice": {
+                    "name": "Science : Novice",
+                    "description": "<p>Vous avez appris à étudier le monde autour de vous à travers l'observation structurée, les mathématiques, la physique, la chimie et d'autres disciplines. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Science</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous êtes familier avec les principes de base des mathématiques, de la physique, de la chimie ou d'autres études scientifiques. Vous savez comment construire et utiliser des machines simples dans le but de rendre les tâches physiques plus faciles. Vous connaissez certaines des théories scientifiques les plus communément comprises, et avec le temps approprié pour étudier des machines plus complexes, vous pourriez être capable au moins de les faire fonctionner.</p>"
+                },
+                "Talisman Weapon Training": {
+                    "name": "Armes Talisman : Entraînement",
+                    "description": "<p>Vous avez une éducation de base dans l'utilisation des talismans, orbes, focalisateurs ou autres armes similaires. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes de la catégorie <strong>Talisman</strong>.</p>"
+                },
+                "Gesture: Ray": {
+                    "name": "Signe : Rayon",
+                    "description": "<p>Vous canalisez la puissance arcanique d'une Rune en un point et la projetez vers l'extérieur en un faisceau.</p><p>Le signe de Rayon évolue avec la <strong>Sagesse</strong> et produit une ligne de 1 pied de large et 30 pieds de long partant du lanceur, infligeant <strong>6 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Le signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>4 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                },
+                "Rune: Life": {
+                    "name": "Rune : Vie",
+                    "description": "<p>Une force chaotique de création, responsable de la matière vivante. La Rune de Vie gouverne la santé et les questions relatives à la croissance biologique.</p><p>La Rune de Vie évolue avec la <strong>Sagesse</strong> et fournit une <strong>Restauration</strong> de <strong>Santé</strong> ou inflige des dégâts de <strong>Poison</strong> opposés par la <strong>Fortitude</strong>. Elle est opposée par la rune ordonnée de <strong>Mort</strong>.</p>"
+                },
+                "Rune: Soul": {
+                    "name": "Rune : Âme",
+                    "description": "<p>La force ordonnée de création et d'essence spirituelle. La Rune d'Âme gouverne la procession fondamentale des âmes à travers la vie et la mort et concerne les questions de sapience, de personnalité et de santé mentale.</p><p>La Rune d'Âme évolue avec la <strong>Présence</strong> et fournit une <strong>Restauration</strong> du <strong>Moral</strong> ou inflige des dégâts <strong>Psychiques</strong> opposés par la <strong>Volonté</strong>. Elle est opposée par la rune chaotique de <strong>Néant</strong>.</p>",
+                    "actions": {
+                        "evoke": {
+                            "name": "Évoquer",
+                            "description": "<p>Votre maîtrise de la Rune d'Âme vous permet faciliter les formes fondamentales d'influence spirituelle, produisant l'un des effets suivants :</p><ul><li><p>Vous permettre, ou à une autre personne consentante, de revivre un souvenir marquant d'un moment de son passé, d'une durée maximale d'une minute, comme s'il s'était produit récemment.</p></li><li><p>Identifier une condition spirituelle négative affectant une personne telle que @Condition[broken], @Condition[frightened], @Condition[confused], or @Condition[insane].</p></li><li><p>Créer un lien spirituel momentané avec une autre créature consentante qui lui permet de reconnaître une idée pouvant être exprimée par un seul mot.</p></li></ul><p>Les utilisations d'Évoquer ne peuvent affecter que vous-même ou une autre créature que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
+                        }
+                    }
+                }
+            }
+        },
+        "Ulfen": {
+            "name": "Ulfen",
+            "items": {
+                "Scale Mail": {
+                    "name": "Armure d’écailles"
+                },
+                "Greataxe": {
+                    "name": "Hache à deux mains"
+                },
+                "Intimidator": {
+                    "name": "Intimidateur",
+                    "description": "Vous vous spécialisez dans l'exercice de votre présence intimidante pour briser le moral de vos ennemis.",
+                    "actions": {
+                        "intimidate": {
+                            "name": "Intimider",
+                            "description": "<p>Vous intimidez physiquement un ennemi dans votre rayon d'engagement, effectuant une attaque de compétence d'Intimidation contre votre cible. Sur un succès, il subit des dégâts de Vide au Moral.</p>"
+                        }
+                    }
+                },
+                "Uppercut": {
+                    "name": "Uppercut",
+                    "description": "Une technique d'arme à deux mains où vous balancez votre arme vers le haut, effectuant une seconde Frappe avec le retour de votre arme.",
+                    "actions": {
+                        "uppercut": {
+                            "name": "Uppercut",
+                            "description": "<p>À la suite d'une attaque de Frappe basique qui n'est pas un échec critique, vous <strong>Frappez</strong> encore la même cible avec un balancement arrière de votre arme avec un coût en <strong>Action</strong> réduit.</p>"
+                        }
+                    }
+                },
+                "Cleave": {
+                    "name": "Fendre",
+                    "description": "Cette technique martiale est une manœuvre de combat à deux mains spécialisée qui repose sur la force brute pour balancer votre arme en un large arc de cercle, frappant plusieurs ennemis sur son passage.",
+                    "actions": {
+                        "cleave": {
+                            "name": "Fendre",
+                            "description": "<p>Le balancement féroce d'une arme à deux mains fend les ennemis dans un arc de cercle de 120 degrés.</p>"
+                        }
+                    }
+                },
+                "Intercept": {
+                    "name": "Intercepter",
+                    "description": "Vous protégez vos alliés, interceptant les coups qui pourraient autrement être dirigés vers vos compagnons.",
+                    "actions": {
+                        "intercept": {
+                            "name": "Intercepter",
+                            "description": "<p>Vous interceptez la trajectoire d'un ennemi qui entre dans votre rayon d'<strong>Engagement</strong>, vous déplaçant immédiatement de votre <strong>Foulée</strong> pour vous interposer et bloquer son chemin.</p><p>Si l'ennemi sort de votre rayon d'Engagement ou attaque une autre créature pendant son tour, vous pouvez effectuer un <strong>Assaut opportuniste</strong> contre lui.</p>",
+                            "condition": "Un ennemi se déplace dans ou à travers votre rayon d'Engagement."
+                        }
+                    }
+                },
+                "Awareness Novice": {
+                    "name": "Vigilance : Novice",
+                    "description": "<p>Vous avez été formé aux bases de la vigilance situationnelle, et êtes capable de remarquer des détails importants de votre environnement. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Vigilance</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez vérifier les sorties en entrant dans une pièce, et comment chercher des armes dissimulées, des pièges cachés, et autres menaces. Vous savez repérer quand vous êtes suivi et comment chercher les cachettes communes.</p>"
+                },
+                "Intimidation Novice": {
+                    "name": "Intimidation : Novice",
+                    "description": "<p>Vous comprenez les fondamentaux de comment les menaces et la coercition peuvent atteindre les résultats souhaités. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Intimidation</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez comment utiliser de simples démonstrations de violence ou des menaces ouvertes pour amener les autres à suivre votre direction, mais vous n'êtes pas très subtil.</p>"
+                },
+                "Unarmed Combat Training": {
+                    "name": "Combat à mains nues : Entraînement",
+                    "description": "<p>Vous avez une éducation de base dans le combat au corps à corps et autres arts martiaux. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes de la catégorie <strong>Mains nues</strong>.</p>"
+                }
+            }
+        },
+        "Fizzit": {
+            "name": "Fizzit",
+            "items": {
+                "Ring Mail": {
+                    "name": "Broigne"
+                },
+                "Arcane Orb": {
+                    "name": "Orbe arcanique"
+                },
+                "Grimoire": {
+                    "name": "Grimoire"
+                },
+                "Intuit Weakness": {
+                    "name": "Intuition de faiblesse",
+                    "description": "<p>Vous calmez votre esprit et étudiez la physiologie de votre ennemi, cherchant une vulnérabilité dans ses défenses.</p><p>Effectuez un <strong>Test de Connaissances</strong> utilisant une Compétence appropriée choisie par le Maître du jeu. En cas de succès, vous apprenez le type de Dégâts envers lequel la créature a la plus grande vulnérabilité, le cas échéant. Sur une Réussite Critique, vous apprenez les deux types de Dégâts qui ont la plus grande vulnérabilité.</p>",
+                    "actions": {
+                        "intuitWeakness": {
+                            "name": "Intuition de faiblesse",
+                            "description": "<p>Vous apaisez votre esprit et étudiez la physiologie de votre ennemi, essayant d'identifier une vulnérabilité dans ses défenses.</p>"
+                        }
+                    }
+                },
+                "Rune: Lightning": {
+                    "name": "Rune : Foudre",
+                    "description": "<p>La force chaotique de l'énergie électrique brute. La Rune de Foudre gouverne les sources de charge et de décharge électrique.</p><p>La Rune de Foudre évolue avec l'<strong>Intellect</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts <strong>Électriques</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Terre</strong>.</p>"
+                },
+                "Gesture: Arrow": {
+                    "name": "Signe : Trait",
+                    "description": "<p>Vous lancez un projectile imprégné du pouvoir magique d'une Rune sur une cible distante.</p><p>Le signe de Trait évolue avec l'<strong>Intellect</strong> et cible une créature unique jusqu'à une distance de 60 pieds, infligeant <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                },
+                "Gesture: Create": {
+                    "name": "Signe : Création",
+                    "description": "<p>Vous coalescez la puissance arcanique en forme tangible, manifestant un <strong>Lutin</strong> qui apparaît dans les 10 pieds et rejoint le Combat avec une Initiative de 1. Votre Lutin est un <strong>Laquais</strong> de la moitié de votre propre Niveau.</p><p>Le signe de Création évolue avec la <strong>Sagesse</strong> et le Lutin survit pendant <strong>6 Rounds</strong>. Vous ne pouvez avoir qu'un seul Lutin actif, lancer un autre sort utilisant le signe de Création remplace votre Lutin précédent. Ce signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>4 Actions</strong> et <strong>1 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Toutes les Runes n'ont pas encore d'acteur Lutin défini. Les Runes qui n'ont pas encore de Création définie manifesteront – pour l'instant – un <strong>Lutin de Flamme</strong>.</p>"
+                },
+                "Inflection: Compose": {
+                    "name": "Inflexion : Façonner",
+                    "description": "<p>Améliorez un sort en prenant plus de temps pour sa formation, réduisant d'autres coûts de ressources en échange. L'inflexion Façonner réduit le coût en <strong>Focus</strong> d'un sort de 1 tout en augmentant son coût en <strong>Action</strong> de 1 en échange.</p>"
+                },
+                "Conjurer": {
+                    "name": "Conjurateur",
+                    "description": "<p>Vous êtes un maître de la Conjuration et du Signe de Création pour manifester l'énergie arcanique sous forme physique. Vous pouvez maintenir jusqu'à 3 créations simultanément au lieu d'une seule.</p>"
+                },
+                "Rimecaller": {
+                    "name": "Héraut du Givre",
+                    "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Givre. Les sorts utilisant cette Rune causent la condition @Condition[freezing] sur les Coups Critiques.</p><p>L'effet Gelé dure <strong>1 Round</strong>, inflige la moitié de votre score de <strong>Sagesse</strong> comme dégâts de <strong>Froid</strong> à la <strong>Santé</strong>, et applique la condition @Condition[slowed].</p>"
+                },
+                "Recognize Spellcraft": {
+                    "name": "Reconnaître la Sorcellerie",
+                    "description": "<p>Vous pouvez interpréter les incantations arcaniques des autres pour discerner la nature de leur sorcellerie. Lorsqu'un ennemi que vous pouvez voir et entendre dans les 40 pieds commence à lancer un sort, vous pouvez identifier sa Rune si vous connaissez aussi cette Rune.</p>"
+                },
+                "Counterspell": {
+                    "name": "Contresort",
+                    "description": "<p>Vous réagissez immédiatement à un sort en train d'être lancé et composez une rune et un signe conçus pour démêler et nier la sorcellerie d'un mage ennemi.</p><h2 class=\"divider\">Notes de test</h2><p>Cette action peut maintenant être utilisée en playtest, mais n'est pas encore <em>entièrement automatisée</em>. Le Contresort peut être effectué, mais il revient au Maître du jeu d'annuler manuellement un sort précédemment appliqué et de déduire manuellement son coût en <strong>Action</strong> et <strong>Focus</strong>. Ces étapes du processus global de Contresort <em>seront automatisées</em> dans une prochaine mise à jour, de sorte qu'un Contresort confirmé confirmera également le sort qui a été contré, mais sans ses effets.</p>",
+                    "actions": {
+                        "counterspell": {
+                            "name": "Contresort",
+                            "description": "<p>Vous formez une énergie arcanique en une sorcellerie compensatrice, ciblant un lanceur de sort que vous pouvez voir à 30 pieds.</p><p>Désignez une <strong>Rune</strong> et un <strong>Signe</strong> que vous connaissez pour tenter de contrer le sort. Choisir une Rune opposée à celle utilisée par le sort offre <strong>+2 Faveurs</strong> à votre tentative. Sélectionner le même Signe que celui qui est en cours de lancement ajoute également <strong>+2 Faveurs</strong> à votre tentative.</p><p>Effectuez une Attaque de Sort inoffensive contre la défense de <strong>Volonté</strong> de votre cible. Si votre jet surpasse sa défense, le sort est contré et sa magie est annulée, ne produisant aucun effet.</p>",
+                            "condition": "Une autre créature que vous pouvez voir est en train de lancer un sort."
+                        }
+                    }
+                },
+                "Arcana Novice": {
+                    "name": "Arcanes : Novice",
+                    "description": "<p>Votre éducation a couvert les fondamentaux de la métaphysique et de la théorie magique, la relation entre les runes, la nature opposée de l'ordre et du chaos, et une introduction sommaire aux êtres spirituels, incluant les figures de culte déifiées et diabolisées les plus connues. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Arcanes</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Votre compréhension rudimentaire de la grammaire principale de la magie est suffisante pour identifier quelle rune mineure un sort ou un rituel peut utiliser, ainsi que le signe utilisé (si ce n'est l'inflexion). Vous pouvez identifier si une figure est influencée davantage par le chaos ou par l'ordre, et pouvez repérer les signes d'esprits communs (mineurs et majeurs). Vous en savez assez sur les coutumes religieuses pour communiquer avec ceux qui vénèrent un esprit ou une divinité particulière sans vous mettre dans l'embarras.</p>"
+                },
+                "Science Novice": {
+                    "name": "Science : Novice",
+                    "description": "<p>Vous avez appris à étudier le monde autour de vous à travers l'observation structurée, les mathématiques, la physique, la chimie et d'autres disciplines. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Science</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous êtes familier avec les principes de base des mathématiques, de la physique, de la chimie ou d'autres études scientifiques. Vous savez comment construire et utiliser des machines simples dans le but de rendre les tâches physiques plus faciles. Vous connaissez certaines des théories scientifiques les plus communément comprises, et avec le temps approprié pour étudier des machines plus complexes, vous pourriez être capable au moins de les faire fonctionner.</p>"
+                },
+                "Mechanical Weapon Training": {
+                    "name": "Armes mécaniques : Entraînement",
+                    "description": "<p>Vous avez une éducation de base dans les arbalètes, armes à feu et autres armes mécaniques. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes de la catégorie <strong>Mécanique</strong>.</p>"
+                },
+                "Rune: Kinesis": {
+                    "name": "Rune : Kinésie",
+                    "description": "<p>La force chaotique de l'espace et du mouvement physique. La Rune de Kinésie gouverne toutes choses liées à l'acte de mouvement et à la physicalité.</p><p>La Rune de Kinésie évolue avec la <strong>Présence</strong>, cible la défense <strong>Physique</strong>, et inflige des dégâts <strong>Contondants</strong>, <strong>Perforants</strong>, ou <strong>Tranchants</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Contrôle</strong>.</p>"
+                },
+                "Irrepressible Spirit": {
+                    "name": "Esprit irrépressible",
+                    "description": "Votre ténacité vous donne un esprit irrépressible qui résiste à l'apparition du désespoir. Au début de votre tour, si vous n'êtes pas Démoralisé, vous gagnez 1 de Moral."
+                },
+                "Tactician": {
+                    "name": "Tacticien",
+                    "description": "<p>Vous êtes un tacticien de champ de bataille rusé, capable d'organiser et de diriger vos alliés pour agir avec une efficacité accrue.</p>",
+                    "actions": {
+                        "tacticalPlan": {
+                            "name": "Plan tactique",
+                            "description": "En 10 mots maximum, décrivez une action à un allié agissant après vous dans l'ordre d'Initiative. Si cet allié met en œuvre votre plan plus tard dans le même Round, il gagne +2 Faveurs aux jets de dés associés à ce plan. Le Maître du jeu peut décider si le plan a été suivi ou non."
+                        }
+                    }
+                },
+                "Wildspeaker": {
+                    "name": "Orateur sauvage",
+                    "description": "<p>Vous avez un don surnaturel pour communiquer avec les animaux. Par le langage corporel et les sons, vous êtes capable d'interpréter et de communiquer dans le langage de la nature.</p>",
+                    "actions": {
+                        "wildspeak": {
+                            "name": "Parlé sauvage",
+                            "description": "<p>si vous réussissez un test de [[/skillCheck wilderness 14]], vous pouvez poser une question simple à une <strong>Bête</strong> qui peut vous entendre. Tant que la créature n'est pas hostile, elle répondra avec précision dans les limites de ses propres connaissances.</p><ul><li><p>Les Bêtes avec un score d'<strong>Intellect</strong> de zéro sont incapables de vous comprendre.</p></li><li><p>Les Bêtes avec un score d'<strong>Intellect</strong> de 1 ne peuvent répondre que par \"oui\" ou \"non\".</p></li><li><p>Les Bêtes qui ont un score d'<strong>Intellect</strong> supérieur à 1 peuvent faire des réponses simples contenant plusieurs mots.</p></li></ul>"
+                        }
+                    }
+                },
+                "Mental Fortress": {
+                    "name": "Forteresse mentale",
+                    "description": "<p>Votre forte volonté vous rend extrêmement difficile à influencer. Vous gagnez +1 à votre défense de <strong>Volonté</strong> et +5 de résistance aux dégâts <strong>Psychiques</strong>.</p>"
+                },
+                "Rune: Frost": {
+                    "name": "Rune : Givre",
+                    "description": "<p>La force ordonnée de l'eau et du froid. La Rune de Givre gouverne la création d'eau ou d'autres fluides et leur transfert entre les états liquide et gelé.</p><p>La Rune de Givre évolue avec la <strong>Sagesse</strong>, cible la <strong>Fortitude</strong>, et inflige des dégâts de <strong>Froid</strong> à la <strong>Santé</strong>. Elle est opposée par la rune chaotique de <strong>Flamme</strong>.</p>"
+                },
+                "Rune: Control": {
+                    "name": "Rune : Contrôle",
+                    "description": "<p>La force ordonnée de la discipline et de la permanence. La Rune de Contrôle gouverne la pensée, la raison et la persistance.</p><p>La Rune de Contrôle évolue avec l'<strong>Intellect</strong>, cible la <strong>Volonté</strong>, et inflige des dégâts <strong>Psychiques</strong> au <strong>Moral</strong>. Elle est opposée par la rune chaotique de <strong>Kinésie</strong>.</p>",
+                    "actions": {
+                        "motivate": {
+                            "name": "Motiver",
+                            "description": "<p>Votre maîtrise de la Rune de Contrôle vous permet d'affecter la prise de décision des autres d'une manière fondamentale, produisant l'un des effets suivants :</p><ul><li><p>Intensifier ou atténuer modérément l'émotion principale ressentie par une créature que vous touchez. Si la créature est suffisamment intelligente pour connaître les lois régissant la sorcellerie, elle a conscience de vos actions.</p></li><li><p>Comprendre les motivations abstraites d'une autre créature vivante qui vous permet de la toucher. Vous êtes capable de deviner ses objectifs immédiats exprimés sous la forme d'un seul verbe.</p></li><li><p>Vous concentrer intensément sur votre objectif actuel et les moyens de l'atteindre. Vous recevez un bref indice ou un rappel de la part du Maître du jeu concernant cet objectif, ne contenant que des informations que vous avez déjà apprises.</p></li></ul><p>Motiver ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
+                        }
+                    }
+                },
+                "Rune: Illusion": {
+                    "name": "Rune : Illusion",
+                    "description": "<p>La force chaotique de la tromperie et de la fantaisie. La Rune d'Illusion gouverne les manifestations magiques de fausseté ou de mauvaise direction.</p><p>La Rune d'Illusion évolue avec l'<strong>Intellect</strong>, cible la défense de <strong>Volonté</strong>, et inflige des dégâts <strong>Psychiques</strong> au <strong>Moral</strong>. Elle est opposée par la rune ordonnée d'<strong>Illumination</strong>.</p>",
+                    "actions": {
+                        "seeming": {
+                            "name": "Apparence trompeuse",
+                            "description": "<p>Votre maîtrise de la Rune d'Illusion vous permet de créer des illusions d'optique de diverses manières simples et de manipuler l'ombre et la lumière pour créer une distraction ou un divertissement, produisant l'un des effets suivants :</p><ul><li><p>Modifier un unique aspect de votre apparence physique. Ces modifications pourraient inclure le changement de la tonalité de votre voix, la modification de la couleur de vos yeux, l'apparition de cornes illusoires, ou le fait de paraître légèrement plus grand ou plus petit. L'altération persiste jusqu'à votre Repos ou que vous décidiez d'une modification différente et peut être découverte comme illusoire par une inspection physique.</p></li><li><p>Recréer de manière convaincante un son bref ou une odeur unique dont vous vous souvenez clairement. L'illusion provient de votre position et dure 10 secondes. Vous pouvez contrôler le volume du son ou l'odeur du parfum pour être perceptible à une portée de 60 pieds ou moins.</p></li><li><p>Dissocier votre ombre de votre forme, en contrôlant spécifiquement ses mouvements indépendamment des vôtres. Vous pouvez maintenir cette illusion tant que vous n'effectuez aucune autre action qui consume du <strong>Focus</strong>.</p></li></ul><p>Apparence trompeuse ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
+                        }
+                    }
+                },
+                "Surgeweaver": {
+                    "name": "Tissefoudre",
+                    "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Foudre. Les sorts utilisant cette Rune causent la condition @Condition[shocked] sur les Coups Critiques.</p><p>L'effet Électrocuté dure <strong>1 Round</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts de <strong>Foudre</strong> au <strong>Moral</strong>, et applique la condition @Condition[staggered].</p>"
+                },
+                "Mesmer": {
+                    "name": "Envoûteur",
+                    "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Illusion. Les sorts utilisant cette Rune causent la condition @Condition[confused] sur les Coups Critiques.</p><p>L'effet Confus dure <strong>1 Round</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts <strong>Psychiques</strong> au <strong>Moral</strong>, et applique la condition @Condition[disoriented].</p>"
+                }
+            }
+        },
+        "Duurath": {
+            "name": "Duurath",
+            "items": {
+                "War Hammer": {
+                    "name": "Marteau de guerre"
+                },
+                "Heater Shield": {
+                    "name": "Bouclier chauffant"
+                },
+                "Scale Mail": {
+                    "name": "Armure d’écailles"
+                },
+                "Intimidator": {
+                    "name": "Intimidateur",
+                    "description": "Vous vous spécialisez dans l'exercice de votre présence intimidante pour briser le moral de vos ennemis.",
+                    "actions": {
+                        "intimidate": {
+                            "name": "Intimider",
+                            "description": "<p>Vous intimidez physiquement un ennemi dans votre rayon d'engagement, effectuant une attaque de compétence d'Intimidation contre votre cible. Sur un succès, il subit des dégâts de Vide au Moral.</p>"
+                        }
+                    }
+                },
+                "Shield Bash": {
+                    "name": "Coup de bouclier",
+                    "description": "<p>Vous êtes exercé au combat avec bouclier, l'utilisant pour percuter et déséquilibrer vos ennemis.</p>",
+                    "actions": {
+                        "shieldBash": {
+                            "name": "Coup de bouclier",
+                            "description": "<p>Suivant une Frappe basique avec l'arme de votre main principale, vous <strong>Frappez</strong> avec votre bouclier, infligeant la condition @Condition[staggered] pendant un Round.</p>",
+                            "effects": [
+                                {
+                                    "name": "Coup de bouclier"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "Second Wind": {
+                    "name": "Second souffle",
+                    "description": "Votre robustesse physique vous permet de vous pousser au-delà des limites conventionnelles.",
+                    "actions": {
+                        "secondWind": {
+                            "name": "Second souffle",
+                            "description": "<p>Vous concentrez votre énergie et recouvrez votre score de Robustesse à la Santé.</p>"
+                        }
+                    }
+                },
+                "Awareness Novice": {
+                    "name": "Vigilance : Novice",
+                    "description": "<p>Vous avez été formé aux bases de la vigilance situationnelle, et êtes capable de remarquer des détails importants de votre environnement. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Vigilance</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez vérifier les sorties en entrant dans une pièce, et comment chercher des armes dissimulées, des pièges cachés, et autres menaces. Vous savez repérer quand vous êtes suivi et comment chercher les cachettes communes.</p>"
+                },
+                "Intimidation Novice": {
+                    "name": "Intimidation : Novice",
+                    "description": "<p>Vous comprenez les fondamentaux de comment les menaces et la coercition peuvent atteindre les résultats souhaités. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Intimidation</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez comment utiliser de simples démonstrations de violence ou des menaces ouvertes pour amener les autres à suivre votre direction, mais vous n'êtes pas très subtil.</p>"
+                },
+                "Unarmed Combat Training": {
+                    "name": "Combat à mains nues : Entraînement",
+                    "description": "<p>Vous avez une éducation de base dans le combat au corps à corps et autres arts martiaux. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes de la catégorie <strong>Mains nues</strong>.</p>"
+                },
+                "Intercept": {
+                    "name": "Intercepter",
+                    "description": "Vous protégez vos alliés, interceptant les coups qui pourraient autrement être dirigés vers vos compagnons.",
+                    "actions": {
+                        "intercept": {
+                            "name": "Intercepter",
+                            "description": "<p>Vous interceptez la trajectoire d'un ennemi qui entre dans votre rayon d'<strong>Engagement</strong>, vous déplaçant immédiatement de votre <strong>Foulée</strong> pour vous interposer et bloquer son chemin.</p><p>Si l'ennemi sort de votre rayon d'Engagement ou attaque une autre créature pendant son tour, vous pouvez effectuer un <strong>Assaut opportuniste</strong> contre lui.</p>",
+                            "condition": "Un ennemi se déplace dans ou à travers votre rayon d'Engagement."
+                        }
+                    }
+                },
+                "Bulwark": {
+                    "name": "Rempart",
+                    "description": "<p>Vous êtes expert dans l'utilisation d'un <strong>Bouclier</strong> pour vous défendre et défendre les autres.</p><p>Une fois par Tour tant que vous avez un Bouclier équipé, vous pouvez utiliser l'action <strong>Défendre</strong> à un coût réduit de 1 Point d'Action.</p>"
+                }
+            }
+        },
+        "Zarajah": {
+            "name": "Zarajah",
+            "items": {
+                "Mage Staff": {
+                    "name": "Bâton de Mage"
+                },
+                "Ring Mail": {
+                    "name": "Broigne"
+                },
+                "Inspire Heroism": {
+                    "name": "Inspirer l'Héroïsme",
+                    "description": "Votre présence courageuse inspire vos alliés proches à frapper avec confiance.",
+                    "actions": {
+                        "inspireHeroism": {
+                            "name": "Inspirer l'Héroïsme",
+                            "description": "<p>Chaque allié, en vous excluant, dans un rayon de <strong>10 Pieds</strong> gagne <strong>+1 Faveur</strong> aux actions effectuées jusqu'à la fin de son prochain Tour.</p>",
+                            "effects": [
+                                {
+                                    "name": "Inspirer l'Héroïsme"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "Gesture: Influence": {
+                    "name": "Signe : Influence",
+                    "description": "<p>Vous intensifiez la puissance arcanique d'une Rune en un contact direct concentré qui est généralement une évolution plus puissante du signe de Contact de base.</p><p>Le signe d'Influence évolue avec la <strong>Présence</strong> et cible une créature adjacente unique. Il inflige <strong>10 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                },
+                "War Mage": {
+                    "name": "Mage de guerre",
+                    "description": "<p>Votre sorcellerie est affûtée comme une arme de guerre pour contrecarrer les incantations d'autres mages. Vous pouvez demander au Maître du jeu si vous connaissez une Rune capable de contrer un sort ennemi, même si vous ne reconnaissez pas le sort lancé. Vous gagnez +2 Faveurs à toute tentative de Contresort.</p>"
+                },
+                "Gesture: Arrow": {
+                    "name": "Signe : Trait",
+                    "description": "<p>Vous lancez un projectile imprégné du pouvoir magique d'une Rune sur une cible distante.</p><p>Le signe de Trait évolue avec l'<strong>Intellect</strong> et cible une créature unique jusqu'à une distance de 60 pieds, infligeant <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                },
+                "Impetus": {
+                    "name": "Impulsion",
+                    "description": "<p>Vous êtes doué pour exploiter la lenteur avec laquelle les autres pensent. Si vous êtes premier dans l'ordre d'Initiative durant un round de Combat, vous gagnez +1 Action actuelle ainsi qu'à votre maximum.</p>"
+                },
+                "Opportunistic Spellcraft": {
+                    "name": "Sorcellerie opportuniste",
+                    "description": "<p>Votre réflexion rapide peut tisser la magie pour exploiter de brèves fenêtres d'opportunité. Vous pouvez effectuer un <strong>Assaut Opportuniste</strong> en utilisant le Signe de <strong>Contact</strong> au lieu d'une attaque d'arme de mêlée.</p>"
+                },
+                "Pyromancer": {
+                    "name": "Pyromancien",
+                    "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Flamme. Les sorts utilisant cette Rune causent la condition @Condition[burning] sur les Coups Critiques.</p><p>L'effet Enflammé dure <strong>1 Round</strong> et inflige votre score d'<strong>Intellect</strong> comme dégâts de <strong>Feu</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
+                },
+                "Gesture: Pulse": {
+                    "name": "Signe : Onde",
+                    "description": "<p>Expulsez la puissance arcanique d'une Rune dans un rayon qui se propage vers l'extérieur avec vous en son centre.</p><p>Le signe d'Onde évolue avec la <strong>Présence</strong> et produit une émanation de 10 pieds de rayon, infligeant <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Le signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>5 Actions</strong> et <strong>2 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent est actuellement placé au <strong>palier 4</strong>. Il ne sera accessible qu'à un niveau supérieur (probablement le Niveau 6). Il est actuellement disponible en avant-première pour les tests.</p>"
+                },
+                "Performance Novice": {
+                    "name": "Représentation : Novice",
+                    "description": "<p>Vous avez appris les pratiques de base de l'art et du divertissement. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Représentation</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous connaissez quelques danses courantes, avez une collection de contes bien connus, et vous pourriez probablement chanter ou jouer quelques chansons populaires. Vous pouvez être formé à un instrument ou deux, et votre capacité avec un pinceau ou une plume est assez raisonnable pour que vous puissiez probablement créer une œuvre d'art passable.</p>"
+                },
+                "Deception Novice": {
+                    "name": "Duperie : Novice",
+                    "description": "<p>Vous êtes un menteur et un manipulateur, et la duperie est une compétence que vous avez pratiquée. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Duperie</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez monter des mensonges et arnaques de base, et reconnaître les signes révélateurs qui trahissent souvent les mauvais menteurs. Vous pouvez constituer une fausse documentation basique pour la plupart des documents courants, mais ils ne résisteront pas à un examen minutieux.</p>"
+                },
+                "Light Weapon Training": {
+                    "name": "Armes légères : Entraînement",
+                    "description": "<p>Vous avez une éducation de base dans l'utilisation de l'armement de finesse. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes des catégories <strong>Légère</strong> et <strong>Équilibrée</strong>.</p>"
+                },
+                "Arcana Novice": {
+                    "name": "Arcanes : Novice",
+                    "description": "<p>Votre éducation a couvert les fondamentaux de la métaphysique et de la théorie magique, la relation entre les runes, la nature opposée de l'ordre et du chaos, et une introduction sommaire aux êtres spirituels, incluant les figures de culte déifiées et diabolisées les plus connues. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Arcanes</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Votre compréhension rudimentaire de la grammaire principale de la magie est suffisante pour identifier quelle rune mineure un sort ou un rituel peut utiliser, ainsi que le signe utilisé (si ce n'est l'inflexion). Vous pouvez identifier si une figure est influencée davantage par le chaos ou par l'ordre, et pouvez repérer les signes d'esprits communs (mineurs et majeurs). Vous en savez assez sur les coutumes religieuses pour communiquer avec ceux qui vénèrent un esprit ou une divinité particulière sans vous mettre dans l'embarras.</p>"
+                },
+                "Strategic Repositioning": {
+                    "name": "Repositionnement stratégique",
+                    "description": "<p>Vous pensez toujours à l'avance à l'endroit où vous positionner si le danger menace. Avant le <strong>Tour 1</strong> d'une rencontre de Combat, à condition que vous ne soyez pas Distrait, vous pouvez immédiatement vous déplacer de 4 pieds dans n'importe quelle direction permise.</p><p>Si plusieurs combattants ont cette caractéristique, le repositionnement se produit dans l'ordre inverse de l'Initiative.</p>"
+                },
+                "Lightbringer": {
+                    "name": "Porteur de lumière",
+                    "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Illumination. Les sorts utilisant cette Rune causent la condition @Condition[irradiated] sur les Coups Critiques.</p><p>L'effet Irradié dure <strong>1 Round</strong> et inflige votre score de <strong>Présence</strong> comme dégâts <strong>Radiants</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
+                },
+                "Awareness Novice": {
+                    "name": "Vigilance : Novice",
+                    "description": "<p>Vous avez été formé aux bases de la vigilance situationnelle, et êtes capable de remarquer des détails importants de votre environnement. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Vigilance</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez vérifier les sorties en entrant dans une pièce, et comment chercher des armes dissimulées, des pièges cachés, et autres menaces. Vous savez repérer quand vous êtes suivi et comment chercher les cachettes communes.</p>"
+                },
+                "Versatile Translator": {
+                    "name": "Traducteur Polyvalent",
+                    "description": "<p>Vous avez un passé d'érudit en linguistique ou un don intuitif pour les langues. Vos capacités vous permettent de déchiffrer le sens de base d'un texte écrit dans une variété de langues.</p><p>Vous pouvez traduire un texte d'une langue que vous ne connaissez pas qui est écrit en un ensemble commun de glyphes ou de caractères vers une langue que vous connaissez. Créer une telle traduction nécessite de passer une minute par mot pour transcrire le texte dans une langue que vous comprenez.</p><p>Vos traductions sont rudimentaires et manquent souvent de nuance, mais elles contiennent tous les points essentiels du texte.</p>"
+                },
+                "Rune: Oblivion": {
+                    "name": "Rune : Néant",
+                    "description": "<p>Une force chaotique de destruction et d'annihilation de l'existence. La Rune de Néant gouverne la destruction de la matière ou la décohérence de l'esprit.</p><p>La Rune de Néant évolue avec l'<strong>Intellect</strong>, cible la <strong>Volonté</strong>, et inflige des dégâts de <strong>Vide</strong> au <strong>Moral</strong>. Elle est opposée par la rune ordonnée de <strong>l'Esprit</strong>.</p>",
+                    "actions": {
+                        "erase": {
+                            "name": "Effacer",
+                            "description": "<p>Votre maîtrise de la Rune de Néant vous permet de détricoter de minuscules trous dans le tissu de l'existence, produisant l'un des effets suivants :</p><ul><li><p>Désintégrer un objet non magique que vous tenez entre vos mains, d'une taille inférieure à un cube de 6 pouces d'arrête, en le réduisant en une fine poussière composée de ses éléments constitutifs.</p></li><li><p>Anesthésier la capacité de ressentir des émotions, pour vous ou une cible consentante que vous touchez, la plongeant ainsi dans un état placide, stoïque ou détaché. Cet effet peut être maintenu tant que vous n'effectuez pas d'autre <strong>Action</strong>.</p></li><li><p>Atténuer la puissance d'une source lumineuse, réduisant de moitié son rayon de visibilité tant que vous maintenez un contact physique avec elle. Une seule source lumineuse peut être diminuée de cette manière à la fois.</p></li></ul><p>Effacer ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
+                        }
+                    }
+                },
+                "Iramancer": {
+                    "name": "Furimancien",
+                    "description": "Vos exploits d'arcane sont alimentés par la colère. Tant que vous êtes Enragé, vous pouvez toujours dépenser du Focus et vous infligez 2 dégâts supplémentaires à toutes les attaques de sorts."
+                },
+                "Counterspell": {
+                    "name": "Contresort",
+                    "description": "<p>Vous réagissez immédiatement à un sort en train d'être lancé et composez une rune et un signe conçus pour démêler et nier la sorcellerie d'un mage ennemi.</p><h2 class=\"divider\">Notes de test</h2><p>Cette action peut maintenant être utilisée en playtest, mais n'est pas encore <em>entièrement automatisée</em>. Le Contresort peut être effectué, mais il revient au Maître du jeu d'annuler manuellement un sort précédemment appliqué et de déduire manuellement son coût en <strong>Action</strong> et <strong>Focus</strong>. Ces étapes du processus global de Contresort <em>seront automatisées</em> dans une prochaine mise à jour, de sorte qu'un Contresort confirmé confirmera également le sort qui a été contré, mais sans ses effets.</p>",
+                    "actions": {
+                        "counterspell": {
+                            "name": "Contresort",
+                            "description": "<p>Vous formez une énergie arcanique en une sorcellerie compensatrice, ciblant un lanceur de sort que vous pouvez voir à 30 pieds.</p><p>Désignez une <strong>Rune</strong> et un <strong>Signe</strong> que vous connaissez pour tenter de contrer le sort. Choisir une Rune opposée à celle utilisée par le sort offre <strong>+2 Faveurs</strong> à votre tentative. Sélectionner le même Signe que celui qui est en cours de lancement ajoute également <strong>+2 Faveurs</strong> à votre tentative.</p><p>Effectuez une Attaque de Sort inoffensive contre la défense de <strong>Volonté</strong> de votre cible. Si votre jet surpasse sa défense, le sort est contré et sa magie est annulée, ne produisant aucun effet.</p>",
+                            "condition": "Une autre créature que vous pouvez voir est en train de lancer un sort."
+                        }
+                    }
+                },
+                "Rune: Flame": {
+                    "name": "Rune : Flamme",
+                    "description": "<p>La force chaotique de l'énergie élémentaire et thermique. La Rune de Flamme gouverne le feu et la chaleur.</p><p>La Rune de Flamme évolue avec l'Intellect, cible le <strong>Réflexe</strong>, et inflige des dégâts de <strong>Feu</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Givre</strong>.</p>",
+                    "actions": {
+                        "enkindle": {
+                            "name": "Allumer",
+                            "description": "<p>Votre maîtrise de la Rune de Flamme vous permet de manipuler le feu et les énergies thermales de manière créative, produisant l'un des effets suivants :</p><ul><li><p>Manifester une explosion de flamme élémentaire dans une sphère d'un pouce capable d'enflammer une bougie, une torche ou d'autres matériaux inflammables.</p></li><li><p>Imprégner votre corps d'une protection thermique momentanée qui vous immunise contre les dégâts de feu lors d'une action immédiatement suivante coûtant <strong>1 Action</strong> ou moins.</p></li><li><p>Contrôler le mouvement des flammes dans une petite zone, en les faisant vaciller, danser ou se déplacer en un spectacle animé de lumière et d'ombre.</p></li></ul><p>Allumer ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
+                        }
+                    }
+                },
+                "Flame Proficiency": {
+                    "name": "Maîtrise de la Flamme",
+                    "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Flamme. Vous gagnez un <strong>Bonus de Compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Enflammer</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+                },
+                "Rune: Kinesis": {
+                    "name": "Rune : Kinésie",
+                    "description": "<p>La force chaotique de l'espace et du mouvement physique. La Rune de Kinésie gouverne toutes choses liées à l'acte de mouvement et à la physicalité.</p><p>La Rune de Kinésie évolue avec la <strong>Présence</strong>, cible la défense <strong>Physique</strong>, et inflige des dégâts <strong>Contondants</strong>, <strong>Perforants</strong>, ou <strong>Tranchants</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Contrôle</strong>.</p>",
+                    "actions": {
+                        "propel": {
+                            "name": "Propulser",
+                            "description": "<p>Votre maîtrise de la Rune de Kinésie vous permet d'exercer un contrôle local sur les forces gravitationnelles pour effectuer des manipulations télékinésiques de base, produisant l'un des effets suivants :</p><ul><li><p>Tirer vers vous un objet non fixé, d'un poids n'excédant pas 1 livre, situé à moins de 15 pieds et l'attraper. Un objet équipé ou possédé par une créature n'est jamais considéré comme non fixé, à moins que la créature soit disposée à le libérer.</p></li><li><p>Projeter un objet que vous tenez et dont le poids ne dépasse pas 1 livre vers une cible située à une distance maximale de 30 pieds. L'objet vole infailliblement en ligne droite vers cette cible à une vitesse modérée. Toute créature se trouvant sur la trajectoire de l'objet peut réagir pour l'attraper si elle a une main libre pour le faire.</p></li><li><p>Faire léviter un objet ou une créature consentante que vous touchez dont le poids est inférieur ou égal à 10 fois votre <strong>Presence</strong>, modifiant sa position jusqu'à 20 pieds dans n'importe quelle direction par rapport à son emplacement d'origine. Vous pouvez maintenir cette lévitation indéfiniment tant que vous ne faites pas d'autre Action et n'êtes pas @Condition[incapacitated].</p></li></ul><p>Propulser ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement à moins que cela ne soit autrement spécifié. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

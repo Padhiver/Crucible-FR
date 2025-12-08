@@ -4,6 +4,30 @@
     "items": {
       "path": "items",
       "converter": "adventure_items_converter"
+    },
+    "actions": {
+      "path": "system.actions",
+      "converter": "actions_converter"
+    },
+    "ancestry": {
+      "path": "system.details.ancestry",
+      "converter": "nested_object_converter"
+    },
+    "background": {
+      "path": "system.details.background",
+      "converter": "nested_object_converter"
+    },
+    "biography": {
+      "path": "system.details.biography",
+      "converter": "nested_object_converter"
+    },
+    "archetype": {
+      "path": "system.details.archetype",
+      "converter": "nested_object_converter"
+    },
+    "taxonomy": {
+      "path": "system.details.taxonomy",
+      "converter": "nested_object_converter"
     }
   },
   "folders": {
@@ -32,6 +56,14 @@
           "name": "False Appearance",
           "description": "<p>While it remains motionless, the @ref[actor.name]{creature} is indistinguishable from some other object or material.</p>"
         }
+      },
+      "archetype": {
+        "name": "Elemental Sprite",
+        "description": "<p>Sprites are lesser elementals which are embodiments of their raw element, but lack the sapience of their greater kin.</p>"
+      },
+      "taxonomy": {
+        "name": "Skeleton",
+        "description": "<p>Undeathly denizens fashioned of bone and sinew.</p>"
       }
     },
     "Flame Visitor": {
@@ -59,6 +91,14 @@
           "name": "Gesture: Aspect",
           "description": "<p>Infuse the essence of a Rune into the self, empowering your own physical form or psyche.</p>\n\n<p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p>\n\n<p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect.</p>"
         }
+      },
+      "archetype": {
+        "name": "Elemental Visitor",
+        "description": "<p>Visitors are embodiments of raw elemental energy that assume forms that are vaguely humanoid in shape. Unlike their lesser kin, Elemental Visitors are are capable of communication and understanding, although their motivations are seldom aligned with those of mortals.</p>"
+      },
+      "taxonomy": {
+        "name": "Fire Elemental",
+        "description": "<p>Elemental creatures corresponding to the element of Fire.</p>"
       }
     },
     "Storm Sprite": {
@@ -90,6 +130,14 @@
           "name": "Gesture: Fan",
           "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree, 6 foot cone, dealing 6 base damage on a successful attack.</p>"
         }
+      },
+      "archetype": {
+        "name": "Elemental Sprite",
+        "description": "<p>Sprites are lesser elementals which are embodiments of their raw element, but lack the sapience of their greater kin.</p>"
+      },
+      "taxonomy": {
+        "name": "Storm Elemental",
+        "description": "<p>Elemental creatures corresponding to the element of Lightning.</p>"
       }
     },
     "Flame Sprite": {
@@ -117,6 +165,14 @@
           "name": "False Appearance",
           "description": "<p>While it remains motionless, the @ref[actor.name]{creature} is indistinguishable from some other object or material.</p>"
         }
+      },
+      "archetype": {
+        "name": "Elemental Sprite",
+        "description": "<p>Sprites are lesser elementals which are embodiments of their raw element, but lack the sapience of their greater kin.</p>"
+      },
+      "taxonomy": {
+        "name": "Fire Elemental",
+        "description": "<p>Elemental creatures corresponding to the element of Fire.</p>"
       }
     },
     "Storm Visitor": {
@@ -144,6 +200,14 @@
           "name": "Gesture: Aspect",
           "description": "<p>Infuse the essence of a Rune into the self, empowering your own physical form or psyche.</p>\n\n<p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p>\n\n<p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect.</p>"
         }
+      },
+      "archetype": {
+        "name": "Elemental Visitor",
+        "description": "<p>Visitors are embodiments of raw elemental energy that assume forms that are vaguely humanoid in shape. Unlike their lesser kin, Elemental Visitors are are capable of communication and understanding, although their motivations are seldom aligned with those of mortals.</p>"
+      },
+      "taxonomy": {
+        "name": "Storm Elemental",
+        "description": "<p>Elemental creatures corresponding to the element of Lightning.</p>"
       }
     },
     "Frost Visitor": {
@@ -185,6 +249,14 @@
           "name": "Gesture: Aspect",
           "description": "<p>Infuse the essence of a Rune into the self, empowering your own physical form or psyche.</p>\n\n<p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p>\n\n<p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect.</p>"
         }
+      },
+      "archetype": {
+        "name": "Elemental Visitor",
+        "description": "<p>Visitors are embodiments of raw elemental energy that assume forms that are vaguely humanoid in shape. Unlike their lesser kin, Elemental Visitors are are capable of communication and understanding, although their motivations are seldom aligned with those of mortals.</p>"
+      },
+      "taxonomy": {
+        "name": "Frost Elemental",
+        "description": "<p>Elemental creatures corresponding to the element of Frost.</p>"
       }
     },
     "Frost Sprite": {
@@ -230,6 +302,14 @@
           "name": "Gesture: Fan",
           "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree, 6 foot cone, dealing 6 base damage on a successful attack.</p>"
         }
+      },
+      "archetype": {
+        "name": "Elemental Sprite",
+        "description": "<p>Sprites are lesser elementals which are embodiments of their raw element, but lack the sapience of their greater kin.</p>"
+      },
+      "taxonomy": {
+        "name": "Frost Elemental",
+        "description": "<p>Elemental creatures corresponding to the element of Frost.</p>"
       }
     },
     "Earth Visitor": {
@@ -257,6 +337,14 @@
           "name": "Gesture: Aspect",
           "description": "<p>Infuse the essence of a Rune into the self, empowering your own physical form or psyche.</p>\n\n<p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p>\n\n<p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect.</p>"
         }
+      },
+      "archetype": {
+        "name": "Elemental Visitor",
+        "description": "<p>Visitors are embodiments of raw elemental energy that assume forms that are vaguely humanoid in shape. Unlike their lesser kin, Elemental Visitors are are capable of communication and understanding, although their motivations are seldom aligned with those of mortals.</p>"
+      },
+      "taxonomy": {
+        "name": "Earth Elemental",
+        "description": "<p>Elemental creatures corresponding to the element of Earth.</p>"
       }
     },
     "Earth Sprite": {
@@ -288,6 +376,18 @@
           "name": "Gesture: Fan",
           "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree, 6 foot cone, dealing 6 base damage on a successful attack.</p>"
         }
+      },
+      "biography": {
+        "appearance": "<p>test</p>",
+        "public": "<p>test</p>"
+      },
+      "archetype": {
+        "name": "Elemental Sprite",
+        "description": "<p>Sprites are lesser elementals which are embodiments of their raw element, but lack the sapience of their greater kin.</p>"
+      },
+      "taxonomy": {
+        "name": "Earth Elemental",
+        "description": "<p>Elemental creatures corresponding to the element of Earth.</p>"
       }
     }
   }

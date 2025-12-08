@@ -243,7 +243,7 @@
         },
         "Battle Focus": {
             "name": "Focaliseur de bataille",
-            "description": "Vous trouvez la concentration et le calme dans le frisson de la bataille. Lorsque vous réussissez un <strong>Coup Critique</strong> infligeant des dégâts à la Santé ou au Moral, vous gagnez +1 Focus. Ce bénéfice ne peut se produire qu'une fois par Round."
+            "description": "Vous trouvez la concentration et le calme dans le frisson de la bataille. Lorsque vous réussissez un <strong>Coup critique</strong> infligeant des dégâts à la Santé ou au Moral, vous gagnez +1 Focus. Ce bénéfice ne peut se produire qu'une fois par Round."
         },
         "Beastmaster": {
             "name": "Maître des bêtes",
@@ -272,11 +272,11 @@
         },
         "Blood Frenzy": {
             "name": "Frénésie sanguinaire",
-            "description": "<p>Votre soif de bataille vous pousse à des exploits d'action accrue. Lorsque vous réussissez un <strong>Coup Critique</strong> infligeant des dégâts à la Santé, vous gagnez immédiatement +1 Action. Ce bénéfice ne peut se produire qu'une fois par Round.</p>"
+            "description": "<p>Votre soif de bataille vous pousse à des exploits d'action accrue. Lorsque vous réussissez un <strong>Coup critique</strong> infligeant des dégâts à la Santé, vous gagnez immédiatement +1 Action. Ce bénéfice ne peut se produire qu'une fois par Round.</p>"
         },
         "Bloodletter": {
             "name": "Écorcheur",
-            "description": "<p>Votre précision avec les armes infligeant des dégâts Tranchants ou Perforants peut causer la condition Ensanglantée sur les Coups Critiques infligeant des dégâts à la Santé.</p><p>L'effet Ensanglantée dure 1 round et inflige votre score de Dextérité en dégâts supplémentaires à la Santé.</p>"
+            "description": "<p>Votre précision avec les armes infligeant des dégâts Tranchants ou Perforants peut causer la condition Ensanglantée sur les Coups critiques infligeant des dégâts à la Santé.</p><p>L'effet Ensanglantée dure 1 round et inflige votre score de Dextérité en dégâts supplémentaires à la Santé.</p>"
         },
         "Blood Magic": {
             "name": "Magie du sang",
@@ -347,7 +347,7 @@
         },
         "Concussive Blows": {
             "name": "Coups concussifs",
-            "description": "<p>Votre puissance physique avec des armes de mêlée infligeant des dégâts Contondants peut causer la condition <strong>Ébranlé</strong> sur les Coups Critiques infligeant des dégâts à la Santé.</p>\n<p>L'effet Ébranlé dure 1 round et réduit le maximum d'Actions de votre cible de 1.</p>"
+            "description": "<p>Votre puissance physique avec des armes de mêlée infligeant des dégâts Contondants peut causer la condition <strong>Ébranlé</strong> sur les Coups critiques infligeant des dégâts à la Santé.</p>\n<p>L'effet Ébranlé dure 1 round et réduit le maximum d'Actions de votre cible de 1.</p>"
         },
         "Conjurer": {
             "name": "Conjurateur",
@@ -518,7 +518,7 @@
         },
         "Dustbinder": {
             "name": "Géomancien",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Terre. Les sorts utilisant cette Rune causent la condition @Condition[corroding] sur les Coups Critiques.</p><p>L'effet Corrodé dure <strong>3 Rounds</strong> et inflige votre score de <strong>Sagesse</strong> en dégâts d'<strong>Acide</strong> à la <strong>Santé</strong> chaque Round.</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Terre. Les sorts utilisant cette Rune causent la condition @Condition[corroding] sur les Coups critiques.</p><p>L'effet Corrodé dure <strong>3 Rounds</strong> et inflige votre score de <strong>Sagesse</strong> en dégâts d'<strong>Acide</strong> à la <strong>Santé</strong> chaque Round.</p>"
         },
         "Enchanting Journeyman": {
             "name": "Enchantement : Compagnon",
@@ -545,7 +545,7 @@
         },
         "Extoll Deeds": {
             "name": "Exalter les exploits",
-            "description": "Vous inspirez le courage chez vos alliés en exaltant les actes héroïques d'un compagnon. Vous pouvez réagir en composant un vers, en faisant une boutade ou un cri de guerre lorsqu'un allié que vous voyez <strong>Neutralise</strong> ou réussit un <strong>Coup Critique</strong> contre une créature ennemie. La célébration de ces actes héroïques restaure le Moral de vos alliés dans un rayon de 6 cases.",
+            "description": "Vous inspirez le courage chez vos alliés en exaltant les actes héroïques d'un compagnon. Vous pouvez réagir en composant un vers, en faisant une boutade ou un cri de guerre lorsqu'un allié que vous voyez <strong>Neutralise</strong> ou réussit un <strong>Coup critique</strong> contre une créature ennemie. La célébration de ces actes héroïques restaure le Moral de vos alliés dans un rayon de 6 cases.",
             "actions": {
                 "extollDeeds": {
                     "name": "Exalter les exploits",
@@ -673,7 +673,7 @@
         },
         "Gesture: Sense": {
             "name": "Signe : Sens",
-            "description": "<p>Vous harmonisez votre esprit avec la puissance arcanique d'une Rune pour sentir les sources d'énergie proches.</p><p>Le signe de Sens évolue avec la <strong>Présence</strong> et produit une émanation de 30 pieds de rayon dont la position reste centrée sur le lanceur. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>. Il peut optionnellement être <strong>Maintenu</strong> au coût supplémentaire de <strong>1 Focus</strong> chaque round suivant.</p><p>Ce sort permet au lanceur de détecter la présence de sorcellerie utilisant la même Rune que celle incorporée dans ce sort. Le sens détectera aussi momentanément la présence de créatures selon leur type.</p><ul><li><p><strong>Contrôle</strong> : Fiélons</p></li><li><p><strong>Mort</strong> : Morts-vivants</p></li><li><p><strong>Terre</strong> : Vases et Élémentaires de Terre</p></li><li><p><strong>Flamme</strong> : Dragons et Élémentaires de Feu</p></li><li><p><strong>Givre</strong> : Géants et Élémentaires de Givre</p></li><li><p><strong>Illumination</strong> : Célestes</p></li><li><p><strong>Illusion</strong> : Fées</p></li><li><p><strong>Kinésie</strong> : Monstruosités</p></li><li><p><strong>Vie</strong> : Plantes et Bêtes</p></li><li><p><strong>Foudre</strong> : Artificiels et Élémentaires de Tempête</p></li><li><p><strong>Néant</strong> : Extérieurs</p></li><li><p><strong>Âme</strong> : Humanoïdes</p></li></ul><h3 class=\"divider\">Notes de test</h3><p>Il n'y a pas d'automatisation pour le sens temporairement accordé par ce sort, mais une telle automatisation pourra être fournie à l'avenir via un Mode de Détection qui révèle temporairement les créatures du type approprié au lanceur pendant que le sort est maintenu.</p>"
+            "description": "<p>Vous harmonisez votre esprit avec la puissance arcanique d'une Rune pour sentir les sources d'énergie proches.</p><p>Le signe de Sens évolue avec la <strong>Présence</strong> et produit une émanation de 30 pieds de rayon dont la position reste centrée sur le lanceur. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>. Il peut optionnellement être <strong>Maintenu</strong> au coût supplémentaire de <strong>1 Focus</strong> chaque round suivant.</p><p>Ce sort permet au lanceur de détecter la présence de sorcellerie utilisant la même Rune que celle incorporée dans ce sort. Le sens détectera aussi momentanément la présence de créatures selon leur type.</p><ul><li><p><strong>Contrôle</strong> : Fiélons</p></li><li><p><strong>Mort</strong> : Morts-vivants</p></li><li><p><strong>Terre</strong> : Vases et Élémentaires de terre</p></li><li><p><strong>Flamme</strong> : Dragons et Élémentaires de feu</p></li><li><p><strong>Givre</strong> : Géants et Élémentaires de givre</p></li><li><p><strong>Illumination</strong> : Célestes</p></li><li><p><strong>Illusion</strong> : Fées</p></li><li><p><strong>Kinésie</strong> : Monstruosités</p></li><li><p><strong>Vie</strong> : Plantes et Bêtes</p></li><li><p><strong>Foudre</strong> : Artificiels et Élémentaires de tempête</p></li><li><p><strong>Néant</strong> : Extérieurs</p></li><li><p><strong>Âme</strong> : Humanoïdes</p></li></ul><h3 class=\"divider\">Notes de test</h3><p>Il n'y a pas d'automatisation pour le sens temporairement accordé par ce sort, mais une telle automatisation pourra être fournie à l'avenir via un Mode de Détection qui révèle temporairement les créatures du type approprié au lanceur pendant que le sort est maintenu.</p>"
         },
         "Gesture: Surge": {
             "name": "Signe : Afflux",
@@ -811,14 +811,14 @@
             "actions": {
                 "inquisitorsStrike": {
                     "name": "Frappe de l'Inquisiteur",
-                    "description": "Lorsqu'un ennemi que vous pouvez voir lance un sort dans votre rayon d'Engagement, vous pouvez réagir pour Frapper cette cible. Sur un Coup Critique, le sort de la cible est interrompu et sa magie perdue.",
+                    "description": "Lorsqu'un ennemi que vous pouvez voir lance un sort dans votre rayon d'Engagement, vous pouvez réagir pour Frapper cette cible. Sur un Coup critique, le sort de la cible est interrompu et sa magie perdue.",
                     "condition": "Votre cible est en train de lancer un sort."
                 }
             }
         },
         "Inspirator": {
             "name": "Inspirateur",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Âme. Les sorts utilisant cette Rune causent la condition @Condition[inspired] sur les Coups Critiques.</p><p>L'effet Inspiré dure <strong>1 Round</strong> et offre votre score de <strong>Présence</strong> comme <strong>Restauration</strong> additionnelle au <strong>Moral</strong>.</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Âme. Les sorts utilisant cette Rune causent la condition @Condition[inspired] sur les Coups critiques.</p><p>L'effet Inspiré dure <strong>1 Round</strong> et offre votre score de <strong>Présence</strong> comme <strong>Restauration</strong> additionnelle au <strong>Moral</strong>.</p>"
         },
         "Inspire Heroism": {
             "name": "Inspirer l'Héroïsme",
@@ -851,7 +851,7 @@
             "actions": {
                 "interruptingThrow": {
                     "name": "Lancer interruptif",
-                    "description": "<p>Lorsqu'un ennemi que vous pouvez voir lance un <strong>Sort</strong> coûtant au moins <strong>3 Actions</strong>, vous pouvez réaliser une <strong>Réaction</strong> pour effectuer une attaque d'arme de <strong>Lancer</strong> contre le lanceur. Si votre attaque est un <strong>Coup Critique</strong>, le sort est interrompu et sa magie perdue.</p>",
+                    "description": "<p>Lorsqu'un ennemi que vous pouvez voir lance un <strong>Sort</strong> coûtant au moins <strong>3 Actions</strong>, vous pouvez réaliser une <strong>Réaction</strong> pour effectuer une attaque d'arme de <strong>Lancer</strong> contre le lanceur. Si votre attaque est un <strong>Coup critique</strong>, le sort est interrompu et sa magie perdue.</p>",
                     "condition": "Un ennemi que vous pouvez voir lance un sort coûtant au moins 3 Actions."
                 }
             }
@@ -884,7 +884,7 @@
         },
         "Intuit Weakness": {
             "name": "Intuition de faiblesse",
-            "description": "<p>Vous calmez votre esprit et étudiez la physiologie de votre ennemi, cherchant une vulnérabilité dans ses défenses.</p><p>Effectuez un <strong>Test de Connaissances</strong> utilisant une Compétence appropriée choisie par le Maître du jeu. En cas de succès, vous apprenez le type de Dégâts envers lequel la créature a la plus grande vulnérabilité, le cas échéant. Sur une Réussite Critique, vous apprenez les deux types de Dégâts qui ont la plus grande vulnérabilité.</p>",
+            "description": "<p>Vous calmez votre esprit et étudiez la physiologie de votre ennemi, cherchant une vulnérabilité dans ses défenses.</p><p>Effectuez un <strong>Test de connaissances</strong> utilisant une Compétence appropriée choisie par le Maître du jeu. En cas de succès, vous apprenez le type de Dégâts envers lequel la créature a la plus grande vulnérabilité, le cas échéant. Sur une Réussite critique, vous apprenez les deux types de Dégâts qui ont la plus grande vulnérabilité.</p>",
             "actions": {
                 "intuitWeakness": {
                     "name": "Intuition de faiblesse",
@@ -910,11 +910,11 @@
         },
         "Justiciar": {
             "name": "Justicier",
-            "description": "<p>Vous êtes un instrument de justice. Les attaques de Frappe Critique infligent aussi la portion de Surplus des dégâts au Moral ennemi.</p>"
+            "description": "<p>Vous êtes un instrument de justice. Les attaques de Frappe critique infligent aussi la portion de Surplus des dégâts au Moral ennemi.</p>"
         },
         "Kineturge": {
             "name": "Kinéthurge",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Kinésie. Les sorts utilisant cette Rune causent la condition @Condition[bleeding] sur les Coups Critiques.</p><p>L'effet Ensanglanté dure <strong>1 Round</strong> et inflige votre score de caractéristique de <strong>Présence</strong> comme dégâts <strong>Perforants</strong> additionnels à la <strong>Santé</strong>.</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Kinésie. Les sorts utilisant cette Rune causent la condition @Condition[bleeding] sur les Coups critiques.</p><p>L'effet Ensanglanté dure <strong>1 Round</strong> et inflige votre score de caractéristique de <strong>Présence</strong> comme dégâts <strong>Perforants</strong> additionnels à la <strong>Santé</strong>.</p>"
         },
         "Legerdemain": {
             "name": "Prestidigitation",
@@ -944,7 +944,7 @@
         },
         "Lightbringer": {
             "name": "Porteur de lumière",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Illumination. Les sorts utilisant cette Rune causent la condition @Condition[irradiated] sur les Coups Critiques.</p><p>L'effet Irradié dure <strong>1 Round</strong> et inflige votre score de <strong>Présence</strong> comme dégâts <strong>Radiants</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Illumination. Les sorts utilisant cette Rune causent la condition @Condition[irradiated] sur les Coups critiques.</p><p>L'effet Irradié dure <strong>1 Round</strong> et inflige votre score de <strong>Présence</strong> comme dégâts <strong>Radiants</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
         },
         "Lunge": {
             "name": "Fente",
@@ -996,7 +996,7 @@
         },
         "Mender": {
             "name": "Vivificateur",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Vie. Les sorts utilisant cette Rune causent la condition @Condition[mending] sur les Coups Critiques.</p><p>L'effet Guérison dure <strong>1 Round</strong> et applique votre score de <strong>Sagesse</strong> comme <strong>Restauration</strong> additionnelle à la <strong>Santé</strong>.</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Vie. Les sorts utilisant cette Rune causent la condition @Condition[mending] sur les Coups critiques.</p><p>L'effet Guérison dure <strong>1 Round</strong> et applique votre score de <strong>Sagesse</strong> comme <strong>Restauration</strong> additionnelle à la <strong>Santé</strong>.</p>"
         },
         "Mental Fortress": {
             "name": "Forteresse mentale",
@@ -1004,7 +1004,7 @@
         },
         "Mesmer": {
             "name": "Envoûteur",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Illusion. Les sorts utilisant cette Rune causent la condition @Condition[confused] sur les Coups Critiques.</p><p>L'effet Confus dure <strong>1 Round</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts <strong>Psychiques</strong> au <strong>Moral</strong>, et applique la condition @Condition[disoriented].</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Illusion. Les sorts utilisant cette Rune causent la condition @Condition[confused] sur les Coups critiques.</p><p>L'effet Confus dure <strong>1 Round</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts <strong>Psychiques</strong> au <strong>Moral</strong>, et applique la condition @Condition[disoriented].</p>"
         },
         "Mnemonic Realization": {
             "name": "Réalisation mnémonique",
@@ -1036,7 +1036,7 @@
         },
         "Necromancer": {
             "name": "Nécromancien",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Mort. Les sorts utilisant cette Rune causent la condition @Condition[decaying] sur les Coups Critiques.</p><p>L'effet Pourrissant dure <strong>3 Rounds</strong> et inflige votre score d'<strong>Intellect</strong> comme dégâts de <strong>Corruption</strong> à la <strong>Santé</strong> chaque Round.</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Mort. Les sorts utilisant cette Rune causent la condition @Condition[decaying] sur les Coups critiques.</p><p>L'effet Pourrissant dure <strong>3 Rounds</strong> et inflige votre score d'<strong>Intellect</strong> comme dégâts de <strong>Corruption</strong> à la <strong>Santé</strong> chaque Round.</p>"
         },
         "Nosferatu": {
             "name": "Nosferatu",
@@ -1067,7 +1067,7 @@
             "actions": {
                 "disruptingShot": {
                     "name": "Coup perturbant",
-                    "description": "Lorsqu'un ennemi que vous pouvez voir lance un sort, vous pouvez réagir pour Frapper cette cible. La technique est difficile à exécuter, mais sur un Coup Critique, le sort de la cible est interrompu et la magie perdue.",
+                    "description": "Lorsqu'un ennemi que vous pouvez voir lance un sort, vous pouvez réagir pour Frapper cette cible. La technique est difficile à exécuter, mais sur un Coup critique, le sort de la cible est interrompu et la magie perdue.",
                     "condition": "Votre cible est en train de lancer un sort."
                 }
             }
@@ -1142,11 +1142,11 @@
         },
         "Poisoner": {
             "name": "Empoisonneur",
-            "description": "<p>Vous pouvez appliquer du Poison sur les armes qui infligent des dégâts Tranchants ou Perforants. Vous infligez +2 dégâts supplémentaires chaque fois que vous infligez des dégâts de Poison et vos Frappes causent la condition <strong>Empoisonné</strong> sur les Frappes Critiques qui infligent des dégâts à la Santé.</p>",
+            "description": "<p>Vous pouvez appliquer du Poison sur les armes qui infligent des dégâts Tranchants ou Perforants. Vous infligez +2 dégâts supplémentaires chaque fois que vous infligez des dégâts de Poison et vos Frappes causent la condition <strong>Empoisonné</strong> sur les Frappes critiques qui infligent des dégâts à la Santé.</p>",
             "actions": {
                 "poisonBlades": {
                     "name": "Lames empoisonnées",
-                    "description": "<p>Vous enduisez habilement vos lames d'huiles alchimiques toxiques qui appliquent la condition Empoisonné sur les Frappes Critiques.</p>"
+                    "description": "<p>Vous enduisez habilement vos lames d'huiles alchimiques toxiques qui appliquent la condition Empoisonné sur les Frappes critiques.</p>"
                 }
             }
         },
@@ -1197,7 +1197,7 @@
         },
         "Pyromancer": {
             "name": "Pyromancien",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Flamme. Les sorts utilisant cette Rune causent la condition @Condition[burning] sur les Coups Critiques.</p><p>L'effet Enflammé dure <strong>1 Round</strong> et inflige votre score d'<strong>Intellect</strong> comme dégâts de <strong>Feu</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Flamme. Les sorts utilisant cette Rune causent la condition @Condition[burning] sur les Coups critiques.</p><p>L'effet Enflammé dure <strong>1 Round</strong> et inflige votre score d'<strong>Intellect</strong> comme dégâts de <strong>Feu</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
         },
         "Rallying Cry": {
             "name": "Cri de ralliement",
@@ -1240,7 +1240,7 @@
         },
         "Rimecaller": {
             "name": "Héraut du Givre",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Givre. Les sorts utilisant cette Rune causent la condition @Condition[freezing] sur les Coups Critiques.</p><p>L'effet Gelé dure <strong>1 Round</strong>, inflige la moitié de votre score de <strong>Sagesse</strong> comme dégâts de <strong>Froid</strong> à la <strong>Santé</strong>, et applique la condition @Condition[slowed].</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Givre. Les sorts utilisant cette Rune causent la condition @Condition[freezing] sur les Coups critiques.</p><p>L'effet Gelé dure <strong>1 Round</strong>, inflige la moitié de votre score de <strong>Sagesse</strong> comme dégâts de <strong>Froid</strong> à la <strong>Santé</strong>, et applique la condition @Condition[slowed].</p>"
         },
         "Rune: Control": {
             "name": "Rune : Contrôle",
@@ -1457,7 +1457,7 @@
             "actions": {
                 "shieldCharge": {
                     "name": "Charge au bouclier",
-                    "description": "<p>Vous chargez en ligne droite devant vous, passant au travers de l'espace de chaque créature que vous rencontrez et effectuant une <strong>Frappe</strong> contre chaque ennemi successif. Toute créature touchée par un <strong>Coup Critique</strong> lors de l'attaque peut être poussée dans l'espace adjacent de votre choix. Vous ne pouvez pas terminer votre charge dans le même espace qu'une autre créature.</p>"
+                    "description": "<p>Vous chargez en ligne droite devant vous, passant au travers de l'espace de chaque créature que vous rencontrez et effectuant une <strong>Frappe</strong> contre chaque ennemi successif. Toute créature touchée par un <strong>Coup critique</strong> lors de l'attaque peut être poussée dans l'espace adjacent de votre choix. Vous ne pouvez pas terminer votre charge dans le même espace qu'une autre créature.</p>"
                 }
             }
         },
@@ -1583,11 +1583,11 @@
         },
         "Surgeweaver": {
             "name": "Tissefoudre",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Foudre. Les sorts utilisant cette Rune causent la condition @Condition[shocked] sur les Coups Critiques.</p><p>L'effet Électrocuté dure <strong>1 Round</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts de <strong>Foudre</strong> au <strong>Moral</strong>, et applique la condition @Condition[staggered].</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Foudre. Les sorts utilisant cette Rune causent la condition @Condition[shocked] sur les Coups critiques.</p><p>L'effet Électrocuté dure <strong>1 Round</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts de <strong>Foudre</strong> au <strong>Moral</strong>, et applique la condition @Condition[staggered].</p>"
         },
         "Swashbuckler": {
             "name": "Bretteur",
-            "description": "<p>Votre bravade inspire vos alliés et intimide vos ennemis. Lorsque vous Esquivez ou Parez une Frappe, l'attaquant perd un montant de Moral égal à votre attribut de Présence. Lorsque vous réussissez un Coup Critique, tous les alliés proches qui peuvent vous voir gagnent un montant de Moral égal à votre attribut de Présence.</p>"
+            "description": "<p>Votre bravade inspire vos alliés et intimide vos ennemis. Lorsque vous Esquivez ou Parez une Frappe, l'attaquant perd un montant de Moral égal à votre attribut de Présence. Lorsque vous réussissez un Coup critique, tous les alliés proches qui peuvent vous voir gagnent un montant de Moral égal à votre attribut de Présence.</p>"
         },
         "Swipe": {
             "name": "Balayage",
@@ -1635,7 +1635,7 @@
         },
         "Thoughtbinder": {
             "name": "Censeur",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Contrôle. Les sorts utilisant cette Rune causent la condition @Condition[restrained] sur les Coups Critiques.</p><p>L'effet Entravé dure <strong>1 Round</strong> et inflige votre score de caractéristique de <strong>Sagesse</strong> comme dégâts <strong>Psychiques</strong> additionnels au <strong>Moral</strong>.</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Contrôle. Les sorts utilisant cette Rune causent la condition @Condition[restrained] sur les Coups critiques.</p><p>L'effet Entravé dure <strong>1 Round</strong> et inflige votre score de caractéristique de <strong>Sagesse</strong> comme dégâts <strong>Psychiques</strong> additionnels au <strong>Moral</strong>.</p>"
         },
         "Thread the Needle": {
             "name": "Enfiler l'aiguille",
@@ -1685,7 +1685,7 @@
         },
         "Unshakeable Stance": {
             "name": "Posture inébranlable",
-            "description": "Vous ne pouvez pas être involontairement Déplacé ou mis À terre par une action qui n'est pas une Réussite Critique lancée par un ennemi ou un Échec Critique lancé par vous-même."
+            "description": "Vous ne pouvez pas être involontairement Déplacé ou mis À terre par une action qui n'est pas une Réussite critique lancée par un ennemi ou un Échec critique lancé par vous-même."
         },
         "Uppercut": {
             "name": "Uppercut",
@@ -1703,7 +1703,7 @@
         },
         "Voidcaller": {
             "name": "Héraut du Néant",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Néant. Les sorts utilisant cette Rune causent la condition @Condition[entropy] sur les Coups Critiques.</p><p>L'effet Entropie dure <strong>1 Round</strong>, inflige la moitié de votre score de <strong>Présence</strong> comme dégâts de <strong>Vide</strong> au <strong>Moral</strong>, et applique la condition @Condition[frightened].</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Néant. Les sorts utilisant cette Rune causent la condition @Condition[entropy] sur les Coups critiques.</p><p>L'effet Entropie dure <strong>1 Round</strong>, inflige la moitié de votre score de <strong>Présence</strong> comme dégâts de <strong>Vide</strong> au <strong>Moral</strong>, et applique la condition @Condition[frightened].</p>"
         },
         "Vow of Animus": {
             "name": "Serment d'animosité",

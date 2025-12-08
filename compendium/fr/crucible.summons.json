@@ -4,6 +4,30 @@
         "items": {
             "path": "items",
             "converter": "adventure_items_converter"
+        },
+        "actions": {
+            "path": "system.actions",
+            "converter": "actions_converter"
+        },
+        "ancestry": {
+            "path": "system.details.ancestry",
+            "converter": "nested_object_converter"
+        },
+        "background": {
+            "path": "system.details.background",
+            "converter": "nested_object_converter"
+        },
+        "biography": {
+            "path": "system.details.biography",
+            "converter": "nested_object_converter"
+        },
+        "archetype": {
+            "path": "system.details.archetype",
+            "converter": "nested_object_converter"
+        },
+        "taxonomy": {
+            "path": "system.details.taxonomy",
+            "converter": "nested_object_converter"
         }
     },
     "folders": {
@@ -32,6 +56,14 @@
                     "name": "Faux-semblant",
                     "description": "<p>Tant qu'elle reste immobile, la @ref[actor.name]{créature} est indiscernable d'un autre objet ou matériau.</p>"
                 }
+            },
+            "archetype": {
+                "name": "Lutin élémentaire",
+                "description": "<p>Les Lutins sont des élémentaires moindres qui sont des incarnations de leur élément brut, mais manquent de la sapience de leurs parents plus imposants.</p>"
+            },
+            "taxonomy": {
+                "name": "Squelette",
+                "description": "<p>Créatures non-mortes faites d'os et de tendons.</p>"
             }
         },
         "Flame Visitor": {
@@ -59,6 +91,14 @@
                     "name": "Signe : Aspect",
                     "description": "<p>Vous infusez l'essence d'une Rune dans votre corps, renforçant votre propre forme physique ou psyché.</p><p>Lorsque vous assumez un certain Aspect, vous devenez plus étroitement harmonisé avec le type de dégâts de la Rune utilisée dans votre sort. Vous gagnez <strong>+2 Résistance</strong> à ce type de dégâts, et infligez <strong>+2 Dégâts</strong> supplémentaires lorsque vous infligez des dégâts de ce type.</p><p>Votre Aspect dure <strong>6 Rounds</strong>. Vous ne pouvez avoir qu'un seul Aspect actif, lancer un autre sort utilisant le signe d'Aspect remplace l'effet précédent. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>2 Actions</strong> et <strong>1 Focus</strong>.</p>"
                 }
+            },
+            "archetype": {
+                "name": "Visiteur élémentaire",
+                "description": "<p>Les Visiteurs sont des incarnations d'énergie élémentaire brute qui assument des formes vaguement humanoïdes. Contrairement à leurs parents plus petits, les Visiteurs élémentaires sont capables de communication et de compréhension, bien que leurs motivations soient rarement alignées avec celles des mortels.</p>"
+            },
+            "taxonomy": {
+                "name": "Élémentaire de feu",
+                "description": "<p>Créatures élémentaires correspondant à l'élément du feu.</p>"
             }
         },
         "Storm Sprite": {
@@ -90,6 +130,14 @@
                     "name": "Signe : Éventail",
                     "description": "<p>Vous façonnez l'essence d'une Rune en un arc de cercle balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate.</p><p>Le signe Éventail évolue avec l'<strong>Intellect</strong> et cible un arc de 120 degrés avec un rayon de 6 pieds. Il inflige <strong>6 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
                 }
+            },
+            "archetype": {
+                "name": "Lutin élémentaire",
+                "description": "<p>Les Lutins sont des élémentaires moindres qui sont des incarnations de leur élément brut, mais manquent de la sapience de leurs parents plus imposants.</p>"
+            },
+            "taxonomy": {
+                "name": "Élémentaire de tempête",
+                "description": "<p>Créatures élémentaires correspondant à l'élément de la foudre.</p>"
             }
         },
         "Flame Sprite": {
@@ -117,6 +165,14 @@
                     "name": "Faux-semblant",
                     "description": "<p>Tant qu'elle reste immobile, la @ref[actor.name]{créature} est indiscernable d'un autre objet ou matériau.</p>"
                 }
+            },
+            "archetype": {
+                "name": "Lutin élémentaire",
+                "description": "<p>Les Lutins sont des élémentaires moindres qui sont des incarnations de leur élément brut, mais manquent de la sapience de leurs parents plus imposants.</p>"
+            },
+            "taxonomy": {
+                "name": "Élémentaire de feu",
+                "description": "<p>Créatures élémentaires correspondant à l'élément du feu.</p>"
             }
         },
         "Storm Visitor": {
@@ -144,6 +200,14 @@
                     "name": "Signe : Aspect",
                     "description": "<p>Vous infusez l'essence d'une Rune dans votre corps, renforçant votre propre forme physique ou psyché.</p><p>Lorsque vous assumez un certain Aspect, vous devenez plus étroitement harmonisé avec le type de dégâts de la Rune utilisée dans votre sort. Vous gagnez <strong>+2 Résistance</strong> à ce type de dégâts, et infligez <strong>+2 Dégâts</strong> supplémentaires lorsque vous infligez des dégâts de ce type.</p><p>Votre Aspect dure <strong>6 Rounds</strong>. Vous ne pouvez avoir qu'un seul Aspect actif, lancer un autre sort utilisant le signe d'Aspect remplace l'effet précédent. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>2 Actions</strong> et <strong>1 Focus</strong>.</p>"
                 }
+            },
+            "archetype": {
+                "name": "Visiteur élémentaire",
+                "description": "<p>Les Visiteurs sont des incarnations d'énergie élémentaire brute qui assument des formes vaguement humanoïdes. Contrairement à leurs parents plus petits, les Visiteurs élémentaires sont capables de communication et de compréhension, bien que leurs motivations soient rarement alignées avec celles des mortels.</p>"
+            },
+            "taxonomy": {
+                "name": "Élémentaire de tempête",
+                "description": "<p>Créatures élémentaires correspondant à l'élément de la foudre.</p>"
             }
         },
         "Frost Visitor": {
@@ -185,6 +249,14 @@
                     "name": "Signe : Aspect",
                     "description": "<p>Vous infusez l'essence d'une Rune dans votre corps, renforçant votre propre forme physique ou psyché.</p><p>Lorsque vous assumez un certain Aspect, vous devenez plus étroitement harmonisé avec le type de dégâts de la Rune utilisée dans votre sort. Vous gagnez <strong>+2 Résistance</strong> à ce type de dégâts, et infligez <strong>+2 Dégâts</strong> supplémentaires lorsque vous infligez des dégâts de ce type.</p><p>Votre Aspect dure <strong>6 Rounds</strong>. Vous ne pouvez avoir qu'un seul Aspect actif, lancer un autre sort utilisant le signe d'Aspect remplace l'effet précédent. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>2 Actions</strong> et <strong>1 Focus</strong>.</p>"
                 }
+            },
+            "archetype": {
+                "name": "Visiteur élémentaire",
+                "description": "<p>Les Visiteurs sont des incarnations d'énergie élémentaire brute qui assument des formes vaguement humanoïdes. Contrairement à leurs parents plus petits, les Visiteurs élémentaires sont capables de communication et de compréhension, bien que leurs motivations soient rarement alignées avec celles des mortels.</p>"
+            },
+            "taxonomy": {
+                "name": "Élémentaire de givre",
+                "description": "<p>Créatures élémentaires correspondant à l'élément du givre.</p>"
             }
         },
         "Frost Sprite": {
@@ -230,6 +302,14 @@
                     "name": "Signe : Éventail",
                     "description": "<p>Vous façonnez l'essence d'une Rune en un arc de cercle balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate.</p><p>Le signe Éventail évolue avec l'<strong>Intellect</strong> et cible un arc de 120 degrés avec un rayon de 6 pieds. Il inflige <strong>6 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
                 }
+            },
+            "archetype": {
+                "name": "Lutin élémentaire",
+                "description": "<p>Les Lutins sont des élémentaires moindres qui sont des incarnations de leur élément brut, mais manquent de la sapience de leurs parents plus imposants.</p>"
+            },
+            "taxonomy": {
+                "name": "Élémentaire de givre",
+                "description": "<p>Créatures élémentaires correspondant à l'élément du givre.</p>"
             }
         },
         "Earth Visitor": {
@@ -257,6 +337,14 @@
                     "name": "Signe : Aspect",
                     "description": "<p>Vous infusez l'essence d'une Rune dans votre corps, renforçant votre propre forme physique ou psyché.</p><p>Lorsque vous assumez un certain Aspect, vous devenez plus étroitement harmonisé avec le type de dégâts de la Rune utilisée dans votre sort. Vous gagnez <strong>+2 Résistance</strong> à ce type de dégâts, et infligez <strong>+2 Dégâts</strong> supplémentaires lorsque vous infligez des dégâts de ce type.</p><p>Votre Aspect dure <strong>6 Rounds</strong>. Vous ne pouvez avoir qu'un seul Aspect actif, lancer un autre sort utilisant le signe d'Aspect remplace l'effet précédent. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>2 Actions</strong> et <strong>1 Focus</strong>.</p>"
                 }
+            },
+            "archetype": {
+                "name": "Visiteur élémentaire",
+                "description": "<p>Les Visiteurs sont des incarnations d'énergie élémentaire brute qui assument des formes vaguement humanoïdes. Contrairement à leurs parents plus petits, les Visiteurs élémentaires sont capables de communication et de compréhension, bien que leurs motivations soient rarement alignées avec celles des mortels.</p>"
+            },
+            "taxonomy": {
+                "name": "Élémentaire de terre",
+                "description": "<p>Créatures élémentaires correspondant à l'élément de la terre.</p>"
             }
         },
         "Earth Sprite": {
@@ -288,6 +376,18 @@
                     "name": "Signe : Éventail",
                     "description": "<p>Vous façonnez l'essence d'une Rune en un arc de cercle balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate.</p><p>Le signe Éventail évolue avec l'<strong>Intellect</strong> et cible un arc de 120 degrés avec un rayon de 6 pieds. Il inflige <strong>6 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
                 }
+            },
+            "biography": {
+                "appearance": "<p>test</p>",
+                "public": "<p>test</p>"
+            },
+            "archetype": {
+                "name": "Lutin élémentaire",
+                "description": "<p>Les Lutins sont des élémentaires moindres qui sont des incarnations de leur élément brut, mais manquent de la sapience de leurs parents plus imposants.</p>"
+            },
+            "taxonomy": {
+                "name": "Élémentaire de terre",
+                "description": "<p>Créatures élémentaires correspondant à l'élément de la terre.</p>"
             }
         }
     }

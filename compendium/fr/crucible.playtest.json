@@ -50,6 +50,14 @@
                                 }
                             }
                         }
+                    },
+                    "archetype": {
+                        "name": "Bête à Défenses",
+                        "description": "<p>Bêtes qui combattent en utilisant leur propre masse, leur élan et leurs défenses aiguisées.</p>"
+                    },
+                    "taxonomy": {
+                        "name": "Sanglier",
+                        "description": "<p>Mammifères avec une peau épaisse, des défenses dangereuses et un centre de masse bas et puissant.</p>"
                     }
                 },
                 "Huiana": {
@@ -66,6 +74,14 @@
                             "name": "Chasse en meute",
                             "description": "<p>Cette créature chasse en meute, comptant sur ses alliés pour déborder et harceler une cible afin de l'exposer à davantage de dégâts.</p><p>Cette créature double le nombre des Faveurs accordées en attaquant un ennemi <strong>Débordé</strong>.</p>"
                         }
+                    },
+                    "archetype": {
+                        "name": "Membre de Meute",
+                        "description": "Bêtes qui chassent en meute."
+                    },
+                    "taxonomy": {
+                        "name": "Hyène",
+                        "description": "Mammifères de la famille des hyènes. Les hyènes sont des chasseurs de meute carnivores avec une encolure et des mâchoires puissantes."
                     }
                 },
                 "Anvil": {
@@ -117,7 +133,7 @@
                         },
                         "Concussive Blows": {
                             "name": "Coups concussifs",
-                            "description": "<p>Votre puissance physique avec des armes de mêlée infligeant des dégâts Contondants peut causer la condition <strong>Ébranlé</strong> sur les Coups Critiques infligeant des dégâts à la Santé.</p>\n<p>L'effet Ébranlé dure 1 round et réduit le maximum d'Actions de votre cible de 1.</p>"
+                            "description": "<p>Votre puissance physique avec des armes de mêlée infligeant des dégâts Contondants peut causer la condition <strong>Ébranlé</strong> sur les Coups critiques infligeant des dégâts à la Santé.</p>\n<p>L'effet Ébranlé dure 1 round et réduit le maximum d'Actions de votre cible de 1.</p>"
                         },
                         "Strong Grip": {
                             "name": "Prise solide",
@@ -148,6 +164,14 @@
                             "name": "Armes lourdes : Entraînement",
                             "description": "<p>Vous avez une éducation de base dans l'utilisation de l'armement martial. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes des catégories <strong>Lourde</strong> ou <strong>Équilibrée</strong>.</p>"
                         }
+                    },
+                    "archetype": {
+                        "name": "Lutteur",
+                        "description": "Combattants spécialisés dans l'entrave physique de leurs adversaires et se mettant ainsi à l'abri de nouvelles attaques de leur part."
+                    },
+                    "taxonomy": {
+                        "name": "Ogre",
+                        "description": "<p>Géants massifs qui sont renommés pour leur force brute et leur approche directe de la résolution de problèmes.</p>"
                     }
                 },
                 "Hammer": {
@@ -216,6 +240,14 @@
                                 }
                             }
                         }
+                    },
+                    "archetype": {
+                        "name": "Querelleur",
+                        "description": "Un combattant de mêlée implacable et déterminé qui utilise un mélange d'agilité et de puissance pour soumettre les ennemis."
+                    },
+                    "taxonomy": {
+                        "name": "Orque",
+                        "description": "<p>Votre naissance a été marquée par les étoiles et les traditions d'un peuple fier et endurant. Votre corps grand et tonique ainsi que votre propension naturelle à la robustesse ont des origines venant d'un peuple exposé à la lutte incessante d'un climat nordique rigoureux. Votre peuple est avant tout connu pour sa force et sa résilience.</p>"
                     }
                 },
                 "Orivech": {
@@ -295,6 +327,14 @@
                                 }
                             }
                         }
+                    },
+                    "archetype": {
+                        "name": "Occultiste",
+                        "description": "Utilisateurs de magie qui pratiquent la sorcellerie en utilisant des forces d'autres mondes et occultes."
+                    },
+                    "taxonomy": {
+                        "name": "Humain",
+                        "description": "<p>Trouvé parmi d'innombrables conditions et de lieux éloignés, vous êtes né humain toujours adaptable. Grand ou petit, mince, musclé ou rond, votre apparence physique peut être variée. Les humains sont surtout connus pour leur prédisposition génétique à la détermination, avec des traditions qui poussent à une volonté obstinée de survivre.</p>"
                     }
                 },
                 "Skeletal Archer": {
@@ -325,6 +365,14 @@
                             "name": "Armes de projectile : Entraînement",
                             "description": "<p>Vous avez une éducation de base en archerie et autres armes à projectile. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes des catégories <strong>Projectile</strong>.</p>"
                         }
+                    },
+                    "archetype": {
+                        "name": "Archer",
+                        "description": "Combattants à distance entraînés à l'utilisation des arcs."
+                    },
+                    "taxonomy": {
+                        "name": "Squelette",
+                        "description": "<p>Créatures non-mortes faites d'os et de tendons.</p>"
                     }
                 },
                 "Skeletal Spearman": {
@@ -364,6 +412,14 @@
                             "name": "Armes légères : Entraînement",
                             "description": "<p>Vous avez une éducation de base dans l'utilisation de l'armement de finesse. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes des catégories <strong>Légère</strong> et <strong>Équilibrée</strong>.</p>"
                         }
+                    },
+                    "archetype": {
+                        "name": "Guerrier",
+                        "description": "Combattants de mêlée endurcis experts dans le maniement d'armes à une main, du bouclier et de l'armure lourde."
+                    },
+                    "taxonomy": {
+                        "name": "Squelette",
+                        "description": "<p>Créatures non-mortes faites d'os et de tendons.</p>"
                     }
                 },
                 "Koy Rent": {
@@ -407,7 +463,7 @@
                         },
                         "Blood Frenzy": {
                             "name": "Frénésie sanguinaire",
-                            "description": "<p>Votre soif de bataille vous pousse à des exploits d'action accrue. Lorsque vous réussissez un <strong>Coup Critique</strong> infligeant des dégâts à la Santé, vous gagnez immédiatement +1 Action. Ce bénéfice ne peut se produire qu'une fois par Round.</p>"
+                            "description": "<p>Votre soif de bataille vous pousse à des exploits d'action accrue. Lorsque vous réussissez un <strong>Coup critique</strong> infligeant des dégâts à la Santé, vous gagnez immédiatement +1 Action. Ce bénéfice ne peut se produire qu'une fois par Round.</p>"
                         },
                         "Lesser Regeneration": {
                             "name": "Régénération mineure",
@@ -415,7 +471,7 @@
                         },
                         "Bloodletter": {
                             "name": "Écorcheur",
-                            "description": "<p>Votre précision avec les armes infligeant des dégâts Tranchants ou Perforants peut causer la condition Ensanglantée sur les Coups Critiques infligeant des dégâts à la Santé.</p><p>L'effet Ensanglantée dure 1 round et inflige votre score de Dextérité en dégâts supplémentaires à la Santé.</p>"
+                            "description": "<p>Votre précision avec les armes infligeant des dégâts Tranchants ou Perforants peut causer la condition Ensanglantée sur les Coups critiques infligeant des dégâts à la Santé.</p><p>L'effet Ensanglantée dure 1 round et inflige votre score de Dextérité en dégâts supplémentaires à la Santé.</p>"
                         },
                         "Ferocious Leap": {
                             "name": "Bond féroce",
@@ -473,7 +529,7 @@
                             "actions": {
                                 "pouncingStrike": {
                                     "name": "Frappe bondissante",
-                                    "description": "<p>Cette attaque peut être utilisée après un <strong>Déplacement</strong> qui rapproche la @ref[actor.name]{créature} d'au moins 10 pieds de sa cible. Si la créature était au-dessus de la cible, cette attaque gagne <strong>+1 Faveur</strong> par tranche de 10 pieds de diminution d'élévation dans ce mouvement.</p><p>Si cette attaque est un <strong>Coup Critique</strong>, la cible de l'attaque est immédiatement mise @Condition[prone].</p>",
+                                    "description": "<p>Cette attaque peut être utilisée après un <strong>Déplacement</strong> qui rapproche la @ref[actor.name]{créature} d'au moins 10 pieds de sa cible. Si la créature était au-dessus de la cible, cette attaque gagne <strong>+1 Faveur</strong> par tranche de 10 pieds de diminution d'élévation dans ce mouvement.</p><p>Si cette attaque est un <strong>Coup critique</strong>, la cible de l'attaque est immédiatement mise @Condition[prone].</p>",
                                     "effects": [
                                         {
                                             "name": "Frappe bondissante"
@@ -482,11 +538,19 @@
                                 }
                             }
                         }
+                    },
+                    "archetype": {
+                        "name": "Berserker",
+                        "description": "Un guerrier alimenté par la rage qui préfère les attaques à deux mains utilisant des armes Lourdes."
+                    },
+                    "taxonomy": {
+                        "name": "Loup-garou",
+                        "description": "<p>Métamorphes lycanthropes qui marchent comme des hommes mais prennent une forme de loup.</p>"
                     }
                 },
                 "Harbinger of Disease": {
-                    "name": "Précurseur de la Maladie",
-                    "tokenName": "Précurseur de la Maladie",
+                    "name": "Annonciateur de la Maladie",
+                    "tokenName": "Annonciateur de la Maladie",
                     "items": {
                         "Pestilent Tongue": {
                             "name": "Langue pestilentielle"
@@ -502,7 +566,7 @@
                         },
                         "Pestilent Lash": {
                             "name": "Coup de fouet pestilentiel",
-                            "description": "Le Précurseur frappe en un large arc de cercle avec une langue venimeuse et infectée.",
+                            "description": "L'Annonciateur frappe en un large arc de cercle avec une langue venimeuse et infectée.",
                             "actions": {
                                 "pestilentLash": {
                                     "name": "Coup de fouet pestilentiel",
@@ -541,11 +605,19 @@
                                 }
                             }
                         }
+                    },
+                    "archetype": {
+                        "name": "Porteur de peste",
+                        "description": "<p>Porteurs de pestilence et de décomposition.</p>"
+                    },
+                    "taxonomy": {
+                        "name": "Annonciateur",
+                        "description": "<p>Êtres d'un autre monde venant du vide au-delà.</p>"
                     }
                 },
                 "Harbinger of Fear": {
-                    "name": "Précurseur de la Peur",
-                    "tokenName": "Précurseur de la Peur",
+                    "name": "Annonciateur de la Peur",
+                    "tokenName": "Annonciateur de la Peur",
                     "items": {
                         "Psychic Maw": {
                             "name": "Gueule psychique"
@@ -558,7 +630,7 @@
                         },
                         "Eldritch Emanation": {
                             "name": "Émanation occulte",
-                            "description": "<p>Le Précurseur de la Peur projette un cône de désespoir malveillant de sa gueule ouverte.</p>",
+                            "description": "<p>L'Annonciateur de la Peur projette un cône de désespoir malveillant de sa gueule ouverte.</p>",
                             "actions": {
                                 "eldritchEmanation": {
                                     "name": "Émanation occulte",
@@ -573,7 +645,7 @@
                         },
                         "Ethereal Warp": {
                             "name": "Distorsion éthérée",
-                            "description": "Le Précurseur disparaît de la réalité, devenant incorporel pendant quelques instants avant de réapparaître à un endroit situé jusqu'à 30 pieds de distance.",
+                            "description": "L'Annonciateur disparaît de la réalité, devenant incorporel pendant quelques instants avant de réapparaître à un endroit situé jusqu'à 30 pieds de distance.",
                             "actions": {
                                 "etherealWarp": {
                                     "name": "Distorsion éthérée",
@@ -581,11 +653,19 @@
                                 }
                             }
                         }
+                    },
+                    "archetype": {
+                        "name": "Effrayeur",
+                        "description": "<p>Porteurs de terreur et de désespoir.</p>"
+                    },
+                    "taxonomy": {
+                        "name": "Annonciateur",
+                        "description": "<p>Êtres d'un autre monde venant du vide au-delà.</p>"
                     }
                 },
                 "Harbinger of Madness": {
-                    "name": "Précurseur de la Folie",
-                    "tokenName": "Précurseur de la Folie",
+                    "name": "Annonciateur de la Folie",
+                    "tokenName": "Annonciateur de la Folie",
                     "items": {
                         "Inchoate Tendrils": {
                             "name": "Tentacules embryonnaires"
@@ -598,7 +678,7 @@
                         },
                         "Devour Thoughts": {
                             "name": "Dévorer les pensées",
-                            "description": "Le Précurseur de la Folie se concentre sur une seule cible, s'y agrippant avec de multiples tentacules.",
+                            "description": "L'Annonciateur de la Folie se concentre sur une seule cible, s'y agrippant avec de multiples tentacules.",
                             "actions": {
                                 "devourThoughts": {
                                     "name": "Dévorer les pensées",
@@ -626,6 +706,14 @@
                                 }
                             }
                         }
+                    },
+                    "archetype": {
+                        "name": "Manipulateur mental",
+                        "description": "Une créature imposante qui détruit la santé mentale de ceux qui la regardent."
+                    },
+                    "taxonomy": {
+                        "name": "Annonciateur",
+                        "description": "<p>Êtres d'un autre monde venant du vide au-delà.</p>"
                     }
                 },
                 "Zarajah": {
@@ -675,7 +763,7 @@
                         },
                         "Pyromancer": {
                             "name": "Pyromancien",
-                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Flamme. Les sorts utilisant cette Rune causent la condition @Condition[burning] sur les Coups Critiques.</p><p>L'effet Enflammé dure <strong>1 Round</strong> et inflige votre score d'<strong>Intellect</strong> comme dégâts de <strong>Feu</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
+                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Flamme. Les sorts utilisant cette Rune causent la condition @Condition[burning] sur les Coups critiques.</p><p>L'effet Enflammé dure <strong>1 Round</strong> et inflige votre score d'<strong>Intellect</strong> comme dégâts de <strong>Feu</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
                         },
                         "Gesture: Pulse": {
                             "name": "Signe : Onde",
@@ -703,7 +791,7 @@
                         },
                         "Lightbringer": {
                             "name": "Porteur de lumière",
-                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Illumination. Les sorts utilisant cette Rune causent la condition @Condition[irradiated] sur les Coups Critiques.</p><p>L'effet Irradié dure <strong>1 Round</strong> et inflige votre score de <strong>Présence</strong> comme dégâts <strong>Radiants</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
+                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Illumination. Les sorts utilisant cette Rune causent la condition @Condition[irradiated] sur les Coups critiques.</p><p>L'effet Irradié dure <strong>1 Round</strong> et inflige votre score de <strong>Présence</strong> comme dégâts <strong>Radiants</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
                         },
                         "Awareness Novice": {
                             "name": "Vigilance : Novice",
@@ -772,6 +860,17 @@
                                 }
                             }
                         }
+                    },
+                    "ancestry": {
+                        "name": "Diable",
+                        "description": "<p>Vous êtes né avec une influence magique inattendue sur votre création. Votre apparence physique montre des signes révélateurs que les superstitieux associent aux êtres planaires - chair cramoisie, ailes inefficaces ou cornes, yeux reptiliens. Votre aversion pour la lumière et votre résistance surnaturelle au feu ne font pas grand-chose pour dissuader les gens de penser que vous êtes un véritable diable.</p>"
+                    },
+                    "background": {
+                        "name": "Artiste",
+                        "description": "Vous étiez un animateur itinérant. Vous avez appris à être à l'aise lors de diverses manifestations sociales, à jouer pour votre public, embellissant les détails de votre représentation pour évoquer des réponses émotionnelles particulières."
+                    },
+                    "biography": {
+                        "public": "<p>Zarajah est une diablotine fougueuse qui affectionne particulièrement la pyromancie et qui tisse des sorts dangereux et protecteurs pour contrôler le champ de bataille. Zarajah aspire à obtenir le Talent signature <strong>Mage de guerre</strong>.</p>"
                     }
                 },
                 "Agnath": {
@@ -900,12 +999,23 @@
                         },
                         "Pyromancer": {
                             "name": "Pyromancien",
-                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Flamme. Les sorts utilisant cette Rune causent la condition @Condition[burning] sur les Coups Critiques.</p><p>L'effet Enflammé dure <strong>1 Round</strong> et inflige votre score d'<strong>Intellect</strong> comme dégâts de <strong>Feu</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
+                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Flamme. Les sorts utilisant cette Rune causent la condition @Condition[burning] sur les Coups critiques.</p><p>L'effet Enflammé dure <strong>1 Round</strong> et inflige votre score d'<strong>Intellect</strong> comme dégâts de <strong>Feu</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
                         },
                         "Gesture: Blast": {
                             "name": "Signe : Explosion",
                             "description": "<p>Vous projetez la puissance arcanique d'une Rune en une intense explosion d'énergie vers un point proche que vous pouvez voir.</p><p>Le signe d'Explosion évolue avec l'<strong>Intellect</strong> et produit une explosion de 6 pieds de rayon centrée sur un point à moins de 60 pieds du lanceur. L'explosion inflige <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>5 Actions</strong> et <strong>2 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent est actuellement placé au <strong>palier 4</strong>. Il ne sera accessible qu'à un niveau supérieur (probablement le Niveau 6). Il est actuellement disponible en avant-première pour les tests.</p>"
                         }
+                    },
+                    "ancestry": {
+                        "name": "Orque",
+                        "description": "<p>Votre naissance a été marquée par les étoiles et les traditions d'un peuple fier et endurant. Votre corps grand et tonique ainsi que votre propension naturelle à la robustesse ont des origines venant d'un peuple exposé à la lutte incessante d'un climat nordique rigoureux. Votre peuple est avant tout connu pour sa force et sa résilience.</p>"
+                    },
+                    "background": {
+                        "name": "Soldat",
+                        "description": "<p>Vous étiez un simple soldat d'une organisation militaire de quelque nature que ce soit. La discipline a fait de vous un survivant et a souligné l'importance de démontrer force et domination sur les autres, et des années passées à cheval ou à marcher vous ont appris à gérer toutes sortes de terrains.</p>"
+                    },
+                    "biography": {
+                        "public": "<p>Agnath est un nécromancien maniant l'épée qui imprègne ses coups de la magie de la Mort. Agnath aspire à obtenir le Talent signature <strong>Sorcelame</strong>.</p>"
                     }
                 },
                 "Belladonna": {
@@ -983,7 +1093,7 @@
                         },
                         "Bloodletter": {
                             "name": "Écorcheur",
-                            "description": "<p>Votre précision avec les armes infligeant des dégâts Tranchants ou Perforants peut causer la condition Ensanglantée sur les Coups Critiques infligeant des dégâts à la Santé.</p><p>L'effet Ensanglantée dure 1 round et inflige votre score de Dextérité en dégâts supplémentaires à la Santé.</p>"
+                            "description": "<p>Votre précision avec les armes infligeant des dégâts Tranchants ou Perforants peut causer la condition Ensanglantée sur les Coups critiques infligeant des dégâts à la Santé.</p><p>L'effet Ensanglantée dure 1 round et inflige votre score de Dextérité en dégâts supplémentaires à la Santé.</p>"
                         },
                         "Counter Evade": {
                             "name": "Contre-Esquive",
@@ -1132,7 +1242,7 @@
                             "actions": {
                                 "interruptingThrow": {
                                     "name": "Lancer interruptif",
-                                    "description": "<p>Lorsqu'un ennemi que vous pouvez voir lance un <strong>Sort</strong> coûtant au moins <strong>3 Actions</strong>, vous pouvez réaliser une <strong>Réaction</strong> pour effectuer une attaque d'arme de <strong>Lancer</strong> contre le lanceur. Si votre attaque est un <strong>Coup Critique</strong>, le sort est interrompu et sa magie perdue.</p>",
+                                    "description": "<p>Lorsqu'un ennemi que vous pouvez voir lance un <strong>Sort</strong> coûtant au moins <strong>3 Actions</strong>, vous pouvez réaliser une <strong>Réaction</strong> pour effectuer une attaque d'arme de <strong>Lancer</strong> contre le lanceur. Si votre attaque est un <strong>Coup critique</strong>, le sort est interrompu et sa magie perdue.</p>",
                                     "condition": "Un ennemi que vous pouvez voir lance un sort coûtant au moins 3 Actions."
                                 }
                             }
@@ -1145,6 +1255,17 @@
                             "name": "Vigilance : Novice",
                             "description": "<p>Vous avez été formé aux bases de la vigilance situationnelle, et êtes capable de remarquer des détails importants de votre environnement. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Vigilance</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez vérifier les sorties en entrant dans une pièce, et comment chercher des armes dissimulées, des pièges cachés, et autres menaces. Vous savez repérer quand vous êtes suivi et comment chercher les cachettes communes.</p>"
                         }
+                    },
+                    "ancestry": {
+                        "name": "Humain",
+                        "description": "<p>Trouvé parmi d'innombrables conditions et de lieux éloignés, vous êtes né humain toujours adaptable. Grand ou petit, mince, musclé ou rond, votre apparence physique peut être variée. Les humains sont surtout connus pour leur prédisposition génétique à la détermination, avec des traditions qui poussent à une volonté obstinée de survivre.</p>"
+                    },
+                    "background": {
+                        "name": "Gamin des rues",
+                        "description": "<p>Peu de gens apprennent à survivre comme vous l'avez fait. Votre éducation à la méfiance a été rude. Vous avez appris à surveiller les autres pour détecter les signes révélateurs de danger ou de déloyauté, à éviter l'attention des autres, fouillant les rues de quelque expansion urbaine pour trouver des restes de nourriture.</p>"
+                    },
+                    "biography": {
+                        "public": "<p>Belladonna est une voleuse rusée qui combat à l'aide de deux dagues, infligeant une rapide succession de coups à ses adversaires imprudents. Belladonna aspire à obtenir le Talent signature <strong>Empoisonneur</strong>.</p>"
                     }
                 },
                 "Duurath": {
@@ -1359,6 +1480,17 @@
                                 "public": "<p>Une ceinture porte-outils optimisée, sous forme de ceinture utilitaire, de bandoulière ou d'un ensemble de poches cousues dans votre équipement.</p><p>Cet objet procure une nombre d'emplacements supplémentaires dépendant de son niveau de qualité :</p><ul><li><p><strong>Commune</strong> : +1 Emplacement de ceinture porte-outils</p></li><li><p><strong>Raffinée</strong> : +2 Emplacements de ceinture porte-outils</p></li><li><p><strong>Supérieure</strong> : +3 Emplacements de ceinture porte-outils</p></li><li><p><strong>Chef-d’œuvre</strong> : +4 Emplacements de ceinture porte-outils</p></li></ul>"
                             }
                         }
+                    },
+                    "ancestry": {
+                        "name": "Nain",
+                        "description": "<p>Comme vos parents avant vous, vous êtes né avec la fortitude durable des Nains. Votre stature robuste et votre apparence physique costaude sont les marques d'un peuple né de la terre et de la pierre. Un héritage de résilience physique vous est légué, car dans votre poitrine bat un cœur de pierre.</p>"
+                    },
+                    "background": {
+                        "name": "Connétable",
+                        "description": "<p>Vous faisiez partie d'une organisation de maintien de l'ordre. Vous avez appris à rester vigilant envers votre environnement, à travailler au sein de structures sociales complexes et à affecter une présence imposante.</p>"
+                    },
+                    "biography": {
+                        "public": "<p>Duurath est un robuste défenseur nain qui utilise un marteau et un bouclier pour protéger ses alliés et punir ses ennemis en sapant leur moral. Duurath aspire à obtenir le Talent signature <strong>Gardien des Runes</strong>.</p>"
                     }
                 },
                 "Eliorwen": {
@@ -1508,7 +1640,7 @@
                         },
                         "Surgeweaver": {
                             "name": "Tissefoudre",
-                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Foudre. Les sorts utilisant cette Rune causent la condition @Condition[shocked] sur les Coups Critiques.</p><p>L'effet Électrocuté dure <strong>1 Round</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts de <strong>Foudre</strong> au <strong>Moral</strong>, et applique la condition @Condition[staggered].</p>"
+                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Foudre. Les sorts utilisant cette Rune causent la condition @Condition[shocked] sur les Coups critiques.</p><p>L'effet Électrocuté dure <strong>1 Round</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts de <strong>Foudre</strong> au <strong>Moral</strong>, et applique la condition @Condition[staggered].</p>"
                         },
                         "Awareness Novice": {
                             "name": "Vigilance : Novice",
@@ -1535,6 +1667,17 @@
                                 }
                             }
                         }
+                    },
+                    "ancestry": {
+                        "name": "Elfe",
+                        "description": "<p>Gracieux dans le mouvement et rapide dans la pensée, vous êtes né elfe à la longue vie. Votre carrure menue et agile ainsi que vos traits sculptés sont les attributs hérités d'un peuple pour qui l'élégance est un mode de vie. Votre prédisposition à la réflexion rapide et au mouvement précis sont les résultats d'une évolution de centaines d'années de tradition.</p>"
+                    },
+                    "background": {
+                        "name": "Vagabond",
+                        "description": "<p>Vous avez vécu une vie itinérante. Vous n'appréciez rien de plus que la sensation d'être sur une charrette ou une monture, regardant quelque ciel étranger passer lentement au-dessus de vous. Vous avez appris à prêter une attention particulière à votre environnement et à ses besoins, à soigner les créatures sur lesquelles vous comptez, et à vous débrouiller avec ce que vous pouvez trouver.</p>"
+                    },
+                    "biography": {
+                        "public": "<p>Eliorwen est une combattante agile qui utilise le tir à l'arc et la magie pour neutraliser et éliminer ses ennemis à grande distance. Eliorwen aspire à obtenir le Talent signature <strong>Archer arcanique</strong>.</p>"
                     }
                 },
                 "Fizzit": {
@@ -1584,7 +1727,7 @@
                         },
                         "Intuit Weakness": {
                             "name": "Intuition de faiblesse",
-                            "description": "<p>Vous calmez votre esprit et étudiez la physiologie de votre ennemi, cherchant une vulnérabilité dans ses défenses.</p><p>Effectuez un <strong>Test de Connaissances</strong> utilisant une Compétence appropriée choisie par le Maître du jeu. En cas de succès, vous apprenez le type de Dégâts envers lequel la créature a la plus grande vulnérabilité, le cas échéant. Sur une Réussite Critique, vous apprenez les deux types de Dégâts qui ont la plus grande vulnérabilité.</p>",
+                            "description": "<p>Vous calmez votre esprit et étudiez la physiologie de votre ennemi, cherchant une vulnérabilité dans ses défenses.</p><p>Effectuez un <strong>Test de connaissances</strong> utilisant une Compétence appropriée choisie par le Maître du jeu. En cas de succès, vous apprenez le type de Dégâts envers lequel la créature a la plus grande vulnérabilité, le cas échéant. Sur une Réussite critique, vous apprenez les deux types de Dégâts qui ont la plus grande vulnérabilité.</p>",
                             "actions": {
                                 "intuitWeakness": {
                                     "name": "Intuition de faiblesse",
@@ -1602,7 +1745,7 @@
                         },
                         "Rimecaller": {
                             "name": "Héraut du Givre",
-                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Givre. Les sorts utilisant cette Rune causent la condition @Condition[freezing] sur les Coups Critiques.</p><p>L'effet Gelé dure <strong>1 Round</strong>, inflige la moitié de votre score de <strong>Sagesse</strong> comme dégâts de <strong>Froid</strong> à la <strong>Santé</strong>, et applique la condition @Condition[slowed].</p>"
+                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Givre. Les sorts utilisant cette Rune causent la condition @Condition[freezing] sur les Coups critiques.</p><p>L'effet Gelé dure <strong>1 Round</strong>, inflige la moitié de votre score de <strong>Sagesse</strong> comme dégâts de <strong>Froid</strong> à la <strong>Santé</strong>, et applique la condition @Condition[slowed].</p>"
                         },
                         "Recognize Spellcraft": {
                             "name": "Reconnaître la Sorcellerie",
@@ -1668,13 +1811,24 @@
                             }
                         },
                         "Surgeweaver": {
-                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Foudre. Les sorts utilisant cette Rune causent la condition @Condition[shocked] sur les Coups Critiques.</p><p>L'effet Électrocuté dure <strong>1 Round</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts de <strong>Foudre</strong> au <strong>Moral</strong>, et applique la condition @Condition[staggered].</p>",
+                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Foudre. Les sorts utilisant cette Rune causent la condition @Condition[shocked] sur les Coups critiques.</p><p>L'effet Électrocuté dure <strong>1 Round</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts de <strong>Foudre</strong> au <strong>Moral</strong>, et applique la condition @Condition[staggered].</p>",
                             "name": "Tissefoudre"
                         },
                         "Mesmer": {
                             "name": "Envoûteur",
-                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Illusion. Les sorts utilisant cette Rune causent la condition @Condition[confused] sur les Coups Critiques.</p><p>L'effet Confus dure <strong>1 Round</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts <strong>Psychiques</strong> au <strong>Moral</strong>, et applique la condition @Condition[disoriented].</p>"
+                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Illusion. Les sorts utilisant cette Rune causent la condition @Condition[confused] sur les Coups critiques.</p><p>L'effet Confus dure <strong>1 Round</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts <strong>Psychiques</strong> au <strong>Moral</strong>, et applique la condition @Condition[disoriented].</p>"
                         }
+                    },
+                    "ancestry": {
+                        "name": "Gnome",
+                        "description": "<p>Votre naissance fut une célébration exubérante. Votre petit corps et vos traits délicats sont associés à une propension presque surnaturelle à la découverte. Les traditions de votre peuple embrassent une soif de la vie ainsi que l'importance de la réflexion rapide et de l'action rapide.</p>"
+                    },
+                    "background": {
+                        "name": "Érudit",
+                        "description": "<p>Vous avez toujours été le plus à l'aise dans une bibliothèque ou une salle de classe. Vos études se sont concentrées sur la résolution des mystères du monde qui vous entoure, et il y a peu de sujets théoriques avec lesquels vous n'êtes pas déjà familier.</p>"
+                    },
+                    "biography": {
+                        "public": "<p>Fizzit est un habile lanceur de sorts et érudit qui jette des sorts à distance et cherche à exploiter les forces élémentaires pour les mettre à son service. Fizzit aspire à obtenir le Talent signature <strong>Conjurateur</strong>.</p>"
                     }
                 },
                 "Kagura": {
@@ -1754,7 +1908,7 @@
                         },
                         "Dustbinder": {
                             "name": "Géomancien",
-                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Terre. Les sorts utilisant cette Rune causent la condition @Condition[corroding] sur les Coups Critiques.</p><p>L'effet Corrodé dure <strong>3 Rounds</strong> et inflige votre score de <strong>Sagesse</strong> en dégâts d'<strong>Acide</strong> à la <strong>Santé</strong> chaque Round.</p>"
+                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Terre. Les sorts utilisant cette Rune causent la condition @Condition[corroding] sur les Coups critiques.</p><p>L'effet Corrodé dure <strong>3 Rounds</strong> et inflige votre score de <strong>Sagesse</strong> en dégâts d'<strong>Acide</strong> à la <strong>Santé</strong> chaque Round.</p>"
                         },
                         "Runewarden": {
                             "name": "Gardien des Runes",
@@ -1806,11 +1960,11 @@
                         },
                         "Inspirator": {
                             "name": "Inspirateur",
-                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Âme. Les sorts utilisant cette Rune causent la condition @Condition[inspired] sur les Coups Critiques.</p><p>L'effet Inspiré dure <strong>1 Round</strong> et offre votre score de <strong>Présence</strong> comme <strong>Restauration</strong> additionnelle au <strong>Moral</strong>.</p>"
+                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Âme. Les sorts utilisant cette Rune causent la condition @Condition[inspired] sur les Coups critiques.</p><p>L'effet Inspiré dure <strong>1 Round</strong> et offre votre score de <strong>Présence</strong> comme <strong>Restauration</strong> additionnelle au <strong>Moral</strong>.</p>"
                         },
                         "Mender": {
                             "name": "Vivificateur",
-                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Vie. Les sorts utilisant cette Rune causent la condition @Condition[mending] sur les Coups Critiques.</p><p>L'effet Guérison dure <strong>1 Round</strong> et applique votre score de <strong>Sagesse</strong> comme <strong>Restauration</strong> additionnelle à la <strong>Santé</strong>.</p>"
+                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Vie. Les sorts utilisant cette Rune causent la condition @Condition[mending] sur les Coups critiques.</p><p>L'effet Guérison dure <strong>1 Round</strong> et applique votre score de <strong>Sagesse</strong> comme <strong>Restauration</strong> additionnelle à la <strong>Santé</strong>.</p>"
                         },
                         "Arcana Novice": {
                             "name": "Arcanes : Novice",
@@ -1824,6 +1978,17 @@
                             "name": "Œil du cyclone",
                             "description": "<p>Après avoir Retardé votre Tour, gagnez +2 Faveurs sur toute Frappe ou Attaque magique contre un ennemi que vous avez laissé agir avant vous ce Round.</p><p>TODO : Nécessite une automatisation. Pour l'instant, appliquez les faveurs manuellement.</p>"
                         }
+                    },
+                    "ancestry": {
+                        "name": "Géant",
+                        "description": "<p>Des forces élémentaires ont présidé à votre naissance, vous insufflant une vigueur surnaturelle. Votre grande stature et votre constitution musculaire conduisent souvent les autres à croire que vous n'êtes qu'une masse de muscles irréfléchie, mais votre peuple est surtout connu pour sa résilience physique et le puits profond de ses connaissances. Vous avez hérité de la force des montagnes.</p>"
+                    },
+                    "background": {
+                        "name": "Médecin",
+                        "description": "<p>Vous étiez un guérisseur ou un professionnel de la santé de diverses sortes. Vous avez passé une partie de votre vie à apprendre la science médicale, et vous avez une propension à remarquer la maladie chez les autres. Vous savez comment traiter les blessures, les maladies et comment identifier leurs sources.</p>"
+                    },
+                    "biography": {
+                        "public": "<p>Kagura est une guérisseuse infatigable qui soutient la santé et le moral de ses alliés au cœur de la frénésie des combats. Kagura aspire à obtenir le Talent signature <strong>Guérisseur</strong>.</p>"
                     }
                 },
                 "Ulfen": {
@@ -1954,7 +2119,7 @@
                         },
                         "Blood Frenzy": {
                             "name": "Frénésie sanguinaire",
-                            "description": "<p>Votre soif de bataille vous pousse à des exploits d'action accrue. Lorsque vous réussissez un <strong>Coup Critique</strong> infligeant des dégâts à la Santé, vous gagnez immédiatement +1 Action. Ce bénéfice ne peut se produire qu'une fois par Round.</p>"
+                            "description": "<p>Votre soif de bataille vous pousse à des exploits d'action accrue. Lorsque vous réussissez un <strong>Coup critique</strong> infligeant des dégâts à la Santé, vous gagnez immédiatement +1 Action. Ce bénéfice ne peut se produire qu'une fois par Round.</p>"
                         },
                         "Executioner's Strike": {
                             "name": "Frappe du bourreau",
@@ -1974,7 +2139,7 @@
                         },
                         "Unshakeable Stance": {
                             "name": "Posture inébranlable",
-                            "description": "Vous ne pouvez pas être involontairement Déplacé ou mis À terre par une action qui n'est pas une Réussite Critique lancée par un ennemi ou un Échec Critique lancé par vous-même."
+                            "description": "Vous ne pouvez pas être involontairement Déplacé ou mis À terre par une action qui n'est pas une Réussite critique lancée par un ennemi ou un Échec critique lancé par vous-même."
                         },
                         "Ruthless Momentum": {
                             "name": "Élan impitoyable",
@@ -2023,6 +2188,17 @@
                                 }
                             }
                         }
+                    },
+                    "ancestry": {
+                        "name": "Humain",
+                        "description": "<p>Trouvé parmi d'innombrables conditions et de lieux éloignés, vous êtes né humain toujours adaptable. Grand ou petit, mince, musclé ou rond, votre apparence physique peut être variée. Les humains sont surtout connus pour leur prédisposition génétique à la détermination, avec des traditions qui poussent à une volonté obstinée de survivre.</p>"
+                    },
+                    "background": {
+                        "name": "Connétable",
+                        "description": "<p>Vous faisiez partie d'une organisation de maintien de l'ordre. Vous avez appris à rester vigilant envers votre environnement, à travailler au sein de structures sociales complexes et à affecter une présence imposante.</p>"
+                    },
+                    "biography": {
+                        "public": "<p>Ulfen est un guerrier féroce qui combat à l'aide d'une grande hache à deux mains, privilégiant les coups puissants qui infligent des dégâts importants ou touchent plusieurs cibles. Ulfen aspire à obtenir le Talent signature <strong>Berserker</strong>.</p>"
                     }
                 }
             },
@@ -2060,11 +2236,11 @@
                         },
                         "Day Four - Koy Rent": {
                             "name": "Jour Quatre - Koy Rent",
-                            "text": "<p>Dans ce quatrième défi, 4 héros de niveau 4 affrontent la menace lycanthropique Koy Rent.</p><ul><li><p>@UUID[Actor.3sGYsiKtgYLLkadw]{Koy Rent} (Niveau 7 Chef)</p></li></ul><p><strong>Menace des Protagonistes</strong> : 4 × 4 = 16</p><p><strong>Menace des Adversaires</strong> : 14</p><p><strong>Difficulté de la Rencontre</strong> : Difficile</p><h2 class=\"divider\">Introduction</h2><p>Pour ce défi, le groupe se rassemble du côté est de l'Arène.</p><blockquote><p>\"Le match d'aujourd'hui est spécial - avec le retour d'un champion retraité pour une exhibition d'un jour unique ! Les amis, vous le connaissez, vous l'aimez, il est ici, il est là, il est PAR-TOUT !--- Koy Rent ! Rent a quitté l'arène après une grave blessure, acclamé à sa sortie du champ de victoire par une foule compréhensive. Avec son retour dans les jeux, nous devons nous demander : se hissera-t-il au rang de champion ou tombera-t-il face à ces nouveaux concurrents ?\"</p></blockquote><p>Koy Rent entre dans l'arène par l'entrée Ouest et attaque immédiatement !</p><h2 class=\"divider\">Tactiques</h2><p>Koy Rent est un combattant formidable. En tant que Chef de Niveau 7 avec des réserves significatives de Santé et de Moral, le groupe aura peu d'espoir de résister à son assaut en combat de mêlée direct.</p><p>Rent utilisera <strong>Hurlement Féroce </strong>pour infliger la condition <strong>Paniqué </strong>et se déplacera rapidement pour réduire la distance à portée de mêlée avec autant d'ennemis que possible. Rent utilisera <strong>Déluge de coups</strong> lorsqu'il fera face à une cible unique pour la soumettre rapidement avec un assaut implacable d'attaques de griffes, infligeant des dégâts supplémentaires <strong>Ensanglantés</strong> grâce au talent <strong>Écorcheur</strong>.</p><p>Le groupe ne peut espérer résister à cet assaut en combat de mêlée et devra réfléchir soigneusement à la manière de ralentir Koy Rent.</p><h2 class=\"divider\">Avancement</h2><p>Le combat se termine lorsque Koy Rent est vaincu. La foule est satisfaite de la performance du groupe, et le Commentateur annonce que le groupe reviendra demain pour un autre match.</p><p>Le groupe a la possibilité de se reposer, d'utiliser l'action de <strong>Récupération</strong>, et de gagner un niveau ; passant au Niveau 5. Tous les héros peuvent également augmenter la qualité de leur Armure équipée à <strong>Raffinée</strong>. Le groupe revient le jour suivant pour affronter @UUID[.sISxZXCLNvpjkY02]{Jour Cinq - Précurseurs du Vide}.</p>"
+                            "text": "<p>Dans ce quatrième défi, 4 héros de niveau 4 affrontent la menace lycanthropique Koy Rent.</p><ul><li><p>@UUID[Actor.3sGYsiKtgYLLkadw]{Koy Rent} (Niveau 7 Chef)</p></li></ul><p><strong>Menace des Protagonistes</strong> : 4 × 4 = 16</p><p><strong>Menace des Adversaires</strong> : 14</p><p><strong>Difficulté de la Rencontre</strong> : Difficile</p><h2 class=\"divider\">Introduction</h2><p>Pour ce défi, le groupe se rassemble du côté est de l'Arène.</p><blockquote><p>\"Le match d'aujourd'hui est spécial - avec le retour d'un champion retraité pour une exhibition d'un jour unique ! Les amis, vous le connaissez, vous l'aimez, il est ici, il est là, il est PAR-TOUT !--- Koy Rent ! Rent a quitté l'arène après une grave blessure, acclamé à sa sortie du champ de victoire par une foule compréhensive. Avec son retour dans les jeux, nous devons nous demander : se hissera-t-il au rang de champion ou tombera-t-il face à ces nouveaux concurrents ?\"</p></blockquote><p>Koy Rent entre dans l'arène par l'entrée Ouest et attaque immédiatement !</p><h2 class=\"divider\">Tactiques</h2><p>Koy Rent est un combattant formidable. En tant que Chef de Niveau 7 avec des réserves significatives de Santé et de Moral, le groupe aura peu d'espoir de résister à son assaut en combat de mêlée direct.</p><p>Rent utilisera <strong>Hurlement Féroce </strong>pour infliger la condition <strong>Paniqué </strong>et se déplacera rapidement pour réduire la distance à portée de mêlée avec autant d'ennemis que possible. Rent utilisera <strong>Déluge de coups</strong> lorsqu'il fera face à une cible unique pour la soumettre rapidement avec un assaut implacable d'attaques de griffes, infligeant des dégâts supplémentaires <strong>Ensanglantés</strong> grâce au talent <strong>Écorcheur</strong>.</p><p>Le groupe ne peut espérer résister à cet assaut en combat de mêlée et devra réfléchir soigneusement à la manière de ralentir Koy Rent.</p><h2 class=\"divider\">Avancement</h2><p>Le combat se termine lorsque Koy Rent est vaincu. La foule est satisfaite de la performance du groupe, et le Commentateur annonce que le groupe reviendra demain pour un autre match.</p><p>Le groupe a la possibilité de se reposer, d'utiliser l'action de <strong>Récupération</strong>, et de gagner un niveau ; passant au Niveau 5. Tous les héros peuvent également augmenter la qualité de leur Armure équipée à <strong>Raffinée</strong>. Le groupe revient le jour suivant pour affronter @UUID[.sISxZXCLNvpjkY02]{Jour Cinq - Annonciateurs du Vide}.</p>"
                         },
                         "Day Five - Void Harbingers": {
-                            "name": "Jour Cinq - Précurseurs du Vide",
-                            "text": "<p>Dans ce défi, 4 héros de Niveau 5 affrontent un trio de Précurseurs du Vide :</p><ul><li><p>@UUID[Actor.YVvIKp7fUIduZchE]{Précurseur de la Peur} (N4 Élite)</p></li><li><p>@UUID[Actor.TZT7ybsmI8yV5hWg]{Précurseur de la Maladie} (N4 Élite)</p></li><li><p>@UUID[Actor.CTpEm0WlmFAAosBD]{Précurseur de la Folie} (N4 Élite)</p></li></ul><p><strong>Menace des Protagonistes</strong> : 4 × 5 = 20</p><p><strong>Menace des Adversaires</strong> : 3 × 6 = 18</p><p><strong>Difficulté de la Rencontre</strong> : Mortel</p><h2 class=\"divider\">Introduction</h2><blockquote><p>\"Ce soir, nous allons vivre une véritable excitation car les invocateurs ont conjuré un nouveau défi depuis des royaumes au-delà du voile ombral ! Mesdames et messieurs, depuis les recoins les plus sombres et les espaces liminaux au-delà du bord de la réalité, bienvenue dans l'Arène de la Vaillance : les Précurseurs du Vide !\"</p></blockquote><h2 class=\"divider\">Tactiques</h2><p>Le <strong>Précurseur de la Peur</strong> est un prédateur mobile qui se festoie de pensées effrayantes. Il utilisera <strong>Distorsion Éthérée</strong> pour se déplacer librement sur le champ de bataille et <strong>Émanation Occulte</strong> pour infliger la peur à des groupes d'ennemis. Une fois qu'il a isolé un ennemi paniqué, il utilisera <strong>Frappe</strong> avec sa Gueule Psychique.</p><p>Le <strong>Précurseur de la Maladie </strong>est un porteur de pestilence qui inflige la condition <strong>Malade</strong> en utilisant sa capacité <strong>Fouet Pestilentiel</strong>. Ce Héraut possède également une capacité de lancement de sorts qu'il utilisera pour saper davantage la vie et le moral, ciblant des groupes d'ennemis avec le signe <strong>Onde</strong> ou des cibles individuelles utilisant <strong>Influence</strong>.</p><p>Le <strong>Précurseur de la Folie</strong> est un prédateur psychologique qui se rapprochera à portée de mêlée avant d'utiliser la capacité <strong>Fouet Mental </strong>contre des groupes d'ennemis ou <strong>Dévorer les Pensées</strong> contre un ennemi unique.</p><h2 class=\"divider\">Avancement</h2><p>Le combat se termine lorsque les trois Précurseurs ont été vaincus. La foule est satisfaite de la performance du groupe, et le Commentateur annonce que le groupe reviendra demain pour un autre match.</p><p>Le groupe a la possibilité de se reposer, d'utiliser l'action de Récupération, et de gagner un niveau ; passant au Niveau 6. Tous les héros peuvent également augmenter la qualité de leur Armure équipée à <strong>Raffinée</strong>. Le groupe revient le jour suivant pour affronter @UUID[.UxIXSvvJCdqx2Tar]{Jour Six - Match Miroir}.</p>"
+                            "name": "Jour Cinq - Annonciateurs du Vide",
+                            "text": "<p>Dans ce défi, 4 héros de Niveau 5 affrontent un trio d'Annonciateurs du Vide :</p><ul><li><p>@UUID[Actor.YVvIKp7fUIduZchE]{Annonciateur de la Peur} (N4 Élite)</p></li><li><p>@UUID[Actor.TZT7ybsmI8yV5hWg]{Annonciateur de la Maladie} (N4 Élite)</p></li><li><p>@UUID[Actor.CTpEm0WlmFAAosBD]{Annonciateur de la Folie} (N4 Élite)</p></li></ul><p><strong>Menace des Protagonistes</strong> : 4 × 5 = 20</p><p><strong>Menace des Adversaires</strong> : 3 × 6 = 18</p><p><strong>Difficulté de la Rencontre</strong> : Mortel</p><h2 class=\"divider\">Introduction</h2><blockquote><p>\"Ce soir, nous allons vivre une véritable excitation car les invocateurs ont conjuré un nouveau défi depuis des royaumes au-delà du voile ombral ! Mesdames et messieurs, depuis les recoins les plus sombres et les espaces liminaux au-delà du bord de la réalité, bienvenue dans l'Arène de la Vaillance : les Annonciateurs du Vide !\"</p></blockquote><h2 class=\"divider\">Tactiques</h2><p>Le <strong>Annonciateur de la Peur</strong> est un prédateur mobile qui se festoie de pensées effrayantes. Il utilisera <strong>Distorsion Éthérée</strong> pour se déplacer librement sur le champ de bataille et <strong>Émanation Occulte</strong> pour infliger la peur à des groupes d'ennemis. Une fois qu'il a isolé un ennemi paniqué, il utilisera <strong>Frappe</strong> avec sa Gueule Psychique.</p><p>Le <strong>Annonciateur de la Maladie </strong>est un porteur de pestilence qui inflige la condition <strong>Malade</strong> en utilisant sa capacité <strong>Fouet Pestilentiel</strong>. Ce Héraut possède également une capacité de lancement de sorts qu'il utilisera pour saper davantage la vie et le moral, ciblant des groupes d'ennemis avec le signe <strong>Onde</strong> ou des cibles individuelles utilisant <strong>Influence</strong>.</p><p>Le <strong>Annonciateur de la Folie</strong> est un prédateur psychologique qui se rapprochera à portée de mêlée avant d'utiliser la capacité <strong>Fouet Mental </strong>contre des groupes d'ennemis ou <strong>Dévorer les Pensées</strong> contre un ennemi unique.</p><h2 class=\"divider\">Avancement</h2><p>Le combat se termine lorsque les trois Annonciateurs ont été vaincus. La foule est satisfaite de la performance du groupe, et le Commentateur annonce que le groupe reviendra demain pour un autre match.</p><p>Le groupe a la possibilité de se reposer, d'utiliser l'action de Récupération, et de gagner un niveau ; passant au Niveau 6. Tous les héros peuvent également augmenter la qualité de leur Armure équipée à <strong>Raffinée</strong>. Le groupe revient le jour suivant pour affronter @UUID[.UxIXSvvJCdqx2Tar]{Jour Six - Match Miroir}.</p>"
                         },
                         "Day Six - Mirror Match": {
                             "name": "Jour Six - Match Miroir",
@@ -2084,6 +2260,30 @@
             "items": {
                 "path": "items",
                 "converter": "adventure_items_converter"
+            },
+            "actions": {
+                "path": "system.actions",
+                "converter": "actions_converter"
+            },
+            "ancestry": {
+                "path": "system.details.ancestry",
+                "converter": "nested_object_converter"
+            },
+            "background": {
+                "path": "system.details.background",
+                "converter": "nested_object_converter"
+            },
+            "biography": {
+                "path": "system.details.biography",
+                "converter": "nested_object_converter"
+            },
+            "taxonomy": {
+                "converter": "nested_object_converter",
+                "path": "system.details.taxonomy"
+            },
+            "archetype": {
+                "path": "system.details.archetype",
+                "converter": "nested_object_converter"
             }
         }
     }

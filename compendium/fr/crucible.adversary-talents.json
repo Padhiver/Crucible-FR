@@ -32,7 +32,7 @@
             "actions": {
                 "acidSpit": {
                     "name": "Crachat acide",
-                    "description": "<p>La @ref[actor.name]{créature} crache un globe de bile acide sur une cible à moins de 20 pieds.</p><p>Sur un <strong>Coup Critique</strong>, cette attaque cause la condition @Condition[corroding] pendant <strong>3 Tours</strong>.</p>"
+                    "description": "<p>La @ref[actor.name]{créature} crache un globe de bile acide sur une cible à moins de 20 pieds.</p><p>Sur un <strong>Coup critique</strong>, cette attaque cause la condition @Condition[corroding] pendant <strong>3 Tours</strong>.</p>"
                 }
             }
         },
@@ -42,7 +42,7 @@
             "actions": {
                 "acidSpray": {
                     "name": "Aspersion acide",
-                    "description": "<p>La créature expulse un jet de bile acide dans un cône de 10 pieds.</p><p>Sur un <strong>Coup Critique</strong>, cette attaque cause la condition @Condition[corroding] pendant <strong>3 Tours</strong>.</p>"
+                    "description": "<p>La créature expulse un jet de bile acide dans un cône de 10 pieds.</p><p>Sur un <strong>Coup critique</strong>, cette attaque cause la condition @Condition[corroding] pendant <strong>3 Tours</strong>.</p>"
                 }
             }
         },
@@ -98,7 +98,7 @@
             "actions": {
                 "oozeCorrodeWeapon": {
                     "name": "Corrosion d’arme",
-                    "description": "<p>Lorsqu'elle est frappée par une arme de mêlée en métal, la vase tente de consommer l'arme elle-même, la brisant potentiellement.</p><p>Cette attaque est <strong>Inoffensive</strong>, mais si elle réussit, la <strong>Qualité</strong> de l'arme utilisée dans l'attaque est rétrogradée d'un rang. Sur une Réussite Critique ou si l'arme est déjà <strong>Bâclée</strong>, l'arme devient entièrement <strong>Brisée</strong>. Les armes enchantées sont protégées contre cet effet.</p>",
+                    "description": "<p>Lorsqu'elle est frappée par une arme de mêlée en métal, la vase tente de consommer l'arme elle-même, la brisant potentiellement.</p><p>Cette attaque est <strong>Inoffensive</strong>, mais si elle réussit, la <strong>Qualité</strong> de l'arme utilisée dans l'attaque est rétrogradée d'un rang. Sur une Réussite critique ou si l'arme est déjà <strong>Bâclée</strong>, l'arme devient entièrement <strong>Brisée</strong>. Les armes enchantées sont protégées contre cet effet.</p>",
                     "condition": "Frappée en mêlée par une arme faite de métal."
                 }
             }
@@ -133,7 +133,7 @@
             "actions": {
                 "pouncingStrike": {
                     "name": "Frappe bondissante",
-                    "description": "<p>Cette attaque peut être utilisée après un <strong>Déplacement</strong> qui rapproche la @ref[actor.name]{créature} d'au moins 10 pieds de sa cible. Si la créature était au-dessus de la cible, cette attaque gagne <strong>+1 Faveur</strong> par tranche de 10 pieds de diminution d'élévation dans ce mouvement.</p><p>Si cette attaque est un <strong>Coup Critique</strong>, la cible de l'attaque est immédiatement mise @Condition[prone].</p>"
+                    "description": "<p>Cette attaque peut être utilisée après un <strong>Déplacement</strong> qui rapproche la @ref[actor.name]{créature} d'au moins 10 pieds de sa cible. Si la créature était au-dessus de la cible, cette attaque gagne <strong>+1 Faveur</strong> par tranche de 10 pieds de diminution d'élévation dans ce mouvement.</p><p>Si cette attaque est un <strong>Coup critique</strong>, la cible de l'attaque est immédiatement mise @Condition[prone].</p>"
                 }
             }
         },
@@ -151,7 +151,7 @@
             "actions": {
                 "rakingTalons": {
                     "name": "Serres lacérantes",
-                    "description": "<p>La @ref[actor.name]{créature} attaque rapidement avec ses deux serres.</p><p>Si au moins une attaque résulte en une <strong>Réussite Critique</strong>, elle inflige la condition @Condition[bleeding] pendant <strong>2 Rounds</strong>.</p>"
+                    "description": "<p>La @ref[actor.name]{créature} attaque rapidement avec ses deux serres.</p><p>Si au moins une attaque résulte en une <strong>Réussite critique</strong>, elle inflige la condition @Condition[bleeding] pendant <strong>2 Rounds</strong>.</p>"
                 }
             }
         },
@@ -191,7 +191,7 @@
             "actions": {
                 "swoopingStrike": {
                     "name": "Frappe en piqué",
-                    "description": "<p>Cette attaque peut être utilisée après un <strong>Déplacement</strong> avec une descente d'au moins 10 pieds vers la cible. L'attaque gagne <strong>+1 Faveur</strong> par tranche de 10 pieds de diminution d'élévation dans ce déplacement.</p><p>Si cette attaque est un <strong>Coup Critique</strong>, la cible de l'attaque est immédiatement mise @Condition[prone].</p>"
+                    "description": "<p>Cette attaque peut être utilisée après un <strong>Déplacement</strong> avec une descente d'au moins 10 pieds vers la cible. L'attaque gagne <strong>+1 Faveur</strong> par tranche de 10 pieds de diminution d'élévation dans ce déplacement.</p><p>Si cette attaque est un <strong>Coup critique</strong>, la cible de l'attaque est immédiatement mise @Condition[prone].</p>"
                 }
             }
         },

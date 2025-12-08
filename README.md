@@ -20,7 +20,7 @@ Le projet original est en constante évolution, et de ce fait, une traduction co
             - [x] Adversary Talents
             - [x] Archetypes
             - [x] Taxonomies
-        - [ ] Character Options
+        - [x] Character Options
             - [x] Ancestries
             - [x] Backgrounds
             - [x] Iconic Spells

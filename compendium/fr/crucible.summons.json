@@ -377,10 +377,6 @@
                     "description": "<p>Vous façonnez l'essence d'une Rune en un arc de cercle balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate.</p><p>Le signe Éventail évolue avec l'<strong>Intellect</strong> et cible un arc de 120 degrés avec un rayon de 6 pieds. Il inflige <strong>6 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
                 }
             },
-            "biography": {
-                "appearance": "<p>test</p>",
-                "public": "<p>test</p>"
-            },
             "archetype": {
                 "name": "Lutin élémentaire",
                 "description": "<p>Les Lutins sont des élémentaires moindres qui sont des incarnations de leur élément brut, mais manquent de la sapience de leurs parents plus imposants.</p>"

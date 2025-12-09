@@ -11,8 +11,8 @@ Hooks.once('init', async function () {
         });
 
         // 2. Converters - UNIQUEMENT pour les structures complexes
-        Babele.get().registerConverters({
-            
+        game.babele.registerConverters({
+
             /**
              * Converter pour les actions (arrays avec id)
              * Utilisé par : talents, sorts, consommables, actors
@@ -59,11 +59,11 @@ Hooks.once('init', async function () {
                     if (itemTranslation.name) {
                         item.name = itemTranslation.name;
                     }
-                    
+
                     // Description (gestion object/string)
                     if (itemTranslation.description) {
                         if (!item.system) item.system = {};
-                        
+
                         if (typeof itemTranslation.description === 'object') {
                             if (!item.system.description) item.system.description = {};
                             if (itemTranslation.description.public) {
@@ -76,15 +76,29 @@ Hooks.once('init', async function () {
                             item.system.description = itemTranslation.description;
                         }
                     }
-                    
+
                     // Actions de l'item (réutilise la logique du actions_converter)
                     if (itemTranslation.actions && Array.isArray(item.system?.actions)) {
-                        item.system.actions = Babele.get().converters.actions_converter(
-                            item.system.actions, 
+                        item.system.actions = game.babele.converters.actions_converter(
+                            item.system.actions,
                             itemTranslation.actions
                         );
                     }
-                    
+
+                    return item;
+                });
+            },
+
+            // Converteur pour les catégories des journaux
+            "categories_converter": (categories, translations) => {
+                if (!categories || !translations) return categories;
+
+                return categories.map(item => {
+                    const translation = translations[item._id];
+
+                    if (translation) {
+                        if (translation.name) item.name = translation.name;
+                    }
                     return item;
                 });
             },

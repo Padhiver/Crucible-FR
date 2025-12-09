@@ -377,10 +377,6 @@
           "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree, 6 foot cone, dealing 6 base damage on a successful attack.</p>"
         }
       },
-      "biography": {
-        "appearance": "<p>test</p>",
-        "public": "<p>test</p>"
-      },
       "archetype": {
         "name": "Elemental Sprite",
         "description": "<p>Sprites are lesser elementals which are embodiments of their raw element, but lack the sapience of their greater kin.</p>"

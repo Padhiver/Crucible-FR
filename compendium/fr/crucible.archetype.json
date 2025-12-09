@@ -51,19 +51,19 @@
             "description": "<p>Drakes plus petits ou plus jeunes qui sont individuellement chétifs, mais dangereux quand ils chassent en meute.</p>"
         },
         "Elemental Mote": {
-            "name": "Particule Élémentaire",
+            "name": "Particule élémentaire",
             "description": "<p>Les particules sont les plus petites incarnations élémentaires qui prennent encore une forme physique. Elles sont généralement inintelligentes et agissent selon des stimuli environnementaux ou suivent la direction instinctive d'un élémentaire supérieur proche.</p>"
         },
         "Elemental Sprite": {
-            "name": "Lutin Élémentaire",
+            "name": "Lutin élémentaire",
             "description": "<p>Les Lutins sont des élémentaires moindres qui sont des incarnations de leur élément brut, mais manquent de la sapience de leurs parents plus imposants.</p>"
         },
         "Elemental Visitor": {
-            "name": "Visiteur Élémentaire",
-            "description": "<p>Les Visiteurs sont des incarnations d'énergie élémentaire brute qui assument des formes vaguement humanoïdes. Contrairement à leurs parents plus petits, les Visiteurs Élémentaires sont capables de communication et de compréhension, bien que leurs motivations soient rarement alignées avec celles des mortels.</p>"
+            "name": "Visiteur élémentaire",
+            "description": "<p>Les Visiteurs sont des incarnations d'énergie élémentaire brute qui assument des formes vaguement humanoïdes. Contrairement à leurs parents plus petits, les Visiteurs élémentaires sont capables de communication et de compréhension, bien que leurs motivations soient rarement alignées avec celles des mortels.</p>"
         },
         "Elemental Wanderer": {
-            "name": "Vagabond Élémentaire",
+            "name": "Vagabond élémentaire",
             "description": "<p>Les Vagabonds sont des manifestations significatives d'énergie élémentaire qui assument une forme imposante ou majestueuse. Ils sont conscients d'eux-mêmes, sages, et comprennent qu'ils sont des intrus non naturels lorsqu'ils sont hors de leur royaume habituel. Ils sont souvent poussés par quelque but instinctif ou prémédité qui les a attirés.</p>"
         },
         "Fighter": {

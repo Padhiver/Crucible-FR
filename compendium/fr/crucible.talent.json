@@ -56,47 +56,47 @@
     "entries": {
         "Control Proficiency": {
             "name": "Maîtrise du Contrôle",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Contrôle. Vous gagnez un <strong>Bonus de Compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Motiver</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Contrôle. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Motiver</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "Death Proficiency": {
             "name": "Maîtrise de la Mort",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Mort. Vous gagnez un <strong>Bonus de Compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Énerver</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Mort. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Énerver</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "Earth  Proficiency": {
             "name": "Maîtrise de la Terre",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Terre. Vous gagnez un <strong>Bonus de Compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Façonner</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Terre. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Façonner</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "Frost Proficiency": {
             "name": "Maîtrise du Givre",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Givre. Vous gagnez un <strong>Bonus de Compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Condenser</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Givre. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Condenser</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "Illumination Proficiency": {
             "name": "Maîtrise de l'Illumination",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune d'Illumination. Vous gagnez un <strong>Bonus de Compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Révéler</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune d'Illumination. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Révéler</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "Illusion Proficiency": {
             "name": "Maîtrise de l'Illusion",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune d'Illusion. Vous gagnez un <strong>Bonus de Compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Sembler</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune d'Illusion. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Sembler</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "Kinesis Proficiency": {
             "name": "Maîtrise de la Kinésie",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Kinésie. Vous gagnez un <strong>Bonus de Compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Propulser</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Kinésie. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Propulser</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "Life Proficiency": {
             "name": "Maîtrise de la Vie",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Vie. Vous gagnez un <strong>Bonus de Compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Fleurir</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Vie. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Fleurir</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "Lightning Proficiency": {
             "name": "Maîtrise de la Foudre",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Foudre. Vous gagnez un <strong>Bonus de Compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Énergiser</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Foudre. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Énergiser</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "Oblivion Proficiency": {
             "name": "Maîtrise du Néant",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Néant. Vous gagnez un <strong>Bonus de Compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Effacer</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Néant. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Effacer</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "Soul Proficiency": {
             "name": "Maîtrise de l'Âme",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune d'Âme. Vous gagnez un <strong>Bonus de Compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Évoquer</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune d'Âme. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Évoquer</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "Alchemical Resolve": {
             "name": "Détermination alchimique",
@@ -104,7 +104,7 @@
             "actions": {
                 "alchemicalResolve": {
                     "name": "Détermination alchimique",
-                    "description": "<p>Vous remontez rapidement le Moral d'un allié à 4 pieds en projetant des vapeurs. Effectuez un Test de <strong>Médecine</strong> contre le <strong>Seuil de Folie</strong> de la cible. Des réussites restaurent son <strong>Moral</strong>.</p>"
+                    "description": "<p>Vous remontez rapidement le Moral d'un allié à 4 pieds en projetant des vapeurs. Effectuez un Test de <strong>Médecine</strong> contre le <strong>seuil de Folie</strong> de la cible. Des réussites restaurent son <strong>Moral</strong>.</p>"
                 }
             }
         },
@@ -129,15 +129,15 @@
         },
         "Arcana Adept": {
             "name": "Arcanes : Adepte",
-            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Arcanes</strong>, fournissant un <strong>Bonus de Compétence de +2</strong>.</p>"
+            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Arcanes</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
         },
         "Arcana Journeyman": {
             "name": "Arcanes : Compagnon",
-            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Arcanes</strong>, fournissant un <strong>Bonus de Compétence de +1</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Arcanes</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
         },
         "Arcana Master": {
             "name": "Arcanes : Maître",
-            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Arcanes</strong>, fournissant un <strong>Bonus de Compétence de +3</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Arcanes</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
         },
         "Arcana Novice": {
             "name": "Arcanes : Novice",
@@ -179,7 +179,7 @@
         },
         "Assess Strength": {
             "name": "Évaluer la force",
-            "description": "<p>Vous prenez un moment pour observer une créature que vous pouvez voir et développez une intuition sur ses points forts.</p>\n<p>Effectuez un <strong>Test de Connaissances</strong> utilisant une Compétence choisie par le Maître du jeu. En cas de succès, vous apprenez quel type de Défense entre Physique, Fortitude, Volonté ou Réflexe est le plus élevé chez la créature. Sur une Réussite critique, vous apprenez les deux types de défense les plus élevés.</p>",
+            "description": "<p>Vous prenez un moment pour observer une créature que vous pouvez voir et développez une intuition sur ses points forts.</p>\n<p>Effectuez un <strong>Test de connaissances</strong> utilisant une Compétence choisie par le Maître du jeu. En cas de succès, vous apprenez quel type de Défense entre Physique, Fortitude, Volonté ou Réflexe est le plus élevé chez la créature. Sur une Réussite critique, vous apprenez les deux types de défense les plus élevés.</p>",
             "actions": {
                 "assessStrength": {
                     "name": "Évaluer la force",
@@ -189,15 +189,15 @@
         },
         "Athletics Adept": {
             "name": "Athlétisme : Adepte",
-            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Athlétisme</strong>, fournissant un <strong>Bonus de Compétence de +2</strong>.</p>"
+            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Athlétisme</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
         },
         "Athletics Journeyman": {
             "name": "Athlétisme : Compagnon",
-            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Athlétisme</strong>, fournissant un <strong>Bonus de Compétence de +1</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Athlétisme</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
         },
         "Athletics Master": {
             "name": "Athlétisme : Maître",
-            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Athlétisme</strong>, fournissant un <strong>Bonus de Compétence de +3</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Athlétisme</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
         },
         "Athletics Novice": {
             "name": "Athlétisme : Novice",
@@ -205,15 +205,15 @@
         },
         "Awareness Adept": {
             "name": "Vigilance : Adepte",
-            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Vigilance</strong>, fournissant un <strong>Bonus de Compétence de +2</strong>.</p>"
+            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Vigilance</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
         },
         "Awareness Journeyman": {
             "name": "Vigilance : Compagnon",
-            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Vigilance</strong>, fournissant un <strong>Bonus de Compétence de +1</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Vigilance</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
         },
         "Awareness Master": {
             "name": "Vigilance : Maître",
-            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Vigilance</strong>, fournissant un <strong>Bonus de Compétence de +3</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Vigilance</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
         },
         "Awareness Novice": {
             "name": "Vigilance : Novice",
@@ -243,7 +243,7 @@
         },
         "Battle Focus": {
             "name": "Focaliseur de bataille",
-            "description": "Vous trouvez la concentration et le calme dans le frisson de la bataille. Lorsque vous réussissez un <strong>Coup Critique</strong> infligeant des dégâts à la Santé ou au Moral, vous gagnez +1 Focus. Ce bénéfice ne peut se produire qu'une fois par Round."
+            "description": "Vous trouvez la concentration et le calme dans le frisson de la bataille. Lorsque vous réussissez un <strong>Coup critique</strong> infligeant des dégâts à la Santé ou au Moral, vous gagnez +1 Focus. Ce bénéfice ne peut se produire qu'une fois par Round."
         },
         "Beastmaster": {
             "name": "Maître des bêtes",
@@ -272,11 +272,11 @@
         },
         "Blood Frenzy": {
             "name": "Frénésie sanguinaire",
-            "description": "<p>Votre soif de bataille vous pousse à des exploits d'action accrue. Lorsque vous réussissez un <strong>Coup Critique</strong> infligeant des dégâts à la Santé, vous gagnez immédiatement +1 Action. Ce bénéfice ne peut se produire qu'une fois par Round.</p>"
+            "description": "<p>Votre soif de bataille vous pousse à des exploits d'action accrue. Lorsque vous réussissez un <strong>Coup critique</strong> infligeant des dégâts à la Santé, vous gagnez immédiatement +1 Action. Ce bénéfice ne peut se produire qu'une fois par Round.</p>"
         },
         "Bloodletter": {
             "name": "Écorcheur",
-            "description": "<p>Votre précision avec les armes infligeant des dégâts Tranchants ou Perforants peut causer la condition Ensanglantée sur les Coups Critiques infligeant des dégâts à la Santé.</p><p>L'effet Ensanglantée dure 1 round et inflige votre score de Dextérité en dégâts supplémentaires à la Santé.</p>"
+            "description": "<p>Votre précision avec les armes infligeant des dégâts Tranchants ou Perforants peut causer la condition Ensanglantée sur les Coups critiques infligeant des dégâts à la Santé.</p><p>L'effet Ensanglantée dure 1 round et inflige votre score de Dextérité en dégâts supplémentaires à la Santé.</p>"
         },
         "Blood Magic": {
             "name": "Magie du sang",
@@ -313,7 +313,7 @@
         },
         "Carefree": {
             "name": "Insouciant",
-            "description": "<p>Vous êtes capable de compartimenter et d'ignorer les revers, offrant une capacité remarquable à récupérer des dégâts à votre Moral.</p>\n<p>Votre <strong>Seuil de Folie</strong> est réduit de 1, vous rendant plus facile à soigner.</p>"
+            "description": "<p>Vous êtes capable de compartimenter et d'ignorer les revers, offrant une capacité remarquable à récupérer des dégâts à votre Moral.</p>\n<p>Votre <strong>seuil de Folie</strong> est réduit de 1, vous rendant plus facile à soigner.</p>"
         },
         "Clarify Intent": {
             "name": "Clarifier l'intention",
@@ -321,7 +321,7 @@
             "actions": {
                 "clarifyIntent": {
                     "name": "Clarifier l'intention",
-                    "description": "<p>Vous expliquez vos intentions à un allié dans un rayon de 12 pieds. Effectuez une attaque de compétence de <strong>Diplomatie</strong> contre le Seuil de Folie de votre allié. Sur un succès, il gagne +1 <strong>Focus</strong> et +1 <strong>Faveur</strong> à ses actions du prochain Round.</p>"
+                    "description": "<p>Vous expliquez vos intentions à un allié dans un rayon de 12 pieds. Effectuez une attaque de compétence de <strong>Diplomatie</strong> contre le seuil de Folie de votre allié. Sur un succès, il gagne +1 <strong>Focus</strong> et +1 <strong>Faveur</strong> à ses actions du prochain Round.</p>"
                 }
             }
         },
@@ -341,13 +341,13 @@
             "actions": {
                 "combatMedicine": {
                     "name": "Médecine de guerre",
-                    "description": "<p>Vous traitez rapidement les blessures d'un allié à 4 pieds. Effectuez un <strong>Test de Médecine</strong> contre le Seuil de Blessures de la cible. La Santé de votre allié est augmentée du montant du jet dépassant le seuil.</p>"
+                    "description": "<p>Vous traitez rapidement les blessures d'un allié à 4 pieds. Effectuez un <strong>Test de Médecine</strong> contre le seuil de Blessures de la cible. La Santé de votre allié est augmentée du montant du jet dépassant le seuil.</p>"
                 }
             }
         },
         "Concussive Blows": {
             "name": "Coups concussifs",
-            "description": "<p>Votre puissance physique avec des armes de mêlée infligeant des dégâts Contondants peut causer la condition <strong>Ébranlé</strong> sur les Coups Critiques infligeant des dégâts à la Santé.</p>\n<p>L'effet Ébranlé dure 1 round et réduit le maximum d'Actions de votre cible de 1.</p>"
+            "description": "<p>Votre puissance physique avec des armes de mêlée infligeant des dégâts Contondants peut causer la condition <strong>Ébranlé</strong> sur les Coups critiques infligeant des dégâts à la Santé.</p>\n<p>L'effet Ébranlé dure 1 round et réduit le maximum d'Actions de votre cible de 1.</p>"
         },
         "Conjurer": {
             "name": "Conjurateur",
@@ -411,15 +411,15 @@
         },
         "Deception Adept": {
             "name": "Duperie : Adepte",
-            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Duperie</strong>, fournissant un <strong>Bonus de Compétence de +2</strong>.</p>"
+            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Duperie</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
         },
         "Deception Journeyman": {
             "name": "Duperie : Compagnon",
-            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Duperie</strong>, fournissant un <strong>Bonus de Compétence de +1</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Duperie</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
         },
         "Deception Master": {
             "name": "Duperie : Maître",
-            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Duperie</strong>, fournissant un <strong>Bonus de Compétence de +3</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Duperie</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
         },
         "Deception Novice": {
             "name": "Duperie : Novice",
@@ -448,15 +448,15 @@
         },
         "Diplomacy Adept": {
             "name": "Diplomatie : Adepte",
-            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Diplomatie</strong>, fournissant un <strong>Bonus de Compétence de +2</strong>.</p>"
+            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Diplomatie</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
         },
         "Diplomacy Journeyman": {
             "name": "Diplomatie : Compagnon",
-            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Diplomatie</strong>, fournissant un <strong>Bonus de Compétence de +1</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Diplomatie</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
         },
         "Diplomacy Master": {
             "name": "Diplomatie : Maître",
-            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Diplomatie</strong>, fournissant un <strong>Bonus de Compétence de +3</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Diplomatie</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
         },
         "Diplomacy Novice": {
             "name": "Diplomatie : Novice",
@@ -492,7 +492,7 @@
             "actions": {
                 "distract": {
                     "name": "Distraire",
-                    "description": "<p>Vous effectuez une <strong>Attaque de Compétence</strong> basée sur la <strong>Duperie</strong> contre la défense de <strong>Volonté</strong> d'une cible à 30 pieds qui peut voir ou vous entendre. Sur un succès, la cible perd <strong>1 Focus</strong>.</p>"
+                    "description": "<p>Vous effectuez une <strong>Attaque de compétence</strong> basée sur la <strong>Duperie</strong> contre la défense de <strong>Volonté</strong> d'une cible à 30 pieds qui peut voir ou vous entendre. Sur un succès, la cible perd <strong>1 Focus</strong>.</p>"
                 }
             }
         },
@@ -518,7 +518,7 @@
         },
         "Dustbinder": {
             "name": "Géomancien",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Terre. Les sorts utilisant cette Rune causent la condition @Condition[corroding] sur les Coups Critiques.</p><p>L'effet Corrodé dure <strong>3 Rounds</strong> et inflige votre score de <strong>Sagesse</strong> en dégâts d'<strong>Acide</strong> à la <strong>Santé</strong> chaque Round.</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Terre. Les sorts utilisant cette Rune causent la condition @Condition[corroding] sur les Coups critiques.</p><p>L'effet Corrodé dure <strong>3 Rounds</strong> et inflige votre score de <strong>Sagesse</strong> en dégâts d'<strong>Acide</strong> à la <strong>Santé</strong> chaque Round.</p>"
         },
         "Enchanting Journeyman": {
             "name": "Enchantement : Compagnon",
@@ -545,7 +545,7 @@
         },
         "Extoll Deeds": {
             "name": "Exalter les exploits",
-            "description": "Vous inspirez le courage chez vos alliés en exaltant les actes héroïques d'un compagnon. Vous pouvez réagir en composant un vers, en faisant une boutade ou un cri de guerre lorsqu'un allié que vous voyez <strong>Neutralise</strong> ou réussit un <strong>Coup Critique</strong> contre une créature ennemie. La célébration de ces actes héroïques restaure le Moral de vos alliés dans un rayon de 6 cases.",
+            "description": "Vous inspirez le courage chez vos alliés en exaltant les actes héroïques d'un compagnon. Vous pouvez réagir en composant un vers, en faisant une boutade ou un cri de guerre lorsqu'un allié que vous voyez <strong>Neutralise</strong> ou réussit un <strong>Coup critique</strong> contre une créature ennemie. La célébration de ces actes héroïques restaure le Moral de vos alliés dans un rayon de 6 cases.",
             "actions": {
                 "extollDeeds": {
                     "name": "Exalter les exploits",
@@ -590,7 +590,7 @@
         },
         "Flame Proficiency": {
             "name": "Maîtrise de la Flamme",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Flamme. Vous gagnez un <strong>Bonus de Compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Enflammer</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Flamme. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Enflammer</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "Flaming Arrow": {
             "name": "Flèche enflammée",
@@ -673,7 +673,7 @@
         },
         "Gesture: Sense": {
             "name": "Signe : Sens",
-            "description": "<p>Vous harmonisez votre esprit avec la puissance arcanique d'une Rune pour sentir les sources d'énergie proches.</p><p>Le signe de Sens évolue avec la <strong>Présence</strong> et produit une émanation de 30 pieds de rayon dont la position reste centrée sur le lanceur. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>. Il peut optionnellement être <strong>Maintenu</strong> au coût supplémentaire de <strong>1 Focus</strong> chaque round suivant.</p><p>Ce sort permet au lanceur de détecter la présence de sorcellerie utilisant la même Rune que celle incorporée dans ce sort. Le sens détectera aussi momentanément la présence de créatures selon leur type.</p><ul><li><p><strong>Contrôle</strong> : Fiélons</p></li><li><p><strong>Mort</strong> : Morts-vivants</p></li><li><p><strong>Terre</strong> : Vases et Élémentaires de Terre</p></li><li><p><strong>Flamme</strong> : Dragons et Élémentaires de Feu</p></li><li><p><strong>Givre</strong> : Géants et Élémentaires de Givre</p></li><li><p><strong>Illumination</strong> : Célestes</p></li><li><p><strong>Illusion</strong> : Fées</p></li><li><p><strong>Kinésie</strong> : Monstruosités</p></li><li><p><strong>Vie</strong> : Plantes et Bêtes</p></li><li><p><strong>Foudre</strong> : Artificiels et Élémentaires de Tempête</p></li><li><p><strong>Néant</strong> : Extérieurs</p></li><li><p><strong>Âme</strong> : Humanoïdes</p></li></ul><h3 class=\"divider\">Notes de test</h3><p>Il n'y a pas d'automatisation pour le sens temporairement accordé par ce sort, mais une telle automatisation pourra être fournie à l'avenir via un Mode de Détection qui révèle temporairement les créatures du type approprié au lanceur pendant que le sort est maintenu.</p>"
+            "description": "<p>Vous harmonisez votre esprit avec la puissance arcanique d'une Rune pour sentir les sources d'énergie proches.</p><p>Le signe de Sens évolue avec la <strong>Présence</strong> et produit une émanation de 30 pieds de rayon dont la position reste centrée sur le lanceur. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>. Il peut optionnellement être <strong>Maintenu</strong> au coût supplémentaire de <strong>1 Focus</strong> chaque round suivant.</p><p>Ce sort permet au lanceur de détecter la présence de sorcellerie utilisant la même Rune que celle incorporée dans ce sort. Le sens détectera aussi momentanément la présence de créatures selon leur type.</p><ul><li><p><strong>Contrôle</strong> : Fiélons</p></li><li><p><strong>Mort</strong> : Morts-vivants</p></li><li><p><strong>Terre</strong> : Vases et Élémentaires de terre</p></li><li><p><strong>Flamme</strong> : Dragons et Élémentaires de feu</p></li><li><p><strong>Givre</strong> : Géants et Élémentaires de givre</p></li><li><p><strong>Illumination</strong> : Célestes</p></li><li><p><strong>Illusion</strong> : Fées</p></li><li><p><strong>Kinésie</strong> : Monstruosités</p></li><li><p><strong>Vie</strong> : Plantes et Bêtes</p></li><li><p><strong>Foudre</strong> : Artificiels et Élémentaires de tempête</p></li><li><p><strong>Néant</strong> : Extérieurs</p></li><li><p><strong>Âme</strong> : Humanoïdes</p></li></ul><h3 class=\"divider\">Notes de test</h3><p>Il n'y a pas d'automatisation pour le sens temporairement accordé par ce sort, mais une telle automatisation pourra être fournie à l'avenir via un Mode de Détection qui révèle temporairement les créatures du type approprié au lanceur pendant que le sort est maintenu.</p>"
         },
         "Gesture: Surge": {
             "name": "Signe : Afflux",
@@ -745,7 +745,7 @@
         },
         "Heavy Weapon Proficiency": {
             "name": "Armes lourdes : Maîtrise",
-            "description": "<p>Vous avez une éducation fluide dans l'utilisation de l'armement martial. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de Compétence de +1</strong> avec les armes des catégories <strong>Simple</strong>, <strong>Lourde</strong> et <strong>Équilibrée</strong>.</p>"
+            "description": "<p>Vous avez une éducation fluide dans l'utilisation de l'armement martial. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de compétence de +1</strong> avec les armes des catégories <strong>Simple</strong>, <strong>Lourde</strong> et <strong>Équilibrée</strong>.</p>"
         },
         "Heavy Weapon Training": {
             "name": "Armes lourdes : Entraînement",
@@ -811,14 +811,14 @@
             "actions": {
                 "inquisitorsStrike": {
                     "name": "Frappe de l'Inquisiteur",
-                    "description": "Lorsqu'un ennemi que vous pouvez voir lance un sort dans votre rayon d'Engagement, vous pouvez réagir pour Frapper cette cible. Sur un Coup Critique, le sort de la cible est interrompu et sa magie perdue.",
+                    "description": "Lorsqu'un ennemi que vous pouvez voir lance un sort dans votre rayon d'Engagement, vous pouvez réagir pour Frapper cette cible. Sur un Coup critique, le sort de la cible est interrompu et sa magie perdue.",
                     "condition": "Votre cible est en train de lancer un sort."
                 }
             }
         },
         "Inspirator": {
             "name": "Inspirateur",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Âme. Les sorts utilisant cette Rune causent la condition @Condition[inspired] sur les Coups Critiques.</p><p>L'effet Inspiré dure <strong>1 Round</strong> et offre votre score de <strong>Présence</strong> comme <strong>Restauration</strong> additionnelle au <strong>Moral</strong>.</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Âme. Les sorts utilisant cette Rune causent la condition @Condition[inspired] sur les Coups critiques.</p><p>L'effet Inspiré dure <strong>1 Round</strong> et offre votre score de <strong>Présence</strong> comme <strong>Restauration</strong> additionnelle au <strong>Moral</strong>.</p>"
         },
         "Inspire Heroism": {
             "name": "Inspirer l'Héroïsme",
@@ -851,22 +851,22 @@
             "actions": {
                 "interruptingThrow": {
                     "name": "Lancer interruptif",
-                    "description": "<p>Lorsqu'un ennemi que vous pouvez voir lance un <strong>Sort</strong> coûtant au moins <strong>3 Actions</strong>, vous pouvez réaliser une <strong>Réaction</strong> pour effectuer une attaque d'arme de <strong>Lancer</strong> contre le lanceur. Si votre attaque est un <strong>Coup Critique</strong>, le sort est interrompu et sa magie perdue.</p>",
+                    "description": "<p>Lorsqu'un ennemi que vous pouvez voir lance un <strong>Sort</strong> coûtant au moins <strong>3 Actions</strong>, vous pouvez réaliser une <strong>Réaction</strong> pour effectuer une attaque d'arme de <strong>Lancer</strong> contre le lanceur. Si votre attaque est un <strong>Coup critique</strong>, le sort est interrompu et sa magie perdue.</p>",
                     "condition": "Un ennemi que vous pouvez voir lance un sort coûtant au moins 3 Actions."
                 }
             }
         },
         "Intimidation Adept": {
             "name": "Intimidation : Adepte",
-            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Intimidation</strong>, fournissant un <strong>Bonus de Compétence de +2</strong>.</p>"
+            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Intimidation</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
         },
         "Intimidation Journeyman": {
             "name": "Intimidation : Compagnon",
-            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Intimidation</strong>, fournissant un <strong>Bonus de Compétence de +1</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Intimidation</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
         },
         "Intimidation Master": {
             "name": "Intimidation : Maître",
-            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Intimidation</strong>, fournissant un <strong>Bonus de Compétence de +3</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Intimidation</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
         },
         "Intimidation Novice": {
             "name": "Intimidation : Novice",
@@ -884,7 +884,7 @@
         },
         "Intuit Weakness": {
             "name": "Intuition de faiblesse",
-            "description": "<p>Vous calmez votre esprit et étudiez la physiologie de votre ennemi, cherchant une vulnérabilité dans ses défenses.</p><p>Effectuez un <strong>Test de Connaissances</strong> utilisant une Compétence appropriée choisie par le Maître du jeu. En cas de succès, vous apprenez le type de Dégâts envers lequel la créature a la plus grande vulnérabilité, le cas échéant. Sur une Réussite Critique, vous apprenez les deux types de Dégâts qui ont la plus grande vulnérabilité.</p>",
+            "description": "<p>Vous calmez votre esprit et étudiez la physiologie de votre ennemi, cherchant une vulnérabilité dans ses défenses.</p><p>Effectuez un <strong>Test de connaissances</strong> utilisant une Compétence appropriée choisie par le Maître du jeu. En cas de succès, vous apprenez le type de Dégâts envers lequel la créature a la plus grande vulnérabilité, le cas échéant. Sur une Réussite critique, vous apprenez les deux types de Dégâts qui ont la plus grande vulnérabilité.</p>",
             "actions": {
                 "intuitWeakness": {
                     "name": "Intuition de faiblesse",
@@ -910,11 +910,11 @@
         },
         "Justiciar": {
             "name": "Justicier",
-            "description": "<p>Vous êtes un instrument de justice. Les attaques de Frappe Critique infligent aussi la portion de Surplus des dégâts au Moral ennemi.</p>"
+            "description": "<p>Vous êtes un instrument de justice. Les attaques de Frappe critique infligent aussi la portion de Surplus des dégâts au Moral ennemi.</p>"
         },
         "Kineturge": {
             "name": "Kinéthurge",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Kinésie. Les sorts utilisant cette Rune causent la condition @Condition[bleeding] sur les Coups Critiques.</p><p>L'effet Ensanglanté dure <strong>1 Round</strong> et inflige votre score de caractéristique de <strong>Présence</strong> comme dégâts <strong>Perforants</strong> additionnels à la <strong>Santé</strong>.</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Kinésie. Les sorts utilisant cette Rune causent la condition @Condition[bleeding] sur les Coups critiques.</p><p>L'effet Ensanglanté dure <strong>1 Round</strong> et inflige votre score de caractéristique de <strong>Présence</strong> comme dégâts <strong>Perforants</strong> additionnels à la <strong>Santé</strong>.</p>"
         },
         "Legerdemain": {
             "name": "Prestidigitation",
@@ -936,7 +936,7 @@
         },
         "Light Weapon Proficiency": {
             "name": "Armes légères : Maîtrise",
-            "description": "<p>Vous avez une éducation fluide dans l'utilisation de l'armement martial. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de Compétence de +1</strong> avec les armes des catégories <strong>Légère</strong> et <strong>Équilibrée</strong>.</p>"
+            "description": "<p>Vous avez une éducation fluide dans l'utilisation de l'armement martial. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de compétence de +1</strong> avec les armes des catégories <strong>Légère</strong> et <strong>Équilibrée</strong>.</p>"
         },
         "Light Weapon Training": {
             "name": "Armes légères : Entraînement",
@@ -944,7 +944,7 @@
         },
         "Lightbringer": {
             "name": "Porteur de lumière",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Illumination. Les sorts utilisant cette Rune causent la condition @Condition[irradiated] sur les Coups Critiques.</p><p>L'effet Irradié dure <strong>1 Round</strong> et inflige votre score de <strong>Présence</strong> comme dégâts <strong>Radiants</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Illumination. Les sorts utilisant cette Rune causent la condition @Condition[irradiated] sur les Coups critiques.</p><p>L'effet Irradié dure <strong>1 Round</strong> et inflige votre score de <strong>Présence</strong> comme dégâts <strong>Radiants</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
         },
         "Lunge": {
             "name": "Fente",
@@ -972,7 +972,7 @@
         },
         "Mechanical Weapon Proficiency": {
             "name": "Armes mécaniques : Maîtrise",
-            "description": "<p>Vous avez une éducation fluide dans l'utilisation des arbalètes, armes à feu et autres armes mécaniques. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de Compétence de +1</strong> avec les armes de la catégorie <strong>Mécanique</strong>.</p>"
+            "description": "<p>Vous avez une éducation fluide dans l'utilisation des arbalètes, armes à feu et autres armes mécaniques. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de compétence de +1</strong> avec les armes de la catégorie <strong>Mécanique</strong>.</p>"
         },
         "Mechanical Weapon Training": {
             "name": "Armes mécaniques : Entraînement",
@@ -980,15 +980,15 @@
         },
         "Medicine Adept": {
             "name": "Médecine : Adepte",
-            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Médecine</strong>, fournissant un <strong>Bonus de Compétence de +2</strong>.</p>"
+            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Médecine</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
         },
         "Medicine Journeyman": {
             "name": "Médecine : Compagnon",
-            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Médecine</strong>, fournissant un <strong>Bonus de Compétence de +1</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Médecine</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
         },
         "Medicine Master": {
             "name": "Médecine : Maître",
-            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Médecine</strong>, fournissant un <strong>Bonus de Compétence de +3</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Médecine</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
         },
         "Medicine Novice": {
             "name": "Médecine : Novice",
@@ -996,7 +996,7 @@
         },
         "Mender": {
             "name": "Vivificateur",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Vie. Les sorts utilisant cette Rune causent la condition @Condition[mending] sur les Coups Critiques.</p><p>L'effet Guérison dure <strong>1 Round</strong> et applique votre score de <strong>Sagesse</strong> comme <strong>Restauration</strong> additionnelle à la <strong>Santé</strong>.</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Vie. Les sorts utilisant cette Rune causent la condition @Condition[mending] sur les Coups critiques.</p><p>L'effet Guérison dure <strong>1 Round</strong> et applique votre score de <strong>Sagesse</strong> comme <strong>Restauration</strong> additionnelle à la <strong>Santé</strong>.</p>"
         },
         "Mental Fortress": {
             "name": "Forteresse mentale",
@@ -1004,7 +1004,7 @@
         },
         "Mesmer": {
             "name": "Envoûteur",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Illusion. Les sorts utilisant cette Rune causent la condition @Condition[confused] sur les Coups Critiques.</p><p>L'effet Confus dure <strong>1 Round</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts <strong>Psychiques</strong> au <strong>Moral</strong>, et applique la condition @Condition[disoriented].</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Illusion. Les sorts utilisant cette Rune causent la condition @Condition[confused] sur les Coups critiques.</p><p>L'effet Confus dure <strong>1 Round</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts <strong>Psychiques</strong> au <strong>Moral</strong>, et applique la condition @Condition[disoriented].</p>"
         },
         "Mnemonic Realization": {
             "name": "Réalisation mnémonique",
@@ -1028,7 +1028,7 @@
         },
         "Natural Weapon Proficiency": {
             "name": "Armes naturelles : Maîtrise",
-            "description": "<p>Vous avez une familiarité fluide avec l'utilisation des armes corporelles naturelles. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de Compétence de +1</strong> avec les armes de la catégorie <strong>Naturelle</strong>.</p>"
+            "description": "<p>Vous avez une familiarité fluide avec l'utilisation des armes corporelles naturelles. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de compétence de +1</strong> avec les armes de la catégorie <strong>Naturelle</strong>.</p>"
         },
         "Natural Weapon Training": {
             "name": "Armes naturelles : Entraînement",
@@ -1036,7 +1036,7 @@
         },
         "Necromancer": {
             "name": "Nécromancien",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Mort. Les sorts utilisant cette Rune causent la condition @Condition[decaying] sur les Coups Critiques.</p><p>L'effet Pourrissant dure <strong>3 Rounds</strong> et inflige votre score d'<strong>Intellect</strong> comme dégâts de <strong>Corruption</strong> à la <strong>Santé</strong> chaque Round.</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Mort. Les sorts utilisant cette Rune causent la condition @Condition[decaying] sur les Coups critiques.</p><p>L'effet Pourrissant dure <strong>3 Rounds</strong> et inflige votre score d'<strong>Intellect</strong> comme dégâts de <strong>Corruption</strong> à la <strong>Santé</strong> chaque Round.</p>"
         },
         "Nosferatu": {
             "name": "Nosferatu",
@@ -1067,7 +1067,7 @@
             "actions": {
                 "disruptingShot": {
                     "name": "Coup perturbant",
-                    "description": "Lorsqu'un ennemi que vous pouvez voir lance un sort, vous pouvez réagir pour Frapper cette cible. La technique est difficile à exécuter, mais sur un Coup Critique, le sort de la cible est interrompu et la magie perdue.",
+                    "description": "Lorsqu'un ennemi que vous pouvez voir lance un sort, vous pouvez réagir pour Frapper cette cible. La technique est difficile à exécuter, mais sur un Coup critique, le sort de la cible est interrompu et la magie perdue.",
                     "condition": "Votre cible est en train de lancer un sort."
                 }
             }
@@ -1098,15 +1098,15 @@
         },
         "Performance Adept": {
             "name": "Représentation : Adepte",
-            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Représentation</strong>, fournissant un <strong>Bonus de Compétence de +2</strong>.</p>"
+            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Représentation</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
         },
         "Performance Journeyman": {
             "name": "Représentation : Compagnon",
-            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Représentation</strong>, fournissant un <strong>Bonus de Compétence de +1</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Représentation</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
         },
         "Performance Master": {
             "name": "Représentation : Maître",
-            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Représentation</strong>, fournissant un <strong>Bonus de Compétence de +3</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Représentation</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
         },
         "Performance Novice": {
             "name": "Représentation : Novice",
@@ -1142,11 +1142,11 @@
         },
         "Poisoner": {
             "name": "Empoisonneur",
-            "description": "<p>Vous pouvez appliquer du Poison sur les armes qui infligent des dégâts Tranchants ou Perforants. Vous infligez +2 dégâts supplémentaires chaque fois que vous infligez des dégâts de Poison et vos Frappes causent la condition <strong>Empoisonné</strong> sur les Frappes Critiques qui infligent des dégâts à la Santé.</p>",
+            "description": "<p>Vous pouvez appliquer du Poison sur les armes qui infligent des dégâts Tranchants ou Perforants. Vous infligez +2 dégâts supplémentaires chaque fois que vous infligez des dégâts de Poison et vos Frappes causent la condition <strong>Empoisonné</strong> sur les Frappes critiques qui infligent des dégâts à la Santé.</p>",
             "actions": {
                 "poisonBlades": {
                     "name": "Lames empoisonnées",
-                    "description": "<p>Vous enduisez habilement vos lames d'huiles alchimiques toxiques qui appliquent la condition Empoisonné sur les Frappes Critiques.</p>"
+                    "description": "<p>Vous enduisez habilement vos lames d'huiles alchimiques toxiques qui appliquent la condition Empoisonné sur les Frappes critiques.</p>"
                 }
             }
         },
@@ -1178,7 +1178,7 @@
         },
         "Projectile Weapon Proficiency": {
             "name": "Armes de projectile : Maîtrise",
-            "description": "<p>Vous avez une éducation fluide dans l'utilisation de l'armement de projectile. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de Compétence de +1</strong> avec les armes de la catégorie <strong>Projectile</strong>.</p>"
+            "description": "<p>Vous avez une éducation fluide dans l'utilisation de l'armement de projectile. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de compétence de +1</strong> avec les armes de la catégorie <strong>Projectile</strong>.</p>"
         },
         "Projectile Weapon Training": {
             "name": "Armes de projectile : Entraînement",
@@ -1197,7 +1197,7 @@
         },
         "Pyromancer": {
             "name": "Pyromancien",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Flamme. Les sorts utilisant cette Rune causent la condition @Condition[burning] sur les Coups Critiques.</p><p>L'effet Enflammé dure <strong>1 Round</strong> et inflige votre score d'<strong>Intellect</strong> comme dégâts de <strong>Feu</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Flamme. Les sorts utilisant cette Rune causent la condition @Condition[burning] sur les Coups critiques.</p><p>L'effet Enflammé dure <strong>1 Round</strong> et inflige votre score d'<strong>Intellect</strong> comme dégâts de <strong>Feu</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
         },
         "Rallying Cry": {
             "name": "Cri de ralliement",
@@ -1236,11 +1236,11 @@
         },
         "Resilient": {
             "name": "Résilient",
-            "description": "<p>Votre corps répond avidement à la guérison, démontrant une capacité remarquable à récupérer des blessures.</p>\n<p>Votre <strong>Seuil de Blessures</strong> est réduit de 1, vous rendant plus facile à soigner.</p>"
+            "description": "<p>Votre corps répond avidement à la guérison, démontrant une capacité remarquable à récupérer des blessures.</p>\n<p>Votre <strong>seuil de Blessures</strong> est réduit de 1, vous rendant plus facile à soigner.</p>"
         },
         "Rimecaller": {
             "name": "Héraut du Givre",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Givre. Les sorts utilisant cette Rune causent la condition @Condition[freezing] sur les Coups Critiques.</p><p>L'effet Gelé dure <strong>1 Round</strong>, inflige la moitié de votre score de <strong>Sagesse</strong> comme dégâts de <strong>Froid</strong> à la <strong>Santé</strong>, et applique la condition @Condition[slowed].</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Givre. Les sorts utilisant cette Rune causent la condition @Condition[freezing] sur les Coups critiques.</p><p>L'effet Gelé dure <strong>1 Round</strong>, inflige la moitié de votre score de <strong>Sagesse</strong> comme dégâts de <strong>Froid</strong> à la <strong>Santé</strong>, et applique la condition @Condition[slowed].</p>"
         },
         "Rune: Control": {
             "name": "Rune : Contrôle",
@@ -1391,15 +1391,15 @@
         },
         "Science Adept": {
             "name": "Science : Adepte",
-            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Science</strong>, fournissant un <strong>Bonus de Compétence de +2</strong>.</p>"
+            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Science</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
         },
         "Science Journeyman": {
             "name": "Science : Compagnon",
-            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Science</strong>, fournissant un <strong>Bonus de Compétence de +1</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Science</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
         },
         "Science Master": {
             "name": "Science : Maître",
-            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Science</strong>, fournissant un <strong>Bonus de Compétence de +3</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Science</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
         },
         "Science Novice": {
             "name": "Science : Novice",
@@ -1445,7 +1445,7 @@
         },
         "Shield Combat Proficiency": {
             "name": "Combat au bouclier : Maîtrise",
-            "description": "<p>Vous avez une éducation fluide dans l'utilisation des boucliers au combat. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de Compétence de +1</strong> avec les armes de la catégorie <strong>Bouclier</strong>.</p>"
+            "description": "<p>Vous avez une éducation fluide dans l'utilisation des boucliers au combat. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de compétence de +1</strong> avec les armes de la catégorie <strong>Bouclier</strong>.</p>"
         },
         "Shield Combat Training": {
             "name": "Combat au bouclier : Entraînement",
@@ -1457,7 +1457,7 @@
             "actions": {
                 "shieldCharge": {
                     "name": "Charge au bouclier",
-                    "description": "<p>Vous chargez en ligne droite devant vous, passant au travers de l'espace de chaque créature que vous rencontrez et effectuant une <strong>Frappe</strong> contre chaque ennemi successif. Toute créature touchée par un <strong>Coup Critique</strong> lors de l'attaque peut être poussée dans l'espace adjacent de votre choix. Vous ne pouvez pas terminer votre charge dans le même espace qu'une autre créature.</p>"
+                    "description": "<p>Vous chargez en ligne droite devant vous, passant au travers de l'espace de chaque créature que vous rencontrez et effectuant une <strong>Frappe</strong> contre chaque ennemi successif. Toute créature touchée par un <strong>Coup critique</strong> lors de l'attaque peut être poussée dans l'espace adjacent de votre choix. Vous ne pouvez pas terminer votre charge dans le même espace qu'une autre créature.</p>"
                 }
             }
         },
@@ -1483,15 +1483,15 @@
         },
         "Society Adept": {
             "name": "Société : Adepte",
-            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Société</strong>, fournissant un <strong>Bonus de Compétence de +2</strong>.</p>"
+            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Société</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
         },
         "Society Journeyman": {
             "name": "Société : Compagnon",
-            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Société</strong>, fournissant un <strong>Bonus de Compétence de +1</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Société</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
         },
         "Society Master": {
             "name": "Société : Maître",
-            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Société</strong>, fournissant un <strong>Bonus de Compétence de +3</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Société</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
         },
         "Society Novice": {
             "name": "Société : Novice",
@@ -1527,15 +1527,15 @@
         },
         "Stealth Adept": {
             "name": "Discrétion : Adepte",
-            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Discrétion</strong>, fournissant un <strong>Bonus de Compétence de +2</strong>.</p>"
+            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Discrétion</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
         },
         "Stealth Journeyman": {
             "name": "Discrétion : Compagnon",
-            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Discrétion</strong>, fournissant un <strong>Bonus de Compétence de +1</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Discrétion</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
         },
         "Stealth Master": {
             "name": "Discrétion : Maître",
-            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Discrétion</strong>, fournissant un <strong>Bonus de Compétence de +3</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Discrétion</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
         },
         "Stealth Novice": {
             "name": "Discrétion : Novice",
@@ -1543,7 +1543,7 @@
         },
         "Still Lake": {
             "name": "Lac impassible",
-            "description": "<p>Vos expériences de vie fournissent une sérénité qui vous permet de résister à la manipulation tentée par d'autres.</p><p>Les <strong>Attaques de Compétence</strong> contre vous provenant de n'importe laquelle des compétences <strong>Sociales</strong> sont effectuées avec <strong>2 Fléaux</strong>.</p>"
+            "description": "<p>Vos expériences de vie fournissent une sérénité qui vous permet de résister à la manipulation tentée par d'autres.</p><p>Les <strong>Attaques de compétence</strong> contre vous provenant de n'importe laquelle des compétences <strong>Sociales</strong> sont effectuées avec <strong>2 Fléaux</strong>.</p>"
         },
         "Strategic Repositioning": {
             "name": "Repositionnement stratégique",
@@ -1583,11 +1583,11 @@
         },
         "Surgeweaver": {
             "name": "Tissefoudre",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Foudre. Les sorts utilisant cette Rune causent la condition @Condition[shocked] sur les Coups Critiques.</p><p>L'effet Électrocuté dure <strong>1 Round</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts de <strong>Foudre</strong> au <strong>Moral</strong>, et applique la condition @Condition[staggered].</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Foudre. Les sorts utilisant cette Rune causent la condition @Condition[shocked] sur les Coups critiques.</p><p>L'effet Électrocuté dure <strong>1 Round</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts de <strong>Foudre</strong> au <strong>Moral</strong>, et applique la condition @Condition[staggered].</p>"
         },
         "Swashbuckler": {
             "name": "Bretteur",
-            "description": "<p>Votre bravade inspire vos alliés et intimide vos ennemis. Lorsque vous Esquivez ou Parez une Frappe, l'attaquant perd un montant de Moral égal à votre attribut de Présence. Lorsque vous réussissez un Coup Critique, tous les alliés proches qui peuvent vous voir gagnent un montant de Moral égal à votre attribut de Présence.</p>"
+            "description": "<p>Votre bravade inspire vos alliés et intimide vos ennemis. Lorsque vous Esquivez ou Parez une Frappe, l'attaquant perd un montant de Moral égal à votre attribut de Présence. Lorsque vous réussissez un Coup critique, tous les alliés proches qui peuvent vous voir gagnent un montant de Moral égal à votre attribut de Présence.</p>"
         },
         "Swipe": {
             "name": "Balayage",
@@ -1619,7 +1619,7 @@
         },
         "Talisman Weapon Proficiency": {
             "name": "Armes Talisman : Maîtrise",
-            "description": "<p>Vous avez une éducation fluide dans l'utilisation des talismans, orbes, focalisateurs ou autres armes similaires. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de Compétence de +1</strong> avec les armes de la catégorie <strong>Talisman</strong>.</p>"
+            "description": "<p>Vous avez une éducation fluide dans l'utilisation des talismans, orbes, focalisateurs ou autres armes similaires. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de compétence de +1</strong> avec les armes de la catégorie <strong>Talisman</strong>.</p>"
         },
         "Talisman Weapon Training": {
             "name": "Armes Talisman : Entraînement",
@@ -1635,7 +1635,7 @@
         },
         "Thoughtbinder": {
             "name": "Censeur",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Contrôle. Les sorts utilisant cette Rune causent la condition @Condition[restrained] sur les Coups Critiques.</p><p>L'effet Entravé dure <strong>1 Round</strong> et inflige votre score de caractéristique de <strong>Sagesse</strong> comme dégâts <strong>Psychiques</strong> additionnels au <strong>Moral</strong>.</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Contrôle. Les sorts utilisant cette Rune causent la condition @Condition[restrained] sur les Coups critiques.</p><p>L'effet Entravé dure <strong>1 Round</strong> et inflige votre score de caractéristique de <strong>Sagesse</strong> comme dégâts <strong>Psychiques</strong> additionnels au <strong>Moral</strong>.</p>"
         },
         "Thread the Needle": {
             "name": "Enfiler l'aiguille",
@@ -1673,7 +1673,7 @@
         },
         "Unarmed Combat Proficiency": {
             "name": "Combat à mains nues : Maîtrise",
-            "description": "<p>Vous avez une éducation fluide dans le combat au corps à corps et autres arts martiaux. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de Compétence de +1</strong> avec les armes de la catégorie <strong>Mains nues</strong>.</p>"
+            "description": "<p>Vous avez une éducation fluide dans le combat au corps à corps et autres arts martiaux. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de compétence de +1</strong> avec les armes de la catégorie <strong>Mains nues</strong>.</p>"
         },
         "Unarmed Combat Training": {
             "name": "Combat à mains nues : Entraînement",
@@ -1685,7 +1685,7 @@
         },
         "Unshakeable Stance": {
             "name": "Posture inébranlable",
-            "description": "Vous ne pouvez pas être involontairement Déplacé ou mis À terre par une action qui n'est pas une Réussite Critique lancée par un ennemi ou un Échec Critique lancé par vous-même."
+            "description": "Vous ne pouvez pas être involontairement Déplacé ou mis À terre par une action qui n'est pas une Réussite critique lancée par un ennemi ou un Échec critique lancé par vous-même."
         },
         "Uppercut": {
             "name": "Uppercut",
@@ -1703,7 +1703,7 @@
         },
         "Voidcaller": {
             "name": "Héraut du Néant",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Néant. Les sorts utilisant cette Rune causent la condition @Condition[entropy] sur les Coups Critiques.</p><p>L'effet Entropie dure <strong>1 Round</strong>, inflige la moitié de votre score de <strong>Présence</strong> comme dégâts de <strong>Vide</strong> au <strong>Moral</strong>, et applique la condition @Condition[frightened].</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Néant. Les sorts utilisant cette Rune causent la condition @Condition[entropy] sur les Coups critiques.</p><p>L'effet Entropie dure <strong>1 Round</strong>, inflige la moitié de votre score de <strong>Présence</strong> comme dégâts de <strong>Vide</strong> au <strong>Moral</strong>, et applique la condition @Condition[frightened].</p>"
         },
         "Vow of Animus": {
             "name": "Serment d'animosité",
@@ -1725,15 +1725,15 @@
         },
         "Wilderness Adept": {
             "name": "Nature : Adepte",
-            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Nature</strong>, fournissant un <strong>Bonus de Compétence de +2</strong>.</p>"
+            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Nature</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
         },
         "Wilderness Journeyman": {
             "name": "Nature : Compagnon",
-            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Nature</strong>, fournissant un <strong>Bonus de Compétence de +1</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Nature</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
         },
         "Wilderness Master": {
             "name": "Nature : Maître",
-            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Nature</strong>, fournissant un <strong>Bonus de Compétence de +3</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Nature</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
         },
         "Wilderness Novice": {
             "name": "Nature : Novice",

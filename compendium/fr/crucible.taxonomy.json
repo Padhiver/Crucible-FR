@@ -33,15 +33,15 @@
             "description": "<p>Créatures serpentines qui sont des cousins inférieurs des dragons. Les Drakes vivent et chassent généralement en meute, contrairement aux vrais dragons plus solitaires. Les Drakes varient d'espèces plus jeunes et plus petites souvent appelées \"Draketeaux\" à des spécimens énormes parfois appelés \"Ultra Drakes\".</p><p>Les variations de taille observées incluent :</p><ul><li><p><strong>Draketeau</strong> : Taille 3, Foulée 10</p></li><li><p><strong>Drake</strong> : Taille 6, Foulée 16</p></li><li><p><strong>Ultra Drake</strong> : Taille 9, Foulée 12</p></li></ul><p>Différents types de Drakes présentent une gamme différente de résistances et de vulnérabilités aux dégâts selon leur sous-espèce.</p>"
         },
         "Earth Elemental": {
-            "name": "Élémentaire de Terre",
+            "name": "Élémentaire de terre",
             "description": "<p>Créatures élémentaires correspondant à l'élément de la Terre.</p>"
         },
         "Fire Elemental": {
-            "name": "Élémentaire de Feu",
+            "name": "Élémentaire de feu",
             "description": "<p>Créatures élémentaires correspondant à l'élément du Feu.</p>"
         },
         "Frost Elemental": {
-            "name": "Élémentaire de Givre",
+            "name": "Élémentaire de givre",
             "description": "<p>Créatures élémentaires correspondant à l'élément du Givre.</p>"
         },
         "Harbinger": {
@@ -61,7 +61,7 @@
             "description": "<p>Créatures non-mortes faites d'os et de tendons.</p>"
         },
         "Storm Elemental": {
-            "name": "Élémentaire de Tempête",
+            "name": "Élémentaire de tempête",
             "description": "<p>Créatures élémentaires correspondant à l'élément de la Foudre.</p>"
         },
         "Crystal Spider": {

@@ -1,4 +1,9 @@
 # Traduction française non officielle de Crucible
+<p align="center">
+  <img width="424" height="320" alt="crucible-text-light-FR" src="https://github.com/user-attachments/assets/59d811a2-0aa8-4dfa-b0ad-9787fbb9da9d" />
+</p>
+
+
 
 Ce dépôt est une traduction non officielle et communautaire du système de jeu Crucible pour Foundry VTT.
 

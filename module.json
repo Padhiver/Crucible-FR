@@ -1,6 +1,6 @@
 {
   "id": "crucible-fr",
-  "title": "Crucible FR",
+  "title": "Crucible - Traduction Française",
   "description": "Traduction française pour le système Crucible",
   "version": "This is auto replaced",
   "compatibility": {
@@ -41,6 +41,13 @@
   ],
   "esmodules": [
     "babele-register.js"
+  ],
+  "media": [
+    {
+      "type": "setup",
+      "url": "modules/crucible-fr/crucible-text-light-FR.png",
+      "thumbnail": "modules/crucible-fr/crucible-text-light-FR.png"
+    }
   ],
   "url": "This is auto replaced",
   "manifest": "This is auto replaced",

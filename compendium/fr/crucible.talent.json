@@ -56,47 +56,47 @@
     "entries": {
         "Control Proficiency": {
             "name": "Maîtrise du Contrôle",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Contrôle. Vous gagnez un <strong>Bonus de Compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Motiver</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Contrôle. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Motiver</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "Death Proficiency": {
             "name": "Maîtrise de la Mort",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Mort. Vous gagnez un <strong>Bonus de Compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Énerver</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Mort. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Énerver</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "Earth  Proficiency": {
             "name": "Maîtrise de la Terre",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Terre. Vous gagnez un <strong>Bonus de Compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Façonner</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Terre. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Façonner</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "Frost Proficiency": {
             "name": "Maîtrise du Givre",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Givre. Vous gagnez un <strong>Bonus de Compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Condenser</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Givre. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Condenser</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "Illumination Proficiency": {
             "name": "Maîtrise de l'Illumination",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune d'Illumination. Vous gagnez un <strong>Bonus de Compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Révéler</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune d'Illumination. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Révéler</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "Illusion Proficiency": {
             "name": "Maîtrise de l'Illusion",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune d'Illusion. Vous gagnez un <strong>Bonus de Compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Sembler</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune d'Illusion. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Sembler</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "Kinesis Proficiency": {
             "name": "Maîtrise de la Kinésie",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Kinésie. Vous gagnez un <strong>Bonus de Compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Propulser</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Kinésie. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Propulser</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "Life Proficiency": {
             "name": "Maîtrise de la Vie",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Vie. Vous gagnez un <strong>Bonus de Compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Fleurir</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Vie. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Fleurir</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "Lightning Proficiency": {
             "name": "Maîtrise de la Foudre",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Foudre. Vous gagnez un <strong>Bonus de Compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Énergiser</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Foudre. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Énergiser</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "Oblivion Proficiency": {
             "name": "Maîtrise du Néant",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Néant. Vous gagnez un <strong>Bonus de Compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Effacer</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Néant. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Effacer</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "Soul Proficiency": {
             "name": "Maîtrise de l'Âme",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune d'Âme. Vous gagnez un <strong>Bonus de Compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Évoquer</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune d'Âme. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Évoquer</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "Alchemical Resolve": {
             "name": "Détermination alchimique",
@@ -104,7 +104,7 @@
             "actions": {
                 "alchemicalResolve": {
                     "name": "Détermination alchimique",
-                    "description": "<p>Vous remontez rapidement le Moral d'un allié à 4 pieds en projetant des vapeurs. Effectuez un Test de <strong>Médecine</strong> contre le <strong>Seuil de Folie</strong> de la cible. Des réussites restaurent son <strong>Moral</strong>.</p>"
+                    "description": "<p>Vous remontez rapidement le Moral d'un allié à 4 pieds en projetant des vapeurs. Effectuez un Test de <strong>Médecine</strong> contre le <strong>seuil de Folie</strong> de la cible. Des réussites restaurent son <strong>Moral</strong>.</p>"
                 }
             }
         },
@@ -129,15 +129,15 @@
         },
         "Arcana Adept": {
             "name": "Arcanes : Adepte",
-            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Arcanes</strong>, fournissant un <strong>Bonus de Compétence de +2</strong>.</p>"
+            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Arcanes</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
         },
         "Arcana Journeyman": {
             "name": "Arcanes : Compagnon",
-            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Arcanes</strong>, fournissant un <strong>Bonus de Compétence de +1</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Arcanes</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
         },
         "Arcana Master": {
             "name": "Arcanes : Maître",
-            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Arcanes</strong>, fournissant un <strong>Bonus de Compétence de +3</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Arcanes</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
         },
         "Arcana Novice": {
             "name": "Arcanes : Novice",
@@ -179,7 +179,7 @@
         },
         "Assess Strength": {
             "name": "Évaluer la force",
-            "description": "<p>Vous prenez un moment pour observer une créature que vous pouvez voir et développez une intuition sur ses points forts.</p>\n<p>Effectuez un <strong>Test de Connaissances</strong> utilisant une Compétence choisie par le Maître du jeu. En cas de succès, vous apprenez quel type de Défense entre Physique, Fortitude, Volonté ou Réflexe est le plus élevé chez la créature. Sur une Réussite critique, vous apprenez les deux types de défense les plus élevés.</p>",
+            "description": "<p>Vous prenez un moment pour observer une créature que vous pouvez voir et développez une intuition sur ses points forts.</p>\n<p>Effectuez un <strong>Test de connaissances</strong> utilisant une Compétence choisie par le Maître du jeu. En cas de succès, vous apprenez quel type de Défense entre Physique, Fortitude, Volonté ou Réflexe est le plus élevé chez la créature. Sur une Réussite critique, vous apprenez les deux types de défense les plus élevés.</p>",
             "actions": {
                 "assessStrength": {
                     "name": "Évaluer la force",
@@ -189,15 +189,15 @@
         },
         "Athletics Adept": {
             "name": "Athlétisme : Adepte",
-            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Athlétisme</strong>, fournissant un <strong>Bonus de Compétence de +2</strong>.</p>"
+            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Athlétisme</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
         },
         "Athletics Journeyman": {
             "name": "Athlétisme : Compagnon",
-            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Athlétisme</strong>, fournissant un <strong>Bonus de Compétence de +1</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Athlétisme</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
         },
         "Athletics Master": {
             "name": "Athlétisme : Maître",
-            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Athlétisme</strong>, fournissant un <strong>Bonus de Compétence de +3</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Athlétisme</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
         },
         "Athletics Novice": {
             "name": "Athlétisme : Novice",
@@ -205,15 +205,15 @@
         },
         "Awareness Adept": {
             "name": "Vigilance : Adepte",
-            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Vigilance</strong>, fournissant un <strong>Bonus de Compétence de +2</strong>.</p>"
+            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Vigilance</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
         },
         "Awareness Journeyman": {
             "name": "Vigilance : Compagnon",
-            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Vigilance</strong>, fournissant un <strong>Bonus de Compétence de +1</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Vigilance</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
         },
         "Awareness Master": {
             "name": "Vigilance : Maître",
-            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Vigilance</strong>, fournissant un <strong>Bonus de Compétence de +3</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Vigilance</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
         },
         "Awareness Novice": {
             "name": "Vigilance : Novice",
@@ -313,7 +313,7 @@
         },
         "Carefree": {
             "name": "Insouciant",
-            "description": "<p>Vous êtes capable de compartimenter et d'ignorer les revers, offrant une capacité remarquable à récupérer des dégâts à votre Moral.</p>\n<p>Votre <strong>Seuil de Folie</strong> est réduit de 1, vous rendant plus facile à soigner.</p>"
+            "description": "<p>Vous êtes capable de compartimenter et d'ignorer les revers, offrant une capacité remarquable à récupérer des dégâts à votre Moral.</p>\n<p>Votre <strong>seuil de Folie</strong> est réduit de 1, vous rendant plus facile à soigner.</p>"
         },
         "Clarify Intent": {
             "name": "Clarifier l'intention",
@@ -321,7 +321,7 @@
             "actions": {
                 "clarifyIntent": {
                     "name": "Clarifier l'intention",
-                    "description": "<p>Vous expliquez vos intentions à un allié dans un rayon de 12 pieds. Effectuez une attaque de compétence de <strong>Diplomatie</strong> contre le Seuil de Folie de votre allié. Sur un succès, il gagne +1 <strong>Focus</strong> et +1 <strong>Faveur</strong> à ses actions du prochain Round.</p>"
+                    "description": "<p>Vous expliquez vos intentions à un allié dans un rayon de 12 pieds. Effectuez une attaque de compétence de <strong>Diplomatie</strong> contre le seuil de Folie de votre allié. Sur un succès, il gagne +1 <strong>Focus</strong> et +1 <strong>Faveur</strong> à ses actions du prochain Round.</p>"
                 }
             }
         },
@@ -341,7 +341,7 @@
             "actions": {
                 "combatMedicine": {
                     "name": "Médecine de guerre",
-                    "description": "<p>Vous traitez rapidement les blessures d'un allié à 4 pieds. Effectuez un <strong>Test de Médecine</strong> contre le Seuil de Blessures de la cible. La Santé de votre allié est augmentée du montant du jet dépassant le seuil.</p>"
+                    "description": "<p>Vous traitez rapidement les blessures d'un allié à 4 pieds. Effectuez un <strong>Test de Médecine</strong> contre le seuil de Blessures de la cible. La Santé de votre allié est augmentée du montant du jet dépassant le seuil.</p>"
                 }
             }
         },
@@ -411,15 +411,15 @@
         },
         "Deception Adept": {
             "name": "Duperie : Adepte",
-            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Duperie</strong>, fournissant un <strong>Bonus de Compétence de +2</strong>.</p>"
+            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Duperie</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
         },
         "Deception Journeyman": {
             "name": "Duperie : Compagnon",
-            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Duperie</strong>, fournissant un <strong>Bonus de Compétence de +1</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Duperie</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
         },
         "Deception Master": {
             "name": "Duperie : Maître",
-            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Duperie</strong>, fournissant un <strong>Bonus de Compétence de +3</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Duperie</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
         },
         "Deception Novice": {
             "name": "Duperie : Novice",
@@ -448,15 +448,15 @@
         },
         "Diplomacy Adept": {
             "name": "Diplomatie : Adepte",
-            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Diplomatie</strong>, fournissant un <strong>Bonus de Compétence de +2</strong>.</p>"
+            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Diplomatie</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
         },
         "Diplomacy Journeyman": {
             "name": "Diplomatie : Compagnon",
-            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Diplomatie</strong>, fournissant un <strong>Bonus de Compétence de +1</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Diplomatie</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
         },
         "Diplomacy Master": {
             "name": "Diplomatie : Maître",
-            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Diplomatie</strong>, fournissant un <strong>Bonus de Compétence de +3</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Diplomatie</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
         },
         "Diplomacy Novice": {
             "name": "Diplomatie : Novice",
@@ -492,7 +492,7 @@
             "actions": {
                 "distract": {
                     "name": "Distraire",
-                    "description": "<p>Vous effectuez une <strong>Attaque de Compétence</strong> basée sur la <strong>Duperie</strong> contre la défense de <strong>Volonté</strong> d'une cible à 30 pieds qui peut voir ou vous entendre. Sur un succès, la cible perd <strong>1 Focus</strong>.</p>"
+                    "description": "<p>Vous effectuez une <strong>Attaque de compétence</strong> basée sur la <strong>Duperie</strong> contre la défense de <strong>Volonté</strong> d'une cible à 30 pieds qui peut voir ou vous entendre. Sur un succès, la cible perd <strong>1 Focus</strong>.</p>"
                 }
             }
         },
@@ -590,7 +590,7 @@
         },
         "Flame Proficiency": {
             "name": "Maîtrise de la Flamme",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Flamme. Vous gagnez un <strong>Bonus de Compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Enflammer</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Flamme. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Enflammer</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "Flaming Arrow": {
             "name": "Flèche enflammée",
@@ -745,7 +745,7 @@
         },
         "Heavy Weapon Proficiency": {
             "name": "Armes lourdes : Maîtrise",
-            "description": "<p>Vous avez une éducation fluide dans l'utilisation de l'armement martial. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de Compétence de +1</strong> avec les armes des catégories <strong>Simple</strong>, <strong>Lourde</strong> et <strong>Équilibrée</strong>.</p>"
+            "description": "<p>Vous avez une éducation fluide dans l'utilisation de l'armement martial. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de compétence de +1</strong> avec les armes des catégories <strong>Simple</strong>, <strong>Lourde</strong> et <strong>Équilibrée</strong>.</p>"
         },
         "Heavy Weapon Training": {
             "name": "Armes lourdes : Entraînement",
@@ -858,15 +858,15 @@
         },
         "Intimidation Adept": {
             "name": "Intimidation : Adepte",
-            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Intimidation</strong>, fournissant un <strong>Bonus de Compétence de +2</strong>.</p>"
+            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Intimidation</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
         },
         "Intimidation Journeyman": {
             "name": "Intimidation : Compagnon",
-            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Intimidation</strong>, fournissant un <strong>Bonus de Compétence de +1</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Intimidation</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
         },
         "Intimidation Master": {
             "name": "Intimidation : Maître",
-            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Intimidation</strong>, fournissant un <strong>Bonus de Compétence de +3</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Intimidation</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
         },
         "Intimidation Novice": {
             "name": "Intimidation : Novice",
@@ -936,7 +936,7 @@
         },
         "Light Weapon Proficiency": {
             "name": "Armes légères : Maîtrise",
-            "description": "<p>Vous avez une éducation fluide dans l'utilisation de l'armement martial. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de Compétence de +1</strong> avec les armes des catégories <strong>Légère</strong> et <strong>Équilibrée</strong>.</p>"
+            "description": "<p>Vous avez une éducation fluide dans l'utilisation de l'armement martial. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de compétence de +1</strong> avec les armes des catégories <strong>Légère</strong> et <strong>Équilibrée</strong>.</p>"
         },
         "Light Weapon Training": {
             "name": "Armes légères : Entraînement",
@@ -972,7 +972,7 @@
         },
         "Mechanical Weapon Proficiency": {
             "name": "Armes mécaniques : Maîtrise",
-            "description": "<p>Vous avez une éducation fluide dans l'utilisation des arbalètes, armes à feu et autres armes mécaniques. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de Compétence de +1</strong> avec les armes de la catégorie <strong>Mécanique</strong>.</p>"
+            "description": "<p>Vous avez une éducation fluide dans l'utilisation des arbalètes, armes à feu et autres armes mécaniques. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de compétence de +1</strong> avec les armes de la catégorie <strong>Mécanique</strong>.</p>"
         },
         "Mechanical Weapon Training": {
             "name": "Armes mécaniques : Entraînement",
@@ -980,15 +980,15 @@
         },
         "Medicine Adept": {
             "name": "Médecine : Adepte",
-            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Médecine</strong>, fournissant un <strong>Bonus de Compétence de +2</strong>.</p>"
+            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Médecine</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
         },
         "Medicine Journeyman": {
             "name": "Médecine : Compagnon",
-            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Médecine</strong>, fournissant un <strong>Bonus de Compétence de +1</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Médecine</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
         },
         "Medicine Master": {
             "name": "Médecine : Maître",
-            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Médecine</strong>, fournissant un <strong>Bonus de Compétence de +3</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Médecine</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
         },
         "Medicine Novice": {
             "name": "Médecine : Novice",
@@ -1028,7 +1028,7 @@
         },
         "Natural Weapon Proficiency": {
             "name": "Armes naturelles : Maîtrise",
-            "description": "<p>Vous avez une familiarité fluide avec l'utilisation des armes corporelles naturelles. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de Compétence de +1</strong> avec les armes de la catégorie <strong>Naturelle</strong>.</p>"
+            "description": "<p>Vous avez une familiarité fluide avec l'utilisation des armes corporelles naturelles. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de compétence de +1</strong> avec les armes de la catégorie <strong>Naturelle</strong>.</p>"
         },
         "Natural Weapon Training": {
             "name": "Armes naturelles : Entraînement",
@@ -1098,15 +1098,15 @@
         },
         "Performance Adept": {
             "name": "Représentation : Adepte",
-            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Représentation</strong>, fournissant un <strong>Bonus de Compétence de +2</strong>.</p>"
+            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Représentation</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
         },
         "Performance Journeyman": {
             "name": "Représentation : Compagnon",
-            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Représentation</strong>, fournissant un <strong>Bonus de Compétence de +1</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Représentation</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
         },
         "Performance Master": {
             "name": "Représentation : Maître",
-            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Représentation</strong>, fournissant un <strong>Bonus de Compétence de +3</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Représentation</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
         },
         "Performance Novice": {
             "name": "Représentation : Novice",
@@ -1178,7 +1178,7 @@
         },
         "Projectile Weapon Proficiency": {
             "name": "Armes de projectile : Maîtrise",
-            "description": "<p>Vous avez une éducation fluide dans l'utilisation de l'armement de projectile. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de Compétence de +1</strong> avec les armes de la catégorie <strong>Projectile</strong>.</p>"
+            "description": "<p>Vous avez une éducation fluide dans l'utilisation de l'armement de projectile. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de compétence de +1</strong> avec les armes de la catégorie <strong>Projectile</strong>.</p>"
         },
         "Projectile Weapon Training": {
             "name": "Armes de projectile : Entraînement",
@@ -1236,7 +1236,7 @@
         },
         "Resilient": {
             "name": "Résilient",
-            "description": "<p>Votre corps répond avidement à la guérison, démontrant une capacité remarquable à récupérer des blessures.</p>\n<p>Votre <strong>Seuil de Blessures</strong> est réduit de 1, vous rendant plus facile à soigner.</p>"
+            "description": "<p>Votre corps répond avidement à la guérison, démontrant une capacité remarquable à récupérer des blessures.</p>\n<p>Votre <strong>seuil de Blessures</strong> est réduit de 1, vous rendant plus facile à soigner.</p>"
         },
         "Rimecaller": {
             "name": "Héraut du Givre",
@@ -1391,15 +1391,15 @@
         },
         "Science Adept": {
             "name": "Science : Adepte",
-            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Science</strong>, fournissant un <strong>Bonus de Compétence de +2</strong>.</p>"
+            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Science</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
         },
         "Science Journeyman": {
             "name": "Science : Compagnon",
-            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Science</strong>, fournissant un <strong>Bonus de Compétence de +1</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Science</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
         },
         "Science Master": {
             "name": "Science : Maître",
-            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Science</strong>, fournissant un <strong>Bonus de Compétence de +3</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Science</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
         },
         "Science Novice": {
             "name": "Science : Novice",
@@ -1445,7 +1445,7 @@
         },
         "Shield Combat Proficiency": {
             "name": "Combat au bouclier : Maîtrise",
-            "description": "<p>Vous avez une éducation fluide dans l'utilisation des boucliers au combat. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de Compétence de +1</strong> avec les armes de la catégorie <strong>Bouclier</strong>.</p>"
+            "description": "<p>Vous avez une éducation fluide dans l'utilisation des boucliers au combat. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de compétence de +1</strong> avec les armes de la catégorie <strong>Bouclier</strong>.</p>"
         },
         "Shield Combat Training": {
             "name": "Combat au bouclier : Entraînement",
@@ -1483,15 +1483,15 @@
         },
         "Society Adept": {
             "name": "Société : Adepte",
-            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Société</strong>, fournissant un <strong>Bonus de Compétence de +2</strong>.</p>"
+            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Société</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
         },
         "Society Journeyman": {
             "name": "Société : Compagnon",
-            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Société</strong>, fournissant un <strong>Bonus de Compétence de +1</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Société</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
         },
         "Society Master": {
             "name": "Société : Maître",
-            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Société</strong>, fournissant un <strong>Bonus de Compétence de +3</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Société</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
         },
         "Society Novice": {
             "name": "Société : Novice",
@@ -1527,15 +1527,15 @@
         },
         "Stealth Adept": {
             "name": "Discrétion : Adepte",
-            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Discrétion</strong>, fournissant un <strong>Bonus de Compétence de +2</strong>.</p>"
+            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Discrétion</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
         },
         "Stealth Journeyman": {
             "name": "Discrétion : Compagnon",
-            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Discrétion</strong>, fournissant un <strong>Bonus de Compétence de +1</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Discrétion</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
         },
         "Stealth Master": {
             "name": "Discrétion : Maître",
-            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Discrétion</strong>, fournissant un <strong>Bonus de Compétence de +3</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Discrétion</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
         },
         "Stealth Novice": {
             "name": "Discrétion : Novice",
@@ -1543,7 +1543,7 @@
         },
         "Still Lake": {
             "name": "Lac impassible",
-            "description": "<p>Vos expériences de vie fournissent une sérénité qui vous permet de résister à la manipulation tentée par d'autres.</p><p>Les <strong>Attaques de Compétence</strong> contre vous provenant de n'importe laquelle des compétences <strong>Sociales</strong> sont effectuées avec <strong>2 Fléaux</strong>.</p>"
+            "description": "<p>Vos expériences de vie fournissent une sérénité qui vous permet de résister à la manipulation tentée par d'autres.</p><p>Les <strong>Attaques de compétence</strong> contre vous provenant de n'importe laquelle des compétences <strong>Sociales</strong> sont effectuées avec <strong>2 Fléaux</strong>.</p>"
         },
         "Strategic Repositioning": {
             "name": "Repositionnement stratégique",
@@ -1619,7 +1619,7 @@
         },
         "Talisman Weapon Proficiency": {
             "name": "Armes Talisman : Maîtrise",
-            "description": "<p>Vous avez une éducation fluide dans l'utilisation des talismans, orbes, focalisateurs ou autres armes similaires. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de Compétence de +1</strong> avec les armes de la catégorie <strong>Talisman</strong>.</p>"
+            "description": "<p>Vous avez une éducation fluide dans l'utilisation des talismans, orbes, focalisateurs ou autres armes similaires. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de compétence de +1</strong> avec les armes de la catégorie <strong>Talisman</strong>.</p>"
         },
         "Talisman Weapon Training": {
             "name": "Armes Talisman : Entraînement",
@@ -1673,7 +1673,7 @@
         },
         "Unarmed Combat Proficiency": {
             "name": "Combat à mains nues : Maîtrise",
-            "description": "<p>Vous avez une éducation fluide dans le combat au corps à corps et autres arts martiaux. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de Compétence de +1</strong> avec les armes de la catégorie <strong>Mains nues</strong>.</p>"
+            "description": "<p>Vous avez une éducation fluide dans le combat au corps à corps et autres arts martiaux. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de compétence de +1</strong> avec les armes de la catégorie <strong>Mains nues</strong>.</p>"
         },
         "Unarmed Combat Training": {
             "name": "Combat à mains nues : Entraînement",
@@ -1725,15 +1725,15 @@
         },
         "Wilderness Adept": {
             "name": "Nature : Adepte",
-            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Nature</strong>, fournissant un <strong>Bonus de Compétence de +2</strong>.</p>"
+            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Nature</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
         },
         "Wilderness Journeyman": {
             "name": "Nature : Compagnon",
-            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Nature</strong>, fournissant un <strong>Bonus de Compétence de +1</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Nature</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
         },
         "Wilderness Master": {
             "name": "Nature : Maître",
-            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Nature</strong>, fournissant un <strong>Bonus de Compétence de +3</strong>.</p>"
+            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Nature</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
         },
         "Wilderness Novice": {
             "name": "Nature : Novice",

@@ -50,7 +50,7 @@
                     "actions": {
                         "distract": {
                             "name": "Distraire",
-                            "description": "<p>Vous effectuez une <strong>Attaque de Compétence</strong> basée sur la <strong>Duperie</strong> contre la défense de <strong>Volonté</strong> d'une cible à 30 pieds qui peut voir ou vous entendre. Sur un succès, la cible perd <strong>1 Focus</strong>.</p>"
+                            "description": "<p>Vous effectuez une <strong>Attaque de compétence</strong> basée sur la <strong>Duperie</strong> contre la défense de <strong>Volonté</strong> d'une cible à 30 pieds qui peut voir ou vous entendre. Sur un succès, la cible perd <strong>1 Focus</strong>.</p>"
                         }
                     }
                 },
@@ -408,7 +408,7 @@
                 },
                 "Projectile Weapon Proficiency": {
                     "name": "Armes de projectile : Maîtrise",
-                    "description": "<p>Vous avez une éducation fluide dans l'utilisation de l'armement de projectile. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de Compétence de +1</strong> avec les armes de la catégorie <strong>Projectile</strong>.</p>"
+                    "description": "<p>Vous avez une éducation fluide dans l'utilisation de l'armement de projectile. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de compétence de +1</strong> avec les armes de la catégorie <strong>Projectile</strong>.</p>"
                 },
                 "Gesture: Step": {
                     "name": "Signe : Charge",
@@ -424,7 +424,7 @@
                     "actions": {
                         "distract": {
                             "name": "Distraire",
-                            "description": "<p>Vous effectuez une <strong>Attaque de Compétence</strong> basée sur la <strong>Duperie</strong> contre la défense de <strong>Volonté</strong> d'une cible à 30 pieds qui peut voir ou vous entendre. Sur un succès, la cible perd <strong>1 Focus</strong>.</p>"
+                            "description": "<p>Vous effectuez une <strong>Attaque de compétence</strong> basée sur la <strong>Duperie</strong> contre la défense de <strong>Volonté</strong> d'une cible à 30 pieds qui peut voir ou vous entendre. Sur un succès, la cible perd <strong>1 Focus</strong>.</p>"
                         }
                     }
                 },
@@ -572,11 +572,11 @@
                 },
                 "Athletics Journeyman": {
                     "name": "Athlétisme : Compagnon",
-                    "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Athlétisme</strong>, fournissant un <strong>Bonus de Compétence de +1</strong>.</p>"
+                    "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Athlétisme</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
                 },
                 "Heavy Weapon Proficiency": {
                     "name": "Armes lourdes : Maîtrise",
-                    "description": "<p>Vous avez une éducation fluide dans l'utilisation de l'armement martial. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de Compétence de +1</strong> avec les armes des catégories <strong>Simple</strong>, <strong>Lourde</strong> et <strong>Équilibrée</strong>.</p>"
+                    "description": "<p>Vous avez une éducation fluide dans l'utilisation de l'armement martial. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de compétence de +1</strong> avec les armes des catégories <strong>Simple</strong>, <strong>Lourde</strong> et <strong>Équilibrée</strong>.</p>"
                 },
                 "Sundering Strike": {
                     "name": "Frappe fracturante",
@@ -943,7 +943,7 @@
                 },
                 "Heavy Weapon Proficiency": {
                     "name": "Armes lourdes : Maîtrise",
-                    "description": "<p>Vous avez une éducation fluide dans l'utilisation de l'armement martial. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de Compétence de +1</strong> avec les armes des catégories <strong>Simple</strong>, <strong>Lourde</strong> et <strong>Équilibrée</strong>.</p>"
+                    "description": "<p>Vous avez une éducation fluide dans l'utilisation de l'armement martial. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de compétence de +1</strong> avec les armes des catégories <strong>Simple</strong>, <strong>Lourde</strong> et <strong>Équilibrée</strong>.</p>"
                 },
                 "Thick Skin": {
                     "name": "Peau épaisse",
@@ -1317,7 +1317,7 @@
                 },
                 "Shield Combat Proficiency": {
                     "name": "Combat au bouclier : Maîtrise",
-                    "description": "<p>Vous avez une éducation fluide dans l'utilisation des boucliers au combat. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de Compétence de +1</strong> avec les armes de la catégorie <strong>Bouclier</strong>.</p>"
+                    "description": "<p>Vous avez une éducation fluide dans l'utilisation des boucliers au combat. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de compétence de +1</strong> avec les armes de la catégorie <strong>Bouclier</strong>.</p>"
                 },
                 "Crowbar": {
                     "name": "Pied de biche",
@@ -1477,7 +1477,7 @@
                 },
                 "Flame Proficiency": {
                     "name": "Maîtrise de la Flamme",
-                    "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Flamme. Vous gagnez un <strong>Bonus de Compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Enflammer</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+                    "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Flamme. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Enflammer</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
                 },
                 "Rune: Kinesis": {
                     "name": "Rune : Kinésie",

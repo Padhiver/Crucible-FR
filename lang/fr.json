@@ -313,6 +313,26 @@
             "TRAINING": {
                 "header": "Talents de formation"
             }
+        },
+        "ACTIONS": {
+            "AppliedDetailItem": "A appliqué le {type} {name} à {actor}.",
+            "ClearedDetailItem": "A retiré le {type} de {actor}.",
+            "DecreaseAbility": "Réduire la valeur de la caractéristique",
+            "IncreaseAbility": "Augmenter la valeur de la caractéristique"
+        },
+        "CREATION": {
+            "SpendAbilities": "Distribuez 9 points entre 6 caractéristiques, jusqu’à un maximum de 3 points par caractéristiques.",
+            "RestartHint": "Recommencer la création",
+            "RestartTitle": "Réinitialiser la progression de création ?",
+            "Restart": "Recommencer",
+            "RestartContent": "Abandonner la progression et recommencer depuis le début ?",
+            "ExitHint": "Quitter la création",
+            "Exit": "Quitter",
+            "AbandonContent": "Abandonner la progression et quitter la création ?",
+            "AbandonTitle": "Abandonner le processus de création ?",
+            "Complete": "Terminer",
+            "Completed": "Terminé",
+            "CompleteHint": "Finaliser la création"
         }
     },
     "ACTOR.GROUP": {
@@ -1264,7 +1284,12 @@
             "DELETE": "Supprimer l'Action",
             "EDIT": "Éditer l'Action",
             "HOOK_ADD": "Ajouter un Hook",
-            "HOOK_DELETE": "Supprimer le Hook"
+            "HOOK_DELETE": "Supprimer le Hook",
+            "Purchase": "<p>Dépenser 1 point de talent pour acquérir <strong>{name}</strong> ?</p>",
+            "PurchaseNode": "Dépenser un point de talent pour acquérir le nœud vide « {node} » ?",
+            "PurchaseNodeReverse": "Retirer le point dépensé dans le nœud vide « {node} » ?",
+            "PurchaseNodeTitle": "Acquérir un nœud de talent ?",
+            "PurchaseTitle": "Acquérir le talent : {name}"
         },
         "WARNINGS": {
             "AlreadyOwned": "Vous possédez déjà {name} et ne pouvez pas l'ajouter une seconde fois.",
@@ -1310,7 +1335,6 @@
             "MASTER": "Maître"
         },
         "PointsAvailable": "Points disponibles",
-        "Purchase": "<p>Dépenser 1 point de Talent pour acheter <strong>{name}</strong> ?</p>",
         "LABELS": {
             "Points": {
                 "one": "Point",
@@ -1542,11 +1566,16 @@
     "WALKTHROUGH.LevelOne": "Configurez votre personnage au Niveau 1 et commencez votre aventure !",
     "WALKTHROUGH.LevelUp": "Vous avez fait assez de progrès pour avancer vers un nouveau niveau. Augmentez votre niveau de un quand vous êtes prêt !",
     "WALKTHROUGH.LevelZeroIncomplete": "Vous ne pouvez pas avancer au Niveau 1 tant que vous n'avez pas fini toutes les étapes de création de personnage !",
-    "ACTOR.AppliedDetailItem": "A appliqué le {type} {name} à {actor}.",
-    "ACTOR.ClearedDetailItem": "A retiré le {type} de {actor}.",
     "ACTION.TemplateTargets": "Cibles du Gabarit",
     "ACTION.Confirmed": "Confirmé",
     "ACTION.Unconfirmed": "Non confirmé",
     "ACTION.TagMaintained": "Maintenu",
-    "ACTION.TagMaintainedTooltip": "Cette action peut être maintenue, ce qui entraîne son coût de concentration au début de vos tours."
+    "ACTION.TagMaintainedTooltip": "Cette action peut être maintenue, ce qui entraîne son coût de concentration au début de vos tours.",
+    "ACTOR.VulnerabilitySpecific": "Vulnérabilité : {vulnerability}",
+    "ACTOR.StrideSpecific": "Foulée {stride}",
+    "ACTOR.ResistanceSpecific": "Résistance : {resistance}",
+    "ACTOR.SizeSpecific": "Taille {size}",
+    "ACTOR.LanguageSpecific": "Langue : {language}",
+    "ACTOR.LevelSpecific": "Niveau {level}",
+    "ACTOR.KnowledgeSpecific": "Connaissance : {knowledge}"
 }

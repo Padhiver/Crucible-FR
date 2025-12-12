@@ -10,7 +10,7 @@
             "ancestry": "Ascendance",
             "archetype": "Archétype",
             "armor": "Armure",
-            "background": "Historique",
+            "background": "Origine",
             "consumable": "Consommable",
             "loot": "Butin",
             "schematic": "Schémas de fabrication",
@@ -32,7 +32,7 @@
             "Ancestry": "Feuille d'Ascendance de Crucible",
             "Archetype": "Feuille d'Archétype de Crucible",
             "Armor": "Feuille d'Armure de Crucible",
-            "Background": "Feuille d'Historique de Crucible",
+            "Background": "Feuille d'Origine de Crucible",
             "Group": "Feuille de Groupe de Crucible",
             "Hero": "Feuille de Héros de Crucible",
             "HeroCreation": "Feuille de création de Héros de Crucible",
@@ -269,7 +269,7 @@
             "CURRENT_EQUIPMENT": "Équipement actuel",
             "FAVORITE_ACTIONS": "Actions favorites",
             "KNOWLEDGE": "Domaines de connaissances",
-            "KNOWLEDGE_HINT": "Apprenez certains domaines de connaissances à partir de votre historique ou modifiez votre Héros pour en acquérir.",
+            "KNOWLEDGE_HINT": "Apprenez certains domaines de connaissances à partir de votre Origine ou modifiez votre Héros pour en acquérir.",
             "LANGUAGES": "Langues connues"
         },
         "SECTIONS": {
@@ -362,7 +362,7 @@
         },
         "WARNINGS": {
             "NoAncestry": "Choisissez une Ascendance",
-            "NoBackground": "Choisissez un Historique",
+            "NoBackground": "Choisissez une Origine",
             "NoDragTalent": "Les Talents ne peuvent être ajoutés à un Héros que via l'Arbre des talents.",
             "OverspentAbility": "Trop de points de Caractéristique ont été dépensés",
             "OverspentTalent": "Trop de Talents ont été pris",
@@ -577,7 +577,7 @@
     "ACTION.TagHarmless": "Inoffensif",
     "ACTION.TagHarmlessTooltip": "Cette action n'impose pas d'effet directement nuisible, son multiplicateur de dégâts est de zéro.",
     "ACTION.TagHealing": "Guérison",
-    "ACTION.TagHealingTooltip": "Cette action procure une restauration en testant le seuil de Blessures d'un allié.",
+    "ACTION.TagHealingTooltip": "Cette action procure une restauration en testant le seuil de Lésions d'un allié.",
     "ACTION.TagWeakened": "Affaibli",
     "ACTION.TagWeakenedTooltip": "Cette action est plus faible que les attaques normales et applique un malus de dégâts de -2.",
     "ACTION.TagMechanical": "Mécanique",
@@ -748,53 +748,53 @@
     "BACKGROUND": {
         "FIELDS": {
             "description": {
-                "label": "Description de l'Historique"
+                "label": "Description de l'Origine"
             },
             "identifier": {
                 "label": "Identifiant",
-                "hint": "Un identifiant textuel utilisé pour référencer uniquement cet Historique dans les étiquettes, actions ou autres éléments d'interface. Cet identifiant doit être alphanumérique sans espaces ni caractères spéciaux."
+                "hint": "Un identifiant textuel utilisé pour référencer uniquement cette Origine dans les étiquettes, actions ou autres éléments d'interface. Cet identifiant doit être alphanumérique sans espaces ni caractères spéciaux."
             },
             "knowledge": {
                 "label": "Domaines de Connaissances",
-                "hint": "Configurez les domaines de connaissances que cet Historique fournit automatiquement. Typiquement, un Historique comporte deux domaines de connaissances."
+                "hint": "Configurez les domaines de connaissances que cette Origine fournit automatiquement. Typiquement, une Origine comporte deux domaines de connaissances."
             },
             "languages": {
                 "label": "Langues connues",
-                "hint": "Configurez les langues que cet Historique fournit automatiquement."
+                "hint": "Configurez les langues que cette Origine fournit automatiquement."
             },
             "skills": {
                 "label": "Compétences de base",
-                "hint": "Configurez les compétences que cet Historique fournit automatiquement avec une formation de novice. Typiquement, un Historique a une formation dans deux compétences."
+                "hint": "Configurez les compétences que cette Origine fournit automatiquement avec une formation de novice. Typiquement, une Origine a une formation dans deux compétences."
             },
             "talents": {
                 "label": "Talents acquis",
-                "hint": "Configurez un ou plusieurs talents que cet Historique reçoit automatiquement. Typiquement, un Historique reçoit deux talents."
+                "hint": "Configurez un ou plusieurs talents que cette Origine reçoit automatiquement. Typiquement, une Origine reçoit deux talents."
             },
             "ui": {
                 "label": "Interface utilisateur",
                 "color": {
-                    "label": "Couleur d'Historique",
-                    "hint": "Une couleur représentative pour cet Historique utilisée lors de sa référence dans l'interface utilisateur."
+                    "label": "Couleur d'Origine",
+                    "hint": "Une couleur représentative pour cette Origine utilisée lors de sa référence dans l'interface utilisateur."
                 },
                 "icon": {
-                    "label": "Icône d'Historique",
-                    "hint": "Une petite icône utilisé pour représenter cet Historique dans l'interface utilisateur."
+                    "label": "Icône d'Origine",
+                    "hint": "Une petite icône utilisé pour représenter cette Origine dans l'interface utilisateur."
                 }
             }
         },
         "SHEET": {
-            "BROWSE": "Parcourir les Historiques",
-            "CLEAR": "Effacer l'Historique",
-            "CHOOSE": "Choisir un Historique",
+            "BROWSE": "Parcourir les Origines",
+            "CLEAR": "Effacer l'Origine",
+            "CHOOSE": "Choisir une Origine",
             "IDENTITY": "Identité",
             "SKILLS": "Compétences",
             "TALENT_ADD": "Ajouter un Talent",
             "TALENT_REMOVE": "Retirer un Talent",
-            "TALENT_DROP": "Ajoutez un talent à cet Historique en glissant-déposant depuis le compendium des Talents."
+            "TALENT_DROP": "Ajoutez un talent à cette Origine en glissant-déposant depuis le compendium des Talents."
         },
         "ERRORS": {
-            "APPLY": "Vous ne pouvez appliquer un Historique qu'à un personnage de niveau 0 n'ayant dépensé aucun point de compétence.",
-            "TALENT_TIER": "Les Historiques ne peuvent offrir que des Talents de départ de Tiers 0."
+            "APPLY": "Vous ne pouvez appliquer une Origine qu'à un personnage de niveau 0 n'ayant dépensé aucun point de compétence.",
+            "TALENT_TIER": "Les Origines ne peuvent offrir que des Talents de départ de Tiers 0."
         }
     },
     "COMBAT.WarningCannotChangeRound": "Seul un utilisateur Maître du jeu peut changer le round de Combat.",
@@ -858,7 +858,7 @@
     "DEFENSES.Reflex": "Réflexe",
     "DEFENSES.Willpower": "Volonté",
     "DEFENSES.Physical": "Physique",
-    "DEFENSES.Wounds": "Blessures",
+    "DEFENSES.Wounds": "Lésions",
     "DEFENSES.Madness": "Folie",
     "DICE.DiceTotal": "Total des Dés",
     "DICE.AbilityBonus": "Bonus de Caractéristique",
@@ -1002,7 +1002,7 @@
     },
     "RESOURCES": {
         "HEALTH": "Santé",
-        "WOUNDS": "Blessures",
+        "WOUNDS": "Lésions",
         "MORALE": "Moral",
         "MADNESS": "Folie",
         "ACTION": "Action",
@@ -1103,8 +1103,8 @@
                 "hint": "Quels compendiums seront utilisés comme sources pour les ascendances durant la création de personnage."
             },
             "background": {
-                "label": "Sources des Historiques",
-                "hint": "Quels compendiums seront utilisés comme sources pour les historiques durant la création de personnage."
+                "label": "Sources des Origines",
+                "hint": "Quels compendiums seront utilisés comme sources pour les origines durant la création de personnage."
             },
             "spell": {
                 "label": "Sources des Sorts",
@@ -1138,7 +1138,7 @@
         "LABELS": {
             "athletics": "Athlétisme",
             "awareness": "Vigilance",
-            "stealth": "Discrétion",
+            "stealth": "Furtivité",
             "wilderness": "Nature",
             "arcana": "Arcanes",
             "medicine": "Médecine",
@@ -1147,7 +1147,7 @@
             "deception": "Duperie",
             "diplomacy": "Diplomatie",
             "intimidation": "Intimidation",
-            "performance": "Représentation",
+            "performance": "Performance",
             "smithing": "Forge",
             "tailoring": "Couture",
             "fletching": "Empennage",
@@ -1628,9 +1628,9 @@
     "WARNING.CannotEquipActionCost": "Vous ne pouvez pas équiper d'armement car vous n'avez pas de points d'Action disponibles.",
     "WARNING.CannotEquipInvalidCategory": "L'acteur {actor} ne peut pas utiliser {item} dans l'emplacement d'équipement {type}.",
     "WARNING.NoParty": "Vous devez avoir un groupe principal configuré pour cela.",
-    "WARNING.SkillRequireAncestryBackground": "Vous devez assigner à la fois une Ascendance et un Historique avant de pouvoir acheter des rangs de Compétence.",
+    "WARNING.SkillRequireAncestryBackground": "Vous devez assigner à la fois une Ascendance et une Origine avant de pouvoir acheter des rangs de Compétence.",
     "WALKTHROUGH.AddAncestry": "Choisissez une Ascendance depuis le compendium ou la barre latérale Objets et ajoutez-la via glisser-déposer.",
-    "WALKTHROUGH.AddBackground": "Choisissez un Historique depuis le compendium ou la barre latérale Objets et ajoutez-le via glisser-déposer.",
+    "WALKTHROUGH.AddBackground": "Choisissez une Origine depuis le compendium ou la barre latérale Objets et ajoutez-la via glisser-déposer.",
     "WALKTHROUGH.ConfigureArchetype": "Configurez un Archétype pour cet adversaire.",
     "WALKTHROUGH.ConfigureTaxonomy": "Configurez une Taxonomie pour cet adversaire.",
     "WALKTHROUGH.AbilityPoints": "Dépensez les points de Caractéristique disponibles en augmentant vos scores de Caractéristique.",

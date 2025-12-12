@@ -318,7 +318,15 @@
             "AppliedDetailItem": "A appliqué le {type} {name} à {actor}.",
             "ClearedDetailItem": "A retiré le {type} de {actor}.",
             "DecreaseAbility": "Réduire la valeur de la caractéristique",
-            "IncreaseAbility": "Augmenter la valeur de la caractéristique"
+            "IncreaseAbility": "Augmenter la valeur de la caractéristique",
+            "DecreaseAbilitySpecific": "Réduire {ability}",
+            "IncreaseAbilitySpecific": "Augmenter {ability}",
+            "LevelUp": "Monter de Niveau !",
+            "ResetTalents": "Réinitialiser tous les Talents",
+            "RollCheck": "Lancer un Test",
+            "TalentTreeClose": "Fermer l'Arbre des talents",
+            "TalentTreeOpen": "Ouvrir l'Arbre des talents",
+            "ToggleTree": "Basculer l'Arbre des talents"
         },
         "CREATION": {
             "SpendAbilities": "Distribuez 9 points entre 6 caractéristiques, jusqu’à un maximum de 3 points par caractéristiques.",
@@ -333,6 +341,33 @@
             "Complete": "Terminer",
             "Completed": "Terminé",
             "CompleteHint": "Finaliser la création"
+        },
+        "SHEET": {
+            "Abilities": "Caractéristiques",
+            "AbilityPoints": "Points de caractéristique",
+            "Defenses": "Défenses",
+            "HEADERS": {
+                "ActionsAttack": "Actions d'attaque",
+                "ActionsGeneral": "Actions générales",
+                "ActionsMovement": "Actions de déplacement",
+                "ActionsReaction": "Réactions",
+                "ActionsSpell": "Actions de sorcellerie",
+                "EffectsDisabled": "Effets désactivés",
+                "EffectsPersistent": "Effets persistants",
+                "EffectsTemporary": "Effets temporaires"
+            },
+            "PointsAvailable": "Disponible",
+            "PointsSpent": "Dépensés",
+            "Resources": "Ressources"
+        },
+        "WARNINGS": {
+            "NoAncestry": "Choisissez une Ascendance",
+            "NoBackground": "Choisissez un Historique",
+            "NoDragTalent": "Les Talents ne peuvent être ajoutés à un Héros que via l'Arbre des talents.",
+            "OverspentAbility": "Trop de points de Caractéristique ont été dépensés",
+            "OverspentTalent": "Trop de Talents ont été pris",
+            "UnderspentAbility": "Dépensez des points de Caractéristique",
+            "UnderspentTalent": "Dépensez des points de Talent"
         }
     },
     "ACTOR.GROUP": {
@@ -374,6 +409,9 @@
             "cyclePace": "Changer l'allure",
             "recover": "Récupération",
             "rest": "Repos"
+        },
+        "ACTIONS": {
+            "RemoveMember": "Retirer le membre"
         }
     },
     "ANCESTRY": {
@@ -477,6 +515,12 @@
             "Unaware": "Distrait",
             "Weakened": "Affaibli",
             "FlankedDescription": "Vous êtes débordé par plusieurs ennemis qui gagnent des Faveurs supplémentaires à leurs attaques !"
+        },
+        "ACTIONS": {
+            "Delete": "Supprimer l'effet",
+            "Disable": "Désactiver l'effet",
+            "Edit": "Éditer l'effet",
+            "Enable": "Activer l'effet"
         }
     },
     "ACTION.Action": "Action",
@@ -584,10 +628,6 @@
     "ACTION.TagIconicSpellTooltip": "Cette action est un Sort iconique appris par la maîtrise de ses composants.",
     "ACTION.TagTargetTooltip": "Le type, la distance et le nombre de cibles qui s'appliquent à cette action.",
     "ACTION.TagCostTooltip": "Le coût en points d'Action ou points de Focus pour utiliser cette action.",
-    "ACTION.ACTIONS": {
-        "DELETE": "Supprimer l'Action : {name}",
-        "DELETE_CONFIRM": "Êtes-vous certain de vouloir supprimer l'action <strong>{name}</strong> de l'objet <strong>{parent}</strong> de type {type} ?"
-    },
     "ADVANCEMENT.Level": "Niveau",
     "ADVANCEMENT.Progress": "Progression des Échelons",
     "ADVANCEMENT.MilestoneTooltip": "{progress} sur {required} Échelons avant le niveau suivant",
@@ -905,11 +945,33 @@
             "EQUIPMENT_REMOVE": "Retirer l'Équipement",
             "EQUIPMENT_DROP": "Ajoutez de l'équipement de départ en glissant-déposant des objets dans cette zone.",
             "TYPE": "Type d'Équipement",
-            "SCALED_PRICE": "Prix ajusté"
+            "SCALED_PRICE": "Prix ajusté",
+            "TALENT_CONFIGURATION": "Configuration de Talent",
+            "SPELLCRAFT": "Sorcellerie"
+        },
+        "ACTIONS": {
+            "Create": "Créer un objet",
+            "Delete": "Supprimer l'objet",
+            "Drop": "Lâcher l'arme",
+            "Edit": "Éditer l'objet",
+            "Equip": "Équiper : {typeLabel}",
+            "Recover": "Récupérer : {typeLabel}",
+            "UnEquip": "Déséquiper : {typeLabel}"
         },
         "PROPERTIES": {
-            "INVESTMENT": "Investissement",
-            "STACKABLE": "Empilable"
+            "Armor": "{armor} Armure",
+            "Block": "Blocage {block}",
+            "Damage": "{damage} Dégâts",
+            "Defense": "{defense} Défense",
+            "Dodge": "{dodge} Esquive",
+            "Depleted": "Épuisé",
+            "DodgeBase": "{dodge}+ Esquive",
+            "Investment": "Investissement",
+            "NotInvested": "Non investi",
+            "NotKnown": "Non connu",
+            "Parry": "Parade {parry}",
+            "Range": "Portée {range}",
+            "Stackable": "Empilable"
         }
     },
     "ITEM.EnchantmentMundane": "Trivial",
@@ -1019,7 +1081,9 @@
             "INPUT_REMOVE": "Retirer le Groupe d'Entrées",
             "OUTPUT_ADD": "Ajouter un Groupe de Sorties",
             "OUTPUT_DROP": "Déposer l'Objet de Sortie",
-            "OUTPUT_REMOVE": "Retirer le Groupe de Sorties"
+            "OUTPUT_REMOVE": "Retirer le Groupe de Sorties",
+            "INPUTS": "Entrées",
+            "OUTPUTS": "Sorties"
         }
     },
     "SETTINGS": {
@@ -1130,7 +1194,14 @@
         "RollFlavor": "{name} fait un test de {skill}",
         "RollTitle": "Test de Compétence {skill} de [{name}]",
         "TooltipCheck": "[({a1} + {a2}) / 4] + Bonus de Compétence + Bonus d'Enchantement",
-        "TooltipPassive": "12 + Score"
+        "TooltipPassive": "12 + Score",
+        "AcquiredRanks": "Rangs acquis",
+        "CategoryHeader": "{category} Compétences",
+        "PassiveSpecific": "Passive : {passive}",
+        "SpecializationPaths": "Parcours de spécialisation",
+        "SpecializationPathSelect": "Sélectionnez une spécialisation",
+        "SpecializationPathSpecific": "Parcours de spécialisation : {path}",
+        "UnacquiredRanks": "Rangs non acquis"
     },
     "SPELL": {
         "FIELDS": {
@@ -1280,16 +1351,18 @@
             }
         },
         "ACTIONS": {
-            "ADD": "Ajouter une Action",
-            "DELETE": "Supprimer l'Action",
-            "EDIT": "Éditer l'Action",
-            "HOOK_ADD": "Ajouter un Hook",
-            "HOOK_DELETE": "Supprimer le Hook",
             "Purchase": "<p>Dépenser 1 point de talent pour acquérir <strong>{name}</strong> ?</p>",
             "PurchaseNode": "Dépenser un point de talent pour acquérir le nœud vide « {node} » ?",
             "PurchaseNodeReverse": "Retirer le point dépensé dans le nœud vide « {node} » ?",
             "PurchaseNodeTitle": "Acquérir un nœud de talent ?",
-            "PurchaseTitle": "Acquérir le talent : {name}"
+            "PurchaseTitle": "Acquérir le talent : {name}",
+            "ActionAdd": "Ajouter une Action",
+            "ActionDelete": "Supprimer l'Action",
+            "ActionEdit": "Éditer l'Action",
+            "Delete": "Supprimer le Talent",
+            "Edit": "Éditer le Talent",
+            "HookAdd": "Ajouter un Hook",
+            "HookDelete": "Supprimer le Hook"
         },
         "WARNINGS": {
             "AlreadyOwned": "Vous possédez déjà {name} et ne pouvez pas l'ajouter une seconde fois.",
@@ -1298,7 +1371,8 @@
             "Inaccessible": "Vous ne pouvez pas acquérir \"{name}\" car vous n'avez pas déverrouillé ce nœud de l'arbre de talents.",
             "Locked": "Vous ne satisfaites pas les prérequis pour acquérir \"{name}\" qui nécessite {requires} {requirement}.",
             "RequiresRuneGesture": "Vous devez connaître une Rune de sorcellerie afin d'utiliser un Signe.",
-            "RequiresRuneInflection": "Vous devez connaître une Rune de sorcellerie afin d'utiliser une Inflexion."
+            "RequiresRuneInflection": "Vous devez connaître une Rune de sorcellerie afin d'utiliser une Inflexion.",
+            "CannotUse": "Vous ne pouvez pas utiliser ce Talent."
         },
         "HOOKS": {
             "REGISTER": "Enregistrer la Fonction Hook",
@@ -1411,7 +1485,8 @@
         "SHEET": {
             "CHOOSE": "Choisir une Taxonomie",
             "CLEAR": "Effacer la Taxonomie",
-            "STATURE": "Stature de Taxonomie"
+            "STATURE": "Stature de Taxonomie",
+            "PHYSIOLOGY": "Physiologie"
         }
     },
     "TOOL": {
@@ -1577,5 +1652,25 @@
     "ACTOR.SizeSpecific": "Taille {size}",
     "ACTOR.LanguageSpecific": "Langue : {language}",
     "ACTOR.LevelSpecific": "Niveau {level}",
-    "ACTOR.KnowledgeSpecific": "Connaissance : {knowledge}"
+    "ACTOR.KnowledgeSpecific": "Connaissance : {knowledge}",
+    "ACTOR.Details": "Détails",
+    "ACTOR.ProgressionRequirements": "Exigences de progression",
+    "ACTION.ACTIONS": {
+        "AddFavorite": "Ajouter un favori",
+        "Delete": "Supprimer l'Action : {name}",
+        "DeleteConfirm": "Êtes-vous certain de vouloir supprimer l'action <strong>{name}</strong> de l'objet <strong>{parent}</strong> de type {type} ?",
+        "RemoveFavorite": "Retirer un favori"
+    },
+    "CONSUMABLE.USES": {
+        "Of": "de",
+        "TagMax": {
+            "one": "{value} Utilisation",
+            "other": "{value} Utilisations"
+        },
+        "TagPartial": {
+            "one": "{value}/{max} Utilisation",
+            "other": "{value}/{max} Utilisations"
+        }
+    },
+    "TALENT.GrantsSpells": "<strong>Sorts iconiques : </strong>{name} accorde {spells} emplacements de Sort iconique."
 }

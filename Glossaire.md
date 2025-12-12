@@ -45,7 +45,7 @@
 ### Ressources (Resources)
 | Anglais | Français |
 |---------|----------|
-| Wounds | Blessures |
+| Wounds | Lésions |
 | Health | Santé |
 | Morale | Moral |
 | Madness | Folie |
@@ -136,9 +136,9 @@
 | Deception | Duperie |
 | Diplomacy | Diplomatie |
 | Intimidation | Intimidation |
-| Performance | Représentation |
+| Performance | Performance |
 | Athletics | Athlétisme |
-| Stealth | Discrétion |
+| Stealth | Furtivité |
 | Wilderness | Nature |
 
 ## Progression & Récompenses
@@ -358,7 +358,7 @@
 | Ancestry | Ascendance |
 | Ancestry Features | Attribut d'ascendance |
 | Ancestral Talent | Talent ancestral |
-| Background | Historique |
+| Background | Origine |
 | Talents | Talents |
 | Knowledge Areas | Domaines de connaissances |
 | Languages | Langues |
@@ -562,7 +562,7 @@
 | Burning | Enflammé |
 | Freezing | Gelé |
 | Irradiated | Irradié |
-| Decaying | Pourrissant |
+| Decaying | Putréfié |
 | Shocked | Électrocuté |
 
 ---

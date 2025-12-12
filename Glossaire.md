@@ -128,7 +128,7 @@
 | Fletching | Empennage |
 | Jewelcraft | Joaillerie |
 | Runeweaving | Tisserune |
-| Smithing | Forgeron |
+| Smithing | Forge |
 | Tailoring | Couture |
 | Medicine | Médecine |
 | Science | Science |

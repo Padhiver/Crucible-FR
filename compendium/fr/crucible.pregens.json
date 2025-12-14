@@ -86,8 +86,8 @@
                     }
                 },
                 "Stealth Novice": {
-                    "name": "Discrétion : Novice",
-                    "description": "<p>Vous avez reçu une formation dans les bases de la discrétion, de l'infiltration et du subterfuge. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Discrétion</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez comment utiliser la lumière et l'ombre pour masquer votre présence, répartir votre poids en marchant afin de vous déplacer plus silencieusement, et vous avez appris quelques astuces de déguisement pour vous fondre dans une foule. Vous pouvez paraître non suspect lorsque vous êtes entouré par d'autres, vous cacher dans une pièce sombre, et vous déplacer assez silencieusement pour éviter d'être détecté par une personne lambda.</p>"
+                    "name": "Furtivité : Novice",
+                    "description": "<p>Vous avez reçu une formation dans les bases de la furtivité, de l'infiltration et du subterfuge. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Furtivité</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez comment utiliser la lumière et l'ombre pour masquer votre présence, répartir votre poids en marchant afin de vous déplacer plus silencieusement, et vous avez appris quelques astuces de déguisement pour vous fondre dans une foule. Vous pouvez paraître non suspect lorsque vous êtes entouré par d'autres, vous cacher dans une pièce sombre, et vous déplacer assez silencieusement pour éviter d'être détecté par une personne lambda.</p>"
                 },
                 "Deception Novice": {
                     "name": "Duperie : Novice",
@@ -338,8 +338,8 @@
                     }
                 },
                 "Stealth Novice": {
-                    "name": "Discrétion : Novice",
-                    "description": "<p>Vous avez reçu une formation dans les bases de la discrétion, de l'infiltration et du subterfuge. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Discrétion</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez comment utiliser la lumière et l'ombre pour masquer votre présence, répartir votre poids en marchant afin de vous déplacer plus silencieusement, et vous avez appris quelques astuces de déguisement pour vous fondre dans une foule. Vous pouvez paraître non suspect lorsque vous êtes entouré par d'autres, vous cacher dans une pièce sombre, et vous déplacer assez silencieusement pour éviter d'être détecté par une personne lambda.</p>"
+                    "name": "Furtivité : Novice",
+                    "description": "<p>Vous avez reçu une formation dans les bases de la furtivité, de l'infiltration et du subterfuge. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Furtivité</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez comment utiliser la lumière et l'ombre pour masquer votre présence, répartir votre poids en marchant afin de vous déplacer plus silencieusement, et vous avez appris quelques astuces de déguisement pour vous fondre dans une foule. Vous pouvez paraître non suspect lorsque vous êtes entouré par d'autres, vous cacher dans une pièce sombre, et vous déplacer assez silencieusement pour éviter d'être détecté par une personne lambda.</p>"
                 },
                 "Rune: Illusion": {
                     "name": "Rune : Illusion",
@@ -728,11 +728,11 @@
                 },
                 "Soothe": {
                     "name": "Apaiser",
-                    "description": "Vous administrez une Représentation apaisante qui rallie vos alliés, restaurant le Moral.",
+                    "description": "Vous administrez une Performance apaisante qui rallie vos alliés, restaurant le Moral.",
                     "actions": {
                         "soothe": {
                             "name": "Apaiser",
-                            "description": "<p>Vous déclamez des vers calmes, profitant à tous les alliés qui peuvent vous entendre dans un rayon de 12 pieds. Effectuez un <strong>Test de Représentation</strong> contre le seuil de Folie de chaque allié. Sur des succès, le Moral de chaque allié est restauré.</p>"
+                            "description": "<p>Vous déclamez des vers calmes, profitant à tous les alliés qui peuvent vous entendre dans un rayon de 12 pieds. Effectuez un <strong>Test de Performance</strong> contre le seuil de Folie de chaque allié. Sur des succès, le Moral de chaque allié est restauré.</p>"
                         }
                     }
                 },
@@ -1409,8 +1409,8 @@
                     "description": "<p>Expulsez la puissance arcanique d'une Rune dans un rayon qui se propage vers l'extérieur avec vous en son centre.</p><p>Le signe d'Onde évolue avec la <strong>Présence</strong> et produit une émanation de 10 pieds de rayon, infligeant <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Le signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>5 Actions</strong> et <strong>2 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent est actuellement placé au <strong>palier 4</strong>. Il ne sera accessible qu'à un niveau supérieur (probablement le Niveau 6). Il est actuellement disponible en avant-première pour les tests.</p>"
                 },
                 "Performance Novice": {
-                    "name": "Représentation : Novice",
-                    "description": "<p>Vous avez appris les pratiques de base de l'art et du divertissement. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Représentation</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous connaissez quelques danses courantes, avez une collection de contes bien connus, et vous pourriez probablement chanter ou jouer quelques chansons populaires. Vous pouvez être formé à un instrument ou deux, et votre capacité avec un pinceau ou une plume est assez raisonnable pour que vous puissiez probablement créer une œuvre d'art passable.</p>"
+                    "name": "Performance : Novice",
+                    "description": "<p>Vous avez appris les pratiques de base de l'art et du divertissement. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Performance</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous connaissez quelques danses courantes, avez une collection de contes bien connus, et vous pourriez probablement chanter ou jouer quelques chansons populaires. Vous pouvez être formé à un instrument ou deux, et votre capacité avec un pinceau ou une plume est assez raisonnable pour que vous puissiez probablement créer une œuvre d'art passable.</p>"
                 },
                 "Deception Novice": {
                     "name": "Duperie : Novice",
@@ -1506,7 +1506,7 @@
             },
             "background": {
                 "name": "Artiste",
-                "description": "Vous étiez un animateur itinérant. Vous avez appris à être à l'aise lors de diverses manifestations sociales, à jouer pour votre public, embellissant les détails de votre représentation pour évoquer des réponses émotionnelles particulières."
+                "description": "Vous étiez un animateur itinérant. Vous avez appris à être à l'aise lors de diverses manifestations sociales, à jouer pour votre public, embellissant les détails de votre performance pour évoquer des réponses émotionnelles particulières."
             },
             "biography": {
                 "public": "<p>Zarajah est une diablotine fougueuse qui affectionne particulièrement la pyromancie et qui tisse des sorts dangereux et protecteurs pour contrôler le champ de bataille. Zarajah aspire à obtenir le Talent signature <strong>Mage de guerre</strong>.</p>"

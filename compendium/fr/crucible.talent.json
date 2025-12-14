@@ -235,7 +235,7 @@
             "description": "<p>Vous pratiquez les traditions orales et musicales du conte héroïque pour inspirer du courage à vos alliés, démoraliser vos ennemis et trouver rapidement des solutions non conventionnelles aux problèmes.</p><p>Vous apprenez la <strong>Rune : Âme</strong> si vous ne la connaissez pas déjà. Lorsque vous restaurez le moral d'alliés en utilisant la Rune d'Âme, vous gagnez <strong>+2 Faveurs</strong> à votre jet.</p>",
             "actions": {
                 "laughingMatter": {
-                    "description": "<p>Lorsqu'un ennemi rate une attaque vous affectant vous ou un de vos alliés, vous créez une plaisanterie mordante ou une pantomime qui ridiculise ses faibles efforts.</p><p>Effectuez une attaque de compétence de <strong>Représentation</strong> contre la <strong>Fortitude</strong> de la cible, lui infligeant des dégâts <strong>Psychiques</strong> au <strong>Moral</strong> sur un succès. De plus, sur une réussite, la cible souffre de 1 <strong>Fléau</strong> à tous ses jets jusqu'au début de son prochain tour.</p><p>La cible doit pouvoir vous voir et vous comprendre pour être affectée par cette capacité.</p>",
+                    "description": "<p>Lorsqu'un ennemi rate une attaque vous affectant vous ou un de vos alliés, vous créez une plaisanterie mordante ou une pantomime qui ridiculise ses faibles efforts.</p><p>Effectuez une attaque de compétence de <strong>Performance</strong> contre la <strong>Fortitude</strong> de la cible, lui infligeant des dégâts <strong>Psychiques</strong> au <strong>Moral</strong> sur un succès. De plus, sur une réussite, la cible souffre de 1 <strong>Fléau</strong> à tous ses jets jusqu'au début de son prochain tour.</p><p>La cible doit pouvoir vous voir et vous comprendre pour être affectée par cette capacité.</p>",
                     "name": "Importance du rire",
                     "condition": "Un ennemi ne parvient pas à vous affecter, vous ou un allié, avec une attaque."
                 }
@@ -341,7 +341,7 @@
             "actions": {
                 "combatMedicine": {
                     "name": "Médecine de guerre",
-                    "description": "<p>Vous traitez rapidement les blessures d'un allié à 4 pieds. Effectuez un <strong>Test de Médecine</strong> contre le seuil de Blessures de la cible. La Santé de votre allié est augmentée du montant du jet dépassant le seuil.</p>"
+                    "description": "<p>Vous traitez rapidement les blessures d'un allié à 4 pieds. Effectuez un <strong>Test de Médecine</strong> contre le seuil de Lésions de la cible. La Santé de votre allié est augmentée du montant du jet dépassant le seuil.</p>"
                 }
             }
         },
@@ -1036,7 +1036,7 @@
         },
         "Necromancer": {
             "name": "Nécromancien",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Mort. Les sorts utilisant cette Rune causent la condition @Condition[decaying] sur les Coups critiques.</p><p>L'effet Pourrissant dure <strong>3 Rounds</strong> et inflige votre score d'<strong>Intellect</strong> comme dégâts de <strong>Corruption</strong> à la <strong>Santé</strong> chaque Round.</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Mort. Les sorts utilisant cette Rune causent la condition @Condition[decaying] sur les Coups critiques.</p><p>L'effet Putréfié dure <strong>3 Rounds</strong> et inflige votre score d'<strong>Intellect</strong> comme dégâts de <strong>Corruption</strong> à la <strong>Santé</strong> chaque Round.</p>"
         },
         "Nosferatu": {
             "name": "Nosferatu",
@@ -1097,20 +1097,20 @@
             }
         },
         "Performance Adept": {
-            "name": "Représentation : Adepte",
-            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Représentation</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
+            "name": "Performance : Adepte",
+            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Performance</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
         },
         "Performance Journeyman": {
-            "name": "Représentation : Compagnon",
-            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Représentation</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
+            "name": "Performance : Compagnon",
+            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Performance</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
         },
         "Performance Master": {
-            "name": "Représentation : Maître",
-            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Représentation</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
+            "name": "Performance : Maître",
+            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Performance</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
         },
         "Performance Novice": {
-            "name": "Représentation : Novice",
-            "description": "<p>Vous avez appris les pratiques de base de l'art et du divertissement. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Représentation</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous connaissez quelques danses courantes, avez une collection de contes bien connus, et vous pourriez probablement chanter ou jouer quelques chansons populaires. Vous pouvez être formé à un instrument ou deux, et votre capacité avec un pinceau ou une plume est assez raisonnable pour que vous puissiez probablement créer une œuvre d'art passable.</p>"
+            "name": "Performance : Novice",
+            "description": "<p>Vous avez appris les pratiques de base de l'art et du divertissement. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Performance</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous connaissez quelques danses courantes, avez une collection de contes bien connus, et vous pourriez probablement chanter ou jouer quelques chansons populaires. Vous pouvez être formé à un instrument ou deux, et votre capacité avec un pinceau ou une plume est assez raisonnable pour que vous puissiez probablement créer une œuvre d'art passable.</p>"
         },
         "Perspicacity": {
             "name": "Perspicacité",
@@ -1236,7 +1236,7 @@
         },
         "Resilient": {
             "name": "Résilient",
-            "description": "<p>Votre corps répond avidement à la guérison, démontrant une capacité remarquable à récupérer des blessures.</p>\n<p>Votre <strong>seuil de Blessures</strong> est réduit de 1, vous rendant plus facile à soigner.</p>"
+            "description": "<p>Votre corps répond avidement à la guérison, démontrant une capacité remarquable à récupérer des blessures.</p>\n<p>Votre <strong>seuil de Lésions</strong> est réduit de 1, vous rendant plus facile à soigner.</p>"
         },
         "Rimecaller": {
             "name": "Héraut du Givre",
@@ -1387,7 +1387,7 @@
         },
         "Safecracker": {
             "name": "Cambrioleur",
-            "description": "<p>Vous êtes qualifié dans les arts du désarmement de pièges et du crochetage de serrures. Vous gagnez +1 Faveur sur les tests de <strong>Discrétion</strong> pour désactiver un dispositif ou ouvrir une serrure.</p>"
+            "description": "<p>Vous êtes qualifié dans les arts du désarmement de pièges et du crochetage de serrures. Vous gagnez +1 Faveur sur les tests de <strong>Furtivité</strong> pour désactiver un dispositif ou ouvrir une serrure.</p>"
         },
         "Science Adept": {
             "name": "Science : Adepte",
@@ -1421,7 +1421,7 @@
         },
         "Shapeshifter": {
             "name": "Métamorphe",
-            "description": "<p>Vous possédez la capacité surnaturelle de transformer votre corps en formes de bêtes.</p><p>Vous subissez une transformation où vous assumez la forme d'une bête avec laquelle vous êtes familier et qui est de la moitié de votre niveau ou moins. Tant que vous êtes transformé, vous avez les attributs et capacités exacts de la bête choisie.</p><p>Votre équipement est magiquement incorporé dans la forme que vous prenez, cependant vous ne gagnez aucun bénéfice de cet équipement tant que vous êtes transformé.</p><p>Si votre forme bestiale devient Neutralisée, vous revenez à votre forme normale avec tout dégât excédentaire devenant des Blessures. Si votre Moral est Brisé tant que vous êtes sous forme de bête, votre transformation se termine et tout dégât excédentaire devient de la Folie.</p>",
+            "description": "<p>Vous possédez la capacité surnaturelle de transformer votre corps en formes de bêtes.</p><p>Vous subissez une transformation où vous assumez la forme d'une bête avec laquelle vous êtes familier et qui est de la moitié de votre niveau ou moins. Tant que vous êtes transformé, vous avez les attributs et capacités exacts de la bête choisie.</p><p>Votre équipement est magiquement incorporé dans la forme que vous prenez, cependant vous ne gagnez aucun bénéfice de cet équipement tant que vous êtes transformé.</p><p>Si votre forme bestiale devient Neutralisée, vous revenez à votre forme normale avec tout dégât excédentaire devenant des Lésions. Si votre Moral est Brisé tant que vous êtes sous forme de bête, votre transformation se termine et tout dégât excédentaire devient de la Folie.</p>",
             "actions": {
                 "beastShape": {
                     "name": "Forme de bête",
@@ -1499,11 +1499,11 @@
         },
         "Soothe": {
             "name": "Apaiser",
-            "description": "Vous administrez une Représentation apaisante qui rallie vos alliés, restaurant le Moral.",
+            "description": "Vous administrez une Performance apaisante qui rallie vos alliés, restaurant le Moral.",
             "actions": {
                 "soothe": {
                     "name": "Apaiser",
-                    "description": "<p>Vous déclamez des vers calmes, profitant à tous les alliés qui peuvent vous entendre dans un rayon de 12 pieds. Effectuez un <strong>Test de Représentation</strong> contre le seuil de Folie de chaque allié. Sur des succès, le Moral de chaque allié est restauré.</p>"
+                    "description": "<p>Vous déclamez des vers calmes, profitant à tous les alliés qui peuvent vous entendre dans un rayon de 12 pieds. Effectuez un <strong>Test de Performance</strong> contre le seuil de Folie de chaque allié. Sur des succès, le Moral de chaque allié est restauré.</p>"
                 }
             }
         },
@@ -1526,20 +1526,20 @@
             }
         },
         "Stealth Adept": {
-            "name": "Discrétion : Adepte",
-            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Discrétion</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
+            "name": "Furtivité : Adepte",
+            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Furtivité</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
         },
         "Stealth Journeyman": {
-            "name": "Discrétion : Compagnon",
-            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Discrétion</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
+            "name": "Furtivité : Compagnon",
+            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Furtivité</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
         },
         "Stealth Master": {
-            "name": "Discrétion : Maître",
-            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Discrétion</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
+            "name": "Furtivité : Maître",
+            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Furtivité</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
         },
         "Stealth Novice": {
-            "name": "Discrétion : Novice",
-            "description": "<p>Vous avez reçu une formation dans les bases de la discrétion, de l'infiltration et du subterfuge. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Discrétion</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez comment utiliser la lumière et l'ombre pour masquer votre présence, répartir votre poids en marchant afin de vous déplacer plus silencieusement, et vous avez appris quelques astuces de déguisement pour vous fondre dans une foule. Vous pouvez paraître non suspect lorsque vous êtes entouré par d'autres, vous cacher dans une pièce sombre, et vous déplacer assez silencieusement pour éviter d'être détecté par une personne lambda.</p>"
+            "name": "Furtivité : Novice",
+            "description": "<p>Vous avez reçu une formation dans les bases de la furtivité, de l'infiltration et du subterfuge. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Furtivité</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez comment utiliser la lumière et l'ombre pour masquer votre présence, répartir votre poids en marchant afin de vous déplacer plus silencieusement, et vous avez appris quelques astuces de déguisement pour vous fondre dans une foule. Vous pouvez paraître non suspect lorsque vous êtes entouré par d'autres, vous cacher dans une pièce sombre, et vous déplacer assez silencieusement pour éviter d'être détecté par une personne lambda.</p>"
         },
         "Still Lake": {
             "name": "Lac impassible",

@@ -10,7 +10,7 @@
             "ancestry": "Ascendance",
             "archetype": "Archétype",
             "armor": "Armure",
-            "background": "Historique",
+            "background": "Origine",
             "consumable": "Consommable",
             "loot": "Butin",
             "schematic": "Schémas de fabrication",
@@ -32,7 +32,7 @@
             "Ancestry": "Feuille d'Ascendance de Crucible",
             "Archetype": "Feuille d'Archétype de Crucible",
             "Armor": "Feuille d'Armure de Crucible",
-            "Background": "Feuille d'Historique de Crucible",
+            "Background": "Feuille d'Origine de Crucible",
             "Group": "Feuille de Groupe de Crucible",
             "Hero": "Feuille de Héros de Crucible",
             "HeroCreation": "Feuille de création de Héros de Crucible",
@@ -162,6 +162,80 @@
             "TARGET": "Cible",
             "EFFECTS": "Effets",
             "HOOKS": "Hooks"
+        },
+        "DEFAULT_ACTIONS": {
+            "Cast": {
+                "Name": "Lancer un sort",
+                "Description": "Tissez des arcanes pour créer une œuvre de sorcellerie."
+            },
+            "Defend": {
+                "Name": "Défendre",
+                "Description": "Vous concentrez vos efforts à éviter les blessures, en renforçant votre défense physique. Vous obtenez la condition <strong>Protégé</strong> jusqu'au début de votre prochain Tour."
+            },
+            "Delay": {
+                "Name": "Retarder",
+                "Description": "Vous reportez votre action à un moment ultérieur du round de combat. Choisissez une initiative entre 1 et celle du combattant suivant. Vous agirez avec cette nouvelle initiative. Vous ne pouvez reporter votre tour qu'une seule fois par round."
+            },
+            "Move": {
+                "Name": "Déplacement",
+                "Description": "Déplacez-vous sur une distance en dépensant une quantité d'Action qui dépend de votre Foulée et de l'action de déplacement utilisée."
+            },
+            "ReactiveStrike": {
+                "Name": "Assaut opportuniste",
+                "Description": "Effectuez une attaque lorsqu'un ennemi quitte votre engagement et que vous n'êtes pas totalement engagé."
+            },
+            "Recover": {
+                "Name": "Récupération",
+                "Description": "Consacrez 10 minutes hors-combat à récupérer de l'effort afin de rétablir pleinement vos scores de Santé, Moral, Action et Focus."
+            },
+            "Refocus": {
+                "Name": "Récupération de Focus",
+                "Description": "Utilisez votre Talisman équipé pour récupérer du Focus."
+            },
+            "Reload": {
+                "Name": "Rechargement d'arme",
+                "Description": "Recharger une arme à distance qui possède un temps de rechargement."
+            },
+            "Rest": {
+                "Name": "Repos",
+                "Description": "Consacrez dix heures à un repos complet, incluant le temps de manger, de dormir, de soigner vos blessures et de récupérer vos ressources."
+            },
+            "Strike": {
+                "Name": "Frappe",
+                "Description": "Attaquez une créature ou un objet unique avec l'une de vos armes équipées."
+            },
+            "ThrowWeapon": {
+                "Name": "Lancer une arme",
+                "Description": "Lancez votre arme de mêlée équipée pour Frapper une cible proche. L'attaque souffre de +2 <strong>Fléaux</strong> et l'arme devient <strong>Lâchée</strong>."
+            }
+        },
+        "EFFECT_RESULT_TYPES": {
+            "All": "Tous",
+            "Any": "N'importe lequel",
+            "Custom": "Personnalisé",
+            "Success": "Réussite",
+            "CriticalSuccess": "Réussite critique",
+            "Failure": "Échec",
+            "CriticalFailure": "Échec critique"
+        },
+        "TARGET_SCOPES": {
+            "None": "Aucune",
+            "Self": "Soi-même",
+            "Allies": "Alliés",
+            "Enemies": "Ennemis",
+            "All": "Tous"
+        },
+        "TARGET_TYPES": {
+            "Blast": "Explosion",
+            "Cone": "Cône",
+            "Fan": "Éventail",
+            "None": "Aucun",
+            "Pulse": "Onde",
+            "Ray": "Rayon",
+            "Self": "Soi-même",
+            "Single": "Sélectif",
+            "Summon": "Invocation",
+            "Wall": "Mur"
         }
     },
     "ADVERSARY": {
@@ -269,7 +343,7 @@
             "CURRENT_EQUIPMENT": "Équipement actuel",
             "FAVORITE_ACTIONS": "Actions favorites",
             "KNOWLEDGE": "Domaines de connaissances",
-            "KNOWLEDGE_HINT": "Apprenez certains domaines de connaissances à partir de votre historique ou modifiez votre Héros pour en acquérir.",
+            "KNOWLEDGE_HINT": "Apprenez certains domaines de connaissances à partir de votre Origine ou modifiez votre Héros pour en acquérir.",
             "LANGUAGES": "Langues connues"
         },
         "SECTIONS": {
@@ -362,7 +436,7 @@
         },
         "WARNINGS": {
             "NoAncestry": "Choisissez une Ascendance",
-            "NoBackground": "Choisissez un Historique",
+            "NoBackground": "Choisissez une Origine",
             "NoDragTalent": "Les Talents ne peuvent être ajoutés à un Héros que via l'Arbre des talents.",
             "OverspentAbility": "Trop de points de Caractéristique ont été dépensés",
             "OverspentTalent": "Trop de Talents ont été pris",
@@ -577,7 +651,7 @@
     "ACTION.TagHarmless": "Inoffensif",
     "ACTION.TagHarmlessTooltip": "Cette action n'impose pas d'effet directement nuisible, son multiplicateur de dégâts est de zéro.",
     "ACTION.TagHealing": "Guérison",
-    "ACTION.TagHealingTooltip": "Cette action procure une restauration en testant le seuil de Blessures d'un allié.",
+    "ACTION.TagHealingTooltip": "Cette action procure une restauration en testant le seuil de Lésions d'un allié.",
     "ACTION.TagWeakened": "Affaibli",
     "ACTION.TagWeakenedTooltip": "Cette action est plus faible que les attaques normales et applique un malus de dégâts de -2.",
     "ACTION.TagMechanical": "Mécanique",
@@ -748,53 +822,53 @@
     "BACKGROUND": {
         "FIELDS": {
             "description": {
-                "label": "Description de l'Historique"
+                "label": "Description de l'Origine"
             },
             "identifier": {
                 "label": "Identifiant",
-                "hint": "Un identifiant textuel utilisé pour référencer uniquement cet Historique dans les étiquettes, actions ou autres éléments d'interface. Cet identifiant doit être alphanumérique sans espaces ni caractères spéciaux."
+                "hint": "Un identifiant textuel utilisé pour référencer uniquement cette Origine dans les étiquettes, actions ou autres éléments d'interface. Cet identifiant doit être alphanumérique sans espaces ni caractères spéciaux."
             },
             "knowledge": {
                 "label": "Domaines de Connaissances",
-                "hint": "Configurez les domaines de connaissances que cet Historique fournit automatiquement. Typiquement, un Historique comporte deux domaines de connaissances."
+                "hint": "Configurez les domaines de connaissances que cette Origine fournit automatiquement. Typiquement, une Origine comporte deux domaines de connaissances."
             },
             "languages": {
                 "label": "Langues connues",
-                "hint": "Configurez les langues que cet Historique fournit automatiquement."
+                "hint": "Configurez les langues que cette Origine fournit automatiquement."
             },
             "skills": {
                 "label": "Compétences de base",
-                "hint": "Configurez les compétences que cet Historique fournit automatiquement avec une formation de novice. Typiquement, un Historique a une formation dans deux compétences."
+                "hint": "Configurez les compétences que cette Origine fournit automatiquement avec une formation de novice. Typiquement, une Origine a une formation dans deux compétences."
             },
             "talents": {
                 "label": "Talents acquis",
-                "hint": "Configurez un ou plusieurs talents que cet Historique reçoit automatiquement. Typiquement, un Historique reçoit deux talents."
+                "hint": "Configurez un ou plusieurs talents que cette Origine reçoit automatiquement. Typiquement, une Origine reçoit deux talents."
             },
             "ui": {
                 "label": "Interface utilisateur",
                 "color": {
-                    "label": "Couleur d'Historique",
-                    "hint": "Une couleur représentative pour cet Historique utilisée lors de sa référence dans l'interface utilisateur."
+                    "label": "Couleur d'Origine",
+                    "hint": "Une couleur représentative pour cette Origine utilisée lors de sa référence dans l'interface utilisateur."
                 },
                 "icon": {
-                    "label": "Icône d'Historique",
-                    "hint": "Une petite icône utilisé pour représenter cet Historique dans l'interface utilisateur."
+                    "label": "Icône d'Origine",
+                    "hint": "Une petite icône utilisé pour représenter cette Origine dans l'interface utilisateur."
                 }
             }
         },
         "SHEET": {
-            "BROWSE": "Parcourir les Historiques",
-            "CLEAR": "Effacer l'Historique",
-            "CHOOSE": "Choisir un Historique",
+            "BROWSE": "Parcourir les Origines",
+            "CLEAR": "Effacer l'Origine",
+            "CHOOSE": "Choisir une Origine",
             "IDENTITY": "Identité",
             "SKILLS": "Compétences",
             "TALENT_ADD": "Ajouter un Talent",
             "TALENT_REMOVE": "Retirer un Talent",
-            "TALENT_DROP": "Ajoutez un talent à cet Historique en glissant-déposant depuis le compendium des Talents."
+            "TALENT_DROP": "Ajoutez un talent à cette Origine en glissant-déposant depuis le compendium des Talents."
         },
         "ERRORS": {
-            "APPLY": "Vous ne pouvez appliquer un Historique qu'à un personnage de niveau 0 n'ayant dépensé aucun point de compétence.",
-            "TALENT_TIER": "Les Historiques ne peuvent offrir que des Talents de départ de Tiers 0."
+            "APPLY": "Vous ne pouvez appliquer une Origine qu'à un personnage de niveau 0 n'ayant dépensé aucun point de compétence.",
+            "TALENT_TIER": "Les Origines ne peuvent offrir que des Talents de départ de Tiers 0."
         }
     },
     "COMBAT.WarningCannotChangeRound": "Seul un utilisateur Maître du jeu peut changer le round de Combat.",
@@ -858,7 +932,7 @@
     "DEFENSES.Reflex": "Réflexe",
     "DEFENSES.Willpower": "Volonté",
     "DEFENSES.Physical": "Physique",
-    "DEFENSES.Wounds": "Blessures",
+    "DEFENSES.Wounds": "Lésions",
     "DEFENSES.Madness": "Folie",
     "DICE.DiceTotal": "Total des Dés",
     "DICE.AbilityBonus": "Bonus de Caractéristique",
@@ -1002,7 +1076,7 @@
     },
     "RESOURCES": {
         "HEALTH": "Santé",
-        "WOUNDS": "Blessures",
+        "WOUNDS": "Lésions",
         "MORALE": "Moral",
         "MADNESS": "Folie",
         "ACTION": "Action",
@@ -1103,8 +1177,8 @@
                 "hint": "Quels compendiums seront utilisés comme sources pour les ascendances durant la création de personnage."
             },
             "background": {
-                "label": "Sources des Historiques",
-                "hint": "Quels compendiums seront utilisés comme sources pour les historiques durant la création de personnage."
+                "label": "Sources des Origines",
+                "hint": "Quels compendiums seront utilisés comme sources pour les origines durant la création de personnage."
             },
             "spell": {
                 "label": "Sources des Sorts",
@@ -1138,7 +1212,7 @@
         "LABELS": {
             "athletics": "Athlétisme",
             "awareness": "Vigilance",
-            "stealth": "Discrétion",
+            "stealth": "Furtivité",
             "wilderness": "Nature",
             "arcana": "Arcanes",
             "medicine": "Médecine",
@@ -1147,7 +1221,7 @@
             "deception": "Duperie",
             "diplomacy": "Diplomatie",
             "intimidation": "Intimidation",
-            "performance": "Représentation",
+            "performance": "Performance",
             "smithing": "Forge",
             "tailoring": "Couture",
             "fletching": "Empennage",
@@ -1628,9 +1702,9 @@
     "WARNING.CannotEquipActionCost": "Vous ne pouvez pas équiper d'armement car vous n'avez pas de points d'Action disponibles.",
     "WARNING.CannotEquipInvalidCategory": "L'acteur {actor} ne peut pas utiliser {item} dans l'emplacement d'équipement {type}.",
     "WARNING.NoParty": "Vous devez avoir un groupe principal configuré pour cela.",
-    "WARNING.SkillRequireAncestryBackground": "Vous devez assigner à la fois une Ascendance et un Historique avant de pouvoir acheter des rangs de Compétence.",
+    "WARNING.SkillRequireAncestryBackground": "Vous devez assigner à la fois une Ascendance et une Origine avant de pouvoir acheter des rangs de Compétence.",
     "WALKTHROUGH.AddAncestry": "Choisissez une Ascendance depuis le compendium ou la barre latérale Objets et ajoutez-la via glisser-déposer.",
-    "WALKTHROUGH.AddBackground": "Choisissez un Historique depuis le compendium ou la barre latérale Objets et ajoutez-le via glisser-déposer.",
+    "WALKTHROUGH.AddBackground": "Choisissez une Origine depuis le compendium ou la barre latérale Objets et ajoutez-la via glisser-déposer.",
     "WALKTHROUGH.ConfigureArchetype": "Configurez un Archétype pour cet adversaire.",
     "WALKTHROUGH.ConfigureTaxonomy": "Configurez une Taxonomie pour cet adversaire.",
     "WALKTHROUGH.AbilityPoints": "Dépensez les points de Caractéristique disponibles en augmentant vos scores de Caractéristique.",
@@ -1672,5 +1746,41 @@
             "other": "{value}/{max} Utilisations"
         }
     },
-    "TALENT.GrantsSpells": "<strong>Sorts iconiques : </strong>{name} accorde {spells} emplacements de Sort iconique."
+    "TALENT.GrantsSpells": "<strong>Sorts iconiques : </strong>{name} accorde {spells} emplacements de Sort iconique.",
+    "ACTION.AllResult": "{existing} (Tous)",
+    "ACTION.AffectsScope": "Affecte {scope}",
+    "ACTION.DelayTitle": "Retarder le Tour",
+    "ACTION.DelayLabel": "Initiative retardée",
+    "ACTION.DelayHint": "Choisissez une valeur d'initiative entre 1 et {maximum} lorsque vous souhaitez agir.",
+    "ACTION.DurationRounds": "{rounds}R",
+    "ACTION.DurationTurns": "{turns}T",
+    "ACTION.DurationUntilEnded": "Jusqu'à expiration",
+    "ACTION.NoTargets": "Pas de Cibles",
+    "ACTION.Overview": "Aperçu d'Action",
+    "ACTION.PlaceTemplate": "Placer un Gabarit",
+    "ACTION.RemoveActor": "Retirer l'Acteur",
+    "ACTION.RequestActorsHint": "Glisser ici des Acteurs individuels ou des groupes pour demander leur participation à ce jet.",
+    "ACTION.RequestRollsSuffix": "{label} : Demande de Jets",
+    "ACTION.RequestedActors": "Acteurs demandés",
+    "ACTION.SkillCheck": "{skill} Test de compétence",
+    "ACTION.StandardCheck": "Test standard",
+    "ACTION.UseAction": "Utiliser l'Action",
+    "ACTION.WarningUnimplementedTarget": "L'automation du type de ciblage {type} pour l'action {name} n'est pas encore supportée, vous devez cibler manuellement les tokens affectés.",
+    "ACTION.EFFECTS.Duration": "Durée",
+    "ACTION.EFFECTS.DurationHint": "Les effets dont la durée est exprimée en Tours expirent à la fin du tour de l'Acteur. Les effets dont la durée est exprimée en Rounds expirent au début du tour de l'acteur.",
+    "ACTION.EFFECTS.DurationRounds": "Rounds",
+    "ACTION.EFFECTS.DurationTurns": "Tours",
+    "ACTION.EFFECTS.Name": "Nom de l'Effet",
+    "ACTION.EFFECTS.Result": "Résultat",
+    "ACTION.EFFECTS.ResultType": "Type",
+    "ACTION.EFFECTS.Scope": "Portée de l'Effet",
+    "ACTION.EFFECTS.Statuses": "Statuts",
+    "ACTION.TagCostAction": "{action}A",
+    "ACTION.TagCostFocus": "{focus}F",
+    "ACTION.TagCostHand.one": "{hands} Main",
+    "ACTION.TagCostHand.other": "{hands} Mains",
+    "ACTION.TagCostHeroism": "{heroism}H",
+    "ACTION.TagCostHealth": "{health}PV",
+    "ACTION.TagCostWeapon": "Ar",
+    "ACTION.TagCostWeaponAction": "Ar{action}A"
 }

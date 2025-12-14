@@ -1,5 +1,5 @@
 {
-    "label": "Historiques",
+    "label": "Origines",
     "mapping": {
         "description": "system.description"
     },
@@ -18,7 +18,7 @@
         },
         "Performer": {
             "name": "Artiste",
-            "description": "Vous étiez un animateur itinérant. Vous avez appris à être à l'aise lors de diverses manifestations sociales, à jouer pour votre public, embellissant les détails de votre représentation pour évoquer des réponses émotionnelles particulières."
+            "description": "Vous étiez un animateur itinérant. Vous avez appris à être à l'aise lors de diverses manifestations sociales, à jouer pour votre public, embellissant les détails de votre performance pour évoquer des réponses émotionnelles particulières."
         },
         "Physician": {
             "name": "Médecin",

@@ -74,7 +74,7 @@
 | Cone | Cône |
 | Self | Soi-même |
 | None | Aucun |
-| Single | Unique |
+| Single | Sélectif |
 | Wall | Mur |
 | Ray | Rayon |
 | Fan | Souffle |
@@ -208,7 +208,7 @@
 | Keen | Aiguisée |
 | Reliable | Fiable |
 | Ambush | Sournoise |
-| Engaging | Engagée |
+| Engaging | Engagement |
 | Refocus | Canalisation |
 | Reload | Rechargement |
 | Bulky | Encombrante |
@@ -223,7 +223,7 @@
 | Bomb | Bombe |
 | Flask | Fiole |
 | Kit | Kit |
-| Implement | Instrument |
+| Implement | Ustensile |
 
 ### Types de déplacement
 | Anglais | Français |
@@ -245,7 +245,7 @@
 |---------|----------|
 | Beast | Bête |
 | Celestial | Céleste |
-| Construct | Construit |
+| Construct | Artificiel |
 | Dragon | Dragon |
 | Elemental | Élémentaire |
 | Fey | Fée |
@@ -439,7 +439,7 @@
 |---------|----------|
 | Athletics | Athlétisme |
 | Awareness | Vigilance |
-| Stealth | Discrétion |
+| Stealth | Furtivité |
 | Wilderness | Nature |
 | Arcana | Arcane |
 | Medicine | Médecine |
@@ -556,7 +556,7 @@
 ### Dégâts sur la durée
 | Anglais | Français |
 |---------|----------|
-| Bleeding | Ensanglantée |
+| Bleeding | Ensanglanté |
 | Poisoned | Empoisonné |
 | Corroding | Corrodé |
 | Burning | Enflammé |

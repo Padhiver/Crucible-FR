@@ -77,7 +77,7 @@
 | Single | Sélectif |
 | Wall | Mur |
 | Ray | Rayon |
-| Fan | Souffle |
+| Fan | Éventail |
 
 ## Étiquettes d'actions
 | Anglais | Français |

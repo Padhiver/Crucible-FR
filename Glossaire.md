@@ -302,7 +302,7 @@
 
 | Anglais | Français |
 |---------|----------|
-| Arrow | Trait |
+| Arrow | Flèche |
 | Aspect | Aspect |
 | Create | Création |
 | Fan | Éventail |
@@ -315,6 +315,7 @@
 | Touch | Contact |
 | Ward | Protection |
 | Conjure | Conjuration |
+| Sense | Résonance |
 
 ## Inflexions (Inflections)
 

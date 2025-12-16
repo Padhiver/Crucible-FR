@@ -304,18 +304,21 @@
 |---------|----------|
 | Arrow | Flèche |
 | Aspect | Aspect |
+| Aura | Aura |
+| Blast | Explosion |
+| Cone | Cône |
+| Conjure | Conjuration |
 | Create | Création |
 | Fan | Éventail |
 | Influence | Influence |
 | Pulse | Onde |
-| Surge | Afflux |
 | Ray | Rayon |
+| Sense | Résonance |
 | Step | Charge |
 | Strike | Frappe |
+| Surge | Afflux |
 | Touch | Contact |
 | Ward | Protection |
-| Conjure | Conjuration |
-| Sense | Résonance |
 
 ## Inflexions (Inflections)
 

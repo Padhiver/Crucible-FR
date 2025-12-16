@@ -130,16 +130,6 @@
 | Runeweaving | Tisserune |
 | Smithing | Forge |
 | Tailoring | Couture |
-| Medicine | Médecine |
-| Science | Science |
-| Society | Société |
-| Deception | Duperie |
-| Diplomacy | Diplomatie |
-| Intimidation | Intimidation |
-| Performance | Performance |
-| Athletics | Athlétisme |
-| Stealth | Furtivité |
-| Wilderness | Nature |
 
 ## Progression & Récompenses
 | Anglais | Français |
@@ -452,7 +442,7 @@
 | Deception | Tromperie |
 | Diplomacy | Diplomatie |
 | Intimidation | Intimidation |
-| Performance | Représentation |
+| Performance | Performance |
 
 ### Spécialisations
 | Anglais | Français |

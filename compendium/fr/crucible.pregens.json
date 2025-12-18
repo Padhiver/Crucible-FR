@@ -353,7 +353,7 @@
                 },
                 "Arcane Archer": {
                     "name": "Archer arcanique",
-                    "description": "<p>Votre compétence au tir à l'arc peut façonner votre sorcellerie, remplaçant partiellement les signes somatiques de l'incantation traditionnelle.</p><p>Lorsque vous utilisez une arme de type <strong>Projectile</strong> comme arme principale, vous ignorez l'exigence de main libre pour lancer des sorts utilisant le signe <strong>Trait</strong> et la portée de ces sorts devient la portée de votre arme.</p><p>Immédiatement après avoir effectué une <strong>Frappe</strong> avec une arme de projectile, vous pouvez lancer un sort avec son coût en <strong>Action</strong> réduit de 1.</p>"
+                    "description": "<p>Votre compétence au tir à l'arc peut façonner votre sorcellerie, remplaçant partiellement les signes somatiques de l'incantation traditionnelle.</p><p>Lorsque vous utilisez une arme de type <strong>Projectile</strong> comme arme principale, vous ignorez l'exigence de main libre pour lancer des sorts utilisant le signe <strong>Flèche</strong> et la portée de ces sorts devient la portée de votre arme.</p><p>Immédiatement après avoir effectué une <strong>Frappe</strong> avec une arme de projectile, vous pouvez lancer un sort avec son coût en <strong>Action</strong> réduit de 1.</p>"
                 },
                 "Weak Points": {
                     "name": "Points faibles",
@@ -379,8 +379,8 @@
                     "description": "<p>Vous êtes un expert pour tirer avec des armes à distance tout en évitant les attaques ennemies. Après avoir effectué une attaque d'arme à distance, vous gagnez la moitié de votre <strong>Foulée</strong> en déplacement gratuit supplémentaire.</p>"
                 },
                 "Gesture: Arrow": {
-                    "name": "Signe : Trait",
-                    "description": "<p>Vous lancez un projectile imprégné du pouvoir magique d'une Rune sur une cible distante.</p><p>Le signe de Trait évolue avec l'<strong>Intellect</strong> et cible une créature unique jusqu'à une distance de 60 pieds, infligeant <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                    "name": "Signe : Flèche",
+                    "description": "<p>Vous lancez un projectile imprégné du pouvoir magique d'une Rune sur une cible distante.</p><p>Le signe de Flèche évolue avec l'<strong>Intellect</strong> et cible une créature unique jusqu'à une distance de 60 pieds, infligeant <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
                 },
                 "Rune: Lightning": {
                     "name": "Rune : Foudre",
@@ -506,8 +506,8 @@
                     "description": "<p>Vous avez une éducation de base dans l'utilisation de l'armement martial. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes des catégories <strong>Lourde</strong> ou <strong>Équilibrée</strong>.</p>"
                 },
                 "Gesture: Arrow": {
-                    "name": "Signe : Trait",
-                    "description": "<p>Vous lancez un projectile imprégné du pouvoir magique d'une Rune sur une cible distante.</p><p>Le signe de Trait évolue avec l'<strong>Intellect</strong> et cible une créature unique jusqu'à une distance de 60 pieds, infligeant <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                    "name": "Signe : Flèche",
+                    "description": "<p>Vous lancez un projectile imprégné du pouvoir magique d'une Rune sur une cible distante.</p><p>Le signe de Flèche évolue avec l'<strong>Intellect</strong> et cible une créature unique jusqu'à une distance de 60 pieds, infligeant <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
                 },
                 "Rune: Flame": {
                     "name": "Rune : Flamme",
@@ -1009,8 +1009,8 @@
                     "description": "<p>La force chaotique de l'énergie électrique brute. La Rune de Foudre gouverne les sources de charge et de décharge électrique.</p><p>La Rune de Foudre évolue avec l'<strong>Intellect</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts <strong>Électriques</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Terre</strong>.</p>"
                 },
                 "Gesture: Arrow": {
-                    "name": "Signe : Trait",
-                    "description": "<p>Vous lancez un projectile imprégné du pouvoir magique d'une Rune sur une cible distante.</p><p>Le signe de Trait évolue avec l'<strong>Intellect</strong> et cible une créature unique jusqu'à une distance de 60 pieds, infligeant <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                    "name": "Signe : Flèche",
+                    "description": "<p>Vous lancez un projectile imprégné du pouvoir magique d'une Rune sur une cible distante.</p><p>Le signe de Flèche évolue avec l'<strong>Intellect</strong> et cible une créature unique jusqu'à une distance de 60 pieds, infligeant <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
                 },
                 "Gesture: Create": {
                     "name": "Signe : Création",
@@ -1389,8 +1389,8 @@
                     "description": "<p>Votre sorcellerie est affûtée comme une arme de guerre pour contrecarrer les incantations d'autres mages. Vous pouvez demander au Maître du jeu si vous connaissez une Rune capable de contrer un sort ennemi, même si vous ne reconnaissez pas le sort lancé. Vous gagnez +2 Faveurs à toute tentative de Contresort.</p>"
                 },
                 "Gesture: Arrow": {
-                    "name": "Signe : Trait",
-                    "description": "<p>Vous lancez un projectile imprégné du pouvoir magique d'une Rune sur une cible distante.</p><p>Le signe de Trait évolue avec l'<strong>Intellect</strong> et cible une créature unique jusqu'à une distance de 60 pieds, infligeant <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                    "name": "Signe : Flèche",
+                    "description": "<p>Vous lancez un projectile imprégné du pouvoir magique d'une Rune sur une cible distante.</p><p>Le signe de Flèche évolue avec l'<strong>Intellect</strong> et cible une créature unique jusqu'à une distance de 60 pieds, infligeant <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
                 },
                 "Impetus": {
                     "name": "Impulsion",

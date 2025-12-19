@@ -111,8 +111,8 @@
                     "name": "Griffe Voltaïque"
                 },
                 "Gesture: Arrow": {
-                    "name": "Signe : Trait",
-                    "description": "<p>Vous lancez un projectile imprégné du pouvoir magique d'une Rune sur une cible distante.</p><p>Le signe de Trait évolue avec l'<strong>Intellect</strong> et cible une créature unique jusqu'à une distance de 60 pieds, infligeant <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                    "name": "Signe : Flèche",
+                    "description": "<p>Vous lancez un projectile imprégné du pouvoir magique d'une Rune sur une cible distante.</p><p>Le signe de Flèche évolue avec l'<strong>Intellect</strong> et cible une créature unique jusqu'à une distance de 60 pieds, infligeant <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
                 },
                 "Rune: Lightning": {
                     "name": "Rune : Foudre",

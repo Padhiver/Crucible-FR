@@ -18,7 +18,11 @@
   "entries": {
     "Amphibian": {
       "name": "Amphibian",
-      "description": "<p>Beasts which dwell within or nearby water. Amphibians are typically dextrous, but some varieties are powerful or large in size.</p><ul><li><p><strong>Size</strong>: variable</p></li><li><p><strong>Stride</strong>: variable</p></li></ul>"
+      "description": "<p>Beasts which dwell within or nearby water. Amphibians are typically dexterous, but some varieties are powerful or large in size.</p><ul><li><p><strong>Size</strong>: variable</p></li><li><p><strong>Stride</strong>: variable</p></li></ul>"
+    },
+    "Arachnid": {
+      "name": "Arachnid",
+      "description": "<p>Beasts from the arachnid family which spin webs to ensnare and prey upon small creatures or insects. Arachnids are typically dexterous and patient, but some varieties favor power or aggression.</p><ul><li><p><strong>Size</strong>: variable</p></li><li><p><strong>Stride</strong>: variable</p></li></ul>"
     },
     "Boar": {
       "name": "Boar",
@@ -56,9 +60,13 @@
       "name": "Ogre",
       "description": "<p>Hulking giantkin which are reknowned for their brute strength and direct problem-solving approach.</p>"
     },
+    "Rodent": {
+      "name": "Rodent",
+      "description": "<p>Beasts which typically congregate in high populations in and around humanoid settlements and are opportunistic scavengers. </p>"
+    },
     "Skeleton": {
       "name": "Skeleton",
-      "description": "<p>Undeathly denizens fashioned of bone and sinew.</p>"
+      "description": "<p>Malevolent undying creatures brought to life by necromancy, created from the skeletal remains of long-dead humanoids. Driven by unholy forces beyond their control, @ref[name] rarely exist of their own accord, and are often encountered as the minions of evil spellcasters and greater undead.</p>"
     },
     "Storm Elemental": {
       "name": "Storm Elemental",
@@ -83,6 +91,10 @@
     "Winged Terror": {
       "name": "Winged Terror",
       "description": "<p>Monstrous creatures that rule the skies and prey upon those bel0w.</p>"
+    },
+    "Zombie": {
+      "name": "Zombie",
+      "description": "<p>The shambling corpses of the restless dead, their still-rotting bodies bloated with putrescence. They move without regard for the wounds they sustain and seek only mindless consumption.</p>"
     }
   }
 }

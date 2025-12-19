@@ -39,10 +39,16 @@
       "name": "Belladonna",
       "items": {
         "Dagger": {
-          "name": "Dagger"
+          "name": "Dagger",
+          "description": {
+            "public": "<p>Small, swift, and deadly, the dagger slips between ribs or into gaps in armor with ease, its wicked edge favored by assassins, thieves, and those who prefer a silent kill.</p>"
+          }
         },
         "Studded Leather Armor": {
-          "name": "Studded Leather Armor"
+          "name": "Studded Leather Armor",
+          "description": {
+            "public": "<p>A base of leather reinforced with small metal studs or riveted plates, this armor strikes a balance between mobility and modest protection against slashes.</p>"
+          }
         },
         "Diversionist": {
           "name": "Diversionist",
@@ -288,13 +294,22 @@
       "name": "Eliorwen",
       "items": {
         "Longbow": {
-          "name": "Longbow"
+          "name": "Longbow",
+          "description": {
+            "public": "<p>A tall, self-bow often taller than the archer who draws it, the longbow requires great strength and years of practice to master, sending arrows with deadly force across the battlefield.</p>"
+          }
         },
         "Scimitar": {
-          "name": "Scimitar"
+          "name": "Scimitar",
+          "description": {
+            "public": "<p>With its wide, curved blade and deadly arc, the scimitar dances through battle, its edge carving through foes in sweeping, elegant strikes.</p>"
+          }
         },
         "Studded Leather Armor": {
-          "name": "Studded Leather Armor"
+          "name": "Studded Leather Armor",
+          "description": {
+            "public": "<p>A base of leather reinforced with small metal studs or riveted plates, this armor strikes a balance between mobility and modest protection against slashes.</p>"
+          }
         },
         "Pinning Shot": {
           "name": "Pinning Shot",
@@ -341,10 +356,6 @@
         "Gesture: Arrow": {
           "name": "Gesture: Arrow",
           "description": "<p>You hurl a projectile imbued with the magical power of a Rune at a distant target.</p><p>The Arrow gesture scales using <strong>Intellect</strong> and targets a single creature up to a distance of 60 feet, dealing <strong>8 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
-        },
-        "Rune: Lightning": {
-          "name": "Rune: Lightning",
-          "description": "<p>The chaotic force of raw electrical energy. The Lightning rune governs sources of electrical charge and discharge.</p><p>The Lightning rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electrical</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Earth</strong>.</p>"
         },
         "Precision Shot": {
           "name": "Precision Shot",
@@ -453,6 +464,16 @@
             }
           }
         },
+        "Rune: Lightning": {
+          "name": "Rune: Lightning",
+          "description": "<p>The chaotic force of raw electrical energy. The Lightning rune governs sources of electrical charge and discharge.</p><p>The Lightning rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electrical</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Earth</strong>.</p>",
+          "actions": {
+            "energize": {
+              "name": "Energize",
+              "description": "<p>Your command of the Rune of Lightning allows you to conduct the flow of both air and electricity, manipulating charge and aerodynamics to produce one of the following effects:</p><ul><li><p>Instill an electromagnetic charge into a metallic object that you touch no larger than a one-foot cube, causing it to strongly adhere to other metals. Only one object can be charged in this way at a given time, casting this spell on a different object causes the prior object to lose its magnetic effect.</p></li><li><p>Gather a squall of wind at your current location in a six-foot radius which blows either as a gust in a single controlled direction or as a cyclone with centripetal force in all directions. Airborne effects in the immediate area are dispersed and unsecured objects with weight less than 1 are flung in the direction of the gust.</p></li><li><p>Produce the concussive sound of a thunderclap at a location you can see within 15 feet of your current position.</p></li></ul><p>Energize may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
+            }
+          }
+        },
         "Perspicacity": {
           "name": "Perspicacity",
           "description": "<p>You have heightened insight into aspects of your surroundings. You gain +2 Boons to any <strong>Awareness</strong> skill test which does not rely upon eyesight.</p>"
@@ -474,7 +495,10 @@
       "name": "Agnath",
       "items": {
         "Splint Mail": {
-          "name": "Splint Mail"
+          "name": "Splint Mail",
+          "description": {
+            "public": "<p>A layer of vertical metal strips riveted to a backing of leather or mail, splint armor offers strong limb protection while sacrificing some flexibility.</p>"
+          }
         },
         "Cadence": {
           "name": "Cadence",
@@ -527,11 +551,10 @@
           "description": "<p>Your prodigious hardiness conveys a supernatural capability to recover from wounds quickly. At the start of your turn if you are not Weakened you gain <strong>+1 Health</strong>.</p>"
         },
         "Glaive": {
-          "name": "Glaive"
-        },
-        "Rune: Lightning": {
-          "name": "Rune: Lightning",
-          "description": "<p>The chaotic force of raw electrical energy. The Lightning rune governs sources of electrical charge and discharge.</p><p>The Lightning rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electrical</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Earth</strong>.</p>"
+          "name": "Glaive",
+          "description": {
+            "public": "<p>A polearm with a curved, sword-like blade affixed to the end of a long shaft, the glaive sweeps through foes in broad, arcing strikes.</p>"
+          }
         },
         "Heavy Strike": {
           "name": "Heavy Strike",
@@ -586,10 +609,6 @@
             }
           }
         },
-        "Rune: Flame": {
-          "name": "Rune: Flame",
-          "description": "<p>The chaotic force of elemental, thermal energy. The Flame rune governs fire and heat.</p><p>The Flame rune scales using Intellect, targets <strong>Reflex</strong>, and deals <strong>Fire</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Frost</strong>.</p>"
-        },
         "Pyromancer": {
           "name": "Pyromancer",
           "description": "<p>You are highly skilled in weaving the Rune of Flame. Spells which use this Rune cause @Condition[burning] on Critical Hits.</p><p>The Burning effect lasts for <strong>1 Round</strong> and deals your <strong>Intellect</strong> score as <strong>Fire</strong> damage to both <strong>Health</strong> and <strong>Morale</strong>.</p>"
@@ -598,8 +617,31 @@
           "name": "Gesture: Blast",
           "description": "<p>You hurl the arcane power of a Rune into an intense explosion of energy at a nearby point you can see.</p><p>The Blast gesture scales with <strong>Intellect</strong> and produces a blast with 6 feet radius centered on a point within 60 feet of the spellcaster. The blast deals <strong>8 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>2 Hands</strong> to cast and has a base cost of <strong>5 Action</strong> and <strong>2 Focus</strong>.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent is currently placed at a <strong>Tier 4</strong> node. It will eventually only be attainable at a higher level (probably Level 6 required). It is currently available \"early\" for testing.</p>"
         },
+        "Rune: Lightning": {
+          "name": "Rune: Lightning",
+          "description": "<p>The chaotic force of raw electrical energy. The Lightning rune governs sources of electrical charge and discharge.</p><p>The Lightning rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electrical</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Earth</strong>.</p>",
+          "actions": {
+            "energize": {
+              "name": "Energize",
+              "description": "<p>Your command of the Rune of Lightning allows you to conduct the flow of both air and electricity, manipulating charge and aerodynamics to produce one of the following effects:</p><ul><li><p>Instill an electromagnetic charge into a metallic object that you touch no larger than a one-foot cube, causing it to strongly adhere to other metals. Only one object can be charged in this way at a given time, casting this spell on a different object causes the prior object to lose its magnetic effect.</p></li><li><p>Gather a squall of wind at your current location in a six-foot radius which blows either as a gust in a single controlled direction or as a cyclone with centripetal force in all directions. Airborne effects in the immediate area are dispersed and unsecured objects with weight less than 1 are flung in the direction of the gust.</p></li><li><p>Produce the concussive sound of a thunderclap at a location you can see within 15 feet of your current position.</p></li></ul><p>Energize may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
+            }
+          }
+        },
+        "Rune: Flame": {
+          "name": "Rune: Flame",
+          "description": "<p>The chaotic force of elemental, thermal energy. The Flame rune governs fire and heat.</p><p>The Flame rune scales using Intellect, targets <strong>Reflex</strong>, and deals <strong>Fire</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Frost</strong>.</p>",
+          "actions": {
+            "enkindle": {
+              "name": "Enkindle",
+              "description": "<p>Your command of the Rune of Flame allows you to manipulate fire and thermal energy in creative ways, producing one of the following effects:</p><ul><li><p>Manifest a burst of elemental flame in one inch sphere which can ignite a candle, torch, or other flammable materials.</p></li><li><p>Imbue your body with momentary thermal shielding which provides you with immunity to fire damage on an immediately subsequent action that costs <strong>1 Action</strong> or less.</p></li><li><p>Control the movement of flames within a small area, causing them to flicker, dance, or shift in an animated performance of light and shadow.</p></li></ul><p>Enkindle may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
+            }
+          }
+        },
         "Greatsword": {
-          "name": "Greatsword"
+          "name": "Greatsword",
+          "description": {
+            "public": "<p>Longer and heavier than a standard longsword, the greatsword is a two-handed blade meant for powerful sweeping strikes, its length commanding both reach and awe.</p>"
+          }
         }
       },
       "ancestry": {
@@ -617,11 +659,17 @@
     "Kagura": {
       "name": "Kagura",
       "items": {
-        "Mage Staff": {
-          "name": "Mage Staff"
+        "Ice Staff": {
+          "name": "Ice Staff",
+          "description": {
+            "public": "<p>This mage staff is a talisman to assist with spellcraft or hurl blasts of frigid ice towards enemies.</p>"
+          }
         },
         "Scale Mail": {
-          "name": "Scale Mail"
+          "name": "Scale Mail",
+          "description": {
+            "public": "<p>Overlapping metal plates sewn or riveted onto a leather or cloth backing, scale mail resembles the hide of a dragon and protects well against cuts and stabs—though it's noisy and inflexible.</p>"
+          }
         },
         "Gesture: Influence": {
           "name": "Gesture: Influence",
@@ -657,10 +705,6 @@
         "Inflection: Compose": {
           "name": "Inflection: Compose",
           "description": "<p>Enhance a spell by taking extra time in its formation, reducing other resource costs in exchange. The Compose inflection reduces the <strong>Focus</strong> cost of a spell by 1 while increasing its <strong>Action</strong> cost by 1 in exchange.</p>"
-        },
-        "Rune: Earth": {
-          "name": "Rune: Earth",
-          "description": "<p>The orderly force of elemental earth, responsible for physical matter. The Earth rune governs minerals, metals, soils, and other physical compounds.</p><p>The Earth rune scales using <strong>Wisdom</strong>, targets <strong>Reflex</strong>, and deals <strong>Acid</strong> damage to <strong>Health</strong>. It is opposed by the chaotic rune of <strong>Lightning</strong>.</p>"
         },
         "Dustbinder": {
           "name": "Dustbinder",
@@ -699,15 +743,6 @@
             "private": "You can turn particular healing herbs found in the wild into a bottled elixir using Alchemists Tools."
           }
         },
-        "Alchemical Vial": {
-          "name": "Alchemical Vial"
-        },
-        "Alchemists Tools": {
-          "name": "Alchemists Tools"
-        },
-        "Healing Herbs": {
-          "name": "Healing Herbs"
-        },
         "Versatile Translator": {
           "name": "Versatile Translator",
           "description": "<p>You have a scholarly background in linguistics or an intuitive knack for languages. Your capabilities enable you to decipher the basic meaning of text written in a variety of languages.</p><p>You can translate text of a language you do not know that is written using a common set of glyphs or characters to a language that you do know. Creating such a translation requires spending one minute per word to transcribe the text into a language which you understand.</p><p>Your translations are rudimentary and often lack nuance, but they do contain all essential points of the text.</p>"
@@ -738,10 +773,6 @@
           "name": "Arcana Novice",
           "description": "<p>Your education covered the fundamentals of metaphysics and magical theory, the relationship between the runes, the opposing nature of order and chaos, and a cursory introduction to spiritual beings including the most commonly known deified and demonized figures of worship. You gain the <strong>Novice</strong> rank in the <strong>Arcana </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</p><p>Your rudimentary understanding of the principle grammar of magic is sufficient to identify which lesser rune a spell or ritual may be using, as well as the gesture used (if not the inflection). You can identify whether a figure is influenced more by chaos or by order, and can spot the signs of common spirits (both lesser and greater). You know enough about religious customs to communicate with those who worship a particular spirit or deity without embarrassing yourself.</p>"
         },
-        "Rune: Life": {
-          "name": "Rune: Life",
-          "description": "<p>A chaotic force of creation, responsible for living matter. The Life rune governs health and matters relating to biological growth.</p><p>The Life rune scales using <strong>Wisdom</strong> and provides <strong>Restoration</strong> of <strong>Health</strong> or inflicts <strong>Poison</strong> damage opposed by <strong>Fortitude</strong>. It is opposed by the orderly rune of <strong>Death</strong>.</p>"
-        },
         "Rune: Soul": {
           "name": "Rune: Soul",
           "description": "<p>An orderly force of creation and spiritual essence. The Soul rune governs the fundamental procession of souls through life and death and relates to matters of sapience, personality, and mental health.</p><p>The Soul rune scales using <strong>Presence</strong> and provides <strong>Restoration</strong> of <strong>Morale</strong> or inflicts <strong>Psychic</strong> damage opposed by <strong>Willpower</strong>. It is opposed by the chaotic rune of <strong>Oblivion</strong>.</p>",
@@ -759,6 +790,26 @@
         "Eye of the Storm": {
           "name": "Eye of the Storm",
           "description": "<p>After you Delay your Turn, gain +2 Boons on any Strike or Spell attack against an enemy that you allowed to act before you that Round.</p><p>TODO: Needs automation. For now apply boons manually.</p>"
+        },
+        "Rune: Earth": {
+          "name": "Rune: Earth",
+          "description": "<p>The orderly force of elemental earth, responsible for physical matter. The Earth rune governs minerals, metals, soils, and other physical compounds.</p><p>The Earth rune scales using <strong>Wisdom</strong>, targets <strong>Reflex</strong>, and deals <strong>Acid</strong> damage to <strong>Health</strong>. It is opposed by the chaotic rune of <strong>Lightning</strong>.</p>",
+          "actions": {
+            "mould": {
+              "name": "Mould",
+              "description": "<p>Your command of the Rune of Earth allows you to manipulate raw forces of rock, mineral, and soil in basic ways, producing one of the following effects:</p><ul><li><p>Quickly shape up to one cubic foot of available material into a simple geometric form like a cuboid, ellipsoid, or polyhedron.</p></li><li><p>Precisely copy the physical shape of a held object that is smaller than a 6-inch cube, reproducing it from available clay, stone, or metal. The replica retains no useful properties except for its physical form.</p></li><li><p>Separate and collect earthen particles from the surface of an object, creature, or liquid that you touch, rendering the subject completely cleaned or purified in moments.</p></li></ul><p>Mould may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
+            }
+          }
+        },
+        "Rune: Life": {
+          "name": "Rune: Life",
+          "description": "<p>A chaotic force of creation, responsible for living matter. The Life rune governs health and matters relating to biological growth.</p><p>The Life rune scales using <strong>Wisdom</strong> and provides <strong>Restoration</strong> of <strong>Health</strong> or inflicts <strong>Poison</strong> damage opposed by <strong>Fortitude</strong>. It is opposed by the orderly rune of <strong>Death</strong>.</p>",
+          "actions": {
+            "bloom": {
+              "name": "Bloom",
+              "description": "<p>Your command of the Rune of Life allows you to stimulate biological growth and nourish physical health, producing one of the following effects:</p><ul><li><p>Cultivate 1 cubic foot of existing plants or fungus to rapidly grow to a healthy, blossoming, or harvestable state.</p></li><li><p>Identify a negative physical condition that is affecting a creature such as @Condition[diseased], @Condition[poisoned], @Condition[bleeding], or @Condition[weakened].</p></li><li><p>Verify whether a portion of food or drink is free of contamination from bacteria, parasites, or poison.</p></li></ul><p>Bloom may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
+            }
+          }
         }
       },
       "ancestry": {
@@ -777,10 +828,16 @@
       "name": "Ulfen",
       "items": {
         "Scale Mail": {
-          "name": "Scale Mail"
+          "name": "Scale Mail",
+          "description": {
+            "public": "<p>Overlapping metal plates sewn or riveted onto a leather or cloth backing, scale mail resembles the hide of a dragon and protects well against cuts and stabs—though it's noisy and inflexible.</p>"
+          }
         },
         "Greataxe": {
-          "name": "Greataxe"
+          "name": "Greataxe",
+          "description": {
+            "public": "<p>A towering weapon with a broad, often double-bladed head, the greataxe is made for delivering devastating cleaves, hewing men and beasts with terrible force.</p>"
+          }
         },
         "Intimidator": {
           "name": "Intimidator",
@@ -986,17 +1043,22 @@
       "name": "Fizzit",
       "items": {
         "Ring Mail": {
-          "name": "Ring Mail"
+          "name": "Ring Mail",
+          "description": {
+            "public": "<p>Ring mail features metal rings sewn onto a padded base, offering a compromise of less protection than heavier mail options in exchange for greater mobility.</p>"
+          }
         },
         "Arcane Orb": {
-          "name": "Arcane Orb"
+          "name": "Arcane Orb",
+          "description": {
+            "public": "<p>A sphere of crystal or glass that — in the palm of a capable spellcaster — becomes a conduit for their power. It gathers voltaic energy within its orb before blasting a target with electrifying force.</p>"
+          }
         },
         "Grimoire": {
-          "name": "Grimoire"
-        },
-        "Rune: Lightning": {
-          "name": "Rune: Lightning",
-          "description": "<p>The chaotic force of raw electrical energy. The Lightning rune governs sources of electrical charge and discharge.</p><p>The Lightning rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electrical</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Earth</strong>.</p>"
+          "name": "Grimoire",
+          "description": {
+            "public": "<p>This heavy tome is used as a repository of knowledge as well as an implement for spellcraft. In the hands of an arcane practitioner, it can project concussive blasts of force towards a target.</p>"
+          }
         },
         "Gesture: Arrow": {
           "name": "Gesture: Arrow",
@@ -1014,17 +1076,39 @@
           "name": "Mechanical Weapon Training",
           "description": "<p>You have a basic education in crossbows, firearms, and other mechanical weapons. You are no longer treated as <strong>Untrained</strong> with weapons in the <strong>Mechanical </strong>category.</p>"
         },
-        "Rune: Kinesis": {
-          "name": "Rune: Kinesis",
-          "description": "<p>The chaotic force of space and physical movement. The Kinesis rune governs all things related to the act of movement and physicality.</p><p>The Kinesis rune scales using <strong>Presence</strong>, targets <strong>Physical</strong> defense, and deals <strong>Bludgeoning</strong>, <strong>Piercing</strong>, or <strong>Slashing</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Control</strong>.</p>"
-        },
-        "Rune: Frost": {
-          "name": "Rune: Frost",
-          "description": "<p>The orderly force of water and cold. The Frost rune governs the creation of water or other fluids and their transfer between liquid and frozen states.</p><p>The Frost rune scales using <strong>Wisdom</strong>, targets <strong>Fortitude</strong>, and deals <strong>Cold</strong> damage to <strong>Health</strong>. It is opposed by the chaotic rune of <strong>Flame</strong>.</p>"
-        },
         "Gesture: Create": {
           "name": "Gesture: Create",
           "description": "<p>You coalesce arcane power into tangible form, manifesting a <strong>Sprite</strong> which appears within 10 feet and joins Combat at Initiative 1. Your Sprite is a <strong>Minion</strong> of half your own Level.</p><p>The Create gesture scales with <strong>Wisdom</strong> and the Sprite survives for <strong>6 Rounds</strong>. You may only have one active Sprite, casting another spell using the Create gesture replaces your previous Sprite. This gesture requires <strong>2 Hands</strong> to cast and has a base cost of <strong>4 Action</strong> and <strong>1 Focus</strong>.</p><h3 class=\"divider\">Playtest Notes</h3><p>Not all Runes have a Sprite actor defined yet. Runes that do not yet have a defined Creation will — for now — manifest a <strong>Flame Sprite</strong>.</p>"
+        },
+        "Rune: Lightning": {
+          "name": "Rune: Lightning",
+          "description": "<p>The chaotic force of raw electrical energy. The Lightning rune governs sources of electrical charge and discharge.</p><p>The Lightning rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electrical</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Earth</strong>.</p>",
+          "actions": {
+            "energize": {
+              "name": "Energize",
+              "description": "<p>Your command of the Rune of Lightning allows you to conduct the flow of both air and electricity, manipulating charge and aerodynamics to produce one of the following effects:</p><ul><li><p>Instill an electromagnetic charge into a metallic object that you touch no larger than a one-foot cube, causing it to strongly adhere to other metals. Only one object can be charged in this way at a given time, casting this spell on a different object causes the prior object to lose its magnetic effect.</p></li><li><p>Gather a squall of wind at your current location in a six-foot radius which blows either as a gust in a single controlled direction or as a cyclone with centripetal force in all directions. Airborne effects in the immediate area are dispersed and unsecured objects with weight less than 1 are flung in the direction of the gust.</p></li><li><p>Produce the concussive sound of a thunderclap at a location you can see within 15 feet of your current position.</p></li></ul><p>Energize may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
+            }
+          }
+        },
+        "Rune: Kinesis": {
+          "name": "Rune: Kinesis",
+          "description": "<p>The chaotic force of space and physical movement. The Kinesis rune governs all things related to the act of movement and physicality.</p><p>The Kinesis rune scales using <strong>Presence</strong>, targets <strong>Physical</strong> defense, and deals <strong>Bludgeoning</strong>, <strong>Piercing</strong>, or <strong>Slashing</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Control</strong>.</p>",
+          "actions": {
+            "propel": {
+              "name": "Propel",
+              "description": "<p>Your command of the Rune of Kinesis allows you to exert local control over gravitational forces to perform basic telekinetic manipulations, producing one of the following effects:</p><ul><li><p>Pull an unsecured object within 15 feet and with weight no greater than 1 towards you and catch it. An object that is equipped or possessed by a creature is never treated as unsecured unless that creature is willing to release it.</p></li><li><p>Flick an object that you hold with weight no greater than 1 towards a target up to 30 feet away. The object flies unerringly in a straight line towards that target at a moderate speed. Any creature along the object's path can react to catch it as long as they have a free hand with which to do so.</p></li><li><p>Suspend in midair an object or willing creature that you touch with weight less than or equal to 10 times your <strong>Presence</strong>, altering its position up to 20 feet in any direction from its original location. You can maintain this suspension indefinitely as long as you take no further Action and are not @Condition[incapacitated].</p></li></ul><p>Propel may only affect a creature or object you can physically touch unless otherwise specified. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
+            }
+          }
+        },
+        "Rune: Frost": {
+          "name": "Rune: Frost",
+          "description": "<p>The orderly force of water and cold. The Frost rune governs the creation of water or other fluids and their transfer between liquid and frozen states.</p><p>The Frost rune scales using <strong>Wisdom</strong>, targets <strong>Fortitude</strong>, and deals <strong>Cold</strong> damage to <strong>Health</strong>. It is opposed by the chaotic rune of <strong>Flame</strong>.</p>",
+          "actions": {
+            "condense": {
+              "name": "Condense",
+              "description": "<p>Your command of the Rune of Frost allows you to manipulate liquids and their thermal properties, producing one of the following effects:</p><ul><li><p>Draw up to one liter of fresh water from the atmosphere into a container or upon a surface you touch. The created water may be affected by relevant atmospheric properties of your current location.</p></li><li><p>Manipulate the temperature of up to 1 gallon of water, causing it to immediately freeze or thaw. The water need not be in a container; this technique can be used to coat a surface or join two objects together via regelation. Ice created in this way remains frozen for as long as the ambient temperature of the environment allows.</p></li><li><p>Gather up to a six-foot cube of nearby snow, forming it into a solidified sculpture, shape, or shelter.</p></li></ul><p>Condense may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
+            }
+          }
         },
         "Intuit Weakness": {
           "name": "Intuit Weakness",
@@ -1135,14 +1219,11 @@
     "Duurath": {
       "name": "Duurath",
       "items": {
-        "War Hammer": {
-          "name": "War Hammer"
-        },
-        "Heater Shield": {
-          "name": "Heater Shield"
-        },
         "Scale Mail": {
-          "name": "Scale Mail"
+          "name": "Scale Mail",
+          "description": {
+            "public": "<p>Overlapping metal plates sewn or riveted onto a leather or cloth backing, scale mail resembles the hide of a dragon and protects well against cuts and stabs—though it's noisy and inflexible.</p>"
+          }
         },
         "Intimidator": {
           "name": "Intimidator",
@@ -1189,7 +1270,7 @@
           "actions": {
             "bodyBlock": {
               "name": "Body Block",
-              "description": "An attack which otherwise is defended by your Armor or produced a Glancing blow is converted to a Block and deals no damage.",
+              "description": "<p>An attack which otherwise is defended by your Armor or produced a Glancing blow is converted to a Block and deals no damage.</p>",
               "condition": "You defend against a melee attack with your Armor or as a Glance."
             }
           }
@@ -1205,10 +1286,6 @@
             }
           }
         },
-        "Runewarden": {
-          "name": "Runewarden",
-          "description": "<p>Your mastery of the arcane makes you more resilient to elemental and spiritual harm. You gain a bonus to <strong>Resistance</strong> equal to half your Wisdom for each Elemental or Spiritual damage type where you know the Arcane Rune attuned to that damage type.</p><p>When you use the <strong>Ward</strong> gesture, the Resistance provided by your Ward also increases by half your Wisdom.</p>"
-        },
         "Dread Lord": {
           "name": "Dread Lord",
           "description": "<p>You exude a terrible presence on the battlefield which tests the morale of nearby enemies that behold you, breaking the resolve of the weak-willed.</p>",
@@ -1223,10 +1300,6 @@
               ]
             }
           }
-        },
-        "Rune: Kinesis": {
-          "name": "Rune: Kinesis",
-          "description": "<p>The chaotic force of space and physical movement. The Kinesis rune governs all things related to the act of movement and physicality.</p><p>The Kinesis rune scales using <strong>Presence</strong>, targets <strong>Physical</strong> defense, and deals <strong>Bludgeoning</strong>, <strong>Piercing</strong>, or <strong>Slashing</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Control</strong>.</p>"
         },
         "Rallying Cry": {
           "name": "Rallying Cry",
@@ -1254,23 +1327,6 @@
         "Hold Fast": {
           "name": "Hold Fast",
           "description": "<p>You are a calm anchor in the swirling sea of combat. When you have a Shield equipped, your <strong>Engagement</strong> increases by +1, allowing you to simultaneously engage more adjacent foes.</p>"
-        },
-        "Sai": {
-          "name": "Sai"
-        },
-        "Earth Breaker": {
-          "name": "Earth Breaker",
-          "actions": {
-            "breakEarth": {
-              "name": "Break Earth",
-              "description": "<p>You slam Earth Breaker into the ground, knocking enemies in front of you Prone if your attack exceeds their <strong>Reflex</strong> defense.</p>",
-              "effects": [
-                {
-                  "name": "Break Earth"
-                }
-              ]
-            }
-          }
         },
         "Awareness Novice": {
           "name": "Awareness Novice",
@@ -1342,6 +1398,32 @@
           "description": {
             "public": "<p>An expanded toolbelt in the form of a utility belt, a bandolier, or an array of pockets stitched into your equipment.</p><p>This item provides a number of additional Toolbelt slots according to its quality tier:</p><ul><li><p><strong>Standard</strong>: +1 Toolbelt slot</p></li><li><p><strong>Fine</strong>: +2 Toolbelt slots</p></li><li><p><strong>Superior</strong>: +3 Toolbelt slots</p></li><li><p><strong>Masterwork</strong>: +4 Toolbelt slots</p></li></ul>"
           }
+        },
+        "Rune: Kinesis": {
+          "name": "Rune: Kinesis",
+          "description": "<p>The chaotic force of space and physical movement. The Kinesis rune governs all things related to the act of movement and physicality.</p><p>The Kinesis rune scales using <strong>Presence</strong>, targets <strong>Physical</strong> defense, and deals <strong>Bludgeoning</strong>, <strong>Piercing</strong>, or <strong>Slashing</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Control</strong>.</p>",
+          "actions": {
+            "propel": {
+              "name": "Propel",
+              "description": "<p>Your command of the Rune of Kinesis allows you to exert local control over gravitational forces to perform basic telekinetic manipulations, producing one of the following effects:</p><ul><li><p>Pull an unsecured object within 15 feet and with weight no greater than 1 towards you and catch it. An object that is equipped or possessed by a creature is never treated as unsecured unless that creature is willing to release it.</p></li><li><p>Flick an object that you hold with weight no greater than 1 towards a target up to 30 feet away. The object flies unerringly in a straight line towards that target at a moderate speed. Any creature along the object's path can react to catch it as long as they have a free hand with which to do so.</p></li><li><p>Suspend in midair an object or willing creature that you touch with weight less than or equal to 10 times your <strong>Presence</strong>, altering its position up to 20 feet in any direction from its original location. You can maintain this suspension indefinitely as long as you take no further Action and are not @Condition[incapacitated].</p></li></ul><p>Propel may only affect a creature or object you can physically touch unless otherwise specified. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
+            }
+          }
+        },
+        "Runewarden": {
+          "name": "Runewarden",
+          "description": "<p>Your mastery of the arcane makes you more resilient to elemental and spiritual harm. You gain a bonus to <strong>Resistance</strong> equal to half your Wisdom for each Elemental or Spiritual damage type where you know the Arcane Rune attuned to that damage type.</p><p>When you use the <strong>Ward</strong> gesture, the Resistance provided by your Ward also increases by half your Wisdom.</p>"
+        },
+        "Heater Shield": {
+          "name": "Heater Shield",
+          "description": {
+            "public": "<p>Named for its iron shape resembling the base of a clothes iron, the heater shield offers a balance of coverage and mobility.</p>"
+          }
+        },
+        "War Hammer": {
+          "name": "War Hammer",
+          "description": {
+            "public": "<p>Built to crush plate and shatter shields, the war hammer features a heavy, blunt head mounted atop a reinforced haft, delivering ruin in the hands of those who favor power over finesse.</p>"
+          }
         }
       },
       "ancestry": {
@@ -1359,11 +1441,17 @@
     "Zarajah": {
       "name": "Zarajah",
       "items": {
-        "Mage Staff": {
-          "name": "Mage Staff"
+        "Flame Staff": {
+          "name": "Flame Staff",
+          "description": {
+            "public": "<p>This mage staff is a talisman to assist with spellcraft or hurl gouts of arcane flame at enemies.</p>"
+          }
         },
         "Ring Mail": {
-          "name": "Ring Mail"
+          "name": "Ring Mail",
+          "description": {
+            "public": "<p>Ring mail features metal rings sewn onto a padded base, offering a compromise of less protection than heavier mail options in exchange for greater mobility.</p>"
+          }
         },
         "Inspire Heroism": {
           "name": "Inspire Heroism",

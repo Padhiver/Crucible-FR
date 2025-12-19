@@ -23,13 +23,17 @@
     "Heavy": "Heavy",
     "Light": "Light",
     "Medium": "Medium",
+    "Wilderness": "Wilderness",
+    "Ingredients": "Ingredients",
     "Weapons": "Weapons",
     "Melee (2h)": "Melee (2h)",
     "Shields": "Shields",
     "Talisman": "Talisman",
     "Unarmed": "Unarmed",
+    "Light Sources": "Light Sources",
     "Tools": "Tools",
-    "Crafting Kits": "Crafting Kits"
+    "Crafting Kits": "Crafting Kits",
+    "Adventuring Gear": "Adventuring Gear"
   },
   "entries": {
     "Blast Flask": {
@@ -55,6 +59,18 @@
           "name": "Alchemist's Fire",
           "description": "<p>You hurl the @ref[name], dealing <strong>Weakened</strong> immediate damage but causing the @Condition[burning] condition to all enemies in a 4 foot radius <strong>Blast</strong> who fail to avoid the attack.</p><p>The amount of burning damage and its duration is dependent on the quality of the @ref[name]:</p><ul><li><p><strong>Shoddy</strong> - 2 damage for 2 rounds</p></li><li><p><strong>Standard</strong> - 3 damage for 3 rounds</p></li><li><p><strong>Fine</strong> - 4 damage for 4 rounds</p></li><li><p><strong>Superior</strong> - 6 damage for 5 rounds</p></li><li><p><strong>Masterwork</strong> - 8 damage for 6 rounds</p></li></ul>"
         }
+      }
+    },
+    "Alchemist's Portable Workbench": {
+      "name": "Alchemist's Portable Workbench",
+      "description": {
+        "public": "<p>A portable copper distilling device favoured by alchemists with no access to a personal workshop due to its collapsible nature. Many of its fittings can be unscrewed and stored inside the body of the still for travel. Though this item takes time to set up and take down, it can stand in for a more permanent laboratory for those who travel.</p>"
+      }
+    },
+    "Alchemist's Toolkit": {
+      "name": "Alchemist's Toolkit",
+      "description": {
+        "public": "<p>A wooden box wrapped in leather containing a stone mortar and pestle, spaces for securing several stoppered vials, a wooden spoon, and a small collapsible iron frame and small brass pot for combining ingredients above a fire.</p>"
       }
     },
     "Amulet of Nimbleness": {
@@ -100,6 +116,18 @@
         "public": "<p>A heavy, crescent-bladed weapon built for cleaving through armor and bone alike. Its haft is marked from countless blows. This weapon can be gripped either in one hand or two. </p>"
       }
     },
+    "Blanket": {
+      "name": "Blanket",
+      "description": {
+        "public": "<p>A thick felted wool or fibre cloth with a myriad of uses.</p>"
+      }
+    },
+    "Book": {
+      "name": "Book",
+      "description": {
+        "public": "<p>A wood-covered book bound in cloth or leather.</p>"
+      }
+    },
     "Brigandine": {
       "name": "Brigandine",
       "description": {
@@ -110,6 +138,12 @@
       "name": "Buckler",
       "description": {
         "public": "<p>A small, round metal shield roughly the size of a dinner plate, the buckler is a duelist’s tool for deflecting blades and controlling space, worn on the forearm or gripped like a weapon.</p>"
+      }
+    },
+    "Candle": {
+      "name": "Candle",
+      "description": {
+        "public": "<p>A small pillar of wax pressed around a central wick that emits a dim warm light when ignited. Each candle can burn for about eight hours.</p>"
       }
     },
     "Caustic Phial": {
@@ -130,6 +164,12 @@
         "public": "<p>This blade is less functional and more ornamented than a regular dagger. Its inscriptions and craftsmanship are purposeful for use as a tool for spellcraft. In combat, it projects piercing blasts of arcane energy.</p>"
       }
     },
+    "Chain": {
+      "name": "Chain",
+      "description": {
+        "public": "<p>A 30' length of steel chain that can be used to assist climbing or combined with fastening equipment to secure objects in place.</p>"
+      }
+    },
     "Chain Hook": {
       "name": "Chain Hook",
       "description": {
@@ -146,6 +186,12 @@
       "name": "Charm of Tenacity",
       "description": {
         "public": "<blockquote><p>This charm-covered necklace looks rustic, but upon close inspection you notice a delicate craft imbued within its workmanship. While holding it you feel your breaths deepen and the minor aches within your muscles dissipate.</p></blockquote><p>This amulet provides a bonus to <strong>Fortitude</strong> defense equal to the minimum of its <strong>Quality</strong> and <strong>Enchantment</strong> bonuses.</p><ul><li><p><strong>Fine</strong> quality and <strong>Minor </strong>enchantment: <strong>+1 Fortitude</strong></p></li><li><p><strong>Superior </strong>quality and <strong>Major </strong>enchantment: <strong>+2 Fortitude</strong></p></li><li><p><strong>Masterwork </strong>quality and <strong>Legendary </strong>enchantment: <strong>+3 Fortitude</strong></p></li></ul>"
+      }
+    },
+    "Chirurgeon's Toolkit": {
+      "name": "Chirurgeon's Toolkit",
+      "description": {
+        "public": "<p>A leather-bound wooden kitbag. Contains a razor, handsaw, pliers, bandages, a bottle of alchemical spirits, needle and thread, and a four inch wooden branch wrapped in leather. Everything one might need to perform amputations or excisions.</p>"
       }
     },
     "Claw Hammer": {
@@ -166,6 +212,24 @@
         "public": "<p>A crude yet effective weapon, the club is a blunt length of wood or bone designed to crush rather than cut. It can be a dangerous implement in the hands of even untrained fighters.</p>"
       }
     },
+    "Common Clothing": {
+      "name": "Common Clothing",
+      "description": {
+        "public": "<p>A shirt, pair of pants, undergarments, socks and shoes or boots suitable for menial labour or travel, cannot be worn with armor.</p>"
+      }
+    },
+    "Cooking Oil": {
+      "name": "Cooking Oil",
+      "description": {
+        "public": "<p>A leather-wrapped glass or clay flask containing vegetable oil suitable for use in cooking.</p>"
+      }
+    },
+    "Cook's Toolkit": {
+      "name": "Cook's Toolkit",
+      "description": {
+        "public": "<p>An iron pot with a fastenable lid, a broad knife, and wooden utensils designed to be stowed inside during travel, leaving room for a leather ingredients pouch for storing grains, a vial of cooking oil, spices or salt, and other small foodstuffs securely.</p>"
+      }
+    },
     "Crowbar": {
       "name": "Crowbar",
       "description": {
@@ -184,10 +248,46 @@
         "public": "<p>A compact, tubular weapon designed to silently launch small, often poisoned projectiles, the dart gun is favored by assassins, beast handlers, and shadowy alchemists.</p>"
       }
     },
+    "Disarming Toolkit": {
+      "name": "Disarming Toolkit",
+      "description": {
+        "public": "<p>A small leather pouch containing a set of pliers, cutters, awls and a set of collapsible metal rods that can be screwed together. Designed for the purposes of disarming or triggering snares, tripwires, pressure plates, and other common traps.</p>"
+      }
+    },
+    "Dress Clothing": {
+      "name": "Dress Clothing",
+      "description": {
+        "public": "<p>A regal set of fine vestments fit for attending celebrations and high society functions, includes an overcoat or dress, kerchief or necktie, a fine shirt or corset, a vest or bodice, trousers or petticoat, belt or braces, stockings and fine shoes.</p>"
+      }
+    },
+    "Enchanter's Portable Workbench": {
+      "name": "Enchanter's Portable Workbench",
+      "description": {
+        "public": "<p>A collapsible wooden box that can be unfolded into a small decorative altar. Contains a stone offering bowl, leather mat for covering the work surface, and space to store enchanting rods, ritual candles, incense packets and engraving tools.</p>"
+      }
+    },
+    "Enchanter's Toolkit": {
+      "name": "Enchanter's Toolkit",
+      "description": {
+        "public": "<p>A leather-bound wooden kitbag. Contains ritual candles, a small offering bowl, incense packets and powdered reagents, and a cloth mat to use as a work surface.</p>"
+      }
+    },
     "Expanded Toolbelt": {
       "name": "Expanded Toolbelt",
       "description": {
         "public": "<p>An expanded toolbelt in the form of a utility belt, a bandolier, or an array of pockets stitched into your equipment.</p><p>This item provides a number of additional Toolbelt slots according to its quality tier:</p><ul><li><p><strong>Standard</strong>: +1 Toolbelt slot</p></li><li><p><strong>Fine</strong>: +2 Toolbelt slots</p></li><li><p><strong>Superior</strong>: +3 Toolbelt slots</p></li><li><p><strong>Masterwork</strong>: +4 Toolbelt slots</p></li></ul>"
+      }
+    },
+    "Firestarter": {
+      "name": "Firestarter",
+      "description": {
+        "public": "<p>A small waxed-leather pouch containing dry shredded plant fibre and wood shavings, with a little clasp inside for securing a piece of flint and a steel striking ring for the purposes of starting fires.</p>"
+      }
+    },
+    "Fishing Pole": {
+      "name": "Fishing Pole",
+      "description": {
+        "public": "<p>A collapsible wooden pole affixed with metal rings and a post to attach fishing line. Easily fits in or alongside a backpack.</p>"
       }
     },
     "Flame Staff": {
@@ -196,10 +296,28 @@
         "public": "<p>This mage staff is a talisman to assist with spellcraft or hurl gouts of arcane flame at enemies.</p>"
       }
     },
+    "Fletcher's Toolkit": {
+      "name": "Fletcher's Toolkit",
+      "description": {
+        "public": "<p>A leather-bound quiver with sealable end, containing a mountable vice, spoke shave, brushes and a small spinner for winding braided string. If unlatched it unfolds into a mat that can serve as a flat work surface.</p>"
+      }
+    },
     "Glaive": {
       "name": "Glaive",
       "description": {
         "public": "<p>A polearm with a curved, sword-like blade affixed to the end of a long shaft, the glaive sweeps through foes in broad, arcing strikes.</p>"
+      }
+    },
+    "Glue": {
+      "name": "Glue",
+      "description": {
+        "public": "<p>A vial of common animal glue.</p>"
+      }
+    },
+    "Grapnel": {
+      "name": "Grapnel",
+      "description": {
+        "public": "<p>A simple steel two-pronged or four-pronged hook designed to be used with rope or chain to secure a rope to wooden structures.</p>"
       }
     },
     "Great Hammer": {
@@ -232,10 +350,22 @@
         "public": "<p>This heavy tome is used as a repository of knowledge as well as an implement for spellcraft. In the hands of an arcane practitioner, it can project concussive blasts of force towards a target.</p>"
       }
     },
+    "Hacksaw": {
+      "name": "Hacksaw",
+      "description": {
+        "public": "<p>A common hand tool used to cut through metal.</p>"
+      }
+    },
     "Halberd": {
       "name": "Halberd",
       "description": {
         "public": "<p>Combining an axe blade, a spear point, and a hook on a single pole, the halberd is a versatile weapon capable of stabbing, cleaving, or trapping weapons for counter-attacks.</p>"
+      }
+    },
+    "Hammer": {
+      "name": "Hammer",
+      "description": {
+        "public": "<p>A common hand tool used in carpentry or metal working. Not designed for combat.</p>"
       }
     },
     "Hand Axe": {
@@ -248,6 +378,30 @@
       "name": "Hand Crossbow",
       "description": {
         "public": "<p>This palm-sized crossbow trades power for concealability, perfect for close-quarters surprise shots or the desperate last bolt of a cornered rogue.</p>"
+      }
+    },
+    "Handmirror": {
+      "name": "Handmirror",
+      "description": {
+        "public": "<p>A simple piece of handheld polished glass with a reflective metal backing that can be used to see one's reflection.</p>"
+      }
+    },
+    "Handsaw": {
+      "name": "Handsaw",
+      "description": {
+        "public": "<p>A common hand tool used to cut through wood.</p>"
+      }
+    },
+    "Harness": {
+      "name": "Harness",
+      "description": {
+        "public": "<p>An adjustable leather-and-steel harness designed to fit a humanoid torso, can be used with rope or chain to assist with climbing or for the purposes of restraint.</p>"
+      }
+    },
+    "Healer's Toolkit": {
+      "name": "Healer's Toolkit",
+      "description": {
+        "public": "<p>A leather-bound wooden kitbag. Contains bandages, a bottle of alchemical spirits, needle and thread, and a variety of minor herbs and compounds used in the treatment of common illnesses and injuries.</p>"
       }
     },
     "Healing Elixir": {
@@ -305,10 +459,28 @@
         "public": "<p>This mage staff is a talisman to assist with spellcraft or hurl blasts of frigid ice towards enemies.</p>"
       }
     },
+    "Incense": {
+      "name": "Incense",
+      "description": {
+        "public": "<p>Sticks or cones of resin, powdered wood, and floral oils designed to emit a sweet smelling smoke when burned. Each packet contains 12 individual pieces.</p>"
+      }
+    },
+    "Ink": {
+      "name": "Ink",
+      "description": {
+        "public": "<p>A vial of common writing ink.</p>"
+      }
+    },
     "Javelin": {
       "name": "Javelin",
       "description": {
         "public": "<p>With a sharp metal head mounted atop a long pole, the javelin is light enough to be thrown but sturdy enough to remain useful in close quarters.</p>"
+      }
+    },
+    "Jeweler's Portable Workbench": {
+      "name": "Jeweler's Portable Workbench",
+      "description": {
+        "public": "<p>A leather-bound shallow wooden box containing a collapsible grinding wheel, a grinding stone and polishing stone, a lapidary hammer, and a tiny steel anvil, leaving space for storing current projects safely for travel.</p>"
       }
     },
     "Katana": {
@@ -341,6 +513,12 @@
         "public": "<p>Crafted from thick, boiled leather hardened into panels or a cuirass, leather armor offers lightweight protection ideal for scouts, rogues, and lightly armed skirmishers.</p>"
       }
     },
+    "Lockpicks": {
+      "name": "Lockpicks",
+      "description": {
+        "public": "<p>A set of long thin metal pins with slightly hooked ends designed to manipulate the internal mechanisms of locks and a metal bar for applying torsion. In the right hands, these can be used to open locks just as well as any key.</p>"
+      }
+    },
     "Longbow": {
       "name": "Longbow",
       "description": {
@@ -353,10 +531,22 @@
         "public": "<p>The longsword is a double-edged blade wielded with two hands for balance and strength, usually featuring a large crossguard used for parrying blows.</p>"
       }
     },
+    "Lyre": {
+      "name": "Lyre",
+      "description": {
+        "public": "<p>A stringed instrument within a curved frame. The lyre is a favored instrument of many roving bards or storytellers which use music to augment their magic or oration.</p>"
+      }
+    },
     "Mace": {
       "name": "Mace",
       "description": {
         "public": "<p>A one-handed blunt weapon that features a heavy head, typically forged of metal, which converts the momentum of its wielder's swing into a bone-shattering impact.</p>"
+      }
+    },
+    "Mealkit": {
+      "name": "Mealkit",
+      "description": {
+        "public": "<p>A leather pouch containing a metal cup, plate, fork, and a piece of cloth for wiping them clean.</p>"
       }
     },
     "Messenger Coin": {
@@ -369,6 +559,12 @@
       "name": "Padded Armor",
       "description": {
         "public": "<p>Consisting of quilted layers of cloth stuffed with rags or wool, padded armor cushions the body against blunt force and serves as the foundation beneath heavier gear.</p>"
+      }
+    },
+    "Perfume": {
+      "name": "Perfume",
+      "description": {
+        "public": "<p>A gentle finery in the form of floral scented oils designed to mask the natural scent with a more pleasing olfactory experience. Each small vial contains 20 applications.</p>"
       }
     },
     "Periapt of Determination": {
@@ -412,10 +608,22 @@
         }
       }
     },
+    "Poisoner's Toolkit": {
+      "name": "Poisoner's Toolkit",
+      "description": {
+        "public": "<p>A wooden box wrapped in leather etched with a decorative cross-stitch to make it clear it contains dangerous goods. Contains a stone mortar and pestle spaces for securing several stoppered vials of poisonous ingredients, a silver spoon, and a small collapsible iron frame and small brass pot for combining ingredients above a fire.</p>"
+      }
+    },
     "Primordial Seed": {
       "name": "Primordial Seed",
       "description": {
         "public": "<p>This talisman, favored by druidic adherants attuned to the power of the land, aids in the practice of spellcraft or can be used in combat to direct a gout of poisonous spores towards an enemy.</p>"
+      }
+    },
+    "Prybar": {
+      "name": "Prybar",
+      "description": {
+        "public": "<p>A solid metal rod with a flat end and a hooked end designed to give its wielder leverage to pry.</p>"
       }
     },
     "Quarterstaff": {
@@ -454,6 +662,30 @@
         "public": "<p>Long, slender, and exquisitely balanced, the rapier is a fencer’s weapon of choice, its needle-point tip perfect for lightning-fast thrusts and deadly duels.</p>"
       }
     },
+    "Rations": {
+      "name": "Rations",
+      "description": {
+        "public": "<p>Dried bread, nuts, smoked cheese and meat suitable to serve as a rudimentary meal capable of sustaining life for a single day.</p>"
+      }
+    },
+    "Razor": {
+      "name": "Razor",
+      "description": {
+        "public": "<p>A particularly sharp blade used for shaving or, in some cases, surgery.</p>"
+      }
+    },
+    "Repair Kit (smith)": {
+      "name": "Repair Kit (smith)",
+      "description": {
+        "public": "<p>A leather-bound bag containing sharpening stones and a grinder, a small hammer, a small crucible for liquifying metal, and an assortment of small pieces of scrap metal. Can be used to repair metal armor, weapons, and accessories.</p>"
+      }
+    },
+    "Repair Kit (tailor)": {
+      "name": "Repair Kit (tailor)",
+      "description": {
+        "public": "<p>A leather-bound bag containing scissors, needles, a weaving frame, and an assortment of small pieces of scrap cloth, leather, thread and string. Can be used to repair cloth and leather armor and accessories.</p>"
+      }
+    },
     "Ring Mail": {
       "name": "Ring Mail",
       "description": {
@@ -467,6 +699,19 @@
         "private": "<p>This item is presented as a ring, but it can be any type of accessory like an amulet, cloak, bracers, or other type of trinket.</p>"
       }
     },
+    "Ring of Gliding": {
+      "name": "Ring of Gliding",
+      "description": {
+        "public": "<p>A band of elegant pale blue steel that features a spiraling pattern to the metal that presents the illusion that it is perpetually spinning slowly upon its wearer's finger.</p><p>This ring can be instinctually activated by its bearer when in freefall to enter a graceful and controlled descent.</p>",
+        "private": "<p>This item is presented as a ring, but it can be any type of accessory like an amulet, cloak, bracers, or other type of trinket.</p>"
+      },
+      "actions": {
+        "gliding": {
+          "name": "Ring of Gliding",
+          "description": "<p>If used while <strong>Falling</strong>, you may laterally move a number of spaces from your initial location as you glide.</p><ul><li><p><strong>Minor </strong>enchantment: <strong>1 foot</strong> per 20 feet of descent.</p></li><li><p><strong>Superior</strong> enchantment: <strong>2 feet </strong>per <strong>20 feet</strong> of descent.</p></li><li><p><strong>Masterwork </strong>enchantment: <strong>4 feet</strong> per <strong>20 feet</strong> of descent.</p></li></ul><p>You take no falling damage upon landing, nor are you rendered @Condition[prone].</p>"
+        }
+      }
+    },
     "Ring of Reinforcement": {
       "name": "Ring of Reinforcement",
       "description": {
@@ -474,10 +719,34 @@
         "private": "<p>This item is presented as a ring, but it can be any type of accessory like an amulet, cloak, bracers, or other type of trinket.</p>"
       }
     },
+    "Rope": {
+      "name": "Rope",
+      "description": {
+        "public": "<p>A 30' length of plant-fibre rope that can be used to assist climbing or for many other purposes.</p>"
+      }
+    },
+    "Rope Ladder": {
+      "name": "Rope Ladder",
+      "description": {
+        "public": "<p>25 feet of wooden slats and knotted rope tied together and rolled into a convenient climbing device. When secured at one end significantly reduces the chances that those climbing might fall.</p>"
+      }
+    },
     "Round Shield": {
       "name": "Round Shield",
       "description": {
         "public": "<p>A round metal shield nearly two feet in diameter which is the basic defensive armament of foot soldiers lacking specialized training in shield combat.</p>"
+      }
+    },
+    "Runeweaver's Portable Workbench": {
+      "name": "Runeweaver's Portable Workbench",
+      "description": {
+        "public": "<p>A collapsible wooden box that can be unfolded into a small workbench designed as a work surface for engraving runes. Contains engraving chisels and awls, a lapidary hammer, decorative leather mat and space for storing glyphs and other ritual materials.</p>"
+      }
+    },
+    "Runeweaver's Toolkit": {
+      "name": "Runeweaver's Toolkit",
+      "description": {
+        "public": "<p>A leather-bound wooden kitbag. Contains engraving chisels and awls, a lapidary hammer, decorative leather mat and space for storing glyphs and other ritual materials.</p>"
       }
     },
     "Sai": {
@@ -498,6 +767,18 @@
         "public": "<p>With its wide, curved blade and deadly arc, the scimitar dances through battle, its edge carving through foes in sweeping, elegant strikes.</p>"
       }
     },
+    "Scrivener's Portable Workbench": {
+      "name": "Scrivener's Portable Workbench",
+      "description": {
+        "public": "<p>A wooden box wrapped in leather not much larger than a common book. Contains calligraphic brushes and pen tips, needle and thread, and room to store ink vials separately from folded paper. When unlatched, the box can be unfolded to serve as a flat writing surface.</p>"
+      }
+    },
+    "Scrivener's Toolkit": {
+      "name": "Scrivener's Toolkit",
+      "description": {
+        "public": "<p>A leather-bound wooden kitbag. Contains a waxed document pouch for keeping papers dry, a packet of sealing wax, several quills and inks, and a flat wooden board to use as a writing surface.</p>"
+      }
+    },
     "Shortbow": {
       "name": "Shortbow",
       "description": {
@@ -510,6 +791,12 @@
         "public": "<p>The shortsword is a straight-bladed weapon which is nimble to wield and quick to strike in close combat. It features a crossguard ideal for parrying incoming blows.</p>"
       }
     },
+    "Shovel": {
+      "name": "Shovel",
+      "description": {
+        "public": "<p>A common two-handed tool used for digging soil and stones.</p>"
+      }
+    },
     "Skull Fetish": {
       "name": "Skull Fetish",
       "description": {
@@ -520,6 +807,24 @@
       "name": "Sling",
       "description": {
         "public": "<p>A deceptively simple length of cord or leather used to hurl stones at high velocity, the sling is one of the oldest weapons in history—requiring skill, but deadly in trained hands.</p>"
+      }
+    },
+    "Smith's Portable Forge": {
+      "name": "Smith's Portable Forge",
+      "description": {
+        "public": "<p>A thick, clay-lined, sealed iron pot with a hole for attaching a hand-bellows and a small opening for inserting metal to be heated. A set of bellows and a small anvil. This heavy device allows a smith to ply their trade while on the road, though it may take a strong back to transport it. Suitable for crafting most common metal tools and weapons, but insufficient for high quality work.</p>"
+      }
+    },
+    "Smith's Toolkit": {
+      "name": "Smith's Toolkit",
+      "description": {
+        "public": "<p>A leather-bound wooden kitbag. Contains awls, pincers, scrap metal and a small anvil as well as space for storing bits of scrap metal.</p>"
+      }
+    },
+    "Soap": {
+      "name": "Soap",
+      "description": {
+        "public": "<p>A bar of common cleaning soap used for personal hygiene. Each bar contains about 20 applications.</p>"
       }
     },
     "Spear": {
@@ -558,6 +863,12 @@
         "public": "<p>A layer of vertical metal strips riveted to a backing of leather or mail, splint armor offers strong limb protection while sacrificing some flexibility.</p>"
       }
     },
+    "Spyglass": {
+      "name": "Spyglass",
+      "description": {
+        "public": "<p>A handheld telescope made of brass and wood with highly polished glass lenses. Used to magnify a distant view.</p>"
+      }
+    },
     "Stiletto": {
       "name": "Stiletto",
       "description": {
@@ -570,16 +881,52 @@
         "public": "<p>A base of leather reinforced with small metal studs or riveted plates, this armor strikes a balance between mobility and modest protection against slashes.</p>"
       }
     },
+    "Tailor's Portable Workbench": {
+      "name": "Tailor's Portable Workbench",
+      "description": {
+        "public": "<p>A leather-bound shallow wooden box containing spools for thread, suitable needles and pins, a skinning knife, hook knife, punches, awls, and brands suitable for working with cloth and leather while travelling. When unfastened, can be collapsed into a flat work surface.</p>"
+      }
+    },
+    "Tailor's Toolkit": {
+      "name": "Tailor's Toolkit",
+      "description": {
+        "public": "<p>A leather-bound wooden kitbag containing spools for thread, suitable needles and pins, a skinning knife awls, suitable for working with cloth and leather.</p>"
+      }
+    },
+    "Tent (caravan)": {
+      "name": "Tent (caravan)",
+      "description": {
+        "public": "<p>A massive foldable or rollable sheet for building a temporary shelter, suitable for up to twelve occupants. Includes ropes, pegs, and six collapsible cross-brace poles which must be assembled before the sheet can be stretched over it.</p>"
+      }
+    },
+    "Tent (large)": {
+      "name": "Tent (large)",
+      "description": {
+        "public": "<p>A large foldable or rollable sheet for building a temporary shelter, suitable for up to six occupants. Includes ropes, pegs, and a collapsible cross-brace for its center.</p>"
+      }
+    },
+    "Tent (small)": {
+      "name": "Tent (small)",
+      "description": {
+        "public": "<p>A foldable or rollable sheet for building a temporary shelter, suitable for one-to-two occupants. Includes ropes, pegs, and a collapsible cross-brace for its center.</p>"
+      }
+    },
     "Torch": {
       "name": "Torch",
       "description": {
-        "public": "<p>Able to be used as either a light source or as an improvised weapon, a torch can illuminate dark places and ward off the foes that lurk there.</p>"
+        "public": "<p>Layered oil-soaked affixed around the end of a rod made of bone or another non-flammable material, an inexpensive, if inefficient, temporary lightsource. Each torch can burned for one hour before it can no longer be used.</p>"
       }
     },
     "Tower Shield": {
       "name": "Tower Shield",
       "description": {
         "public": "<p>A massive, rectangular wall of wood and metal, the tower shield turns its bearer into a walking fortress, ideal for holding choke points—but at the cost of speed and vision.</p>"
+      }
+    },
+    "Travel Jug": {
+      "name": "Travel Jug",
+      "description": {
+        "public": "<p>A clay jug with a stopper, wrapped in leather that can be affixed to a belt or outside of a pack for convenient use. Can contain 40oz of liquid.</p>"
       }
     },
     "War Hammer": {
@@ -592,6 +939,24 @@
       "name": "War Lance",
       "description": {
         "public": "<p>Designed for mounted combat, the war lance is a long, tapered weapon used to shatter armor with the momentum of a charging steed, its shaft reinforced for devastating impact.</p>"
+      }
+    },
+    "Weather Clothing": {
+      "name": "Weather Clothing",
+      "description": {
+        "public": "<p>A set of clothing designed for protecting the wearer against inclement weather such as extremes of temperature, wind, or humidity.</p>"
+      }
+    },
+    "Wetskin": {
+      "name": "Wetskin",
+      "description": {
+        "public": "<p>A leather-wrapped bladder that can be affixed to a belt or outside of a pack for convenient use. Can contain 26oz of liquid.</p>"
+      }
+    },
+    "Whistle": {
+      "name": "Whistle",
+      "description": {
+        "public": "<p>An instrument made from carved wood or bone that, when blown into, produces a single shrill sound that can be heard over long distances. Often used by hunters and fishers to signal one another when in the wilderness or at sea.</p>"
       }
     }
   }

@@ -8,17 +8,19 @@
     }
   },
   "folders": {
-    "Ooze": "Ooze",
     "Charge": "Charge",
-    "Passive": "Passive",
     "Bites": "Bites",
     "Claws": "Claws",
+    "Beast": "Beast",
+    "Flight": "Flight",
+    "Breath": "Breath",
+    "Ooze": "Ooze",
+    "Passive": "Passive",
     "Construct": "Construct",
     "Attacks": "Attacks",
-    "Breath": "Breath",
-    "Flight": "Flight",
     "Movement": "Movement",
     "Resistances": "Resistances",
+    "Undead": "Undead",
     "Senses": "Senses"
   },
   "entries": {
@@ -48,7 +50,7 @@
     },
     "Amorphous": {
       "name": "Amorphous",
-      "description": "<p>The @ref[actor.name]{creature} may move through a space as narrow as 1 inch in diameter without any penalty to its <strong>Stride</strong>. It is immune to the @Condition[restrained] condition.</p>"
+      "description": "<p>The @ref[actor.name]{creature} may move through a space as narrow as 1 inch in diameter without any penalty to its <strong>Stride</strong>. It gains a bonus to <strong>Dodge</strong> equal to its <strong>Toughness </strong>score and is immune to the @Condition[restrained] condition.</p>"
     },
     "Aqueous Transmission": {
       "name": "Aqueous Transmission",
@@ -59,6 +61,10 @@
           "description": "<p>When the @ref[name] is within water, it can instantaneously transport itself to any unoccupied space within the same body of water up to 120 feet away. It does not need to be able to see the destination to make this <strong>Move</strong>.</p>"
         }
       }
+    },
+    "Bestial Senses": {
+      "name": "Bestial Senses",
+      "description": "<p>The @ref[actor.name]{creature} has finely honed senses and is particularly perceptive of their environment, all <strong>Awareness</strong> checks gain <strong>+2 Boons</strong>.</p>"
     },
     "Blood Sense": {
       "name": "Blood Sense",
@@ -88,8 +94,8 @@
       "name": "Fire Absorption",
       "description": "<p>The @ref[actor.name]{creature} has an exceptional ability to thrive within scorching environments. Its <strong>Fire</strong> resistance is doubled and if that resistance would reduce an amount of damage below zero, the negative amount is received as <strong>Healing</strong> instead.</p>"
     },
-    "Immuntable Form": {
-      "name": "Immuntable Form",
+    "Immutable Form": {
+      "name": "Immutable Form",
       "description": "<p>The @ref[actor.name] is immune to any spell or effect which alters its physical form.</p>"
     },
     "Corrode Weapon": {
@@ -154,6 +160,20 @@
           "description": "<p>The @ref[actor.name]{creature} attacks swiftly with both talons.</p><p>If at least one attack results in a <strong>Critical Success</strong>, it inflicts the @Condition[bleeding] condition for <strong>2 Rounds</strong>.</p>"
         }
       }
+    },
+    "Repugnant Pustules": {
+      "name": "Repugnant Pustules",
+      "description": "<p>A malodorous cloud hangs about this creature like a pall, the rank noxious scent that can only come from active decay. Striking this creature is likely to release repugnant and corrupting essence.</p>",
+      "actions": {
+        "repugnantPustules": {
+          "name": "Repugnant Pustules",
+          "description": "<p>When the @ref[actor.name]{creature} is hit by a <strong>Strike</strong>, it may partially burst to release a spray of sickening fluid that deals <strong>Corruption</strong> damage. This action scales with <strong>Toughness</strong> and targets the <strong>Reflex</strong> defense of any creature within 3 feet.</p><p>On a <strong>Critical Success</strong>, the affected target becomes temporarily @Condition[diseased] for 3 Rounds.</p>"
+        }
+      }
+    },
+    "Restless Dead": {
+      "name": "Restless Dead",
+      "description": "<p>The @ref[actor.name]{creature}'s life is sustained by necromantic magic or otherworldly forces. When it would be considered @Condition[dead]  it is instead @Condition[incapacitated].</p><p>After the conclusion of combat, the @ref[actor.name]{creature} may begin to perform the Recover action, regaining consciousness after the recovery is complete. Recovery in this fashion may be prevented in one of the following ways:</p><ul><li><p>The creature was incapacitated by a type of damage for which it is <strong>Vulnerable</strong>.</p></li><li><p>The magical forces which caused it to rise as undead are disrupted, countered, or otherwise dispelled.</p></li><li><p>The creature's body is destroyed to a degree that it can no longer maintain its physical form.</p></li></ul>"
     },
     "Restraining Chomp": {
       "name": "Restraining Chomp",

@@ -51,6 +51,46 @@
                     "description": "<p>Vous vous entourez de trois duplicatas illusoires qui durent jusqu'à 10 Rounds. Toute <strong>Frappe</strong> entrante contre vous est faite avec un nombre de <strong>Fléaux</strong> égal à deux fois votre nombre de duplicatas restants. Chaque fois qu'une Frappe vous manque, un de vos duplicatas disparaît.</p>"
                 }
             }
+        },
+        "Invisibility": {
+            "name": "Invisibilité",
+            "description": "<p>Usage sophistiqué de la magie d'Illusion, le sort d'Invisibilité permet au lanceur d'enrouler la lumière et les ombres autour de lui comme on enfilerait une cape, reflétant le monde environnant comme s'il n'était pas là. Qui ne le croirait pas, quand ses propres yeux lui affirment qu'il n'y a rien à voir ?</p>",
+            "actions": {
+                "invisibility": {
+                    "name": "Invisibilité",
+                    "description": "<p>Vous devenez @Condition[invisible] et ne pouvez pas être détecté par la perception visuelle. Vous ne pouvez être la cible directe d'aucune action. Ce sort doit être <strong>Maintenu</strong> pour rester actif.</p>"
+                }
+            }
+        },
+        "Lifebloom": {
+            "name": "Floraison vitale",
+            "description": "<p>Rares sont ceux qui peuvent servir de canal au sein du monde physique et permettre aux pouvoirs bruts de la Vie et de l'Âme de s'entremêler pour faire pencher la balance en leur faveur. Ce sort permet au lanceur de devenir une source jaillissante pour les forces abondantes qui donnent naissance à toute vie dotée d'une âme. Dans un bruissement d'air, le lanceur est entouré de particules dansantes d'énergies pures, telles des dizaines de lucioles ou des étincelles de foyer, et ceux présents dans le rayon sont envahis d'une sensation apaisante, comme s'ils étaient immergés dans une eau agréablement chaude. Toute la flore environnante croît immédiatement jusqu'à fleurir, et un parfum de pollen et de verdure luxuriante emplit l'air.</p>",
+            "actions": {
+                "lifebloom": {
+                    "name": "Floraison vitale",
+                    "description": "<p>Vous canalisez une magie vitale dans une aura qui restaure la Santé et le Moral de tous les alliés à moins de 30 pieds de vous. À chaque round, les alliés commençant leur tour dans cette aura récupèrent votre score de <strong>Sagesse</strong> en <strong>Santé</strong> et en <strong>Moral</strong>. Le sort doit être maintenu.</p><p><strong>Note : Ce sort est actuellement traité comme une zone d'effet (AoE), accordant des soins sur la durée à ceux présents dans la zone initiale. La suppression manuelle de ces effets est nécessaire si le sort cesse d'être maintenu. Lorsque les auras seront automatisées par le système (Foundry VTT v14), l'implémentation mécanique correspondra à la description.</strong></p>"
+                }
+            }
+        },
+        "Revive": {
+            "name": "Ranimation",
+            "description": "<p>Expression puissante des magies de Vie et de Contrôle, Ranimation permet au lanceur d'intervenir dans le processus naturel de la mort en insufflant une vague d'essence vitale dans le corps d'un défunt récent. Ceux qui ont vécu une Ranimation sont souvent réticents à en parler, mais la décrivent comme une sensation désagréable rappelant un réveil soudain d'un sommeil profond pour s'apercevoir que l'on est gelé ; la chair pique et élance, l'esprit vacille, et l'âme souffre du souvenir de son départ interrompu.</p>",
+            "actions": {
+                "revive": {
+                    "name": "Ranimation",
+                    "description": "<p>Vous ramenez à la vie une créature récemment devenue @Condition[dead], réduisant ses <strong>Lésions</strong> d'une valeur égale à votre score de <strong>Sagesse</strong>. En cas de succès, la créature ranimée est @Condition[disoriented] et @Condition[staggered] pendant 10 minutes.</p>"
+                }
+            }
+        },
+        "Telecognition": {
+            "name": "Télécognition",
+            "description": "<p>Exemple rudimentaire de l'art complexe consistant à pénétrer l'esprit d'autrui, la Télécognition effleure les pensées à la surface de l'esprit d'un sujet comme on ramasserait des feuilles à la surface d'un étang. Bien qu'elle ne soit pas perturbatrice, elle manque de subtilité ; tout comme l'étang ondule lorsqu'on touche sa surface, l'esprit en fait de même.</p>",
+            "actions": {
+                "telecognition": {
+                    "name": "Télécognition",
+                    "description": "<p>Vous pénétrez l'esprit d'une créature <strong>Humanoïde</strong> ou d'un <strong>Géant</strong>, tentant de briser sa défense de <strong>Volonté</strong> pour comprendre ses pensées et ses motivations. La cible de ce sort est consciente de l'intrusion, même si elle ne peut pas vous percevoir.</p><p>En cas de réussite, le Maître du jeu (pour un Adversaire) ou le Joueur (pour un Héros) doit vous décrire en 3 mots ou moins l'idée ou le sentiment qui occupe le devant de ses pensées à l'instant présent.</p><p>Sur une Réussite critique, cette description peut aller jusqu'à 10 mots pour transmettre une compréhension plus profonde.</p>"
+                }
+            }
         }
     }
 }

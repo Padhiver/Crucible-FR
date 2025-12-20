@@ -51,7 +51,8 @@
         "Melee": "Mêlée",
         "Defense": "Défense",
         "Resources": "Ressources",
-        "Spellcraft": "Sorcellerie"
+        "Spellcraft": "Sorcellerie",
+        "Scaling": "Évolution"
     },
     "entries": {
         "Control Proficiency": {
@@ -288,7 +289,7 @@
             "actions": {
                 "bodyBlock": {
                     "name": "Opposition corporelle",
-                    "description": "Une attaque qui devrait être défendue par votre Armure ou produire un Coup superficiel est convertie en Blocage et n'inflige aucun dégât.",
+                    "description": "<p>Une attaque qui devrait être défendue par votre Armure ou produire un Coup superficiel est convertie en Blocage et n'inflige aucun dégât.</p>",
                     "condition": "Vous vous défendez contre une attaque de mêlée avec votre Armure ou subissez un Coup superficiel."
                 }
             }
@@ -1425,11 +1426,11 @@
             "actions": {
                 "beastShape": {
                     "name": "Forme de bête",
-                    "description": "Vous assumez la forme d'une bête avec laquelle vous êtes familier et qui est de la moitié de votre niveau ou moins."
+                    "description": "<p>Vous assumez la forme d'une bête avec laquelle vous êtes familier et qui est de la moitié de votre niveau ou moins.</p>"
                 },
                 "beastShapeRevert": {
                     "name": "Rétablir la forme",
-                    "description": "Vous mettez fin à votre transformation bestiale, revenant à votre forme normale."
+                    "description": "<p>Vous mettez fin à votre transformation bestiale, revenant à votre forme normale.</p>"
                 }
             }
         },
@@ -1769,6 +1770,10 @@
                     "condition": "Vous attaquez un ennemi Exposé avec une arme Lourde."
                 }
             }
+        },
+        "Inexorable Flame": {
+            "name": "Flamme inexorable",
+            "description": "<p>Vous comprenez que le feu peut se propager avec une détermination inévitable et imparable. Votre utilisation de la <strong>Rune de Flamme</strong> dépend désormais de votre <strong>Sagesse</strong> au lieu de votre <strong>Intelligence</strong>.</p>"
         }
     }
 }

@@ -18,7 +18,9 @@
         "Flight": "Vol",
         "Bites": "Morsures",
         "Claws": "Griffe",
-        "Attacks": "Attaque"
+        "Attacks": "Attaque",
+        "Beast": "Bête",
+        "Undead": "Mort-vivant"
     },
     "label": "Talents d'Adversaire",
     "entries": {
@@ -48,7 +50,7 @@
         },
         "Amorphous": {
             "name": "Informe",
-            "description": "<p>La @ref[actor.name]{créature} peut se déplacer à travers un espace aussi étroit que 1 pouce de diamètre sans aucune pénalité à sa <strong>Foulée</strong>. Elle est immunisée contre la condition @Condition[restrained].</p>"
+            "description": "<p>La @ref[actor.name]{créature} peut se déplacer à travers un espace aussi étroit que 1 pouce de diamètre sans aucune pénalité à sa <strong>Foulée</strong>. Elle gagne un bonus à l'<strong>Esquive</strong> égal à son score de <strong>Robustesse</strong> et est immunisée contre la condition @Condition[restrained].</p>"
         },
         "Aqueous Transmission": {
             "name": "Transmission aqueuse",
@@ -87,10 +89,6 @@
         "Fire Absorption": {
             "name": "Absorption de Feu",
             "description": "<p>La @ref[actor.name]{créature} possède une capacité exceptionnelle à prospérer dans des environnements brûlants. Sa résistance au <strong>Feu</strong> est doublée et si cette résistance réduit une quantité de dégâts en dessous de zéro, le montant négatif est reçu comme <strong>Guérison</strong> à la place.</p>"
-        },
-        "Immuntable Form": {
-            "name": "Forme immuable",
-            "description": "<p>La @ref[actor.name] est immunisée contre tout sort ou effet qui altère sa forme physique.</p>"
         },
         "Corrode Weapon": {
             "name": "Corrosion d’arme",
@@ -243,6 +241,28 @@
                     "description": "<p>La créature peut passer 10 minutes à tisser une nouvelle section de toile qui couvre une zone de 5 pieds.</p>"
                 }
             }
+        },
+        "Bestial Senses": {
+            "name": "Sens sauvages",
+            "description": "<p>La @ref[actor.name]{créature} possède des sens aiguisés et une perception accrue de son environnement, tous les tests de <strong>Vigilance</strong> reçoivent <strong>+2 Faveurs</strong>.</p>"
+        },
+        "Immutable Form": {
+            "name": "Forme immuable",
+            "description": "<p>La @ref[actor.name] est immunisée contre tout sort ou effet qui altère sa forme physique.</p>"
+        },
+        "Repugnant Pustules": {
+            "name": "Pustules répugnantes",
+            "description": "<p>Un nuage malodorant enveloppe cette créature comme un linceul, dégageant l'odeur fétide et nocive de la décomposition. Frapper cette créature risque de libérer une essence répugnante et corruptrice.</p>",
+            "actions": {
+                "repugnantPustules": {
+                    "name": "Pustules répugnantes",
+                    "description": "<p>Lorsque la @ref[actor.name]{créature} est touchée par une <strong>Frappe</strong>, elle peut partiellement éclater pour libérer un jet de fluide écœurant qui inflige des dégâts de <strong>Corruption</strong>. Cette action dépend de la <strong>Robustesse</strong> et cible la défense de <strong>Réflexes</strong> de toute créature à moins de 3 pieds.</p><p>Sur une <strong>Réussite critique</strong>, la cible affectée devient temporairement @Condition[diseased] pendant 3 rounds.</p>"
+                }
+            }
+        },
+        "Restless Dead": {
+            "name": "Mort sans repos",
+            "description": "<p>La vie de la @ref[actor.name]{créature} est maintenue par la magie nécromantique ou des forces d'outre-monde. Lorsqu'elle devrait être considérée comme @Condition[dead], elle est à la place @Condition[incapacitated].</p><p>Une fois le combat terminé, la @ref[actor.name]{créature} peut commencer à effectuer l'action de Récupération, reprenant conscience une fois celle-ci terminée. La récupération de cette manière peut être empêchée de l'une des façons suivantes :</p><ul><li><p>La créature a été neutralisée par un type de dégâts auquel elle est <strong>Vulnérable</strong>.</p></li><li><p>Les forces magiques qui l'ont ranimée en tant que mort-vivant sont perturbées, contrées ou dissipées.</p></li><li><p>Le corps de la créature est détruit à un point tel qu'elle ne peut plus maintenir sa forme physique.</p></li></ul>"
         }
     }
 }

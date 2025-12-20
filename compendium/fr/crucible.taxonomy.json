@@ -58,7 +58,7 @@
         },
         "Skeleton": {
             "name": "Squelette",
-            "description": "<p>Créatures non-mortes faites d'os et de tendons.</p>"
+            "description": "<p>Créatures éternelles et malveillantes ramenées à la vie par la nécromancie, créées à partir des restes squelettiques d'humanoïdes morts depuis longtemps. Animés par des forces impies échappant à leur contrôle, les @ref[name] existent rarement de leur propre chef et sont souvent rencontrés en tant que serviteurs de lanceurs de sorts maléfiques ou de morts-vivants supérieurs.</p>"
         },
         "Storm Elemental": {
             "name": "Élémentaire de tempête",
@@ -83,6 +83,18 @@
         "Winged Terror": {
             "name": "Terreur Ailée",
             "description": "<p>Créatures monstrueuses qui règnent sur les cieux et s'attaquent à ceux qui sont en dessous.</p>"
+        },
+        "Arachnid": {
+            "name": "Arachnide",
+            "description": "<p>Bêtes de la famille des arachnides qui tissent des toiles pour piéger et chasser de petites créatures ou des insectes. Les arachnides sont généralement agiles et patients, mais certaines variétés privilégient la puissance ou l'agression.</p><ul><li><p><strong>Taille</strong> : variable</p></li><li><p><strong>Foulée</strong> : variable</p></li></ul>"
+        },
+        "Rodent": {
+            "name": "Rongeur",
+            "description": "<p>Bêtes qui se rassemblent généralement en populations denses dans et autour des colonies humanoïdes et qui sont des charognards opportunistes.</p>"
+        },
+        "Zombie": {
+            "name": "Zombi",
+            "description": "<p>Cadavres traînants de morts sans repos, leurs corps en décomposition gonflés par la putrescence. Ils se déplacent sans se soucier des blessures qu'ils subissent et ne cherchent qu'à consommer tout ce qu'ils croisent de manière insensée.</p>"
         }
     }
 }

@@ -29,7 +29,11 @@
         "Shields": "Boucliers",
         "Crafting Kits": "Kits d'artisanat",
         "Melee (2h)": "Mêlée (2m)",
-        "Implements": "Ustensiles"
+        "Implements": "Ustensiles",
+        "Wilderness": "Nature",
+        "Ingredients": "Ingrédients",
+        "Light Sources": "Sources de lumière",
+        "Adventuring Gear": "Matériel d'aventurier"
     },
     "entries": {
         "Blast Flask": {
@@ -573,7 +577,7 @@
         "Torch": {
             "name": "Torche",
             "description": {
-                "public": "<p>Utilisable comme source de lumière ou comme arme improvisée, une torche peut éclairer les endroits sombres et repousser les ennemis qui s'y cachent.</p>"
+                "public": "<p>Tissu imbibé d'huile fixé à l'extrémité d'une tige en os ou autre matériau ininflammable, cette torche constitue une source de lumière temporaire peu coûteuse, quoique peu efficace. Chaque torche peut brûler pendant une heure avant de devenir inutilisable.</p>"
             }
         },
         "Tower Shield": {
@@ -592,6 +596,367 @@
             "name": "Lance d'arçon",
             "description": {
                 "public": "<p>Conçue pour le combat monté, la lance d'arçon est une arme longue et effilée, utilisée pour briser les armures grâce à l'élan d'un destrier au galop, son manche étant renforcé pour un impact dévastateur.</p>"
+            }
+        },
+        "Alchemist's Portable Workbench": {
+            "name": "Établi d'alchimiste portatif",
+            "description": {
+                "public": "<p>Un alambic portatif en cuivre, prisé des alchimistes sans atelier personnel grâce à sa conception pliable. La plupart de ses accessoires se dévissent et se rangent à l'intérieur pour faciliter le transport. Bien que son montage et son démontage soient un peu longs, il peut remplacer un laboratoire permanent pour les voyageurs.</p>"
+            }
+        },
+        "Alchemist's Toolkit": {
+            "name": "Kit d'alchimiste",
+            "description": {
+                "public": "<p>Une boîte en bois recouverte de cuir contenant un mortier et un pilon en pierre, des emplacements pour ranger plusieurs fioles à bouchon, une cuillère en bois, ainsi qu'un petit cadre en fer pliable et une petite casserole en laiton pour mélanger les ingrédients au-dessus d'un feu.</p>"
+            }
+        },
+        "Blanket": {
+            "name": "Couverture",
+            "description": {
+                "public": "<p>Un tissu épais en feutre de laine ou de fibres aux multiples usages.</p>"
+            }
+        },
+        "Book": {
+            "name": "Livre",
+            "description": {
+                "public": "<p>Un livre à couverture de bois relié en tissu ou en cuir.</p>"
+            }
+        },
+        "Candle": {
+            "name": "Bougie",
+            "description": {
+                "public": "<p>Une petite bougie en cire pressée autour d'une mèche centrale qui émet une douce lumière chaude lorsqu'elle est allumée. Chaque bougie peut brûler pendant environ huit heures.</p>"
+            }
+        },
+        "Chain": {
+            "name": "Chaîne",
+            "description": {
+                "public": "<p>Une chaîne en acier de 30 pieds de long, pouvant servir à faciliter l'escalade ou être utilisée avec des dispositifs de fixation pour immobiliser des objets.</p>"
+            }
+        },
+        "Chirurgeon's Toolkit": {
+            "name": "Kit de chirurgien",
+            "description": {
+                "public": "<p>Une trousse en bois recouverte de cuir. Elle contient un rasoir, une scie à main, une pince, des bandages, une bouteille d'alcool alchimique, une aiguille et du fil, ainsi qu'une branche de bois de dix centimètres enveloppée de cuir. Tout le nécessaire pour pratiquer des amputations ou des excisions.</p>"
+            }
+        },
+        "Common Clothing": {
+            "name": "Vêtements communs",
+            "description": {
+                "public": "<p>Une chemise, un pantalon, des sous-vêtements, des chaussettes et des chaussures ou bottes adaptées aux travaux manuels ou aux voyages, qui ne peuvent être portés avec une armure.</p>"
+            }
+        },
+        "Cooking Oil": {
+            "name": "Huile de cuisson",
+            "description": {
+                "public": "<p>Une fiole en verre ou en terre cuite gainée de cuir, contenant de l'huile végétale adaptée à la cuisson.</p>"
+            }
+        },
+        "Cook's Toolkit": {
+            "name": "Kit de cuisinier",
+            "description": {
+                "public": "<p>Une marmite en fer avec un couvercle hermétique, un grand couteau et des ustensiles en bois conçus pour être rangés à l'intérieur pendant le voyage, laissant de la place pour une bourse en cuir destinée à contenir des céréales, un flacon d'huile de cuisson, des épices ou du sel, et d'autres petites denrées alimentaires en toute sécurité.</p>"
+            }
+        },
+        "Disarming Toolkit": {
+            "description": {
+                "public": "<p>Une petite pochette en cuir contenant une pince coupante, des poinçons et un jeu de tiges métalliques pliables pouvant être vissées ensemble. Conçue pour désamorcer ou déclencher les collets, les fils-pièges, les plaques de pression et autres pièges courants.</p>"
+            },
+            "name": "Kit de désarmement"
+        },
+        "Dress Clothing": {
+            "name": "Vêtements raffinés",
+            "description": {
+                "public": "<p>Un ensemble royal de vêtements raffinés, parfait pour assister à des célébrations et des réceptions mondaines, comprend un pardessus ou une robe, un mouchoir ou une cravate, une chemise ou un corset de qualité, un gilet ou un corsage, un pantalon ou un jupon, une ceinture ou des bretelles, des bas et des chaussures élégantes.</p>"
+            }
+        },
+        "Enchanter's Portable Workbench": {
+            "name": "Établi d'enchanteur portatif",
+            "description": {
+                "public": "<p>Une boîte en bois pliable qui se déplie pour former un petit autel décoratif. Elle contient un bol à offrandes en pierre, un tapis en cuir pour protéger la surface de travail et un espace de rangement pour les baguettes magiques, les bougies rituelles, les sachets d'encens et les outils de gravure.</p>"
+            }
+        },
+        "Enchanter's Toolkit": {
+            "name": "Kit d'enchanteur",
+            "description": {
+                "public": "<p>n coffret en bois recouvert de cuir. Il contient des bougies rituelles, un petit bol à offrandes, des sachets d'encens et des réactifs en poudre, ainsi qu'un tapis en tissu servant de surface de travail.</p>"
+            }
+        },
+        "Firestarter": {
+            "description": {
+                "public": "<p>Une petite bourse en cuir ciré contenant des fibres végétales sèches et broyées et des copeaux de bois, avec un petit fermoir intérieur pour fixer un morceau de silex et un anneau de percussion en acier pour allumer des feux.</p>"
+            },
+            "name": "Allume-feu"
+        },
+        "Fishing Pole": {
+            "name": "Canne à pêche",
+            "description": {
+                "public": "<p>Une canne en bois pliable, munie d'anneaux métalliques et d'un support pour y accrocher une ligne. Se range facilement dans ou à côté d'un sac à dos.</p>"
+            }
+        },
+        "Fletcher's Toolkit": {
+            "name": "Kit de Flechier",
+            "description": {
+                "public": "<p>Un carquois en cuir à extrémité refermable, contenant un étau à monter, un rabot à rayons, des brosses et un petit dévidoir pour enrouler de la corde tressée. Déplié, il se transforme en tapis pouvant servir de plan de travail.</p>"
+            }
+        },
+        "Glue": {
+            "name": "Colle",
+            "description": {
+                "public": "<p>Un flacon de colle animale ordinaire.</p>"
+            }
+        },
+        "Grapnel": {
+            "name": "Grappin",
+            "description": {
+                "public": "<p>Un simple crochet en acier à deux ou quatre branches conçu pour être utilisé avec une corde ou une chaîne afin de fixer une corde à des structures en bois.</p>"
+            }
+        },
+        "Hacksaw": {
+            "name": "Scie à métaux",
+            "description": {
+                "public": "<p>Un outil manuel courant utilisé pour couper le métal.</p>"
+            }
+        },
+        "Hammer": {
+            "name": "Marteau",
+            "description": {
+                "public": "<p>Outil à main courant utilisé en menuiserie ou en métallurgie. Non conçu pour le combat.</p>"
+            }
+        },
+        "Handmirror": {
+            "name": "Miroir à main",
+            "description": {
+                "public": "<p>Un simple morceau de verre poli, portatif, avec un support métallique réfléchissant, qui permet de voir son reflet.</p>"
+            }
+        },
+        "Handsaw": {
+            "name": "Scie",
+            "description": {
+                "public": "<p>Un outil manuel courant utilisé pour couper le bois.</p>"
+            }
+        },
+        "Harness": {
+            "name": "Harnais",
+            "description": {
+                "public": "<p>Un harnais ajustable en cuir et en acier, conçu pour s'adapter à un torse humanoïde, pouvant être utilisé avec une corde ou une chaîne pour faciliter l'escalade ou à des fins de contention.</p>"
+            }
+        },
+        "Healer's Toolkit": {
+            "name": "Kit de guérisseur",
+            "description": {
+                "public": "<p>Une trousse en bois recouverte de cuir. Elle contient des bandages, une bouteille d'alcool alchimique, une aiguille et du fil, ainsi qu'une variété de petites herbes et de composés utilisés pour traiter les maladies et les blessures courantes.</p>"
+            }
+        },
+        "Incense": {
+            "name": "Encens",
+            "description": {
+                "public": "<p>Bâtonnets ou cônes de résine, de poudre de bois et d'huiles florales conçus pour dégager une fumée odorante lorsqu'ils brûlent. Chaque paquet contient 12 pièces individuelles.</p>"
+            }
+        },
+        "Ink": {
+            "name": "Encre",
+            "description": {
+                "public": "<p>Un flacon d'encre à écrire ordinaire.</p>"
+            }
+        },
+        "Jeweler's Portable Workbench": {
+            "name": "Établi de joaillier portatif",
+            "description": {
+                "public": "<p>Une boîte en bois peu profonde, recouverte de cuir, contenant une meule pliable, une pierre à aiguiser et une pierre à polir, un marteau de lapidaire et une petite enclume en acier, laissant suffisamment d'espace pour ranger en toute sécurité les projets en cours lors des déplacements.</p>"
+            }
+        },
+        "Lockpicks": {
+            "description": {
+                "public": "<p>Un ensemble de longues et fines goupilles métalliques aux extrémités légèrement recourbées, conçues pour manipuler les mécanismes internes des serrures, et une barre métallique permettant d'appliquer une torsion. Entre de bonnes mains, elles peuvent ouvrir les serrures aussi efficacement qu'une clé.</p>"
+            },
+            "name": "Set de crochetage"
+        },
+        "Lyre": {
+            "name": "Lyre",
+            "description": {
+                "public": "<p>Instrument à cordes à cadre incurvé, la lyre est un instrument de prédilection de nombreux bardes ou conteurs itinérants qui utilisent la musique pour amplifier leur magie ou leur éloquence.</p>"
+            }
+        },
+        "Mealkit": {
+            "description": {
+                "public": "<p>Une pochette en cuir contenant une tasse en métal, une assiette, une fourchette et un morceau de chiffon pour les essuyer.</p>"
+            },
+            "name": "Vaisselle de voyage"
+        },
+        "Perfume": {
+            "name": "Parfum",
+            "description": {
+                "public": "<p>Un soin délicat sous forme d'huiles florales parfumées, conçu pour masquer l'odeur naturelle et offrir une expérience olfactive plus agréable. Chaque petit flacon contient 20 applications.</p>"
+            }
+        },
+        "Poisoner's Toolkit": {
+            "name": "Kit d'empoisonneur",
+            "description": {
+                "public": "<p>Une boîte en bois recouverte de cuir orné d'un point de croix décoratif indiquant clairement qu'elle contient des marchandises dangereuses. Elle renferme un mortier et un pilon en pierre, des compartiments pour maintenir en place plusieurs fioles bouchées contenant des ingrédients toxiques, une cuillère en argent, ainsi qu'un petit cadre en fer pliable et un petit pot en laiton pour mélanger les ingrédients au-dessus d'un feu.</p>"
+            }
+        },
+        "Prybar": {
+            "description": {
+                "public": "<p>Une tige métallique solide avec une extrémité plate et une extrémité recourbée, conçue pour donner à celui qui l'utilise un effet de levier.</p>"
+            },
+            "name": "Levier"
+        },
+        "Rations": {
+            "name": "Rations",
+            "description": {
+                "public": "<p>Pain sec, noix, fromage fumé et viande, constituant un repas rudimentaire permettant de survivre une journée.</p>"
+            }
+        },
+        "Razor": {
+            "name": "Rasoir",
+            "description": {
+                "public": "<p>Une lame particulièrement tranchante utilisée pour le rasage ou, dans certains cas, pour la chirurgie.</p>"
+            }
+        },
+        "Repair Kit (smith)": {
+            "name": "Kit de réparation (forge)",
+            "description": {
+                "public": "<p>Un sac en cuir contenant des pierres à aiguiser et une meuleuse, un petit marteau, un petit creuset pour liquéfier le métal et un assortiment de petits morceaux de ferraille. Peut servir à réparer les armures, les armes et les accessoires métalliques.</p>"
+            }
+        },
+        "Repair Kit (tailor)": {
+            "name": "Kit de réparation (couture)",
+            "description": {
+                "public": "<p>Un sac en cuir contenant des ciseaux, des aiguilles, un métier à tisser et un assortiment de petits morceaux de tissu, de cuir, de fil et de ficelle. Peut servir à réparer les armures et accessoires en tissu et en cuir.</p>"
+            }
+        },
+        "Ring of Gliding": {
+            "description": {
+                "public": "<p>Une bague élégante en acier bleu pâle, ornée d'un motif en spirale qui donne l'illusion d'une rotation lente et perpétuelle au doigt de celui ou celle qui la porte.</p><p>Cette bague peut être activée instinctivement par son porteur en chute libre pour amorcer une descente gracieuse et maîtrisée.</p>",
+                "private": "<p>Cet objet est présenté comme un anneau, mais il peut s'agir de n'importe quel type d'accessoire comme une amulette, une cape, des bracelets ou tout autre type de bijou.</p>"
+            },
+            "name": "Anneau de chute lente",
+            "actions": {
+                "gliding": {
+                    "name": "Anneau de chute lente",
+                    "description": "<p>Si vous l'utilisez lorsque vous <strong>Chutez</strong>, vous pouvez vous déplacer latéralement de plusieurs cases par rapport à votre position initiale pendant votre vol plané.</p><ul><li><p>Enchantement <strong>Mineur</strong> : <strong>1 pied</strong> pour 20 pieds de descente.</p></li><li><p>Enchantement <strong>Majeur</strong> : <strong>2 pieds</strong> pour <strong>20 pieds</strong> de descente.</p></li><li><p>Enchantement <strong>Légendaire</strong> : <strong>4 pieds</strong> pour <strong>20 pieds</strong> de descente.</p></li></ul><p>Vous ne subissez aucun dégât de chute à l'atterrissage, et vous n'êtes pas @Condition[prone].</p>"
+                }
+            }
+        },
+        "Rope": {
+            "name": "Corde",
+            "description": {
+                "public": "<p>Une corde en fibres végétales de 30 pieds de long, pouvant servir à faciliter l'escalade ou à de nombreuses autres fins.</p>"
+            }
+        },
+        "Rope Ladder": {
+            "name": "Échelle de corde",
+            "description": {
+                "public": "<p>Un système de 25 pieds de lattes de bois et de corde nouée liés ensemble, formant un dispositif d'escalade pratique. Fixé à une extrémité, il réduit considérablement les risques de chute.</p>"
+            }
+        },
+        "Runeweaver's Portable Workbench": {
+            "name": "Établi de tisseur de rune portatif",
+            "description": {
+                "public": "<p>Coffret en bois pliable se dépliant en petit établi servant de surface de travail pour la gravure de runes. Contient des ciseaux et des poinçons à graver, un marteau de lapidaire, un tapis décoratif en cuir et un espace de rangement pour les glyphes et autres matériaux rituels.</p>"
+            }
+        },
+        "Runeweaver's Toolkit": {
+            "name": "Kit de tisseur de rune",
+            "description": {
+                "public": "<p>Une trousse en bois recouverte de cuir. Contient des ciseaux et des poinçons à graver, un marteau de lapidaire, un tapis décoratif en cuir et un espace pour ranger les glyphes et autres matériaux rituels.</p>"
+            }
+        },
+        "Scrivener's Portable Workbench": {
+            "name": "Établi de scribe portatif",
+            "description": {
+                "public": "<p>Un coffret en bois recouvert de cuir, à peine plus grand qu'un livre. Il contient des pinceaux et des plumes de calligraphie, une aiguille et du fil, ainsi qu'un compartiment pour ranger les flacons d'encre séparément du papier plié. Une fois ouvert, le coffret se déplie pour servir de surface d'écriture plane.</p>"
+            }
+        },
+        "Scrivener's Toolkit": {
+            "name": "Kit de scribe",
+            "description": {
+                "public": "<p>Une trousse en bois reliée en cuir. Elle contient une pochette cirée pour protéger les documents de l'humidité, un sachet de cire à cacheter, plusieurs plumes et encres, ainsi qu'une planchette en bois servant de support d'écriture.</p>"
+            }
+        },
+        "Shovel": {
+            "name": "Pelle",
+            "description": {
+                "public": "<p>Un outil courant à deux mains utilisé pour creuser la terre et les pierres.</p>"
+            }
+        },
+        "Smith's Portable Forge": {
+            "name": "Forge de forgeron portative",
+            "description": {
+                "public": "<p>Un chaudron en fer épais, doublé d'argile et étanche, percé d'un trou pour fixer un soufflet manuel et d'une petite ouverture pour y introduire le métal à chauffer. Un soufflet et une petite enclume sont inclus. Cet outil lourd permet au forgeron d'exercer son métier en déplacement, bien que son transport puisse exiger une bonne condition physique. Il convient à la fabrication de la plupart des outils et armes métalliques courants, mais s'avère insuffisant pour un travail de haute qualité.</p>"
+            }
+        },
+        "Smith's Toolkit": {
+            "name": "Kit de forgeron",
+            "description": {
+                "public": "<p>Une trousse en bois recouverte de cuir. Elle contient des poinçons, des pinces, de la ferraille et une petite enclume, ainsi qu'un espace pour ranger des morceaux de ferraille.</p>"
+            }
+        },
+        "Soap": {
+            "name": "Savon",
+            "description": {
+                "public": "<p>Un pain de savon de nettoyage courant utilisé pour l'hygiène personnelle. Chaque pain contient environ 20 utilisations.</p>"
+            }
+        },
+        "Spyglass": {
+            "name": "Longue-vue",
+            "description": {
+                "public": "<p>Un télescope portatif en laiton et en bois, doté de lentilles en verre poli. Utilisé pour agrandir l'image d'un objet éloigné.</p>"
+            }
+        },
+        "Tailor's Portable Workbench": {
+            "name": "Établi de couturier portatif",
+            "description": {
+                "public": "<p>Coffret en bois peu profond, recouvert de cuir, contenant des bobines de fil, des aiguilles et épingles adaptées, un couteau à dépecer, un couteau à crochet, des poinçons, des alênes et des marques pour le travail du tissu et du cuir en voyage. Déplié, il se transforme en surface de travail plane.</p>"
+            }
+        },
+        "Tailor's Toolkit": {
+            "name": "Kit de couturier",
+            "description": {
+                "public": "<p>Une trousse en bois recouverte de cuir contenant des bobines de fil, des aiguilles et des épingles adaptées, un couteau à dépecer, des poinçons, convenant au travail du tissu et du cuir.</p>"
+            }
+        },
+        "Tent (caravan)": {
+            "name": "Tente (caravane)",
+            "description": {
+                "public": "<p>Une grande bâche pliable ou enroulable pour construire un abri temporaire pouvant accueillir jusqu'à douze personnes. Comprend des cordes, des piquets et six barres transversales pliables à assembler avant de pouvoir tendre la bâche.</p>"
+            }
+        },
+        "Tent (large)": {
+            "name": "Tente (grande)",
+            "description": {
+                "public": "<p>Une grande bâche pliable ou enroulable pour construire un abri temporaire pouvant accueillir jusqu'à six personnes. Comprend des cordes, des piquets et une traverse centrale pliable.</p>"
+            }
+        },
+        "Tent (small)": {
+            "name": "Tente (petite)",
+            "description": {
+                "public": "<p>Bâche pliable ou enroulable pour la construction d'un abri temporaire, pouvant accueillir une ou deux personnes. Comprend des cordes, des piquets et une traverse centrale pliable.</p>"
+            }
+        },
+        "Travel Jug": {
+            "description": {
+                "public": "<p>Cruche en terre cuite avec bouchon, gainée de cuir, pouvant être fixée à une ceinture ou à l'extérieur d'un sac à dos pour plus de praticité. Contenance : 40 once de liquide.</p>"
+            },
+            "name": "Pichet de voyage"
+        },
+        "Weather Clothing": {
+            "description": {
+                "public": "<p>Un ensemble de vêtements conçu pour protéger celui qui le porte contre les intempéries telles que les températures extrêmes, le vent ou l'humidité.</p>"
+            },
+            "name": "Vêtements chauds"
+        },
+        "Wetskin": {
+            "description": {
+                "public": "<p>Poche à eau gainée de cuir, fixable à la ceinture ou à l'extérieur d'un sac à dos pour plus de praticité. Contenance : 26 onces de liquide.</p>"
+            },
+            "name": "Outre"
+        },
+        "Whistle": {
+            "name": "Sifflet",
+            "description": {
+                "public": "<p>Instrument en bois sculpté ou en os qui, lorsqu'on souffle dedans, produit un son aigu et strident audible à grande distance. Souvent utilisé par les chasseurs et les pêcheurs pour communiquer entre eux en pleine nature ou en mer.</p>"
             }
         }
     }

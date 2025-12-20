@@ -89,10 +89,16 @@
                     "tokenName": "Enclume",
                     "items": {
                         "Heavy Hides": {
-                            "name": "Armure de peaux"
+                            "name": "Armure de peaux",
+                            "description": {
+                                "public": "<p>Fabriquées à partir de peaux durcies de grandes bêtes ou de monstres, ces armures robustes sont portées par les chasseurs et les peuples sauvages, offrant une défense durable — mais rudimentaire — sur le terrain.</p>"
+                            }
                         },
                         "Greatclub": {
-                            "name": "Massue"
+                            "name": "Massue",
+                            "description": {
+                                "public": "<p>Une longueur noueuse de bois épais, parfois cloutée de fer, la massue est une arme rudimentaire mais redoutable, dangereuse même entre des mains inexpérimentées.</p>"
+                            }
                         },
                         "Powerful Physique": {
                             "name": "Physique puissant",
@@ -179,13 +185,16 @@
                     "tokenName": "Marteau",
                     "items": {
                         "Hand Axe": {
-                            "name": "Hachette"
-                        },
-                        "Longsword": {
-                            "name": "Épée longue"
+                            "name": "Hachette",
+                            "description": {
+                                "public": "<p>Compacte et redoutable, la hachette est une arme de jet à une main, dotée d'un manche court et d'une lame tranchante, idéale pour le lancer ou les frappes rapprochées où la vitesse prime sur la précision.</p>"
+                            }
                         },
                         "Scale Mail": {
-                            "name": "Armure d’écailles"
+                            "name": "Armure d’écailles",
+                            "description": {
+                                "public": "<p>Composée de plaques de métal superposées, cousues ou rivetées sur un support en cuir ou en tissu, l'armure d'écailles ressemble à la peau d'un dragon et protège bien contre les coupures et les coups de couteau, bien qu'elle soit bruyante et peu flexible.</p>"
+                            }
                         },
                         "Skirmisher": {
                             "name": "Querelleur",
@@ -239,6 +248,12 @@
                                     "description": "<p>Vous libérez une <strong>Frappe</strong> puissante avec l'arme de votre main principale. L'attaque est plus lente à exécuter, mais est <strong>Améliorée</strong> pour délivrer des dégâts supplémentaires.</p>"
                                 }
                             }
+                        },
+                        "Bastard Sword": {
+                            "name": "Épée bâtarde",
+                            "description": {
+                                "public": "<p>Une épée bâtarde, aussi connue sous le nom d'épée à une main et demi, est une arme flexible dotée d'une lame droite à double tranchant d'environ 40 pouces de long. Cette arme est conçue pour allier agilité à une main et puissance à deux mains.</p>"
+                            }
                         }
                     },
                     "archetype": {
@@ -254,11 +269,11 @@
                     "name": "Orivech",
                     "tokenName": "Orivech",
                     "items": {
-                        "Mage Staff": {
-                            "name": "Bâton de Mage"
-                        },
                         "Studded Leather Armor": {
-                            "name": "Armure de cuir cloutée"
+                            "name": "Armure de cuir cloutée",
+                            "description": {
+                                "public": "<p>Composée d'une base en cuir renforcée par de petits clous métalliques ou des plaques rivetées, cette armure offre un équilibre entre mobilité et protection modeste contre les coups tranchants.</p>"
+                            }
                         },
                         "Gesture: Influence": {
                             "name": "Signe : Influence",
@@ -305,7 +320,13 @@
                         },
                         "Rune: Death": {
                             "name": "Rune : Mort",
-                            "description": "<p>La force ordonnée de la destruction, responsable de la corruption de toute matière biologique. La Rune de Mort gouverne la pourriture et la destruction.</p><p>La Rune de Mort évolue avec l'<strong>Intellect</strong>, cible la <strong>Fortitude</strong>, et inflige des dégâts de <strong>Corruption</strong> à la <strong>Santé</strong>. Elle est opposée par la rune chaotique de <strong>Vie</strong>.</p>"
+                            "description": "<p>La force ordonnée de la destruction, responsable de la corruption de toute matière biologique. La Rune de Mort gouverne la pourriture et la destruction.</p><p>La Rune de Mort évolue avec l'<strong>Intellect</strong>, cible la <strong>Fortitude</strong>, et inflige des dégâts de <strong>Corruption</strong> à la <strong>Santé</strong>. Elle est opposée par la rune chaotique de <strong>Vie</strong>.</p>",
+                            "actions": {
+                                "ennervate": {
+                                    "name": "Affaiblir",
+                                    "description": "<p>Votre maîtrise de la Rune de Mort permet une communion basique avec les morts et une manipulation rudimentaire des forces impies, produisant l'un des effets suivants :</p><ul><li><p>Répandre la corruption sur un objet qui n'est pas plus large qu'un cube de 1 pied d'arête, provoquant le flétrissement des plantes, la rouille des objets métalliques, la pourriture du bois, la détérioration des aliments ou la décomposition rapide d'un cadavre. Les objets magiques ne sont généralement pas affectés.</p></li><li><p>Faire en sorte qu'un cadavre mort depuis moins de sept jours ou autrement conservé exécute une reconstitution de ses derniers instants. Ses mouvements imitent ceux qui se sont produits durant les 30 dernières secondes de la vie de la créature. Vous n'avez aucun contrôle sur la créature et elle ne peut communiquer d'aucune autre manière.</p></li><li><p>Hâter la mort d'une créature consentante qui est en train de mourir, en lui offrant un décès rapide et paisible.</p></li></ul><p>Affaiblir ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
+                                }
+                            }
                         },
                         "Rune: Oblivion": {
                             "name": "Rune : Néant",
@@ -326,6 +347,18 @@
                                     "description": "<p>Votre maîtrise de la Rune d'Âme vous permet faciliter les formes fondamentales d'influence spirituelle, produisant l'un des effets suivants :</p><ul><li><p>Vous permettre, ou à une autre personne consentante, de revivre un souvenir marquant d'un moment de son passé, d'une durée maximale d'une minute, comme s'il s'était produit récemment.</p></li><li><p>Identifier une condition spirituelle négative affectant une personne telle que @Condition[broken], @Condition[frightened], @Condition[confused], or @Condition[insane].</p></li><li><p>Créer un lien spirituel momentané avec une autre créature consentante qui lui permet de reconnaître une idée pouvant être exprimée par un seul mot.</p></li></ul><p>Les utilisations d'Évoquer ne peuvent affecter que vous-même ou une autre créature que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
                                 }
                             }
+                        },
+                        "Skull Fetish": {
+                            "name": "Fétiche du crâne",
+                            "description": {
+                                "public": "<p>Ce talisman macabre invoque la peur et les énergies de la mort pour faciliter la sorcellerie ou affliger les ennemis d'une influence corruptrice.</p>"
+                            }
+                        },
+                        "Grimoire": {
+                            "name": "Grimoire",
+                            "description": {
+                                "public": "<p>Cet ouvrage lourd sert à la fois de recueil de connaissances et d'instrument de sorcellerie. Entre les mains d'un praticien des arcanes, il peut projeter des rafales percutantes de force vers une cible.</p>"
+                            }
                         }
                     },
                     "archetype": {
@@ -345,7 +378,10 @@
                             "name": "Armure mortelle"
                         },
                         "Shortbow": {
-                            "name": "Arc court"
+                            "name": "Arc court",
+                            "description": {
+                                "public": "<p>Compact et rapide à armer, l'arc court excelle dans l'archerie rapide et rapprochée ainsi que dans les escarmouches, et est prisé des éclaireurs, des chasseurs et des pillards agiles.</p>"
+                            }
                         },
                         "Precision Shot": {
                             "name": "Tir de précision",
@@ -383,7 +419,10 @@
                             "name": "Armure mortelle"
                         },
                         "Spear": {
-                            "name": "Lance"
+                            "name": "Lance",
+                            "description": {
+                                "public": "<p>Arme de portée et de rythme, la lance est dotée d'un long manche à pointe d'acier, idéale pour tenir la ligne ou pour lancer avec une force mortelle depuis un mur de boucliers.</p>"
+                            }
                         },
                         "Bulwark": {
                             "name": "Rempart",
@@ -593,7 +632,13 @@
                         },
                         "Rune: Death": {
                             "name": "Rune : Mort",
-                            "description": "<p>La force ordonnée de la destruction, responsable de la corruption de toute matière biologique. La Rune de Mort gouverne la pourriture et la destruction.</p><p>La Rune de Mort évolue avec l'<strong>Intellect</strong>, cible la <strong>Fortitude</strong>, et inflige des dégâts de <strong>Corruption</strong> à la <strong>Santé</strong>. Elle est opposée par la rune chaotique de <strong>Vie</strong>.</p>"
+                            "description": "<p>La force ordonnée de la destruction, responsable de la corruption de toute matière biologique. La Rune de Mort gouverne la pourriture et la destruction.</p><p>La Rune de Mort évolue avec l'<strong>Intellect</strong>, cible la <strong>Fortitude</strong>, et inflige des dégâts de <strong>Corruption</strong> à la <strong>Santé</strong>. Elle est opposée par la rune chaotique de <strong>Vie</strong>.</p>",
+                            "actions": {
+                                "ennervate": {
+                                    "name": "Affaiblir",
+                                    "description": "<p>Votre maîtrise de la Rune de Mort permet une communion basique avec les morts et une manipulation rudimentaire des forces impies, produisant l'un des effets suivants :</p><ul><li><p>Répandre la corruption sur un objet qui n'est pas plus large qu'un cube de 1 pied d'arête, provoquant le flétrissement des plantes, la rouille des objets métalliques, la pourriture du bois, la détérioration des aliments ou la décomposition rapide d'un cadavre. Les objets magiques ne sont généralement pas affectés.</p></li><li><p>Faire en sorte qu'un cadavre mort depuis moins de sept jours ou autrement conservé exécute une reconstitution de ses derniers instants. Ses mouvements imitent ceux qui se sont produits durant les 30 dernières secondes de la vie de la créature. Vous n'avez aucun contrôle sur la créature et elle ne peut communiquer d'aucune autre manière.</p></li><li><p>Hâter la mort d'une créature consentante qui est en train de mourir, en lui offrant un décès rapide et paisible.</p></li></ul><p>Affaiblir ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
+                                }
+                            }
                         },
                         "Rune: Oblivion": {
                             "name": "Rune : Néant",
@@ -720,11 +765,11 @@
                     "name": "Zarajah",
                     "tokenName": "Zarajah",
                     "items": {
-                        "Mage Staff": {
-                            "name": "Bâton de Mage"
-                        },
                         "Ring Mail": {
-                            "name": "Broigne"
+                            "name": "Broigne",
+                            "description": {
+                                "public": "<p>La broigne est composée d'anneaux métalliques cousus sur une base matelassée, offrant un compromis entre une protection moindre que armures plus lourdes et une plus grande mobilité.</p>"
+                            }
                         },
                         "Inspire Heroism": {
                             "name": "Inspirer l'Héroïsme",
@@ -859,6 +904,12 @@
                                     "description": "<p>Immédiatement après avoir effectué une Frappe basique avec l'arme de votre main principale, vous réalisez une <strong>Frappe</strong> à coût réduit ave l'arme de votre <strong>main secondaire</strong>.</p>"
                                 }
                             }
+                        },
+                        "Flame Staff": {
+                            "name": "Bâton de flamme",
+                            "description": {
+                                "public": "<p>Ce bâton de mage est un talisman destiné à faciliter la sorcellerie ou à projeter des jets de flammes arcaniques sur les ennemis.</p>"
+                            }
                         }
                     },
                     "ancestry": {
@@ -878,10 +929,16 @@
                     "tokenName": "Agnath",
                     "items": {
                         "Greatsword": {
-                            "name": "Épée à deux mains"
+                            "name": "Épée à deux mains",
+                            "description": {
+                                "public": "<p>Plus longue et plus lourde qu'une épée longue standard, l'épée à deux mains est une lame conçue pour de puissantes frappes circulaires, sa longueur imposant à la fois allonge et crainte.</p>"
+                            }
                         },
                         "Splint Mail": {
-                            "name": "Clibanion"
+                            "name": "Clibanion",
+                            "description": {
+                                "public": "<p>Composée de bandes métalliques verticales rivetées sur un support en cuir ou mailles, le clibanion offre une protection robuste des membres, au détriment de la flexibilité.</p>"
+                            }
                         },
                         "Cadence": {
                             "name": "Cadence",
@@ -915,7 +972,13 @@
                         },
                         "Rune: Flame": {
                             "name": "Rune : Flamme",
-                            "description": "<p>La force chaotique de l'énergie élémentaire et thermique. La Rune de Flamme gouverne le feu et la chaleur.</p><p>La Rune de Flamme évolue avec l'Intellect, cible le <strong>Réflexe</strong>, et inflige des dégâts de <strong>Feu</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Givre</strong>.</p>"
+                            "description": "<p>La force chaotique de l'énergie élémentaire et thermique. La Rune de Flamme gouverne le feu et la chaleur.</p><p>La Rune de Flamme évolue avec l'Intellect, cible le <strong>Réflexe</strong>, et inflige des dégâts de <strong>Feu</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Givre</strong>.</p>",
+                            "actions": {
+                                "enkindle": {
+                                    "name": "Allumer",
+                                    "description": "<p>Votre maîtrise de la Rune de Flamme vous permet de manipuler le feu et les énergies thermales de manière créative, produisant l'un des effets suivants :</p><ul><li><p>Manifester une explosion de flamme élémentaire dans une sphère d'un pouce capable d'enflammer une bougie, une torche ou d'autres matériaux inflammables.</p></li><li><p>Imprégner votre corps d'une protection thermique momentanée qui vous immunise contre les dégâts de feu lors d'une action immédiatement suivante coûtant <strong>1 Action</strong> ou moins.</p></li><li><p>Contrôler le mouvement des flammes dans une petite zone, en les faisant vaciller, danser ou se déplacer en un spectacle animé de lumière et d'ombre.</p></li></ul><p>Allumer ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
+                                }
+                            }
                         },
                         "Spellblade": {
                             "name": "Sorcelame",
@@ -960,11 +1023,20 @@
                             "description": "<p>Votre robustesse prodigieuse transmet une capacité surnaturelle à récupérer des blessures rapidement. Au début de votre tour, si vous n'êtes pas Affaibli, vous gagnez <strong>+1 Santé</strong>.</p>"
                         },
                         "Glaive": {
-                            "name": "Coutille"
+                            "name": "Coutille",
+                            "description": {
+                                "public": "<p>Arme d'hast dotée d'une lame courbe semblable à une épée fixée à l'extrémité d'un long manche, la coutille tranche les ennemis par de larges coups en arc de cercle.</p>"
+                            }
                         },
                         "Rune: Lightning": {
                             "name": "Rune : Foudre",
-                            "description": "<p>La force chaotique de l'énergie électrique brute. La Rune de Foudre gouverne les sources de charge et de décharge électrique.</p><p>La Rune de Foudre évolue avec l'<strong>Intellect</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts <strong>Électriques</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Terre</strong>.</p>"
+                            "description": "<p>La force chaotique de l'énergie électrique brute. La Rune de Foudre gouverne les sources de charge et de décharge électrique.</p><p>La Rune de Foudre évolue avec l'<strong>Intellect</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts <strong>Électriques</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Terre</strong>.</p>",
+                            "actions": {
+                                "energize": {
+                                    "name": "Dynamiser",
+                                    "description": "<p>Votre maîtrise de la Rune de Foudre vous permet de conduire le flux d'air et d'électricité, en manipulant la charge et l'aérodynamisme pour produire l'un des effets suivants :</p><ul><li><p>Imprégner un objet métallique que vous touchez, d'une taille maximale d'un pied cube, d'une charge électromagnétique, ce qui le rendra fortement adhérent à d'autres métaux. Un seul objet peut être chargé de cette manière à la fois, lancer ce sort sur un autre objet entraîne la perte de l'effet magnétique du premier.</p></li><li><p>Rassembler une bourrasque de vent à votre emplacement actuel dans un rayon de six pieds, soufflant soit sous forme de rafale dans une seule direction contrôlée, soit sous forme de cyclone avec une force centripète dans toutes les directions. Les effets aériens dans la zone immédiate sont dispersés et les objets non fixés d'un poids inférieur à 1 livre sont projetés dans la direction de la rafale.</p></li><li><p>Produire le bruit sec d'un coup de tonnerre à un endroit que vous pouvez voir à moins de 15 pieds de votre position actuelle.</p></li></ul><p>Dynamiser ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
+                                }
+                            }
                         },
                         "Opportunistic Spellcraft": {
                             "name": "Sorcellerie opportuniste",
@@ -1023,10 +1095,16 @@
                     "tokenName": "Belladonna",
                     "items": {
                         "Dagger": {
-                            "name": "Dague"
+                            "name": "Dague",
+                            "description": {
+                                "public": "<p>Petite, rapide et mortelle, la dague se glisse aisément entre les côtes ou dans les interstices d'une armure, son tranchant redoutable est prisé les assassins, les voleurs et ceux qui privilégient une mort silencieuse.</p>"
+                            }
                         },
                         "Studded Leather Armor": {
-                            "name": "Armure de cuir cloutée"
+                            "name": "Armure de cuir cloutée",
+                            "description": {
+                                "public": "<p>Composée d'une base en cuir renforcée par de petits clous métalliques ou des plaques rivetées, cette armure offre un équilibre entre mobilité et protection modeste contre les coups tranchants.</p>"
+                            }
                         },
                         "Diversionist": {
                             "name": "Magouilleur",
@@ -1273,13 +1351,22 @@
                     "tokenName": "Duurath",
                     "items": {
                         "War Hammer": {
-                            "name": "Marteau de guerre"
+                            "name": "Marteau de guerre",
+                            "description": {
+                                "public": "<p>Conçu pour écraser les plaques et briser les boucliers, le marteau de guerre est doté d'une tête lourde et émoussée montée au sommet d'un manche renforcé, semant la destruction entre les mains de ceux qui privilégient la force à la finesse.</p>"
+                            }
                         },
                         "Heater Shield": {
-                            "name": "Bouclier chauffant"
+                            "name": "Bouclier chauffant",
+                            "description": {
+                                "public": "<p>Baptisé ainsi en raison de sa forme en fer rappelant la base d'un fer à repasser, le bouclier chauffant offre un équilibre entre protection et mobilité.</p>"
+                            }
                         },
                         "Scale Mail": {
-                            "name": "Armure d’écailles"
+                            "name": "Armure d’écailles",
+                            "description": {
+                                "public": "<p>Composée de plaques de métal superposées, cousues ou rivetées sur un support en cuir ou en tissu, l'armure d'écailles ressemble à la peau d'un dragon et protège bien contre les coupures et les coups de couteau, bien qu'elle soit bruyante et peu flexible.</p>"
+                            }
                         },
                         "Intimidator": {
                             "name": "Intimidateur",
@@ -1353,7 +1440,7 @@
                             "actions": {
                                 "bodyBlock": {
                                     "name": "Opposition corporelle",
-                                    "description": "Une attaque qui devrait être défendue par votre Armure ou produire un Coup superficiel est convertie en Blocage et n'inflige aucun dégât.",
+                                    "description": "<p>Une attaque qui devrait être défendue par votre Armure ou produire un Coup superficiel est convertie en Blocage et n'inflige aucun dégât.</p>",
                                     "condition": "Vous vous défendez contre une attaque de mêlée avec votre Armure ou subissez un Coup superficiel."
                                 }
                             }
@@ -1390,7 +1477,13 @@
                         },
                         "Rune: Kinesis": {
                             "name": "Rune : Kinésie",
-                            "description": "<p>La force chaotique de l'espace et du mouvement physique. La Rune de Kinésie gouverne toutes choses liées à l'acte de mouvement et à la physicalité.</p><p>La Rune de Kinésie évolue avec la <strong>Présence</strong>, cible la défense <strong>Physique</strong>, et inflige des dégâts <strong>Contondants</strong>, <strong>Perforants</strong>, ou <strong>Tranchants</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Contrôle</strong>.</p>"
+                            "description": "<p>La force chaotique de l'espace et du mouvement physique. La Rune de Kinésie gouverne toutes choses liées à l'acte de mouvement et à la physicalité.</p><p>La Rune de Kinésie évolue avec la <strong>Présence</strong>, cible la défense <strong>Physique</strong>, et inflige des dégâts <strong>Contondants</strong>, <strong>Perforants</strong>, ou <strong>Tranchants</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Contrôle</strong>.</p>",
+                            "actions": {
+                                "propel": {
+                                    "name": "Propulser",
+                                    "description": "<p>Votre maîtrise de la Rune de Kinésie vous permet d'exercer un contrôle local sur les forces gravitationnelles pour effectuer des manipulations télékinésiques de base, produisant l'un des effets suivants :</p><ul><li><p>Tirer vers vous un objet non fixé, d'un poids n'excédant pas 1 livre, situé à moins de 15 pieds et l'attraper. Un objet équipé ou possédé par une créature n'est jamais considéré comme non fixé, à moins que la créature soit disposée à le libérer.</p></li><li><p>Projeter un objet que vous tenez et dont le poids ne dépasse pas 1 livre vers une cible située à une distance maximale de 30 pieds. L'objet vole infailliblement en ligne droite vers cette cible à une vitesse modérée. Toute créature se trouvant sur la trajectoire de l'objet peut réagir pour l'attraper si elle a une main libre pour le faire.</p></li><li><p>Faire léviter un objet ou une créature consentante que vous touchez dont le poids est inférieur ou égal à 10 fois votre <strong>Presence</strong>, modifiant sa position jusqu'à 20 pieds dans n'importe quelle direction par rapport à son emplacement d'origine. Vous pouvez maintenir cette lévitation indéfiniment tant que vous ne faites pas d'autre Action et n'êtes pas @Condition[incapacitated].</p></li></ul><p>Propulser ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement à moins que cela ne soit autrement spécifié. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
+                                }
+                            }
                         },
                         "Rallying Cry": {
                             "name": "Cri de ralliement",
@@ -1414,23 +1507,6 @@
                         "Hold Fast": {
                             "name": "Tenir bon",
                             "description": "<p>Vous êtes une ancre calme dans la mer tourbillonnante du combat. Lorsque vous avez un Bouclier équipé, votre <strong>Engagement</strong> augmente de +1, vous permettant d'engager simultanément plus d'ennemis adjacents.</p>"
-                        },
-                        "Sai": {
-                            "name": "Saï"
-                        },
-                        "Earth Breaker": {
-                            "name": "Brise Terre",
-                            "actions": {
-                                "breakEarth": {
-                                    "name": "Briser la terre",
-                                    "description": "<p>Vous enfoncez Brise Terre dans le sol, jetant À terre les ennemis devant vous si votre attaque surpasse leur défense de <strong>Reflexe</strong>.</p>",
-                                    "effects": [
-                                        {
-                                            "name": "Briser la terre"
-                                        }
-                                    ]
-                                }
-                            }
                         },
                         "Shield Ward": {
                             "name": "Protection de bouclier",
@@ -1498,13 +1574,22 @@
                     "tokenName": "Eliorwen",
                     "items": {
                         "Longbow": {
-                            "name": "Arc long"
+                            "name": "Arc long",
+                            "description": {
+                                "public": "<p>Un arc long, souvent plus grand que l'archer qui le bande, nécessite une force considérable et des années d'entraînement pour être maîtrisé, et permet de propulser des flèches d'une force mortelle à travers le champ de bataille.</p>"
+                            }
                         },
                         "Scimitar": {
-                            "name": "Cimeterre"
+                            "name": "Cimeterre",
+                            "description": {
+                                "public": "<p>Avec sa large lame incurvée et son arc mortel, le cimeterre danse sur le champ de bataille, son fil tranchant les ennemis dans des coups amples et élégants.</p>"
+                            }
                         },
                         "Studded Leather Armor": {
-                            "name": "Armure de cuir cloutée"
+                            "name": "Armure de cuir cloutée",
+                            "description": {
+                                "public": "<p>Composée d'une base en cuir renforcée par de petits clous métalliques ou des plaques rivetées, cette armure offre un équilibre entre mobilité et protection modeste contre les coups tranchants.</p>"
+                            }
                         },
                         "Perspicacity": {
                             "name": "Perspicacité",
@@ -1594,7 +1679,13 @@
                         },
                         "Rune: Lightning": {
                             "name": "Rune : Foudre",
-                            "description": "<p>La force chaotique de l'énergie électrique brute. La Rune de Foudre gouverne les sources de charge et de décharge électrique.</p><p>La Rune de Foudre évolue avec l'<strong>Intellect</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts <strong>Électriques</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Terre</strong>.</p>"
+                            "description": "<p>La force chaotique de l'énergie électrique brute. La Rune de Foudre gouverne les sources de charge et de décharge électrique.</p><p>La Rune de Foudre évolue avec l'<strong>Intellect</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts <strong>Électriques</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Terre</strong>.</p>",
+                            "actions": {
+                                "energize": {
+                                    "name": "Dynamiser",
+                                    "description": "<p>Votre maîtrise de la Rune de Foudre vous permet de conduire le flux d'air et d'électricité, en manipulant la charge et l'aérodynamisme pour produire l'un des effets suivants :</p><ul><li><p>Imprégner un objet métallique que vous touchez, d'une taille maximale d'un pied cube, d'une charge électromagnétique, ce qui le rendra fortement adhérent à d'autres métaux. Un seul objet peut être chargé de cette manière à la fois, lancer ce sort sur un autre objet entraîne la perte de l'effet magnétique du premier.</p></li><li><p>Rassembler une bourrasque de vent à votre emplacement actuel dans un rayon de six pieds, soufflant soit sous forme de rafale dans une seule direction contrôlée, soit sous forme de cyclone avec une force centripète dans toutes les directions. Les effets aériens dans la zone immédiate sont dispersés et les objets non fixés d'un poids inférieur à 1 livre sont projetés dans la direction de la rafale.</p></li><li><p>Produire le bruit sec d'un coup de tonnerre à un endroit que vous pouvez voir à moins de 15 pieds de votre position actuelle.</p></li></ul><p>Dynamiser ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
+                                }
+                            }
                         },
                         "Fan of Arrows": {
                             "name": "Déluge de flèches",
@@ -1685,17 +1776,32 @@
                     "tokenName": "Fizzit",
                     "items": {
                         "Ring Mail": {
-                            "name": "Broigne"
+                            "name": "Broigne",
+                            "description": {
+                                "public": "<p>La broigne est composée d'anneaux métalliques cousus sur une base matelassée, offrant un compromis entre une protection moindre que armures plus lourdes et une plus grande mobilité.</p>"
+                            }
                         },
                         "Arcane Orb": {
-                            "name": "Orbe arcanique"
+                            "name": "Orbe arcanique",
+                            "description": {
+                                "public": "<p>Une sphère de cristal ou de verre qui — dans la paume d'un lanceur de sorts capable — devient un conduit pour son pouvoir. Elle accumule l'énergie voltaïque à l'intérieur de son globe avant de projeter une force électrifiante sur une cible.</p>"
+                            }
                         },
                         "Grimoire": {
-                            "name": "Grimoire"
+                            "name": "Grimoire",
+                            "description": {
+                                "public": "<p>Cet ouvrage lourd sert à la fois de recueil de connaissances et d'instrument de sorcellerie. Entre les mains d'un praticien des arcanes, il peut projeter des rafales percutantes de force vers une cible.</p>"
+                            }
                         },
                         "Rune: Lightning": {
                             "name": "Rune : Foudre",
-                            "description": "<p>La force chaotique de l'énergie électrique brute. La Rune de Foudre gouverne les sources de charge et de décharge électrique.</p><p>La Rune de Foudre évolue avec l'<strong>Intellect</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts <strong>Électriques</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Terre</strong>.</p>"
+                            "description": "<p>La force chaotique de l'énergie électrique brute. La Rune de Foudre gouverne les sources de charge et de décharge électrique.</p><p>La Rune de Foudre évolue avec l'<strong>Intellect</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts <strong>Électriques</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Terre</strong>.</p>",
+                            "actions": {
+                                "energize": {
+                                    "name": "Dynamiser",
+                                    "description": "<p>Votre maîtrise de la Rune de Foudre vous permet de conduire le flux d'air et d'électricité, en manipulant la charge et l'aérodynamisme pour produire l'un des effets suivants :</p><ul><li><p>Imprégner un objet métallique que vous touchez, d'une taille maximale d'un pied cube, d'une charge électromagnétique, ce qui le rendra fortement adhérent à d'autres métaux. Un seul objet peut être chargé de cette manière à la fois, lancer ce sort sur un autre objet entraîne la perte de l'effet magnétique du premier.</p></li><li><p>Rassembler une bourrasque de vent à votre emplacement actuel dans un rayon de six pieds, soufflant soit sous forme de rafale dans une seule direction contrôlée, soit sous forme de cyclone avec une force centripète dans toutes les directions. Les effets aériens dans la zone immédiate sont dispersés et les objets non fixés d'un poids inférieur à 1 livre sont projetés dans la direction de la rafale.</p></li><li><p>Produire le bruit sec d'un coup de tonnerre à un endroit que vous pouvez voir à moins de 15 pieds de votre position actuelle.</p></li></ul><p>Dynamiser ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
+                                }
+                            }
                         },
                         "Gesture: Arrow": {
                             "name": "Signe : Flèche",
@@ -1715,11 +1821,23 @@
                         },
                         "Rune: Kinesis": {
                             "name": "Rune : Kinésie",
-                            "description": "<p>La force chaotique de l'espace et du mouvement physique. La Rune de Kinésie gouverne toutes choses liées à l'acte de mouvement et à la physicalité.</p><p>La Rune de Kinésie évolue avec la <strong>Présence</strong>, cible la défense <strong>Physique</strong>, et inflige des dégâts <strong>Contondants</strong>, <strong>Perforants</strong>, ou <strong>Tranchants</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Contrôle</strong>.</p>"
+                            "description": "<p>La force chaotique de l'espace et du mouvement physique. La Rune de Kinésie gouverne toutes choses liées à l'acte de mouvement et à la physicalité.</p><p>La Rune de Kinésie évolue avec la <strong>Présence</strong>, cible la défense <strong>Physique</strong>, et inflige des dégâts <strong>Contondants</strong>, <strong>Perforants</strong>, ou <strong>Tranchants</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Contrôle</strong>.</p>",
+                            "actions": {
+                                "propel": {
+                                    "name": "Propulser",
+                                    "description": "<p>Votre maîtrise de la Rune de Kinésie vous permet d'exercer un contrôle local sur les forces gravitationnelles pour effectuer des manipulations télékinésiques de base, produisant l'un des effets suivants :</p><ul><li><p>Tirer vers vous un objet non fixé, d'un poids n'excédant pas 1 livre, situé à moins de 15 pieds et l'attraper. Un objet équipé ou possédé par une créature n'est jamais considéré comme non fixé, à moins que la créature soit disposée à le libérer.</p></li><li><p>Projeter un objet que vous tenez et dont le poids ne dépasse pas 1 livre vers une cible située à une distance maximale de 30 pieds. L'objet vole infailliblement en ligne droite vers cette cible à une vitesse modérée. Toute créature se trouvant sur la trajectoire de l'objet peut réagir pour l'attraper si elle a une main libre pour le faire.</p></li><li><p>Faire léviter un objet ou une créature consentante que vous touchez dont le poids est inférieur ou égal à 10 fois votre <strong>Presence</strong>, modifiant sa position jusqu'à 20 pieds dans n'importe quelle direction par rapport à son emplacement d'origine. Vous pouvez maintenir cette lévitation indéfiniment tant que vous ne faites pas d'autre Action et n'êtes pas @Condition[incapacitated].</p></li></ul><p>Propulser ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement à moins que cela ne soit autrement spécifié. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
+                                }
+                            }
                         },
                         "Rune: Frost": {
                             "name": "Rune : Givre",
-                            "description": "<p>La force ordonnée de l'eau et du froid. La Rune de Givre gouverne la création d'eau ou d'autres fluides et leur transfert entre les états liquide et gelé.</p><p>La Rune de Givre évolue avec la <strong>Sagesse</strong>, cible la <strong>Fortitude</strong>, et inflige des dégâts de <strong>Froid</strong> à la <strong>Santé</strong>. Elle est opposée par la rune chaotique de <strong>Flamme</strong>.</p>"
+                            "description": "<p>La force ordonnée de l'eau et du froid. La Rune de Givre gouverne la création d'eau ou d'autres fluides et leur transfert entre les états liquide et gelé.</p><p>La Rune de Givre évolue avec la <strong>Sagesse</strong>, cible la <strong>Fortitude</strong>, et inflige des dégâts de <strong>Froid</strong> à la <strong>Santé</strong>. Elle est opposée par la rune chaotique de <strong>Flamme</strong>.</p>",
+                            "actions": {
+                                "condense": {
+                                    "name": "Condenser",
+                                    "description": "<p>Votre maîtrise de la Rune de Givre vous permet de manipuler les liquides et leurs propriétés thermales, produisant l'un des effets suivants :</p><ul><li><p>Aspirer jusqu'à un litre d'eau douce de l'atmosphère dans un récipient ou sur une surface que vous touchez. L'eau créée peut être affectée par les propriétés atmosphériques dépendantes de votre emplacement actuel.</p></li><li><p>Modifier la température d'un volume d'eau allant jusqu'à 1 gallon, provoquant un gel ou un dégel immédiat. L'eau n'a pas besoin d'être dans un récipient ; Cette technique peut être utilisée pour recouvrir une surface ou assembler deux objets par congélation. La glace ainsi créée reste gelée aussi longtemps que la température ambiante le permet.</p></li><li><p>Ramasser un cube de neige de six pied d'arrête environ pour en faire une sculpture, une forme ou un abri solidifié.</p></li></ul><p>Condenser ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
+                                }
+                            }
                         },
                         "Gesture: Create": {
                             "name": "Signe : Création",
@@ -1835,11 +1953,11 @@
                     "name": "Kagura",
                     "tokenName": "Kagura",
                     "items": {
-                        "Mage Staff": {
-                            "name": "Bâton de Mage"
-                        },
                         "Scale Mail": {
-                            "name": "Armure d’écailles"
+                            "name": "Armure d’écailles",
+                            "description": {
+                                "public": "<p>Composée de plaques de métal superposées, cousues ou rivetées sur un support en cuir ou en tissu, l'armure d'écailles ressemble à la peau d'un dragon et protège bien contre les coupures et les coups de couteau, bien qu'elle soit bruyante et peu flexible.</p>"
+                            }
                         },
                         "Gesture: Influence": {
                             "name": "Signe : Influence",
@@ -1847,7 +1965,13 @@
                         },
                         "Rune: Earth": {
                             "name": "Rune : Terre",
-                            "description": "<p>La force ordonnée de la terre élémentaire, responsable de la matière physique. La Rune de Terre gouverne les minéraux, les métaux, les sols et autres composés physiques.</p><p>La Rune de Terre évolue avec la <strong>Sagesse</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts d'<strong>Acide</strong> à la <strong>Santé</strong>. Elle est opposée par la rune chaotique de <strong>Foudre</strong>.</p>"
+                            "description": "<p>La force ordonnée de la terre élémentaire, responsable de la matière physique. La Rune de Terre gouverne les minéraux, les métaux, les sols et autres composés physiques.</p><p>La Rune de Terre évolue avec la <strong>Sagesse</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts d'<strong>Acide</strong> à la <strong>Santé</strong>. Elle est opposée par la rune chaotique de <strong>Foudre</strong>.</p>",
+                            "actions": {
+                                "mould": {
+                                    "name": "Façonner",
+                                    "description": "<p>La maîtrise de la Rune de Terre vous permet de manipuler les forces brutes de la roche, des minéraux, et de la terre de manière fondamentale, produisant l'un des effets suivants :</p><ul><li><p>Façonner rapidement jusqu'à un pied cube de matériau disponible en une forme géométrique simple comme un cuboïde, un ellipsoïde ou un polyèdre.</p></li><li><p>Copier avec précision un objet tenu en main plus petit qu'un cube de 6 pouces d'arrête, à partir d'argile, de pierre ou de métal. La réplique ne conserve aucune propriété utile, hormis sa forme physique.</p></li><li><p>Séparer et recueillir les particules de terre de la surface d'un objet, d'une créature ou d'un liquide que vous touchez, purifiant ainsi complètement le sujet en quelques instants.</p></li></ul><p>Façonner ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
+                                }
+                            }
                         },
                         "Medicine Novice": {
                             "name": "Médecine : Novice",
@@ -1867,7 +1991,13 @@
                         },
                         "Rune: Life": {
                             "name": "Rune : Vie",
-                            "description": "<p>Une force chaotique de création, responsable de la matière vivante. La Rune de Vie gouverne la santé et les questions relatives à la croissance biologique.</p><p>La Rune de Vie évolue avec la <strong>Sagesse</strong> et fournit une <strong>Restauration</strong> de <strong>Santé</strong> ou inflige des dégâts de <strong>Poison</strong> opposés par la <strong>Fortitude</strong>. Elle est opposée par la rune ordonnée de <strong>Mort</strong>.</p>"
+                            "description": "<p>Une force chaotique de création, responsable de la matière vivante. La Rune de Vie gouverne la santé et les questions relatives à la croissance biologique.</p><p>La Rune de Vie évolue avec la <strong>Sagesse</strong> et fournit une <strong>Restauration</strong> de <strong>Santé</strong> ou inflige des dégâts de <strong>Poison</strong> opposés par la <strong>Fortitude</strong>. Elle est opposée par la rune ordonnée de <strong>Mort</strong>.</p>",
+                            "actions": {
+                                "bloom": {
+                                    "name": "Fleurir",
+                                    "description": "<p>Votre maîtrise de la Rune de Vie vous permet de stimuler la croissance biologique et de nourrir la santé physique, produisant l'un des effets suivants :</p><ul><li><p>Cultiver 1 pied cube de plantes ou de champignons existants pour les faire croître rapidement jusqu'à un état sain, florissant ou prêt à être récolté.</p></li><li><p>Identifier une condition physique négative affectant une créature telle que @Condition[diseased], @Condition[poisoned], @Condition[bleeding], or @Condition[weakened].</p></li><li><p>Vérifier si une portion d'aliment ou de boisson est exempte de contamination par des bactéries, des parasites ou du poison.</p></li></ul><p>Fleurir ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
+                                }
+                            }
                         },
                         "Rune: Soul": {
                             "name": "Rune : Âme",
@@ -1931,15 +2061,6 @@
                                 "private": "Vous pouvez transformer certaines herbes médicinales sauvages en un élixir en bouteille grâce aux outils d'Alchimiste."
                             }
                         },
-                        "Alchemical Vial": {
-                            "name": "Fiole alchimique"
-                        },
-                        "Alchemists Tools": {
-                            "name": "Outils d'alchimiste"
-                        },
-                        "Healing Herbs": {
-                            "name": "Plantes médicinales"
-                        },
                         "Versatile Translator": {
                             "name": "Traducteur Polyvalent",
                             "description": "<p>Vous avez un passé d'érudit en linguistique ou un don intuitif pour les langues. Vos capacités vous permettent de déchiffrer le sens de base d'un texte écrit dans une variété de langues.</p><p>Vous pouvez traduire un texte d'une langue que vous ne connaissez pas qui est écrit en un ensemble commun de glyphes ou de caractères vers une langue que vous connaissez. Créer une telle traduction nécessite de passer une minute par mot pour transcrire le texte dans une langue que vous comprenez.</p><p>Vos traductions sont rudimentaires et manquent souvent de nuance, mais elles contiennent tous les points essentiels du texte.</p>"
@@ -1977,6 +2098,12 @@
                         "Eye of the Storm": {
                             "name": "Œil du cyclone",
                             "description": "<p>Après avoir Retardé votre Tour, gagnez +2 Faveurs sur toute Frappe ou Attaque magique contre un ennemi que vous avez laissé agir avant vous ce Round.</p><p>TODO : Nécessite une automatisation. Pour l'instant, appliquez les faveurs manuellement.</p>"
+                        },
+                        "Ice Staff": {
+                            "name": "Bâton de glace",
+                            "description": {
+                                "public": "<p>Ce bâton de mage est un talisman permettant de faciliter la sorcellerie ou de projeter des rafales de glace hivernale sur les ennemis.</p>"
+                            }
                         }
                     },
                     "ancestry": {
@@ -1996,10 +2123,16 @@
                     "tokenName": "Ulfen",
                     "items": {
                         "Scale Mail": {
-                            "name": "Armure d’écailles"
+                            "name": "Armure d’écailles",
+                            "description": {
+                                "public": "<p>Composée de plaques de métal superposées, cousues ou rivetées sur un support en cuir ou en tissu, l'armure d'écailles ressemble à la peau d'un dragon et protège bien contre les coupures et les coups de couteau, bien qu'elle soit bruyante et peu flexible.</p>"
+                            }
                         },
                         "Greataxe": {
-                            "name": "Hache à deux mains"
+                            "name": "Hache à deux mains",
+                            "description": {
+                                "public": "<p>Arme imposante dotée d'une large tête, souvent à double tranchant, la hache à deux mains est conçue pour porter des coups dévastateurs, fauchant hommes et bêtes avec une force terrible.</p>"
+                            }
                         },
                         "Intimidator": {
                             "name": "Intimidateur",

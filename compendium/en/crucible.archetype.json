@@ -74,9 +74,17 @@
       "name": "Grappler",
       "description": "Fighters who specialize in physically restraining their adversaries and rendering them susceptible to further attacks."
     },
+    "Justiciar": {
+      "name": "Justiciar",
+      "description": "<p>Justiciars are divine champions which bring the wrath and judgment of divine power to those who are wicked or unworthy.</p>"
+    },
     "Mage": {
       "name": "Mage",
       "description": "A magic user which wields flame and electricity in battle."
+    },
+    "Necromancer": {
+      "name": "Necromancer",
+      "description": "<p>Mages who exploit the power that lies in undeath, raising minions from the dead to serve their nefarious ambitions or extending their own lives through occult spellcraft.</p>"
     },
     "Occultist": {
       "name": "Occultist",
@@ -93,6 +101,10 @@
     "Priest": {
       "name": "Priest",
       "description": "<p>Devout servants of the gods who derive their power through their faith and devotion to their deity.</p>"
+    },
+    "Protector": {
+      "name": "Protector",
+      "description": "<p>Stalwart warriors who interpose themselves between their allies and peril, seeking foremost to protect themselves and others from harm.</p>"
     },
     "Shapeshifter": {
       "name": "Shapeshifter",

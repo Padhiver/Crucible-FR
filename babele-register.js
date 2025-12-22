@@ -122,3 +122,8 @@ Hooks.once('init', async function () {
         console.log('Crucible FR | Module de traduction chargé');
     }
 });
+
+Hooks.once('i18nInit', () => {
+  game.i18n.translations.Sort = "Sort";
+  game.i18n.translations.sort = "tri"; // garde la minuscule pour le core
+});

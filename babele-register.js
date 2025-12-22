@@ -1,5 +1,3 @@
-import { DEFAULT_ACTION_TRANSLATIONS } from './default-actions.js';
-
 Hooks.once('init', async function () {
     if (typeof Babele !== 'undefined') {
 

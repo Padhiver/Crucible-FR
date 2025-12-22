@@ -807,11 +807,11 @@
             "description": "<p>Améliorez un sort en accélérant la vitesse avec laquelle il peut être lancé, au prix d'un Focus accru. L'inflexion Hâter réduit le coût en <strong>Action</strong> d'un sort de 1 tout en augmentant son coût en <strong>Focus</strong> de 1 en échange.</p>"
         },
         "Inquisitor": {
-            "name": "Inquisiteur",
+            "name": "Brise-sort",
             "description": "<p>Vous êtes un expert en combat contre les utilisateurs de magie. Vous savez comment conserver l'énergie et frapper au moment précis pour contrecarrer leur incantation.</p>",
             "actions": {
                 "inquisitorsStrike": {
-                    "name": "Frappe de l'Inquisiteur",
+                    "name": "Frappe du Brise-sort",
                     "description": "Lorsqu'un ennemi que vous pouvez voir lance un sort dans votre rayon d'Engagement, vous pouvez réagir pour Frapper cette cible. Sur un Coup critique, le sort de la cible est interrompu et sa magie perdue.",
                     "condition": "Votre cible est en train de lancer un sort."
                 }
@@ -910,7 +910,7 @@
             "description": "<p>Vous avez reçu une formation dans les fondamentaux de la Joaillerie et êtes capable de travailler avec la plupart des sertissages et conceptions courants.</p><p>Vous avez toujours besoin de consulter des schémas et des livres pour identifier les pierres précieuses, métaux ornés, et leurs propriétés.</p>"
         },
         "Justiciar": {
-            "name": "Justicier",
+            "name": "Inquisiteur",
             "description": "<p>Vous êtes un instrument de justice. Les attaques de Frappe critique infligent aussi la portion de Surplus des dégâts au Moral ennemi.</p>"
         },
         "Kineturge": {
@@ -1619,11 +1619,11 @@
             "description": "<p>Vous avez reçu une formation dans les fondamentaux de la Couture et êtes capable de travailler avec la plupart des tissus et patrons courants.</p><p>Vous avez toujours besoin de consulter des recettes et des livres pour identifier les tissus, les cuirs, et leurs propriétés.</p>"
         },
         "Talisman Weapon Proficiency": {
-            "name": "Armes Talisman : Maîtrise",
+            "name": "Talismans : Maîtrise",
             "description": "<p>Vous avez une éducation fluide dans l'utilisation des talismans, orbes, focalisateurs ou autres armes similaires. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de compétence de +1</strong> avec les armes de la catégorie <strong>Talisman</strong>.</p>"
         },
         "Talisman Weapon Training": {
-            "name": "Armes Talisman : Entraînement",
+            "name": "Talismans : Entraînement",
             "description": "<p>Vous avez une éducation de base dans l'utilisation des talismans, orbes, focalisateurs ou autres armes similaires. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes de la catégorie <strong>Talisman</strong>.</p>"
         },
         "Testudo": {

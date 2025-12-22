@@ -113,6 +113,18 @@
         "Tusker": {
             "name": "Bête à Défenses",
             "description": "<p>Bêtes qui combattent en utilisant leur propre masse, leur élan et leurs défenses aiguisées.</p>"
+        },
+        "Justiciar": {
+            "name": "Inquisiteur",
+            "description": "<p>Les inquisiteurs sont des champions divins qui déchaînent le courroux et le jugement du pouvoir divin sur les corrompus ou les indignes.</p>"
+        },
+        "Necromancer": {
+            "name": "Nécromancien",
+            "description": "<p>Mages qui exploitent le pouvoir résidant dans la non-mort, ressuscitant des serviteurs d'entre les morts pour servir leurs ambitions néfastes ou prolongeant leur propre vie grâce à la sorcellerie occulte.</p>"
+        },
+        "Protector": {
+            "name": "Protecteur",
+            "description": "<p>Guerriers inflexibles qui s'interposent entre leurs alliés et le danger, dévoués avant tout à préserver autrui de toute menace.</p>"
         }
     }
 }

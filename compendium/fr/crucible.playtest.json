@@ -300,7 +300,7 @@
                             "description": "<p>Amplifiez un sort pour repousser les créatures affectées loin du lanceur. Les créatures affectées par un sort avec l'inflexion Rejeter se déplacent de 1 case loin du lanceur de sorts si cette case de destination est inoccupée.</p>"
                         },
                         "Talisman Weapon Training": {
-                            "name": "Armes Talisman : Entraînement",
+                            "name": "Talismans : Entraînement",
                             "description": "<p>Vous avez une éducation de base dans l'utilisation des talismans, orbes, focalisateurs ou autres armes similaires. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes de la catégorie <strong>Talisman</strong>.</p>"
                         },
                         "Intercept": {
@@ -1982,7 +1982,7 @@
                             "description": "<p>Vous avez appris à étudier le monde autour de vous à travers l'observation structurée, les mathématiques, la physique, la chimie et d'autres disciplines. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Science</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous êtes familier avec les principes de base des mathématiques, de la physique, de la chimie ou d'autres études scientifiques. Vous savez comment construire et utiliser des machines simples dans le but de rendre les tâches physiques plus faciles. Vous connaissez certaines des théories scientifiques les plus communément comprises, et avec le temps approprié pour étudier des machines plus complexes, vous pourriez être capable au moins de les faire fonctionner.</p>"
                         },
                         "Talisman Weapon Training": {
-                            "name": "Armes Talisman : Entraînement",
+                            "name": "Talismans : Entraînement",
                             "description": "<p>Vous avez une éducation de base dans l'utilisation des talismans, orbes, focalisateurs ou autres armes similaires. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes de la catégorie <strong>Talisman</strong>.</p>"
                         },
                         "Gesture: Ray": {

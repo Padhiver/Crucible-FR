@@ -73,11 +73,11 @@
             }
         },
         "Revive": {
-            "name": "Ranimation",
-            "description": "<p>Expression puissante des magies de Vie et de Contrôle, Ranimation permet au lanceur d'intervenir dans le processus naturel de la mort en insufflant une vague d'essence vitale dans le corps d'un défunt récent. Ceux qui ont vécu une Ranimation sont souvent réticents à en parler, mais la décrivent comme une sensation désagréable rappelant un réveil soudain d'un sommeil profond pour s'apercevoir que l'on est gelé ; la chair pique et élance, l'esprit vacille, et l'âme souffre du souvenir de son départ interrompu.</p>",
+            "name": "Réanimation",
+            "description": "<p>Expression puissante des magies de Vie et de Contrôle, Réanimation permet au lanceur d'intervenir dans le processus naturel de la mort en insufflant une vague d'essence vitale dans le corps d'un défunt récent. Ceux qui ont vécu une Réanimation sont souvent réticents à en parler, mais la décrivent comme une sensation désagréable rappelant un réveil soudain d'un sommeil profond pour s'apercevoir que l'on est gelé ; la chair pique et élance, l'esprit vacille, et l'âme souffre du souvenir de son départ interrompu.</p>",
             "actions": {
                 "revive": {
-                    "name": "Ranimation",
+                    "name": "Réanimation",
                     "description": "<p>Vous ramenez à la vie une créature récemment devenue @Condition[dead], réduisant ses <strong>Lésions</strong> d'une valeur égale à votre score de <strong>Sagesse</strong>. En cas de succès, la créature ranimée est @Condition[disoriented] et @Condition[staggered] pendant 10 minutes.</p>"
                 }
             }

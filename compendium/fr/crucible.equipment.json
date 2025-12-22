@@ -154,9 +154,9 @@
         },
         "Claw Hammer": {
             "description": {
-                "public": "<p>Outil d'apparence modeste, avec sa surface de frappe plate et sa griffe incurvée, le marteau à griffes peut devenir une arme redoutable entre des mains déterminées.</p>"
+                "public": "<p>Outil d'apparence modeste, avec sa surface de frappe plate et sa griffe incurvée, le marteau léger peut devenir une arme redoutable entre des mains déterminées.</p>"
             },
-            "name": "Marteau à griffes"
+            "name": "Marteau léger"
         },
         "Claws": {
             "name": "Griffes",

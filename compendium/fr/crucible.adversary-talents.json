@@ -80,7 +80,7 @@
         },
         "Elusive Flight": {
             "name": "Vol insaisissable",
-            "description": "<p>Cette @ref[actor.name]{créature} est particulièrement insaisissable en vol, capable de plonger dans et hors du combat sans provoquer d'<strong>Assaut Opportuniste</strong>. Elle peut être engagée si elle atterrit au sol et l'Assaut Opportuniste peut s'appliquer si elle tente de retourner en vol.</p>"
+            "description": "<p>Cette @ref[actor.name]{créature} est particulièrement insaisissable en vol, capable de plonger dans et hors du combat sans provoquer d'<strong>Assaut opportuniste</strong>. Elle peut être engagée si elle atterrit au sol et l'Assaut opportuniste peut s'appliquer si elle tente de retourner en vol.</p>"
         },
         "False Appearance": {
             "name": "Faux-semblant",

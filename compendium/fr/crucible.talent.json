@@ -1056,11 +1056,11 @@
         },
         "Opportunist": {
             "name": "Opportuniste",
-            "description": "<p>Vous saisissez toute opportunité pour capitaliser sur un ennemi qui vous tourne le dos. Vous pouvez effectuer un <strong>Assaut Opportuniste</strong> même si vous êtes autrement <strong>Pleinement Engagé</strong>, mais vous le faites sans les 2 Faveurs qui s'appliqueraient ordinairement à une telle attaque.</p>"
+            "description": "<p>Vous saisissez toute opportunité pour capitaliser sur un ennemi qui vous tourne le dos. Vous pouvez effectuer un <strong>Assaut opportuniste</strong> même si vous êtes autrement <strong>Totalement engagé</strong>, mais vous le faites sans les 2 Faveurs qui s'appliqueraient ordinairement à une telle attaque.</p>"
         },
         "Opportunistic Spellcraft": {
             "name": "Sorcellerie opportuniste",
-            "description": "<p>Votre réflexion rapide peut tisser la magie pour exploiter de brèves fenêtres d'opportunité. Vous pouvez effectuer un <strong>Assaut Opportuniste</strong> en utilisant le Signe de <strong>Contact</strong> au lieu d'une attaque d'arme de mêlée.</p>"
+            "description": "<p>Votre réflexion rapide peut tisser la magie pour exploiter de brèves fenêtres d'opportunité. Vous pouvez effectuer un <strong>Assaut opportuniste</strong> en utilisant le Signe de <strong>Contact</strong> au lieu d'une attaque d'arme de mêlée.</p>"
         },
         "Overwatch": {
             "name": "Surveillant",
@@ -1468,7 +1468,7 @@
         },
         "Skirmisher": {
             "name": "Querelleur",
-            "description": "<p>Vous êtes adepte d'entrer et sortir de la mêlée. Lorsque vous sortez du rayon d'<strong>Engagement</strong> d'un ennemi, cet ennemi a 2 Fléaux à tout <strong>Assaut Opportuniste</strong> contre vous.</p>"
+            "description": "<p>Vous êtes adepte d'entrer et sortir de la mêlée. Lorsque vous sortez du rayon d'<strong>Engagement</strong> d'un ennemi, cet ennemi a 2 Fléaux à tout <strong>Assaut opportuniste</strong> contre vous.</p>"
         },
         "Smithing Journeyman": {
             "name": "Forge : Compagnon",
@@ -1570,7 +1570,7 @@
         },
         "Subtle Extrication": {
             "name": "Extraction subtile",
-            "description": "<p>Vous comprenez comment vous éloigner d'un adversaire sans vous exposer aux pires attaques en retour. Tout <strong>Assaut Opportuniste</strong> contre vous est effectué sans les 2 Faveurs qui s'appliqueraient ordinairement à une telle attaque.</p>"
+            "description": "<p>Vous comprenez comment vous éloigner d'un adversaire sans vous exposer aux pires attaques en retour. Tout <strong>Assaut opportuniste</strong> contre vous est effectué sans les 2 Faveurs qui s'appliqueraient ordinairement à une telle attaque.</p>"
         },
         "Sundering Strike": {
             "name": "Frappe fracturante",

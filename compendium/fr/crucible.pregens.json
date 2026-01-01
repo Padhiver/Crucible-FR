@@ -1226,9 +1226,9 @@
                     }
                 },
                 "Heater Shield": {
-                    "name": "Bouclier chauffant",
+                    "name": "Écu",
                     "description": {
-                        "public": "<p>Baptisé ainsi en raison de sa forme en fer rappelant la base d'un fer à repasser, le bouclier chauffant offre un équilibre entre protection et mobilité.</p>"
+                        "public": "<p>Également appelé bouclier chauffant en raison de sa forme en fer rappelant la base d'un fer à repasser, l'écu offre un équilibre entre protection et mobilité.</p>"
                     }
                 },
                 "Scale Mail": {
@@ -1391,7 +1391,7 @@
                 },
                 "Armored Shell": {
                     "name": "Coquille blindée",
-                    "description": "<p>Vous êtes expert dans l'utilisation combinée de votre armure et de votre bouclier pour créer une coquille défensive.</p><p>Lorsque vous avez la condition <strong>Protégé</strong> et êtes équipé d'un <strong>Bouclier Lourd</strong>, votre défense d'<strong>Armure</strong> de base est réduite de moitié mais votre défense de <strong>Blocage</strong> augmente d'un montant correspondant.</p>"
+                    "description": "<p>Vous êtes expert dans l'utilisation combinée de votre armure et de votre bouclier pour créer une coquille défensive.</p><p>Lorsque vous avez la condition <strong>Protégé</strong> et êtes équipé d'un <strong>Bouclier lourd</strong>, votre défense d'<strong>Armure</strong> de base est réduite de moitié mais votre défense de <strong>Blocage</strong> augmente d'un montant correspondant.</p>"
                 },
                 "Shield Combat Training": {
                     "name": "Combat au bouclier : Entraînement",

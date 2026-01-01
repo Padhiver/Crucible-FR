@@ -22,6 +22,9 @@
         },
         "JournalEntryPage": {
             "skill": "Compétence Crucible"
+        },
+        "ActiveEffect": {
+            "flanked": "Effet actif Débordé"
         }
     },
     "CRUCIBLE": {
@@ -153,16 +156,6 @@
                 "hint": "ATTENTION ! Les hooks d'action sont une fonctionnalité AVANCÉE pour automatiser les mécaniques d'action. Une mauvaise configuration de ces hooks peut avoir des conséquences sérieuses. Ne tentez pas de faire des changements à moins d'être confiant dans vos connaissances."
             }
         },
-        "SHEET": {
-            "TITLE": "Action"
-        },
-        "TABS": {
-            "DESCRIPTION": "Description",
-            "USAGE": "Utilisation",
-            "TARGET": "Cible",
-            "EFFECTS": "Effets",
-            "HOOKS": "Hooks"
-        },
         "DEFAULT_ACTIONS": {
             "Cast": {
                 "Name": "Lancer un sort",
@@ -187,10 +180,6 @@
             "Recover": {
                 "Name": "Récupération",
                 "Description": "Consacrez 10 minutes hors-combat à récupérer de l'effort afin de rétablir pleinement vos scores de Santé, Moral, Action et Focus."
-            },
-            "Refocus": {
-                "Name": "Récupération de Focus",
-                "Description": "Utilisez votre Talisman équipé pour récupérer du Focus."
             },
             "Reload": {
                 "Name": "Rechargement d'arme",
@@ -236,22 +225,16 @@
             "Single": "Sélectif",
             "Summon": "Invocation",
             "Wall": "Mur"
-        }
-    },
-    "ADVERSARY": {
-        "THREAT_RANKS": {
-            "MINION": "Laquais",
-            "NORMAL": "Normal",
-            "ELITE": "Élite",
-            "BOSS": "Chef"
-        }
-    },
-    "ACCESSORY": {
-        "CATEGORIES": {
-            "CLOTHING": "Vêtement",
-            "JEWELRY": "Bijou",
-            "TRINKET": "Bibelot",
-            "OTHER": "Autre"
+        },
+        "SHEET": {
+            "Title": "Action"
+        },
+        "TABS": {
+            "Description": "Description",
+            "Usage": "Utilisation",
+            "Target": "Cible",
+            "Effects": "Effets",
+            "Hooks": "Hooks"
         }
     },
     "ACTOR": {
@@ -324,27 +307,6 @@
                 "label": "Montant de monnaie",
                 "hint": "La quantité de monnaie possédée par cet Acteur."
             }
-        },
-        "TABS": {
-            "ACTIONS": "Actions",
-            "EFFECTS": "Effets",
-            "SKILLS": "Compétences",
-            "TALENTS": "Talents",
-            "INVENTORY": "Inventaire",
-            "SPELLS": "Sorts",
-            "BIOGRAPHY": "Biographie",
-            "ATTRIBUTES": "Attributs"
-        },
-        "LABELS": {
-            "CURRENCY": "Monnaie",
-            "CAPACITY": "Capacité de charge",
-            "CURRENT_CAPACITY": "Capacité actuelle",
-            "OVER_CAPACITY": "Dépassement de capacité",
-            "CURRENT_EQUIPMENT": "Équipement actuel",
-            "FAVORITE_ACTIONS": "Actions favorites",
-            "KNOWLEDGE": "Domaines de connaissances",
-            "KNOWLEDGE_HINT": "Apprenez certains domaines de connaissances à partir de votre Origine ou modifiez votre Héros pour en acquérir.",
-            "LANGUAGES": "Langues connues"
         },
         "SECTIONS": {
             "ACCESSORY": {
@@ -431,7 +393,7 @@
                 "EffectsTemporary": "Effets temporaires"
             },
             "PointsAvailable": "Disponible",
-            "PointsSpent": "Dépensés",
+            "PointsSpent": "Utilisé",
             "Resources": "Ressources"
         },
         "WARNINGS": {
@@ -442,6 +404,27 @@
             "OverspentTalent": "Trop de Talents ont été pris",
             "UnderspentAbility": "Dépensez des points de Caractéristique",
             "UnderspentTalent": "Dépensez des points de Talent"
+        },
+        "TABS": {
+            "Attributes": "Attributs",
+            "Actions": "Actions",
+            "Effects": "Effets",
+            "Skills": "Compétences",
+            "Talents": "Talents",
+            "Inventory": "Inventaire",
+            "Spells": "Sorts",
+            "Biography": "Biographie"
+        },
+        "LABELS": {
+            "Currency": "Monnaie",
+            "Capacity": "Capacité de charge",
+            "CurrentCapacity": "Capacité actuelle",
+            "OverCapacity": "Dépassement de capacité",
+            "CurrentEquipment": "Équipement actuel",
+            "FavoriteActions": "Actions favorites",
+            "Knowledge": "Domaines de connaissances",
+            "KnowledgeHint": "Apprenez certains domaines de connaissances à partir de votre Origine ou modifiez votre Héros pour en acquérir.",
+            "Languages": "Langues connues"
         }
     },
     "ACTOR.GROUP": {
@@ -453,7 +436,8 @@
                     "hint": "Un enregistrement des échelons obtenus qui ont été obtenus par ce groupe.",
                     "element": {
                         "number.label": "Nombre de récompense",
-                        "reason.label": "Raison de la récompense"
+                        "reason.label": "Raison de la récompense",
+                        "reason.placeholder": "Une raison de récompense optionnelle."
                     }
                 }
             },
@@ -548,15 +532,15 @@
             }
         },
         "SHEET": {
-            "BROWSE": "Parcourir les Ascendances",
-            "CHOOSE": "Choisir l'Ascendance",
-            "CLEAR": "Effacer l'Ascendance",
-            "IDENTITY": "Identité"
+            "Browse": "Parcourir les Ascendances",
+            "Choose": "Choisir l'Ascendance",
+            "Clear": "Effacer l'Ascendance",
+            "Identity": "Identité"
         },
         "WARNINGS": {
-            "ABILITIES": "Les Caractéristiques principale et secondaire d'une Ascendance ne peuvent pas être les mêmes.",
-            "RESISTANCES_BOTH": "Vous devez attribuer à la fois la Résistance et la Vulnérabilité si vous définissez l'une ou l'autre.",
-            "RESISTANCES_DIFFERENT": "La Résistance et la Vulnérabilité choisies pour une Ascendance ne peuvent pas être les mêmes."
+            "Abilities": "Les Caractéristiques principale et secondaire d'une Ascendance ne peuvent pas être les mêmes.",
+            "ResistancesBoth": "Vous devez attribuer à la fois la Résistance et la Vulnérabilité si vous définissez l'une ou l'autre.",
+            "ResistancesDifferent": "La Résistance et la Vulnérabilité choisies pour une Ascendance ne peuvent pas être les mêmes."
         }
     },
     "ACTIVE_EFFECT": {
@@ -588,7 +572,19 @@
             "Staggered": "Ébranlé",
             "Unaware": "Distrait",
             "Weakened": "Affaibli",
-            "FlankedDescription": "Vous êtes débordé par plusieurs ennemis qui gagnent des Faveurs supplémentaires à leurs attaques !"
+            "FlankedDescription": "Vous êtes débordé par plusieurs ennemis qui gagnent des Faveurs supplémentaires à leurs attaques !",
+            "Bleeding": "Ensanglanté",
+            "Burning": "Enflammé",
+            "Freezing": "Gelé",
+            "Confused": "Confus",
+            "Corroding": "Corrodé",
+            "Decaying": "Putréfié",
+            "Entropy": "Dérangé",
+            "Irradiated": "Irradié",
+            "Mending": "Vivifié",
+            "Inspired": "Inspiré",
+            "Poisoned": "Empoisonné",
+            "Shocked": "Électrocuté"
         },
         "ACTIONS": {
             "Delete": "Supprimer l'effet",
@@ -613,17 +609,6 @@
     "ACTION.WarningMaximumRange": "Une cible sélectionnée est plus éloignée que la portée maximale de {max} pieds.",
     "ACTION.EFFECTS.Add": "Ajouter un Effet",
     "ACTION.EFFECTS.Delete": "Retirer l'Effet",
-    "ACTION.TAG_CATEGORIES.ATTACK": "Attaque",
-    "ACTION.TAG_CATEGORIES.REQUIREMENTS": "Prérequis",
-    "ACTION.TAG_CATEGORIES.CONTEXT": "Contexte",
-    "ACTION.TAG_CATEGORIES.MODIFIERS": "Modificateurs",
-    "ACTION.TAG_CATEGORIES.DEFENSES": "Défenses",
-    "ACTION.TAG_CATEGORIES.DAMAGE": "Dégâts",
-    "ACTION.TAG_CATEGORIES.SCALING": "Évolution",
-    "ACTION.TAG_CATEGORIES.RESOURCES": "Ressources",
-    "ACTION.TAG_CATEGORIES.SKILLS": "Compétences",
-    "ACTION.TAG_CATEGORIES.SPELLCRAFT": "Sorcellerie",
-    "ACTION.TAG_CATEGORIES.SPECIAL": "Spécial",
     "ACTION.TagAfterStrike": "Post frappe",
     "ACTION.TagAfterStrikeTooltip": "Cette action ne peut être effectuée qu'immédiatement après une attaque de Frappe de base qui n'a pas manqué de manière critique.",
     "ACTION.TagConsume": "Consommation",
@@ -768,12 +753,21 @@
             "skills": {
                 "label": "Compétences favorites",
                 "hint": "Configurez une sélection de compétences qui progresseront automatiquement leur rang de formation pour cet Archétype."
+            },
+            "spells": {
+                "label": "Sorts accordés",
+                "hint": "Configurer les sorts iconiques que cet Archétype reçoit automatiquement."
             }
         },
         "SHEET": {
-            "CHOOSE": "Choisir un Archétype",
-            "CLEAR": "Effacer l'Archétype",
-            "SKILLS": "Progression des Compétences"
+            "Choose": "Choisissez l'Archétype",
+            "Clear": "Effacer l'Archétype",
+            "RequiredComponents": "<p><strong>{spell}</strong> nécessite des composants de sort qui ne figurent pas actuellement sur cet Archétype. Voulez-vous les ajouter automatiquement ?</p>",
+            "Skills": "Progression des Compétences"
+        },
+        "WARNINGS": {
+            "NotEquipment": "Le document déposé doit être de l'Équipement.",
+            "NotSpell": "Le document déposé doit être un Sort iconique."
         }
     },
     "ARMOR": {
@@ -788,34 +782,29 @@
                 "label": "Propriétés de l'Armure"
             }
         },
+        "SPECIFIC": {
+            "Unarmored": "Sans Armure"
+        },
         "CATEGORIES": {
-            "UNARMORED": "Sans Armure",
-            "LIGHT": "Armure Légère",
-            "MEDIUM": "Armure Intermédiaire",
-            "HEAVY": "Armure Lourde",
-            "NATURAL": "Naturelle"
+            "Unarmored": "Sans Armure",
+            "Light": "Armure légère",
+            "Medium": "Armure intermédiaire",
+            "Heavy": "Armure lourde",
+            "Natural": "Naturelle"
         },
         "SHEET": {
-            "DEFENSES": "Défenses de l'Armure",
-            "ARMOR_BONUS": "Bonus d'Armure",
-            "DODGE": "Esquive",
-            "DODGE_BASE": "Esquive de base",
-            "DODGE_SCALING": "Seuil d'Évolution"
+            "Defenses": "Défenses de l'Armure",
+            "ArmorBonus": "Bonus d'Armure",
+            "Dodge": "Esquive",
+            "DodgeBase": "Esquive de base",
+            "DodgeScaling": "Seuil d'Évolution"
         },
         "PROPERTIES": {
-            "BULKY": "Encombrante",
-            "ORGANIC": "Organique",
-            "NOISY": "Bruyante"
+            "Bulky": "Encombrante",
+            "Organic": "Organique",
+            "Noisy": "Bruyante"
         }
     },
-    "ATTACK.RESULT_TYPES.MISS": "Manqué",
-    "ATTACK.RESULT_TYPES.DODGE": "Esquive",
-    "ATTACK.RESULT_TYPES.PARRY": "Parade",
-    "ATTACK.RESULT_TYPES.BLOCK": "Blocage",
-    "ATTACK.RESULT_TYPES.ARMOR": "Armure",
-    "ATTACK.RESULT_TYPES.RESIST": "Résistance",
-    "ATTACK.RESULT_TYPES.GLANCE": "Coup superficiel",
-    "ATTACK.RESULT_TYPES.HIT": "Touché",
     "ATTRIBUTES.Abilities": "Scores de Caractéristique",
     "ATTRIBUTES.Pools": "Réserves de Ressources",
     "ATTRIBUTES.Resistances": "Résistances aux dégâts",
@@ -857,29 +846,22 @@
             }
         },
         "SHEET": {
-            "BROWSE": "Parcourir les Origines",
-            "CLEAR": "Effacer l'Origine",
-            "CHOOSE": "Choisir une Origine",
-            "IDENTITY": "Identité",
-            "SKILLS": "Compétences",
-            "TALENT_ADD": "Ajouter un Talent",
-            "TALENT_REMOVE": "Retirer un Talent",
-            "TALENT_DROP": "Ajoutez un talent à cette Origine en glissant-déposant depuis le compendium des Talents."
+            "Browse": "Parcourir les Origines",
+            "Clear": "Effacer l'Origine",
+            "Choose": "Choisir une Origine",
+            "Identity": "Identité",
+            "Skills": "Compétences",
+            "TalentAdd": "Ajouter un Talent",
+            "TalentRemove": "Retirer un Talent",
+            "TalentDrop": "Ajoutez un talent à cette Origine en glissant-déposant depuis le compendium des Talents."
         },
         "ERRORS": {
-            "APPLY": "Vous ne pouvez appliquer une Origine qu'à un personnage de niveau 0 n'ayant dépensé aucun point de compétence.",
-            "TALENT_TIER": "Les Origines ne peuvent offrir que des Talents de départ de Tiers 0."
+            "Apply": "Vous ne pouvez appliquer une Origine qu'à un personnage de niveau 0 n'ayant dépensé aucun point de compétence.",
+            "TalentTier": "Les Origines ne peuvent offrir que des Talents de départ de Tiers 0."
         }
     },
     "COMBAT.WarningCannotChangeRound": "Seul un utilisateur Maître du jeu peut changer le round de Combat.",
     "CONSUMABLE": {
-        "CATEGORIES": {
-            "AMMUNITION": "Munition",
-            "BOMB": "Bombe",
-            "FLASK": "Fiole",
-            "KIT": "Kit",
-            "OTHER": "Autre"
-        },
         "FIELDS": {
             "uses": {
                 "label": "Utilisations",
@@ -887,6 +869,13 @@
                 "value.label": "Valeur",
                 "max.label": "Maximum"
             }
+        },
+        "CATEGORIES": {
+            "Ammunition": "Munitions",
+            "Bomb": "Bombe",
+            "Flask": "Fiole",
+            "Kit": "Kit",
+            "Other": "Autre"
         }
     },
     "CURRENCY_DENOMINATIONS": {
@@ -1001,28 +990,6 @@
                 "label": "Actions de l'Objet"
             }
         },
-        "TABS": {
-            "CONFIGURATION": "Configuration",
-            "ACTIONS": "Actions",
-            "DESCRIPTION": "Description",
-            "HOOKS": "Hooks",
-            "TALENTS": "Talents",
-            "SECRETS": "Secrets",
-            "EQUIPMENT": "Équipement"
-        },
-        "SHEET": {
-            "DETAILS": "Détails de l'Objet",
-            "TALENT_ADD": "Ajouter un Talent",
-            "TALENT_REMOVE": "Retirer un Talent",
-            "TALENT_DROP": "Ajoutez un talent en glissant-déposant un objet Talent dans cette zone.",
-            "EQUIPMENT": "Détails de l'Équipement",
-            "EQUIPMENT_REMOVE": "Retirer l'Équipement",
-            "EQUIPMENT_DROP": "Ajoutez de l'équipement de départ en glissant-déposant des objets dans cette zone.",
-            "TYPE": "Type d'Équipement",
-            "SCALED_PRICE": "Prix ajusté",
-            "TALENT_CONFIGURATION": "Configuration de Talent",
-            "SPELLCRAFT": "Sorcellerie"
-        },
         "ACTIONS": {
             "Create": "Créer un objet",
             "Delete": "Supprimer l'objet",
@@ -1046,6 +1013,34 @@
             "Parry": "Parade {parry}",
             "Range": "Portée {range}",
             "Stackable": "Empilable"
+        },
+        "WARNINGS": {
+            "NotTalent": "Le document déposé doit être un Talent."
+        },
+        "TABS": {
+            "Configuration": "Configuration",
+            "Actions": "Actions",
+            "Description": "Description",
+            "Hooks": "Hooks",
+            "Secrets": "Secrets",
+            "Talents": "Talents",
+            "Equipment": "Équipement",
+            "Spells": "Sorts"
+        },
+        "SHEET": {
+            "Details": "Détails de l'Objet",
+            "TalentAdd": "Ajouter un Talent",
+            "TalentConfiguration": "Configuration de Talent",
+            "TalentRemove": "Retirer un Talent",
+            "TalentDrop": "Ajoutez un talent en glissant-déposant un objet Talent dans cette zone.",
+            "Equipment": "Détail de l'équipement",
+            "EquipmentRemove": "Retirer l'Équipement",
+            "EquipmentDrop": "Ajoutez de l'équipement de départ en glissant-déposant des objets dans cette zone.",
+            "SpellRemove": "Retirer le sort",
+            "SpellDrop": "Ajoutez un sort iconique en glissant-déposant un Sort iconique dans cette zone.",
+            "Spellcraft": "Sorcellerie",
+            "Type": "Type d'équipement",
+            "ScaledPrice": "Prix ajusté"
         }
     },
     "ITEM.EnchantmentMundane": "Trivial",
@@ -1059,42 +1054,26 @@
     "ITEM.QualityMasterwork": "Chef-d’œuvre",
     "KEYBINDINGS.ConfirmAction": "Confirmer l'Action",
     "KEYBINDINGS.ConfirmActionHint": "Confirmer les actions enregistrées dans les dernières 60 secondes dans l'ordre où elles ont été prises.",
-    "LANGUAGE_CATEGORIES": {
-        "NONSPOKEN": "Langues non-parlées",
-        "SPOKEN": "Langues parlées"
-    },
-    "LANGUAGES": {
-        "COMMON": "Commun",
-        "SIGN": "Signes"
-    },
-    "LOOT": {
-        "CATEGORIES": {
-            "TREASURE": "Trésor",
-            "INGREDIENT": "Ingrédient",
-            "OTHER": "Divers"
-        }
-    },
     "RESOURCES": {
-        "HEALTH": "Santé",
-        "WOUNDS": "Lésions",
-        "MORALE": "Moral",
-        "MADNESS": "Folie",
-        "ACTION": "Action",
-        "FOCUS": "Focus",
-        "HEROISM": "Héroïsme"
+        "TOOLTIPS": {
+            "Health": "(6 &times; Niveau) + (4 &times; Robustesse) + (2 &times; Force)",
+            "Wounds": "Santé &times; 1.5",
+            "Morale": "(6 &times; Niveau) + (4 &times; Présence) + (2 &times; Sagesse)",
+            "Madness": "Moral &times; 1.5",
+            "Action": "6 + Bonus d'Action",
+            "Focus": "(Sagesse + Présence + Intellect) / 2",
+            "Heroism": "Maximum 3"
+        },
+        "Health": "Santé",
+        "Wounds": "Lésions",
+        "Morale": "Moral",
+        "Madness": "Folie",
+        "Action": "Action",
+        "Focus": "Focus",
+        "Heroism": "Héroïsme"
     },
     "RULER.CannotAffordMove": "Vous ne pouvez pas effectuer le déplacement de {distance} cases qui coûte {action} Points d'Action.",
     "SCHEMATIC": {
-        "CATEGORIES": {
-            "ALCHEMY": "Formule d'Alchimie",
-            "COOKING": "Recette de Cuisine",
-            "ENCHANTING": "Glyphe d'Enchantement",
-            "FLETCHING": "Croquis d'Empennage",
-            "JEWELCRAFT": "Graphique de Joaillerie",
-            "SMITHING": "Plan de Forgeron",
-            "RUNEWEAVING": "Arcane de Tisserune",
-            "TAILORING": "Patron de Couture"
-        },
         "FIELDS": {
             "dc": {
                 "label": "Difficulté du Défi",
@@ -1140,24 +1119,34 @@
                 }
             }
         },
+        "CATEGORIES": {
+            "Alchemy": "Formule d'Alchimie",
+            "Cooking": "Recette de Cuisine",
+            "Enchanting": "Glyphe d'Enchantement",
+            "Fletching": "Croquis d'Empennage",
+            "Jewelcraft": "Graphique de Joaillerie",
+            "Runeweaving": "Arcane de Tisserune",
+            "Smithing": "Plan de Forgeron",
+            "Tailoring": "Patron de Couture"
+        },
         "MODES": {
-            "ANY": "N'importe lequel",
-            "ALL": "Tous",
-            "TEMPLATE": "Gabarit"
+            "Any": "N'importe lequel",
+            "All": "Tous",
+            "Template": "Gabarit"
         },
         "PROPERTIES": {
-            "COMMON": "Communément connu"
+            "Common": "Communément connu"
         },
         "SHEET": {
-            "COMPONENTS": "Composants",
-            "INPUT_ADD": "Ajouter un Groupe d'Entrées",
-            "INPUT_DROP": "Déposer l'Objet d'Entrée",
-            "INPUT_REMOVE": "Retirer le Groupe d'Entrées",
-            "OUTPUT_ADD": "Ajouter un Groupe de Sorties",
-            "OUTPUT_DROP": "Déposer l'Objet de Sortie",
-            "OUTPUT_REMOVE": "Retirer le Groupe de Sorties",
-            "INPUTS": "Entrées",
-            "OUTPUTS": "Sorties"
+            "Components": "Composants",
+            "InputAdd": "Ajouter un Groupe d'Entrées",
+            "InputDrop": "Déposer l'Objet d'Entrée",
+            "InputRemove": "Retirer le Groupe d'Entrées",
+            "Inputs": "Entrées",
+            "OutputAdd": "Ajouter un Groupe de Sorties",
+            "OutputDrop": "Déposer l'Objet de Sortie",
+            "OutputRemove": "Retirer le Groupe de Sorties",
+            "Outputs": "Sorties"
         }
     },
     "SETTINGS": {
@@ -1270,7 +1259,7 @@
         "TooltipCheck": "[({a1} + {a2}) / 4] + Bonus de Compétence + Bonus d'Enchantement",
         "TooltipPassive": "12 + Score",
         "AcquiredRanks": "Rangs acquis",
-        "CategoryHeader": "{category} Compétences",
+        "CategoryHeader": "Compétences : {category}",
         "PassiveSpecific": "Passive : {passive}",
         "SpecializationPaths": "Parcours de spécialisation",
         "SpecializationPathSelect": "Sélectionnez une spécialisation",
@@ -1305,9 +1294,6 @@
                 "label": "Inflexions",
                 "hint": "L'ensemble d'Inflexions qui doivent être connues afin d'apprendre ce Sort iconique."
             }
-        },
-        "SHEET": {
-            "KNOWLEDGE": "Connaissances requises"
         },
         "Iconic": "Sort iconique",
         "IconicPl": "Sorts iconiques",
@@ -1388,7 +1374,12 @@
             "Quicken": "Hâter",
             "QuickenAdj": "Hâter :",
             "Reshape": "Remodeler",
-            "ReshapeAdj": "Remodeler :"
+            "ReshapeAdj": "Remodeler :",
+            "React": "Réagir",
+            "ReactAdj": "Réagir :"
+        },
+        "SHEET": {
+            "Knowledge": "Connaissances requises"
         }
     },
     "TALENT": {
@@ -1455,40 +1446,6 @@
             "RequiresRuneInflection": "Vous devez connaître une Rune de sorcellerie afin d'utiliser une Inflexion.",
             "CannotUse": "Vous ne pouvez pas utiliser ce Talent."
         },
-        "HOOKS": {
-            "REGISTER": "Enregistrer la Fonction Hook",
-            "GROUP_PREPARATION": "Préparation des données de l'Acteur",
-            "GROUP_ACTION": "Utilisation d'Action",
-            "GROUP_COMBAT": "Tours de Combat"
-        },
-        "NODES": {
-            "ATTACK": "Attaque",
-            "MELEE": "Mêlée",
-            "RANGED": "À distance",
-            "MAGIC": "Magie",
-            "DEFENSE": "Défense",
-            "HEAL": "Guérison",
-            "MOVE": "Déplacement",
-            "ORIGIN": "Origine",
-            "SIGNATURE": "Signature",
-            "SPELL": "Sorcellerie",
-            "SKILL": "Compétence",
-            "TRAINING": "Formation",
-            "UTILITY": "Utilitaire"
-        },
-        "TRAINING": {
-            "SKILL": "Formation de Compétence",
-            "WEAPON": "Formation d'Arme",
-            "CRAFT": "Formation d'Artisanat",
-            "SPELL": "Formation de Sorcellerie"
-        },
-        "RANKS": {
-            "UNTRAINED": "Non formé",
-            "TRAINED": "Novice",
-            "PROFICIENT": "Compagnon",
-            "EXPERT": "Adepte",
-            "MASTER": "Maître"
-        },
         "PointsAvailable": "Points disponibles",
         "LABELS": {
             "Points": {
@@ -1499,6 +1456,44 @@
                 "one": "Talent",
                 "other": "Talents"
             }
+        },
+        "NodeSpecific": "Nœud : {nodeType}",
+        "Prerequisites": "Prérequis",
+        "HOOKS": {
+            "Register": "Enregistrer la Fonction Hook",
+            "GroupPreparation": "Préparation des données de l'Acteur",
+            "GroupAction": "Utilisation d'Action",
+            "GroupCombat": "Tours de Combat",
+            "GroupEquipment": "Préparation de l'Équipement",
+            "GroupSpellcraft": "Préparation de la Sorcellerie"
+        },
+        "NODES": {
+            "Attack": "Attaque",
+            "Melee": "Mêlée",
+            "Ranged": "À Distance",
+            "Magic": "Magie",
+            "Defense": "Défense",
+            "Heal": "Guérison",
+            "Move": "Déplacement",
+            "Origin": "Originel",
+            "Signature": "Signature",
+            "Spell": "Sorcellerie",
+            "Skill": "Compétence",
+            "Training": "Formation",
+            "Utility": "Utilitaire"
+        },
+        "TRAINING": {
+            "Skill": "Formation de Compétence",
+            "Weapon": "Formation d'Arme",
+            "Craft": "Formation d'Artisanat",
+            "Spell": "Formation de Sorcellerie"
+        },
+        "RANKS": {
+            "Untrained": "Non formé",
+            "Trained": "Novice",
+            "Proficient": "Compagnon",
+            "Expert": "Adepte",
+            "Master": "Maître"
         }
     },
     "TAXONOMY": {
@@ -1545,65 +1540,44 @@
             }
         },
         "CATEGORIES": {
-            "BEAST": "Bête",
-            "CELESTIAL": "Céleste",
-            "CONSTRUCT": "Artificiel",
-            "DRAGON": "Dragon",
-            "ELEMENTAL": "Élémentaire",
-            "ELEMENTAL_EARTH": "Élémentaire de terre",
-            "ELEMENTAL_FIRE": "Élémentaire de feu",
-            "ELEMENTAL_FROST": "Élémentaire de givre",
-            "ELEMENTAL_STORM": "Élémentaire de tempête",
-            "FEY": "Fée",
-            "FIEND": "Fiélon",
-            "GIANT": "Géant",
-            "HUMANOID": "Humanoïde",
-            "MONSTROSITY": "Monstruosité",
-            "OOZE": "Vase",
-            "OUTSIDER": "Extérieur",
-            "UNDEAD": "Mort-vivant"
+            "Beast": "Bête",
+            "Celestial": "Céleste",
+            "Construct": "Artificiel",
+            "Dragon": "Dragon",
+            "Elemental": "Élémentaire",
+            "ElementalEarth": "Élémentaire de terre",
+            "ElementalFire": "Élémentaire de feu",
+            "ElementalFrost": "Élémentaire de givre",
+            "ElementalStorm": "Élémentaire de tempête",
+            "Fey": "Fée",
+            "Fiend": "Fiélon",
+            "Giant": "Géant",
+            "Humanoid": "Humanoïde",
+            "Monstrosity": "Monstruosité",
+            "Ooze": "Vase",
+            "Outsider": "Extérieur",
+            "Undead": "Mort-vivant"
         },
         "SHEET": {
-            "CHOOSE": "Choisir une Taxonomie",
-            "CLEAR": "Effacer la Taxonomie",
-            "STATURE": "Stature de Taxonomie",
-            "PHYSIOLOGY": "Physiologie"
+            "Choose": "Choisir une Taxonomie",
+            "Clear": "Effacer la Taxonomie",
+            "Physiology": "Physiologie",
+            "Stature": "Stature de Taxonomie"
         }
     },
     "TOOL": {
-        "CATEGORIES": {
-            "CRAFTING": "Kit d'Artisanat",
-            "IMPLEMENT": "Ustensile"
-        },
         "FIELDS": {
             "skills": {
                 "label": "Compétences liées",
                 "hint": "Identifiez les compétences ou l'artisanat qui impliquent l'utilisation de cet outil en particulier."
             }
+        },
+        "CATEGORIES": {
+            "Crafting": "Kit d'Artisanat",
+            "Implement": "Ustensile"
         }
     },
-    "TRAVEL_PACES": {
-        "HIDDEN": "Caché",
-        "SLOW": "Prudent",
-        "NORMAL": "Normal",
-        "FAST": "Pressé",
-        "RECKLESS": "Téméraire"
-    },
     "WEAPON": {
-        "CATEGORIES": {
-            "CATEGORY_HANDS": "{category} ({hands}m)",
-            "LIGHT": "Légère",
-            "SIMPLE": "Simple",
-            "BALANCED": "Équilibrée",
-            "HEAVY": "Lourde",
-            "PROJECTILE": "Projectile",
-            "MECHANICAL": "Mécanique",
-            "UNARMED": "Mains nues",
-            "SHIELD": "Bouclier",
-            "SHIELD_HEAVY": "Bouclier lourd",
-            "SHIELD_LIGHT": "Bouclier léger",
-            "TALISMAN": "Talisman"
-        },
         "FIELDS": {
             "damageType": {
                 "label": "Type de dégâts",
@@ -1653,15 +1627,33 @@
             "VersatileTooltip": "Cette arme peut être maniée à une ou deux mains, et changée entre ces modes sans aucun coût en point d'Action. Lorsqu'elle est maniée à deux mains, l'arme gagne +2 dégâts de base supplémentaires mais occasionne 1 coût d'Action supplémentaire pour Frapper.",
             "DamageTooltip": "Une représentation abrégée des capacités offensives de cette arme, exprimée sous la forme Bonus d'Attaque / Bonus de dégâts / Multiplicateur de dégâts."
         },
+        "SPECIFIC": {
+            "Unarmed": "Mains nues",
+            "VampireBite": "Morsure du vampire"
+        },
+        "CATEGORIES": {
+            "CategoryHands": "{category} ({hands}m)",
+            "Light": "Légère",
+            "Simple": "Simple",
+            "Balanced": "Équilibrée",
+            "Heavy": "Lourde",
+            "Projectile": "Projectile",
+            "Mechanical": "Mécanique",
+            "Unarmed": "Mains nues",
+            "Shield": "Bouclier",
+            "ShieldLight": "Bouclier léger",
+            "ShieldHeavy": "Bouclier lourd",
+            "Talisman": "Talisman"
+        },
         "SHEET": {
-            "EQUIPMENT": "Détails de l'arme",
-            "TYPE": "Type d'arme"
+            "Equipment": "Détails de l'arme",
+            "Type": "Type d'arme"
         },
         "SLOTS": {
-            "EITHER": "L'une ou l'autre main",
-            "MAINHAND": "Main principale",
-            "OFFHAND": "Main secondaire",
-            "TWOHAND": "Deux mains"
+            "Either": "L'une ou l'autre main",
+            "Mainhand": "Main principale",
+            "Offhand": "Main secondaire",
+            "Twohand": "À deux mains"
         }
     },
     "TOKEN": {
@@ -1699,6 +1691,11 @@
                 "normal.label": "Normal",
                 "fast.label": "Pressé"
             }
+        },
+        "LABELS": {
+            "Enemies": "{enemies} Ennemis",
+            "Engagement": "Engagement {engagement}",
+            "Flanked": "Débordé {flanked}"
         }
     },
     "WARNING.AbilityCannotIncrease": "Vous ne pouvez pas augmenter cette Caractéristique davantage.",
@@ -1844,5 +1841,139 @@
         "Undeath": "Non-mort",
         "Warfare": "Guerre",
         "Weather": "Météo"
-    }
+    },
+    "ABILITIES.GROUPS": {
+        "Power": "Puissance",
+        "Resilience": "Résilience",
+        "Speed": "Vitesse"
+    },
+    "ACTION.EffectSpecific": "Effet : {effect}",
+    "ADVANCEMENT.MilestoneAward": "Attribuer des Échelons",
+    "CONTROLS": {
+        "VisualizeFlanking": "Visualiser le Débordement"
+    },
+    "DEFENSES.TOOLTIPS": {
+        "Fortitude": "{base} + ((Force + Sagesse) / 4)",
+        "Willpower": "{base} + ((Robustesse + Présence) / 4)",
+        "Reflex": "{base} + ((Dextérité + Intellect) / 4)",
+        "Wounds": "{base} + (Lésions / 10)",
+        "Madness": "{base} + (Folie / 10)"
+    },
+    "DICE.Roll": "Lancer",
+    "DICE.REQUESTS": {
+        "AddParty": "Ajouter le Groupe",
+        "ClearRequest": "Effacer la requête",
+        "Request": "Requête",
+        "RequestRolls": "Requête de Lancers"
+    },
+    "BASE_EFFECT": {
+        "FIELDS": {
+            "dot": {
+                "element": {
+                    "amount": {
+                        "hint": "La quantité de dégâts (ou de restauration) qui doit être effectué chaque tour.",
+                        "label": "Quantité"
+                    },
+                    "damageType": {
+                        "label": "Type de dégâts"
+                    },
+                    "resource": {
+                        "hint": "La ressource ciblée par ces dégâts/restauration",
+                        "label": "Ressource"
+                    },
+                    "restoration": {
+                        "label": "Restauration"
+                    }
+                },
+                "label": "Dégâts sur la durée"
+            },
+            "maintenance": {
+                "cost": {
+                    "label": "Coût de maintient"
+                },
+                "label": "Maintient"
+            },
+            "regions": {
+                "hint": "Les régions dépendant de cet effet.",
+                "label": "Régions"
+            },
+            "summons": {
+                "hint": "Les Tokens invoqués dépendent de cet effet.",
+                "label": "Invocations"
+            }
+        }
+    },
+    "FLANKED_EFFECT": {
+        "FIELDS": {
+            "allies": {
+                "label": "Alliés engagés"
+            },
+            "enemies": {
+                "label": "Ennemis engagés"
+            },
+            "flanked": {
+                "label": "Palier de Débordement"
+            }
+        }
+    },
+    "ADVERSARY": {
+        "THREAT_RANKS": {
+            "Minion": "Laquais",
+            "Normal": "Normal",
+            "Elite": "Élite",
+            "Boss": "Chef"
+        }
+    },
+    "ACCESSORY": {
+        "CATEGORIES": {
+            "Clothing": "Vêtements",
+            "Jewelry": "Bijou",
+            "Trinket": "Bibelot",
+            "Other": "Autre"
+        }
+    },
+    "ACTION.TAG_CATEGORIES": {
+        "Attack": "Attaque",
+        "Requirements": "Prérequis",
+        "Context": "Contexte",
+        "Modifiers": "Modificateurs",
+        "Defenses": "Défenses",
+        "Damage": "Dégâts",
+        "Scaling": "Évolution",
+        "Resources": "Ressources",
+        "Skills": "Compétences",
+        "Spellcraft": "Sorcellerie",
+        "Special": "Spécial"
+    },
+    "ATTACK.RESULT_TYPES.Miss": "Manqué",
+    "ATTACK.RESULT_TYPES.Dodge": "Esquive",
+    "ATTACK.RESULT_TYPES.Parry": "Parade",
+    "ATTACK.RESULT_TYPES.Block": "Blocage",
+    "ATTACK.RESULT_TYPES.Armor": "Armure",
+    "ATTACK.RESULT_TYPES.Resist": "Résistance",
+    "ATTACK.RESULT_TYPES.Glance": "Coup superficiel",
+    "ATTACK.RESULT_TYPES.Hit": "Touché",
+    "LANGUAGE_CATEGORIES": {
+        "Nonspoken": "Langues non-parlées",
+        "Spoken": "Langues parlées"
+    },
+    "LANGUAGES": {
+        "Common": "Commun",
+        "Sign": "Langue des signes"
+    },
+    "LOOT": {
+        "CATEGORIES": {
+            "Treasure": "Trésor",
+            "Ingredient": "Ingrédient",
+            "Other": "Divers"
+        }
+    },
+    "TRAVEL_PACES": {
+        "Hidden": "Caché",
+        "Slow": "Prudent",
+        "Normal": "Normal",
+        "Fast": "Pressé",
+        "Reckless": "Téméraire"
+    },
+    "WARNING.CannotEquipTaxonomy": "L'acteur {actor} ne peut pas équiper l'objet \"{item}\" car la taxonomie \"{taxonomy}\" est incapable d'utiliser de l'équipement."
 }

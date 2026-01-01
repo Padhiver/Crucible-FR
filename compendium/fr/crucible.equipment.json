@@ -279,9 +279,9 @@
             }
         },
         "Heater Shield": {
-            "name": "Bouclier chauffant",
+            "name": "Écu",
             "description": {
-                "public": "<p>Baptisé ainsi en raison de sa forme en fer rappelant la base d'un fer à repasser, le bouclier chauffant offre un équilibre entre protection et mobilité.</p>"
+                "public": "<p>Également appelé bouclier chauffant en raison de sa forme en fer rappelant la base d'un fer à repasser, l'écu offre un équilibre entre protection et mobilité.</p>"
             }
         },
         "Heavy Crossbow": {

@@ -323,6 +323,7 @@
 | Push | Rejeter |
 | Quicken | Hâter |
 | Reshape | Remodeler |
+| React | Réagir |
 
 ---
 
@@ -439,7 +440,7 @@
 | Medicine | Médecine |
 | Science | Science |
 | Society | Société |
-| Deception | Tromperie |
+| Deception | Duperie |
 | Diplomacy | Diplomatie |
 | Intimidation | Intimidation |
 | Performance | Performance |
@@ -558,5 +559,7 @@
 | Irradiated | Irradié |
 | Decaying | Putréfié |
 | Shocked | Électrocuté |
+| Mending | Vivifié |
+| Entropy | Dérangé |
 
 ---

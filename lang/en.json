@@ -172,6 +172,38 @@
       "label": "Action Description",
       "hint": "A text description of how the action functions mechanically."
     },
+    "effects": {
+      "element": {
+        "duration": {
+          "label": "Duration",
+          "hint": "Effects with duration in Turns expire at the end of the Actor's turn. Effects with duration in Rounds expire at the beginning of the Actor's turn.",
+          "rounds": {
+            "label": "Rounds"
+          },
+          "turns": {
+            "label": "Turns"
+          }
+        },
+        "name": {
+          "label": "Effect Name"
+        },
+        "result": {
+          "all": {
+            "label": "All"
+          },
+          "label": "Result",
+          "type": {
+            "label": "Type"
+          }
+        },
+        "scope": {
+          "label": "Effect Scope"
+        },
+        "statuses": {
+          "label": "Statuses"
+        }
+      }
+    },
     "tags": {
       "label": "Action Tags",
       "hint": "Add tags which define the requirements, behavior, and modifiers of this action. The order of tags matters as later tags will take priority over earlier ones if they modify the same properties of the action."
@@ -272,6 +304,9 @@
     "ClearedDetailItem": "Removed the {type} from {actor}.",
     "DecreaseAbility": "Decrease Ability Score",
     "DecreaseAbilitySpecific": "Decrease {ability}",
+    "EditMovement": "Edit Movement",
+    "EditSize": "Edit Size",
+    "EditEngagement": "Edit Engagement",
     "IncreaseAbility": "Increase Ability Score",
     "IncreaseAbilitySpecific": "Increase {ability}",
     "LevelUp": "Level Up!",
@@ -328,6 +363,7 @@
     },
     "movement": {
       "size": {
+        "base": "Base Size",
         "label": "Size",
         "tooltip": "The number of grid spaces squared occupied by this creature."
       },
@@ -336,6 +372,7 @@
         "hint": "An additive modifier to the base size of the creature defined by Ancestry or Taxonomy."
       },
       "stride": {
+        "base": "Base Stride",
         "label": "Stride",
         "tooltip": "Movement distance per spent Action Point."
       },
@@ -344,6 +381,7 @@
         "hint": "An additive modifier to Stride speed of the Actor defined by Ancestry or Taxonomy."
       },
       "engagement": {
+        "base": "Base Engagement",
         "label": "Engagement",
         "labelShort": "Engage",
         "tooltip": "Number of Enemies Engaged<br>(Size - 2) + Engagement Bonus"
@@ -625,16 +663,7 @@
 
 "ACTION.EFFECTS": {
   "Add": "Add Effect",
-  "Delete": "Remove Effect",
-  "Duration": "Duration",
-  "DurationHint": "Effects with duration in Turns expire at the end of the Actor's turn. Effects with duration in Rounds expire at the beginning of the Actor's turn.",
-  "DurationRounds": "Rounds",
-  "DurationTurns": "Turns",
-  "Name": "Effect Name",
-  "Result": "Result",
-  "ResultType": "Type",
-  "Scope": "Effect Scope",
-  "Statuses": "Statuses"
+  "Delete": "Remove Effect"
 },
 
 "ACTION.TAG_CATEGORIES": {
@@ -1083,6 +1112,8 @@
 
 "ACTIVE_EFFECT": {
   "ACTIONS": {
+    "New": "New Effect",
+    "Create": "Create Effect",
     "Delete": "Delete Effect",
     "Disable": "Disable Effect",
     "Edit": "Edit Effect",

@@ -34,7 +34,12 @@
             "actions": {
                 "acidSpit": {
                     "name": "Crachat acide",
-                    "description": "<p>La @ref[actor.name]{créature} crache un globe de bile acide sur une cible à moins de 20 pieds.</p><p>Sur un <strong>Coup critique</strong>, cette attaque cause la condition @Condition[corroding] pendant <strong>3 Tours</strong>.</p>"
+                    "description": "<p>La @ref[actor.name]{créature} crache un globe de bile acide sur une cible à moins de 20 pieds.</p><p>Sur un <strong>Coup critique</strong>, cette attaque cause la condition @Condition[corroding] pendant <strong>3 Tours</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Crachat acide"
+                        }
+                    ]
                 }
             }
         },
@@ -44,7 +49,12 @@
             "actions": {
                 "acidSpray": {
                     "name": "Aspersion acide",
-                    "description": "<p>La créature expulse un jet de bile acide dans un cône de 10 pieds.</p><p>Sur un <strong>Coup critique</strong>, cette attaque cause la condition @Condition[corroding] pendant <strong>3 Tours</strong>.</p>"
+                    "description": "<p>La créature expulse un jet de bile acide dans un cône de 10 pieds.</p><p>Sur un <strong>Coup critique</strong>, cette attaque cause la condition @Condition[corroding] pendant <strong>3 Tours</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Aspersion acide"
+                        }
+                    ]
                 }
             }
         },
@@ -131,7 +141,12 @@
             "actions": {
                 "pouncingStrike": {
                     "name": "Frappe bondissante",
-                    "description": "<p>Cette attaque peut être utilisée après un <strong>Déplacement</strong> qui rapproche la @ref[actor.name]{créature} d'au moins 10 pieds de sa cible. Si la créature était au-dessus de la cible, cette attaque gagne <strong>+1 Faveur</strong> par tranche de 10 pieds de diminution d'élévation dans ce mouvement.</p><p>Si cette attaque est un <strong>Coup critique</strong>, la cible de l'attaque est immédiatement mise @Condition[prone].</p>"
+                    "description": "<p>Cette attaque peut être utilisée après un <strong>Déplacement</strong> qui rapproche la @ref[actor.name]{créature} d'au moins 10 pieds de sa cible. Si la créature était au-dessus de la cible, cette attaque gagne <strong>+1 Faveur</strong> par tranche de 10 pieds de diminution d'élévation dans ce mouvement.</p><p>Si cette attaque est un <strong>Coup critique</strong>, la cible de l'attaque est immédiatement mise @Condition[prone].</p>",
+                    "effects": [
+                        {
+                            "name": "Frappe bondissante"
+                        }
+                    ]
                 }
             }
         },
@@ -149,7 +164,12 @@
             "actions": {
                 "rakingTalons": {
                     "name": "Serres lacérantes",
-                    "description": "<p>La @ref[actor.name]{créature} attaque rapidement avec ses deux serres.</p><p>Si au moins une attaque résulte en une <strong>Réussite critique</strong>, elle inflige la condition @Condition[bleeding] pendant <strong>2 Rounds</strong>.</p>"
+                    "description": "<p>La @ref[actor.name]{créature} attaque rapidement avec ses deux serres.</p><p>Si au moins une attaque résulte en une <strong>Réussite critique</strong>, elle inflige la condition @Condition[bleeding] pendant <strong>2 Rounds</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Serres lacérantes"
+                        }
+                    ]
                 }
             }
         },
@@ -159,7 +179,12 @@
             "actions": {
                 "restrainingChomp": {
                     "name": "Morsure entravante",
-                    "description": "<p>La créature mord sa cible. Si l'attaque est réussie et que la cible est de <strong>Taille</strong> égale ou inférieure, la cible est également <strong>Entravée</strong> jusqu'à ce que cette créature choisisse de la relâcher ou que l'entrave soit brisée autrement. Une seule cible peut être entravée par cette action à un moment donné.</p>"
+                    "description": "<p>La créature mord sa cible. Si l'attaque est réussie et que la cible est de <strong>Taille</strong> égale ou inférieure, la cible est également <strong>Entravée</strong> jusqu'à ce que cette créature choisisse de la relâcher ou que l'entrave soit brisée autrement. Une seule cible peut être entravée par cette action à un moment donné.</p>",
+                    "effects": [
+                        {
+                            "name": "Morsure entravante"
+                        }
+                    ]
                 }
             }
         },
@@ -189,7 +214,12 @@
             "actions": {
                 "swoopingStrike": {
                     "name": "Frappe en piqué",
-                    "description": "<p>Cette attaque peut être utilisée après un <strong>Déplacement</strong> avec une descente d'au moins 10 pieds vers la cible. L'attaque gagne <strong>+1 Faveur</strong> par tranche de 10 pieds de diminution d'élévation dans ce déplacement.</p><p>Si cette attaque est un <strong>Coup critique</strong>, la cible de l'attaque est immédiatement mise @Condition[prone].</p>"
+                    "description": "<p>Cette attaque peut être utilisée après un <strong>Déplacement</strong> avec une descente d'au moins 10 pieds vers la cible. L'attaque gagne <strong>+1 Faveur</strong> par tranche de 10 pieds de diminution d'élévation dans ce déplacement.</p><p>Si cette attaque est un <strong>Coup critique</strong>, la cible de l'attaque est immédiatement mise @Condition[prone].</p>",
+                    "effects": [
+                        {
+                            "name": "Frappe en piqué"
+                        }
+                    ]
                 }
             }
         },
@@ -210,7 +240,12 @@
             "actions": {
                 "tuskCharge": {
                     "name": "Charge du sanglier",
-                    "description": "<p>Charge en ligne directe sur une distance égale à la Foulée au maximum pour effectuer une Frappe contre la première créature rencontrée. En cas de succès, la cible est mise À terre.</p>"
+                    "description": "<p>Charge en ligne directe sur une distance égale à la Foulée au maximum pour effectuer une Frappe contre la première créature rencontrée. En cas de succès, la cible est mise À terre.</p>",
+                    "effects": [
+                        {
+                            "name": "Charge du sanglier"
+                        }
+                    ]
                 }
             }
         },
@@ -224,7 +259,12 @@
             "actions": {
                 "venomousBite": {
                     "name": "Morsure venimeuse",
-                    "description": "<p>La @ref[actor.name]{créature} attaque, injecte une toxine qui, en cas de succès, inflige la condition @Condition[poisoned] pendant <strong>6 Tours</strong>.</p>"
+                    "description": "<p>La @ref[actor.name]{créature} attaque, injecte une toxine qui, en cas de succès, inflige la condition @Condition[poisoned] pendant <strong>6 Tours</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Morsure venimeuse"
+                        }
+                    ]
                 }
             }
         },
@@ -256,7 +296,12 @@
             "actions": {
                 "repugnantPustules": {
                     "name": "Pustules répugnantes",
-                    "description": "<p>Lorsque la @ref[actor.name]{créature} est touchée par une <strong>Frappe</strong>, elle peut partiellement éclater pour libérer un jet de fluide écœurant qui inflige des dégâts de <strong>Corruption</strong>. Cette action dépend de la <strong>Robustesse</strong> et cible la défense de <strong>Réflexes</strong> de toute créature à moins de 3 pieds.</p><p>Sur une <strong>Réussite critique</strong>, la cible affectée devient temporairement @Condition[diseased] pendant 3 rounds.</p>"
+                    "description": "<p>Lorsque la @ref[actor.name]{créature} est touchée par une <strong>Frappe</strong>, elle peut partiellement éclater pour libérer un jet de fluide écœurant qui inflige des dégâts de <strong>Corruption</strong>. Cette action dépend de la <strong>Robustesse</strong> et cible la défense de <strong>Réflexes</strong> de toute créature à moins de 3 pieds.</p><p>Sur une <strong>Réussite critique</strong>, la cible affectée devient temporairement @Condition[diseased] pendant 3 rounds.</p>",
+                    "effects": [
+                        {
+                            "name": "Pustules répugnantes"
+                        }
+                    ]
                 }
             }
         },

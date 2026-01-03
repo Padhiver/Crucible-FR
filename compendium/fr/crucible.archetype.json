@@ -11,7 +11,7 @@
     },
     "entries": {
         "Adult Drake": {
-            "name": "Drake Adulte",
+            "name": "Drake adulte",
             "description": "<p>Des drakes pleinement développés qui sont des traqueurs dangereux et des chasseurs de meute.</p>"
         },
         "Archer": {
@@ -87,7 +87,7 @@
             "description": "<p>Les Opérateurs sont des experts pour manœuvrer dans des situations tendues, capables de faire preuve d'un sens politique avisé par une action rusée et décisive.</p>"
         },
         "Pack Member": {
-            "name": "Membre de Meute",
+            "name": "Membre de meute",
             "description": "Bêtes qui chassent en meute."
         },
         "Priest": {
@@ -111,7 +111,7 @@
             "description": "<p>Votre expertise est de voyager à travers le monde et de faciliter l'échange de marchandises.</p>"
         },
         "Tusker": {
-            "name": "Bête à Défenses",
+            "name": "Bête à défenses",
             "description": "<p>Bêtes qui combattent en utilisant leur propre masse, leur élan et leurs défenses aiguisées.</p>"
         },
         "Justiciar": {

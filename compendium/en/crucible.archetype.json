@@ -18,22 +18,6 @@
       "name": "Archer",
       "description": "Ranged combatants with training is the use of bows."
     },
-    "Brigand": {
-      "name": "Brigand",
-      "description": "<p>Villainous lawbreakers whether they be bandits, pirates, ruffians, or other knaves.</p>"
-    },
-    "Commonfolk": {
-      "name": "Commonfolk",
-      "description": "<p>Ordinary citizens of the world who have no exceptional adventuring skills or abilities.</p>"
-    },
-    "Scout": {
-      "name": "Scout",
-      "description": "<p>Individuals trained in reconnaissance and advance exploration of unknown areas.</p>"
-    },
-    "Spellblade": {
-      "name": "Spellblade",
-      "description": "<p>Spellblades are magically empowered warriors who weave spellcraft into their weapon attacks to create devastating strikes.</p>"
-    },
     "Bard": {
       "name": "Bard",
       "description": "<p>You practice the oral and musical traditions of heroic storytelling to inspire courage in your allies, demoralize your foes, and be quick with unconventional solutions to problems.</p>"
@@ -42,9 +26,17 @@
       "name": "Berserker",
       "description": "A rage-fueled warrior which prefers two-handed attacks using Heavy weapons."
     },
+    "Brigand": {
+      "name": "Brigand",
+      "description": "<p>Villainous lawbreakers whether they be bandits, pirates, ruffians, or other knaves.</p>"
+    },
     "Chomper": {
       "name": "Chomper",
       "description": "<p>Beasts that rely on vicious bites from their oversized mouths.</p>"
+    },
+    "Commonfolk": {
+      "name": "Commonfolk",
+      "description": "<p>Ordinary citizens of the world who have no exceptional adventuring skills or abilities.</p>"
     },
     "Drakeling": {
       "name": "Drakeling",
@@ -106,6 +98,10 @@
       "name": "Protector",
       "description": "<p>Stalwart warriors who interpose themselves between their allies and peril, seeking foremost to protect themselves and others from harm.</p>"
     },
+    "Scout": {
+      "name": "Scout",
+      "description": "<p>Individuals trained in reconnaissance and advance exploration of unknown areas.</p>"
+    },
     "Shapeshifter": {
       "name": "Shapeshifter",
       "description": "<p>Shapeshifters practice the arts of bestial transformation, a type of primal magic that is ancient and different than commonly practiced runic spellcraft.</p>"
@@ -113,6 +109,10 @@
     "Skirmisher": {
       "name": "Skirmisher",
       "description": "A relentless and determined melee combatant that uses a mix of agility and power to subdue foes."
+    },
+    "Spellblade": {
+      "name": "Spellblade",
+      "description": "<p>Spellblades are magically empowered warriors who weave spellcraft into their weapon attacks to create devastating strikes.</p>"
     },
     "Thief": {
       "name": "Thief",

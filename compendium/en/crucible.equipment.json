@@ -36,19 +36,6 @@
     "Adventuring Gear": "Adventuring Gear"
   },
   "entries": {
-    "Blast Flask": {
-      "name": "Blast Flask",
-      "description": {
-        "public": "<p>A flask filled with a reddish liquid explodes when it breaks open, creating a small explosive fire that quickly dissipates.</p>",
-        "private": "<p></p><p>Primarily used to break apart large pieces of ore, these alchemical flasks pack a concentrated punch. If combined in a large enough quantity, they can also be used to create a chain reaction that results in larger explosions.</p>"
-      },
-      "actions": {
-        "blastFlask": {
-          "name": "Blast Flask",
-          "description": "<p>You light and throw the @ref[name], dealing <strong>Fire </strong>damage to all enemies in the radius of the explosion. The radius of the <strong>Blast</strong> depends on the quality of the bomb:</p><ul><li><p><strong>Shoddy</strong> - 3 feet</p></li><li><p><strong>Standard</strong> - 4 feet</p></li><li><p><strong>Fine</strong> - 6 feet</p></li><li><p><strong>Superior</strong> - 8 feet</p></li><li><p><strong>Masterwork</strong> - 10 feet</p></li></ul>"
-        }
-      }
-    },
     "Alchemist's Fire": {
       "name": "Alchemist's Fire",
       "description": {
@@ -57,7 +44,12 @@
       "actions": {
         "alchemistsFire": {
           "name": "Alchemist's Fire",
-          "description": "<p>You hurl the @ref[name], dealing <strong>Weakened</strong> immediate damage but causing the @Condition[burning] condition to all enemies in a 4 foot radius <strong>Blast</strong> who fail to avoid the attack.</p><p>The amount of burning damage and its duration is dependent on the quality of the @ref[name]:</p><ul><li><p><strong>Shoddy</strong> - 2 damage for 2 rounds</p></li><li><p><strong>Standard</strong> - 3 damage for 3 rounds</p></li><li><p><strong>Fine</strong> - 4 damage for 4 rounds</p></li><li><p><strong>Superior</strong> - 6 damage for 5 rounds</p></li><li><p><strong>Masterwork</strong> - 8 damage for 6 rounds</p></li></ul>"
+          "description": "<p>You hurl the @ref[name], dealing <strong>Weakened</strong> immediate damage but causing the @Condition[burning] condition to all enemies in a 4 foot radius <strong>Blast</strong> who fail to avoid the attack.</p><p>The amount of burning damage and its duration is dependent on the quality of the @ref[name]:</p><ul><li><p><strong>Shoddy</strong> - 2 damage for 2 rounds</p></li><li><p><strong>Standard</strong> - 3 damage for 3 rounds</p></li><li><p><strong>Fine</strong> - 4 damage for 4 rounds</p></li><li><p><strong>Superior</strong> - 6 damage for 5 rounds</p></li><li><p><strong>Masterwork</strong> - 8 damage for 6 rounds</p></li></ul>",
+          "effects": [
+            {
+              "name": "Alchemist's Fire"
+            }
+          ]
         }
       }
     },
@@ -122,6 +114,19 @@
         "public": "<p>A thick felted wool or fibre cloth with a myriad of uses.</p>"
       }
     },
+    "Blast Flask": {
+      "name": "Blast Flask",
+      "description": {
+        "public": "<p>A flask filled with a reddish liquid explodes when it breaks open, creating a small explosive fire that quickly dissipates.</p>",
+        "private": "<p></p><p>Primarily used to break apart large pieces of ore, these alchemical flasks pack a concentrated punch. If combined in a large enough quantity, they can also be used to create a chain reaction that results in larger explosions.</p>"
+      },
+      "actions": {
+        "blastFlask": {
+          "name": "Blast Flask",
+          "description": "<p>You light and throw the @ref[name], dealing <strong>Fire </strong>damage to all enemies in the radius of the explosion. The radius of the <strong>Blast</strong> depends on the quality of the bomb:</p><ul><li><p><strong>Shoddy</strong> - 3 feet</p></li><li><p><strong>Standard</strong> - 4 feet</p></li><li><p><strong>Fine</strong> - 6 feet</p></li><li><p><strong>Superior</strong> - 8 feet</p></li><li><p><strong>Masterwork</strong> - 10 feet</p></li></ul>"
+        }
+      }
+    },
     "Book": {
       "name": "Book",
       "description": {
@@ -154,7 +159,12 @@
       "actions": {
         "causticPhial": {
           "name": "Caustic Phial",
-          "description": "<p>You fling the @ref[name], dealing <strong>Weakened</strong> immediate damage but causing the @Condition[corroding] condition to all enemies in a 4 foot radius <strong>Blast</strong> who fail to avoid the attack.</p><p>The amount of burning damage and its duration is dependent on the quality of the @ref[name]:</p><ul><li><p><strong>Shoddy</strong> - 2 damage for 2 rounds</p></li><li><p><strong>Standard</strong> - 3 damage for 3 rounds</p></li><li><p><strong>Fine</strong> - 4 damage for 4 rounds</p></li><li><p><strong>Superior</strong> - 6 damage for 5 rounds</p></li><li><p><strong>Masterwork</strong> - 8 damage for 6 rounds</p></li></ul>"
+          "description": "<p>You fling the @ref[name], dealing <strong>Weakened</strong> immediate damage but causing the @Condition[corroding] condition to all enemies in a 4 foot radius <strong>Blast</strong> who fail to avoid the attack.</p><p>The amount of burning damage and its duration is dependent on the quality of the @ref[name]:</p><ul><li><p><strong>Shoddy</strong> - 2 damage for 2 rounds</p></li><li><p><strong>Standard</strong> - 3 damage for 3 rounds</p></li><li><p><strong>Fine</strong> - 4 damage for 4 rounds</p></li><li><p><strong>Superior</strong> - 6 damage for 5 rounds</p></li><li><p><strong>Masterwork</strong> - 8 damage for 6 rounds</p></li></ul>",
+          "effects": [
+            {
+              "name": "Caustic Phial"
+            }
+          ]
         }
       }
     },
@@ -218,16 +228,16 @@
         "public": "<p>A shirt, pair of pants, undergarments, socks and shoes or boots suitable for menial labour or travel, cannot be worn with armor.</p>"
       }
     },
-    "Cooking Oil": {
-      "name": "Cooking Oil",
-      "description": {
-        "public": "<p>A leather-wrapped glass or clay flask containing vegetable oil suitable for use in cooking.</p>"
-      }
-    },
     "Cook's Toolkit": {
       "name": "Cook's Toolkit",
       "description": {
         "public": "<p>An iron pot with a fastenable lid, a broad knife, and wooden utensils designed to be stowed inside during travel, leaving room for a leather ingredients pouch for storing grains, a vial of cooking oil, spices or salt, and other small foodstuffs securely.</p>"
+      }
+    },
+    "Cooking Oil": {
+      "name": "Cooking Oil",
+      "description": {
+        "public": "<p>A leather-wrapped glass or clay flask containing vegetable oil suitable for use in cooking.</p>"
       }
     },
     "Crowbar": {
@@ -424,7 +434,12 @@
       "actions": {
         "healingTonic": {
           "name": "Healing Tonic",
-          "description": "<p>Immediately, and at the beginning of each of the next 5 <strong>Rounds</strong>, recover an amount of <strong>Health</strong> dependent on the quality of the tonic.</p><ul><li><p><strong>Shoddy</strong> - Heals 2 <strong>Health</strong> each Round</p></li><li><p><strong>Standard</strong> - Heals 4 <strong>Health </strong>each Round</p></li><li><p><strong>Fine </strong>- Heals 8 <strong>Health </strong>each Round</p></li><li><p><strong>Superior</strong> - Heals 16 <strong>Health </strong>each Round</p></li><li><p><strong>Masterwork</strong> - Heals 32 <strong>Health </strong>each Round</p></li></ul>"
+          "description": "<p>Immediately, and at the beginning of each of the next 5 <strong>Rounds</strong>, recover an amount of <strong>Health</strong> dependent on the quality of the tonic.</p><ul><li><p><strong>Shoddy</strong> - Heals 2 <strong>Health</strong> each Round</p></li><li><p><strong>Standard</strong> - Heals 4 <strong>Health </strong>each Round</p></li><li><p><strong>Fine </strong>- Heals 8 <strong>Health </strong>each Round</p></li><li><p><strong>Superior</strong> - Heals 16 <strong>Health </strong>each Round</p></li><li><p><strong>Masterwork</strong> - Heals 32 <strong>Health </strong>each Round</p></li></ul>",
+          "effects": [
+            {
+              "name": "Healing Tonic"
+            }
+          ]
         }
       }
     },
@@ -600,7 +615,12 @@
       "actions": {
         "poisonIngest": {
           "name": "Ingest Poison",
-          "description": "<p>When this toxin is ingested or otherwise enters the bloodstream of a creature, it is initially <strong>Harmless</strong>, but the target must defend an attack against its <strong>Fortitude</strong> or become @Condition[poisoned].</p><p>The amount of poison damage and its duration is dependent on the quality of the @ref[name]:</p><ul><li><p><strong>Shoddy</strong> - 2 damage for 4 rounds</p></li><li><p><strong>Standard</strong> - 4 damage for 6 rounds</p></li><li><p><strong>Fine</strong> - 6 damage for 8 rounds</p></li><li><p><strong>Superior</strong> - 8 damage for 10 rounds</p></li><li><p><strong>Masterwork</strong> - 10 damage for 12 rounds</p></li></ul><p><em>This action should be used when the poison is ingested rather than when it is first applied.</em></p>"
+          "description": "<p>When this toxin is ingested or otherwise enters the bloodstream of a creature, it is initially <strong>Harmless</strong>, but the target must defend an attack against its <strong>Fortitude</strong> or become @Condition[poisoned].</p><p>The amount of poison damage and its duration is dependent on the quality of the @ref[name]:</p><ul><li><p><strong>Shoddy</strong> - 2 damage for 4 rounds</p></li><li><p><strong>Standard</strong> - 4 damage for 6 rounds</p></li><li><p><strong>Fine</strong> - 6 damage for 8 rounds</p></li><li><p><strong>Superior</strong> - 8 damage for 10 rounds</p></li><li><p><strong>Masterwork</strong> - 10 damage for 12 rounds</p></li></ul><p><em>This action should be used when the poison is ingested rather than when it is first applied.</em></p>",
+          "effects": [
+            {
+              "name": "Poisoned"
+            }
+          ]
         },
         "poisonApply": {
           "name": "Apply Poison",
@@ -618,12 +638,6 @@
       "name": "Primordial Seed",
       "description": {
         "public": "<p>This talisman, favored by druidic adherants attuned to the power of the land, aids in the practice of spellcraft or can be used in combat to direct a gout of poisonous spores towards an enemy.</p>"
-      }
-    },
-    "Prybar": {
-      "name": "Prybar",
-      "description": {
-        "public": "<p>A solid metal rod with a flat end and a hooked end designed to give its wielder leverage to pry.</p>"
       }
     },
     "Quarterstaff": {
@@ -652,7 +666,12 @@
       "actions": {
         "rallyingTonic": {
           "name": "Rallying Tonic",
-          "description": "<p>Immediately, and at the beginning of each of the next 5 <strong>Rounds</strong>, recover an amount of <strong>Morale</strong> dependent on the quality of the tonic.</p><ul><li><p><strong>Shoddy</strong> - Heals 2 <strong>Morale</strong> each Round</p></li><li><p><strong>Standard</strong> - Heals 4 <strong>Morale</strong> each Round</p></li><li><p><strong>Fine </strong>- Heals 8 <strong>Morale </strong>each Round</p></li><li><p><strong>Superior</strong> - Heals 16 <strong>Morale</strong> each Round</p></li><li><p><strong>Masterwork</strong> - Heals 32 <strong>Morale</strong> each Round</p></li></ul>"
+          "description": "<p>Immediately, and at the beginning of each of the next 5 <strong>Rounds</strong>, recover an amount of <strong>Morale</strong> dependent on the quality of the tonic.</p><ul><li><p><strong>Shoddy</strong> - Heals 2 <strong>Morale</strong> each Round</p></li><li><p><strong>Standard</strong> - Heals 4 <strong>Morale</strong> each Round</p></li><li><p><strong>Fine </strong>- Heals 8 <strong>Morale </strong>each Round</p></li><li><p><strong>Superior</strong> - Heals 16 <strong>Morale</strong> each Round</p></li><li><p><strong>Masterwork</strong> - Heals 32 <strong>Morale</strong> each Round</p></li></ul>",
+          "effects": [
+            {
+              "name": "Rallying Tonic"
+            }
+          ]
         }
       }
     },

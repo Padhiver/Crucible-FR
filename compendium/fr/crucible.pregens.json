@@ -101,15 +101,11 @@
                 },
                 "Light Weapon Training": {
                     "name": "Armes légères : Entraînement",
-                    "description": "<p>Vous avez une éducation de base dans l'utilisation de l'armement de finesse. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes des catégories <strong>Légère</strong> et <strong>Équilibrée</strong>.</p>"
-                },
-                "Lunge": {
-                    "name": "Fente",
-                    "description": "Vous vous élancez agilement vers l'avant, effectuant une frappe avec une rapidité soudaine et inattendue.",
+                    "description": "<p>Vous savez manier les armes légères avec fluidité, une grande maniabilité et une grâce remarquable au combat. Vous êtes <strong>Formé</strong> avec toutes les armes des catégories <strong>Légère</strong> et <strong>Équilibrée</strong>.</p>",
                     "actions": {
                         "lunge": {
                             "name": "Fente",
-                            "description": "<p>Vous <strong>Frappez</strong> avec l'arme de votre main principale contre un unique ennemi à une porté augmentée de <strong>+2 pieds</strong>. L'attaque est <strong>Difficile</strong>, mais vous ne vous déplacez pas de votre position actuelle et cette attaque ne provoque aucun Désengagement.</p>"
+                            "description": "<p>Vous vous élancez avec agilité, portant un coup d'une rapidité soudaine et inattendue pour effectuer une <strong>Frappe</strong> avec une arme de <strong>Finesse</strong> contre une cible unique, à une portée accrue de <strong>+2 feet</strong>.</p><p>L'attaque est <strong>Difficile</strong>, mais vous ne quittez pas votre position actuelle et elle ne provoque pas de Désengagement.</p>"
                         }
                     }
                 },
@@ -340,7 +336,13 @@
                 },
                 "Projectile Weapon Training": {
                     "name": "Armes de projectile : Entraînement",
-                    "description": "<p>Vous avez une éducation de base en archerie et autres armes à projectile. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes des catégories <strong>Projectile</strong>.</p>"
+                    "description": "<p>Vous avez une éducation de base en archerie et autres armes à projectile. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes des catégories <strong>Projectile</strong>.</p>",
+                    "actions": {
+                        "quickDraw": {
+                            "name": "Dégainage rapide",
+                            "description": "<p>Vous pouvez décocher un tir sous pression, mais avec une précision réduite. Vous effectuez une <strong>Frappe</strong> qui est <strong>Difficile</strong>, mais dont le coût en Action est réduit.</p>"
+                        }
+                    }
                 },
                 "Precision Shot": {
                     "name": "Tir de précision",
@@ -376,7 +378,7 @@
                 },
                 "Mark Prey": {
                     "name": "Marquer la proie",
-                    "description": "Vous tirez un coup spécial qui inflige des dégâts réduits, mais explose en poudre lumineuse marquant clairement votre cible.",
+                    "description": "<p>Vous tirez un coup spécial qui n'inflige pas de dégâts, mais explose en poudre lumineuse marquant clairement votre cible.</p>",
                     "actions": {
                         "markPrey": {
                             "name": "Marquer la proie",
@@ -510,16 +512,6 @@
                     "name": "Cadence",
                     "description": "<p>Vous êtes entraîné à effectuer des séquences d'attaques de mêlée avec une précision rythmique. Lorsque vous <strong>Frappez</strong> plusieurs fois de suite en utilisant une arme de mêlée à une main, vous gagnez une <strong>+1 Faveur</strong> cumulative pour chaque attaque successive.</p><p></p>"
                 },
-                "Heavy Strike": {
-                    "name": "Frappe lourde",
-                    "description": "<p>Vous savez comment utiliser une arme lourde pour délivrer des coups punitifs, mettant toute votre force derrière chaque balancement.</p>",
-                    "actions": {
-                        "heavyStrike": {
-                            "name": "Frappe lourde",
-                            "description": "<p>Vous libérez une <strong>Frappe</strong> puissante avec l'arme de votre main principale. L'attaque est plus lente à exécuter, mais est <strong>Améliorée</strong> pour délivrer des dégâts supplémentaires.</p>"
-                        }
-                    }
-                },
                 "Athletics Novice": {
                     "name": "Athlétisme : Novice",
                     "description": "<p>Vous avez reçu une formation en athlétisme de base. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Athlétisme</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez si une surface peut supporter votre poids, comment trouver des prises en escaladant, et comment répartir votre poids pour flotter en nageant. Vous savez courir sur la distance et comment vous rythmer pour éviter l'épuisement.</p>"
@@ -530,7 +522,13 @@
                 },
                 "Heavy Weapon Training": {
                     "name": "Armes lourdes : Entraînement",
-                    "description": "<p>Vous avez une éducation de base dans l'utilisation de l'armement martial. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes des catégories <strong>Lourde</strong> ou <strong>Équilibrée</strong>.</p>"
+                    "description": "<p>Vous savez utiliser une arme lourde pour porter des coups dévastateurs, en mettant toute votre force dans chaque mouvement. Vous êtes <strong>Formé</strong> avec toutes les armes des catégories <strong>Lourdes</strong> et <strong>Équilibrées</strong>.</p>",
+                    "actions": {
+                        "heavyStrike": {
+                            "name": "Frappe lourde",
+                            "description": "<p>Vous libérez une <strong>Frappe</strong> puissante avec l'arme de votre main principale. L'attaque est plus lente à exécuter, mais est <strong>Améliorée</strong> pour délivrer des dégâts supplémentaires.</p>"
+                        }
+                    }
                 },
                 "Gesture: Arrow": {
                     "name": "Signe : Flèche",
@@ -689,7 +687,13 @@
                 },
                 "Talisman Weapon Training": {
                     "name": "Talismans : Entraînement",
-                    "description": "<p>Vous avez une éducation de base dans l'utilisation des talismans, orbes, focalisateurs ou autres armes similaires. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes de la catégorie <strong>Talisman</strong>.</p>"
+                    "description": "<p>Vous comprenez l’utilisation ésotérique des talismans, des orbes, des focalisateurs ou d’autres instruments similaires pour canaliser ou renforcer l’art de la magie. Vous êtes <strong>Formé</strong> avec des armes appartenant aux catégories <strong>Talisman</strong>.</p>",
+                    "actions": {
+                        "refocus": {
+                            "name": "Canalisation",
+                            "description": "<p>Vous utilisez votre talisman équipé pour tenter de récupérer du <strong>Focus</strong>. Vous effectuez une <strong>Frappe inoffensive</strong> contre votre propre seuil de <strong>Ralliement</strong>.</p><p>En cas de réussite, vous récupérez <strong>+1 Focus</strong> si vous utilisez un talisman à une main et <strong>+2 Focus</strong> si vous utilisez un talisman à deux mains. En cas de réussite critique, la quantité de Focus récupérée augmente de +1.</p>"
+                        }
+                    }
                 },
                 "Gesture: Ray": {
                     "name": "Signe : Rayon",
@@ -725,7 +729,7 @@
                     "actions": {
                         "fontOfLife": {
                             "name": "Fonts de vie",
-                            "description": "<p>Vous faites naître une aura magique donneuse de vie. Immédiatement après l'activation et au début de votre tour pour une duré de <strong>3 Rounds</strong>, chaque allié dans un rayon de 20 pieds est soigné d'un montant égal à votre score de <strong>Sagesse</strong>.</p>",
+                            "description": "<p>Vous faites naître une aura magique donneuse de vie. Immédiatement après l'activation et au début de votre tour pour une duré de <strong>3 Rounds</strong>, chaque allié dans un rayon de 20 pieds est soigné d'un montant égal à votre score de <strong>Sagesse</strong>.</p><p><strong>En cours de développement : Cette action est actuellement considérée comme une zone d'effet, conférant des soins progressifs aux cibles dans la portée initiale. Lorsque les auras seront automatisées par le système dans Foundry VTT version 14, l'implémentation mécanique de cette action correspondra à la description.</strong></p>",
                             "effects": [
                                 {
                                     "name": "Fonts de vie"
@@ -890,7 +894,18 @@
                 },
                 "Unarmed Combat Training": {
                     "name": "Combat à mains nues : Entraînement",
-                    "description": "<p>Vous avez une éducation de base dans le combat au corps à corps et autres arts martiaux. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes de la catégorie <strong>Mains nues</strong>.</p>"
+                    "description": "<p>Vous connaissez les arts martiaux de base et le combat au corps à corps. Vous savez comment maîtriser ou contraindre vos adversaires en utilisant votre force physique. Vous êtes <strong>Formé</strong> au maniement des armes dans la catégorie <strong>Mains nues</strong>.</p>",
+                    "actions": {
+                        "grapple": {
+                            "name": "Agripper",
+                            "description": "<p>Vous tentez de maîtriser physiquement un adversaire. Effectuez une attaque de compétence d'<strong>Athlétisme</strong> contre une cible adjacente. En cas de réussite, vous et votre cible êtes tous deux @Condition[restrained] pendant 1 Round.</p>",
+                            "effects": [
+                                {
+                                    "name": "Agrippé"
+                                }
+                            ]
+                        }
+                    }
                 },
                 "Powerful Physique": {
                     "name": "Physique puissant",
@@ -915,24 +930,6 @@
                 "Strong Grip": {
                     "name": "Prise solide",
                     "description": "Votre prise sur votre armement est ferme et inflexible. Vous pouvez effectuer des Actions qui nécessitent une main libre tout en maniant une arme à deux mains. Les tentatives pour vous Désarmer sont faites avec +2 Fléaux."
-                },
-                "Wrestler": {
-                    "name": "Lutteur",
-                    "description": "Vous êtes capable de soumettre des adversaires en utilisant votre Force physique.",
-                    "actions": {
-                        "grapple": {
-                            "name": "Saisir",
-                            "description": "<p>Effectuez une attaque de compétence d'<strong>Athlétisme</strong> contre une cible adjacente. sur un succès, votre cible et vous-même êtes Entravés pendant 1 Round.</p>",
-                            "effects": [
-                                {
-                                    "name": "Saisir"
-                                },
-                                {
-                                    "name": "Saisir"
-                                }
-                            ]
-                        }
-                    }
                 },
                 "Blood Frenzy": {
                     "name": "Frénésie sanguinaire",
@@ -996,7 +993,13 @@
                 },
                 "Heavy Weapon Training": {
                     "name": "Armes lourdes : Entraînement",
-                    "description": "<p>Vous avez une éducation de base dans l'utilisation de l'armement martial. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes des catégories <strong>Lourde</strong> ou <strong>Équilibrée</strong>.</p>"
+                    "description": "<p>Vous savez utiliser une arme lourde pour porter des coups dévastateurs, en mettant toute votre force dans chaque mouvement. Vous êtes <strong>Formé</strong> avec toutes les armes des catégories <strong>Lourdes</strong> et <strong>Équilibrées</strong>.</p>",
+                    "actions": {
+                        "heavyStrike": {
+                            "name": "Frappe lourde",
+                            "description": "<p>Vous libérez une <strong>Frappe</strong> puissante avec l'arme de votre main principale. L'attaque est plus lente à exécuter, mais est <strong>Améliorée</strong> pour délivrer des dégâts supplémentaires.</p>"
+                        }
+                    }
                 },
                 "Heavy Weapon Proficiency": {
                     "name": "Armes lourdes : Maîtrise",
@@ -1024,6 +1027,21 @@
                     "name": "Stylet",
                     "description": {
                         "public": "<p>Fin, effilé et conçu pour percer, le stylet est une arme de tueur — pensé pour se glisser entre les côtes ou dans les interstices d'une armure et ne laisser quasiment aucune trace.</p>"
+                    }
+                },
+                "Adrenaline Surge": {
+                    "name": "Poussée d'adrénaline",
+                    "description": "<p>Vous pouvez puiser dans des réserves exceptionnelles de force physique pour relever les défis imposés à votre corps.</p>",
+                    "actions": {
+                        "adrenalineSurge": {
+                            "name": "Poussée d'adrénaline",
+                            "description": "<p>Vous dépensez de l'<strong>Héroïsme</strong> et bénéficiez de <strong>+2 Faveurs</strong> à toute action dont les dégâts sont basés sur la Force pendant 3 rounds. Vous pouvez effectuer cette action en dehors de votre tour en combat avant d'effectuer une <strong>Réaction</strong>.</p>",
+                            "effects": [
+                                {
+                                    "name": "Poussée d'adrénaline"
+                                }
+                            ]
+                        }
                     }
                 }
             },
@@ -1125,7 +1143,13 @@
                 },
                 "Mechanical Weapon Training": {
                     "name": "Armes mécaniques : Entraînement",
-                    "description": "<p>Vous avez une éducation de base dans les arbalètes, armes à feu et autres armes mécaniques. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes de la catégorie <strong>Mécanique</strong>.</p>"
+                    "description": "<p>Vous connaissez bien la conception et l'utilisation des arbalètes, des armes à feu et autres armements similaires. Vous êtes <strong>Formé</strong> au maniement des armes de la catégorie <strong>Mécanique</strong>.</p>",
+                    "actions": {
+                        "rapidReload": {
+                            "name": "Rechargement rapide",
+                            "description": "<p>Vous vous concentrez intensément et calmez vos nerfs pour <strong>Recharger</strong> rapidement votre arme mécanique avec une rapidité exceptionnelle.</p>"
+                        }
+                    }
                 },
                 "Rune: Kinesis": {
                     "name": "Rune : Kinésie",
@@ -1136,10 +1160,6 @@
                             "description": "<p>Votre maîtrise de la Rune de Kinésie vous permet d'exercer un contrôle local sur les forces gravitationnelles pour effectuer des manipulations télékinésiques de base, produisant l'un des effets suivants :</p><ul><li><p>Tirer vers vous un objet non fixé, d'un poids n'excédant pas 1 livre, situé à moins de 15 pieds et l'attraper. Un objet équipé ou possédé par une créature n'est jamais considéré comme non fixé, à moins que la créature soit disposée à le libérer.</p></li><li><p>Projeter un objet que vous tenez et dont le poids ne dépasse pas 1 livre vers une cible située à une distance maximale de 30 pieds. L'objet vole infailliblement en ligne droite vers cette cible à une vitesse modérée. Toute créature se trouvant sur la trajectoire de l'objet peut réagir pour l'attraper si elle a une main libre pour le faire.</p></li><li><p>Faire léviter un objet ou une créature consentante que vous touchez dont le poids est inférieur ou égal à 10 fois votre <strong>Presence</strong>, modifiant sa position jusqu'à 20 pieds dans n'importe quelle direction par rapport à son emplacement d'origine. Vous pouvez maintenir cette lévitation indéfiniment tant que vous ne faites pas d'autre Action et n'êtes pas @Condition[incapacitated].</p></li></ul><p>Propulser ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement à moins que cela ne soit autrement spécifié. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
                         }
                     }
-                },
-                "Irrepressible Spirit": {
-                    "name": "Esprit irrépressible",
-                    "description": "Votre ténacité vous donne un esprit irrépressible qui résiste à l'apparition du désespoir. Au début de votre tour, si vous n'êtes pas Démoralisé, vous gagnez 1 de Moral."
                 },
                 "Tactician": {
                     "name": "Tacticien",
@@ -1161,10 +1181,6 @@
                         }
                     }
                 },
-                "Mental Fortress": {
-                    "name": "Forteresse mentale",
-                    "description": "<p>Votre forte volonté vous rend extrêmement difficile à influencer. Vous gagnez +1 à votre défense de <strong>Volonté</strong> et +5 de résistance aux dégâts <strong>Psychiques</strong>.</p>"
-                },
                 "Rune: Frost": {
                     "name": "Rune : Givre",
                     "description": "<p>La force ordonnée de l'eau et du froid. La Rune de Givre gouverne la création d'eau ou d'autres fluides et leur transfert entre les états liquide et gelé.</p><p>La Rune de Givre évolue avec la <strong>Sagesse</strong>, cible la <strong>Fortitude</strong>, et inflige des dégâts de <strong>Froid</strong> à la <strong>Santé</strong>. Elle est opposée par la rune chaotique de <strong>Flamme</strong>.</p>",
@@ -1172,16 +1188,6 @@
                         "condense": {
                             "name": "Condenser",
                             "description": "<p>Votre maîtrise de la Rune de Givre vous permet de manipuler les liquides et leurs propriétés thermales, produisant l'un des effets suivants :</p><ul><li><p>Aspirer jusqu'à un litre d'eau douce de l'atmosphère dans un récipient ou sur une surface que vous touchez. L'eau créée peut être affectée par les propriétés atmosphériques dépendantes de votre emplacement actuel.</p></li><li><p>Modifier la température d'un volume d'eau allant jusqu'à 1 gallon, provoquant un gel ou un dégel immédiat. L'eau n'a pas besoin d'être dans un récipient ; Cette technique peut être utilisée pour recouvrir une surface ou assembler deux objets par congélation. La glace ainsi créée reste gelée aussi longtemps que la température ambiante le permet.</p></li><li><p>Ramasser un cube de neige de six pied d'arrête environ pour en faire une sculpture, une forme ou un abri solidifié.</p></li></ul><p>Condenser ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
-                        }
-                    }
-                },
-                "Rune: Control": {
-                    "name": "Rune : Contrôle",
-                    "description": "<p>La force ordonnée de la discipline et de la permanence. La Rune de Contrôle gouverne la pensée, la raison et la persistance.</p><p>La Rune de Contrôle évolue avec l'<strong>Intellect</strong>, cible la <strong>Volonté</strong>, et inflige des dégâts <strong>Psychiques</strong> au <strong>Moral</strong>. Elle est opposée par la rune chaotique de <strong>Kinésie</strong>.</p>",
-                    "actions": {
-                        "motivate": {
-                            "name": "Motiver",
-                            "description": "<p>Votre maîtrise de la Rune de Contrôle vous permet d'affecter la prise de décision des autres d'une manière fondamentale, produisant l'un des effets suivants :</p><ul><li><p>Intensifier ou atténuer modérément l'émotion principale ressentie par une créature que vous touchez. Si la créature est suffisamment intelligente pour connaître les lois régissant la sorcellerie, elle a conscience de vos actions.</p></li><li><p>Comprendre les motivations abstraites d'une autre créature vivante qui vous permet de la toucher. Vous êtes capable de deviner ses objectifs immédiats exprimés sous la forme d'un seul verbe.</p></li><li><p>Vous concentrer intensément sur votre objectif actuel et les moyens de l'atteindre. Vous recevez un bref indice ou un rappel de la part du Maître du jeu concernant cet objectif, ne contenant que des informations que vous avez déjà apprises.</p></li></ul><p>Motiver ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
                         }
                     }
                 },
@@ -1202,6 +1208,16 @@
                 "Mesmer": {
                     "name": "Envoûteur",
                     "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Illusion. Les sorts utilisant cette Rune causent la condition @Condition[confused] sur les Coups critiques.</p><p>L'effet Confus dure <strong>1 Round</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts <strong>Psychiques</strong> au <strong>Moral</strong>, et applique la condition @Condition[disoriented].</p>"
+                },
+                "Talisman Weapon Training": {
+                    "name": "Talismans : Entraînement",
+                    "description": "<p>Vous comprenez l’utilisation ésotérique des talismans, des orbes, des focalisateurs ou d’autres instruments similaires pour canaliser ou renforcer l’art de la magie. Vous êtes <strong>Formé</strong> avec des armes appartenant aux catégories <strong>Talisman</strong>.</p>",
+                    "actions": {
+                        "refocus": {
+                            "name": "Canalisation",
+                            "description": "<p>Vous utilisez votre talisman équipé pour tenter de récupérer du <strong>Focus</strong>. Vous effectuez une <strong>Frappe inoffensive</strong> contre votre propre seuil de <strong>Ralliement</strong>.</p><p>En cas de réussite, vous récupérez <strong>+1 Focus</strong> si vous utilisez un talisman à une main et <strong>+2 Focus</strong> si vous utilisez un talisman à deux mains. En cas de réussite critique, la quantité de Focus récupérée augmente de +1.</p>"
+                        }
+                    }
                 }
             },
             "ancestry": {
@@ -1282,7 +1298,18 @@
                 },
                 "Unarmed Combat Training": {
                     "name": "Combat à mains nues : Entraînement",
-                    "description": "<p>Vous avez une éducation de base dans le combat au corps à corps et autres arts martiaux. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes de la catégorie <strong>Mains nues</strong>.</p>"
+                    "description": "<p>Vous connaissez les arts martiaux de base et le combat au corps à corps. Vous savez comment maîtriser ou contraindre vos adversaires en utilisant votre force physique. Vous êtes <strong>Formé</strong> au maniement des armes dans la catégorie <strong>Mains nues</strong>.</p>",
+                    "actions": {
+                        "grapple": {
+                            "name": "Agripper",
+                            "description": "<p>Vous tentez de maîtriser physiquement un adversaire. Effectuez une attaque de compétence d'<strong>Athlétisme</strong> contre une cible adjacente. En cas de réussite, vous et votre cible êtes tous deux @Condition[restrained] pendant 1 Round.</p>",
+                            "effects": [
+                                {
+                                    "name": "Agrippé"
+                                }
+                            ]
+                        }
+                    }
                 },
                 "Intercept": {
                     "name": "Intercepter",
@@ -1383,7 +1410,13 @@
                 },
                 "Heavy Weapon Training": {
                     "name": "Armes lourdes : Entraînement",
-                    "description": "<p>Vous avez une éducation de base dans l'utilisation de l'armement martial. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes des catégories <strong>Lourde</strong> ou <strong>Équilibrée</strong>.</p>"
+                    "description": "<p>Vous savez utiliser une arme lourde pour porter des coups dévastateurs, en mettant toute votre force dans chaque mouvement. Vous êtes <strong>Formé</strong> avec toutes les armes des catégories <strong>Lourdes</strong> et <strong>Équilibrées</strong>.</p>",
+                    "actions": {
+                        "heavyStrike": {
+                            "name": "Frappe lourde",
+                            "description": "<p>Vous libérez une <strong>Frappe</strong> puissante avec l'arme de votre main principale. L'attaque est plus lente à exécuter, mais est <strong>Améliorée</strong> pour délivrer des dégâts supplémentaires.</p>"
+                        }
+                    }
                 },
                 "Athletics Novice": {
                     "name": "Athlétisme : Novice",
@@ -1395,7 +1428,18 @@
                 },
                 "Shield Combat Training": {
                     "name": "Combat au bouclier : Entraînement",
-                    "description": "<p>Vous avez une éducation de base dans l'usage des boucliers au combat. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes de la catégorie <strong>Bouclier</strong>.</p>"
+                    "description": "<p>Vous maîtrisez le combat au bouclier, l'utilisant pour percuter et déséquilibrer vos ennemis. Vous êtes <strong>Formé</strong> au maniement des armes de la catégorie <strong>Bouclier</strong>.</p>",
+                    "actions": {
+                        "shieldBash": {
+                            "description": "<p>Après une Frappe de base avec votre arme principale, vous <strong>Frappez</strong> avec votre bouclier, infligeant la condition @Condition[staggered] pendant un Round.</p>",
+                            "name": "Coup de bouclier",
+                            "effects": [
+                                {
+                                    "name": "Coup de bouclier"
+                                }
+                            ]
+                        }
+                    }
                 },
                 "Shield Combat Proficiency": {
                     "name": "Combat au bouclier : Maîtrise",
@@ -1500,7 +1544,13 @@
                 },
                 "Light Weapon Training": {
                     "name": "Armes légères : Entraînement",
-                    "description": "<p>Vous avez une éducation de base dans l'utilisation de l'armement de finesse. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes des catégories <strong>Légère</strong> et <strong>Équilibrée</strong>.</p>"
+                    "description": "<p>Vous savez manier les armes légères avec fluidité, une grande maniabilité et une grâce remarquable au combat. Vous êtes <strong>Formé</strong> avec toutes les armes des catégories <strong>Légère</strong> et <strong>Équilibrée</strong>.</p>",
+                    "actions": {
+                        "lunge": {
+                            "name": "Fente",
+                            "description": "<p>Vous vous élancez avec agilité, portant un coup d'une rapidité soudaine et inattendue pour effectuer une <strong>Frappe</strong> avec une arme de <strong>Finesse</strong> contre une cible unique, à une portée accrue de <strong>+2 feet</strong>.</p><p>L'attaque est <strong>Difficile</strong>, mais vous ne quittez pas votre position actuelle et elle ne provoque pas de Désengagement.</p>"
+                        }
+                    }
                 },
                 "Arcana Novice": {
                     "name": "Arcanes : Novice",

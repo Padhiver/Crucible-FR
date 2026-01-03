@@ -28,7 +28,12 @@
             "actions": {
                 "dawnBeacon": {
                     "name": "Balise de l'Aube",
-                    "description": "<p>Vous créez un pilier de lumière magique centré sur votre position actuelle qui crée un cylindre de lumière générant 30 pieds de lumière vive et 30 pieds supplémentaires de lumière tamisée. Le pilier reste en place pendant 6 rounds ou jusqu'à ce qu'il soit dissipé.</p><p>Cette lumière magique contrecarre les ténèbres magiques et détruit toute source de ténèbres magiques dont l'origine est contenue dans sa zone.</p><p>Les ennemis dans la zone lorsque la lumière est créée pour la première fois doivent résister à une attaque contre leur <strong>Fortitude</strong> ou être @Condition[blinded] pendant un round.</p><p><strong>WIP : Ce sort ne crée pas encore automatiquement une source de lumière, ce qui doit être fait manuellement pour le moment. Cela sera éventuellement automatisé en utilisant une nouvelle capacité de Foundry VTT version 14 pour le placement de gabarit.</strong></p>"
+                    "description": "<p>Vous créez un pilier de lumière magique centré sur votre position actuelle qui crée un cylindre de lumière générant 30 pieds de lumière vive et 30 pieds supplémentaires de lumière tamisée. Le pilier reste en place pendant 6 rounds ou jusqu'à ce qu'il soit dissipé.</p><p>Cette lumière magique contrecarre les ténèbres magiques et détruit toute source de ténèbres magiques dont l'origine est contenue dans sa zone.</p><p>Les ennemis dans la zone lorsque la lumière est créée pour la première fois doivent résister à une attaque contre leur <strong>Fortitude</strong> ou être @Condition[blinded] pendant un round.</p><p><strong>WIP : Ce sort ne crée pas encore automatiquement une source de lumière, ce qui doit être fait manuellement pour le moment. Cela sera éventuellement automatisé en utilisant une nouvelle capacité de Foundry VTT version 14 pour le placement de gabarit.</strong></p>",
+                    "effects": [
+                        {
+                            "name": "Balise de l'Aube"
+                        }
+                    ]
                 }
             }
         },
@@ -48,7 +53,12 @@
             "actions": {
                 "protectiveMirage": {
                     "name": "Mirage Protecteur",
-                    "description": "<p>Vous vous entourez de trois duplicatas illusoires qui durent jusqu'à 10 Rounds. Toute <strong>Frappe</strong> entrante contre vous est faite avec un nombre de <strong>Fléaux</strong> égal à deux fois votre nombre de duplicatas restants. Chaque fois qu'une Frappe vous manque, un de vos duplicatas disparaît.</p>"
+                    "description": "<p>Vous vous entourez de trois duplicatas illusoires qui durent jusqu'à 10 Rounds. Toute <strong>Frappe</strong> entrante contre vous est faite avec un nombre de <strong>Fléaux</strong> égal à deux fois votre nombre de duplicatas restants. Chaque fois qu'une Frappe vous manque, un de vos duplicatas disparaît.</p>",
+                    "effects": [
+                        {
+                            "name": "Mirage"
+                        }
+                    ]
                 }
             }
         },
@@ -58,7 +68,12 @@
             "actions": {
                 "invisibility": {
                     "name": "Invisibilité",
-                    "description": "<p>Vous devenez @Condition[invisible] et ne pouvez pas être détecté par la perception visuelle. Vous ne pouvez être la cible directe d'aucune action. Ce sort doit être <strong>Maintenu</strong> pour rester actif.</p>"
+                    "description": "<p>Vous devenez @Condition[invisible] et ne pouvez pas être détecté par la perception visuelle. Vous ne pouvez être la cible directe d'aucune action. Ce sort doit être <strong>Maintenu</strong> pour rester actif.</p>",
+                    "effects": [
+                        {
+                            "name": "Invisibilité"
+                        }
+                    ]
                 }
             }
         },
@@ -68,7 +83,12 @@
             "actions": {
                 "lifebloom": {
                     "name": "Floraison vitale",
-                    "description": "<p>Vous canalisez une magie vitale dans une aura qui restaure la Santé et le Moral de tous les alliés à moins de 30 pieds de vous. À chaque round, les alliés commençant leur tour dans cette aura récupèrent votre score de <strong>Sagesse</strong> en <strong>Santé</strong> et en <strong>Moral</strong>. Le sort doit être maintenu.</p><p><strong>Note : Ce sort est actuellement traité comme une zone d'effet (AoE), accordant des soins sur la durée à ceux présents dans la zone initiale. La suppression manuelle de ces effets est nécessaire si le sort cesse d'être maintenu. Lorsque les auras seront automatisées par le système (Foundry VTT v14), l'implémentation mécanique correspondra à la description.</strong></p>"
+                    "description": "<p>Vous canalisez une magie vitale dans une aura qui restaure la Santé et le Moral de tous les alliés à moins de 30 pieds de vous. À chaque round, les alliés commençant leur tour dans cette aura récupèrent votre score de <strong>Sagesse</strong> en <strong>Santé</strong> et en <strong>Moral</strong>. Le sort doit être maintenu.</p><p><strong>Note : Ce sort est actuellement traité comme une zone d'effet (AoE), accordant des soins sur la durée à ceux présents dans la zone initiale. La suppression manuelle de ces effets est nécessaire si le sort cesse d'être maintenu. Lorsque les auras seront automatisées par le système (Foundry VTT v14), l'implémentation mécanique correspondra à la description.</strong></p>",
+                    "effects": [
+                        {
+                            "name": "Floraison vitale"
+                        }
+                    ]
                 }
             }
         },
@@ -78,7 +98,12 @@
             "actions": {
                 "revive": {
                     "name": "Réanimation",
-                    "description": "<p>Vous ramenez à la vie une créature récemment devenue @Condition[dead], réduisant ses <strong>Lésions</strong> d'une valeur égale à votre score de <strong>Sagesse</strong>. En cas de succès, la créature ranimée est @Condition[disoriented] et @Condition[staggered] pendant 10 minutes.</p>"
+                    "description": "<p>Vous ramenez à la vie une créature récemment devenue @Condition[dead], réduisant ses <strong>Lésions</strong> d'une valeur égale à votre score de <strong>Sagesse</strong>. En cas de succès, la créature ranimée est @Condition[disoriented] et @Condition[staggered] pendant 10 minutes.</p>",
+                    "effects": [
+                        {
+                            "name": "Réanimé"
+                        }
+                    ]
                 }
             }
         },

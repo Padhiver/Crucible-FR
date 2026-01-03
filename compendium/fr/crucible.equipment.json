@@ -57,7 +57,12 @@
             "actions": {
                 "alchemistsFire": {
                     "name": "Feu de l'alchimiste",
-                    "description": "<p>Vous jetez le @ref[name], infligeant des dégâts <strong>Affaiblis</strong> immédiats mais causant la condition @Condition[burning] à tous les ennemis qui ne parviennent pas à éviter l'attaque dans un rayon d'<strong>Explosion</strong> de 4 pieds.</p><p>Le montant des dégâts enflammés et leur durée dépendent de la qualité du @ref[name]:</p><ul><li><p><strong>Bâclée</strong> - 2 dégâts pendant 2 rounds</p></li><li><p><strong>Commune</strong> - 3 dégâts pendant 3 rounds</p></li><li><p><strong>Raffinée</strong> - 4 dégâts pendant 4 rounds</p></li><li><p><strong>Supérieure</strong> - 6 dégâts pendant 5 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - 8 dégâts pendant 6 rounds</p></li></ul>"
+                    "description": "<p>Vous jetez le @ref[name], infligeant des dégâts <strong>Affaiblis</strong> immédiats mais causant la condition @Condition[burning] à tous les ennemis qui ne parviennent pas à éviter l'attaque dans un rayon d'<strong>Explosion</strong> de 4 pieds.</p><p>Le montant des dégâts enflammés et leur durée dépendent de la qualité du @ref[name]:</p><ul><li><p><strong>Bâclée</strong> - 2 dégâts pendant 2 rounds</p></li><li><p><strong>Commune</strong> - 3 dégâts pendant 3 rounds</p></li><li><p><strong>Raffinée</strong> - 4 dégâts pendant 4 rounds</p></li><li><p><strong>Supérieure</strong> - 6 dégâts pendant 5 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - 8 dégâts pendant 6 rounds</p></li></ul>",
+                    "effects": [
+                        {
+                            "name": "Feu de l'alchimiste"
+                        }
+                    ]
                 }
             }
         },
@@ -124,7 +129,12 @@
             "actions": {
                 "causticPhial": {
                     "name": "Fiole d'acide",
-                    "description": "<p>Vous jetez la @ref[name], infligeant des dégâts <strong>Affaiblis</strong> immédiats mais causant la condition @Condition[corroding] à tous les ennemis qui ne parviennent pas à éviter l'attaque, dans un rayon d'<strong>Explosion</strong> de 4 pieds.</p><p>Le montant de dégâts corrodés et leur durée dépend de la qualité de la @ref[name]:</p><ul><li><p><strong>Bâclée</strong> - 2 damage for 2 rounds</p></li><li><p><strong>Commune</strong> - 3 dégâts pendant 3 rounds</p></li><li><p><strong>Raffinée</strong> - 4 dégâts pendant 4 rounds</p></li><li><p><strong>Supérieure</strong> - 6 dégâts pendant 5 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - 8 dégâts pendant 6 rounds</p></li></ul>"
+                    "description": "<p>Vous jetez la @ref[name], infligeant des dégâts <strong>Affaiblis</strong> immédiats mais causant la condition @Condition[corroding] à tous les ennemis qui ne parviennent pas à éviter l'attaque, dans un rayon d'<strong>Explosion</strong> de 4 pieds.</p><p>Le montant de dégâts corrodés et leur durée dépend de la qualité de la @ref[name]:</p><ul><li><p><strong>Bâclée</strong> - 2 damage for 2 rounds</p></li><li><p><strong>Commune</strong> - 3 dégâts pendant 3 rounds</p></li><li><p><strong>Raffinée</strong> - 4 dégâts pendant 4 rounds</p></li><li><p><strong>Supérieure</strong> - 6 dégâts pendant 5 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - 8 dégâts pendant 6 rounds</p></li></ul>",
+                    "effects": [
+                        {
+                            "name": "Fiole d'acide"
+                        }
+                    ]
                 }
             }
         },
@@ -274,7 +284,12 @@
             "actions": {
                 "healingTonic": {
                     "name": "Stimulant de santé",
-                    "description": "<p>Recouvrez immédiatement, et au début de chacun des 5 prochains <strong>Rounds</strong>, un montant de <strong>Santé</strong> dépendant de la qualité du stimulant.</p><ul><li><p><strong>Bâclée</strong> - Soigne 2 points de <strong>Santé</strong> à chaque Round</p></li><li><p><strong>Commune</strong> - Soigne 4 points de <strong>Santé</strong> à chaque Round</p></li><li><p><strong>Raffinée</strong> - Soigne 8 points de <strong>Santé</strong> à chaque Round</p></li><li><p><strong>Supérieure</strong> - Soigne 16 points de <strong>Santé</strong> à chaque Round</p></li><li><p><strong>Chef-d’œuvre</strong> - Soigne 32 points de <strong>Santé</strong> à chaque Round</p></li></ul>"
+                    "description": "<p>Recouvrez immédiatement, et au début de chacun des 5 prochains <strong>Rounds</strong>, un montant de <strong>Santé</strong> dépendant de la qualité du stimulant.</p><ul><li><p><strong>Bâclée</strong> - Soigne 2 points de <strong>Santé</strong> à chaque Round</p></li><li><p><strong>Commune</strong> - Soigne 4 points de <strong>Santé</strong> à chaque Round</p></li><li><p><strong>Raffinée</strong> - Soigne 8 points de <strong>Santé</strong> à chaque Round</p></li><li><p><strong>Supérieure</strong> - Soigne 16 points de <strong>Santé</strong> à chaque Round</p></li><li><p><strong>Chef-d’œuvre</strong> - Soigne 32 points de <strong>Santé</strong> à chaque Round</p></li></ul>",
+                    "effects": [
+                        {
+                            "name": "Stimulant de santé"
+                        }
+                    ]
                 }
             }
         },
@@ -408,7 +423,12 @@
             "actions": {
                 "poisonIngest": {
                     "name": "Poison d'ingestion",
-                    "description": "<p>Lorsque cette toxine est ingérée ou entre autrement dans le sang d'une créature, elle est initialement <strong>Inoffensive</strong>, mais la cible doit se défendre d'une attaque contre sa <strong>Fortitude</strong> ou être @Condition[poisoned].</p><p>Le montant des dégâts de poison et leur durée dépendent de la qualité du @ref[name]:</p><ul><li><p><strong>Bâclée</strong> - 2 dégâts pendant 4 rounds</p></li><li><p><strong>Commune</strong> - 4 dégâts pendant 6 rounds</p></li><li><p><strong>Raffinée</strong> - 6 dégâts pendant 8 rounds</p></li><li><p><strong>Supérieure</strong> - 8 dégâts pendant 10 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - 10 dégâts pendant 12 rounds</p></li></ul><p><em>Cette action doit être utilisée lorsque le poison est ingéré plutôt que lors de sa première application.</em></p>"
+                    "description": "<p>Lorsque cette toxine est ingérée ou entre autrement dans le sang d'une créature, elle est initialement <strong>Inoffensive</strong>, mais la cible doit se défendre d'une attaque contre sa <strong>Fortitude</strong> ou être @Condition[poisoned].</p><p>Le montant des dégâts de poison et leur durée dépendent de la qualité du @ref[name]:</p><ul><li><p><strong>Bâclée</strong> - 2 dégâts pendant 4 rounds</p></li><li><p><strong>Commune</strong> - 4 dégâts pendant 6 rounds</p></li><li><p><strong>Raffinée</strong> - 6 dégâts pendant 8 rounds</p></li><li><p><strong>Supérieure</strong> - 8 dégâts pendant 10 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - 10 dégâts pendant 12 rounds</p></li></ul><p><em>Cette action doit être utilisée lorsque le poison est ingéré plutôt que lors de sa première application.</em></p>",
+                    "effects": [
+                        {
+                            "name": "Empoisonné"
+                        }
+                    ]
                 },
                 "poisonApply": {
                     "name": "Poison de contact",
@@ -448,7 +468,12 @@
             "actions": {
                 "rallyingTonic": {
                     "name": "Stimulant de ralliement",
-                    "description": "<p>Recouvrez immédiatement, et au début de chacun des 5 prochains <strong>Rounds</strong>, un montant de <strong>Moral</strong> dépendant de la qualité du stimulant.</p><ul><li><p><strong>Bâclée</strong> - Soigne 2 points de <strong>Moral</strong> à chaque Round</p></li><li><p><strong>Commune</strong> - Soigne 4 points de <strong>Moral</strong> à chaque Round</p></li><li><p><strong>Raffinée</strong>- Soigne 8 points de <strong>Moral</strong> à chaque Round</p></li><li><p><strong>Supérieure</strong> - Soigne 16 points de <strong>Moral</strong> à chaque Round</p></li><li><p><strong>Chef-d’œuvre</strong> - Soigne 32 points de <strong>Moral</strong> à chaque Round</p></li></ul>"
+                    "description": "<p>Recouvrez immédiatement, et au début de chacun des 5 prochains <strong>Rounds</strong>, un montant de <strong>Moral</strong> dépendant de la qualité du stimulant.</p><ul><li><p><strong>Bâclée</strong> - Soigne 2 points de <strong>Moral</strong> à chaque Round</p></li><li><p><strong>Commune</strong> - Soigne 4 points de <strong>Moral</strong> à chaque Round</p></li><li><p><strong>Raffinée</strong>- Soigne 8 points de <strong>Moral</strong> à chaque Round</p></li><li><p><strong>Supérieure</strong> - Soigne 16 points de <strong>Moral</strong> à chaque Round</p></li><li><p><strong>Chef-d’œuvre</strong> - Soigne 32 points de <strong>Moral</strong> à chaque Round</p></li></ul>",
+                    "effects": [
+                        {
+                            "name": "Stimulant de ralliement"
+                        }
+                    ]
                 }
             }
         },
@@ -795,12 +820,6 @@
             "description": {
                 "public": "<p>Une boîte en bois recouverte de cuir orné d'un point de croix décoratif indiquant clairement qu'elle contient des marchandises dangereuses. Elle renferme un mortier et un pilon en pierre, des compartiments pour maintenir en place plusieurs fioles bouchées contenant des ingrédients toxiques, une cuillère en argent, ainsi qu'un petit cadre en fer pliable et un petit pot en laiton pour mélanger les ingrédients au-dessus d'un feu.</p>"
             }
-        },
-        "Prybar": {
-            "description": {
-                "public": "<p>Une tige métallique solide avec une extrémité plate et une extrémité recourbée, conçue pour donner à celui qui l'utilise un effet de levier.</p>"
-            },
-            "name": "Levier"
         },
         "Rations": {
             "name": "Rations",

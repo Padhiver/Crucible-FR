@@ -154,6 +154,38 @@
             "actionHooks": {
                 "label": "Hooks d'action",
                 "hint": "ATTENTION ! Les hooks d'action sont une fonctionnalité AVANCÉE pour automatiser les mécaniques d'action. Une mauvaise configuration de ces hooks peut avoir des conséquences sérieuses. Ne tentez pas de faire des changements à moins d'être confiant dans vos connaissances."
+            },
+            "effects": {
+                "element": {
+                    "duration": {
+                        "label": "Durée",
+                        "hint": "Les effets dont la durée est exprimée en Tours expirent à la fin du tour de l'Acteur. Les effets dont la durée est exprimée en Rounds expirent au début du tour de l'acteur.",
+                        "rounds": {
+                            "label": "Rounds"
+                        },
+                        "turns": {
+                            "label": "Tours"
+                        }
+                    },
+                    "name": {
+                        "label": "Nom de l'effet"
+                    },
+                    "result": {
+                        "all": {
+                            "label": "Tous"
+                        },
+                        "label": "Résultat",
+                        "type": {
+                            "label": "Type"
+                        }
+                    },
+                    "statuses": {
+                        "label": "Statuts"
+                    },
+                    "scope": {
+                        "label": "Cible de l'Effet"
+                    }
+                }
             }
         },
         "DEFAULT_ACTIONS": {
@@ -268,7 +300,8 @@
             "movement": {
                 "size": {
                     "label": "Taille",
-                    "tooltip": "Le nombre de cases occupées par cette créature."
+                    "tooltip": "Le nombre de cases occupées par cette créature.",
+                    "base": "Taille de base"
                 },
                 "sizeBonus": {
                     "label": "Bonus de taille",
@@ -276,7 +309,8 @@
                 },
                 "stride": {
                     "label": "Foulée",
-                    "tooltip": "Distance de déplacement par Point d'action dépensé."
+                    "tooltip": "Distance de déplacement par Point d'action dépensé.",
+                    "base": "Foulée de base"
                 },
                 "strideBonus": {
                     "label": "Bonus de foulée",
@@ -285,7 +319,8 @@
                 "engagement": {
                     "label": "Engagement",
                     "labelShort": "Engagement",
-                    "tooltip": "Nombre d'ennemis engagés<br>(Taille - 2) + Bonus d'engagement"
+                    "tooltip": "Nombre d'ennemis engagés<br>(Taille - 2) + Bonus d'engagement",
+                    "base": "Engagement de base"
                 },
                 "engagementBonus": {
                     "label": "Bonus d'engagement",
@@ -362,7 +397,10 @@
             "RollCheck": "Lancer un Test",
             "TalentTreeClose": "Fermer l'Arbre des talents",
             "TalentTreeOpen": "Ouvrir l'Arbre des talents",
-            "ToggleTree": "Basculer l'Arbre des talents"
+            "ToggleTree": "Basculer l'Arbre des talents",
+            "EditSize": "Éditer la Taille",
+            "EditEngagement": "Éditer l'Engagement",
+            "EditMovement": "Éditer le Déplacement"
         },
         "CREATION": {
             "SpendAbilities": "Distribuez 9 points entre 6 caractéristiques, jusqu’à un maximum de 3 points par caractéristiques.",
@@ -590,7 +628,9 @@
             "Delete": "Supprimer l'effet",
             "Disable": "Désactiver l'effet",
             "Edit": "Éditer l'effet",
-            "Enable": "Activer l'effet"
+            "Enable": "Activer l'effet",
+            "New": "Nouvel effet",
+            "Create": "Créer un effet"
         }
     },
     "ACTION.Action": "Action",
@@ -1770,15 +1810,6 @@
     "ACTION.StandardCheck": "Test standard",
     "ACTION.UseAction": "Utiliser l'Action",
     "ACTION.WarningUnimplementedTarget": "L'automation du type de ciblage {type} pour l'action {name} n'est pas encore supportée, vous devez cibler manuellement les tokens affectés.",
-    "ACTION.EFFECTS.Duration": "Durée",
-    "ACTION.EFFECTS.DurationHint": "Les effets dont la durée est exprimée en Tours expirent à la fin du tour de l'Acteur. Les effets dont la durée est exprimée en Rounds expirent au début du tour de l'acteur.",
-    "ACTION.EFFECTS.DurationRounds": "Rounds",
-    "ACTION.EFFECTS.DurationTurns": "Tours",
-    "ACTION.EFFECTS.Name": "Nom de l'Effet",
-    "ACTION.EFFECTS.Result": "Résultat",
-    "ACTION.EFFECTS.ResultType": "Type",
-    "ACTION.EFFECTS.Scope": "Cible de l'Effet",
-    "ACTION.EFFECTS.Statuses": "Statuts",
     "ACTION.TagCostAction": "{action}A",
     "ACTION.TagCostFocus": "{focus}F",
     "ACTION.TagCostHand.one": "{hands} Main",

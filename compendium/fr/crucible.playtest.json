@@ -52,7 +52,7 @@
                         }
                     },
                     "archetype": {
-                        "name": "Bête à Défenses",
+                        "name": "Bête à défenses",
                         "description": "<p>Bêtes qui combattent en utilisant leur propre masse, leur élan et leurs défenses aiguisées.</p>"
                     },
                     "taxonomy": {
@@ -76,7 +76,7 @@
                         }
                     },
                     "archetype": {
-                        "name": "Membre de Meute",
+                        "name": "Membre de meute",
                         "description": "Bêtes qui chassent en meute."
                     },
                     "taxonomy": {

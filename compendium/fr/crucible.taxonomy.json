@@ -65,7 +65,7 @@
             "description": "<p>Créatures élémentaires correspondant à l'élément de la Foudre.</p>"
         },
         "Crystal Spider": {
-            "name": "Araignée de Cristal",
+            "name": "Araignée de cristal",
             "description": "<p>Arachnide composé ou incrusté de plaques et de formations cristallines réfractives.</p>"
         },
         "Slime": {
@@ -73,7 +73,7 @@
             "description": "<p>Créatures faites principalement de matière gélatineuse. Elles sont généralement lentes, de petite taille, et incapables de sorcellerie ou de parole. Certaines exceptions ont été documentées avec des variations de limons pouvant être grands, rapides ou capables de communication.</p>"
         },
         "War Machine": {
-            "name": "Machine de Guerre",
+            "name": "Machine de guerre",
             "description": "<p>Artificiels bâtis dans le but d'être des instruments de guerre ou des gardiens formidables.</p>"
         },
         "Werewolf": {
@@ -81,7 +81,7 @@
             "description": "<p>Métamorphes lycanthropes qui marchent comme des hommes mais prennent une forme de loup.</p>"
         },
         "Winged Terror": {
-            "name": "Terreur Ailée",
+            "name": "Terreur ailée",
             "description": "<p>Créatures monstrueuses qui règnent sur les cieux et s'attaquent à ceux qui sont en dessous.</p>"
         },
         "Arachnid": {

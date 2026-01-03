@@ -1344,12 +1344,12 @@
             "Rune": "Rune arcanique",
             "RunePl": "Runes arcaniques",
             "RuneNone": "Aucune Rune arcanique connue.",
-            "Gesture": "Signe Somatique",
-            "GesturePl": "Signes Somatiques",
-            "GestureNone": "Aucun Signe Somatique connu.",
-            "Inflection": "Inflexion Métamagique",
-            "InflectionPl": "Inflexions Métamagiques",
-            "InflectionNone": "Aucune Inflexion Métamagique connue."
+            "Gesture": "Signe somatique",
+            "GesturePl": "Signes somatiques",
+            "GestureNone": "Aucun Signe somatique connu.",
+            "Inflection": "Inflexion métamagique",
+            "InflectionPl": "Inflexions métamagiques",
+            "InflectionNone": "Aucune Inflexion métamagique connue."
         },
         "RUNES": {
             "Soul": "Âme",

@@ -903,7 +903,7 @@
   },
   "PROPERTIES": {
     "Bulky": "Bulky",
-    "Organic": "Organic",
+    "Natural": "Natural",
     "Noisy": "Noisy"
   }
 },
@@ -1123,6 +1123,7 @@
     "Asleep": "Asleep",
     "Blind": "Blinded",
     "Broken": "Broken",
+    "Burrowing": "Burrowing",
     "Dead": "Dead",
     "Deaf": "Deafened",
     "Diseased": "Diseased",

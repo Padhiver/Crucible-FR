@@ -114,7 +114,7 @@
 | <Damage Type> | <Type de dégâts> |
 | <Resource> | <Ressource> |
 | <Skill> | <Compétence> |
-| Organic | Organique |
+| Natural | Naturelle |
 | Noisy | Bruyante |
 
 ## Artisanat (Crafting)
@@ -528,6 +528,7 @@
 | Staggered | Ébranlé |
 | Stunned | Étourdi |
 | Asleep | Assoupi |
+| Burrowing | Enfoui |
 
 ### Défenses
 | Anglais | Français |

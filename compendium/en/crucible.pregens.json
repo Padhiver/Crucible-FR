@@ -562,6 +562,9 @@
               "effects": [
                 {
                   "name": "Grappled"
+                },
+                {
+                  "name": "Grappling"
                 }
               ]
             }
@@ -774,14 +777,6 @@
             }
           }
         },
-        "Wilderness Novice": {
-          "name": "Wilderness Novice",
-          "description": "<p>You have received training in the basics of wilderness survival and traversal. You gain the <strong>Novice</strong> rank in the <strong>Wilderness </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</p><p>You know how to find and construct safe shelter from the elements, to start a fire for warmth, to keep cool in hot environments. You can find safe, drinkable water in most places, and how to identify which plants and animals can serve as safe food sources.</p>"
-        },
-        "Athletics Novice": {
-          "name": "Athletics Novice",
-          "description": "<p>You have received training in basic athletics. You gain the <strong>Novice</strong> rank in the <strong>Athletics</strong> skill and are no longer considered <strong>Untrained</strong> in that skill.</p><p>You know whether a surface can support your weight or not, how to find handholds while climbing, and how to distribute your weight for buoyancy when swimming. You know how to run for distance, and how to pace yourself to avoid exhaustion.</p>"
-        },
         "Stealth Novice": {
           "name": "Stealth Novice",
           "description": "<p>You have received training in the basics of stealth, infiltration, and subterfuge. You gain the <strong>Novice</strong> rank in the <strong>Stealth </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</p><p>You know how to use light and shadow to mask your presence, to distribute your weight when walking in order to move more quietly, and you have learned a few tricks of disguise in order to blend into a crowd. You can appear unsuspicious when surrounded by others, hide in a darkened room, and can move silently enough to avoid detection by the average person.</p>"
@@ -929,14 +924,6 @@
           "name": "Gesture: Arrow",
           "description": "<p>You hurl a projectile imbued with the magical power of a Rune at a distant target.</p><p>The Arrow gesture scales using <strong>Intellect</strong> and targets a single creature up to a distance of 60 feet, dealing <strong>8 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
         },
-        "Arcana Novice": {
-          "name": "Arcana Novice",
-          "description": "<p>Your education covered the fundamentals of metaphysics and magical theory, the relationship between the runes, the opposing nature of order and chaos, and a cursory introduction to spiritual beings including the most commonly known deified and demonized figures of worship. You gain the <strong>Novice</strong> rank in the <strong>Arcana </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</p><p>Your rudimentary understanding of the principle grammar of magic is sufficient to identify which lesser rune a spell or ritual may be using, as well as the gesture used (if not the inflection). You can identify whether a figure is influenced more by chaos or by order, and can spot the signs of common spirits (both lesser and greater). You know enough about religious customs to communicate with those who worship a particular spirit or deity without embarrassing yourself.</p>"
-        },
-        "Science Novice": {
-          "name": "Science Novice",
-          "description": "<p>You've learned to study the world around you through structured observation, mathematics, physics, chemistry, and other disciplines. You gain the <strong>Novice</strong> rank in the <strong>Science </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</p><p>You are familiar with the basic principles of mathematics, physics, chemistry, or other scientific studies. You know how to construct and use simple machines for the purposes of making physical tasks easier. You know some of the more commonly understood scientific theories, and given suitable time to study more complex machines you might be able to at least operate them.</p>"
-        },
         "Gesture: Create": {
           "name": "Gesture: Create",
           "description": "<p>You coalesce arcane power into tangible form, manifesting a <strong>Sprite</strong> which appears within 10 feet and joins Combat at Initiative 1. Your Sprite is a <strong>Minion</strong> of half your own Level.</p><p>The Create gesture scales with <strong>Wisdom</strong> and the Sprite survives for <strong>6 Rounds</strong>. You may only have one active Sprite, casting another spell using the Create gesture replaces your previous Sprite. This gesture requires <strong>2 Hands</strong> to cast and has a base cost of <strong>4 Action</strong> and <strong>1 Focus</strong>.</p><h3 class=\"divider\">Playtest Notes</h3><p>Not all Runes have a Sprite actor defined yet. Runes that do not yet have a defined Creation will — for now — manifest a <strong>Flame Sprite</strong>.</p>"
@@ -1065,6 +1052,20 @@
               "description": "<p>You use your equipped Talisman to attempt to regain some <strong>Focus</strong>. You perform a <strong>Harmless</strong> <strong>Strike</strong> against your own <strong>Rallying</strong> threshold.</p><p>On a success you recover <strong>+1 Focus</strong> if using a one-handed Talisman and <strong>+2 Focus</strong> if using a two-handed Talisman. On a critical success the amount of Focus recovered increases by an additional +1.</p>"
             }
           }
+        },
+        "Unshakeable Poise": {
+          "name": "Unshakeable Poise",
+          "description": "<p>You demonstrate exceptional poise in stressful circumstances, your cool head prevailing when others around you lose their composure.</p>",
+          "actions": {
+            "unshakeablePoise": {
+              "name": "Unshakeable Poise",
+              "description": "<p>You expend <strong>Heroism</strong> to instantly recover your <strong>Wisdom</strong> in <strong>Focus</strong>. You may perform this action outside of your turn in Combat before making a <strong>Reaction</strong>.</p>"
+            }
+          }
+        },
+        "Gesture: Conjure": {
+          "name": "Gesture: Conjure",
+          "description": "<p>You coalesce arcane power into a superior form, manifesting a <strong>Visitor</strong> which appears within 30 feet and joins Combat at <strong>Initiative</strong> 1. Your Visitor is a Minion equal to your own Level.</p><p>The Conjure gesture scales with <strong>Wisdom</strong> and the Visitor survives for <strong>12 Rounds</strong>. You may only have one active Visitor. Casting another spell using the Conjure gesture replaces your previous Visitor. This gesture requires <strong>2 Hands</strong> to cast and has a base cost of <strong>5 Action</strong> and <strong>2 Focus</strong>.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent is currently placed at a <strong>Tier 4</strong> node. It will eventually only be attainable at a higher level (probably Level 6 required). It is currently available \"early\" for testing.</p><p>Not all Runes have a Visitor actor defined yet. Runes that do not yet have a defined Conjuration will — for now — manifest a <strong>Flame Visitor</strong>.</p>"
         }
       },
       "ancestry": {
@@ -1132,14 +1133,6 @@
         "Dustbinder": {
           "name": "Dustbinder",
           "description": "<p>You are highly skilled in weaving the Rune of Earth. Spells which use this Rune cause the @Condition[corroding] condition on Critical Hits.</p><p>The Corroding effect lasts for <strong>3 Rounds</strong> and deals your <strong>Wisdom</strong> score as <strong>Acid</strong> damage to <strong>Health</strong> each Round.</p>"
-        },
-        "Medicine Novice": {
-          "name": "Medicine Novice",
-          "description": "<p>You have a basic education in anatomy, physiology, and medicine. You gain the <strong>Novice</strong> rank in the <strong>Medicine </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</p><p>You’ve learned the basics of treating common wounds and illnesses, and keep a running list of known alchemical and herbal compounds that can be used for treating particular illnesses. With a little time studying an injured, diseased, or otherwise ill individual you can perform a basic diagnosis and treat accordingly.</p>"
-        },
-        "Science Novice": {
-          "name": "Science Novice",
-          "description": "<p>You've learned to study the world around you through structured observation, mathematics, physics, chemistry, and other disciplines. You gain the <strong>Novice</strong> rank in the <strong>Science </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</p><p>You are familiar with the basic principles of mathematics, physics, chemistry, or other scientific studies. You know how to construct and use simple machines for the purposes of making physical tasks easier. You know some of the more commonly understood scientific theories, and given suitable time to study more complex machines you might be able to at least operate them.</p>"
         },
         "Talisman Weapon Training": {
           "name": "Talisman Weapon Training",
@@ -1378,14 +1371,6 @@
             }
           }
         },
-        "Awareness Novice": {
-          "name": "Awareness Novice",
-          "description": "<p>You have been trained in the basics of situational awareness, and are able to notice important details about your environment. You gain the <strong>Novice</strong> rank in the <strong>Awareness </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</p><p>You know to check for exits when you enter a room, and how to look for concealed weapons, hidden traps, and other threats. You know how to spot when you are being followed, and how to search for common hiding places.</p>"
-        },
-        "Intimidation Novice": {
-          "name": "Intimidation Novice",
-          "description": "<p>You understand the fundamentals of how threats and coercion can achieve desired outcomes. You gain the <strong>Novice</strong> rank in the <strong>Intimidation </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</p><p>You know how to use simple displays of violence or overt threats to get others to follow your lead, but you aren't very subtle.</p>"
-        },
         "Unarmed Combat Training": {
           "name": "Unarmed Combat Training",
           "description": "<p>You are familiar with basic martial arts and hand-to-hand combat. You know how to subdue or restrain opponents using your physical Strength. You are <strong>Trained</strong> with weapons in the <strong>Unarmed</strong> category.</p>",
@@ -1396,6 +1381,9 @@
               "effects": [
                 {
                   "name": "Grappled"
+                },
+                {
+                  "name": "Grappling"
                 }
               ]
             }
@@ -1516,14 +1504,6 @@
           "name": "Gesture: Influence",
           "description": "<p>You intensify the arcane power of a Rune into a concentrated direct contact which is generally a more powerful evolution of the basic Touch gesture.</p><p>The Influence gesture scales using <strong>Presence</strong> and targets a single adjacent creature. It deals <strong>10 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
         },
-        "Performance Novice": {
-          "name": "Performance Novice",
-          "description": "<p>You have learned the basic practices of art and entertainment. You gain the <strong>Novice</strong> rank in the <strong>Performance </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</p><p>You know a few common dances, have a collection of well-known tales, and you could probably sing or play a few popular songs. You may be trained in an instrument or two, and your capability with a brush or pen is reasonable enough that you could probably create a passable work of art.</p>"
-        },
-        "Deception Novice": {
-          "name": "Deception Novice",
-          "description": "<p>You are a liar and manipulator, and deception is a skill you've practiced. You gain the <strong>Novice</strong> rank in the <strong>Deception </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</p><p>You know how to construct basic lies and cons, and the telltale signs that tend to give away poor liars. You can construct a basic forgery for most common documents, but they won't stand up to any measure of close scrutiny.</p>"
-        },
         "Light Weapon Training": {
           "name": "Light Weapon Training",
           "description": "<p>You know how to wield light weapons fluidly with a high degree of maneuverability and grace in combat. You are <strong>Trained</strong> with all weapons in the <strong>Light</strong> and <strong>Balanced</strong> categories.</p>",
@@ -1531,16 +1511,6 @@
             "lunge": {
               "name": "Lunge",
               "description": "<p>You dart forward nimbly, making a strike with sudden and unexpected swiftness to perform a <strong>Strike </strong>with a <strong>Finesse</strong> weapon against a single target with an increased range of <strong>+2 feet</strong>.</p><p>The attack is <strong>Difficult</strong>, but you do not move from your current position nor does this attack provoke Disengagement.</p>"
-            }
-          }
-        },
-        "Dual Wield": {
-          "name": "Dual Wield",
-          "description": "<p>You are adept at fighting with two weapons simultaneously. You can weave attacks together to strike more rapidly than possible with a single weapon.</p>",
-          "actions": {
-            "offhandStrike": {
-              "name": "Offhand Strike",
-              "description": "<p>Immediately after you perform a basic Strike with your mainhand weapon, you make a reduced-cost fullow-up <strong>Strike</strong> with your <strong>offhand</strong> weapon.</p>"
             }
           }
         },
@@ -1564,13 +1534,13 @@
             }
           }
         },
-        "War Mage": {
-          "name": "War Mage",
-          "description": "<p>Your spellcraft is honed as a weapon of war to thwart the incantations of other magi. You may ask the Gamemaster if you know a Rune capable of countering an enemy spell, even if you do not recognize the spell being cast. You gain +2 Boons to any Counterspell attempt.</p>"
-        },
         "Gesture: Arrow": {
           "name": "Gesture: Arrow",
           "description": "<p>You hurl a projectile imbued with the magical power of a Rune at a distant target.</p><p>The Arrow gesture scales using <strong>Intellect</strong> and targets a single creature up to a distance of 60 feet, dealing <strong>8 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
+        },
+        "War Mage": {
+          "name": "War Mage",
+          "description": "<p>Your spellcraft is honed as a weapon of war to thwart the incantations of other magi. You may ask the Gamemaster if you know a Rune capable of countering an enemy spell, even if you do not recognize the spell being cast. You gain +2 Boons to any Counterspell attempt.</p>"
         },
         "Impetus": {
           "name": "Impetus",
@@ -1636,6 +1606,10 @@
               "description": "<p>Your command of the Rune of Kinesis allows you to exert local control over gravitational forces to perform basic telekinetic manipulations, producing one of the following effects:</p><ul><li><p>Pull an unsecured object within 15 feet and with weight no greater than 1 towards you and catch it. An object that is equipped or possessed by a creature is never treated as unsecured unless that creature is willing to release it.</p></li><li><p>Flick an object that you hold with weight no greater than 1 towards a target up to 30 feet away. The object flies unerringly in a straight line towards that target at a moderate speed. Any creature along the object's path can react to catch it as long as they have a free hand with which to do so.</p></li><li><p>Suspend in midair an object or willing creature that you touch with weight less than or equal to 10 times your <strong>Presence</strong>, altering its position up to 20 feet in any direction from its original location. You can maintain this suspension indefinitely as long as you take no further Action and are not @Condition[incapacitated].</p></li></ul><p>Propel may only affect a creature or object you can physically touch unless otherwise specified. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
             }
           }
+        },
+        "Gesture: Blast": {
+          "name": "Gesture: Blast",
+          "description": "<p>You hurl the arcane power of a Rune into an intense explosion of energy at a nearby point you can see.</p><p>The Blast gesture scales with <strong>Intellect</strong> and produces a blast with 6 feet radius centered on a point within 60 feet of the spellcaster. The blast deals <strong>8 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>2 Hands</strong> to cast and has a base cost of <strong>5 Action</strong> and <strong>2 Focus</strong>.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent is currently placed at a <strong>Tier 4</strong> node. It will eventually only be attainable at a higher level (probably Level 6 required). It is currently available \"early\" for testing.</p>"
         }
       },
       "ancestry": {

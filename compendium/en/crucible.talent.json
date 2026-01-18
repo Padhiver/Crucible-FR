@@ -12,17 +12,12 @@
     "Shield": "Shield",
     "Two-Handed": "Two-Handed",
     "Morale": "Morale",
-    "Block": "Block",
     "Initiative": "Initiative",
-    "Other": "Other",
     "Miscellaneous": "Miscellaneous",
-    "Dodge": "Dodge",
     "Upgrades": "Upgrades",
     "Critical Hits": "Critical Hits",
     "Scaling": "Scaling",
-    "Willpower": "Willpower",
     "One-Handed": "One-Handed",
-    "Resistances": "Resistances",
     "Utility": "Utility",
     "Finesse": "Finesse",
     "Thrown": "Thrown",
@@ -33,7 +28,6 @@
     "Skills": "Skills",
     "Tier 1": "Tier 1",
     "Weaponry": "Weaponry",
-    "Parry": "Parry",
     "Heroism": "Heroism",
     "Inflections": "Inflections",
     "Training": "Training",
@@ -43,13 +37,19 @@
     "Heavy": "Heavy",
     "Unarmed": "Unarmed",
     "Projectile": "Projectile",
+    "Block": "Block",
     "Gestures": "Gestures",
-    "Armor": "Armor",
     "Focus": "Focus",
+    "Other": "Other",
     "Health": "Health",
+    "Dodge": "Dodge",
+    "Resistances": "Resistances",
     "Signature": "Signature",
     "Melee": "Melee",
+    "Parry": "Parry",
     "Defense": "Defense",
+    "Armor": "Armor",
+    "Willpower": "Willpower",
     "Movement": "Movement",
     "Resources": "Resources",
     "Ranged": "Ranged",
@@ -852,7 +852,7 @@
     },
     "Inflection: Push": {
       "name": "Inflection: Push",
-      "description": "<p>Empower a spell to repel affected creatures away from the caster. Creatures affected by a spell with the Push inflection move 1 space away from the spellcaster if that destination space is unoccupied.</p>"
+      "description": "<p>Empower a spell to repel affected creatures away from the caster. Creatures affected by a spell with the Push inflection move 4 feet away from the spellcaster if that destination is unoccupied.</p>"
     },
     "Inflection: Quicken": {
       "name": "Inflection: Quicken",
@@ -1866,6 +1866,9 @@
           "effects": [
             {
               "name": "Grappled"
+            },
+            {
+              "name": "Grappling"
             }
           ]
         }

@@ -4,9 +4,10 @@
     "description": "system.description"
   },
   "folders": {
-    "Humanoids": "Humanoids",
     "Dragons": "Dragons",
+    "Constructs": "Constructs",
     "Elementals": "Elementals",
+    "Humanoids": "Humanoids",
     "Beasts": "Beasts"
   },
   "entries": {
@@ -29,6 +30,10 @@
     "Brigand": {
       "name": "Brigand",
       "description": "<p>Villainous lawbreakers whether they be bandits, pirates, ruffians, or other knaves.</p>"
+    },
+    "Burrower": {
+      "name": "Burrower",
+      "description": "<p>Beasts or beast-like creatures which are expert at burrowing through solid material.</p>"
     },
     "Chomper": {
       "name": "Chomper",
@@ -102,6 +107,10 @@
       "name": "Scout",
       "description": "<p>Individuals trained in reconnaissance and advance exploration of unknown areas.</p>"
     },
+    "Servitor": {
+      "name": "Servitor",
+      "description": "<p>Creatures which are specialized in espionage or performing tasks in remote service of a controlling master.</p>"
+    },
     "Shapeshifter": {
       "name": "Shapeshifter",
       "description": "<p>Shapeshifters practice the arts of bestial transformation, a type of primal magic that is ancient and different than commonly practiced runic spellcraft.</p>"
@@ -113,6 +122,10 @@
     "Spellblade": {
       "name": "Spellblade",
       "description": "<p>Spellblades are magically empowered warriors who weave spellcraft into their weapon attacks to create devastating strikes.</p>"
+    },
+    "Swashbuckler": {
+      "name": "Swashbuckler",
+      "description": "<p>Those who engage in the dangerous life aboard a sailing ship, or practice the trade of high seas piracy. You are known for your wit, charm, and sometimes reckless bravery.</p>"
     },
     "Thief": {
       "name": "Thief",

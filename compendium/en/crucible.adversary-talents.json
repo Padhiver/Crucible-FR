@@ -11,13 +11,16 @@
     "Charge": "Charge",
     "Bites": "Bites",
     "Claws": "Claws",
+    "Communication": "Communication",
     "Beast": "Beast",
+    "Bursts": "Bursts",
     "Flight": "Flight",
+    "Death": "Death",
     "Breath": "Breath",
     "Ooze": "Ooze",
     "Passive": "Passive",
     "Construct": "Construct",
-    "Attacks": "Attacks",
+    "Strikes": "Strikes",
     "Movement": "Movement",
     "Resistances": "Resistances",
     "Undead": "Undead",
@@ -60,7 +63,7 @@
     },
     "Amorphous": {
       "name": "Amorphous",
-      "description": "<p>The @ref[actor.name]{creature} may move through a space as narrow as 1 inch in diameter without any penalty to its <strong>Stride</strong>. It gains a bonus to <strong>Dodge</strong> equal to its <strong>Toughness </strong>score and is immune to the @Condition[restrained] condition.</p>"
+      "description": "<p>The @ref[actor.name]{creature} may move through a space as narrow as 1 inch in diameter without any penalty to its <strong>Stride</strong>. It gains a bonus to <strong>Dodge</strong> equal to half its <strong>Toughness </strong>score and is immune to the @Condition[restrained] condition.</p>"
     },
     "Aqueous Transmission": {
       "name": "Aqueous Transmission",
@@ -79,6 +82,32 @@
     "Blood Sense": {
       "name": "Blood Sense",
       "description": "<p>The @ref[actor.name] is permanently <strong>Blinded</strong>, but can precisely sense any blooded creature within 20 feet which does not have all its hit points.</p><p>Any weapon or skill attack against a wounded creature does not suffer <strong>Banes</strong> that would normally apply when <strong>Blinded</strong>.</p>"
+    },
+    "Burrower": {
+      "name": "Burrower",
+      "description": "<p>The @ref[actor.name]{creature} has a supernatural ability to rapidly burrow through solid surfaces which are not entirely impermeable.</p><p>Additionally, it can compress its body to pass through apertures that can accommodate ¼ of its <strong>Size</strong>.</p>",
+      "actions": {
+        "explosiveEmergence": {
+          "name": "Explosive Emergence",
+          "description": "<p>The @ref[actor.name]{creature} emerges from a subterranean position with surprising and sudden force. This action may only be activated immediately the creature leaves the @Condition[burrowing] state.</p><p>The @ref[actor.name]{creature} erupts to <strong>Strike</strong> against all enemies within its weapon range with an <strong>Empowered</strong> attack.</p>",
+          "condition": "While burrowing."
+        }
+      }
+    },
+    "Clinging Grip": {
+      "name": "Clinging Grip",
+      "description": "<p>The @ref[actor.name]{creature} is able to cling to vertical or overhead surfaces with exceptional grip or adhesion. This creature can avoid falling as long as they are adjacent to any solid surface which can reasonably support them.</p>",
+      "actions": {
+        "droppingStrike": {
+          "name": "Dropping Strike",
+          "description": "<p>The @ref[actor.name]{creature} can drop from overhead to <strong>Strike</strong> a creature below it. The target creature suffers an <strong>Empowered</strong> attack which, if successful, knocks them @Condition[prone] in addition to dealing damage.</p><p>The @ref[actor.name]{creature} can suffer falling damage from this attack only if it misses its target.</p>",
+          "effects": [
+            {
+              "name": "Dropping Strike"
+            }
+          ]
+        }
+      }
     },
     "Cold Absorption": {
       "name": "Cold Absorption",
@@ -114,6 +143,10 @@
     "Fire Absorption": {
       "name": "Fire Absorption",
       "description": "<p>The @ref[actor.name]{creature} has an exceptional ability to thrive within scorching environments. Its <strong>Fire</strong> resistance is doubled and if that resistance would reduce an amount of damage below zero, the negative amount is received as <strong>Healing</strong> instead.</p>"
+    },
+    "Glowing Body": {
+      "name": "Glowing Body",
+      "description": "<p>The @ref[actor.name]{creature} emits non-magical bright light in a 15-foot radius and dim light in a 30 foot radius.</p>"
     },
     "Immutable Form": {
       "name": "Immutable Form",
@@ -159,6 +192,17 @@
     "Radiant Absorption": {
       "name": "Radiant Absorption",
       "description": "<p>The @ref[actor.name]{creature} is no stranger to the chaotic force of light. Its <strong>Radiant</strong> resistance is doubled and if that resistance would reduce an amount of damage below zero, the negative amount is received as <strong>Healing</strong> instead.</p>"
+    },
+    "Radiant Death Burst": {
+      "name": "Radiant Death Burst",
+      "description": "<p>When the @ref[actor.name]{creature} dies, it explodes in a volatile burst of radiant energy.</p>",
+      "actions": {
+        "radiantDeathBurst": {
+          "name": "Radiant Death Burst",
+          "description": "<p>When the @ref[actor.name]{creature} becomes @Condition[dead], it explodes in a pulse of <strong>Radiant</strong> energy which attacks the <strong>Fortitude</strong> defense of all nearby creatures that fail to resist the effect.</p>",
+          "condition": "The creature becomes Dead."
+        }
+      }
     },
     "Raking Talons": {
       "name": "Raking Talons",
@@ -209,6 +253,22 @@
         }
       }
     },
+    "Sacrifice Self": {
+      "name": "Sacrifice Self",
+      "description": "<p>The @ref[actor.name]{creature} may intervene to take a blow instead of an adjacent ally.</p>",
+      "actions": {
+        "sacrificeSelf": {
+          "name": "Sacrifice Self",
+          "description": "<p>The @ref[actor.name]{creature} reacts, performing a <strong>Movement</strong> up to their <strong>Stride </strong>to interpose itself between a nearby ally and some source of harm which it can perceive.</p><p>The @ref[actor.name]{creature} becomes @Condition[dead], destroyed in their sacrifice, but the triggering action causes no effects to its original target.</p>",
+          "condition": "A nearby ally is targeted by a hostile action.",
+          "effects": [
+            {
+              "name": "Sacrifice Self"
+            }
+          ]
+        }
+      }
+    },
     "Self-Repair": {
       "name": "Self-Repair",
       "description": "<p>The @ref[actor.name]{construct} activates internal repairing mechanisms to mitigate damage it has taken.</p>",
@@ -216,6 +276,16 @@
         "selfRepair": {
           "name": "Self-Repair",
           "description": "<p>The construct recovers its <strong>Toughness</strong> value in <strong>Health</strong> and immediately ends a single status condition of its choice that is currently affecting it.</p>"
+        }
+      }
+    },
+    "Servitor": {
+      "name": "Servitor",
+      "description": "<p>The @ref[actor.name]{creature} serves the will of another and maintains a connection to that master that allows the transmission or messages or even the sharing of senses between the servitor and its controller.</p>",
+      "actions": {
+        "servitorSending": {
+          "name": "Servitor Sending",
+          "description": "<p>The @ref[actor.name]{creature} can contact its master, sending inaudible communication which is instantaneously received by its controller as long as that other creature is capable of receiving messages.</p>"
         }
       }
     },

@@ -622,7 +622,8 @@
             "Mending": "Vivifié",
             "Inspired": "Inspiré",
             "Poisoned": "Empoisonné",
-            "Shocked": "Électrocuté"
+            "Shocked": "Électrocuté",
+            "Burrowing": "Enfoui"
         },
         "ACTIONS": {
             "Delete": "Supprimer l'effet",
@@ -841,8 +842,8 @@
         },
         "PROPERTIES": {
             "Bulky": "Encombrante",
-            "Organic": "Organique",
-            "Noisy": "Bruyante"
+            "Noisy": "Bruyante",
+            "Natural": "Naturelle"
         }
     },
     "ATTRIBUTES.Abilities": "Scores de Caractéristique",
@@ -1344,12 +1345,15 @@
             "Rune": "Rune arcanique",
             "RunePl": "Runes arcaniques",
             "RuneNone": "Aucune Rune arcanique connue.",
-            "Gesture": "Signe Somatique",
-            "GesturePl": "Signes Somatiques",
-            "GestureNone": "Aucun Signe Somatique connu.",
-            "Inflection": "Inflexion Métamagique",
-            "InflectionPl": "Inflexions Métamagiques",
-            "InflectionNone": "Aucune Inflexion Métamagique connue."
+            "Gesture": "Signe somatique",
+            "GesturePl": "Signes somatiques",
+            "GestureNone": "Aucun Signe somatique connu.",
+            "Inflection": "Inflexion métamagique",
+            "InflectionPl": "Inflexions métamagiques",
+            "InflectionNone": "Aucune Inflexion métamagique connue.",
+            "RuneSpecific": "Rune : {rune}",
+            "GestureSpecific": "Signe : {gesture}",
+            "InflectionSpecific": "Inflexion : {inflection}"
         },
         "RUNES": {
             "Soul": "Âme",
@@ -1420,6 +1424,21 @@
         },
         "SHEET": {
             "Knowledge": "Connaissances requises"
+        },
+        "COUNTERSPELL": {
+            "Detailed": "Contresort ({details})",
+            "Name": "Contresort",
+            "OpposingRune": "Contresort : Rune opposée",
+            "SameGesture": "Contresort : Signe identique",
+            "Tags": "Étiquettes de Contresort",
+            "TargetGesture": "Signe cible : {gesture}",
+            "TargetRune": "Rune cible : {rune}",
+            "UseForActor": "Utiliser le Contresort pour : {actor}",
+            "WARNINGS": {
+                "BadTarget": "Vous pouvez uniquement Contrer le sort du lanceur de la dernière action, et cette action doit être un sort.",
+                "InvalidTerms": "Impossible d'analyser {terms} en tant que termes de Contresort valides.",
+                "MissingComponents": "Un enrichisseur de Contresort doit avoir au moins 1 rune et 1 signe."
+            }
         }
     },
     "TALENT": {
@@ -2006,5 +2025,6 @@
         "Fast": "Pressé",
         "Reckless": "Téméraire"
     },
-    "WARNING.CannotEquipTaxonomy": "L'acteur {actor} ne peut pas équiper l'objet \"{item}\" car la taxonomie \"{taxonomy}\" est incapable d'utiliser de l'équipement."
+    "WARNING.CannotEquipTaxonomy": "L'acteur {actor} ne peut pas équiper l'objet \"{item}\" car la taxonomie \"{taxonomy}\" est incapable d'utiliser de l'équipement.",
+    "DICE.DCSpecific": "DD {dc}"
 }

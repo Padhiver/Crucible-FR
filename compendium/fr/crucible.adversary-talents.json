@@ -18,9 +18,12 @@
         "Flight": "Vol",
         "Bites": "Morsures",
         "Claws": "Griffe",
-        "Attacks": "Attaque",
         "Beast": "Bête",
-        "Undead": "Mort-vivant"
+        "Undead": "Mort-vivant",
+        "Communication": "Communication",
+        "Bursts": "Explosions",
+        "Death": "Mort",
+        "Strikes": "Frappe"
     },
     "label": "Talents d'Adversaire",
     "entries": {
@@ -60,7 +63,7 @@
         },
         "Amorphous": {
             "name": "Informe",
-            "description": "<p>La @ref[actor.name]{créature} peut se déplacer à travers un espace aussi étroit que 1 pouce de diamètre sans aucune pénalité à sa <strong>Foulée</strong>. Elle gagne un bonus à l'<strong>Esquive</strong> égal à son score de <strong>Robustesse</strong> et est immunisée contre la condition @Condition[restrained].</p>"
+            "description": "<p>La @ref[actor.name]{créature} peut se déplacer à travers un espace aussi étroit que 1 pouce de diamètre sans aucune pénalité à sa <strong>Foulée</strong>. Elle gagne un bonus à l'<strong>Esquive</strong> égal à la moitié de son score de <strong>Robustesse</strong> et est immunisée contre la condition @Condition[restrained].</p>"
         },
         "Aqueous Transmission": {
             "name": "Transmission aqueuse",
@@ -308,6 +311,73 @@
         "Restless Dead": {
             "name": "Mort sans repos",
             "description": "<p>La vie de la @ref[actor.name]{créature} est maintenue par la magie nécromantique ou des forces d'outre-monde. Lorsqu'elle devrait être considérée comme @Condition[dead], elle est à la place @Condition[incapacitated].</p><p>Une fois le combat terminé, la @ref[actor.name]{créature} peut commencer à effectuer l'action de Récupération, reprenant conscience une fois celle-ci terminée. La récupération de cette manière peut être empêchée de l'une des façons suivantes :</p><ul><li><p>La créature a été neutralisée par un type de dégâts auquel elle est <strong>Vulnérable</strong>.</p></li><li><p>Les forces magiques qui l'ont ranimée en tant que mort-vivant sont perturbées, contrées ou dissipées.</p></li><li><p>Le corps de la créature est détruit à un point tel qu'elle ne peut plus maintenir sa forme physique.</p></li></ul>"
+        },
+        "Burrower": {
+            "name": "Fouisseur",
+            "description": "<p>La @ref[actor.name]{créature} possède la capacité surnaturelle de creuser rapidement à travers des surfaces solides qui ne sont pas totalement imperméables.</p><p>De plus, elle peut comprimer son corps pour passer par des ouvertures pouvant accueillir ¼ de sa <strong>Taille</strong>.</p>",
+            "actions": {
+                "explosiveEmergence": {
+                    "name": "Émergence explosive",
+                    "description": "<p>La @ref[actor.name]{créature} surgit d’une position souterraine avec une force soudaine et surprenante. Cette action ne peut être activée qu’immédiatement après que la créature ait quitté l’état @Condition[burrowing].</p><p>La @ref[actor.name]{créature} <strong>Frappe</strong> toutes les cibles ennemies à portée de son arme avec une attaque <strong>Amplifiée</strong>.</p>",
+                    "condition": "Être Enfoui."
+                }
+            }
+        },
+        "Servitor": {
+            "name": "Serviteur",
+            "description": "<p>La @ref[actor.name]{créature} sert la volonté d’un autre et maintient un lien avec ce maître qui permet la transmission de messages ou même le partage de perceptions entre le serviteur et son contrôleur.</p>",
+            "actions": {
+                "servitorSending": {
+                    "name": "Voie du serviteur",
+                    "description": "<p>La @ref[actor.name]{créature} peut contacter son maître en envoyant une communication inaudible qui est instantanément reçue par le contrôleur, tant que celui-ci est capable de recevoir des messages.</p>"
+                }
+            }
+        },
+        "Clinging Grip": {
+            "name": "Prise adhérente",
+            "description": "<p>La @ref[actor.name]{créature} peut s’agripper à des surfaces verticales ou suspendues avec une adhérence exceptionnelle. Elle peut éviter de tomber tant qu’elle est adjacente à toute surface solide capable de la supporter.</p>",
+            "actions": {
+                "droppingStrike": {
+                    "name": "Frappe plongeante",
+                    "description": "<p>La @ref[actor.name]{créature} peut se laisser tomber depuis une position en hauteur pour <strong>Frapper</strong> une créature située en dessous. La cible subit une attaque <strong>Amplifiée</strong> qui, si elle touche, la met @Condition[prone] en plus de lui infliger des dégâts.</p><p>La @ref[actor.name]{créature} ne subit des dégâts de chute que si l’attaque rate sa cible.</p>",
+                    "effects": [
+                        {
+                            "name": "Frappe plongeante"
+                        }
+                    ]
+                }
+            }
+        },
+        "Glowing Body": {
+            "name": "Corps rayonnant",
+            "description": "<p>La @ref[actor.name]{créature} émet une lumière brillante non magique dans un rayon de 15 feet et une lumière faible dans un rayon de 30 feet.</p>"
+        },
+        "Radiant Death Burst": {
+            "name": "Flamboiement funeste",
+            "description": "<p>À sa mort, la @ref[actor.name]{créature} explose en une déflagration instable d’énergie radiante.</p>",
+            "actions": {
+                "radiantDeathBurst": {
+                    "name": "Flamboiement funeste",
+                    "description": "<p>Lorsque la @ref[actor.name]{créature} devient @Condition[dead], elle explose en une impulsion d’énergie <strong>Radiante</strong> qui attaque la défense de <strong>Fortitude</strong> de toutes les créatures proches ayant échoué à résister à l’effet.</p>",
+                    "condition": "La créature meurt."
+                }
+            }
+        },
+        "Sacrifice Self": {
+            "name": "Sacrifice de soi",
+            "description": "<p>La @ref[actor.name]{créature} peut intervenir pour subir une attaque à la place d’un allié adjacent.</p>",
+            "actions": {
+                "sacrificeSelf": {
+                    "name": "Sacrifice de soi",
+                    "description": "<p>La @ref[actor.name]{créature} réagit, effectuant un <strong>Déplacement</strong> jusqu’à sa <strong>Foulée</strong> pour se placer entre un allié proche et une source de danger qu’elle peut percevoir.</p><p>La @ref[actor.name]{créature} devient @Condition[dead], détruite dans son sacrifice, mais l’action déclenchante ne produit aucun effet sur la cible initiale.</p>",
+                    "condition": "Un allié à proximité est ciblé par une action hostile.",
+                    "effects": [
+                        {
+                            "name": "Sacrifice de soi"
+                        }
+                    ]
+                }
+            }
         }
     }
 }

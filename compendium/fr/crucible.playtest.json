@@ -158,6 +158,9 @@
                                     "effects": [
                                         {
                                             "name": "Agrippé"
+                                        },
+                                        {
+                                            "name": "Lutte"
                                         }
                                     ]
                                 }
@@ -286,7 +289,7 @@
                         },
                         "Inflection: Push": {
                             "name": "Inflexion : Rejeter",
-                            "description": "<p>Amplifiez un sort pour repousser les créatures affectées loin du lanceur. Les créatures affectées par un sort avec l'inflexion Rejeter se déplacent de 1 case loin du lanceur de sorts si cette case de destination est inoccupée.</p>"
+                            "description": "<p>Amplifiez un sort pour repousser les créatures affectées loin du lanceur. Les créatures affectées par un sort avec l'inflexion Rejeter se déplacent de 4 feet loin du lanceur de sorts si la destination est inoccupée.</p>"
                         },
                         "Talisman Weapon Training": {
                             "name": "Talismans : Entraînement",
@@ -821,14 +824,6 @@
                             "name": "Signe : Onde",
                             "description": "<p>Expulsez la puissance arcanique d'une Rune dans un rayon qui se propage vers l'extérieur avec vous en son centre.</p><p>Le signe d'Onde évolue avec la <strong>Présence</strong> et produit une émanation de 10 pieds de rayon, infligeant <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Le signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>5 Actions</strong> et <strong>2 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent est actuellement placé au <strong>palier 4</strong>. Il ne sera accessible qu'à un niveau supérieur (probablement le Niveau 6). Il est actuellement disponible en avant-première pour les tests.</p>"
                         },
-                        "Performance Novice": {
-                            "name": "Performance : Novice",
-                            "description": "<p>Vous avez appris les pratiques de base de l'art et du divertissement. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Performance</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous connaissez quelques danses courantes, avez une collection de contes bien connus, et vous pourriez probablement chanter ou jouer quelques chansons populaires. Vous pouvez être formé à un instrument ou deux, et votre capacité avec un pinceau ou une plume est assez raisonnable pour que vous puissiez probablement créer une œuvre d'art passable.</p>"
-                        },
-                        "Deception Novice": {
-                            "name": "Duperie : Novice",
-                            "description": "<p>Vous êtes un menteur et un manipulateur, et la duperie est une compétence que vous avez pratiquée. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Duperie</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez monter des mensonges et arnaques de base, et reconnaître les signes révélateurs qui trahissent souvent les mauvais menteurs. Vous pouvez constituer une fausse documentation basique pour la plupart des documents courants, mais ils ne résisteront pas à un examen minutieux.</p>"
-                        },
                         "Light Weapon Training": {
                             "name": "Armes légères : Entraînement",
                             "description": "<p>Vous savez manier les armes légères avec fluidité, une grande maniabilité et une grâce remarquable au combat. Vous êtes <strong>Formé</strong> avec toutes les armes des catégories <strong>Légère</strong> et <strong>Équilibrée</strong>.</p>",
@@ -908,21 +903,15 @@
                                 }
                             }
                         },
-                        "Dual Wield": {
-                            "name": "Ambidextrie",
-                            "description": "<p>Vous êtes adepte du combat à deux armes en simultané. Vous pouvez enchaîner les attaques pour frapper plus rapidement qu'il n'est possible avec une seule arme.</p>",
-                            "actions": {
-                                "offhandStrike": {
-                                    "name": "Frappe Main-secondaire",
-                                    "description": "<p>Immédiatement après avoir effectué une Frappe basique avec l'arme de votre main principale, vous réalisez une <strong>Frappe</strong> à coût réduit ave l'arme de votre <strong>main secondaire</strong>.</p>"
-                                }
-                            }
-                        },
                         "Flame Staff": {
                             "name": "Bâton de flamme",
                             "description": {
                                 "public": "<p>Ce bâton de mage est un talisman destiné à faciliter la sorcellerie ou à projeter des jets de flammes arcaniques sur les ennemis.</p>"
                             }
+                        },
+                        "Gesture: Blast": {
+                            "name": "Signe : Explosion",
+                            "description": "<p>Vous projetez la puissance arcanique d'une Rune en une intense explosion d'énergie vers un point proche que vous pouvez voir.</p><p>Le signe d'Explosion évolue avec l'<strong>Intellect</strong> et produit une explosion de 6 pieds de rayon centrée sur un point à moins de 60 pieds du lanceur. L'explosion inflige <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>5 Actions</strong> et <strong>2 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent est actuellement placé au <strong>palier 4</strong>. Il ne sera accessible qu'à un niveau supérieur (probablement le Niveau 6). Il est actuellement disponible en avant-première pour les tests.</p>"
                         }
                     },
                     "ancestry": {
@@ -1426,6 +1415,9 @@
                                     "effects": [
                                         {
                                             "name": "Agrippé"
+                                        },
+                                        {
+                                            "name": "Lutte"
                                         }
                                     ]
                                 }
@@ -1643,14 +1635,6 @@
                                 }
                             }
                         },
-                        "Wilderness Novice": {
-                            "name": "Nature : Novice",
-                            "description": "<p>Vous avez reçu une formation aux bases de la survie et de la traversée en milieu sauvage. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Nature</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez comment trouver et construire un abri sûr contre les éléments, allumer un feu pour la chaleur, rester au frais dans des environnements chauds. Vous pouvez trouver de l'eau potable et sûre dans la plupart des endroits, et comment identifier quelles plantes et animaux peuvent servir de sources de nourriture sûres.</p>"
-                        },
-                        "Athletics Novice": {
-                            "name": "Athlétisme : Novice",
-                            "description": "<p>Vous avez reçu une formation en athlétisme de base. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Athlétisme</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez si une surface peut supporter votre poids, comment trouver des prises en escaladant, et comment répartir votre poids pour flotter en nageant. Vous savez courir sur la distance et comment vous rythmer pour éviter l'épuisement.</p>"
-                        },
                         "Projectile Weapon Training": {
                             "name": "Armes de projectile : Entraînement",
                             "description": "<p>Vous avez une éducation de base en archerie et autres armes à projectile. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes des catégories <strong>Projectile</strong>.</p>",
@@ -1846,14 +1830,6 @@
                             "name": "Signe : Flèche",
                             "description": "<p>Vous lancez un projectile imprégné du pouvoir magique d'une Rune sur une cible distante.</p><p>Le signe de Flèche évolue avec l'<strong>Intellect</strong> et cible une créature unique jusqu'à une distance de 60 pieds, infligeant <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
                         },
-                        "Arcana Novice": {
-                            "name": "Arcanes : Novice",
-                            "description": "<p>Votre éducation a couvert les fondamentaux de la métaphysique et de la théorie magique, la relation entre les runes, la nature opposée de l'ordre et du chaos, et une introduction sommaire aux êtres spirituels, incluant les figures de culte déifiées et diabolisées les plus connues. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Arcanes</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Votre compréhension rudimentaire de la grammaire principale de la magie est suffisante pour identifier quelle rune mineure un sort ou un rituel peut utiliser, ainsi que le signe utilisé (si ce n'est l'inflexion). Vous pouvez identifier si une figure est influencée davantage par le chaos ou par l'ordre, et pouvez repérer les signes d'esprits communs (mineurs et majeurs). Vous en savez assez sur les coutumes religieuses pour communiquer avec ceux qui vénèrent un esprit ou une divinité particulière sans vous mettre dans l'embarras.</p>"
-                        },
-                        "Science Novice": {
-                            "name": "Science : Novice",
-                            "description": "<p>Vous avez appris à étudier le monde autour de vous à travers l'observation structurée, les mathématiques, la physique, la chimie et d'autres disciplines. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Science</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous êtes familier avec les principes de base des mathématiques, de la physique, de la chimie ou d'autres études scientifiques. Vous savez comment construire et utiliser des machines simples dans le but de rendre les tâches physiques plus faciles. Vous connaissez certaines des théories scientifiques les plus communément comprises, et avec le temps approprié pour étudier des machines plus complexes, vous pourriez être capable au moins de les faire fonctionner.</p>"
-                        },
                         "Mechanical Weapon Training": {
                             "name": "Armes mécaniques : Entraînement",
                             "description": "<p>Vous connaissez bien la conception et l'utilisation des arbalètes, des armes à feu et autres armements similaires. Vous êtes <strong>Formé</strong> au maniement des armes de la catégorie <strong>Mécanique</strong>.</p>",
@@ -1972,6 +1948,20 @@
                                     "description": "<p>Vous utilisez votre talisman équipé pour tenter de récupérer du <strong>Focus</strong>. Vous effectuez une <strong>Frappe inoffensive</strong> contre votre propre seuil de <strong>Ralliement</strong>.</p><p>En cas de réussite, vous récupérez <strong>+1 Focus</strong> si vous utilisez un talisman à une main et <strong>+2 Focus</strong> si vous utilisez un talisman à deux mains. En cas de réussite critique, la quantité de Focus récupérée augmente de +1.</p>"
                                 }
                             }
+                        },
+                        "Unshakeable Poise": {
+                            "name": "Équilibre inébranlable",
+                            "description": "<p>Vous faites preuve d'un sang-froid exceptionnel dans les situations stressantes, gardant votre calme lorsque les autres autour de vous perdent leurs moyens.</p>",
+                            "actions": {
+                                "unshakeablePoise": {
+                                    "name": "Équilibre inébranlable",
+                                    "description": "<p>Vous dépensez de l'<strong>Héroïsme</strong> pour récupérer instantanément votre <strong>Sagesse</strong> en <strong>Focus</strong>. Vous pouvez effectuer cette action en dehors de votre tour en Combat avant d'effectuer une <strong>Réaction</strong>.</p>"
+                                }
+                            }
+                        },
+                        "Gesture: Conjure": {
+                            "name": "Signe : Conjuration",
+                            "description": "<p>Vous coalescez la puissance arcanique en une forme supérieure, manifestant un <strong>Visiteur</strong> qui apparaît dans les 30 pieds et rejoint le Combat avec une <strong>Initiative</strong> de 1. Votre Visiteur est un Laquais de niveau égal au vôtre.</p><p>Le signe de Conjuration évolue avec la <strong>Sagesse</strong> et le Visiteur survit pendant <strong>12 Rounds</strong>. Vous ne pouvez avoir qu'un seul Visiteur actif. Lancer un autre sort utilisant le signe de Conjuration remplace votre Visiteur précédent. Ce signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>5 Actions</strong> et <strong>2 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent est actuellement placé au <strong>palier 4</strong>. Il ne sera accessible qu'à un niveau supérieur (probablement le Niveau 6). Il est actuellement disponible en avant-première pour les tests.</p><p>Toutes les Runes n'ont pas encore d'acteur Visiteur défini. Les Runes qui n'ont pas encore de Conjuration définie manifesteront – pour l'instant – un <strong>Visiteur de Flamme</strong>.</p>"
                         }
                     },
                     "ancestry": {
@@ -2009,14 +1999,6 @@
                                     "description": "<p>La maîtrise de la Rune de Terre vous permet de manipuler les forces brutes de la roche, des minéraux, et de la terre de manière fondamentale, produisant l'un des effets suivants :</p><ul><li><p>Façonner rapidement jusqu'à un pied cube de matériau disponible en une forme géométrique simple comme un cuboïde, un ellipsoïde ou un polyèdre.</p></li><li><p>Copier avec précision un objet tenu en main plus petit qu'un cube de 6 pouces d'arrête, à partir d'argile, de pierre ou de métal. La réplique ne conserve aucune propriété utile, hormis sa forme physique.</p></li><li><p>Séparer et recueillir les particules de terre de la surface d'un objet, d'une créature ou d'un liquide que vous touchez, purifiant ainsi complètement le sujet en quelques instants.</p></li></ul><p>Façonner ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
                                 }
                             }
-                        },
-                        "Medicine Novice": {
-                            "name": "Médecine : Novice",
-                            "description": "<p>Vous avez une éducation de base en anatomie, physiologie et médecine. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Médecine</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous avez appris les bases du traitement des blessures et maladies courantes, et tenez une liste courante des composés alchimiques et à base de plantes connus qui peuvent être utilisés pour traiter des maladies particulières. Avec un peu de temps pour étudier un individu blessé, malade ou autrement souffrant, vous pouvez effectuer un diagnostic de base et traiter en conséquence.</p>"
-                        },
-                        "Science Novice": {
-                            "name": "Science : Novice",
-                            "description": "<p>Vous avez appris à étudier le monde autour de vous à travers l'observation structurée, les mathématiques, la physique, la chimie et d'autres disciplines. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Science</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous êtes familier avec les principes de base des mathématiques, de la physique, de la chimie ou d'autres études scientifiques. Vous savez comment construire et utiliser des machines simples dans le but de rendre les tâches physiques plus faciles. Vous connaissez certaines des théories scientifiques les plus communément comprises, et avec le temps approprié pour étudier des machines plus complexes, vous pourriez être capable au moins de les faire fonctionner.</p>"
                         },
                         "Talisman Weapon Training": {
                             "name": "Talismans : Entraînement",
@@ -2218,14 +2200,6 @@
                                 }
                             }
                         },
-                        "Awareness Novice": {
-                            "name": "Vigilance : Novice",
-                            "description": "<p>Vous avez été formé aux bases de la vigilance situationnelle, et êtes capable de remarquer des détails importants de votre environnement. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Vigilance</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez vérifier les sorties en entrant dans une pièce, et comment chercher des armes dissimulées, des pièges cachés, et autres menaces. Vous savez repérer quand vous êtes suivi et comment chercher les cachettes communes.</p>"
-                        },
-                        "Intimidation Novice": {
-                            "name": "Intimidation : Novice",
-                            "description": "<p>Vous comprenez les fondamentaux de comment les menaces et la coercition peuvent atteindre les résultats souhaités. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Intimidation</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez comment utiliser de simples démonstrations de violence ou des menaces ouvertes pour amener les autres à suivre votre direction, mais vous n'êtes pas très subtil.</p>"
-                        },
                         "Unarmed Combat Training": {
                             "name": "Combat à mains nues : Entraînement",
                             "description": "<p>Vous connaissez les arts martiaux de base et le combat au corps à corps. Vous savez comment maîtriser ou contraindre vos adversaires en utilisant votre force physique. Vous êtes <strong>Formé</strong> au maniement des armes dans la catégorie <strong>Mains nues</strong>.</p>",
@@ -2236,6 +2210,9 @@
                                     "effects": [
                                         {
                                             "name": "Agrippé"
+                                        },
+                                        {
+                                            "name": "Lutte"
                                         }
                                     ]
                                 }

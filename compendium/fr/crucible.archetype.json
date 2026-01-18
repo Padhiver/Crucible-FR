@@ -7,7 +7,8 @@
         "Humanoids": "Humanoïdes",
         "Dragons": "Dragons",
         "Elementals": "Élémentaires",
-        "Beasts": "Bêtes"
+        "Beasts": "Bêtes",
+        "Constructs": "Artificiels"
     },
     "entries": {
         "Adult Drake": {
@@ -125,6 +126,18 @@
         "Protector": {
             "name": "Protecteur",
             "description": "<p>Guerriers inflexibles qui s'interposent entre leurs alliés et le danger, dévoués avant tout à préserver autrui de toute menace.</p>"
+        },
+        "Swashbuckler": {
+            "name": "Flibustier",
+            "description": "<p>Ceux qui mènent une vie dangereuse à bord d'un voilier ou qui pratiquent la piraterie en haute mer. Vous êtes connus pour votre esprit, votre charme et parfois pour votre témérité.</p>"
+        },
+        "Burrower": {
+            "name": "Fouisseur",
+            "description": "<p>Des bêtes ou des créatures similaires à des bêtes, expertes dans l’art de creuser et de se déplacer à travers des matériaux solides.</p>"
+        },
+        "Servitor": {
+            "name": "Serviteur",
+            "description": "<p>Des créatures spécialisées dans l’espionnage ou dans l’exécution de tâches à distance pour le compte d’un maître qui les contrôle.</p>"
         }
     }
 }

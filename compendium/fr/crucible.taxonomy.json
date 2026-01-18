@@ -95,6 +95,10 @@
         "Zombie": {
             "name": "Zombi",
             "description": "<p>Cadavres traînants de morts sans repos, leurs corps en décomposition gonflés par la putrescence. Ils se déplacent sans se soucier des blessures qu'ils subissent et ne cherchent qu'à consommer tout ce qu'ils croisent de manière insensée.</p>"
+        },
+        "Apparatus": {
+            "name": "Mécanisme",
+            "description": "<p>Des constructions conçues pour des usages simples, comme des dispositifs de pièges automatisés à plusieurs étapes ou des machines destinées à accomplir une fonction répétitive précise.</p>"
         }
     }
 }

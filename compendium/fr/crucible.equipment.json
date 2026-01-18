@@ -977,6 +977,37 @@
             "description": {
                 "public": "<p>Instrument en bois sculpté ou en os qui, lorsqu'on souffle dedans, produit un son aigu et strident audible à grande distance. Souvent utilisé par les chasseurs et les pêcheurs pour communiquer entre eux en pleine nature ou en mer.</p>"
             }
+        },
+        "Cloak of Kindly Visage": {
+            "name": "Cape au Visage bienveillant",
+            "description": {
+                "public": "<p>Une cape noire sans signe distinctif, qui semble pouvoir s’accorder avec presque n’importe quelle tenue.</p>",
+                "private": "<p>Tant qu’elle est équipée et <strong>Investie</strong>, son porteur gagne l’action <strong>Visage bienveillant</strong> et bénéficie d’un bonus à tous les tests de <strong>Diplomatie</strong> dépendant du niveau d’enchantement de l’objet.</p><ul><li><p><strong>Enchantement mineur</strong> : <strong>+1 Faveur</strong></p></li><li><p><strong>Enchantement majeur</strong> : <strong>+2 Faveurs</strong></p></li><li><p><strong>Enchantement légendaire</strong> : <strong>+3 Faveurs</strong></p></li></ul>"
+            },
+            "actions": {
+                "kindlyVisage": {
+                    "name": "Visage bienveillant",
+                    "description": "<p>Une fois par repos, vous adoptez une apparence illusoire qui modifie aussi bien votre visage que votre tenue. L’illusion ne peut pas changer votre ascendance, mais peut altérer d’autres aspects de votre anatomie, y compris votre genre apparent. La cape elle-même ne change pas d’apparence et reste visible.</p><p>L’illusion persiste indéfiniment et peut être dissipée à volonté. Une fois activée, la cape ne peut pas produire une nouvelle illusion de cette manière avant que 24 heures ne se soient écoulées.</p>",
+                    "effects": [
+                        {
+                            "name": "Visage bienveillant"
+                        }
+                    ]
+                }
+            }
+        },
+        "Luminary Band": {
+            "name": "Anneau luminaire",
+            "description": {
+                "public": "<p>Un anneau d’or finement gravé, serti d’une gemme ovale orange aux reflets scintillants.</p><p>Tant qu’il est équipé et <strong>Investi</strong>, cet anneau confère des Faveurs aux incantations de tout sort composé intégrant une <strong>Inflexion</strong>.</p><ul><li><p><strong>Enchantement mineur</strong> : <strong>+1 Faveur</strong></p></li><li><p><strong>Enchantement majeur</strong> : <strong>+2 Faveurs</strong></p></li><li><p><strong>Enchantement légendaire</strong> : <strong>+3 Faveurs</strong></p></li></ul>",
+                "private": "<p>Cet objet est présenté sous la forme d’un anneau, mais peut en réalité prendre l’apparence de tout autre type d’accessoire, comme une amulette, une cape, des brassards ou un autre bibelot.</p>"
+            }
+        },
+        "Pen": {
+            "name": "Plume",
+            "description": {
+                "public": "<p>Un instrument d’écriture courant utilisé par les scribes, permettant d’interchanger différentes pointes afin d’obtenir divers styles de trait.</p>"
+            }
         }
     }
 }

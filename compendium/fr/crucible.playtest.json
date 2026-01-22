@@ -1442,17 +1442,6 @@
                             "name": "Signe : Protection",
                             "description": "<p>Vous façonnez la puissance arcanique d'une Rune en une barrière protectrice utilisée pour vous prémunir du mal.</p><p>Le signe de Protection évolue avec la <strong>Robustesse</strong> et fournit <strong>+6 Résistance</strong> contre le type de dégâts de la Rune utilisée dans le sort. Cette résistance dure <strong>1 Round</strong> et vous ne pouvez avoir qu'une seule Protection à la fois. Lancer un autre sort utilisant le signe de Protection remplace votre Protection antérieure. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>2 Actions</strong> et <strong>1 Focus</strong>.</p>"
                         },
-                        "Body Block": {
-                            "name": "Opposition corporelle",
-                            "description": "Vous positionnez votre corps face une attaque qui était autrement défendue par votre Armure, pour convertir son résultat en un Blocage à la place.",
-                            "actions": {
-                                "bodyBlock": {
-                                    "name": "Opposition corporelle",
-                                    "description": "<p>Une attaque qui devrait être défendue par votre Armure ou produire un Coup superficiel est convertie en Blocage et n'inflige aucun dégât.</p>",
-                                    "condition": "Vous vous défendez contre une attaque de mêlée avec votre Armure ou subissez un Coup superficiel."
-                                }
-                            }
-                        },
                         "Counter Strike": {
                             "name": "Contre-Attaque",
                             "description": "<p>Vous êtes entraîné à transitionner entre la défense avec votre bouclier et une contre-attaque rapide.</p>",
@@ -1579,6 +1568,16 @@
                             "name": "Ceinture porte-outils optimisée",
                             "description": {
                                 "public": "<p>Une ceinture porte-outils optimisée, sous forme de ceinture utilitaire, de bandoulière ou d'un ensemble de poches cousues dans votre équipement.</p><p>Cet objet procure une nombre d'emplacements supplémentaires dépendant de son niveau de qualité :</p><ul><li><p><strong>Commune</strong> : +1 Emplacement de ceinture porte-outils</p></li><li><p><strong>Raffinée</strong> : +2 Emplacements de ceinture porte-outils</p></li><li><p><strong>Supérieure</strong> : +3 Emplacements de ceinture porte-outils</p></li><li><p><strong>Chef-d’œuvre</strong> : +4 Emplacements de ceinture porte-outils</p></li></ul>"
+                            }
+                        },
+                        "Shield Charge": {
+                            "name": "Charge au bouclier",
+                            "description": "<p>Une technique défensive qui consiste à foncer en avant en percutant et repoussant les ennemis qui se dressent sur votre chemin. Vous vous déplacez en charge jusqu’à 20 pieds en ligne droite et effectuez une <strong>Frappe</strong> de bouclier avec votre main secondaire contre chaque ennemi rencontré le long de votre trajectoire.</p>",
+                            "actions": {
+                                "shieldCharge": {
+                                    "description": "<p>Vous chargez en ligne droite, traversant l’espace occupé par les créatures que vous rencontrez et effectuant une <strong>Frappe</strong> contre chaque ennemi successif. Toute créature <strong>touchée critiquement</strong> par cette attaque peut être repoussée dans une case adjacente de votre choix. Vous ne pouvez pas terminer votre charge dans le même espace qu’une autre créature.</p>",
+                                    "name": "Charge au bouclier"
+                                }
                             }
                         }
                     },

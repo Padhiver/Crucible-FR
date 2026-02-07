@@ -204,6 +204,17 @@
         }
       }
     },
+    "summon": {
+      "label": "Action Summon",
+      "actorUuid": {
+        "label": "Summoned Actor",
+        "hint": "Which specific actor should be summoned by this action?"
+      },
+      "permanent": {
+        "label": "Permanent",
+        "hint": "Should this summon persist until killed?"
+      }
+    },
     "tags": {
       "label": "Action Tags",
       "hint": "Add tags which define the requirements, behavior, and modifiers of this action. The order of tags matters as later tags will take priority over earlier ones if they modify the same properties of the action."
@@ -476,6 +487,7 @@
       "ActionsMovement": "Movement Actions",
       "ActionsReaction": "Reactions",
       "ActionsSpell": "Spellcraft Actions",
+      "ActionsSummon": "Summon Actions",
       "EffectsDisabled": "Disabled Effects",
       "EffectsPersistent": "Persistent Effects",
       "EffectsTemporary": "Temporary Effects"
@@ -661,6 +673,7 @@
 "ACTION.WarningRequireTemplate": "You must place a Measured Template to indicate the area of effect of {action}.",
 "ACTION.WarningMinimumRange": "A selected target is closer than the minimum range of {min} feet.",
 "ACTION.WarningMaximumRange": "A selected target is further than the maximum range of {max} feet.",
+"ACTION.WarningMisconfiguredSummon": "The action {action} does not have a properly configured Summon target.",
 "ACTION.WarningNoAbility": "{actor} has no {ability} score, and therefore cannot use {action}.",
 "ACTION.WarningUnimplementedTarget": "Automation for target type {type} for action {name} is not yet supported, you must manually target affected tokens.",
 
@@ -1138,6 +1151,7 @@
     "Deaf": "Deafened",
     "Diseased": "Diseased",
     "Disoriented": "Disoriented",
+    "Dominated": "Dominated",
     "Enraged": "Enraged",
     "Exhausted": "Exhausted",
     "Exposed": "Exposed",
@@ -1148,6 +1162,7 @@
     "Incapacitated": "Incapacitated",
     "Insane": "Insane",
     "Invisible": "Invisible",
+    "Invulnerable": "Invulnerable",
     "Stunned": "Stunned",
     "Mute": "Silenced",
     "Paralyzed": "Paralyzed",
@@ -1757,7 +1772,8 @@
   },
   "WARNINGS": {
     "CannotAffordHands.one": "The {action} spell requires {hands} free hand to cast.",
-    "CannotAffordHands.other": "The {action} spell requires {hands} free hands to cast."
+    "CannotAffordHands.other": "The {action} spell requires {hands} free hands to cast.",
+    "CannotUseSilenced": "Cannot use Inflections while Silenced."
   }
 },
 

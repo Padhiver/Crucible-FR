@@ -1694,7 +1694,7 @@
             "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Foudre. Les sorts utilisant cette Rune causent la condition @Condition[shocked] sur les Coups critiques.</p><p>L'effet Électrocuté dure <strong>1 Round</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts de <strong>Foudre</strong> au <strong>Moral</strong>, et applique la condition @Condition[staggered].</p>"
         },
         "Swashbuckler": {
-            "name": "Flibustier",
+            "name": "Bretteur",
             "description": "<p>Votre bravade inspire vos alliés et intimide vos ennemis. Lorsque vous Esquivez ou Parez une Frappe, l'attaquant perd un montant de Moral égal à votre attribut de Présence. Lorsque vous réussissez un Coup critique, tous les alliés proches qui peuvent vous voir gagnent un montant de Moral égal à votre attribut de Présence.</p>"
         },
         "Swipe": {

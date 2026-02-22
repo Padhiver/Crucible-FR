@@ -186,6 +186,17 @@
                         "label": "Cible de l'Effet"
                     }
                 }
+            },
+            "summon": {
+                "label": "Action invocation",
+                "actorUuid": {
+                    "label": "Acteur invoqué",
+                    "hint": "Quel acteur spécifique doit être invoqué par cette action ?"
+                },
+                "permanent": {
+                    "label": "Permanent",
+                    "hint": "Cette invocation doit-elle persister jusqu'à sa mort ?"
+                }
             }
         },
         "DEFAULT_ACTIONS": {
@@ -428,7 +439,9 @@
                 "ActionsSpell": "Actions de sorcellerie",
                 "EffectsDisabled": "Effets désactivés",
                 "EffectsPersistent": "Effets persistants",
-                "EffectsTemporary": "Effets temporaires"
+                "EffectsTemporary": "Effets temporaires",
+                "ActionsSummon": "Actions d'invocation",
+                "EffectsSuppressed": "Effets supprimés"
             },
             "PointsAvailable": "Disponible",
             "PointsSpent": "Utilisé",
@@ -623,7 +636,9 @@
             "Inspired": "Inspiré",
             "Poisoned": "Empoisonné",
             "Shocked": "Électrocuté",
-            "Burrowing": "Enfoui"
+            "Burrowing": "Enfoui",
+            "Dominated": "Dominé",
+            "Invulnerable": "Invulnérable"
         },
         "ACTIONS": {
             "Delete": "Supprimer l'effet",
@@ -640,7 +655,7 @@
     "ACTION.WarningCannotUse": "{name} ne remplit pas les pré-requis pour utiliser {action} : {reason}",
     "ACTION.WarningCannotAffordCost": "{name} ne dispose pas de suffisamment de {resource} pour utiliser {action} !",
     "ACTION.WarningCannotAffordMove": "{name} n'a pas assez d'actions pour parcourir cette distance (coût : {cost}A).",
-    "ACTION.WarningCannotSpendAction": "{name} ne peut pas dépenser d'Action car il est Paralysé !",
+    "ACTION.WarningCannotSpendAction": "{name} ne peut pas dépenser d'Action car il est Neutralisé !",
     "ACTION.WarningCannotSpendFocus": "{name} ne peut pas dépenser de Focus car il est actuellement {status} !",
     "ACTION.WarningInvalidTarget": "Vous devez désigner au moins une cible de type {type} pour l'action {action} !",
     "ACTION.WarningCannotTargetSelf": "Vous ne pouvez pas vous cibler avec cette Action !",
@@ -916,7 +931,8 @@
             "Bomb": "Bombe",
             "Flask": "Fiole",
             "Kit": "Kit",
-            "Other": "Autre"
+            "Other": "Autre",
+            "Trap": "Piège"
         }
     },
     "CURRENCY_DENOMINATIONS": {
@@ -1038,7 +1054,11 @@
             "Edit": "Éditer l'objet",
             "Equip": "Équiper : {typeLabel}",
             "Recover": "Récupérer : {typeLabel}",
-            "UnEquip": "Déséquiper : {typeLabel}"
+            "UnEquip": "Déséquiper : {typeLabel}",
+            "EquipDetail": "Équiper {item}",
+            "RecoverAllTitle": "Récupérer les objets lâchés",
+            "RecoverAllContent": "Ramasser tous les objets lâchés de {actor} ?",
+            "RecoverDetail": "Récupérer l'objet lâché : {item}"
         },
         "PROPERTIES": {
             "Armor": "{armor} Armure",
@@ -1053,7 +1073,8 @@
             "NotKnown": "Non connu",
             "Parry": "Parade {parry}",
             "Range": "Portée {range}",
-            "Stackable": "Empilable"
+            "Stackable": "Empilable",
+            "Unequipped": "Non équipé"
         },
         "WARNINGS": {
             "NotTalent": "Le document déposé doit être un Talent."
@@ -1166,9 +1187,9 @@
             "Enchanting": "Glyphe d'Enchantement",
             "Fletching": "Croquis d'Empennage",
             "Jewelcraft": "Graphique de Joaillerie",
-            "Runeweaving": "Arcane de Tisserune",
             "Smithing": "Plan de Forgeron",
-            "Tailoring": "Patron de Couture"
+            "Tailoring": "Patron de Couture",
+            "Glyphweaving": "Arcanum de tissage de glyphes"
         },
         "MODES": {
             "Any": "N'importe lequel",
@@ -1256,10 +1277,10 @@
             "tailoring": "Couture",
             "fletching": "Empennage",
             "jewelcraft": "Joaillerie",
-            "runeweaving": "Tisserune",
             "alchemy": "Alchimie",
             "cooking": "Cuisine",
-            "enchanting": "Enchantement"
+            "enchanting": "Enchantement",
+            "glyphweaving": "Tissage de glyphes"
         },
         "RANKS": {
             "UNTRAINED": {
@@ -1437,8 +1458,15 @@
             "WARNINGS": {
                 "BadTarget": "Vous pouvez uniquement Contrer le sort du lanceur de la dernière action, et cette action doit être un sort.",
                 "InvalidTerms": "Impossible d'analyser {terms} en tant que termes de Contresort valides.",
-                "MissingComponents": "Un enrichisseur de Contresort doit avoir au moins 1 rune et 1 signe."
+                "MissingComponents": "Un enrichisseur de Contresort doit avoir au moins 1 rune et 1 signe.",
+                "NoTalent": "{actor} ne possède pas le talent Contresort.",
+                "NoUser": "Aucun utilisateur non-MJ présent pour gérer un Contresort de l'acteur {actor}"
             }
+        },
+        "WARNINGS": {
+            "CannotAffordHands.one": "Le sort {action} requiert {hands} main de libre à lancer.",
+            "CannotAffordHands.other": "Le sort {action} requiert {hands} main de libre à lancer.",
+            "CannotUseSilenced": "Impossible d'utiliser des inflexions en étant Aphone."
         }
     },
     "TALENT": {
@@ -1914,7 +1942,12 @@
         "AddParty": "Ajouter le Groupe",
         "ClearRequest": "Effacer la requête",
         "Request": "Requête",
-        "RequestRolls": "Requête de Lancers"
+        "RequestRolls": "Requête de Lancers",
+        "AnyActor": "N'importe quel Acteur",
+        "AnyActorHint": "Choisissez des Acteurs du monde.",
+        "ChooseTarget": "Choisissez une Cible",
+        "SpecificActors": "Acteurs spécifiques",
+        "SpecificActorsHint": "Choisissez des acteurs spécifiques appropriés."
     },
     "BASE_EFFECT": {
         "FIELDS": {
@@ -2026,5 +2059,11 @@
         "Reckless": "Téméraire"
     },
     "WARNING.CannotEquipTaxonomy": "L'acteur {actor} ne peut pas équiper l'objet \"{item}\" car la taxonomie \"{taxonomy}\" est incapable d'utiliser de l'équipement.",
-    "DICE.DCSpecific": "DD {dc}"
+    "DICE.DCSpecific": "DD {dc}",
+    "ACTION.WarningNoAbility": "{actor} n'a pas de score de {ability}, et ne peut donc pas utiliser {action}.",
+    "ACTION.WarningCannotAffordHands.one": "{name} doit avoir {hands} main de libre pour utiliser {action} !",
+    "ACTION.WarningCannotAffordHands.other": "{name} doit avoir {hands} main de libre pour utiliser {action} !",
+    "ACTION.WarningMisconfiguredSummon": "La cible invoquée de l'action {action} n'est pas configurée correctement.",
+    "ACTION.TagSevere": "Grave",
+    "ACTION.TagSevereTooltip": "Si la cible de cette action possède des ressources Lésions et Folie, cette action affecte directement ces ressources, indépendamment de sa Santé ou de son Moral."
 }

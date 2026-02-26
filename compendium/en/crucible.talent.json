@@ -10,6 +10,7 @@
   "folders": {
     "Runes": "Runes",
     "Shield": "Shield",
+    "Toolbelt": "Toolbelt",
     "Two-Handed": "Two-Handed",
     "Morale": "Morale",
     "Initiative": "Initiative",
@@ -303,6 +304,21 @@
       "name": "Carefree",
       "description": "<p>You are able to compartmentalize and brush off setbacks, providing a remarkable ability to recover from damage to your Morale.</p>\n<p>Your <strong>Madness Threshold</strong> is reduced by 1, making you easier to heal.</p>"
     },
+    "Chirurgeon": {
+      "name": "Chirurgeon",
+      "description": "<p>Your improvisational expertise with battlefield medicine can save many lives. You make all <strong>Medicine</strong> checks during combat with <strong>+1 Boon</strong>.</p>",
+      "actions": {
+        "medicinalCompound": {
+          "name": "Medicinal Compound",
+          "description": "<p>You delve into your medical supplies, hastily combining whatever you might have available to salve the target's wounds or calm the target's mind. Perform a <strong>Medicine Check</strong>.</p><p>The attempt is contested by the higher of the target's <strong>Healing Threshold</strong> or <strong>Rallying Threshold</strong>. If successful the target immediately regains both Health and Morale as well as half that amount at the beginning of each of the subsequent 3 turns.</p>",
+          "effects": [
+            {
+              "name": "Medicinal Compound"
+            }
+          ]
+        }
+      }
+    },
     "Clarify Intent": {
       "name": "Clarify Intent",
       "description": "You use apply your situational awareness and persuasiveness to rapidly communicate a plan of action to an ally.",
@@ -446,6 +462,10 @@
           "condition": "You Dodge an incoming melee Strike."
         }
       }
+    },
+    "Demolitionist": {
+      "name": "Demolitionist",
+      "description": "<p>Your remarkable expertise with munitions allows you to wield them efficiently amidst the chaos of combat. Each turn, your first usage of a <strong>Bomb</strong> has a reduced cost of <strong>-1 Action</strong>. </p><p>You are no longer targeted by your own bombs, even if you are otherwise within their area of effect.</p>"
     },
     "Dervish": {
       "name": "Dervish",
@@ -761,6 +781,14 @@
     "Gladiator": {
       "name": "Gladiator",
       "description": "<p>Once per Round, you can make a Reaction which incorporates a Strike attack without spending any Focus.</p>"
+    },
+    "Glyphweaving Journeyman": {
+      "name": "Glyphweaving Journeyman",
+      "description": "<p>You have a professional degree of experience with the Runic sciences and can work through some of the more advanced glyphweaving processes given sufficient time.</p><p>The basic properties of most common Glyphs and their phrases are easy for you to remember without reference material, but you still need books for rare ideograms and their components.</p>"
+    },
+    "Glyphweaving Novice": {
+      "name": "Glyphweaving Novice",
+      "description": "<p>You have received training in the fundamentals of Glyphweaving and are capable of working with most common glyphs and engravings.</p><p>You still need to reference recipes and books to identify particular glyphs and their properties.</p>"
     },
     "Hamstring": {
       "name": "Hamstring",
@@ -1281,7 +1309,7 @@
     },
     "Powerful Throw": {
       "name": "Powerful Throw",
-      "description": "<p>The maximum range at which you can use <strong>Throw Weapon</strong> is doubled.</p>"
+      "description": "<p>The maximum range of actions with the <strong>Throw</strong> tag or actions from <strong>Bomb</strong> consumables are doubled</p>"
     },
     "Precision Shot": {
       "name": "Precision Shot",
@@ -1497,14 +1525,6 @@
       "name": "Runewarden",
       "description": "<p>Your mastery of the arcane makes you more resilient to elemental and spiritual harm. You gain a bonus to <strong>Resistance</strong> equal to half your Wisdom for each Elemental or Spiritual damage type where you know the Arcane Rune attuned to that damage type.</p><p>When you use the <strong>Ward</strong> gesture, the Resistance provided by your Ward also increases by half your Wisdom.</p>"
     },
-    "Runeweaving Journeyman": {
-      "name": "Runeweaving Journeyman",
-      "description": "<p>You have a professional degree of experience with the Runic sciences and can work through some of the more advanced runeweaving processes given sufficient time.</p><p>The basic properties of most common Glyphs and their phrases are easy for you to remember without reference material, but you still need books for rare ideograms and their components.</p>"
-    },
-    "Runeweaving Novice": {
-      "name": "Runeweaving Novice",
-      "description": "<p>You have received training in the fundamentals of Runeweaving and are capable of working with most common glyphs and engravings.</p><p>You still need to reference recipes and books to identify particular glyphs and their properties.</p>"
-    },
     "Ruthless Momentum": {
       "name": "Ruthless Momentum",
       "description": "<p>You relish the carnage you can cause in combat and continue to press the fray as each enemy falls.</p>",
@@ -1515,6 +1535,10 @@
           "condition": "You incapacitate an enemy with a melee attack."
         }
       }
+    },
+    "Saboteur": {
+      "name": "Saboteur",
+      "description": "<p>You are skilled with the use of thrown munitions. When using a consumable of the <strong>Bomb</strong> type you always count as at least <strong>Trained</strong> regardless of which skill is used and you gain <strong>+1 Boon</strong> to any involved check.</p>"
     },
     "Safecracker": {
       "name": "Safecracker",
@@ -1812,7 +1836,7 @@
     },
     "Thoughtbinder": {
       "name": "Thoughtbinder",
-      "description": "<p>You are highly skilled in weaving the Rune of Control. Spells which use this Rune cause the @Condition[restrained] condition on Critical Hits.</p><p>The Restrained effect lasts for <strong>1 Round</strong> and deals your <strong>Wisdom</strong> ability score as additional <strong>Psychic</strong> damage to <strong>Morale</strong>.</p>"
+      "description": "<p>You are highly skilled in weaving the Rune of Control. Spells which use this Rune cause the @Condition[dominated] condition on Critical Hits.</p><p>The Dominated effect lasts for <strong>1 Round</strong> and deals your <strong>Wisdom</strong> ability score as additional <strong>Psychic</strong> damage to <strong>Morale</strong>.</p>"
     },
     "Thread the Needle": {
       "name": "Thread the Needle",

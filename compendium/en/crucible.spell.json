@@ -7,7 +7,15 @@
       "converter": "actions_converter"
     }
   },
-  "folders": {},
+  "folders": {
+    "Gesture: Aura": "Gesture: Aura",
+    "Gesture: Strike": "Gesture: Strike",
+    "Gesture: Aspect": "Gesture: Aspect",
+    "Gesture: Pulse": "Gesture: Pulse",
+    "Gesture: Infuence": "Gesture: Infuence",
+    "Gesture: Creation": "Gesture: Creation",
+    "Gesture: Sense": "Gesture: Sense"
+  },
   "entries": {
     "Bind Armament": {
       "name": "Bind Armament",
@@ -20,6 +28,96 @@
         "conjureArmament": {
           "name": "Conjure Armament",
           "description": "<p>You call your bound armament back into your grasp. As long as you have sufficient free hands to hold it, the weapon returns instantaneously to you and is no longer <strong>Disarmed</strong>.</p>"
+        }
+      }
+    },
+    "Curse of Atrophy": {
+      "name": "Curse of Atrophy",
+      "description": "<p>You sap the physical strength of your target, causing their muscles to wither and weaken in a way that cannot be undone by ordinary rest or recovery.</p>",
+      "actions": {
+        "curseAtrophy": {
+          "name": "Curse of Atrophy",
+          "description": "<p>Touch the target to afflict them with a wasting curse that permanently reduces their <strong>Strength</strong> by 2.</p>",
+          "effects": [
+            {
+              "name": "Curse of Atrophy"
+            }
+          ]
+        }
+      }
+    },
+    "Curse of Delusion": {
+      "name": "Curse of Delusion",
+      "description": "<p>You cloud the clarity of your target's mind, permanently impairing their perception and sound judgment in ways that resist ordinary healing.</p>",
+      "actions": {
+        "curseDelusion": {
+          "name": "Curse of Delusion",
+          "description": "<p>Touch the target to becloud their perceptions with a curse that permanently reduces their <strong>Wisdom</strong> by 2.</p>",
+          "effects": [
+            {
+              "name": "Curse of Delusion"
+            }
+          ]
+        }
+      }
+    },
+    "Curse of Dullness": {
+      "name": "Curse of Dullness",
+      "description": "<p>You dim the spark of intellect within your target, permanently impairing their capacity for swift thought and reasoning in ways that cannot be mended by rest alone.</p>",
+      "actions": {
+        "curseDullness": {
+          "name": "Curse of Dullness",
+          "description": "<p>Touch the target to dull their mind with a curse that permanently reduces their <strong>Intellect</strong> by 2.</p>",
+          "effects": [
+            {
+              "name": "Curse of Dullness"
+            }
+          ]
+        }
+      }
+    },
+    "Curse of Exhaustion": {
+      "name": "Curse of Exhaustion",
+      "description": "<p>You drain the vital resilience of your target, leaving them constitutionally weakened in a way that persists beyond any ordinary recovery.</p>",
+      "actions": {
+        "curseExhaustion": {
+          "name": "Curse of Exhaustion",
+          "description": "<p>Touch the target to drain their vitality with a curse that permanently reduces their <strong>Toughness</strong> by 2.</p>",
+          "effects": [
+            {
+              "name": "Curse of Exhaustion"
+            }
+          ]
+        }
+      }
+    },
+    "Curse of Lethargy": {
+      "name": "Curse of Lethargy",
+      "description": "<p>You smother the spark of quickness within your target, dulling their reflexes and slowing their body's response in a way that endures permanently.</p>",
+      "actions": {
+        "curseLethargy": {
+          "name": "Curse of Lethargy",
+          "description": "<p>Touch the target to afflict them with sluggishness, permanently reducing their <strong>Dexterity</strong> by 2.</p>",
+          "effects": [
+            {
+              "name": "Curse of Lethargy"
+            }
+          ]
+        }
+      }
+    },
+    "Curse of Scorn": {
+      "name": "Curse of Scorn",
+      "description": "<p>You diminish the force of your target's personality, making them less compelling and harder for others to heed in a way that proves permanent.</p>",
+      "actions": {
+        "curseScorn": {
+          "name": "Curse of Scorn",
+          "description": "<p>Touch the target to wither their force of will with a curse that permanently reduces their <strong>Presence</strong> by 2.</p>",
+          "effects": [
+            {
+              "name": "Curse of Scorn"
+            }
+          ]
         }
       }
     },

@@ -11,20 +11,22 @@
     "Charge": "Charge",
     "Bites": "Bites",
     "Claws": "Claws",
-    "Communication": "Communication",
-    "Beast": "Beast",
     "Bursts": "Bursts",
     "Flight": "Flight",
+    "Tail": "Tail",
+    "Communication": "Communication",
+    "Beast": "Beast",
+    "Critical Hits": "Critical Hits",
     "Death": "Death",
-    "Breath": "Breath",
     "Ooze": "Ooze",
     "Passive": "Passive",
     "Construct": "Construct",
     "Strikes": "Strikes",
-    "Movement": "Movement",
     "Resistances": "Resistances",
     "Undead": "Undead",
-    "Senses": "Senses"
+    "Senses": "Senses",
+    "Movement": "Movement",
+    "Breath": "Breath"
   },
   "entries": {
     "Acid Absorption": {
@@ -81,7 +83,11 @@
     },
     "Blood Sense": {
       "name": "Blood Sense",
-      "description": "<p>The @ref[actor.name] is permanently <strong>Blinded</strong>, but can precisely sense any blooded creature within 20 feet which does not have all its hit points.</p><p>Any weapon or skill attack against a wounded creature does not suffer <strong>Banes</strong> that would normally apply when <strong>Blinded</strong>.</p>"
+      "description": "<p>The @ref[actor.name]{creature} can precisely sense any blooded creature within 20 feet which does not have all its hit points. Any weapon or skill attack against a wounded creature does not suffer <strong>Banes</strong> that would normally apply if the creature were @Condition[blinded].</p>"
+    },
+    "Bonded Mind": {
+      "name": "Bonded Mind",
+      "description": "<p>The mind of a @ref[actor.name]{creature} with this talent is inextricably bound to other members of its group. It is capable of instantaneous telepathic communication with any other @ref[actor.taxonomy.name]{creature of its taxonomy} within 60 feet.</p>"
     },
     "Burrower": {
       "name": "Burrower",
@@ -136,6 +142,10 @@
       "name": "Elusive Flight",
       "description": "<p>This @ref[actor.name]{creature} is especially elusive while in flight, able to swoop in and out of combat without provoking any <strong>Disengagement</strong>. It can be engaged if it lands upon the ground and Disengagement may apply if it attempts to return to flight.</p>"
     },
+    "Extended Breath": {
+      "name": "Extended Breath",
+      "description": "<p>The @ref[actor.name]{creature} can hold its breath for <strong>15 minutes</strong>.</p>"
+    },
     "False Appearance": {
       "name": "False Appearance",
       "description": "<p>While it remains motionless, the @ref[actor.name]{creature} is indistinguishable from some other object or material.</p>"
@@ -144,13 +154,83 @@
       "name": "Fire Absorption",
       "description": "<p>The @ref[actor.name]{creature} has an exceptional ability to thrive within scorching environments. Its <strong>Fire</strong> resistance is doubled and if that resistance would reduce an amount of damage below zero, the negative amount is received as <strong>Healing</strong> instead.</p>"
     },
+    "Glider": {
+      "name": "Glider",
+      "description": "<p>The @ref[actor.name]{creature} can control its movement while falling and may perform the <strong>Move</strong> action up to a maximum distance of its <strong>Stride</strong> for each 20 feet that it falls.</p><p>If it spends Action to Move in this way, it does not suffer falling damage upon landing.</p>"
+    },
+    "Gloom Sight": {
+      "name": "Gloom Sight",
+      "description": "<p>The @ref[actor.name]{creature} can gaze into the gloom of total darkness and see normally. Magical darkness does not impede the creature's vision.</p><p><strong>System Development</strong>: This feature needs automation to configure vision and detection modes that are unaffected by magical darkness.</p>"
+    },
     "Glowing Body": {
       "name": "Glowing Body",
       "description": "<p>The @ref[actor.name]{creature} emits non-magical bright light in a 15-foot radius and dim light in a 30 foot radius.</p>"
     },
+    "Grave Mark": {
+      "name": "Grave Mark",
+      "description": "<p>When the @ref[actor.name]{creature} achieves a Critical Hit with a melee attack, it leaves a baleful Grave Mark upon its target.</p>",
+      "actions": {
+        "graveMark": {
+          "name": "Grave Mark",
+          "description": "<p>After achieving a <strong>Critical Hit</strong> with a melee attack, the @ref[actor.name]{creature} attacks the target's <strong>Willpower</strong> defense, leaving a Grave Mark upon a success that inflicts the @Condition[exhausted] condition that persists until the target completes a <strong>Rest</strong>.</p><p>If a humanoid creature bearing a Grave Mark dies while under the effects of the mark, it rises from death on its subsequent Turn as a @UUID[Compendium.crucible.taxonomy.Item.ghoul00000000000]{Ghoul}.</p>",
+          "condition": "When achieving a Critical Hit with a melee attack.",
+          "effects": [
+            {
+              "name": "Grave Mark"
+            }
+          ]
+        }
+      }
+    },
+    "Horrific Critical": {
+      "name": "Horrific Critical",
+      "description": "<p>The @ref[actor.name]{creature} delivers savage and grotesque blows that evoke fear within any who behold them.</p>",
+      "actions": {
+        "horrificCritical": {
+          "name": "Horrific Critical",
+          "description": "<p>When the @ref[actor.name]{creature} achieves a <strong>Critical Hit</strong> using a melee attack it may exaggerate the blow in a way that evokes fear within those who behold the strike.</p><p>All the enemies within 30 feet who can see the creature face a <strong>Harmless</strong> attack against their <strong>Willpower</strong> or become @Condition[frightened] for <strong>3 Turns</strong>.</p>",
+          "condition": "Immediately after the creature achieves a Critical Hit with a melee attack.",
+          "effects": [
+            {
+              "name": "Horrific Critical"
+            }
+          ]
+        }
+      }
+    },
     "Immutable Form": {
       "name": "Immutable Form",
       "description": "<p>The @ref[actor.name] is immune to any spell or effect which alters its physical form.</p>"
+    },
+    "Lightning Spit": {
+      "name": "Lightning Spit",
+      "description": "<p>The @ref[actor.name]{creature} is able to produce and expel minor voltaic discharge.</p>",
+      "actions": {
+        "lightningSpit": {
+          "name": "Lightning Spit",
+          "description": "<p>The @ref[actor.name]{creature} spits a small bolt of lightning at a target creature within 20 feet, attacking its <strong>Reflex</strong> and dealing <strong>Electricity</strong> damage.</p><p>On a <strong>Critical Hit</strong> the attack causes the @Condition[shocked] condition for <strong>3 Turns</strong>.</p>",
+          "effects": [
+            {
+              "name": "Lightning Spit"
+            }
+          ]
+        }
+      }
+    },
+    "Lightning Spray": {
+      "name": "Lightning Spray",
+      "description": "<p>The @ref[actor.name]{creature} is able to produce and expel powerful voltaic discharge.</p>",
+      "actions": {
+        "lightningSpray": {
+          "name": "Lightning Spray",
+          "description": "<p>The @ref[actor.name]{creature} expels a bolt of lighting in a 30 foot ray that is 4 feet wide, attacking the <strong>Reflex</strong> of each target along that path and dealing <strong>Electricity</strong> damage.</p><p>On a <strong>Critical Hit</strong> the attack causes the @Condition[shocked] condition for <strong>3 Turns</strong>.</p>",
+          "effects": [
+            {
+              "name": "Lightning Spray"
+            }
+          ]
+        }
+      }
     },
     "Magical Sight": {
       "name": "Magical Sight",
@@ -163,6 +243,51 @@
         "oozeMultiply": {
           "name": "Multiply",
           "description": "<p>The ooze's cells rapidly multiply as the creature grows. Its <strong>Size</strong> increases by 1 and its <strong>Health</strong> increases by its <strong>Toughness</strong> value.</p>"
+        }
+      }
+    },
+    "Necrotic Bite": {
+      "name": "Necrotic Bite",
+      "description": "<p>The @ref[actor.name]{creature} tears into flesh with a maw that is corrupted by pestilence and undeath.</p>",
+      "actions": {
+        "necroticBite": {
+          "name": "Necrotic Bite",
+          "description": "<p>The @ref[actor.name]{creature} attacks with a pestilent bite that is <strong>Empowered</strong> and deals <strong>Corruption</strong> damage.</p><p>On a <strong>Critical Success</strong> the attack causes the @Condition[decaying] condition for <strong>3 Turns</strong>.</p>",
+          "effects": [
+            {
+              "name": "Necrotic Bite"
+            }
+          ]
+        }
+      }
+    },
+    "Noxious Spit": {
+      "name": "Noxious Spit",
+      "description": "<p>The @ref[actor.name]{creature} produces a salivary toxin that it can expel in a projected globule.</p>",
+      "actions": {
+        "noxiousSpit": {
+          "name": "Noxious Spit",
+          "description": "<p>The @ref[actor.name]{creature} spits globule of toxin at a target creature within 20 feet, attacking its <strong>Reflex</strong> and dealing <strong>Poison </strong>damage.</p><p>On a <strong>Critical Hit</strong> the attack causes the @Condition[poisoned] condition for <strong>3 Turns</strong>.</p>",
+          "effects": [
+            {
+              "name": "Noxious Spit"
+            }
+          ]
+        }
+      }
+    },
+    "Noxious Spray": {
+      "name": "Noxious Spray",
+      "description": "<p>The @ref[actor.name]{creature} is able to produce and expel toxic discharge in a projected ray.</p>",
+      "actions": {
+        "noxiousSpray": {
+          "name": "Noxious Spray",
+          "description": "<p>The @ref[actor.name]{creature} expels toxic discharge in a 30 foot ray that is 4 feet wide, attacking the <strong>Reflex</strong> of each target along that path and dealing <strong>Poison</strong> damage.</p><p>On a <strong>Critical Hit</strong> the attack causes the @Condition[poisoned] condition for <strong>3 Turns</strong>.</p>",
+          "effects": [
+            {
+              "name": "Noxious Spray"
+            }
+          ]
         }
       }
     },
@@ -289,6 +414,16 @@
         }
       }
     },
+    "Shadow Gait": {
+      "name": "Shadow Gait",
+      "description": "<p>The @ref[actor.name]{creature} is able to step into and out of shadow itself to move in nightmarish and unpredictable ways.</p>",
+      "actions": {
+        "shadowGait": {
+          "name": "Shadow Gait",
+          "description": "<p>While in dim light or darkness, the @ref[actor.name] can meld into shadow to disappear from view. It may <strong>Move</strong> and reappear within a different area which is also dim light or darkness. This is a <strong>Displace</strong> movement which provokes no disengagement.</p>"
+        }
+      }
+    },
     "Slippery Form": {
       "name": "Slippery Form",
       "description": "<p>This creature is permanently slippery, giving it the ability to elude capture by physical restraints.</p>",
@@ -309,9 +444,13 @@
         }
       }
     },
+    "Sunlight Weakness": {
+      "name": "Sunlight Weakness",
+      "description": "<p>While in sunlight, the @ref[actor.name]{creature} suffers <strong>2 Banes</strong> to all actions. </p><p>This mechanic is handled through an <strong>Active Effect</strong> that is easily toggled when applicable.</p>"
+    },
     "Swooping Strike": {
       "name": "Swooping Strike",
-      "description": "<p>This creature swoops from high above into a diving attack.</p>",
+      "description": "<p>This @ref[actor.name]{creature} swoops from high above into a diving attack.</p>",
       "actions": {
         "swoopingStrike": {
           "name": "Swooping Strike",
@@ -324,6 +463,25 @@
         }
       }
     },
+    "Tail Sweep": {
+      "name": "Tail Sweep",
+      "description": "<p>The @ref[actor.name]{creature} can whip its heavy tail across the battlefield with terrible force.</p>",
+      "actions": {
+        "tailSweep": {
+          "name": "Tail Sweep",
+          "description": "<p>The @ref[actor.name]{creature} sweeps its heavy tail in a circular arc, striking all creatures within range. On a <strong>Critical Hit</strong>, affected targets become @Condition[staggered] for until the end of their next turn.</p>",
+          "effects": [
+            {
+              "name": "Tail Sweep"
+            }
+          ]
+        }
+      }
+    },
+    "Thermal Vision": {
+      "name": "Thermal Vision",
+      "description": "<p>The @ref[actor.name]{Creature} perceives the world through differences in temperature with precision, allowing it to locate creatures which are warm-blooded or otherwise emit heat up to 60 feet away as long as they are not behind total cover and you are not Blinded or Incapacitated. A creature detected using this Thermal Vision is treated as visible for the purposes of actions which require you to see your target.</p><p></p>"
+    },
     "Thrash": {
       "name": "Thrash",
       "description": "<p>Once the @ref[actor.name]{creature} has an enemy restrained, it will thrash violently dealing terrible blows to the grasped victim.</p>",
@@ -332,6 +490,21 @@
           "name": "Thrash",
           "description": "<p>The creature deals <strong>Deadly</strong> damage to a target that it currently has <strong>Restrained</strong>.</p>",
           "condition": "The target is Restrained by this creature."
+        }
+      }
+    },
+    "Trampling Charge": {
+      "name": "Trampling Charge",
+      "description": "<p>The @ref[actor.name]{creature} uses its prodigious size to charge forward, trampling smaller creatures that stand in its way.</p>",
+      "actions": {
+        "tramplingCharge": {
+          "name": "Trampling Charge",
+          "description": "<p>The @ref[actor.name]{creature} moves forward up to twice its <strong>Stride</strong>, attacking the <strong>Reflex</strong> defense of all creatures in its path. Targets who are half the creature's size or smaller are @Condition[stunned] until the end of their next turn as they are slammed aside.</p>",
+          "effects": [
+            {
+              "name": "Trampling Charge"
+            }
+          ]
         }
       }
     },

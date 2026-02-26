@@ -12,7 +12,9 @@
     "Bombs": "Bombs",
     "Flasks": "Flasks",
     "Other": "Other",
+    "Scrolls": "Scrolls",
     "Toxins": "Toxins",
+    "Traps": "Traps",
     "Accessories": "Accessories",
     "Clothing": "Clothing",
     "Jewelry": "Jewelry",
@@ -204,6 +206,23 @@
         "public": "<p>A leather-bound wooden kitbag. Contains a razor, handsaw, pliers, bandages, a bottle of alchemical spirits, needle and thread, and a four inch wooden branch wrapped in leather. Everything one might need to perform amputations or excisions.</p>"
       }
     },
+    "Choking Ampoule": {
+      "name": "Choking Ampoule",
+      "description": {
+        "public": "<p>This sealed glass phial contains a swirling cloud of dense green gas held at pressure within. Shattering the ampoule would release its contained fumes which cause a demoralizing and suffocating effect on those exposed to it.</p>"
+      },
+      "actions": {
+        "chokingAmpoule": {
+          "name": "Choking Ampoule",
+          "description": "<p>You hurl the @ref[name], which is <strong>Harmless</strong> in its immediate effect but causes the @Condition[poisoned] condition to all enemies in an 8 foot radius <strong>Blast</strong> who fail to resist the attack with their <strong>Fortitude</strong>.</p><p>The gas deals poison damage to <strong>Morale</strong> in an amount dependent on the quality of the @ref[name]. Upon a critical success, the affected target also becomes @Condition[silenced] for the duration.</p><ul><li><p><strong>Shoddy</strong> - 2 damage for 3 rounds</p></li><li><p><strong>Standard</strong> - 6 damage for 3 rounds</p></li><li><p><strong>Fine</strong> - 12 damage for 3 rounds</p></li><li><p><strong>Superior</strong> - 20 damage for 3 rounds</p></li><li><p><strong>Masterwork</strong> - 30 damage for 3 rounds</p></li></ul>",
+          "effects": [
+            {
+              "name": "Choking Ampoule"
+            }
+          ]
+        }
+      }
+    },
     "Claw Hammer": {
       "name": "Claw Hammer",
       "description": {
@@ -340,6 +359,18 @@
       "name": "Glue",
       "description": {
         "public": "<p>A vial of common animal glue.</p>"
+      }
+    },
+    "Glyphweaver's Portable Workbench": {
+      "name": "Glyphweaver's Portable Workbench",
+      "description": {
+        "public": "<p>A collapsible wooden box that can be unfolded into a small workbench designed as a work surface for fabricating glyphs. Contains engraving chisels and awls, a lapidary hammer, decorative leather mat and space for storing glyphs and other ritual materials.</p>"
+      }
+    },
+    "Glyphweaver's Toolkit": {
+      "name": "Glyphweaver's Toolkit",
+      "description": {
+        "public": "<p>A leather-bound wooden kitbag. Contains engraving chisels and awls, a lapidary hammer, decorative leather mat and space for storing glyphs and other ritual materials.</p>"
       }
     },
     "Grapnel": {
@@ -516,6 +547,12 @@
         "public": "<p>A leather-bound shallow wooden box containing a collapsible grinding wheel, a grinding stone and polishing stone, a lapidary hammer, and a tiny steel anvil, leaving space for storing current projects safely for travel.</p>"
       }
     },
+    "Jeweler's Toolkit": {
+      "name": "Jeweler's Toolkit",
+      "description": {
+        "public": "<p>A leather-bound wooden kitbag. Contains files, calipers, a small grindstone, polishing compounds and rags, and an assortment of inexpensive settings. The case can unfold completely to provide a smooth work surface.</p>"
+      }
+    },
     "Katana": {
       "name": "Katana",
       "description": {
@@ -599,6 +636,27 @@
       "name": "Padded Armor",
       "description": {
         "public": "<p>Consisting of quilted layers of cloth stuffed with rags or wool, padded armor cushions the body against blunt force and serves as the foundation beneath heavier gear.</p>"
+      }
+    },
+    "Paralytic Vial": {
+      "name": "Paralytic Vial",
+      "description": {
+        "public": "<p>This small vial contains an oily liquid that is noticeably thicker than water. It emits a an acrid scent that evokes a sense of wrongness.</p>"
+      },
+      "actions": {
+        "paralyticIngest": {
+          "name": "Ingest Paralytic",
+          "description": "<p>When this toxin is ingested or otherwise enters the bloodstream of a creature, it is initially <strong>Harmless</strong>, but the target must defend an attack against its <strong>Fortitude</strong> or become @Condition[paralyzed].</p><p>The duration is dependent on the quality of the @ref[name]:</p><ul><li><p><strong>Shoddy</strong> - 1 rounds</p></li><li><p><strong>Standard</strong> - 2 rounds</p></li><li><p><strong>Fine</strong> - 4 rounds</p></li><li><p><strong>Superior</strong> - 8 rounds</p></li><li><p><strong>Masterwork</strong> - Indefinite</p></li></ul><p><em>This action should be used when the poison is ingested rather than when it is first applied.</em></p>",
+          "effects": [
+            {
+              "name": "Paralytic Toxin"
+            }
+          ]
+        },
+        "paralyticApply": {
+          "name": "Apply Paralytic",
+          "description": "<p>The contents of this vial can be added to food, drink, smeared upon a bladed weapon, or combined with some alternative delivery mechanism.</p><p><em>This action, which consumes the available usage of the poison, should be used when it is first applied.</em></p>"
+        }
       }
     },
     "Pen": {
@@ -787,18 +845,6 @@
         "public": "<p>A round metal shield nearly two feet in diameter which is the basic defensive armament of foot soldiers lacking specialized training in shield combat.</p>"
       }
     },
-    "Runeweaver's Portable Workbench": {
-      "name": "Runeweaver's Portable Workbench",
-      "description": {
-        "public": "<p>A collapsible wooden box that can be unfolded into a small workbench designed as a work surface for engraving runes. Contains engraving chisels and awls, a lapidary hammer, decorative leather mat and space for storing glyphs and other ritual materials.</p>"
-      }
-    },
-    "Runeweaver's Toolkit": {
-      "name": "Runeweaver's Toolkit",
-      "description": {
-        "public": "<p>A leather-bound wooden kitbag. Contains engraving chisels and awls, a lapidary hammer, decorative leather mat and space for storing glyphs and other ritual materials.</p>"
-      }
-    },
     "Sai": {
       "name": "Sai",
       "description": {
@@ -883,6 +929,57 @@
         "public": "<p>A weapon of reach and rhythm, the spear features a long shaft tipped with steel, perfect for holding the line or launching with deadly force from behind a shield wall.</p>"
       }
     },
+    "Spell Scroll (Legendary)": {
+      "name": "Spell Scroll (Legendary)",
+      "description": {
+        "public": "<p>A spell scroll is a specialized piece of vellum or parchment upon which are carefully inlaid the glyphs of one or more spellcraft components. Activating this spell scroll temporarily imbues its reader with a deep familiarity with those components as if they have known them for years.</p><p>Spell scrolls come in three tiers, according to their level of Enchantment. More powerful scrolls may simultaneously convey a larger number of spellcraft components.</p><ul><li><p><strong>Minor</strong>: May contain a single spellcraft component</p></li><li><p><strong>Major</strong>: May contain two spellcraft components</p></li><li><p><strong>Legendary</strong>: May contain three spellcraft components</p></li></ul>"
+      },
+      "actions": {
+        "readScroll": {
+          "name": "Read Scroll",
+          "description": "<p>Read this spell scroll, temporarily gaining knowledge of its spellcraft components for 10 minutes.</p><p>You may only have one spell scroll effect active at a given time. Reading a different scroll replaces any current effect.</p>",
+          "effects": [
+            {
+              "name": "Read Scroll"
+            }
+          ]
+        }
+      }
+    },
+    "Spell Scroll (Major)": {
+      "name": "Spell Scroll (Major)",
+      "description": {
+        "public": "<p>A spell scroll is a specialized piece of vellum or parchment upon which are carefully inlaid the glyphs of one or more spellcraft components. Activating this spell scroll temporarily imbues its reader with a deep familiarity with those components as if they have known them for years.</p><p>Spell scrolls come in three tiers, according to their level of Enchantment. More powerful scrolls may simultaneously convey a larger number of spellcraft components.</p><ul><li><p><strong>Minor</strong>: May contain a single spellcraft component</p></li><li><p><strong>Major</strong>: May contain two spellcraft components</p></li><li><p><strong>Legendary</strong>: May contain three spellcraft components</p></li></ul>"
+      },
+      "actions": {
+        "readScroll": {
+          "name": "Read Scroll",
+          "description": "<p>Read this spell scroll, temporarily gaining knowledge of its spellcraft components for 10 minutes.</p><p>You may only have one spell scroll effect active at a given time. Reading a different scroll replaces any current effect.</p>",
+          "effects": [
+            {
+              "name": "Read Scroll"
+            }
+          ]
+        }
+      }
+    },
+    "Spell Scroll (Minor)": {
+      "name": "Spell Scroll (Minor)",
+      "description": {
+        "public": "<p>A spell scroll is a specialized piece of vellum or parchment upon which are carefully inlaid the glyphs of one or more spellcraft components. Activating this spell scroll temporarily imbues its reader with a deep familiarity with those components as if they have known them for years.</p><p>Spell scrolls come in three tiers, according to their level of Enchantment. More powerful scrolls may simultaneously convey a larger number of spellcraft components.</p><ul><li><p><strong>Minor</strong>: May contain a single spellcraft component</p></li><li><p><strong>Major</strong>: May contain two spellcraft components</p></li><li><p><strong>Legendary</strong>: May contain three spellcraft components</p></li></ul>"
+      },
+      "actions": {
+        "readScroll": {
+          "name": "Read Scroll",
+          "description": "<p>Read this spell scroll, temporarily gaining knowledge of its spellcraft components for 10 minutes.</p><p>You may only have one spell scroll effect active at a given time. Reading a different scroll replaces any current effect.</p>",
+          "effects": [
+            {
+              "name": "Read Scroll"
+            }
+          ]
+        }
+      }
+    },
     "Spellband": {
       "name": "Spellband",
       "description": {
@@ -917,6 +1014,27 @@
       "name": "Spyglass",
       "description": {
         "public": "<p>A handheld telescope made of brass and wood with highly polished glass lenses. Used to magnify a distant view.</p>"
+      }
+    },
+    "Steel-Jaw Trap": {
+      "name": "Steel-Jaw Trap",
+      "description": {
+        "public": "<p>A particularly cruel and sharp mechanical trap designed to immobilize and kill the unwary. A saw-toothed steel ring that snaps shut when a creature steps on a pressure plate in the center</p>"
+      },
+      "actions": {
+        "steelJawArm": {
+          "name": "Arm Steel-Jaw Trap",
+          "description": "<p>Setting the trap places a dangerous hazard that deals significant damage if triggered. It must be affixed by heavy chain to an immobile object, such as a tree or spike driven into the ground. The area of the trap is a circle with a radius of 2 feet.</p>"
+        },
+        "steelJawTrigger": {
+          "name": "Trigger Steel-Jaw Trap",
+          "description": "<p>When triggered the creature that set the trap makes a <strong>Wilderness</strong> skill attack against the <strong>Reflex</strong> defense of a single target which triggered the trap. If not resisted, it deals piercing damage and applies the @Condition[restrained] condition. The base damage dealt by the trap varies according to the quality of the trap.</p><ul><li><p><strong>Shoddy</strong> - 1 damage</p></li><li><p><strong>Standard</strong> - 2 damage</p></li><li><p><strong>Fine</strong> - 4 damage</p></li><li><p><strong>Superior</strong> - 8 damage</p></li><li><p><strong>Masterwork</strong> - 16 damage</p></li></ul><p></p>",
+          "effects": [
+            {
+              "name": "Steel-Jaw Trap"
+            }
+          ]
+        }
       }
     },
     "Stiletto": {

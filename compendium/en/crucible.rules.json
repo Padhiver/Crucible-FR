@@ -182,7 +182,7 @@
         },
         "Weakened": {
           "name": "Weakened",
-          "text": "<p>A creature that is <strong>Weakened</strong> is vulnerable to taking deadly wounds. Protagonists become Weakened when they reach zero Health. Any further damage to Health taken while Weakened increases Wounds.</p><p>While a creature is Weakened, it suffers -1 to maximum Action, loses access to a free Movement action, and suffers an additional <strong>2 Vulnerability</strong> to any <strong>Morale</strong> damage sustained.</p>"
+          "text": "<p>A creature that is <strong>Weakened</strong> is vulnerable to taking deadly wounds. Protagonists become Weakened when they reach zero Health. Any further damage to Health taken while Weakened increases Wounds.</p><p>While a creature is Weakened, it suffers -2 to maximum Action and loses access to a free Movement action.</p>"
         },
         "Dead": {
           "name": "Dead",
@@ -198,7 +198,7 @@
         },
         "Broken": {
           "name": "Broken",
-          "text": "<p>A creature that is <strong>Broken</strong> is vulnerable to psychological trauma. Protagonists become Broken when they reach zero Morale. Any further damage to Morale taken while Broken increases Madness.</p><p>While a creature is Broken it cannot expend <strong>Focus</strong>, actions it takes suffer from <strong>+2 Banes</strong>, and it suffers an additional <strong>2 Vulnerability</strong> to any <strong>Health</strong> damage sustained.</p><p>Creatures which are Broken cannot contribute towards Flanking. Non-player Adversaries which become Broken will attempt to flee the battle unless they lack instincts of self-preservation or escape seems impossible.</p>"
+          "text": "<p>A creature that is <strong>Broken</strong> is vulnerable to psychological trauma. Protagonists become Broken when they reach zero Morale. Any further damage to Morale taken while Broken increases Madness.</p><p>While a creature is Broken it cannot expend <strong>Focus</strong> and actions it takes suffer from <strong>+2 Banes</strong>.</p><p>Creatures which are Broken cannot contribute towards Flanking. Non-player Adversaries which become Broken will attempt to flee the battle unless they lack instincts of self-preservation or escape seems impossible.</p>"
         },
         "Insane": {
           "name": "Insane",
@@ -218,7 +218,7 @@
         },
         "Exposed": {
           "name": "Exposed",
-          "text": "<p>Some attacks can leave an enemy temporarily vulnerable. When a creature is <strong>Exposed</strong> attacks against it gain +2 <strong>Boons</strong>.</p>"
+          "text": "<p>Some attacks can leave an enemy temporarily vulnerable. When a creature is <strong>Exposed</strong> its base <strong>Armor</strong> defense suffers a -2 penalty.</p>"
         },
         "Flanked": {
           "name": "Flanked",
@@ -230,15 +230,15 @@
         },
         "Prone": {
           "name": "Prone",
-          "text": "<p>A creature that has been knocked to the ground, or has voluntarily thrown itself to the ground is considered <strong>Prone</strong>. While Prone, melee attacks against the target benefit from +1 Boon while ranged attacks against the target suffer from +1 Bane. Returning to your feet from a Prone position requires the use of a Movement action.</p>"
+          "text": "<p>A creature that has been knocked to the ground, or has voluntarily thrown itself to the ground is considered <strong>Prone</strong>. While Prone, melee attacks against the target benefit from +1 <strong>Boon</strong> while ranged attacks against the target suffer from +1 <strong>Bane</strong>. Additionally, any attacks made by a Prone creature suffer +1 <strong>Bane</strong>, and the creature cannot benefit from a free Move. Returning to your feet from a Prone position requires the use of a Movement action.</p>"
         },
         "Staggered": {
           "name": "Staggered",
-          "text": "<p>A creature that is <strong>Staggered</strong> has their maximum <strong>Action</strong> reduced by 1.</p>"
+          "text": "<p>A creature that is <strong>Staggered</strong> has their maximum <strong>Action</strong> reduced by 2.</p>"
         },
         "Stunned": {
           "name": "Stunned",
-          "text": "<p>A creature that is <strong>Staggered</strong> has their maximum <strong>Action</strong> reduced by 2.</p>"
+          "text": "<p>A creature that is <strong>Staggered</strong> has their maximum <strong>Action</strong> reduced by 4.</p>"
         },
         "Paralyzed": {
           "name": "Paralyzed",
@@ -266,31 +266,31 @@
         },
         "Bleeding": {
           "name": "Bleeding",
-          "text": "<p>A <strong>Bleeding </strong>creature suffers additional Piercing or Slashing damage, depending on the triggering damage type, at the start of its subsequent turns.</p>"
+          "text": "<p>A <strong>Bleeding </strong>creature suffers additional Piercing or Slashing damage, depending on the triggering damage type, to <strong>Health</strong> at the start of its subsequent turns.</p>"
         },
         "Poisoned": {
           "name": "Poisoned",
-          "text": "<p>A <strong>Poisoned</strong> creature suffers additional Poison damage at the start of its subsequent turns.</p>"
+          "text": "<p>A <strong>Poisoned</strong> creature suffers additional Poison damage to <strong>Health</strong> at the start of its subsequent turns.</p>"
         },
         "Corroding": {
           "name": "Corroding",
-          "text": "<p>A <strong>Corroding</strong> creature suffers additional Acid damage at the start of its subsequent turns.</p>"
+          "text": "<p>A <strong>Corroding</strong> creature suffers additional Acid damage to <strong>Health</strong> at the start of its subsequent turns.</p>"
         },
         "Burning": {
           "name": "Burning",
-          "text": "<p>A <strong>Burning</strong> creature suffers additional Fire damage at the start of its subsequent turns.</p>"
+          "text": "<p>A <strong>Burning</strong> creature suffers additional Fire damage to <strong>Health</strong> at the start of its subsequent turns.</p>"
         },
         "Freezing": {
           "name": "Freezing",
-          "text": "<p>A <strong>Freezing</strong> creature suffers additional Cold damage at the start of its subsequent turns.</p>"
+          "text": "<p>A <strong>Freezing</strong> creature suffers additional Cold damage to <strong>Health</strong> at the start of its subsequent turns.</p>"
         },
         "Irradiated": {
           "name": "Irradiated",
-          "text": "<p>An <strong>Irradiated</strong> creature suffers additional Radiant damage at the start of its subsequent turns.</p>"
+          "text": "<p>An <strong>Irradiated</strong> creature suffers additional Radiant damage to both <strong>Health</strong> and <strong>Morale</strong> at the start of its subsequent turns.</p>"
         },
         "Decaying": {
           "name": "Decaying",
-          "text": "<p>A <strong>Decaying </strong>creature suffers additional Corruption damage at the start of its subsequent turns.</p>"
+          "text": "<p>A <strong>Decaying </strong>creature suffers additional Corruption damage to <strong>Health</strong> at the start of its subsequent turns.</p>"
         },
         "Hastened": {
           "name": "Hastened",
@@ -298,7 +298,7 @@
         },
         "Blinded": {
           "name": "Blinded",
-          "text": "<p>A creature that is <strong>Blinded</strong> may not see using light-based perception and cannot use any Action which requires the target to be seen.</p>"
+          "text": "<p>A creature that is <strong>Blinded</strong> may not see using light-based perception and cannot use any Action which requires the target to be seen. A Blinded creature's attacks suffer +2 <strong>Banes</strong>, while attacks against it gain +2 <strong>Boons</strong>.</p>"
         },
         "Deafened": {
           "name": "Deafened",
@@ -306,7 +306,7 @@
         },
         "Silenced": {
           "name": "Silenced",
-          "text": "<p>A creature which is <strong>Silenced </strong>is unable to perform any action with the <strong>Vocal</strong> trait or to cast a Spell which includes a metamagic <strong>Inflection</strong>.</p>"
+          "text": "<p>A creature which is <strong>Silenced </strong>is unable to perform any action with the <strong>Vocal</strong> trait or to cast a Spell which includes a metamagic <strong>Inflection</strong>.</p><p>TODO: Implementation of the Vocal trait still to come.</p>"
         },
         "Invisible": {
           "name": "Invisible",
@@ -331,6 +331,18 @@
         "Inspired": {
           "name": "Inspired",
           "text": "<p>A creature that is <strong>Inspired </strong>will gradually recover <strong>Morale </strong>at the start of each of its turns. The amount of Morale recovered is defined by a corresponding value of the Inspired effect.</p>"
+        },
+        "Confused": {
+          "name": "Confused",
+          "text": "<p>A <strong>Confused</strong> creature suffers <strong>Psychic</strong> damage to <strong>Morale</strong> at the start of each turn, and is also treated as <strong>Disoriented</strong>.</p>"
+        },
+        "Entropy": {
+          "name": "Entropy",
+          "text": "<p>A creature afflicted with <strong>Entropy</strong> suffers <strong>Void</strong> damage to <strong>Health</strong> at the start of each turn, and is also treated as <strong>Frightened</strong>.</p>"
+        },
+        "Burrowing": {
+          "name": "Burrowing",
+          "text": "<p>A creature that is submerged entirely within the ground is <strong>Burrowing</strong>. While Burrowing, a creature cannot see or be seen using light-based perception.</p>"
         }
       }
     },
@@ -355,7 +367,7 @@
         },
         "Enchanting": {
           "name": "Enchanting",
-          "text": "<p><strong>Enchanting</strong> is the art of combining existing Glyphs (created by @UUID[Compendium.crucible.rules.JournalEntry.crucibleCrafting.JournalEntryPage.runeweaving00000]{Runeweavers}) with equipment created by other crafters (such as @UUID[Compendium.crucible.rules.JournalEntry.crucibleCrafting.JournalEntryPage.smithing00000000]{Smiths}, @UUID[Compendium.crucible.rules.JournalEntry.crucibleCrafting.JournalEntryPage.tailoring0000000]{Tailors}, and @UUID[Compendium.crucible.rules.JournalEntry.crucibleCrafting.JournalEntryPage.jewelcraft000000]{Jewelcrafters}) in order to imbue those items with permanent magical properties. The process of enchanting an item typically involves some additional sympathetic material components which are used in a ritual to bind the magical effect to a non-magical item, typically one of at least Fine quality.</p><h2>Talents</h2><p>The following talents are available to represent training in the art of Enchanting:</p><p>@UUID[Compendium.crucible.talent.Item.enchantingNovice]{Enchanting Novice}</p><p>@UUID[Compendium.crucible.talent.Item.enchantingJourne]{Enchanting Journeyman}</p>"
+          "text": "<p><strong>Enchanting</strong> is the art of combining existing Glyphs (created by @UUID[Compendium.crucible.rules.JournalEntry.crucibleCrafting.JournalEntryPage.glyphweaving0000]{Glyphweavers}) with equipment created by other crafters (such as @UUID[Compendium.crucible.rules.JournalEntry.crucibleCrafting.JournalEntryPage.smithing00000000]{Smiths}, @UUID[Compendium.crucible.rules.JournalEntry.crucibleCrafting.JournalEntryPage.tailoring0000000]{Tailors}, and @UUID[Compendium.crucible.rules.JournalEntry.crucibleCrafting.JournalEntryPage.jewelcraft000000]{Jewelcrafters}) in order to imbue those items with permanent magical properties. The process of enchanting an item typically involves some additional sympathetic material components which are used in a ritual to bind the magical effect to a non-magical item, typically one of at least Fine quality.</p><h2>Talents</h2><p>The following talents are available to represent training in the art of Enchanting:</p><p>@UUID[Compendium.crucible.talent.Item.enchantingNovice]{Enchanting Novice}</p><p>@UUID[Compendium.crucible.talent.Item.enchantingJourne]{Enchanting Journeyman}</p>"
         },
         "Fletching": {
           "name": "Fletching",
@@ -365,9 +377,9 @@
           "name": "Jewelcraft",
           "text": "<p><strong>Jewelcrafting</strong> is the art of combining decorative metals and rare crystalized minerals to compose rings, bracelets, and necklaces as well as the insetting of decorative (and potentially magical) gems into these and other pieces of equipment.</p><h2>Talents</h2><p>The following talents are available to represent Jewelcraft training:</p><p></p><p>@UUID[Compendium.crucible.talent.Item.jewelcraftNovice]{Jewelcraft Novice}</p><p>@UUID[Compendium.crucible.talent.Item.jewelcraftJourne]{Jewelcraft Journeyman}</p>"
         },
-        "Runeweaving": {
-          "name": "Runeweaving",
-          "text": "<p><strong>Runeweaving</strong> is the arcane science of inscribing physical manifestations of metaphysical @UUID[Compendium.crucible.rules.JournalEntry.qjTSKlh59JhtUuEr.JournalEntryPage.p3hKRiZN3x0DEtyG]{Runes} to create Glyphs. Glyphs can be used to imbue magical properties into non-magical materials or as a component to aid ritual magic.</p><h2>Talents</h2><p>The following talents are available to represent Runeweaver training:</p><p>@UUID[Compendium.crucible.talent.Item.runeweavingNovic]{Runeweaving Novice}</p><p>@UUID[Compendium.crucible.talent.Item.runeweavingJourn]{Runeweaving Journeyman}</p>"
+        "Glyphweaving": {
+          "name": "Glyphweaving",
+          "text": "<p><strong>Glyphweaving</strong> is the arcane science of inscribing physical manifestations of metaphysical @UUID[Compendium.crucible.rules.JournalEntry.qjTSKlh59JhtUuEr.JournalEntryPage.p3hKRiZN3x0DEtyG]{Runes} to create Glyphs. Glyphs can be used to imbue magical properties into non-magical materials or as a component to aid ritual magic.</p><h2>Talents</h2><p>The following talents are available to represent Glyphweaver training:</p><p>@UUID[Compendium.crucible.talent.Item.glyphweavingNovi]{Glyphweaving Novice}</p><p>@UUID[Compendium.crucible.talent.Item.glyphweavingJour]{Glyphweaving Journeyman}</p>"
         },
         "Smithing": {
           "name": "Smithing",
@@ -391,7 +403,7 @@
         },
         "Tradeskills Overview": {
           "name": "Tradeskills Overview",
-          "text": "<p></p><p><strong>Crafting</strong> in Crucible is performed using a set of <strong>Tradeskills</strong> which, similar to adventuring @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.skills0000000000]{Skills}, are invested aspects of your character's identity obtained through @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.talents000000000]{Talent} progression and through the accumulation of knowledge in the form of @UUID[Compendium.crucible.rules.JournalEntry.crucibleCrafting.JournalEntryPage.schematicDefinit]{Schematics}.</p><section class=\"construction\"><p>Crucible's crafting system is currently in early development, rules written here are subject to change and many details may not yet be finished. Please consider these details a preview of things to come.</p></section><section class=\"gameplay\"><p>It is not required for any character to invest into mastery of a tradeskill, however it is generally recommended to select at least one tradeskill to pursue in order to enjoy a well-rounded experience playing Crucible, particularly if your game is a long-form campaign.</p></section><p>The information in this journal describes each of the tradeskills, how schematics are defined and obtained, and how the crafting process functions when using a schematic to turn input ingredients into produced items.</p><h2 class=\"divider\">Tradeskills Table</h2><table><tbody><tr><th><p>Skill</p></th><th><p>Primary Ability</p></th><th><p>Secondary Ability</p></th><th><p>General Usage</p></th></tr><tr><td><p>@UUID[.alchemy000000000]</p></td><td><p>Intellect</p></td><td><p>Toughness</p></td><td><p>Potions, elixirs, oils, and salves</p></td></tr><tr><td><p>@UUID[.cooking000000000]</p></td><td><p>Wisdom</p></td><td><p>Toughness</p></td><td><p>Food and drink</p></td></tr><tr><td><p>@UUID[.enchanting000000]</p></td><td><p>Intellect</p></td><td><p>Presence</p></td><td><p>Applying Runes to equipment</p></td></tr><tr><td><p>@UUID[.fletching0000000]</p></td><td><p>Strength</p></td><td><p>Wisdom</p></td><td><p>Bows, staves, and ammunition</p></td></tr><tr><td><p>@UUID[.jewelcraft000000]</p></td><td><p>Wisdom</p></td><td><p>Strength</p></td><td><p>Jewelry and other accessories</p></td></tr><tr><td><p>@UUID[.runeweaving00000]</p></td><td><p>Presence</p></td><td><p>Dexterity</p></td><td><p>Runes used to enchant</p></td></tr><tr><td><p>@UUID[.smithing00000000]</p></td><td><p>Strength</p></td><td><p>Intellect</p></td><td><p>Metal arms and armor</p></td></tr><tr><td><p>@UUID[.tailoring0000000]</p></td><td><p>Dexterity</p></td><td><p>Presence</p></td><td><p>Clothing and light armor</p></td></tr></tbody></table>"
+          "text": "<p></p><p><strong>Crafting</strong> in Crucible is performed using a set of <strong>Tradeskills</strong> which, similar to adventuring @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.skills0000000000]{Skills}, are invested aspects of your character's identity obtained through @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.talents000000000]{Talent} progression and through the accumulation of knowledge in the form of @UUID[Compendium.crucible.rules.JournalEntry.crucibleCrafting.JournalEntryPage.schematicDefinit]{Schematics}.</p><section class=\"construction\"><p>Crucible's crafting system is currently in early development, rules written here are subject to change and many details may not yet be finished. Please consider these details a preview of things to come.</p></section><section class=\"gameplay\"><p>It is not required for any character to invest into mastery of a tradeskill, however it is generally recommended to select at least one tradeskill to pursue in order to enjoy a well-rounded experience playing Crucible, particularly if your game is a long-form campaign.</p></section><p>The information in this journal describes each of the tradeskills, how schematics are defined and obtained, and how the crafting process functions when using a schematic to turn input ingredients into produced items.</p><h2 class=\"divider\">Tradeskills Table</h2><table><tbody><tr><th><p>Skill</p></th><th><p>Primary Ability</p></th><th><p>Secondary Ability</p></th><th><p>General Usage</p></th></tr><tr><td><p>@UUID[.alchemy000000000]</p></td><td><p>Intellect</p></td><td><p>Toughness</p></td><td><p>Potions, elixirs, oils, and salves</p></td></tr><tr><td><p>@UUID[.cooking000000000]</p></td><td><p>Wisdom</p></td><td><p>Toughness</p></td><td><p>Food and drink</p></td></tr><tr><td><p>@UUID[.enchanting000000]</p></td><td><p>Intellect</p></td><td><p>Presence</p></td><td><p>Applying Runes to equipment</p></td></tr><tr><td><p>@UUID[.fletching0000000]</p></td><td><p>Strength</p></td><td><p>Wisdom</p></td><td><p>Bows, staves, and ammunition</p></td></tr><tr><td><p>@UUID[.jewelcraft000000]</p></td><td><p>Wisdom</p></td><td><p>Strength</p></td><td><p>Jewelry and other accessories</p></td></tr><tr><td><p>@UUID[.glyphweaving0000]</p></td><td><p>Presence</p></td><td><p>Dexterity</p></td><td><p>Runes used to enchant</p></td></tr><tr><td><p>@UUID[.smithing00000000]</p></td><td><p>Strength</p></td><td><p>Intellect</p></td><td><p>Metal arms and armor</p></td></tr><tr><td><p>@UUID[.tailoring0000000]</p></td><td><p>Dexterity</p></td><td><p>Presence</p></td><td><p>Clothing and light armor</p></td></tr></tbody></table>"
         }
       }
     },

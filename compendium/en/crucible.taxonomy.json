@@ -52,6 +52,14 @@
       "name": "Frost Elemental",
       "description": "<p>Elemental creatures corresponding to the element of Frost.</p>"
     },
+    "Ghoul": {
+      "name": "Ghoul",
+      "description": "<p>Malevolent and cunning undead who retain enough of their mortal cognition to construct and execute upon plans and schemes to torment or destroy living creatures.</p>"
+    },
+    "Grave Hound": {
+      "name": "Grave Hound",
+      "description": "<p>Terrible undead canines who have fallen to corruption and become servants of undeath. Grave Hounds are found as guardians of unholy places, companions to the forces of undeath, or as terrible packs dispatched to hunt and terrorize the living.</p>"
+    },
     "Harbinger": {
       "name": "Harbinger",
       "description": "<p>Otherworldly beings from the void beyond.</p>"
@@ -95,6 +103,10 @@
     "Winged Terror": {
       "name": "Winged Terror",
       "description": "<p>Monstrous creatures that rule the skies and prey upon those bel0w.</p>"
+    },
+    "Wraith": {
+      "name": "Wraith",
+      "description": "<p>Wraiths are incorporeal undead born from souls that refused release - their physical form dissolved entirely into shadow, leaving only spite and sorrow given motion. They ignore conventional defenses, their touch bypassing armor and parry alike to assault the psychic and necrotic vulnerabilities of the living directly. Prolonged exposure to a wraith's presence drains morale as much as health, and those who survive an encounter often find their focus and resolve slow to return.</p>"
     },
     "Zombie": {
       "name": "Zombie",

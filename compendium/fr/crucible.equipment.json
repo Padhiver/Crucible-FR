@@ -33,7 +33,9 @@
         "Wilderness": "Nature",
         "Ingredients": "Ingrédients",
         "Light Sources": "Sources de lumière",
-        "Adventuring Gear": "Matériel d'aventurier"
+        "Adventuring Gear": "Matériel d'aventurier",
+        "Scrolls": "Parchemins",
+        "Traps": "Pièges"
     },
     "entries": {
         "Blast Flask": {
@@ -870,18 +872,6 @@
                 "public": "<p>Un système de 25 pieds de lattes de bois et de corde nouée liés ensemble, formant un dispositif d'escalade pratique. Fixé à une extrémité, il réduit considérablement les risques de chute.</p>"
             }
         },
-        "Runeweaver's Portable Workbench": {
-            "name": "Établi de tisseur de rune portatif",
-            "description": {
-                "public": "<p>Coffret en bois pliable se dépliant en petit établi servant de surface de travail pour la gravure de runes. Contient des ciseaux et des poinçons à graver, un marteau de lapidaire, un tapis décoratif en cuir et un espace de rangement pour les glyphes et autres matériaux rituels.</p>"
-            }
-        },
-        "Runeweaver's Toolkit": {
-            "name": "Kit de tisseur de rune",
-            "description": {
-                "public": "<p>Une trousse en bois recouverte de cuir. Contient des ciseaux et des poinçons à graver, un marteau de lapidaire, un tapis décoratif en cuir et un espace pour ranger les glyphes et autres matériaux rituels.</p>"
-            }
-        },
         "Scrivener's Portable Workbench": {
             "name": "Établi de scribe portatif",
             "description": {
@@ -1007,6 +997,134 @@
             "name": "Plume",
             "description": {
                 "public": "<p>Un instrument d’écriture courant utilisé par les scribes, permettant d’interchanger différentes pointes afin d’obtenir divers styles de trait.</p>"
+            }
+        },
+        "Choking Ampoule": {
+            "name": "Ampoule d'étouffement",
+            "description": {
+                "public": "<p>Cette fiole de verre scellée contient un nuage tourbillonnant de gaz vert dense maintenu sous pression. Briser l'ampoule libère les vapeurs qu'elle renferme, provoquant un effet démoralisant et suffocant sur les créatures exposées.</p>"
+            },
+            "actions": {
+                "chokingAmpoule": {
+                    "name": "Ampoule d'étouffement",
+                    "description": "<p>Vous lancez l'@ref[name], qui a un effet immédiat <strong>Inoffensif</strong>, mais cause la condition @Condition[poisoned] à tous les ennemis qui échouent à résister à l'attaque contre leur <strong>Fortitude</strong>, dans une <strong>Explosion</strong> de 8 pieds de rayon.</p><p>Le gaz inflige des dégâts de poison au <strong>Moral</strong> d'un montant dépendant de la Qualité de l'@ref[name]. Sur un succès critique, la cible affectée devient également @Condition[silenced] pour la même durée.</p><ul><li><p><strong>Bâclée</strong> - 2 dégâts pendant 3 rounds</p></li><li><p><strong>Commune</strong> - 6 dégâts pendant 3 rounds</p></li><li><p><strong>Raffinée</strong> - 12 dégâts pendant 3 rounds</p></li><li><p><strong>Supérieure</strong> - 20 dégâts pendant 3 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - 30 dégâts pendant 3 rounds</p></li></ul>",
+                    "effects": [
+                        {
+                            "name": "Ampoule d'étouffement"
+                        }
+                    ]
+                }
+            }
+        },
+        "Glyphweaver's Portable Workbench": {
+            "name": "Établi de tisseur de glyphe portatif",
+            "description": {
+                "public": "<p>Une boîte en bois pliable qui se déplie pour former un petit établi servant de surface de travail pour la fabrication de glyphes. Elle contient des ciseaux et des poinçons à graver, un marteau de lapidaire, un tapis décoratif en cuir et un espace de rangement pour les glyphes et autres matériaux rituels.</p>"
+            }
+        },
+        "Glyphweaver's Toolkit": {
+            "name": "Kit de tisseur de glyphe",
+            "description": {
+                "public": "<p>Une trousse en bois recouverte de cuir. Contient des ciseaux et des poinçons à graver, un marteau de lapidaire, un tapis décoratif en cuir et un espace pour ranger les glyphes et autres matériaux rituels.</p>"
+            }
+        },
+        "Jeweler's Toolkit": {
+            "name": "Kit de joaillier",
+            "description": {
+                "public": "<p>Une trousse en bois recouverte de cuir. Elle contient des limes, un pied à coulisse, une petite meule, des pâtes à polir, des chiffons et un assortiment de réglages économiques. La trousse se déplie complètement pour offrir une surface de travail lisse.</p>"
+            }
+        },
+        "Paralytic Vial": {
+            "name": "Fiole paralytique",
+            "description": {
+                "public": "<p>Ce petit flacon contient un liquide huileux nettement plus épais que l'eau. Il dégage une odeur âcre qui met mal à l'aise.</p>"
+            },
+            "actions": {
+                "paralyticIngest": {
+                    "name": "Ingestion paralytique",
+                    "description": "<p>Lorsque cette toxine est ingérée ou pénètre d'une autre manière dans le flux sanguin d'une créature, cela est initialement <strong>Inoffensif</strong>, mais la cible doit se défendre d'une attaque contre sa <strong>Fortitude</strong> ou être @Condition[paralyzed].</p><p>La durée dépend de la qualité de la @ref[name]{fiole} :</p><ul><li><p><strong>Bâclée</strong> - 1 rounds</p></li><li><p><strong>Commune</strong> - 2 rounds</p></li><li><p><strong>Raffinée</strong> - 4 rounds</p></li><li><p><strong>Supérieure</strong> - 8 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - Indéfini</p></li></ul><p><em>Cette action doit être prise lorsque le poison est ingéré plutôt que lors de sa première application.</em></p>",
+                    "effects": [
+                        {
+                            "name": "Toxine paralytique"
+                        }
+                    ]
+                },
+                "paralyticApply": {
+                    "name": "Contact paralytique",
+                    "description": "<p>Le contenu de ce flacon peut être ajouté à des aliments ou des boissons, appliqué sur une arme blanche ou combiné à un autre mode d'administration.</p><p><em>Cette action, qui consomme la quantité de poison disponible, doit être utilisée lors de sa première application.</em></p>"
+                }
+            }
+        },
+        "Spell Scroll (Legendary)": {
+            "name": "Parchemin de sort (Légendaire)",
+            "description": {
+                "public": "<p>Un parchemin de sort est un morceau de vélin ou de parchemin spécialisé sur lequel sont soigneusement incrustés les glyphes d'un ou plusieurs composantes de sorcellerie. Activer ce parchemin de sort confère temporairement à son lecteur une profonde familiarité avec ces composantes, comme s'il les connaissait depuis des années.</p><p>Les parchemins de sorts sont classés en trois catégories, selon leur niveau d'enchantement. Les parchemins les plus puissants peuvent contenir simultanément un plus grand nombre de composantes de sorcellerie.</p><ul><li><p><strong>Mineur</strong> : Peut contenir une seule composante de sorcellerie</p></li><li><p><strong>Majeur</strong> : Peut contenir deux composantes de sorcellerie</p></li><li><p><strong>Légendaire</strong> : Peut contenir trois composantes de sorcellerie</p></li></ul>"
+            },
+            "actions": {
+                "readScroll": {
+                    "name": "Lire un parchemin",
+                    "description": "<p>Lire ce parchemin de sort permet d'obtenir temporairement la connaissance de ses composantes de sorcellerie pendant 10 minutes.</p><p>Vous ne pouvez avoir qu'un seul effet de parchemin de sort actif à un moment donné. Lire un autre parchemin remplace tout effet courant.</p>",
+                    "effects": [
+                        {
+                            "name": "Lire un parchemin"
+                        }
+                    ]
+                }
+            }
+        },
+        "Spell Scroll (Major)": {
+            "name": "Parchemin de sort (Majeur)",
+            "description": {
+                "public": "<p>Un parchemin de sort est un morceau de vélin ou de parchemin spécialisé sur lequel sont soigneusement incrustés les glyphes d'un ou plusieurs composantes de sorcellerie. Activer ce parchemin de sort confère temporairement à son lecteur une profonde familiarité avec ces composantes, comme s'il les connaissait depuis des années.</p><p>Les parchemins de sorts sont classés en trois catégories, selon leur niveau d'enchantement. Les parchemins les plus puissants peuvent contenir simultanément un plus grand nombre de composantes de sorcellerie.</p><ul><li><p><strong>Mineur</strong> : Peut contenir une seule composante de sorcellerie</p></li><li><p><strong>Majeur</strong> : Peut contenir deux composantes de sorcellerie</p></li><li><p><strong>Légendaire</strong> : Peut contenir trois composantes de sorcellerie</p></li></ul>"
+            },
+            "actions": {
+                "readScroll": {
+                    "name": "Lire un parchemin",
+                    "description": "<p>Lire ce parchemin de sort permet d'obtenir temporairement la connaissance de ses composantes de sorcellerie pendant 10 minutes.</p><p>Vous ne pouvez avoir qu'un seul effet de parchemin de sort actif à un moment donné. Lire un autre parchemin remplace tout effet courant.</p>",
+                    "effects": [
+                        {
+                            "name": "Lire un parchemin"
+                        }
+                    ]
+                }
+            }
+        },
+        "Spell Scroll (Minor)": {
+            "name": "Parchemin de sort (Mineur)",
+            "description": {
+                "public": "<p>Un parchemin de sort est un morceau de vélin ou de parchemin spécialisé sur lequel sont soigneusement incrustés les glyphes d'un ou plusieurs composantes de sorcellerie. Activer ce parchemin de sort confère temporairement à son lecteur une profonde familiarité avec ces composantes, comme s'il les connaissait depuis des années.</p><p>Les parchemins de sorts sont classés en trois catégories, selon leur niveau d'enchantement. Les parchemins les plus puissants peuvent contenir simultanément un plus grand nombre de composantes de sorcellerie.</p><ul><li><p><strong>Mineur</strong> : Peut contenir une seule composante de sorcellerie</p></li><li><p><strong>Majeur</strong> : Peut contenir deux composantes de sorcellerie</p></li><li><p><strong>Légendaire</strong> : Peut contenir trois composantes de sorcellerie</p></li></ul>"
+            },
+            "actions": {
+                "readScroll": {
+                    "name": "Lire un parchemin",
+                    "description": "<p>Lire ce parchemin de sort permet d'obtenir temporairement la connaissance de ses composantes de sorcellerie pendant 10 minutes.</p><p>Vous ne pouvez avoir qu'un seul effet de parchemin de sort actif à un moment donné. Lire un autre parchemin remplace tout effet courant.</p>",
+                    "effects": [
+                        {
+                            "name": "Lire un parchemin"
+                        }
+                    ]
+                }
+            }
+        },
+        "Steel-Jaw Trap": {
+            "name": "Piège à mâchoire de fer",
+            "description": {
+                "public": "<p>Un piège mécanique particulièrement cruel et tranchant, conçu pour immobiliser et tuer les imprudents. Un anneau d'acier dentelé qui se referme brusquement lorsqu'une créature marche sur une plaque de pression au centre.</p>"
+            },
+            "actions": {
+                "steelJawArm": {
+                    "name": "Armer le piège à mâchoire de fer",
+                    "description": "<p>La mise en place de ce piège représente un danger important pouvant causer des dégâts considérables en cas de déclenchement. Il doit être fixé par une chaîne solide à un objet immobile, tel qu'un arbre ou un pieu enfoncé dans le sol. La zone du piège est un cercle de 2 pieds de rayon.</p>"
+                },
+                "steelJawTrigger": {
+                    "name": "Déclencher le piège à mâchoire de fer",
+                    "description": "<p>Lorsque le piège est déclenché, la créature qui l'a posé fait une attaque de la compétence <strong>Nature</strong> contre la défense de <strong>Réflexe</strong> d'une cible unique qui a déclenché le piège. Sur une réussite, il inflige des dégâts perforants et applique la condition @Condition[restrained]. Les dégâts de base infligés par le piège varient en fonction de sa qualité.</p><ul><li><p><strong>Bâclée</strong> - 1 dégât</p></li><li><p><strong>Commune</strong> - 2 dégâts</p></li><li><p><strong>Raffinée</strong> - 4 dégâts</p></li><li><p><strong>Supérieure</strong> - 8 dégâts</p></li><li><p><strong>Chef-d’œuvre</strong> - 16 dégâts</p></li></ul><p></p>",
+                    "effects": [
+                        {
+                            "name": "Piège à mâchoire de fer"
+                        }
+                    ]
+                }
             }
         }
     }

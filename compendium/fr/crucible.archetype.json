@@ -121,7 +121,7 @@
         },
         "Necromancer": {
             "name": "Nécromancien",
-            "description": "<p>Mages qui exploitent le pouvoir résidant dans la non-mort, ressuscitant des serviteurs d'entre les morts pour servir leurs ambitions néfastes ou prolongeant leur propre vie grâce à la sorcellerie occulte.</p>"
+            "description": "<p>Les Nécromanciens sont des lanceurs de sorts qui ont consacré leur intellect et leur sagesse à défier la finalité de la mort, étudiant les forces nécrotiques et psychiques qui subsistent entre la vie et le néant. On les trouve rarement seuls : un Nécromancien, quel que soit son niveau de menace, aura soumis les morts-vivants environnants à sa volonté, et en vaincre un sans perturber au préalable ses serviteurs invoqués est une entreprise périlleuse. En combat direct, ils sont physiquement fragiles, avec une faible esquive et sans parade ni blocage efficaces, mais leur capacité à maintenir des effets nécrotiques continus, à saper la concentration et le moral de leurs ennemis et à régénérer leurs propres ressources grâce à la souffrance d'autrui fait d'eux des adversaires redoutables à tous les niveaux.</p>"
         },
         "Protector": {
             "name": "Protecteur",
@@ -133,11 +133,23 @@
         },
         "Burrower": {
             "name": "Fouisseur",
-            "description": "<p>Des bêtes ou des créatures similaires à des bêtes, expertes dans l’art de creuser et de se déplacer à travers des matériaux solides.</p>"
+            "description": "<p>Bêtes ou créatures similaires à des bêtes, expertes dans l’art de creuser et de se déplacer à travers des matériaux solides.</p>"
         },
         "Servitor": {
             "name": "Serviteur",
-            "description": "<p>Des créatures spécialisées dans l’espionnage ou dans l’exécution de tâches à distance pour le compte d’un maître qui les contrôle.</p>"
+            "description": "<p>Créatures spécialisées dans l’espionnage ou dans l’exécution de tâches à distance pour le compte d’un maître qui les contrôle.</p>"
+        },
+        "Guardian Beast": {
+            "name": "Bête gardienne",
+            "description": "<p>Bêtes qui servent de gardiens, veillant sur des lieux ou des personnes envers lesquelles elles sont d'une loyauté inébranlable.</p>"
+        },
+        "Lawkeeper": {
+            "name": "Gardeloi",
+            "description": "<p>Gendarmes, détectives, enquêteurs et autres officiers de la loi chargés du maintien de l'ordre et de la traque de ceux qui le troublent.</p>"
+        },
+        "Ultra Drake": {
+            "name": "Ultra drake",
+            "description": "<p>Drakes adultes qui sont les super-prédateurs de leur espèce.</p>"
         }
     }
 }

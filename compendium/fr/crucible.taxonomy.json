@@ -99,6 +99,18 @@
         "Apparatus": {
             "name": "Mécanisme",
             "description": "<p>Des constructions conçues pour des usages simples, comme des dispositifs de pièges automatisés à plusieurs étapes ou des machines destinées à accomplir une fonction répétitive précise.</p>"
+        },
+        "Ghoul": {
+            "name": "Goule",
+            "description": "<p>Morts-vivants malveillants et rusés qui conservent suffisamment de leurs facultés cognitives mortelles pour élaborer et mettre à exécution des plans et des stratagèmes visant à tourmenter ou à détruire les créatures vivantes.</p>"
+        },
+        "Grave Hound": {
+            "name": "Molosse du sépulcre",
+            "description": "<p>Terribles canidés morts-vivants, corrompus et devenus serviteurs de la non-mort. On les trouve gardiens de lieux impies, compagnons des forces mortes-vivantes, ou encore en meutes féroces envoyées pour traquer et terroriser les vivants.</p>"
+        },
+        "Wraith": {
+            "name": "Âme-en-peine",
+            "description": "<p>Les âmes-en-peine sont des morts-vivants incorporels, nés d'âmes ayant refusé la libération. Leur forme physique s'est entièrement dissoute dans l'ombre, ne laissant subsister que la rancœur et le chagrin animés. Ils ignorent les défenses conventionnelles ; leur contact ignore armures et parades pour attaquer directement les vulnérabilités psychiques et nécrotiques des vivants. Une exposition prolongée à la présence d'une âme-en-peine draine le moral autant que la santé, et ceux qui survivent à une rencontre ont souvent du mal à retrouver leur concentration et leur détermination.</p>"
         }
     }
 }

@@ -1215,7 +1215,7 @@
             "Jewelcraft": "Graphique de Joaillerie",
             "Smithing": "Plan de Forgeron",
             "Tailoring": "Patron de Couture",
-            "Glyphweaving": "Arcanum de tissage de glyphes"
+            "Glyphweaving": "Arcanum de tissage de glyphe"
         },
         "MODES": {
             "Any": "N'importe lequel",
@@ -1405,9 +1405,9 @@
             "RuneSpecific": "Rune : {rune}",
             "GestureSpecific": "Signe : {gesture}",
             "InflectionSpecific": "Inflexion : {inflection}",
-            "MissingRune": "Pas de Rune",
-            "MissingGesture": "Pas de Signe",
-            "MissingInflection": "Pas d'Inflexion"
+            "MissingRune": "Aucune Rune",
+            "MissingGesture": "Aucun Signe",
+            "MissingInflection": "Aucune Inflexion"
         },
         "RUNES": {
             "Soul": "Âme",
@@ -1499,7 +1499,7 @@
         "WARNINGS": {
             "CannotAffordHands.one": "Le sort {action} requiert {hands} main de libre à lancer.",
             "CannotAffordHands.other": "Le sort {action} requiert {hands} main de libre à lancer.",
-            "CannotUseSilenced": "Impossible d'utiliser des inflexions en étant Aphone.",
+            "CannotUseSilenced": "Impossible d'utiliser des Inflexions en étant Aphone.",
             "CannotUseNotComposed": "Vous ne pouvez pas lancer un sort qui n'a pas été complètement composé.",
             "NotConfigured": "Ce sort iconique n'est pas encore totalement configuré. Les trois composantes de sorcellerie doivent être définies."
         },

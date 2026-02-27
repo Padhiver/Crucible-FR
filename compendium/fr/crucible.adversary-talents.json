@@ -23,7 +23,9 @@
         "Communication": "Communication",
         "Bursts": "Explosions",
         "Death": "Mort",
-        "Strikes": "Frappe"
+        "Strikes": "Frappe",
+        "Tail": "Queue",
+        "Critical Hits": "Coups critiques"
     },
     "label": "Talents d'Adversaire",
     "entries": {
@@ -77,7 +79,7 @@
         },
         "Blood Sense": {
             "name": "Traque sanguinaire",
-            "description": "<p>La @ref[actor.name] est définitivement <strong>Aveuglée</strong>, mais peut sentir précisément toute créature sanguine à moins de 20 pieds qui n'a pas tous ses points de vie.</p><p>Toute attaque d'arme ou de compétence contre une créature blessée ne subit pas les <strong>Fléaux</strong> qui s'appliqueraient normalement en étant <strong>Aveuglé</strong>.</p>"
+            "description": "<p>La @ref[actor.name]{créature} peut détecter avec précision toute créature de sang située à moins de 20 pieds et n'ayant pas tous ses points de vie. Toute attaque d'arme ou de compétence contre une créature blessée ne subit pas les <strong>Fléaux</strong> qui s'appliqueraient normalement si la créature était @Condition[blinded].</p>"
         },
         "Cold Absorption": {
             "name": "Absorption de Froid",
@@ -213,7 +215,7 @@
         },
         "Swooping Strike": {
             "name": "Frappe en piqué",
-            "description": "<p>Cette créature fond depuis les hauteurs dans une attaque plongeante.</p>",
+            "description": "<p>Cette @ref[actor.name]{créature} fond depuis les hauteurs dans une attaque plongeante.</p>",
             "actions": {
                 "swoopingStrike": {
                     "name": "Frappe en piqué",
@@ -374,6 +376,177 @@
                     "effects": [
                         {
                             "name": "Sacrifice de soi"
+                        }
+                    ]
+                }
+            }
+        },
+        "Bonded Mind": {
+            "name": "Esprit lié",
+            "description": "<p>L'esprit d'une @ref[actor.name]{créature} qui possède ce talent est inextricablement lié aux autres membres de son groupe. Il est capable de communication télépathique instantanée avec n'importe quelle autre @ref[actor.taxonomy.name]{créature de cette taxonomie} à moins de 60 pieds.</p>"
+        },
+        "Extended Breath": {
+            "name": "Apnée prolongée",
+            "description": "<p>La @ref[actor.name]{créature} peut retenir sa respiration pendant <strong>15 minutes</strong>.</p>"
+        },
+        "Glider": {
+            "name": "Planeur",
+            "description": "<p>La @ref[actor.name]{créature} peut contrôler son mouvement quand elle tombe et effectuer une action de <strong>Déplacement</strong> jusqu'à une distance maximale égale à sa <strong>Foulée</strong> pour chaque 20 pieds de chute.</p><p>Si elle dépense des Actions pour se déplacer de cette manière, elle ne subit pas de dégâts de chute lors de son atterrissage.</p>"
+        },
+        "Gloom Sight": {
+            "name": "Vision obscure",
+            "description": "<p>La @ref[actor.name]{créature} peut plonger son regard dans l'obscurité la plus totale et y voir normalement. L'obscurité magique n'altère en rien sa vision.</p><p><strong>Développement du Système </strong> : Cette fonctionnalité nécessite une automatisation pour configurer les modes de vision et de détection qui ne soient pas affectés par l'obscurité magique.</p>"
+        },
+        "Grave Mark": {
+            "name": "Marque funéraire",
+            "description": "<p>Lorsque la @ref[actor.name]{créature} réussit un Coup critique avec une attaque mêlée, elle laisse une Marque funéraire funeste sur sa cible.</p>",
+            "actions": {
+                "graveMark": {
+                    "name": "Marque funéraire",
+                    "description": "<p>Après avoir réussi un <strong>Coup critique</strong> avec une attaque de mêlée, la @ref[actor.name]{créature} attaque la défense de <strong>Volonté</strong> de la cible, laissant une Marque funéraire sur un succès, ce qui inflige la condition @Condition[exhausted] qui persiste jusqu'à ce que la cible termine un <strong>Repos</strong>.</p><p>Si une créature humanoïde portant une Marque funéraire meurt sous l'effet de cette marque, elle se relève à son tour suivant en tant que @UUID[Compendium.crucible.taxonomy.Item.ghoul00000000000]{Goule}.</p>",
+                    "condition": "Lors d'un Coup critique avec une attaque de mêlée.",
+                    "effects": [
+                        {
+                            "name": "Marque funéraire"
+                        }
+                    ]
+                }
+            }
+        },
+        "Horrific Critical": {
+            "name": "Critique horrible",
+            "description": "<p>La @ref[actor.name]{créature} assène des coups sauvages et grotesques qui inspirent la peur à tous ceux qui les contemplent.</p>",
+            "actions": {
+                "horrificCritical": {
+                    "name": "Critique horrible",
+                    "description": "<p>Lorsque la @ref[actor.name]{créature} réussit un <strong>Coup critique</strong> avec une attaque de mêlée, elle peut exagérer la violence du coup au point de susciter la peur chez ceux qui en sont témoins.</p><p>Tous les ennemis à moins de 30 pieds pouvant voir la créature subissent une attaque <strong>Inoffensive</strong> contre leur <strong>Volonté</strong> ou deviennent @Condition[frightened] pendant <strong>3 Tours</strong>.</p>",
+                    "condition": "Immédiatement après que la créature réussit un Coup critique avec une attaque de mêlée.",
+                    "effects": [
+                        {
+                            "name": "Critique horrible"
+                        }
+                    ]
+                }
+            }
+        },
+        "Lightning Spit": {
+            "name": "Crachat de foudre",
+            "description": "<p>La @ref[actor.name]{créature} est capable de produire et d'expulser une décharge voltaïque mineure.</p>",
+            "actions": {
+                "lightningSpit": {
+                    "name": "Crachat de foudre",
+                    "description": "<p>La @ref[actor.name]{créature} crache un petit éclair sur une créature ciblée à moins de 20 pieds, attaquant son <strong>Réflexe</strong> et infligeant des dégâts <strong>Électriques</strong>.</p><p>Sur un <strong>Coup critique</strong>, l'attaque cause la condition @Condition[shocked] pendant <strong>3 Tours</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Crachat de foudre"
+                        }
+                    ]
+                }
+            }
+        },
+        "Lightning Spray": {
+            "name": "Spray de foudre",
+            "description": "<p>La @ref[actor.name]{créature} est capable de produire et d'expulser une décharge voltaïque puissante.</p>",
+            "actions": {
+                "lightningSpray": {
+                    "name": "Spray de foudre",
+                    "description": "<p>La @ref[actor.name]{créature} expulse un éclair dans un rayon de 30 pieds de long et 4 pieds de large, attaquant le <strong>Réflexe</strong> de chaque cible sur son chemin et infligeant des dégâts <strong>Électriques</strong>.</p><p>Sur un <strong>Coup critique</strong>, l'attaque cause la condition @Condition[shocked] pendant <strong>3 Tours</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Spray de foudre"
+                        }
+                    ]
+                }
+            }
+        },
+        "Necrotic Bite": {
+            "name": "Morsure nécrotique",
+            "description": "<p>La @ref[actor.name]{créature} déchire la chair avec une gueule corrompue par la peste et la non-mort.</p>",
+            "actions": {
+                "necroticBite": {
+                    "name": "Morsure nécrotique",
+                    "description": "<p>La @ref[actor.name]{créature} attaque avec une morsure pestilentielle <strong>Amplifiée</strong> et inflige des dégâts de <strong>Corruption</strong>.</p><p>Sur une <strong>Réussite critique</strong>, l'attaque cause la condition @Condition[decaying] pendant <strong>3 Tours</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Morsure nécrotique"
+                        }
+                    ]
+                }
+            }
+        },
+        "Noxious Spit": {
+            "name": "Crachat nocif",
+            "description": "<p>La @ref[actor.name]{créature} produit une toxine salivaire qu'elle peut expulser sous forme de globule projeté.</p>",
+            "actions": {
+                "noxiousSpit": {
+                    "name": "Crachat nocif",
+                    "description": "<p>La @ref[actor.name]{créature} crache un globule de toxine sur une créature ciblée à moins de 20 pieds, attaquant son <strong>Réflexe</strong> et infligeant des dégâts de <strong>Poison</strong>.</p><p>Sur un <strong>Coup critique</strong>, l'attaque cause la condition @Condition[poisoned] pendant <strong>3 Tours</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Crachat nocif"
+                        }
+                    ]
+                }
+            }
+        },
+        "Noxious Spray": {
+            "name": "Spray nocif",
+            "description": "<p>La @ref[actor.name]{créature} est capable de produire et d'expulser une décharge toxique en un rayon projeté.</p>",
+            "actions": {
+                "noxiousSpray": {
+                    "name": "Spray nocif",
+                    "description": "<p>La @ref[actor.name]{créature} expulse une décharge toxique dans une rayon de 30 pieds de long et 4 pieds de large, attaquant le <strong>Réflexe</strong> de chaque cible sur son chemin et infligeant des dégâts de <strong>Poison</strong>.</p><p>Sur un <strong>Coup critique</strong>, l'attaque cause la condition @Condition[poisoned] pendant <strong>3 Tours</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Spray nocif"
+                        }
+                    ]
+                }
+            }
+        },
+        "Shadow Gait": {
+            "name": "Démarche de l'ombre",
+            "description": "<p>La @ref[actor.name]{créature} est capable de passer d'une ombre à l'autre pour se déplacer de manière cauchemardesque et imprévisible.</p>",
+            "actions": {
+                "shadowGait": {
+                    "name": "Démarche de l'ombre",
+                    "description": "<p>Dans une lumière tamisée ou l'obscurité, la @ref[actor.name]{créature} peut se fondre dans l'ombre et disparaître à la vue. Elle peut se <strong>Déplacer</strong> et réapparaître dans une zone différente de lumière tamisée ou d'obscurité. Il s'agit d'un déplacement <strong>Clignotant</strong> qui ne provoque pas de désengagement.</p>"
+                }
+            }
+        },
+        "Sunlight Weakness": {
+            "name": "Morsure du soleil",
+            "description": "<p>Sous la lumière du soleil, la @ref[actor.name]{créature} soufre de <strong>2 Fléaux</strong> pour toutes ses actions. </p><p>cette mécanique est géré à travers un <strong>Effet actif</strong> dont l'activation peut être facilement basculée au besoin.</p>"
+        },
+        "Tail Sweep": {
+            "name": "Balayage de queue",
+            "description": "<p>La @ref[actor.name]{créature} peut fouetter avec sa lourde queue à travers le champ de bataille avec une force terrible.</p>",
+            "actions": {
+                "tailSweep": {
+                    "name": "Balayage de queue",
+                    "description": "<p>La @ref[actor.name]{créature} décrit un arc de cercle avec sa lourde queue, frappant toutes les créatures à portée. Sur un <strong>Coup critique</strong>, les cibles affectées deviennent @Condition[staggered] jusqu'à la fin de leur prochain tour.</p>",
+                    "effects": [
+                        {
+                            "name": "Balayage de queue"
+                        }
+                    ]
+                }
+            }
+        },
+        "Thermal Vision": {
+            "name": "Vision thermique",
+            "description": "<p>La @ref[actor.name]{créature} perçoit le monde avec précision grâce aux différences de température, lui permettant de localiser les créatures à sang chaud ou émettant de la chaleur jusqu'à 60 pieds de distance, à condition qu'elles ne disposent pas d'une couverture totale et que vous ne soyez ni Aveuglé ni Neutralisé. Une créature détectée par cette Vision thermique est considérée comme visible pour les actions nécessitant de voir sa cible.</p><p></p>"
+        },
+        "Trampling Charge": {
+            "name": "Charge écrasante",
+            "description": "<p>La @ref[actor.name]{créature} utilise sa taille prodigieuse pour charger en avant, piétinant les créatures plus petites qui se dressent sur son chemin.</p>",
+            "actions": {
+                "tramplingCharge": {
+                    "name": "Charge écrasante",
+                    "description": "<p>La @ref[actor.name]{créature} se déplace vers l'avant jusqu'à deux fois sa <strong>Foulée</strong>, attaquant la défense de <strong>Réflexe</strong> de toutes les créatures sur son chemin. Les cibles qui font la moitié de la taille de la créature ou moins sont @Condition[stunned] jusqu'à la fin de leur prochain tour alors qu'elles sont brutalement écartées.</p>",
+                    "effects": [
+                        {
+                            "name": "Charge écrasante"
                         }
                     ]
                 }

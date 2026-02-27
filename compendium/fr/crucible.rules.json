@@ -126,7 +126,7 @@
                 },
                 "Weakened": {
                     "name": "Affaibli",
-                    "text": "<p>Une créature <strong>Affaiblie</strong> est vulnérable aux blessures mortelles. Les protagonistes deviennent Affaiblis lorsque leur Santé atteint zéro. Tout dégât supplémentaire sur la Santé alors qu'ils sont Affaiblis augmente les Lésions.</p><p>Tant qu'une créature est Affaiblie, elle subit -1 au maximum d'Actions, perd l'accès à une action de Déplacement gratuite, et subit une Vulnérabilité supplémentaire de <strong>2</strong> à tout dégât subi sur le <strong>Moral</strong>.</p>"
+                    "text": "<p>Une créature <strong>Affaiblie</strong> est vulnérable aux blessures mortelles. Les protagonistes deviennent Affaiblis lorsque leur Santé atteint zéro. Tout dégât supplémentaire sur la Santé alors qu'ils sont Affaiblis augmente les Lésions.</p><p>Tant qu'une créature est Affaiblie, elle subit -2 au maximum d'Actions et perd l'accès à une action de Déplacement gratuit.</p>"
                 },
                 "Dead": {
                     "name": "Mort",
@@ -142,7 +142,7 @@
                 },
                 "Broken": {
                     "name": "Démoralisé",
-                    "text": "<p>Une créature <strong>Démoralisée</strong> est vulnérable au traumatisme psychologique. Les protagonistes deviennent démoralisés lorsque leur Moral atteint zéro. Tout dégât supplémentaire subi sur le Moral alors qu'ils sont Démoralisés augmente la Folie.</p><p>Tant qu'une créature est Démoralisée, elle ne peut pas dépenser de <strong>Focus</strong>, ses actions subissent <strong>+2 Fléaux</strong>, et elle subit une Vulnérabilité supplémentaire de <strong>2</strong> à tout dégât subi sur la <strong>Santé</strong>.</p><p>Les créatures qui sont Démoralisées ne peuvent pas contribuer au Débordement. Les Adversaires non-joueurs qui deviennent Démoralisés tenteront de fuir le combat, sauf s'ils manquent d'instinct de préservation de soi ou si l'évasion semble impossible.</p>"
+                    "text": "<p>Une créature <strong>Démoralisée</strong> est vulnérable au traumatisme psychologique. Les protagonistes deviennent démoralisés lorsque leur Moral atteint zéro. Tout dégât supplémentaire subi sur le Moral alors qu'ils sont Démoralisés augmente la Folie.</p><p>Tant qu'une créature est Démoralisée, elle ne peut pas dépenser de <strong>Focus</strong> et ses actions subissent <strong>+2 Fléaux</strong>.</p><p>Les créatures qui sont Démoralisées ne peuvent pas contribuer au Débordement. Les Adversaires non-joueurs qui deviennent Démoralisés tenteront de fuir le combat, sauf s'ils manquent d'instinct de préservation de soi ou si l'évasion semble impossible.</p>"
                 },
                 "Insane": {
                     "name": "Dément",
@@ -162,7 +162,7 @@
                 },
                 "Exposed": {
                     "name": "Exposée",
-                    "text": "<p>Certaines attaques peuvent rendre un ennemi temporairement vulnérable. Quand une créature est <strong>Exposée</strong>, les attaques contre elle gagnent +2 <strong>Faveurs</strong>.</p>"
+                    "text": "<p>Certaines attaques peuvent rendre un ennemi temporairement vulnérable. Quand une créature est <strong>Exposée</strong>, sa défense d'<strong>Armure</strong> de base souffre d'une pénalité de -2.</p>"
                 },
                 "Flanked": {
                     "name": "Débordé",
@@ -174,15 +174,15 @@
                 },
                 "Prone": {
                     "name": "À terre",
-                    "text": "<p>Une créature qui a été renversée ou s'est volontairement jetée au sol est considérée comme étant <strong>À terre</strong>. Tant qu'elle est À terre, les attaques de mêlée contre la cible bénéficient de +1 Faveur, tandis que les attaques à distance contre la cible subissent +1 Fléau. Pour se relever d'une position À terre, il faut utiliser une action de Déplacement.</p>"
+                    "text": "<p>Une créature qui a été renversée ou s'est volontairement jetée au sol est considérée comme étant <strong>À terre</strong>. Tant qu'elle est À terre, les attaques de mêlée contre la cible bénéficient de +1 <strong>Faveur</strong>, tandis que les attaques à distance contre la cible subissent +1 <strong>Fléau</strong>. De plus, toute attaque réalisée par une créature À terre souffre de +1 <strong>Fléau</strong>, et la créature ne peut pas bénéficier d'un Déplacement gratuit. Pour se relever d'une position À terre, il faut utiliser une action de Déplacement.</p>"
                 },
                 "Staggered": {
                     "name": "Ébranlé",
-                    "text": "<p>Une créature <strong>Ébranlée</strong> voit son maximum d'<strong>Action</strong> réduit de 1.</p>"
+                    "text": "<p>Une créature <strong>Ébranlée</strong> voit son maximum d'<strong>Action</strong> réduit de 2.</p>"
                 },
                 "Stunned": {
                     "name": "Étourdi",
-                    "text": "<p>Une créature <strong>Étourdie</strong> voit son maximum d'<strong>Action</strong> réduit de 2.</p>"
+                    "text": "<p>Une créature <strong>Étourdie</strong> voit son maximum d'<strong>Action</strong> réduit de 4.</p>"
                 },
                 "Paralyzed": {
                     "name": "Paralysé",
@@ -210,31 +210,31 @@
                 },
                 "Bleeding": {
                     "name": "Ensanglanté",
-                    "text": "<p>Une créature <strong>Ensanglantée</strong> subit des dégâts Perforant ou Tranchant supplémentaires , selon le type de dégâts déclencheurs, au début de ses tours suivants.</p>"
+                    "text": "<p>Une créature <strong>Ensanglantée</strong> subit des dégâts Perforant ou Tranchant supplémentaires , selon le type de dégâts déclencheurs, à la <strong>Santé</strong> au début de ses tours suivants.</p>"
                 },
                 "Poisoned": {
                     "name": "Empoisonné",
-                    "text": "<p>Une créature <strong>Empoisonnée</strong> subit des dégâts de Poison supplémentaires au début de ses tours suivants.</p>"
+                    "text": "<p>Une créature <strong>Empoisonnée</strong> subit des dégâts de Poison supplémentaires à la <strong>Santé</strong> au début de ses tours suivants.</p>"
                 },
                 "Corroding": {
                     "name": "Corrodé",
-                    "text": "<p>Une créature <strong>Corrodée</strong> subit des dégâts d'Acide supplémentaires au début de ses tours suivants.</p>"
+                    "text": "<p>Une créature <strong>Corrodée</strong> subit des dégâts d'Acide supplémentaires à la <strong>Santé</strong> au début de ses tours suivants.</p>"
                 },
                 "Burning": {
                     "name": "Enflammé",
-                    "text": "<p>Une créature <strong>Enflammée</strong> subit des dégâts de Feu supplémentaires au début de ses tours suivants.</p>"
+                    "text": "<p>Une créature <strong>Enflammée</strong> subit des dégâts de Feu supplémentaires à la <strong>Santé</strong> au début de ses tours suivants.</p>"
                 },
                 "Freezing": {
                     "name": "Gelé",
-                    "text": "<p>Une créature <strong>Gelée</strong> subit des dégâts de Froid supplémentaires au début de ses tours suivants.</p>"
+                    "text": "<p>Une créature <strong>Gelée</strong> subit des dégâts de Froid supplémentaires à la <strong>Santé</strong> au début de ses tours suivants.</p>"
                 },
                 "Irradiated": {
                     "name": "Irradié",
-                    "text": "<p>Une créature <strong>Irradiée</strong> subit des dégâts Radiants supplémentaires au début de ses tours suivants.</p>"
+                    "text": "<p>Une créature <strong>Irradiée</strong> subit des dégâts Radiants supplémentaires à la <strong>Santé</strong> ainsi qu'au <strong>Moral</strong> au début de ses tours suivants.</p>"
                 },
                 "Decaying": {
                     "name": "Putréfié",
-                    "text": "<p>Une créature <strong>Putréfiée</strong> subit des dégâts de Corruption supplémentaires au début de ses tours suivants.</p>"
+                    "text": "<p>Une créature <strong>Putréfiée</strong> subit des dégâts de Corruption supplémentaires à la <strong>Santé</strong> au début de ses tours suivants.</p>"
                 },
                 "Hastened": {
                     "name": "Accéléré",
@@ -242,7 +242,7 @@
                 },
                 "Blinded": {
                     "name": "Aveuglé",
-                    "text": "<p>Une créature <strong>Aveuglée</strong> ne peut pas voir en utilisant une perception basée sur la lumière et ne peut pas utiliser d'Action nécessitant que la cible soit vue.</p>"
+                    "text": "<p>Une créature <strong>Aveuglée</strong> ne peut pas voir en utilisant une perception basée sur la lumière et ne peut pas utiliser d'Action nécessitant que la cible soit vue. Les attaques d'une créature Aveuglée souffrent de +2 <strong>Fléaux</strong>, alors que les attaques contre elle bénéficient de +2 <strong>Faveurs</strong>.</p>"
                 },
                 "Deafened": {
                     "name": "Assourdi",
@@ -250,7 +250,7 @@
                 },
                 "Silenced": {
                     "name": "Aphone",
-                    "text": "<p>Une créature qui est <strong>Aphone</strong> est incapable d'effectuer une action avec le trait <strong>Vocal</strong> ou de lancer un Sort qui inclut une <strong>Inflexion</strong> métamagique.</p>"
+                    "text": "<p>Une créature qui est <strong>Aphone</strong> est incapable d'effectuer une action avec le trait <strong>Vocal</strong> ou de lancer un Sort qui inclut une <strong>Inflexion</strong> métamagique.</p><p>À faire : Implémentation du trait Vocal encore à venir.</p>"
                 },
                 "Invisible": {
                     "name": "Invisible",
@@ -275,6 +275,18 @@
                 "Inspired": {
                     "name": "Inspiré",
                     "text": "<p>Une créature <strong>Inspirée</strong> recouvre son <strong>Moral</strong> graduellement au début de chacun de ses tours. La quantité de Moral recouvré est défini par la valeur de l'effet Inspiré correspondant.</p>"
+                },
+                "Confused": {
+                    "name": "Confus",
+                    "text": "<p>Une créature <strong>Confuse</strong> souffre de dégâts <strong>Psychiques</strong> au <strong>Moral</strong> au début de chacun de ses tours, et est également <strong>Désorientée</strong>.</p>"
+                },
+                "Entropy": {
+                    "name": "Dérangé",
+                    "text": "<p>Une créature <strong>Dérangée</strong> souffre de dégâts de <strong>Vide</strong> à la <strong>Santé</strong> au début de chacun de ses tours, et est également <strong>Paniquée</strong>.</p>"
+                },
+                "Burrowing": {
+                    "name": "Enfoui",
+                    "text": "<p>Une créature qui est entièrement submergée dans le sol est <strong>Enfouie</strong>. Quand elle est Enfouie, une créature ne peut voir ou être vue en utilisant une perception basée sur la lumière.</p>"
                 }
             },
             "categories": {
@@ -429,7 +441,7 @@
                 },
                 "Enchanting": {
                     "name": "Enchantement",
-                    "text": "<p>L'<strong>Enchantement</strong> est l'art de combiner des Glyphes existants (créés par les @UUID[Compendium.crucible.rules.JournalEntry.crucibleCrafting.JournalEntryPage.runeweaving00000]{Tisserunes}) avec de l'équipement créé par d'autres artisans (tels que les @UUID[Compendium.crucible.rules.JournalEntry.crucibleCrafting.JournalEntryPage.smithing00000000]{Forgerons}, les @UUID[Compendium.crucible.rules.JournalEntry.crucibleCrafting.JournalEntryPage.tailoring0000000]{Couturiers} et les @UUID[Compendium.crucible.rules.JournalEntry.crucibleCrafting.JournalEntryPage.jewelcraft000000]{Joailliers}) afin d'insuffler à ces objets des propriétés magiques permanentes. Le processus d'enchantement d'un objet implique généralement des composants matériels supplémentaires qui sont utilisés dans un rituel pour lier l'effet magique à un objet non magique, généralement d'une qualité au moins Raffinée.</p><h2>Talents</h2><p>Les talents suivants sont disponibles pour représenter la formation dans l'art de l'Enchantement :</p><p>@UUID[Compendium.crucible.talent.Item.enchantingNovice]{Enchantement : Novice}</p><p>@UUID[Compendium.crucible.talent.Item.enchantingJourne]{Enchantement : Compagnon}</p>"
+                    "text": "<p>L'<strong>Enchantement</strong> est l'art de combiner des Glyphes existants (créés par les @UUID[Compendium.crucible.rules.JournalEntry.crucibleCrafting.JournalEntryPage.glyphweaving0000]{Tisseurs de glyphe}) avec de l'équipement créé par d'autres artisans (tels que les @UUID[Compendium.crucible.rules.JournalEntry.crucibleCrafting.JournalEntryPage.smithing00000000]{Forgerons}, les @UUID[Compendium.crucible.rules.JournalEntry.crucibleCrafting.JournalEntryPage.tailoring0000000]{Couturiers} et les @UUID[Compendium.crucible.rules.JournalEntry.crucibleCrafting.JournalEntryPage.jewelcraft000000]{Joailliers}) afin d'insuffler à ces objets des propriétés magiques permanentes. Le processus d'enchantement d'un objet implique généralement des composants matériels supplémentaires qui sont utilisés dans un rituel pour lier l'effet magique à un objet non magique, généralement d'une qualité au moins Raffinée.</p><h2>Talents</h2><p>Les talents suivants sont disponibles pour représenter la formation dans l'art de l'Enchantement :</p><p>@UUID[Compendium.crucible.talent.Item.enchantingNovice]{Enchantement : Novice}</p><p>@UUID[Compendium.crucible.talent.Item.enchantingJourne]{Enchantement : Compagnon}</p>"
                 },
                 "Fletching": {
                     "name": "Empennage",
@@ -438,10 +450,6 @@
                 "Jewelcraft": {
                     "name": "Joaillerie",
                     "text": "<p>La <strong>Joaillerie</strong> est l'art de combiner des métaux décoratifs et des minéraux cristallisés rares pour composer des bagues, des bracelets et des colliers, ainsi que l'enchâssement de gemmes décoratives (et potentiellement magiques) dans diverses pièces d'équipement.</p><h2>Talents</h2><p>Les talents suivants sont disponibles pour représenter la formation en Joaillerie :</p><p></p><p>@UUID[Compendium.crucible.talent.Item.jewelcraftNovice]{Joaillerie : Novice}</p><p>@UUID[Compendium.crucible.talent.Item.jewelcraftJourne]{Joaillerie : Compagnon}</p>"
-                },
-                "Runeweaving": {
-                    "name": "Tisserune",
-                    "text": "<p>La <strong>Tisserune</strong> est la science arcanique d'inscrire des manifestations physiques de @UUID[Compendium.crucible.rules.JournalEntry.qjTSKlh59JhtUuEr.JournalEntryPage.p3hKRiZN3x0DEtyG]{Runes} métaphysiques pour créer des Glyphes. Les Glyphes peuvent être utilisés pour insuffler des propriétés magiques dans des matériaux non magiques ou comme composant pour aider la magie rituelle.</p><h2>Talents</h2><p>Les talents suivants sont disponibles pour représenter la formation de Tisserune :</p><p>@UUID[Compendium.crucible.talent.Item.runeweavingNovic]{Tisserune : Novice}</p><p>@UUID[Compendium.crucible.talent.Item.runeweavingJourn]{Tisserune : Compagnon}</p>"
                 },
                 "Smithing": {
                     "name": "Forge",
@@ -464,8 +472,12 @@
                     "text": "<section class=\"construction\"><p>Le système d'artisanat de Crucible est actuellement en cours de développement précoce, les règles écrites ici sont sujettes à changement et de nombreux détails pourraient ne pas encore être finalisés. Veuillez considérer ces détails comme un aperçu de ce qui est à venir.</p></section>"
                 },
                 "Tradeskills Overview": {
-                    "text": "<p></p><p>L'<strong>Artisanat</strong> dans Crucible est réalisé à l'aide d'un ensemble de <strong>Savoir-faire</strong> qui, similaires aux @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.skills0000000000]{Compétences} d'aventure, sont des aspects investis de l'identité de votre personnage obtenus par la progression des @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.talents000000000]{Talents} et par l'accumulation de connaissances sous la forme de @UUID[Compendium.crucible.rules.JournalEntry.crucibleCrafting.JournalEntryPage.schematicDefinit]{Schémas}.</p><section class=\"construction\"><p>Le système d'artisanat de Crucible est actuellement en cours de développement précoce, les règles écrites ici sont sujettes à changement et de nombreux détails pourraient ne pas encore être finalisés. Veuillez considérer ces détails comme un aperçu de ce qui est à venir.</p></section><section class=\"gameplay\"><p>Il n'est pas obligatoire pour un personnage d'investir dans la maîtrise d'un savoir-faire, cependant il est généralement recommandé de sélectionner au moins un savoir-faire à suivre afin de profiter d'une expérience de jeu complète de Crucible, en particulier si votre partie est une campagne de longue durée.</p></section><p>Les informations de ce journal décrivent chacun des savoir-faire, comment les schémas sont définis et obtenus, et comment le processus d'artisanat fonctionne lors de l'utilisation d'un schéma pour transformer des ingrédients d'entrée en objets produits.</p><h2 class=\"divider\">Tableau des Savoir-faire</h2><table><tbody><tr><th><p>Savoir-faire</p></th><th><p>Caractéristique Primaire</p></th><th><p>Caractéristique Secondaire</p></th><th><p>Usage Général</p></th></tr><tr><td><p>@UUID[.alchemy000000000]{Alchimie}</p></td><td><p>Intellect</p></td><td><p>Robustesse</p></td><td><p>Potions, élixirs, huiles et onguents</p></td></tr><tr><td><p>@UUID[.cooking000000000]{Cuisine}</p></td><td><p>Sagesse</p></td><td><p>Robustesse</p></td><td><p>Nourriture et boisson</p></td></tr><tr><td><p>@UUID[.enchanting000000]{Enchantement}</p></td><td><p>Intellect</p></td><td><p>Présence</p></td><td><p>Application de Runes à l'équipement</p></td></tr><tr><td><p>@UUID[.fletching0000000]{Empennage}</p></td><td><p>Force</p></td><td><p>Sagesse</p></td><td><p>Arcs, bâtons et munitions</p></td></tr><tr><td><p>@UUID[.jewelcraft000000]{Joaillerie}</p></td><td><p>Sagesse</p></td><td><p>Force</p></td><td><p>Bijoux et autres accessoires</p></td></tr><tr><td><p>@UUID[.runeweaving00000]{Tisserune}</p></td><td><p>Présence</p></td><td><p>Dextérité</p></td><td><p>Runes utilisées pour enchanter</p></td></tr><tr><td><p>@UUID[.smithing00000000]{Forge}</p></td><td><p>Force</p></td><td><p>Intellect</p></td><td><p>Armes et armures en métal</p></td></tr><tr><td><p>@UUID[.tailoring0000000]{Couture}</p></td><td><p>Dextérité</p></td><td><p>Présence</p></td><td><p>Vêtements et armures légères</p></td></tr></tbody></table>",
+                    "text": "<p></p><p>L'<strong>Artisanat</strong> dans Crucible est réalisé à l'aide d'un ensemble de <strong>Savoir-faire</strong> qui, similaires aux @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.skills0000000000]{Compétences} d'aventure, sont des aspects investis de l'identité de votre personnage obtenus par la progression des @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.talents000000000]{Talents} et par l'accumulation de connaissances sous la forme de @UUID[Compendium.crucible.rules.JournalEntry.crucibleCrafting.JournalEntryPage.schematicDefinit]{Schémas}.</p><section class=\"construction\"><p>Le système d'artisanat de Crucible est actuellement en cours de développement précoce, les règles écrites ici sont sujettes à changement et de nombreux détails pourraient ne pas encore être finalisés. Veuillez considérer ces détails comme un aperçu de ce qui est à venir.</p></section><section class=\"gameplay\"><p>Il n'est pas obligatoire pour un personnage d'investir dans la maîtrise d'un savoir-faire, cependant il est généralement recommandé de sélectionner au moins un savoir-faire à suivre afin de profiter d'une expérience de jeu complète de Crucible, en particulier si votre partie est une campagne de longue durée.</p></section><p>Les informations de ce journal décrivent chacun des savoir-faire, comment les schémas sont définis et obtenus, et comment le processus d'artisanat fonctionne lors de l'utilisation d'un schéma pour transformer des ingrédients d'entrée en objets produits.</p><h2 class=\"divider\">Tableau des Savoir-faire</h2><table><tbody><tr><th><p>Savoir-faire</p></th><th><p>Caractéristique Primaire</p></th><th><p>Caractéristique Secondaire</p></th><th><p>Usage Général</p></th></tr><tr><td><p>@UUID[.alchemy000000000]{Alchimie}</p></td><td><p>Intellect</p></td><td><p>Robustesse</p></td><td><p>Potions, élixirs, huiles et onguents</p></td></tr><tr><td><p>@UUID[.cooking000000000]{Cuisine}</p></td><td><p>Sagesse</p></td><td><p>Robustesse</p></td><td><p>Nourriture et boisson</p></td></tr><tr><td><p>@UUID[.enchanting000000]{Enchantement}</p></td><td><p>Intellect</p></td><td><p>Présence</p></td><td><p>Application de Runes à l'équipement</p></td></tr><tr><td><p>@UUID[.fletching0000000]{Empennage}</p></td><td><p>Force</p></td><td><p>Sagesse</p></td><td><p>Arcs, bâtons et munitions</p></td></tr><tr><td><p>@UUID[.jewelcraft000000]{Joaillerie}</p></td><td><p>Sagesse</p></td><td><p>Force</p></td><td><p>Bijoux et autres accessoires</p></td></tr><tr><td><p>@UUID[.glyphweaving0000]{Tissage de glyphe}</p></td><td><p>Présence</p></td><td><p>Dextérité</p></td><td><p>Runes utilisées pour enchanter</p></td></tr><tr><td><p>@UUID[.smithing00000000]{Forge}</p></td><td><p>Force</p></td><td><p>Intellect</p></td><td><p>Armes et armures en métal</p></td></tr><tr><td><p>@UUID[.tailoring0000000]{Couture}</p></td><td><p>Dextérité</p></td><td><p>Présence</p></td><td><p>Vêtements et armures légères</p></td></tr></tbody></table>",
                     "name": "Aperçu des Savoir-faire"
+                },
+                "Glyphweaving": {
+                    "name": "Tissage de glyphe",
+                    "text": "<p>Le <strong>Tissage de glyphe</strong> est la science arcanique de l'inscription des manifestations physiques des @UUID[Compendium.crucible.rules.JournalEntry.qjTSKlh59JhtUuEr.JournalEntryPage.p3hKRiZN3x0DEtyG]{Runes} métaphysiques afin de créer des Glyphes. Les Glyphes peuvent être utilisés pour conférer des propriétés magiques à des matériaux non magiques ou comme composant pour faciliter la magie rituelle.</p><h2>Talents</h2><p>Les talents suivants sont disponibles pour représenter l'entraînement du Tisseur de glyphe :</p><p>@UUID[Compendium.crucible.talent.Item.glyphweavingNovi]{Tissage de glyphe : Novice}</p><p>@UUID[Compendium.crucible.talent.Item.glyphweavingJour]{Tissage de glyphe : Compagnon}</p>"
                 }
             },
             "categories": {

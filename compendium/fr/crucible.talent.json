@@ -53,7 +53,8 @@
         "Resources": "Ressources",
         "Spellcraft": "Sorcellerie",
         "Scaling": "Évolution",
-        "Heroism": "Héroïsme"
+        "Heroism": "Héroïsme",
+        "Toolbelt": "Ceinture porte-outils"
     },
     "entries": {
         "Control Proficiency": {
@@ -1233,7 +1234,7 @@
         },
         "Powerful Throw": {
             "name": "Lancer puissant",
-            "description": "<p>La portée maximale à laquelle vous pouvez utiliser <strong>Lancer d'Arme</strong> est doublée.</p>"
+            "description": "<p>La portée maximale des actions avec l'étiquette <strong>Lancer</strong> ou des actions de consommables : <strong>Bombe</strong> est doublée.</p>"
         },
         "Powerful Physique": {
             "name": "Physique puissant",
@@ -1452,14 +1453,6 @@
         "Runewarden": {
             "name": "Gardien des Runes",
             "description": "<p>Votre maîtrise de l'arcane vous rend plus résilient aux dégâts élémentaires et spirituels. Vous gagnez un bonus à la <strong>Résistance</strong> de chaque type de dégâts Élémentaire ou Spirituel dont vous connaissez la Rune Arcanique harmonisée.</p><p>Lorsque vous utilisez le signe <strong>Protection</strong>, la Résistance fournie par votre Protection augmente également de la moitié de votre Sagesse.</p>"
-        },
-        "Runeweaving Journeyman": {
-            "name": "Tisserune : Compagnon",
-            "description": "<p>Vous avez un niveau d'expérience professionnel avec les sciences Runiques et pouvez travailler à travers certains des processus de tissage de runes les plus avancés avec suffisamment de temps.</p><p>Les propriétés de base de la plupart des Glyphes courants et leurs phrases vous sont faciles à retenir sans documents de référence, mais vous avez toujours besoin de livres pour les idéogrammes rares et leurs composants.</p>"
-        },
-        "Runeweaving Novice": {
-            "name": "Tisserune : Novice",
-            "description": "<p>Vous avez reçu une formation dans les fondamentaux du Tissage de Runes et êtes capable de travailler avec la plupart des glyphes et gravures courants.</p><p>Vous avez toujours besoin de consulter des recettes et des livres pour identifier des glyphes particuliers et leurs propriétés.</p>"
         },
         "Ruthless Momentum": {
             "name": "Élan impitoyable",
@@ -1749,7 +1742,7 @@
         },
         "Thoughtbinder": {
             "name": "Censeur",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Contrôle. Les sorts utilisant cette Rune causent la condition @Condition[restrained] sur les Coups critiques.</p><p>L'effet Entravé dure <strong>1 Round</strong> et inflige votre score de caractéristique de <strong>Sagesse</strong> comme dégâts <strong>Psychiques</strong> additionnels au <strong>Moral</strong>.</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Contrôle. Les sorts utilisant cette Rune causent la condition @Condition[dominated] sur les Coups critiques.</p><p>L'effet Dominé dure <strong>1 Round</strong> et inflige votre score de caractéristique de <strong>Sagesse</strong> comme dégâts <strong>Psychiques</strong> additionnels au <strong>Moral</strong>.</p>"
         },
         "Thread the Needle": {
             "name": "Enfiler l'aiguille",
@@ -1965,6 +1958,37 @@
                     "description": "<p>Vous dépensez de l'<strong>Héroïsme</strong> pour récupérer instantanément votre <strong>Sagesse</strong> en <strong>Focus</strong>. Vous pouvez effectuer cette action en dehors de votre tour en Combat avant d'effectuer une <strong>Réaction</strong>.</p>"
                 }
             }
+        },
+        "Chirurgeon": {
+            "name": "Chirurgien",
+            "description": "<p>Votre capacité d'improvisation en matière de médecine de guerre peut sauver de nombreuses vies. Vous effectuez tous vos tests de <strong>Médecine</strong> lors d'un combat avec <strong>+1 Faveur</strong>.</p>",
+            "actions": {
+                "medicinalCompound": {
+                    "name": "Composé médicinal",
+                    "description": "<p>Vous fouillez dans vos fournitures médicales, combinant à la hâte tout ce que vous avez sous la main pour soigner les blessures de la cible ou apaiser son esprit. Effectuez un <strong>test de Médecine</strong>.</p><p>La tentative est contestée par la valeur la plus élevée entre le <strong>Seuil de guérison</strong> et le <strong>Seuil de ralliement</strong> de la cible. Sur une réussite, la cible récupère immédiatement la moitié de ce montant en Santé et en Moral au début de chacun des 3 tours suivants.</p>",
+                    "effects": [
+                        {
+                            "name": "Composé médicinal"
+                        }
+                    ]
+                }
+            }
+        },
+        "Demolitionist": {
+            "name": "Démolisseur",
+            "description": "<p>YVotre remarquable expertise en matière de munitions vous permet de les utiliser efficacement au milieu du chaos des combats. Chaque tour, votre première utilisation d'une <strong>Bombe</strong> a un coût réduit de <strong>-1 Action</strong>. </p><p>Vous n'êtes plus la cible de vos propres bombes, même si vous vous trouvez par ailleurs dans leur zone d'effet.</p>"
+        },
+        "Glyphweaving Journeyman": {
+            "name": "Tissage de glyphe : Compagnon",
+            "description": "<p>Vous possédez une expérience professionnelle en sciences runiques et pouvez, avec suffisamment de temps, maîtriser certains des procédés de tissage de glyphe les plus avancés.</p><p>Les propriétés de base des glyphes les plus courants et de leurs phrases vous sont faciles à mémoriser sans documents de référence, mais vous aurez tout de même besoin de livres pour les idéogrammes rares et leurs composantes.</p>"
+        },
+        "Glyphweaving Novice": {
+            "name": "Tissage de glyphe : Novice",
+            "description": "<p>Vous avez reçu une formation aux principes fondamentaux du tissage de glyphe et êtes capable de travailler avec la plupart des glyphes et gravures courants.</p><p>Vous devrez toujours consulter des recettes et des livres pour identifier les glyphes particuliers et leurs propriétés.</p>"
+        },
+        "Saboteur": {
+            "name": "Saboteur",
+            "description": "<p>Vous maîtrisez l'utilisation des munitions de jet. Lorsque vous utilisez un consommable de type <strong>Bombe</strong>, vous êtes toujours au moins considéré comme <strong>Formé</strong> quelle que soit la compétence utilisée et vous obtenez <strong>+1 Faveur</strong> à tout tests concerné.</p>"
         }
     }
 }

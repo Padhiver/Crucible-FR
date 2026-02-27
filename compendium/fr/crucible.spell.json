@@ -116,6 +116,105 @@
                     "description": "<p>Vous pénétrez l'esprit d'une créature <strong>Humanoïde</strong> ou d'un <strong>Géant</strong>, tentant de briser sa défense de <strong>Volonté</strong> pour comprendre ses pensées et ses motivations. La cible de ce sort est consciente de l'intrusion, même si elle ne peut pas vous percevoir.</p><p>En cas de réussite, le Maître du jeu (pour un Adversaire) ou le Joueur (pour un Héros) doit vous décrire en 3 mots ou moins l'idée ou le sentiment qui occupe le devant de ses pensées à l'instant présent.</p><p>Sur une Réussite critique, cette description peut aller jusqu'à 10 mots pour transmettre une compréhension plus profonde.</p>"
                 }
             }
+        },
+        "Curse of Atrophy": {
+            "name": "Malédiction de l'atrophie",
+            "description": "<p>Vous sapez la force physique de votre cible, provoquant une atrophie et un affaiblissement musculaire irréversibles, impossibles à inverser par un repos ou une récupération ordinaire.</p>",
+            "actions": {
+                "curseAtrophy": {
+                    "name": "Malédiction de l'atrophie",
+                    "description": "<p>Touchez la cible pour l'affliger d'une malédiction débilitante qui réduit de façon permanente sa <strong>Force </strong>de 2.</p>",
+                    "effects": [
+                        {
+                            "name": "Malédiction de l'atrophie"
+                        }
+                    ]
+                }
+            }
+        },
+        "Curse of Delusion": {
+            "name": "Malédiction de l'illusion",
+            "description": "<p>Vous obscurcissez la clarté d'esprit de votre cible, altérant de façon permanente sa perception et son jugement, d'une manière qui résiste à toute guérison ordinaire.</p>",
+            "actions": {
+                "curseDelusion": {
+                    "name": "Malédiction de l'illusion",
+                    "description": "<p>Touchez la cible pour obscurcir ses perceptions avec une malédiction qui réduit de façon permanente sa <strong>Sagesse</strong> de 2.</p>",
+                    "effects": [
+                        {
+                            "name": "Malédiction de l'illusion"
+                        }
+                    ]
+                }
+            }
+        },
+        "Curse of Dullness": {
+            "name": "Malédiction de l'ennui",
+            "description": "<p>Vous éteignez l'étincelle d'intellect chez votre cible, altérant de façon permanente sa capacité de réflexion et de raisonnement rapides, d'une manière que le repos seul ne peut réparer.</p>",
+            "actions": {
+                "curseDullness": {
+                    "name": "Malédiction de l'ennui",
+                    "description": "<p>Touchez la cible pour ternir son esprit avec une malédiction qui réduit de façon permanente son <strong>Intellect</strong> de 2.</p>",
+                    "effects": [
+                        {
+                            "name": "Malédiction de l'ennui"
+                        }
+                    ]
+                }
+            }
+        },
+        "Curse of Exhaustion": {
+            "name": "Malédiction de l'épuisement",
+            "description": "<p>Vous drainez la résilience vitale de votre cible, la laissant constitutionnellement affaiblie d'une manière qui persiste au-delà de toute guérison ordinaire.</p>",
+            "actions": {
+                "curseExhaustion": {
+                    "name": "Malédiction de l'épuisement",
+                    "description": "<p>Touchez la cible pour drainer sa vitalité grâce à une malédiction qui réduit de façon permanente sa <strong>Robustesse</strong> de 2.</p>",
+                    "effects": [
+                        {
+                            "name": "Malédiction de l'épuisement"
+                        }
+                    ]
+                }
+            }
+        },
+        "Curse of Lethargy": {
+            "name": "Malédiction de la léthargie",
+            "description": "<p>Vous étouffez toute étincelle de vivacité chez votre cible, émoussant ses réflexes et ralentissant la réponse de son corps de manière permanente.</p>",
+            "actions": {
+                "curseLethargy": {
+                    "name": "Malédiction de la léthargie",
+                    "description": "<p>Touchez la cible pour l'affliger de léthargie, réduisant ainsi de façon permanente sa <strong>Dextérité</strong> de 2.</p>",
+                    "effects": [
+                        {
+                            "name": "Malédiction de la léthargie"
+                        }
+                    ]
+                }
+            }
+        },
+        "Curse of Scorn": {
+            "name": "Malédiction du mépris",
+            "description": "<p>Vous diminuez la force de la personnalité de votre cible, la rendant moins convaincante et plus difficile à influencer les autres, de manière permanente.</p>",
+            "actions": {
+                "curseScorn": {
+                    "name": "Malédiction du mépris",
+                    "description": "<p>Touchez la cible pour affaiblir sa volonté grâce à une malédiction qui réduit de façon permanente sa <strong>Présence</strong> de 2.</p>",
+                    "effects": [
+                        {
+                            "name": "Malédiction du mépris"
+                        }
+                    ]
+                }
+            }
         }
+    },
+    "folders": {
+        "Gesture: Aura": "Signe : Aura",
+        "Gesture: Strike": "Signe : Frappe",
+        "Gesture: Aspect": "Signe : Aspect",
+        "Gesture: Pulse": "Signe : Onde",
+        "Gesture: Infuence": "Signe : Influence",
+        "Gesture: Creation": "Signe : Création",
+        "Gesture: Sense": "Signe : Résonance"
     }
 }

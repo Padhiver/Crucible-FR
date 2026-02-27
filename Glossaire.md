@@ -23,6 +23,8 @@
 | Slot | Emplacement |
 | Scaling / Scaled | Évolution / Évolué |
 | Stackable | Empilable |
+| Curse | Malédiction |
+| Trap | Piège |
 
 ---
 
@@ -41,6 +43,7 @@
 | Taxonomy | Taxonomie |
 | Engagement radius/range | Rayon/Portée d'Engagement |
 | Bloodied | Blessé |
+| Glyph | Glyphe |
 
 ### Ressources (Resources)
 | Anglais | Français |
@@ -116,6 +119,7 @@
 | <Skill> | <Compétence> |
 | Natural | Naturelle |
 | Noisy | Bruyante |
+| Severe | Grave |
 
 ## Artisanat (Crafting)
 | Anglais | Français |
@@ -130,6 +134,7 @@
 | Runeweaving | Tisserune |
 | Smithing | Forge |
 | Tailoring | Couture |
+| Glypheweaving | Tissage de glyphe |
 
 ## Progression & Récompenses
 | Anglais | Français |
@@ -225,6 +230,7 @@
 | Climb | Escalade |
 | Swim | Nage |
 | Fly | Vol |
+| Displace | Clignotant |
 
 ---
 
@@ -539,6 +545,7 @@
 | Incapacitated | Neutralisé |
 | Guarded | Protégé |
 | Exhausted | Exténué |
+| Invulnérable | Invulnérable |
 
 ### Perception
 | Anglais | Français |
@@ -548,6 +555,7 @@
 | Deafened | Assourdi |
 | Silenced | Aphone |
 | Invisible | Invisible |
+| Dominated | Dominé |
 
 ### Dégâts sur la durée
 | Anglais | Français |

@@ -1646,7 +1646,7 @@
         },
         "Strong Grip": {
             "name": "Prise solide",
-            "description": "Votre prise sur votre armement est ferme et inflexible. Vous pouvez effectuer des Actions qui nécessitent une main libre tout en maniant une arme à deux mains. Les tentatives pour vous Désarmer sont faites avec +2 Fléaux."
+            "description": "Votre prise sur votre armement est ferme et inflexible. Vous pouvez effectuer des Actions qui nécessitent une main libre tout en maniant une arme à deux mains de mêlée. Les tentatives pour vous Désarmer sont faites avec +2 Fléaux."
         },
         "Stunning Strike": {
             "name": "Frappe étourdissante",
@@ -1989,6 +1989,10 @@
         "Saboteur": {
             "name": "Saboteur",
             "description": "<p>Vous maîtrisez l'utilisation des munitions de jet. Lorsque vous utilisez un consommable de type <strong>Bombe</strong>, vous êtes toujours au moins considéré comme <strong>Formé</strong> quelle que soit la compétence utilisée et vous obtenez <strong>+1 Faveur</strong> à tout tests concerné.</p>"
+        },
+        "Deft Grip": {
+            "description": "Votre prise sur votre armement est ferme et inflexible. Vous pouvez effectuer des Actions qui nécessitent une main libre tout en maniant une arme à deux mains de mêlée.",
+            "name": "Prise habile"
         }
     }
 }

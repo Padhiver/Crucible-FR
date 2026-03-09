@@ -2116,5 +2116,10 @@
     "ACTION.WarningCannotAffordHands.other": "{name} doit avoir {hands} main de libre pour utiliser {action} !",
     "ACTION.WarningMisconfiguredSummon": "La cible invoquée de l'action {action} n'est pas configurée correctement.",
     "ACTION.TagSevere": "Grave",
-    "ACTION.TagSevereTooltip": "Si la cible de cette action possède des ressources Lésions et Folie, cette action affecte directement ces ressources, indépendamment de sa Santé ou de son Moral."
+    "ACTION.TagSevereTooltip": "Si la cible de cette action possède des ressources Lésions et Folie, cette action affecte directement ces ressources, indépendamment de sa Santé ou de son Moral.",
+    "ACTION.TagVocal": "Vocable",
+    "ACTION.TagVocalTooltip": "Cette action requiert que l'utilisateur parle ou émette un son d'une autre manière.",
+    "ACTION.TagAuditory": "Auditif",
+    "ACTION.TagAuditoryTooltip": "Cette action nécessite que ses cibles soient capables d'entendre pour être affectées.",
+    "ACTION.WarningSilenced": "Vous ne pouvez pas utiliser cette action lorsque vous êtes sous l'effet Aphone."
 }

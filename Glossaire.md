@@ -81,6 +81,8 @@
 | Wall | Mur |
 | Ray | Rayon |
 | Fan | Éventail |
+| Vocal | Vocable |
+| Auditory | Auditif |
 
 ## Étiquettes d'actions
 | Anglais | Français |

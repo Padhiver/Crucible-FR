@@ -326,6 +326,8 @@
       "Summon": "Summon",
       "SummonTooltip": "This action summons, calls, or otherwise creates a combatant which joins the encounter.",
       "TargetTooltip": "The target type, distance, and number which applies to this action.",
+      "Talisman": "Talisman",
+      "TalismanTooltip": "This action requires wielding a talisman weapon to perform.",
       "Thrown": "Thrown",
       "ThrownTooltip": "This action involves performing a thrown weapon attack.",
       "TwoHanded": "Two-Handed",
@@ -417,6 +419,7 @@
       "MustReload": "Your weapon requires reloading in order to use this action.",
       "MustScaleDex": "Every weapon used in this action must scale using dexterity.",
       "MustScaleStrength": "Every weapon used in this action must scale using strength.",
+      "RequiresTalisman": "Every weapon used in this action must be a talisman.",
       "NoAbility": "{actor} has no {ability} score, and therefore cannot use {action}.",
       "NoConsumable": "No consumable Item identified for action \"{action}\"",
       "NoConsumableUses": "Consumable item \"{item}\" has no uses remaining for Action \"{action}\"",
@@ -464,6 +467,7 @@
     "RequiresMovement": "You must plan a movement path before this action can be used.",
     "RequiresRegion": "You must place a Region before this action can be used.",
     "SkillCheck": "{skill} Skill Check",
+    "SkillCheckGeneric": "Skill Check",
     "StandardCheck": "Standard Check",
     "Targets": "Targets",
     "TemplateTargets": "Template Targets",
@@ -702,6 +706,8 @@
       }
     },
     "LABELS": {
+      "BackgroundKnowledgeTooltip": "This Knowledge Area is granted by your Background.",
+      "BackgroundLanguageTooltip": "This Language is granted by your Background.",
       "Capacity": "Carrying Capacity",
       "Currency": "Currency",
       "CurrentCapacity": "Current Capacity",
@@ -710,6 +716,7 @@
       "Knowledge": "Knowledge Areas",
       "KnowledgeHint": "Learn some Knowledge Areas from your Background or edit your Hero to gain some.",
       "Languages": "Known Languages",
+      "LanguagesHint": "Learn some Languages from your Background or edit your Hero to gain some.",
       "OverCapacity": "Over Capacity"
     },
     "SECTIONS": {
@@ -1315,12 +1322,16 @@
       "Moderate": "Moderate",
       "Trivial": "Trivial"
     },
+    "SKILLS": {
+      "AddSkill": "Add Skill",
+      "CustomizeSkills": "Customize Skills"
+    },
     "GROUP_CHECK": {
-      "Title": "Group Check",
-      "ChatTitle": "{skill} Check (DC {dc})",
+      "Title": "Group Skill Check",
       "DialogTitle": "{skill} Check: {name}",
       "NoUserForActor": "No active user found for: {name}",
       "STATUSES": {
+        "Complete": "Complete",
         "Pending": "Pending",
         "Aborted": "Aborted",
         "Skipped": "Skipped"
@@ -1328,7 +1339,7 @@
       "Resend": "Resend Request",
       "RollOnBehalf": "Roll on Behalf",
       "Skip": "Skip Actor",
-      "Finalize": "Reveal to Players",
+      "ResetPending": "Reset to Pending",
       "RequiresGM": "Only a Gamemaster can initiate group checks."
     },
     "REQUESTS": {

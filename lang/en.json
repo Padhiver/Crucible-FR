@@ -582,6 +582,7 @@
       "EquipmentType": "Item Type",
       "Exit": "Exit",
       "ExitHint": "Exit Creation",
+      "NameRequired": "You must provide a character name to complete creation.",
       "Restart": "Restart",
       "RestartContent": "Discard creation progress and restart from the beginning?",
       "RestartHint": "Restart Creation",
@@ -1527,6 +1528,7 @@
     },
     "RANDOMIZE": {
       "Title": "Randomize Enchanted Item",
+      "Flavor": "Randomized Item: {type}",
       "PriceMin": "Minimum Price",
       "PriceMax": "Maximum Price",
       "BaseItem": "Base Item",
@@ -2121,6 +2123,7 @@
       "Humanoid": "Humanoid",
       "Monstrosity": "Monstrosity",
       "Ooze": "Ooze",
+      "Plant": "Plant",
       "Outsider": "Outsider",
       "Undead": "Undead"
     },

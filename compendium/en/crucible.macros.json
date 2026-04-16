@@ -1,0 +1,21 @@
+{
+  "label": "System Macros",
+  "mapping": {
+    "description": "system.description"
+  },
+  "folders": {},
+  "entries": {
+    "Configure Group Check": {
+      "name": "Configure Group Check"
+    },
+    "Randomize Item": {
+      "name": "Randomize Item"
+    },
+    "Recover": {
+      "name": "Recover"
+    },
+    "Rest": {
+      "name": "Rest"
+    }
+  }
+}

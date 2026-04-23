@@ -10,7 +10,7 @@
         "Construct": "Artificiel",
         "Ooze": "Vase",
         "Movement": "Déplacement",
-        "Resistances": "Résistance",
+        "Resistances": "Résistances",
         "Breath": "Souffle",
         "Senses": "Sens",
         "Passive": "Passif",
@@ -23,7 +23,7 @@
         "Communication": "Communication",
         "Bursts": "Explosions",
         "Death": "Mort",
-        "Strikes": "Frappe",
+        "Strikes": "Frappes",
         "Tail": "Queue",
         "Critical Hits": "Coups critiques"
     },
@@ -547,6 +547,44 @@
                     "effects": [
                         {
                             "name": "Charge écrasante"
+                        }
+                    ]
+                }
+            }
+        },
+        "Aquatic Breathing": {
+            "name": "Respiration aquatique",
+            "description": "<p>@ref[actor.name]{Cette créature} ne peut respirer que sous l'eau.</p>"
+        },
+        "Aqueous Camouflage": {
+            "name": "Camouflage acqueux",
+            "description": "<p>En étant totalement submergée dans l'eau ou autres liquides, @ref[actor.name]{cette créature} a un @Advantage[2] sur ses jets de <strong>Furtivité</strong>.</p>"
+        },
+        "Natural Invisibility": {
+            "name": "Invisibilité naturelle",
+            "description": "<p>Par un aspect organique ou arcanique de sa physiologie, @ref[actor.name]{cette créature] possède la capacité de devenir complètement invisible.</p>",
+            "actions": {
+                "invisibility": {
+                    "name": "Invisibilité naturelle",
+                    "description": "<p>Vous devenez @Condition[invisible] et ne pouvez pas être détecté par la perception visuelle. Vous ne pouvez être la cible directe d'aucune action. Cet effet reste actif pendant 10 minutes ou jusqu'à ce que toute autre action qu'un <strong>Déplacement</strong> soit utilisée.</p>",
+                    "effects": [
+                        {
+                            "name": "Invisibilité naturelle"
+                        }
+                    ]
+                }
+            }
+        },
+        "Swallow": {
+            "name": "Engloutissement",
+            "description": "<p>@Ref[actor.name]{Cette créature} a la capacité d'avaler en entier des créatures plus petites qu'elle, bien qu'une seule créature puisse être affectée par cette action à la fois.</p>",
+            "actions": {
+                "swallow": {
+                    "name": "Engloutissement",
+                    "description": "<p>Vous avalez un ennemi ciblé, le mettant ainsi hors de combat. La cible engloutie est @Condition[blinded] et @Condition[restrained] jusqu'à sa libération.</p><p>Si vous subissez des dégâts <strong>Graves</strong>, des <strong>Lésions</strong>, ou devenez @Condition[incapacitated], vous régurgitez la créature engloutie.</p>",
+                    "effects": [
+                        {
+                            "name": "Engloutissement"
                         }
                     ]
                 }

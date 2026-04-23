@@ -1,0 +1,666 @@
+{
+    "label": "Affixes",
+    "mapping": {
+        "description": "description",
+        "adjective": "system.adjective"
+    },
+    "folders": {
+        "Suffixes": "Suffixes",
+        "Defenses": "Défenses",
+        "Movement": "Déplacement",
+        "Spellcraft": "Sorcellerie",
+        "Gestures": "Signes",
+        "Potency": "Puissance",
+        "Weapons": "Armes",
+        "Damage": "Dégâts",
+        "Prefixes": "Préfixes",
+        "Resistances": "Résistances",
+        "Resources": "Ressources",
+        "Skills": "Compétences",
+        "Bonuses": "Bonus",
+        "Runes": "Runes",
+        "Conversion": "Conversion",
+        "Creature Bane": "Fléau des créatures"
+    },
+    "entries": {
+        "Acid Conversion": {
+            "name": "Conversion d'acide",
+            "description": "<p>Une partie des dégâts infligés par des frappes avec cette arme est convertie en dégâts d'<strong>Acide</strong>. La proportion convertie dépend du <strong>Palier</strong> de ce préfixe.</p><ul><li><p><strong>Palier 1 :</strong> 33% des dégâts sont convertis</p></li><li><p><strong>Palier 2 :</strong> 66% des dégâts sont convertis</p></li><li><p><strong>Palier 3 :</strong> 100% des dégâts sont convertis</p></li></ul><h3 class=\"divider\">Notes du Playtest</h3><p>L'infrastructure permettant de diviser une attaque unique en plusieurs composantes de dégâts de types différents n'existe pas encore. En attendant, tous les niveaux de cet affixe convertissent 100 % des dégâts de l'arme en <strong>Acide</strong>. Une fois que les dégâts de plusieurs types seront pris en charge, les niveaux inférieurs ne convertiront qu'une fraction des dégâts totaux, laissant le reste sous la forme du type d'origine de l'arme.</p>",
+            "adjective": "Caustique"
+        },
+        "Acid Damage": {
+            "name": "Dégâts d'acide",
+            "description": "<p>Ajoute des dégâts d'<strong>Acide</strong> aux frappes réalisées avec cette arme. Le bonus aux dégâts est égal à 2 pour chaque <strong>Palier</strong> de ce suffixe.</p><h3 class=\"divider\">Notes de Playtest</h3><p>Ce bonus s'applique actuellement sous forme de dégâts supplémentaires fixes du type de dégâts existant de l'arme. Dans une prochaine mise à jour, cela infligera des dégâts d'<strong>Acide</strong>, contestés séparément par la résistance à l'<strong>Acide</strong> de la cible.</p>",
+            "adjective": "Corrosion"
+        },
+        "Acid Resistance": {
+            "name": "Résistance à l'acide",
+            "description": "<p>Augmente la résistance à l'<strong>Acide</strong> de 3 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Protection contre l'acide"
+        },
+        "Activating": {
+            "name": "Activation",
+            "description": "<p>Fournit l'action <strong>Restauration d'action</strong>, permettant au porteur de récupérer de l' <strong>Action</strong> dans les moments difficiles. Le montant restauré dépend du <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Activation",
+            "actions": {
+                "affixActivating": {
+                    "name": "Restauration d'action",
+                    "description": "<p>En cas de difficulté, vous pouvez puiser dans une réserve supplémentaire d'<strong>Actions</strong> depuis cet objet. Le montant d'Actions restauré dépend du <strong>Palier</strong> de cet affixe.</p><ul><li><p><strong>Palier 1 :</strong> <strong>1 Action</strong></p></li><li><p><strong>Palier 2 :</strong> <strong>2 Actions</strong></p></li><li><p><strong>Palier 3 :</strong> <strong>3 Actions</strong></p></li></ul>"
+                }
+            }
+        },
+        "Arcana": {
+            "name": "Arcanes",
+            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les jets de compétence d'<strong>Arcanes</strong> de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Arcane"
+        },
+        "Arrow Spellcraft": {
+            "name": "Sorcellerie des flèches",
+            "description": "<p>Cet objet est imprégné de l'essence de magie de <strong>Flèche</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance du signe <strong>Flèche</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir appris par l'intermédiaire d'un talent.</p>",
+            "adjective": "Flèche"
+        },
+        "Aspect Spellcraft": {
+            "name": "Sorcellerie de l'aspect",
+            "description": "<p>Cet objet est imprégné de l'essence de magie d'<strong>Aspect</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance du signe <strong>Aspect</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir appris par l'intermédiaire d'un talent.</p>",
+            "adjective": "Aspect"
+        },
+        "Athletics": {
+            "name": "Athlétisme",
+            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les jets de compétence d'<strong>Athlétisme</strong> de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Athlétique"
+        },
+        "Aura Spellcraft": {
+            "name": "Sorcellerie d'aura",
+            "description": "<p>Cet objet est imprégné de l'essence de magie d'<strong>Aura</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance du signe <strong>Aura</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir appris par l'intermédiaire d'un talent.</p>",
+            "adjective": "Aura"
+        },
+        "Awareness": {
+            "name": "Vigilance",
+            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les jets de compétence de <strong>Vigilance</strong> de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Perceptif"
+        },
+        "Beast Bane": {
+            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Bête</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de <strong>Faveurs</strong> égal au <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Fléau-des-bêtes",
+            "name": "Fléau des bêtes"
+        },
+        "Blast Spellcraft": {
+            "name": "Sorcellerie d'explosion",
+            "description": "<p>Cet objet est imprégné de l'essence de magie d'<strong>Explosion</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance du signe <strong>Explosion</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir appris par l'intermédiaire d'un talent.</p>",
+            "adjective": "Explosion"
+        },
+        "Bludgeoning Damage": {
+            "name": "Dégâts contondants",
+            "description": "<p>Ajoute des dégâts <strong>Contondants</strong> aux frappes réalisées avec cette arme. Le bonus aux dégâts est égal à 2 pour chaque <strong>Palier</strong> de ce suffixe.</p><h3 class=\"divider\">Notes de Playtest</h3><p>Ce bonus s'applique actuellement sous forme de dégâts supplémentaires fixes du type de dégâts existant de l'arme. Dans une prochaine mise à jour, cela infligera des dégâts <strong>Contondants</strong>, contestés séparément par la résistance <strong>Contondante</strong> de la cible.</p>",
+            "adjective": "Impact"
+        },
+        "Bludgeoning Resistance": {
+            "name": "Résistance contondante",
+            "description": "<p>Augmente la résistance <strong>Contondante</strong> de 3 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Protection contre le contondant"
+        },
+        "Celestial Bane": {
+            "name": "Fléau des célestes",
+            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Céleste</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de <strong>Faveurs</strong> égal au <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Fléau-des-célestes"
+        },
+        "Cold Conversion": {
+            "name": "Conversion de froid",
+            "description": "<p>Une partie des dégâts infligés par des frappes avec cette arme est convertie en dégâts de <strong>Froid</strong>. La proportion convertie dépend du <strong>Palier</strong> de ce préfixe.</p><ul><li><p><strong>Palier 1 :</strong> 33% des dégâts sont convertis</p></li><li><p><strong>Palier 2 :</strong> 66% des dégâts sont convertis</p></li><li><p><strong>Palier 3 :</strong> 100% des dégâts sont convertis</p></li></ul><h3 class=\"divider\">Notes du Playtest</h3><p>L'infrastructure permettant de diviser une attaque unique en plusieurs composantes de dégâts de types différents n'existe pas encore. En attendant, tous les niveaux de cet affixe convertissent 100 % des dégâts de l'arme en <strong>Froid</strong>. Une fois que les dégâts de plusieurs types seront pris en charge, les niveaux inférieurs ne convertiront qu'une fraction des dégâts totaux, laissant le reste sous la forme du type d'origine de l'arme.</p>",
+            "adjective": "Gelé"
+        },
+        "Cold Damage": {
+            "name": "Dégâts de froid",
+            "description": "<p>Ajoute des dégâts de <strong>Froid</strong> aux frappes réalisées avec cette arme. Le bonus aux dégâts est égal à 2 pour chaque <strong>Palier</strong> de ce suffixe.</p><h3 class=\"divider\">Notes de Playtest</h3><p>Ce bonus s'applique actuellement sous forme de dégâts supplémentaires fixes du type de dégâts existant de l'arme. Dans une prochaine mise à jour, cela infligera des dégâts de <strong>Froid</strong>, contestés séparément par la résistance au <strong>Froid</strong> de la cible.</p>",
+            "adjective": "Givre"
+        },
+        "Cold Resistance": {
+            "name": "Résistance au froid",
+            "description": "<p>Augmente la résistance au <strong>Froid</strong> de 3 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Protection contre le froid"
+        },
+        "Cone Spellcraft": {
+            "name": "Sorcellerie de cône",
+            "description": "<p>Cet objet est imprégné de l'essence de magie de <strong>Cône</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance du signe <strong>Cône</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir appris par l'intermédiaire d'un talent.</p>",
+            "adjective": "Cône"
+        },
+        "Conjure Spellcraft": {
+            "name": "Sorcellerie de conjuration",
+            "description": "<p>Cet objet est imprégné de l'essence de magie de <strong>Conjuration</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance du signe <strong>Conjuration</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir appris par l'intermédiaire d'un talent.</p>",
+            "adjective": "Conjuration"
+        },
+        "Construct Bane": {
+            "name": "Fléau des artificiels",
+            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Artificiel</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de <strong>Faveurs</strong> égal au <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Fléau-des-artificiels"
+        },
+        "Control Potency": {
+            "name": "Puissance de contrôle",
+            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les sorts utilisant la rune de <strong>Contrôle</strong> de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
+            "adjective": "Puissance de contrôle"
+        },
+        "Control Spellcraft": {
+            "name": "Sorcellerie de contrôle",
+            "description": "<p>Cet objet est imprégné de l'essence de magie de <strong>Contrôle</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune de <strong>Contrôle</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
+            "adjective": "Contrôle runique"
+        },
+        "Corruption Conversion": {
+            "name": "Conversion de corruption",
+            "description": "<p>Une partie des dégâts infligés par des frappes avec cette arme est convertie en dégâts de <strong>Corruption</strong>. La proportion convertie dépend du <strong>Palier</strong> de ce préfixe.</p><ul><li><p><strong>Palier 1 :</strong> 33% des dégâts sont convertis</p></li><li><p><strong>Palier 2 :</strong> 66% des dégâts sont convertis</p></li><li><p><strong>Palier 3 :</strong> 100% des dégâts sont convertis</p></li></ul><h3 class=\"divider\">Notes du Playtest</h3><p>L'infrastructure permettant de diviser une attaque unique en plusieurs composantes de dégâts de types différents n'existe pas encore. En attendant, tous les niveaux de cet affixe convertissent 100 % des dégâts de l'arme en <strong>Corruption</strong>. Une fois que les dégâts de plusieurs types seront pris en charge, les niveaux inférieurs ne convertiront qu'une fraction des dégâts totaux, laissant le reste sous la forme du type d'origine de l'arme.</p>",
+            "adjective": "Corrompant"
+        },
+        "Corruption Damage": {
+            "name": "Dégâts de corruption",
+            "description": "<p>Ajoute des dégâts de <strong>Corruption</strong> aux frappes réalisées avec cette arme. Le bonus aux dégâts est égal à 2 pour chaque <strong>Palier</strong> de ce suffixe.</p><h3 class=\"divider\">Notes de Playtest</h3><p>Ce bonus s'applique actuellement sous forme de dégâts supplémentaires fixes du type de dégâts existant de l'arme. Dans une prochaine mise à jour, cela infligera des dégâts de <strong>Corruption</strong>, contestés séparément par la résistance à la <strong>Corruption</strong> de la cible.</p>",
+            "adjective": "Corruption"
+        },
+        "Corruption Resistance": {
+            "name": "Résistance à la corruption",
+            "description": "<p>Augmente la résistance à la <strong>Corruption</strong> de 3 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Protection contre la corruption"
+        },
+        "Create Spellcraft": {
+            "name": "Sorcellerie de création",
+            "description": "<p>Cet objet est imprégné de l'essence de magie de <strong>Création</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance du signe <strong>Création</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir appris par l'intermédiaire d'un talent.</p>",
+            "adjective": "Création"
+        },
+        "Death Potency": {
+            "name": "Puissance mortelle",
+            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les sorts utilisant la rune de la <strong>Mort</strong> de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
+            "adjective": "Puissance mortelle"
+        },
+        "Death Spellcraft": {
+            "name": "Sorcellerie de la mort",
+            "description": "<p>Cet objet est imprégné de l'essence de magie de <strong>Mort</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune de la <strong>Mort</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
+            "adjective": "Mort runique"
+        },
+        "Deception": {
+            "name": "Duperie",
+            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les jets de compétence de <strong>Duperie</strong> de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Dupeur"
+        },
+        "Deflection": {
+            "name": "Déviation",
+            "description": "<p>Augmente la défense de <strong>Parade</strong> de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
+            "adjective": "Déviation"
+        },
+        "Determination": {
+            "name": "Détermination",
+            "description": "<p>Augmente la défense de <strong>Volonté</strong> de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
+            "adjective": "Détermination"
+        },
+        "Diplomacy": {
+            "name": "Diplomatie",
+            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les jets de compétence de <strong>Diplomatie</strong> de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Diplomatique"
+        },
+        "Disguise": {
+            "name": "Déguisement",
+            "description": "<p>Fournit l'action <strong>Déguisement</strong>, permettant au porteur de prendre une apparence illusoire une fois par repos.</p>",
+            "adjective": "Déguisement",
+            "actions": {
+                "affixDisguise": {
+                    "name": "Déguisement",
+                    "description": "<p>Une fois par repos, vous adoptez une apparence illusoire qui modifie aussi bien votre visage que votre tenue. L’illusion ne peut pas changer votre ascendance, mais peut altérer d’autres aspects de votre anatomie, y compris votre genre apparent. L'objet lui-même ne change pas d’apparence et reste visible.</p><p>L’illusion persiste indéfiniment et peut être dissipée à volonté. Une fois activé, cet objet ne peut pas produire une nouvelle illusion de cette manière avant que 24 heures ne se soient écoulées.</p>"
+                }
+            }
+        },
+        "Dragon Bane": {
+            "name": "Fléau des dragons",
+            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Dragon</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de <strong>Faveurs</strong> égal au <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Fléau-des-dragons"
+        },
+        "Earth Elemental Bane": {
+            "name": "Fléau des élémentaires de terre",
+            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Élémentaire de terre</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de <strong>Faveurs</strong> égal au <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Fléau terrestre"
+        },
+        "Earth Potency": {
+            "name": "Puissance terrestre",
+            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les sorts utilisant la rune de la <strong>Terre</strong> de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
+            "adjective": "Puissance terrestre"
+        },
+        "Earth Spellcraft": {
+            "name": "Sorcellerie de terre",
+            "description": "<p>Cet objet est imprégné de l'essence de magie de <strong>Terre</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune de la <strong>Terre</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
+            "adjective": "Terre runique"
+        },
+        "Electricity Conversion": {
+            "name": "Conversion électrique",
+            "description": "<p>Une partie des dégâts infligés par des frappes avec cette arme est convertie en dégâts <strong>Électriques</strong>. La proportion convertie dépend du <strong>Palier</strong> de ce préfixe.</p><ul><li><p><strong>Palier 1 :</strong> 33% des dégâts sont convertis</p></li><li><p><strong>Palier 2 :</strong> 66% des dégâts sont convertis</p></li><li><p><strong>Palier 3 :</strong> 100% des dégâts sont convertis</p></li></ul><h3 class=\"divider\">Notes du Playtest</h3><p>L'infrastructure permettant de diviser une attaque unique en plusieurs composantes de dégâts de types différents n'existe pas encore. En attendant, tous les niveaux de cet affixe convertissent 100 % des dégâts de l'arme en <strong>Électrique</strong>. Une fois que les dégâts de plusieurs types seront pris en charge, les niveaux inférieurs ne convertiront qu'une fraction des dégâts totaux, laissant le reste sous la forme du type d'origine de l'arme.</p>",
+            "adjective": "Électrocution"
+        },
+        "Electricity Damage": {
+            "name": "Dégâts électriques",
+            "description": "<p>Ajoute des dégâts <strong>Électriques</strong> aux frappes réalisées avec cette arme. Le bonus aux dégâts est égal à 2 pour chaque <strong>Palier</strong> de ce suffixe.</p><h3 class=\"divider\">Notes de Playtest</h3><p>Ce bonus s'applique actuellement sous forme de dégâts supplémentaires fixes du type de dégâts existant de l'arme. Dans une prochaine mise à jour, cela infligera des dégâts <strong>Électriques</strong>, contestés séparément par la résistance à l'<strong>Électricité</strong> de la cible.</p>",
+            "adjective": "Foudre"
+        },
+        "Electricity Resistance": {
+            "name": "Résistance à l'électricité",
+            "description": "<p>Augmente la résistance à l'<strong>Électricité</strong> de 3 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Protection contre la foudre"
+        },
+        "Evasion": {
+            "name": "Dérobade",
+            "description": "<p>Augmente la défense d'<strong>Esquive</strong> de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
+            "adjective": "Dérobade"
+        },
+        "Fan Spellcraft": {
+            "name": "Sorcellerie d'éventail",
+            "description": "<p>Cet objet est imprégné de l'essence de magie d'<strong>Éventail</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance du signe <strong>Éventail</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir appris par l'intermédiaire d'un talent.</p>",
+            "adjective": "Éventail"
+        },
+        "Fey Bane": {
+            "name": "Fléau des fées",
+            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Fée</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de <strong>Faveurs</strong> égal au <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Fléau-des-fées"
+        },
+        "Fire Conversion": {
+            "name": "Conversion de feu",
+            "description": "<p>Une partie des dégâts infligés par des frappes avec cette arme est convertie en dégâts de <strong>Feu</strong>. La proportion convertie dépend du <strong>Palier</strong> de ce préfixe.</p><ul><li><p><strong>Palier 1 :</strong> 33% des dégâts sont convertis</p></li><li><p><strong>Palier 2 :</strong> 66% des dégâts sont convertis</p></li><li><p><strong>Palier 3 :</strong> 100% des dégâts sont convertis</p></li></ul><h3 class=\"divider\">Notes du Playtest</h3><p>L'infrastructure permettant de diviser une attaque unique en plusieurs composantes de dégâts de types différents n'existe pas encore. En attendant, tous les niveaux de cet affixe convertissent 100 % des dégâts de l'arme en <strong>Feu</strong>. Une fois que les dégâts de plusieurs types seront pris en charge, les niveaux inférieurs ne convertiront qu'une fraction des dégâts totaux, laissant le reste sous la forme du type d'origine de l'arme.</p>",
+            "adjective": "Flamboyant"
+        },
+        "Fire Damage": {
+            "name": "Dégâts de feu",
+            "description": "<p>Ajoute des dégâts de <strong>Feu</strong> aux frappes réalisées avec cette arme. Le bonus aux dégâts est égal à 2 pour chaque <strong>Palier</strong> de ce suffixe.</p><h3 class=\"divider\">Notes de Playtest</h3><p>Ce bonus s'applique actuellement sous forme de dégâts supplémentaires fixes du type de dégâts existant de l'arme. Dans une prochaine mise à jour, cela infligera des dégâts de <strong>Feu</strong>, contestés séparément par la résistance au <strong>Feu</strong> de la cible.</p>",
+            "adjective": "Flamme"
+        },
+        "Fire Elemental Bane": {
+            "name": "Fléau des élémentaires de feu",
+            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Élémentaire de feu</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de <strong>Faveurs</strong> égal au <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Fléau igné"
+        },
+        "Fire Resistance": {
+            "name": "Résistance au feu",
+            "description": "<p>Augmente la résistance au <strong>Feu</strong> de 3 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Protection contre le feu"
+        },
+        "Flame Potency": {
+            "name": "Puissance ignée",
+            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les sorts utilisant la rune de la <strong>Flamme</strong> de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
+            "adjective": "Puissance ignée"
+        },
+        "Flame Spellcraft": {
+            "name": "Sorcellerie de la flamme",
+            "description": "<p>Cet objet est imprégné de l'essence de magie de <strong>Flamme</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune de la <strong>Flamme</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
+            "adjective": "Flamme runique"
+        },
+        "Focusing": {
+            "name": "Concentration",
+            "description": "<p>Fournit l'action <strong>Restauration de focus</strong>, permettant au porteur de récupérer du <strong>Focus</strong> dans les moments difficiles. Le montant restauré dépend du <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Concentration",
+            "actions": {
+                "affixFocusing": {
+                    "name": "Restauration de focus",
+                    "description": "<p>En cas de difficulté, vous pouvez puiser dans une réserve supplémentaire de <strong>Focus</strong> depuis cet objet. Le montant de Focus restauré dépend du <strong>Palier</strong> de ce préfixe.</p><ul><li><p><strong>Palier 1 :</strong> <strong>4 Focus</strong></p></li><li><p><strong>Palier 2 :</strong> <strong>6 Focus</strong></p></li><li><p><strong>Palier 3 :</strong> <strong>8 Focus</strong></p></li></ul>"
+                }
+            }
+        },
+        "Frost Elemental Bane": {
+            "name": "Fléau des élémentaires de givre",
+            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Élémentaire de givre</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de <strong>Faveurs</strong> égal au <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Fléau givré"
+        },
+        "Frost Potency": {
+            "name": "Puissance du givre",
+            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les sorts utilisant la rune du <strong>Givre</strong> de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
+            "adjective": "Puissance du givre"
+        },
+        "Frost Spellcraft": {
+            "name": "Sorcellerie du givre",
+            "description": "<p>Cet objet est imprégné de l'essence de magie de <strong>Givre</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune du <strong>Givre</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
+            "adjective": "Givre runique"
+        },
+        "Giant Bane": {
+            "name": "Fléau des géants",
+            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Géant</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de <strong>Faveurs</strong> égal au <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Fléau-des-géants"
+        },
+        "Gliding": {
+            "name": "Planant",
+            "description": "<p>Fournit l'action <strong>Planant</strong>, permettant au porteur de planer latéralement durant une chute. La distance planée dépend du <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Planant",
+            "actions": {
+                "gliding": {
+                    "name": "Planant",
+                    "description": "<p>Utilisé durant une <strong>Chute</strong>, vous pouvez vous déplacer latéralement d'un nombre d'espaces depuis votre position initiale en planant. La distance planée dépend du <strong>Palier</strong> de ce préfixe.</p><ul><li><p><strong>Palier 1 :</strong> <strong>1 pied</strong> par 20 pieds de descente.</p></li><li><p><strong>Palier 2 :</strong> <strong>2 pieds</strong> par 20 pieds de descente.</p></li><li><p><strong>Palier 3 :</strong> <strong>4 pieds</strong> par 20 pieds de descente.</p></li></ul><p>Vous ne subissez aucun dégât de chute à l'atterrissage, et n'êtes pas @Condition[prone].</p>"
+                }
+            }
+        },
+        "Guarding": {
+            "name": "Protecteur",
+            "description": "<p>Augmente la défense de <strong>Blocage</strong> de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
+            "adjective": "Protecteur"
+        },
+        "Hale": {
+            "name": "Vigoureux",
+            "description": "<p>Augmente le maximum de <strong>Santé</strong> de 6 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Vigoureux"
+        },
+        "Illumination Potency": {
+            "name": "Puissance illuminante",
+            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les sorts utilisant la rune de l'<strong>Illumination</strong> de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
+            "adjective": "Puissance illuminante"
+        },
+        "Illumination Spellcraft": {
+            "name": "Sorcellerie d'illumination",
+            "description": "<p>Cet objet est imprégné de l'essence de magie d'<strong>Illumination</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune de l'<strong>Illumination</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
+            "adjective": "Illumination runique"
+        },
+        "Illusion Potency": {
+            "name": "Puissance illusoire",
+            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les sorts utilisant la rune de l'<strong>Illusion</strong> de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
+            "adjective": "Puissance illusoire"
+        },
+        "Illusion Spellcraft": {
+            "name": "Sorcellerie d'illusion",
+            "description": "<p>Cet objet est imprégné de l'essence de magie d'<strong>Illusion</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune de l'<strong>Illusion</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
+            "adjective": "Illusion runique"
+        },
+        "Influence Spellcraft": {
+            "name": "Sorcellerie d'influence",
+            "description": "<p>Cet objet est imprégné de l'essence de magie d'<strong>Influence</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance du signe <strong>Influence</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir appris par l'intermédiaire d'un talent.</p>",
+            "adjective": "Influence"
+        },
+        "Intimidation": {
+            "name": "Intimidation",
+            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les jets de compétence d'<strong>Intimidation</strong> de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Intimidant"
+        },
+        "Keen": {
+            "name": "Aiguisée",
+            "description": "<p>Reduit le <strong>Seuil de critique</strong> nécessaire pour obtenir un <strong>Coup critique</strong> sur une Frappe réussie. Ce seuil est réduit de 1 pour chaque <strong>Palier</strong> de cet affixe.</p>",
+            "adjective": "Aiguisée"
+        },
+        "Kinesis Potency": {
+            "name": "Puissance kinétique",
+            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les sorts utilisant la rune de <strong>Kinésie</strong> de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
+            "adjective": "Puissance kinétique"
+        },
+        "Kinesis Spellcraft": {
+            "name": "Sorcellerie de kinésie",
+            "description": "<p>Cet objet est imprégné de l'essence de magie de <strong>Kinésie</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune de <strong>Kinésie</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
+            "adjective": "Kinésie runique"
+        },
+        "Life Potency": {
+            "name": "Puissance vivante",
+            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les sorts utilisant la rune de <strong>Vie</strong> de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
+            "adjective": "Puissance vivante"
+        },
+        "Life Spellcraft": {
+            "name": "Sorcellerie de vie",
+            "description": "<p>Cet objet est imprégné de l'essence de magie de <strong>Vie</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune de <strong>Vie</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
+            "adjective": "Vie runique"
+        },
+        "Lightning Potency": {
+            "name": "Puissance foudroyante",
+            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les sorts utilisant la rune de <strong>Foudre</strong> de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
+            "adjective": "Puissance foudroyante"
+        },
+        "Lightning Spellcraft": {
+            "name": "Sorcellerie de foudre",
+            "description": "<p>Cet objet est imprégné de l'essence de magie de <strong>Foudre</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune de <strong>Foudre</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
+            "adjective": "Foudre runique"
+        },
+        "Luminary": {
+            "name": "Astre",
+            "description": "<p>Obtient des Faveurs pour les actions <strong>Composées</strong> qui incluent une <strong>Inflexion</strong>. Le nombre de faveurs obtenues est égal au <strong>Palier</strong> de ce préfixe. Un seul Affixe peut prodiguer ce bénéfice.</p>",
+            "adjective": "Astral"
+        },
+        "Medicine": {
+            "name": "Médecine",
+            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les jets de compétence de <strong>Médecine</strong> de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Médical"
+        },
+        "Mending": {
+            "name": "Réparation",
+            "description": "<p>Réduit le seuil de défense de <strong>Lésions</strong> de 1 pour chaque <strong>Palier</strong> de ce préfixe, rendant le porteur plus facile à guérir malgré les lésions.</p>",
+            "adjective": "Vivifié"
+        },
+        "Monstrosity Bane": {
+            "name": "Fléau des monstruosités",
+            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Monstruosité</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de <strong>Faveurs</strong> égal au <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Fléau-des-monstruosités"
+        },
+        "Nimbleness": {
+            "name": "Agilité",
+            "description": "<p>Augmente la défense de <strong>Réflexe</strong> de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
+            "adjective": "Agilité"
+        },
+        "Nonchalant": {
+            "name": "Nonchalant",
+            "description": "<p>Les Frappes contre votre <strong>Moral</strong> nécessitent un surplus important pour accomplir un <strong>Coup critique</strong>. Le seuil de critique est augmenté de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Nonchalant"
+        },
+        "Oblivion Potency": {
+            "name": "Puissance néantifère",
+            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les sorts utilisant la rune du <strong>Néant</strong> de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
+            "adjective": "Puissance néantifère"
+        },
+        "Oblivion Spellcraft": {
+            "name": "Sorcellerie du néant",
+            "description": "<p>Cet objet est imprégné de l'essence de magie du <strong>Néant</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune du <strong>Néant</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
+            "adjective": "Néant runique"
+        },
+        "Ooze Bane": {
+            "name": "Fléau des vases",
+            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Vase</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de <strong>Faveurs</strong> égal au <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Fléau-des-vases"
+        },
+        "Outsider Bane": {
+            "name": "Fléau des extérieurs",
+            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Extérieur</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de <strong>Faveurs</strong> égal au <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Fléau-des-extérieurs"
+        },
+        "Performance": {
+            "name": "Performance",
+            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les jets de compétence de <strong>Performance</strong> de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Performatif"
+        },
+        "Piercing Damage": {
+            "name": "Dégâts perforants",
+            "description": "<p>Ajoute des dégâts <strong>Perforants</strong> aux frappes réalisées avec cette arme. Le bonus aux dégâts est égal à 2 pour chaque <strong>Palier</strong> de ce suffixe.</p><h3 class=\"divider\">Notes de Playtest</h3><p>Ce bonus s'applique actuellement sous forme de dégâts supplémentaires fixes du type de dégâts existant de l'arme. Dans une prochaine mise à jour, cela infligera des dégâts <strong>Perforants</strong>, contestés séparément par la résistance <strong>Perforante</strong> de la cible.</p>",
+            "adjective": "Perforant"
+        },
+        "Piercing Resistance": {
+            "name": "Résistance perforante",
+            "description": "<p>Augmente la résistance <strong>Perforante</strong> de 3 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Protection contre le perforant"
+        },
+        "Plant Bane": {
+            "name": "Fléau des plantes",
+            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Plante</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de <strong>Faveurs</strong> égal au <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Fléau-des-plantes"
+        },
+        "Poison Conversion": {
+            "name": "Conversion de poison",
+            "description": "<p>Une partie des dégâts infligés par des frappes avec cette arme est convertie en dégâts de <strong>Poison</strong>. La proportion convertie dépend du <strong>Palier</strong> de ce préfixe.</p><ul><li><p><strong>Palier 1 :</strong> 33% des dégâts sont convertis</p></li><li><p><strong>Palier 2 :</strong> 66% des dégâts sont convertis</p></li><li><p><strong>Palier 3 :</strong> 100% des dégâts sont convertis</p></li></ul><h3 class=\"divider\">Notes du Playtest</h3><p>L'infrastructure permettant de diviser une attaque unique en plusieurs composantes de dégâts de types différents n'existe pas encore. En attendant, tous les niveaux de cet affixe convertissent 100 % des dégâts de l'arme en <strong>Poison</strong>. Une fois que les dégâts de plusieurs types seront pris en charge, les niveaux inférieurs ne convertiront qu'une fraction des dégâts totaux, laissant le reste sous la forme du type d'origine de l'arme.</p>",
+            "adjective": "Venimeux"
+        },
+        "Poison Damage": {
+            "name": "Dégâts de poison",
+            "description": "<p>Ajoute des dégâts de <strong>Poison</strong> aux frappes réalisées avec cette arme. Le bonus aux dégâts est égal à 2 pour chaque <strong>Palier</strong> de ce suffixe.</p><h3 class=\"divider\">Notes de Playtest</h3><p>Ce bonus s'applique actuellement sous forme de dégâts supplémentaires fixes du type de dégâts existant de l'arme. Dans une prochaine mise à jour, cela infligera des dégâts de <strong>Poison</strong>, contestés séparément par la résistance au <strong>Poison</strong> de la cible.</p>",
+            "adjective": "Venin"
+        },
+        "Poison Resistance": {
+            "name": "Résistance au poison",
+            "description": "<p>Augmente la résistance aux dégâts de <strong>Poison</strong> de 3 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Protection contre le poison"
+        },
+        "Potency": {
+            "name": "Puissance",
+            "description": "<p>Ajoute un <strong>Bonus d'enchantement</strong> à toutes les Frappes utilisant cette arme en fonction du <strong>Palier</strong> de cet affixe.</p>",
+            "adjective": "Puissant"
+        },
+        "Psychic Conversion": {
+            "name": "Conversion psychique",
+            "description": "<p>Une partie des dégâts infligés par des frappes avec cette arme est convertie en dégâts <strong>Psychiques</strong>. La proportion convertie dépend du <strong>Palier</strong> de ce préfixe.</p><ul><li><p><strong>Palier 1 :</strong> 33% des dégâts sont convertis</p></li><li><p><strong>Palier 2 :</strong> 66% des dégâts sont convertis</p></li><li><p><strong>Palier 3 :</strong> 100% des dégâts sont convertis</p></li></ul><h3 class=\"divider\">Notes du Playtest</h3><p>L'infrastructure permettant de diviser une attaque unique en plusieurs composantes de dégâts de types différents n'existe pas encore. En attendant, tous les niveaux de cet affixe convertissent 100 % des dégâts de l'arme en <strong>Psychiques</strong>. Une fois que les dégâts de plusieurs types seront pris en charge, les niveaux inférieurs ne convertiront qu'une fraction des dégâts totaux, laissant le reste sous la forme du type d'origine de l'arme.</p>",
+            "adjective": "Tourmentant"
+        },
+        "Psychic Damage": {
+            "name": "Dégâts psychiques",
+            "description": "<p>Ajoute des dégâts <strong>Psychiques</strong> aux frappes réalisées avec cette arme. Le bonus aux dégâts est égal à 2 pour chaque <strong>Palier</strong> de ce suffixe.</p><h3 class=\"divider\">Notes de Playtest</h3><p>Ce bonus s'applique actuellement sous forme de dégâts supplémentaires fixes du type de dégâts existant de l'arme. Dans une prochaine mise à jour, cela infligera des dégâts <strong>Psychiques</strong>, contestés séparément par la résistance <strong>Psychique</strong> de la cible.</p>",
+            "adjective": "Angoisse"
+        },
+        "Psychic Resistance": {
+            "name": "Résistance psychique",
+            "description": "<p>Augmente la résistance <strong>Psychique</strong> de 3 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Protection psychique"
+        },
+        "Pulse Spellcraft": {
+            "name": "Sorcellerie d'onde",
+            "description": "<p>Cet objet est imprégné de l'essence de magie d'<strong>Onde</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance du signe <strong>Onde</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir appris par l'intermédiaire d'un talent.</p>",
+            "adjective": "Onde"
+        },
+        "Radiant Conversion": {
+            "name": "Conversion radiante",
+            "description": "<p>Une partie des dégâts infligés par des frappes avec cette arme est convertie en dégâts <strong>Radiants</strong>. La proportion convertie dépend du <strong>Palier</strong> de ce préfixe.</p><ul><li><p><strong>Palier 1 :</strong> 33% des dégâts sont convertis</p></li><li><p><strong>Palier 2 :</strong> 66% des dégâts sont convertis</p></li><li><p><strong>Palier 3 :</strong> 100% des dégâts sont convertis</p></li></ul><h3 class=\"divider\">Notes du Playtest</h3><p>L'infrastructure permettant de diviser une attaque unique en plusieurs composantes de dégâts de types différents n'existe pas encore. En attendant, tous les niveaux de cet affixe convertissent 100 % des dégâts de l'arme en <strong>Radiants</strong>. Une fois que les dégâts de plusieurs types seront pris en charge, les niveaux inférieurs ne convertiront qu'une fraction des dégâts totaux, laissant le reste sous la forme du type d'origine de l'arme.</p>",
+            "adjective": "Radiant"
+        },
+        "Radiant Damage": {
+            "name": "Dégâts radiants",
+            "description": "<p>Ajoute des dégâts <strong>Radiants</strong> aux frappes réalisées avec cette arme. Le bonus aux dégâts est égal à 2 pour chaque <strong>Palier</strong> de ce suffixe.</p><h3 class=\"divider\">Notes de Playtest</h3><p>Ce bonus s'applique actuellement sous forme de dégâts supplémentaires fixes du type de dégâts existant de l'arme. Dans une prochaine mise à jour, cela infligera des dégâts <strong>Radiants</strong>, contestés séparément par la résistance <strong>Radiante</strong> de la cible.</p>",
+            "adjective": "Radiance"
+        },
+        "Radiant Resistance": {
+            "name": "Résistance radiante",
+            "description": "<p>Augmente la résistance <strong>Radiante</strong> de 3 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Protection radiante"
+        },
+        "Rallying": {
+            "name": "Ralliement",
+            "description": "<p>Réduit le seuil de défense de <strong>Folie</strong> de 1 pour chaque <strong>Palier</strong> de ce préfixe, rendant le porteur plus facile à guérir malgré la folie.</p>",
+            "adjective": "Ralliement"
+        },
+        "Ray Spellcraft": {
+            "name": "Sorcellerie de rayon",
+            "description": "<p>Cet objet est imprégné de l'essence de magie de <strong>Rayon</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance du signe <strong>Rayon</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir appris par l'intermédiaire d'un talent.</p>",
+            "adjective": "Rayon"
+        },
+        "Reach": {
+            "name": "Portée",
+            "description": "<p>Augmente la portée effective de cette arme. Les armes de mêlée obtiennent <strong>+1 de portée par Palier</strong>. Les armes à distance obtiennent <strong>+10 de portée par Palier</strong>.</p>",
+            "adjective": "Allongé"
+        },
+        "Reinforcement": {
+            "name": "Renforcement",
+            "description": "<p>Augmente la défense d'<strong>Armure</strong> de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
+            "adjective": "Renforcement"
+        },
+        "Reliable": {
+            "name": "Fiable",
+            "description": "<p>Réduit le <strong>Seuil d'échec critique</strong> pour les jets d'attaque effectués avec cette arme. Le seuil diminue de <strong>1 par Palier</strong>.</p>",
+            "adjective": "Fiable"
+        },
+        "Returning": {
+            "name": "Retour",
+            "description": "<p>Une arme de jet avec cet affixe revient magiquement dans la main du porteur après chaque attaque, lui permettant de la jeter à nouveau sans avoir à la récupérer.</p>",
+            "adjective": "Retour"
+        },
+        "Science": {
+            "name": "Science",
+            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les jets de compétence de <strong>Science</strong> de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Scientifique"
+        },
+        "Sense Spellcraft": {
+            "name": "Sorcellerie de résonance",
+            "description": "<p>Cet objet est imprégné de l'essence de magie de <strong>Résonance</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance du signe <strong>Résonance</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir appris par l'intermédiaire d'un talent.</p>",
+            "adjective": "Résonance"
+        },
+        "Slashing Damage": {
+            "name": "Dégâts tranchants",
+            "description": "<p>Ajoute des dégâts <strong>Tranchants</strong> aux frappes réalisées avec cette arme. Le bonus aux dégâts est égal à 2 pour chaque <strong>Palier</strong> de ce suffixe.</p><h3 class=\"divider\">Notes de Playtest</h3><p>Ce bonus s'applique actuellement sous forme de dégâts supplémentaires fixes du type de dégâts existant de l'arme. Dans une prochaine mise à jour, cela infligera des dégâts <strong>Tranchants</strong>, contestés séparément par la résistance <strong>Tranchante</strong> de la cible.</p>",
+            "adjective": "Lacérant"
+        },
+        "Slashing Resistance": {
+            "name": "Résistance tranchante",
+            "description": "<p>Augmente la résistance <strong>Tranchante</strong> de 3 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Protection tranchante"
+        },
+        "Society": {
+            "name": "Société",
+            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les jets de compétence de <strong>Société</strong> de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Sociale"
+        },
+        "Soul Potency": {
+            "name": "Puissance d'âme",
+            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les sorts utilisant la rune de l'<strong>Âme</strong> de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
+            "adjective": "Puissance d'âme"
+        },
+        "Soul Spellcraft": {
+            "name": "Sorcellerie d'âme",
+            "description": "<p>Cet objet est imprégné de l'essence de magie de l'<strong>Âme</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune de l'<strong>Âme</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
+            "adjective": "Âme runique"
+        },
+        "Spirited": {
+            "name": "Fougueux",
+            "description": "<p>Augmente le maximum de <strong>Moral</strong> de 6 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Fougueux"
+        },
+        "Stealth": {
+            "name": "Furtivité",
+            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les jets de compétence de <strong>Furtivité</strong> de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Furtif"
+        },
+        "Step Spellcraft": {
+            "name": "Sorcellerie de charge",
+            "description": "<p>Cet objet est imprégné de l'essence de magie de <strong>Charge</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance du signe <strong>Charge</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir appris par l'intermédiaire d'un talent.</p>",
+            "adjective": "Charge"
+        },
+        "Storm Elemental Bane": {
+            "name": "Fléau des élémentaires de tempête",
+            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Élémentaire de tempête</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de <strong>Faveurs</strong> égal au <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Fléau tempétueux"
+        },
+        "Strike Spellcraft": {
+            "name": "Sorcellerie de frappe",
+            "description": "<p>Cet objet est imprégné de l'essence de magie de <strong>Frappe</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance du signe <strong>Frappe</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir appris par l'intermédiaire d'un talent.</p>",
+            "adjective": "Frappe"
+        },
+        "Surge Spellcraft": {
+            "name": "Sorcellerie d'afflux",
+            "description": "<p>Cet objet est imprégné de l'essence de magie d'<strong>Afflux</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance du signe <strong>Afflux</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir appris par l'intermédiaire d'un talent.</p>",
+            "adjective": "Afflux"
+        },
+        "Tenacity": {
+            "name": "Ténacité",
+            "description": "<p>Augmente la défense de <strong>Fortitude</strong> de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
+            "adjective": "Ténacité"
+        },
+        "Undead Bane": {
+            "name": "Fléau des morts-vivants",
+            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Mort-vivant</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de <strong>Faveurs</strong> égal au <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Fléau-des-morts-vivants"
+        },
+        "Unshakeable": {
+            "name": "Indéfectible",
+            "description": "<p>Les Frappes contre votre <strong>Santé</strong> nécessitent un surplus important pour accomplir un <strong>Coup critique</strong>. Le seuil de critique est augmenté de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Indéfectible"
+        },
+        "Void Conversion": {
+            "name": "Conversion de vide",
+            "description": "<p>Une partie des dégâts infligés par des frappes avec cette arme est convertie en dégâts de <strong>Vide</strong>. La proportion convertie dépend du <strong>Palier</strong> de ce préfixe.</p><ul><li><p><strong>Palier 1 :</strong> 33% des dégâts sont convertis</p></li><li><p><strong>Palier 2 :</strong> 66% des dégâts sont convertis</p></li><li><p><strong>Palier 3 :</strong> 100% des dégâts sont convertis</p></li></ul><h3 class=\"divider\">Notes du Playtest</h3><p>L'infrastructure permettant de diviser une attaque unique en plusieurs composantes de dégâts de types différents n'existe pas encore. En attendant, tous les niveaux de cet affixe convertissent 100 % des dégâts de l'arme en <strong>Vide</strong>. Une fois que les dégâts de plusieurs types seront pris en charge, les niveaux inférieurs ne convertiront qu'une fraction des dégâts totaux, laissant le reste sous la forme du type d'origine de l'arme.</p>",
+            "adjective": "Vide"
+        },
+        "Void Damage": {
+            "name": "Dégâts de vide",
+            "description": "<p>Ajoute des dégâts de <strong>Vide</strong> aux frappes réalisées avec cette arme. Le bonus aux dégâts est égal à 2 pour chaque <strong>Palier</strong> de ce suffixe.</p><h3 class=\"divider\">Notes de Playtest</h3><p>Ce bonus s'applique actuellement sous forme de dégâts supplémentaires fixes du type de dégâts existant de l'arme. Dans une prochaine mise à jour, cela infligera des dégâts de <strong>Vide</strong>, contestés séparément par la résistance au <strong>Vide</strong> de la cible.</p>",
+            "adjective": "Néant"
+        },
+        "Void Resistance": {
+            "name": "Résistance au vide",
+            "description": "<p>Augmente la résistance au <strong>Vide</strong> de 3 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Protection contre le vide"
+        },
+        "Ward Spellcraft": {
+            "name": "Sorcellerie de protection",
+            "description": "<p>Cet objet est imprégné de l'essence de magie de <strong>Protection</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance du signe <strong>Protection</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir appris par l'intermédiaire d'un talent.</p>",
+            "adjective": "Protection"
+        },
+        "Wilderness": {
+            "name": "Nature",
+            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les jets de compétence de <strong>Nature</strong> de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "adjective": "Survivaliste"
+        }
+    }
+}

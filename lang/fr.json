@@ -24,7 +24,8 @@
             "skill": "Compétence Crucible"
         },
         "ActiveEffect": {
-            "flanked": "Effet actif Débordé"
+            "flanked": "Débordé",
+            "affix": "Affixes"
         }
     },
     "CRUCIBLE": {
@@ -46,11 +47,14 @@
             "Talent": "Feuille de talent de Crucible",
             "Taxonomy": "Feuille de taxonomie de Crucible",
             "Tool": "Feuille d'outil de Crucible",
-            "Weapon": "Feuille d'arme de Crucible"
+            "Weapon": "Feuille d'arme de Crucible",
+            "Accessory": "Feuille d'Accessoire de Crucible",
+            "Affix": "Feuille d'Affixe de Crucible"
         },
         "Rules": "Règles Crucible",
         "Scaling": "Évolution",
-        "Scaled": "Évolué"
+        "Scaled": "Évolué",
+        "Syncing": "Synchronisation des Talents & Sorts"
     },
     "ABILITIES.Strength": "Force",
     "ABILITIES.StrengthAbbr": "For",
@@ -158,14 +162,7 @@
             "effects": {
                 "element": {
                     "duration": {
-                        "label": "Durée",
-                        "hint": "Les effets dont la durée est exprimée en Tours expirent à la fin du tour de l'Acteur. Les effets dont la durée est exprimée en Rounds expirent au début du tour de l'acteur.",
-                        "rounds": {
-                            "label": "Rounds"
-                        },
-                        "turns": {
-                            "label": "Tours"
-                        }
+                        "label": "Durée"
                     },
                     "name": {
                         "label": "Nom de l'effet"
@@ -267,7 +264,9 @@
             "Self": "Soi-même",
             "Single": "Sélectif",
             "Summon": "Invocation",
-            "Wall": "Mur"
+            "Wall": "Mur",
+            "Movement": "Déplacement",
+            "Aura": "Aura"
         },
         "SHEET": {
             "Title": "Action"
@@ -278,7 +277,215 @@
             "Target": "Cible",
             "Effects": "Effets",
             "Hooks": "Hooks"
-        }
+        },
+        "TAG": {
+            "Accurate": "Précis",
+            "AccurateTooltip": "Cette action est particulièrement précise. Vous obtenez 2 Faveurs supplémentaires en l'effectuant.",
+            "AfterStrike": "Post frappe",
+            "AfterStrikeTooltip": "Cette action ne peut être effectuée qu'immédiatement après une Frappe de base qui n'a pas manqué sa cible avec un échec critique.",
+            "Auditory": "Auditif",
+            "AuditoryTooltip": "Cette action nécessite que ses cibles soient capables d'entendre pour être affectées.",
+            "Brute": "Brutal",
+            "BruteTooltip": "Cette action implique l'application de la force brute et nécessite une arme basée sur la Force.",
+            "Composed": "Sort façonné",
+            "ComposedTooltip": "Cette action est un sort façonné.",
+            "Consume": "Consommer",
+            "ConsumeTooltip": "Cette action implique et nécessite la consommation d'un objet spécifique",
+            "CostAction": "{action}A",
+            "CostFocus": "{focus}F",
+            "CostHand.one": "{hands} Main",
+            "CostHand.other": "{hands} Mains",
+            "CostHealth": "{health}PV",
+            "CostHeroism": "{heroism}H",
+            "CostTooltip": "Le coût en points d'Action ou points de Focus pour utiliser cette action.",
+            "CostWeapon": "Ar",
+            "CostWeaponAction": "Ar{action}A",
+            "Deadly": "Mortel",
+            "DeadlyTooltip": "Cette action a le potentiel d'infliger une quantité de dégâts considérable, augmentant le multiplicateur de dégâts par x1 pour tout dégât infligé.",
+            "Difficult": "Difficile",
+            "DifficultTooltip": "Cette action est compliquée ou difficile à réaliser. Vous subissez 1 Fléau additionnel en tentant l'action.",
+            "Disarm": "Désarmement",
+            "DisarmTooltip": "Cette action, si elle réussit, provoque le lâcher de l'arme de la cible.",
+            "DualWield": "Ambidextrie",
+            "DualWieldTooltip": "Cette action requiert de manier deux armes distinctes ou d'être entièrement à mains nues pour être effectuée.",
+            "Empowered": "Amplifié",
+            "EmpoweredTooltip": "Cette action est puissante et inflige des dégâts supplémentaires, obtenant un bonus de dégâts de +6 en cas de succès.",
+            "Finesse": "Finesse",
+            "FinesseTooltip": "Cette action requiert une certaine finesse pour être effectuée. Vous devez manier une arme basée sur la Dextérité.",
+            "Flanking": "Débordement",
+            "FlankingTooltip": "Cette action ne peut être effectuée que contre une cible Débordée ou Distraite.",
+            "Generic": "Générique",
+            "GenericTooltip": "Actions qui effectuent une attaque générique sans utiliser un sort ou une arme spécifique.",
+            "Harmless": "Inoffensif",
+            "HarmlessTooltip": "Cette action n'impose pas d'effet directement nuisible, son multiplicateur de dégâts est de zéro.",
+            "Healing": "Guérison",
+            "HealingTooltip": "Cette action procure une restauration en testant le seuil de Lésions d'un allié.",
+            "IconicSpell": "Sort iconique",
+            "IconicSpellTooltip": "Cette action est un Sort iconique appris par la maîtrise de ses composants.",
+            "MainHand": "Main principale",
+            "MainHandTooltip": "Cette action utilise l'arme de votre main principale pour effectuer une attaque.",
+            "Maintained": "Maintenu",
+            "MaintainedTooltip": "Cette action peut être maintenue, ce qui entraîne son coût de Focus au début de vos tours.",
+            "Mechanical": "Mécanique",
+            "MechanicalTooltip": "Cette action requiert l'utilisation d'une arme mécanique.",
+            "Melee": "Mêlée",
+            "MeleeTooltip": "Cette action requiert de manier une arme de mêlée ou d'être à mains nues pour être effectuée.",
+            "Movement": "Déplacement",
+            "MovementBlinkTooltip": "Cette action nécessite que l'acteur se téléporte dans le cadre de son déplacement.",
+            "MovementBurrow": "Fouissement",
+            "MovementBurrowTooltip": "Cette action nécessite que l'acteur creuse la terre dans le cadre de son déplacement.",
+            "MovementClimb": "Escalade",
+            "MovementClimbTooltip": "Cette action nécessite que l'acteur escalade une paroi dans le cadre de son déplacement.",
+            "MovementCrawl": "Reptation",
+            "MovementCrawlTooltip": "Cette action nécessite que l'acteur rampe dans le cadre de son déplacement.",
+            "MovementFly": "Vol",
+            "MovementFlyTooltip": "Cette action nécessite que l'acteur vole dans le cadre de son déplacement.",
+            "MovementJump": "Saut",
+            "MovementJumpTooltip": "Cette action nécessite que l'acteur saute dans le cadre de son déplacement.",
+            "MovementStep": "Marche prudente",
+            "MovementStepTooltip": "Cette action nécessite que l'acteur marche prudemment dans le cadre de son déplacement.",
+            "MovementSwim": "Nage",
+            "MovementSwimTooltip": "Cette action nécessite que l'acteur nage dans le cadre de son déplacement.",
+            "MovementTooltip": "Cette action vous permet de vous déplacer dans le cadre de son activation, incluant un coût en points d'action réduit pour une action de déplacement gratuite par round.",
+            "MovementWalk": "Marche",
+            "MovementWalkTooltip": "Cette action nécessite que l'acteur marche dans le cadre de son déplacement.",
+            "Natural": "Attaque naturelle",
+            "NaturalTooltip": "Cette action implique l'exécution d'une attaque avec une arme naturelle.",
+            "NonCombat": "Hors combat",
+            "NonCombatTooltip": "Actions qui ne peuvent être effectuées qu'en dehors d'une rencontre de Combat.",
+            "OffHand": "Main secondaire",
+            "OffHandTooltip": "Cette action utilise votre arme en main secondaire pour effectuer une attaque.",
+            "OneHand": "À une main",
+            "OneHandTooltip": "Cette action requiert le maniement d'une arme à une main.",
+            "Projectile": "Projectile",
+            "ProjectileTooltip": "Cette action requiert l'utilisation d'une arme à projectile.",
+            "Rallying": "Ralliement",
+            "RallyingTooltip": "Cette action procure une restauration en testant le seuil de Folie d'un allié.",
+            "Ranged": "À distance",
+            "RangedTooltip": "Cette action requiert le maniement d'une arme à distance pour être effectuée.",
+            "Reaction": "Réaction",
+            "ReactionTooltip": "Cette action ne peut être effectuée que pendant le tour d'une autre créature lorsque sa condition d'utilisation est remplie.",
+            "Reload": "Rechargement",
+            "ReloadTooltip": "Cette action recharge une arme à distance qui nécessite d'être rechargée.",
+            "Severe": "Grave",
+            "SevereTooltip": "Si la cible de cette action possède des ressources Lésions et Folie, cette action affecte directement ces ressources, indépendamment de sa Santé ou de son Moral.",
+            "Shield": "Bouclier",
+            "ShieldTooltip": "Cette action requiert le maniement d'un bouclier pour être effectuée.",
+            "Skill": "Compétence",
+            "SkillTooltip": "Cette action implique un jet de Compétence ciblé ou opposé.",
+            "Spell": "Sort",
+            "SpellTooltip": "Cette action implique la sorcellerie.",
+            "Summon": "Invocation",
+            "SummonTooltip": "Cette action invoque, appelle, ou crée un combattant qui rejoint la rencontre.",
+            "TargetTooltip": "Le type, la distance et le nombre de cibles qui s'appliquent à cette action.",
+            "Talisman": "Talisman",
+            "TalismanTooltip": "Cette action requiert le maniement d'un talisman pour être effectuée.",
+            "Thrown": "Lancer",
+            "ThrownTooltip": "Cette action implique l'exécution d'une attaque avec une arme de lancer.",
+            "TwoHanded": "À deux mains",
+            "TwoHandedTooltip": "Cette action requiert le maniement d'une arme à deux mains pour être effectuée.",
+            "Unarmed": "Mains nues",
+            "UnarmedTooltip": "Cette action nécessite d'être entièrement à mains nues pour être effectuée.",
+            "Unarmored": "Sans armure",
+            "UnarmoredTooltip": "Cette action nécessite de ne pas porter d'armure pour être effectuée.",
+            "Vocal": "Vocable",
+            "VocalTooltip": "Cette action requiert que l'utilisateur parle ou émette un son d'une autre manière.",
+            "Weakened": "Affaibli",
+            "WeakenedTooltip": "Cette action est plus faible que les attaques normales et applique un malus de dégâts de -6.",
+            "MovementBlink": "Clignotement",
+            "CostHand": {
+                "zero": "{hands} Mains",
+                "two": "{hands} Mains",
+                "few": "{hands} Mains",
+                "many": "{hands} Mains"
+            }
+        },
+        "TAG_CATEGORIES": {
+            "Movement": "Déplacement"
+        },
+        "TAGS": {
+            "Target": "Étiquettes de cible"
+        },
+        "WARNINGS": {
+            "SPECIFIC": {
+                "BODY_BLOCK": {
+                    "AlreadyConfirmed": "L'attaque que vous subissez a déjà été confirmée et ne peut plus être contrée.",
+                    "InvalidOutcome": "Vous ne pouvez utiliser l'Opposition corporelle qu'après avoir subi une attaque défendue par l'Armure ou un Coup superficiel.",
+                    "MeleeOnly": "Vous ne pouvez utiliser l'Opposition corporelle que contre une attaque de mêlée."
+                },
+                "DELAY": {
+                    "AlreadyDelayed": "Vous ne pouvez plus retarder votre tour à ce round de combat.",
+                    "WrongTurn": "Vous ne pouvez utiliser l'action Retarder que lors de votre propre tour de combat."
+                },
+                "INTERPOSE": {
+                    "AllyMustBeTarget": "L'allié sélectionné doit être la cible de la Frappe la plus récente.",
+                    "AttackMissed": "Vous ne pouvez vous Interposer que contre une attaque qui touche, même superficiellement, votre allié.",
+                    "RequiresStrike": "L'Interposition requiert que l'action la plus récente soit une Frappe d'arme.",
+                    "SingleTarget": "L'Interposition ne peut être utilisée que contre une Frappe à cible unique."
+                }
+            },
+            "BadStatus": "Vous ne pouvez pas utiliser l'action {action} en étant {status}.",
+            "CannotAffordCost": "{name} a une valeur insuffisante de {resource} pour utiliser {action} !",
+            "CannotAffordHands.one": "{name} doit avoir {hands} main de libre pour utiliser {action} !",
+            "CannotAffordHands.other": "{name} doit avoir {hands} mains de libre pour utiliser {action} !",
+            "CannotAffordMove": "{name} n'a pas suffisamment d'action pour se déplacer de cette distance qui nécessite {cost}A !",
+            "CannotSpendAction": "{name} ne peut pas dépenser d'Action en étant Neutralisé !",
+            "CannotSpendFocus": "{name} ne peut pas dépenser de Focus en étant actuellement {status} !",
+            "CannotTargetSelf": "Vous ne pouvez pas vous cibler vous-même avec cette Action !",
+            "CannotThrow": "Vous ne pouvez pas lancer cette arme.",
+            "CannotUse": "{name} ne remplit pas les pré-requis pour utiliser {action} : {reason}",
+            "DirectMovementOnly": "Cette action nécessite un déplacement direct en ligne droite, sans points intermédiaires.",
+            "IncorrectTargets": "Vous ne pouvez désigner qu'un maximum de {number} cibles de type {type} pour l'action {action} !",
+            "InvalidTarget": "Vous devez désigner au moins une cible de type {type} pour l'action {action} !",
+            "LastCriticallyMissed": "You ne pouvez utiliser {action} qu'après une Frappe basique sans échec critique.",
+            "MaximumRange": "Une cible sélectionnée est plus éloignée que la portée maximale de {max} pieds.",
+            "MinimumRange": "Une cible sélectionnée est plus proche que la portée minimale de {min} pieds.",
+            "MinimumSize": "Vous devez être au moins de taille {size} pour utiliser {action}",
+            "MisconfiguredSummon": "La cible invoquée de l'action {action} n'est pas configurée correctement.",
+            "MissingSummonEffect": "Les données d'Effet actif doivent être définies pour suivre l'invocation non-permanente créée par l'action \"{action}\"",
+            "MovementTooFar": "Le déplacement établi dépasse la portée maximale autorisée par cette action.",
+            "MovementTooShort": "Le déplacement établi n'atteint pas la portée minimale nécessaire pour cette action.",
+            "MustFollowStrike": "Vous ne pouvez utiliser l'action {action} qu'après une action de Frappe basique",
+            "MustReload": "Votre arme nécessite d'être rechargée pour utiliser cette action.",
+            "MustScaleDex": "Toute arme utilisée pour cette action doit être basée sur la Dextérité.",
+            "MustScaleStrength": "Toute arme utilisée pour cette action doit être basée sur la Force.",
+            "RequiresTalisman": "{action} nécessite l'utilisation d'un Talisman.",
+            "NoAbility": "{actor} n'a pas de score de {ability}, et ne peut donc pas utiliser {action}.",
+            "NoConsumable": "Aucun objet consommable n'est identifié pour l'action \"{action}\"",
+            "NoConsumableUses": "L'objet consommable \"{item}\" n'a plus d'utilisation restante pour l'Action \"{action}\"",
+            "NonCombat": "Vous ne pouvez pas utiliser {action} lors d'un Combat.",
+            "NoReloadRequired": "Vos armes ne nécessitent pas d'être rechargées",
+            "NotFlanked": "{action} nécessite une cible Débordée. La cible \"{target}\" n'est pas Débordée.",
+            "ReactionUnaware": "Vous ne pouvez pas utiliser de réaction en étant Distrait !",
+            "RequiresMelee": "Vous devez avoir des armes de mêlée équipées pour utiliser cette action.",
+            "RequiresNatural": "Cette action requiert l'utilisation d'une arme naturelle.",
+            "RequiresOffhand": "Cette action requiert une arme équipée en main secondaire.",
+            "RequiresRanged": "Cette action requiert une arme à distance équipée.",
+            "RequiresSlashingMelee": "{action} nécessite une arme de mêlée infligeant des dégâts tranchants.",
+            "RequiresTwoHanded": "Cette action requiert une arme à deux mains équipée.",
+            "RequireTemplate": "Vous devez placer un Gabarit pour indiquer la zone d'effet de l'action {action}.",
+            "Restrained": "Vous ne pouvez pas vous déplacer en étant Entravé !",
+            "Silenced": "Vous ne pouvez pas utiliser cette action en étant Aphone.",
+            "UnimplementedTarget": "L'automation du type de ciblage {type} pour l'action {name} n'est pas encore supportée, vous devez cibler manuellement les tokens affectés.",
+            "WrongMovementToken": "Vous devez déplacer le token utilisant cette action.",
+            "CannotAffordHands": {
+                "zero": "{name} doit avoir {hands} mains de libre pour utiliser {action} !",
+                "two": "{name} doit avoir {hands} mains de libre pour utiliser {action} !",
+                "few": "{name} doit avoir {hands} mains de libre pour utiliser {action} !",
+                "many": "{name} doit avoir {hands} mains de libre pour utiliser {action} !"
+            },
+            "AuraNoToken": "Vous ne pouvez pas utiliser une action de type Aura sans qu'il y ait un token sur la scène !"
+        },
+        "ChooseWeaponLabel": "Arme",
+        "ChooseWeaponHint": "Choisissez l'arme à utiliser pour cette Action.",
+        "DurationSeconds": "{value}S",
+        "PlanMovement": "Établir le Déplacement",
+        "PlannedMovement": "Déplacement établi",
+        "PlannedRegion": "Région placée",
+        "PlanRegion": "Placer une région",
+        "RequiresMovement": "Vous devez établir un déplacement avant de pouvoir utiliser cette action.",
+        "RequiresRegion": "Vous devez placer une Région avant de pouvoir utiliser cette action.",
+        "SkillCheckGeneric": "Test de compétence"
     },
     "ACTOR": {
         "FIELDS": {
@@ -435,7 +642,8 @@
             "EquipmentRemaining": "Monnaie restante",
             "EquipmentSearch": "Chercher des objets",
             "EquipmentStarting": "Équipement de départ",
-            "EquipmentType": "Type d'objet"
+            "EquipmentType": "Type d'objet",
+            "NameRequired": "Vous devez fournir un nom de personnage pour terminer la création."
         },
         "SHEET": {
             "Abilities": "Caractéristiques",
@@ -465,7 +673,10 @@
             "OverspentAbility": "Trop de points de Caractéristique ont été dépensés",
             "OverspentTalent": "Trop de Talents ont été pris",
             "UnderspentAbility": "Dépensez des points de Caractéristique",
-            "UnderspentTalent": "Dépensez des points de Talent"
+            "UnderspentTalent": "Dépensez des points de Talent",
+            "InsufficientCurrency": "Monnaie insuffisante pour déduire {delta} {denom}",
+            "MacroNoToken": "Vous devez avoir un Token contrôlé pour utiliser cette Macro",
+            "NoAction": "L'acteur \"{actor}\" ne possède pas l'action \"{action}\""
         },
         "TABS": {
             "Attributes": "Attributs",
@@ -486,8 +697,38 @@
             "FavoriteActions": "Actions favorites",
             "Knowledge": "Domaines de connaissances",
             "KnowledgeHint": "Apprenez certains domaines de connaissances à partir de votre Origine ou modifiez votre Héros pour en acquérir.",
-            "Languages": "Langues connues"
-        }
+            "Languages": "Langues connues",
+            "BackgroundKnowledgeTooltip": "Ce Domaine de connaissances est fournit par votre Origine.",
+            "BackgroundLanguageTooltip": "Ce Langage est fournit par votre Origine.",
+            "LanguagesHint": "Apprenez des Langages à partir de votre Origine ou modifiez votre Héros pour en acquérir."
+        },
+        "ADVERSARY": {
+            "ACTIONS": {
+                "DecreaseLevel": "Réduire le Niveau",
+                "IncreaseLevel": "Augmenter le Niveau"
+            },
+            "THREAT_RANKS": {
+                "Boss": "Chef",
+                "Elite": "Élite",
+                "Minion": "Laquais",
+                "Normal": "Normal"
+            }
+        },
+        "GROUP": {
+            "WARNINGS": {
+                "NoAddSelf": "Vous ne pouvez pas ajouter votre propre groupe !",
+                "NotWorldActor": "Vous ne pouvez ajouter qu'un Acteur du Monde"
+            },
+            "FIELDS": {
+                "members": {
+                    "zero": "Membres",
+                    "two": "Membres",
+                    "few": "Membres",
+                    "many": "Membres"
+                }
+            }
+        },
+        "DisarmedStatus": "Désarmé !"
     },
     "ACTOR.GROUP": {
         "FIELDS": {
@@ -663,97 +904,8 @@
     "ACTION.Action": "Action",
     "ACTION.Condition": "Condition",
     "ACTION.Targets": "Cibles",
-    "ACTION.WarningCannotUse": "{name} ne remplit pas les pré-requis pour utiliser {action} : {reason}",
-    "ACTION.WarningCannotAffordCost": "{name} ne dispose pas de suffisamment de {resource} pour utiliser {action} !",
-    "ACTION.WarningCannotAffordMove": "{name} n'a pas assez d'actions pour parcourir cette distance (coût : {cost}A).",
-    "ACTION.WarningCannotSpendAction": "{name} ne peut pas dépenser d'Action car il est Neutralisé !",
-    "ACTION.WarningCannotSpendFocus": "{name} ne peut pas dépenser de Focus car il est actuellement {status} !",
-    "ACTION.WarningInvalidTarget": "Vous devez désigner au moins une cible de type {type} pour l'action {action} !",
-    "ACTION.WarningCannotTargetSelf": "Vous ne pouvez pas vous cibler avec cette Action !",
-    "ACTION.WarningIncorrectTargets": "Vous ne pouvez désigner qu'un maximum de {number} cibles de type {type} pour l'action {action} !",
-    "ACTION.WarningRequireTemplate": "Vous devez placer un Gabarit pour indiquer la zone d'effet de l'action {action}.",
-    "ACTION.WarningMinimumRange": "Une cible sélectionnée est plus proche que la portée minimale de {min} pieds.",
-    "ACTION.WarningMaximumRange": "Une cible sélectionnée est plus éloignée que la portée maximale de {max} pieds.",
     "ACTION.EFFECTS.Add": "Ajouter un Effet",
     "ACTION.EFFECTS.Delete": "Retirer l'Effet",
-    "ACTION.TagAfterStrike": "Post frappe",
-    "ACTION.TagAfterStrikeTooltip": "Cette action ne peut être effectuée qu'immédiatement après une attaque de Frappe de base qui n'a pas manqué de manière critique.",
-    "ACTION.TagConsume": "Consommation",
-    "ACTION.TagConsumeTooltip": "Cette action implique et nécessite la consommation d'un objet spécifique.",
-    "ACTION.TagDeadly": "Mortel",
-    "ACTION.TagDeadlyTooltip": "Cette action a le potentiel d'infliger une quantité de dégâts considérable, augmentant le multiplicateur de dégâts de x1.",
-    "ACTION.TagDifficult": "Difficile",
-    "ACTION.TagDifficultTooltip": "Cette action est compliquée ou difficile à réaliser. Vous subissez 2 Fléaux additionnels en tentant l'action.",
-    "ACTION.TagDisarm": "Désarmement",
-    "ACTION.TagDisarmTooltip": "Cette action, si elle réussit, fait tomber l'arme de la cible.",
-    "ACTION.TagDualWield": "Ambidextrie",
-    "ACTION.TagDualWieldTooltip": "Cette action requiert de manier deux armes distinctes ou d'être entièrement à mains nues pour être effectuée.",
-    "ACTION.TagEmpowered": "Amplifié",
-    "ACTION.TagEmpoweredTooltip": "Cette action est puissante et inflige des dégâts supplémentaires, gagnant un bonus de dégâts de +2 en cas de succès.",
-    "ACTION.TagAccurate": "Précis",
-    "ACTION.TagAccurateTooltip": "Cette action est particulièrement précise. Vous gagnez 2 Faveurs additionnels en effectuant l'action.",
-    "ACTION.TagFinesse": "Finesse",
-    "ACTION.TagFinesseTooltip": "Cette action requiert une certaine finesse pour être effectuée. Vous devez manier une arme qui se base sur la Dextérité pour ses dégâts.",
-    "ACTION.TagFlanking": "Débordé",
-    "ACTION.TagFlankingTooltip": "Cette action ne peut être effectuée que contre une cible Débordée ou Distraite.",
-    "ACTION.TagBrute": "Brute",
-    "ACTION.TagBruteTooltip": "Cette action implique l'application de force brute. Vous devez manier une arme qui se base sur la Force pour ses dégâts.",
-    "ACTION.TagGeneric": "Générique",
-    "ACTION.TagGenericTooltip": "Actions qui effectuent une attaque générique sans utiliser un sort ou une arme spécifique.",
-    "ACTION.TagHarmless": "Inoffensif",
-    "ACTION.TagHarmlessTooltip": "Cette action n'impose pas d'effet directement nuisible, son multiplicateur de dégâts est de zéro.",
-    "ACTION.TagHealing": "Guérison",
-    "ACTION.TagHealingTooltip": "Cette action procure une restauration en testant le seuil de Lésions d'un allié.",
-    "ACTION.TagWeakened": "Affaibli",
-    "ACTION.TagWeakenedTooltip": "Cette action est plus faible que les attaques normales et applique un malus de dégâts de -2.",
-    "ACTION.TagMechanical": "Mécanique",
-    "ACTION.TagMechanicalTooltip": "Cette action requiert l'utilisation d'une arme mécanique.",
-    "ACTION.TagMelee": "Mêlée",
-    "ACTION.TagMeleeTooltip": "Cette action requiert de manier une arme de mêlée ou d'être à mains nues pour être effectuée.",
-    "ACTION.TagMainHand": "Main principale",
-    "ACTION.TagMainHandTooltip": "Cette action utilise l'arme de votre main principale pour effectuer une attaque.",
-    "ACTION.TagMovement": "Déplacement",
-    "ACTION.TagMovementTooltip": "Cette action vous permet de vous déplacer dans le cadre de son activation, incluant un coût en points d'action réduit pour une action de déplacement gratuite par round.",
-    "ACTION.TagNatural": "Attaque naturelle",
-    "ACTION.TagNaturalTooltip": "Cette action implique l'exécution d'une attaque avec une arme naturelle.",
-    "ACTION.TagNonCombat": "Hors combat",
-    "ACTION.TagNonCombatTooltip": "Actions qui ne peuvent être effectuées qu'en dehors d'une rencontre de Combat.",
-    "ACTION.TagOneHand": "À une main",
-    "ACTION.TagOneHandTooltip": "Cette action requiert le maniement d'une arme à une main.",
-    "ACTION.TagProjectile": "Projectile",
-    "ACTION.TagProjectileTooltip": "Cette action requiert l'utilisation d'une arme à projectile.",
-    "ACTION.TagRallying": "Ralliement",
-    "ACTION.TagRallyingTooltip": "Cette action procure une restauration en testant le seuil de Folie d'un allié.",
-    "ACTION.TagRanged": "À distance",
-    "ACTION.TagRangedTooltip": "Cette action requiert le maniement d'une arme à distance pour être effectuée.",
-    "ACTION.TagReaction": "Réaction",
-    "ACTION.TagReactionTooltip": "Cette action ne peut être effectuée que pendant le tour d'une autre créature lorsque sa condition d'utilisation est remplie.",
-    "ACTION.TagReload": "Rechargement",
-    "ACTION.TagReloadTooltip": "Cette action recharge une arme à distance qui nécessite d'être rechargée.",
-    "ACTION.TagShield": "Bouclier",
-    "ACTION.TagShieldTooltip": "Cette action requiert le maniement d'un bouclier pour être effectuée.",
-    "ACTION.TagSpell": "Sort",
-    "ACTION.TagSpellTooltip": "Cette action implique la sorcellerie.",
-    "ACTION.TagComposed": "Sort façonné",
-    "ACTION.TagComposedTooltip": "Cette action est un sort façonné.",
-    "ACTION.TagSkill": "Compétence",
-    "ACTION.TagSkillTooltip": "Cette action implique un jet de Compétence ciblé ou opposé.",
-    "ACTION.TagSummon": "Invocation",
-    "ACTION.TagSummonTooltip": "Cette action invoque, appelle, ou crée un combattant qui rejoint la rencontre.",
-    "ACTION.TagThrown": "Lancer",
-    "ACTION.TagThrownTooltip": "Cette action implique l'exécution d'une attaque avec une arme de lancer.",
-    "ACTION.TagTwoHanded": "À deux mains",
-    "ACTION.TagTwoHandedTooltip": "Cette action requiert le maniement d'une arme à deux mains pour être effectuée.",
-    "ACTION.TagOffHand": "Main secondaire",
-    "ACTION.TagOffHandTooltip": "Cette action utilise votre arme en main secondaire pour effectuer une attaque.",
-    "ACTION.TagUnarmed": "Mains nues",
-    "ACTION.TagUnarmedTooltip": "Cette action nécessite d'être entièrement à mains nues pour être effectuée.",
-    "ACTION.TagUnarmored": "Sans armure",
-    "ACTION.TagUnarmoredTooltip": "Cette action nécessite de ne pas porter d'armure pour être effectuée.",
-    "ACTION.TagIconicSpell": "Sort iconique",
-    "ACTION.TagIconicSpellTooltip": "Cette action est un Sort iconique appris par la maîtrise de ses composants.",
-    "ACTION.TagTargetTooltip": "Le type, la distance et le nombre de cibles qui s'appliquent à cette action.",
-    "ACTION.TagCostTooltip": "Le coût en points d'Action ou points de Focus pour utiliser cette action.",
     "ADVANCEMENT.Level": "Niveau",
     "ADVANCEMENT.Progress": "Progression des Échelons",
     "ADVANCEMENT.MilestoneTooltip": "{progress} sur {required} Échelons avant le niveau suivant",
@@ -778,7 +930,11 @@
             "GroupAward": "{number} {label} attribué(s) au groupe {name} et aux membres suivants :",
             "GroupRevoke": "{number} {label} révoqué(s) du groupe {name} et des membres suivants :",
             "Recipients": "Récipiendaires de l'Échelon",
-            "RecipientsHint": "Désignez un ou plusieurs héros pour recevoir l'échelon."
+            "RecipientsHint": "Désignez un ou plusieurs héros pour recevoir l'échelon.",
+            "zero": "Échelons",
+            "two": "Échelons",
+            "few": "Échelons",
+            "many": "Échelons"
         },
         "SUMMARIES": {
             "Cost": "Coût de {award} payé par :",
@@ -795,7 +951,12 @@
         "WARNINGS": {
             "CannotAfford": "Les acteurs suivants ne peuvent pas payer le coût de cet enrichisseur : {actors}",
             "InvalidTerms": "Impossible d'analyser {terms} comme termes de récompense valides.",
-            "RequiresGM": "Vous devez être un Maître du jeu pour utiliser les enrichisseurs de Récompense."
+            "RequiresGM": "Vous devez être un Maître du jeu pour utiliser les enrichisseurs de Récompense.",
+            "CannotRevokeMilestone": "Il n'existe aucune récompense d'échelon avec l'identifiant \"{identifier}\" sur le groupe \"{group}\"",
+            "DuplicateMilestone": "Un échelon avec l'identifiant \"{identifier}\" a déjà été accordé au groupe \"{group}\"",
+            "InvalidMilestoneNumber": "Le nombre d'échelons validés doit être un entier positif",
+            "InvalidMilestoneRecipient": "L'ID de l'acteur \"{id}\" ne peut pas recevoir d'échelon",
+            "InvalidMilestoneRevokee": "L'ID de l'acteur \"{id}\" ne peut pas avoir d'échelon révoqué"
         },
         "TitleReward": "Choisir le(s) Récipiendaire(s)"
     },
@@ -834,7 +995,9 @@
         },
         "WARNINGS": {
             "NotEquipment": "Le document déposé doit être de l'Équipement.",
-            "NotSpell": "Le document déposé doit être un Sort iconique."
+            "NotSpell": "Le document déposé doit être un Sort iconique.",
+            "InvalidAbilities": "La somme des valeurs d'échelle de caractéristique doit être égale à 12. Actuellement {sum}",
+            "InvalidSpells": "Un archétype ne doit pas contenir de sorts en double."
         }
     },
     "ARMOR": {
@@ -927,7 +1090,6 @@
             "TalentTier": "Les Origines ne peuvent offrir que des Talents de départ de Tiers 0."
         }
     },
-    "COMBAT.WarningCannotChangeRound": "Seul un utilisateur Maître du jeu peut changer le round de Combat.",
     "CONSUMABLE": {
         "FIELDS": {
             "uses": {
@@ -959,6 +1121,20 @@
             "ConfigureTitle": "Configurer le parchemin de sort : {name}",
             "NoComponents": "Ce parchemin de sort est vide et ne peut être lu.",
             "ScrollName": "Parchemin de {scroll}"
+        },
+        "USES": {
+            "TagMax": {
+                "zero": "{value} Utilisations",
+                "two": "{value} Utilisations",
+                "few": "{value} Utilisations",
+                "many": "{value} Utilisations"
+            },
+            "TagPartial": {
+                "zero": "{value}/{max} Utilisations",
+                "two": "{value}/{max} Utilisations",
+                "few": "{value}/{max} Utilisations",
+                "many": "{value}/{max} Utilisations"
+            }
         }
     },
     "CURRENCY_DENOMINATIONS": {
@@ -1004,12 +1180,12 @@
     "DEFENSES.Reflex": "Réflexe",
     "DEFENSES.Willpower": "Volonté",
     "DEFENSES.Physical": "Physique",
-    "DEFENSES.Wounds": "Lésions",
-    "DEFENSES.Madness": "Folie",
+    "DEFENSES.Wounds": "Seuil de guérison",
+    "DEFENSES.Madness": "Seuil de ralliement",
     "DICE.DiceTotal": "Total des Dés",
     "DICE.AbilityBonus": "Bonus de Caractéristique",
     "DICE.SkillBonus": "Bonus de Compétence",
-    "DICE.EnchantmentBonus": "Bonus d'Enchantement",
+    "DICE.EnchantmentBonus": "Bonus d'enchantement",
     "DICE.CircumstanceBonus": "Bonus de circonstance",
     "DICE.Damage": "Dégâts",
     "DICE.DamageOverflow": "Montant de Surplus",
@@ -1100,10 +1276,16 @@
             "Parry": "Parade {parry}",
             "Range": "Portée {range}",
             "Stackable": "Empilable",
-            "Unequipped": "Non équipé"
+            "Unequipped": "Non équipé",
+            "Unique": "Unique"
         },
         "WARNINGS": {
-            "NotTalent": "Le document déposé doit être un Talent."
+            "NotTalent": "Le document déposé doit être un Talent.",
+            "HookAlreadyExists": "{item} possède déjà une fonction pour le hook \"{hook}\".",
+            "InvalidIdentifier": "Valeur d'identifiant Crucible invalide \"{id}\", qui doit être alphanumérique sans espaces ou caractères spéciaux",
+            "QualityReductionBlocked": "La qualité de {name} ne peut être réduite car il contient des affixes qui nécessitent la capacité actuelle.",
+            "UniqueWithAffixes": "Impossible de marquer {name} comme unique car il contient des affixes. Supprimez d'abord tous les affixes.",
+            "LootDropError": "Impossible de créer l'objet de butin \"{name}\". {reason}"
         },
         "TABS": {
             "Configuration": "Configuration",
@@ -1113,7 +1295,8 @@
             "Secrets": "Secrets",
             "Talents": "Talents",
             "Equipment": "Équipement",
-            "Spells": "Sorts"
+            "Spells": "Sorts",
+            "Affixes": "Affixes"
         },
         "SHEET": {
             "Details": "Détails de l'Objet",
@@ -1128,7 +1311,25 @@
             "SpellDrop": "Ajoutez un sort iconique en glissant-déposant un Sort iconique dans cette zone.",
             "Spellcraft": "Sorcellerie",
             "Type": "Type d'équipement",
-            "ScaledPrice": "Prix ajusté"
+            "ScaledPrice": "Prix ajusté",
+            "NoAffixCapacity": "La qualité de cet objet est trop faible pour supporter des affixes. Passez à une qualité Raffinée ou supérieure.",
+            "NoAffixCapacityTitle": "Enchantement impossible",
+            "NoAffixes": "Déposez un affixe depuis le compendium des Affixes pour en appliquer un.",
+            "UniqueItemTitle": "Objet unique",
+            "UniqueItemNoAffixes": "Cet objet est unique et ne peut pas être enchanté avec des affixes. Ses propriétés magiques sont définies par des hooks de module.",
+            "EnchantmentDerivedHint": "Le palier d'enchantement provient du palier total des affixes appliqués."
+        },
+        "RANDOMIZE": {
+            "Title": "Objet enchanté aléatoire",
+            "PriceMin": "Prix minimum",
+            "PriceMax": "Prix maximum",
+            "BaseItem": "Objet de base",
+            "ItemTypes": "Types d'objet",
+            "Quality": "Palier de Qualité",
+            "QualityAny": "N'importe lequel",
+            "Generate": "Générer",
+            "GMOnly": "Seul un Maître du jeu peut générer des objets aléatoires.",
+            "Flavor": "Objet aléatoire : {type}"
         }
     },
     "ITEM.EnchantmentMundane": "Trivial",
@@ -1234,7 +1435,8 @@
             "OutputAdd": "Ajouter un Groupe de Sorties",
             "OutputDrop": "Déposer l'Objet de Sortie",
             "OutputRemove": "Retirer le Groupe de Sorties",
-            "Outputs": "Sorties"
+            "Outputs": "Sorties",
+            "ItemRemove": "Supprimer l'objet d'entrée"
         }
     },
     "SETTINGS": {
@@ -1251,11 +1453,11 @@
             "hint": "Configurez quels compendium peuvent être utilisés comme sources durant la création de personnage.",
             "ancestry": {
                 "label": "Sources des Ascendances",
-                "hint": "Quels compendiums seront utilisés comme sources pour les ascendances durant la création de personnage."
+                "hint": "Compendiums utilisés comme sources pour les ascendances durant la création de personnage."
             },
             "background": {
                 "label": "Sources des Origines",
-                "hint": "Quels compendiums seront utilisés comme sources pour les origines durant la création de personnage."
+                "hint": "Compendiums utilisés comme sources pour les origines durant la création de personnage."
             },
             "spell": {
                 "label": "Sources des Sorts",
@@ -1263,13 +1465,19 @@
             },
             "talent": {
                 "label": "Sources des Talents",
-                "hint": "Quels compendiums seront utilisés comme sources pour les talents dans l'arbre de talents."
+                "hint": "Compendiums utilisés comme sources pour les talents dans l'arbre de talents."
             },
             "equipment": {
                 "label": "Sources d'équipement",
-                "hint": "Packs qui seront utilisés en tant que sources d'équipement de départ lors de la création de personnage."
+                "hint": "Compendiums qui utilisés en tant que sources d'équipement de départ lors de la création de personnage."
+            },
+            "affix": {
+                "hint": "Compendiums utilisés comme source des affixes d'objets pour l'enchantement.",
+                "label": "Sources des Affixes"
             }
-        }
+        },
+        "EnableVFXHint": "Jouer des effets visuels d'animation sur le canevas lorsque les actions sont confirmées.",
+        "EnableVFXName": "Activer les effets visuels d'Action"
     },
     "SKILL": {
         "CATEGORY": {
@@ -1493,7 +1701,8 @@
                 "InvalidTerms": "Impossible d'analyser {terms} en tant que termes de Contresort valides.",
                 "MissingComponents": "Un enrichisseur de Contresort doit avoir au moins 1 rune et 1 signe.",
                 "NoTalent": "{actor} ne possède pas le talent Contresort.",
-                "NoUser": "Aucun utilisateur non-MJ présent pour gérer un Contresort de l'acteur {actor}"
+                "NoUser": "Aucun utilisateur non-MJ présent pour gérer un Contresort de l'acteur {actor}",
+                "CannotConfirm": "Impossible de {change} un Contresort si le sort ciblé est déjà {state}"
             }
         },
         "WARNINGS": {
@@ -1501,7 +1710,19 @@
             "CannotAffordHands.other": "Le sort {action} requiert {hands} main de libre à lancer.",
             "CannotUseSilenced": "Impossible d'utiliser des Inflexions en étant Aphone.",
             "CannotUseNotComposed": "Vous ne pouvez pas lancer un sort qui n'a pas été complètement composé.",
-            "NotConfigured": "Ce sort iconique n'est pas encore totalement configuré. Les trois composantes de sorcellerie doivent être définies."
+            "NotConfigured": "Ce sort iconique n'est pas encore totalement configuré. Les trois composantes de sorcellerie doivent être définies.",
+            "BindArmamentAlreadyBound": "l'arme est déjà liée",
+            "BindArmamentNoMainhand": "aucune arme de main principale",
+            "IconicAlreadyKnown": "L'acteur {actor} connait déjà le Sort iconique {spell}.",
+            "IconicNoSlots": "L'acteur {actor} ne possède aucun emplacement de Sort iconique disponible.",
+            "IconicNotSatisfied": "L'acteur {actor} n'a pas la connaissance nécessaire pour apprendre le sort iconique {spell}.",
+            "SorcererNoIconic": "En tant que {talent}, vous ne pouvez lancer de Sorts iconiques.",
+            "CannotAffordHands": {
+                "zero": "Le sort {action} requiert {hands} mains de libre pour le lancer.",
+                "two": "Le sort {action} requiert {hands} mains de libre pour le lancer.",
+                "few": "Le sort {action} requiert {hands} mains de libre pour le lancer.",
+                "many": "Le sort {action} requiert {hands} mains de libre pour le lancer."
+            }
         },
         "NAMES": {
             "CurseParanoia": "Malédiction de la paranoïa",
@@ -1572,7 +1793,8 @@
             "Delete": "Supprimer le Talent",
             "Edit": "Éditer le Talent",
             "HookAdd": "Ajouter un Hook",
-            "HookDelete": "Supprimer le Hook"
+            "HookDelete": "Supprimer le Hook",
+            "Reset": "Réinitialiser"
         },
         "WARNINGS": {
             "AlreadyOwned": "Vous possédez déjà {name} et ne pouvez pas l'ajouter une seconde fois.",
@@ -1588,11 +1810,19 @@
         "LABELS": {
             "Points": {
                 "one": "Point",
-                "other": "Points"
+                "other": "Points",
+                "zero": "Points",
+                "two": "Points",
+                "few": "Points",
+                "many": "Points"
             },
             "Talents": {
                 "one": "Talent",
-                "other": "Talents"
+                "other": "Talents",
+                "zero": "Talents",
+                "two": "Talents",
+                "few": "Talents",
+                "many": "Talents"
             }
         },
         "NodeSpecific": "Nœud : {nodeType}",
@@ -1694,13 +1924,18 @@
             "Monstrosity": "Monstruosité",
             "Ooze": "Vase",
             "Outsider": "Extérieur",
-            "Undead": "Mort-vivant"
+            "Undead": "Mort-vivant",
+            "Plant": "Plante"
         },
         "SHEET": {
             "Choose": "Choisir une Taxonomie",
             "Clear": "Effacer la Taxonomie",
             "Physiology": "Physiologie",
             "Stature": "Stature de Taxonomie"
+        },
+        "WARNINGS": {
+            "InvalidAbilities": "La somme des valeurs de caractéristique initiale doit être égale à 12. Actuellement {sum}",
+            "InvalidResistances": "La somme des valeurs d'échelle de résistance doit être égale à zéro. Actuellement {sum}"
         }
     },
     "TOOL": {
@@ -1860,8 +2095,6 @@
     "ACTION.TemplateTargets": "Cibles du Gabarit",
     "ACTION.Confirmed": "Confirmé",
     "ACTION.Unconfirmed": "Non confirmé",
-    "ACTION.TagMaintained": "Maintenu",
-    "ACTION.TagMaintainedTooltip": "Cette action peut être maintenue, ce qui entraîne son coût de concentration au début de vos tours.",
     "ACTOR.VulnerabilitySpecific": "Vulnérabilité : {vulnerability}",
     "ACTOR.StrideSpecific": "Foulée {stride}",
     "ACTOR.ResistanceSpecific": "Résistance : {resistance}",
@@ -1894,12 +2127,10 @@
     "ACTION.DelayTitle": "Retarder le Tour",
     "ACTION.DelayLabel": "Initiative retardée",
     "ACTION.DelayHint": "Choisissez une valeur d'initiative entre 1 et {maximum} lorsque vous souhaitez agir.",
-    "ACTION.DurationRounds": "{rounds}R",
-    "ACTION.DurationTurns": "{turns}T",
+    "ACTION.DurationRounds": "{value}R",
     "ACTION.DurationUntilEnded": "Jusqu'à expiration",
     "ACTION.NoTargets": "Pas de Cibles",
     "ACTION.Overview": "Aperçu d'Action",
-    "ACTION.PlaceTemplate": "Placer un Gabarit",
     "ACTION.RemoveActor": "Retirer l'Acteur",
     "ACTION.RequestActorsHint": "Glisser ici des Acteurs individuels ou des groupes pour demander leur participation à ce jet.",
     "ACTION.RequestRollsSuffix": "{label} : Demande de Jets",
@@ -1907,15 +2138,6 @@
     "ACTION.SkillCheck": "{skill} Test de compétence",
     "ACTION.StandardCheck": "Test standard",
     "ACTION.UseAction": "Utiliser l'Action",
-    "ACTION.WarningUnimplementedTarget": "L'automation du type de ciblage {type} pour l'action {name} n'est pas encore supportée, vous devez cibler manuellement les tokens affectés.",
-    "ACTION.TagCostAction": "{action}A",
-    "ACTION.TagCostFocus": "{focus}F",
-    "ACTION.TagCostHand.one": "{hands} Main",
-    "ACTION.TagCostHand.other": "{hands} Mains",
-    "ACTION.TagCostHeroism": "{heroism}H",
-    "ACTION.TagCostHealth": "{health}PV",
-    "ACTION.TagCostWeapon": "Ar",
-    "ACTION.TagCostWeaponAction": "Ar{action}A",
     "ACTION.TAGS.Activation": "Étiquettes d'activation",
     "ACTION.TAGS.Action": "Étiquettes d'Action",
     "ACTION.TAGS.Context": "Étiquettes de contexte",
@@ -2050,14 +2272,6 @@
             }
         }
     },
-    "ADVERSARY": {
-        "THREAT_RANKS": {
-            "Minion": "Laquais",
-            "Normal": "Normal",
-            "Elite": "Élite",
-            "Boss": "Chef"
-        }
-    },
     "ACCESSORY": {
         "CATEGORIES": {
             "Clothing": "Vêtements",
@@ -2111,15 +2325,108 @@
     },
     "WARNING.CannotEquipTaxonomy": "L'acteur {actor} ne peut pas équiper l'objet \"{item}\" car la taxonomie \"{taxonomy}\" est incapable d'utiliser de l'équipement.",
     "DICE.DCSpecific": "DD {dc}",
-    "ACTION.WarningNoAbility": "{actor} n'a pas de score de {ability}, et ne peut donc pas utiliser {action}.",
-    "ACTION.WarningCannotAffordHands.one": "{name} doit avoir {hands} main de libre pour utiliser {action} !",
-    "ACTION.WarningCannotAffordHands.other": "{name} doit avoir {hands} main de libre pour utiliser {action} !",
-    "ACTION.WarningMisconfiguredSummon": "La cible invoquée de l'action {action} n'est pas configurée correctement.",
-    "ACTION.TagSevere": "Grave",
-    "ACTION.TagSevereTooltip": "Si la cible de cette action possède des ressources Lésions et Folie, cette action affecte directement ces ressources, indépendamment de sa Santé ou de son Moral.",
-    "ACTION.TagVocal": "Vocable",
-    "ACTION.TagVocalTooltip": "Cette action requiert que l'utilisateur parle ou émette un son d'une autre manière.",
-    "ACTION.TagAuditory": "Auditif",
-    "ACTION.TagAuditoryTooltip": "Cette action nécessite que ses cibles soient capables d'entendre pour être affectées.",
-    "ACTION.WarningSilenced": "Vous ne pouvez pas utiliser cette action lorsque vous êtes sous l'effet Aphone."
+    "AFFIX": {
+        "FIELDS": {
+            "adjective": {
+                "label": "Adjectif",
+                "hint": "Un adjectif optionnel utilisé lors de la composition du nom d'un objet."
+            },
+            "affixType": {
+                "label": "Type d'Affixe",
+                "hint": "Les Affixes doivent être de type préfixe ou suffixe."
+            },
+            "identifier": {
+                "label": "Identifiant",
+                "hint": "Un identifiant de chaîne unique pour cet affixe (16 caractères maximum) utilisé pour déclarer les fonctions hook et pour déterminer les ID d'affixe lorsqu'il est appliqué à un élément."
+            },
+            "itemTypes": {
+                "label": "Types d'objet",
+                "hint": "Types d'objets auxquels cet affixe peut être appliqué. Si aucun type spécifique n'est coché, tous les types d'objets sont autorisés."
+            },
+            "tier": {
+                "label": "Palier",
+                "hint": "Plage de niveaux de puissance autorisés pour cet affixe. Chaque niveau consomme un point de capacité de préfixe ou de suffixe.",
+                "min": {
+                    "label": "Palier minimum"
+                },
+                "max": {
+                    "label": "Palier maximum"
+                },
+                "value": {
+                    "label": "Palier d'affixe",
+                    "hint": "Palier de cet affixe appliqué à cet objet."
+                }
+            }
+        },
+        "ConfigIdentity": "Identité d'affixe",
+        "ConfigTier": "Configuration de palier",
+        "TierRestriction": "Plage de palier",
+        "Prefixes": "Préfixes",
+        "Suffixes": "Suffixes",
+        "TierDisplay": "Palier {value} / {max}",
+        "TypePrefix": "Préfixe",
+        "TypeSuffix": "Suffixe"
+    },
+    "COMBAT": {
+        "INITIATIVE": {
+            "Combatant": "Combattant",
+            "Result": "Résultat",
+            "Round": "Initiative - Round {round}"
+        },
+        "SUMMARY": {
+            "EffectExpired": "Expiré",
+            "EffectGained": "Obtenu",
+            "EffectGainedDuration": "Obtenu ({duration})",
+            "HeaderEnd": "{actor} - Fin du tour",
+            "HeaderStart": "{actor} - Début du tour",
+            "Maintaining": "{effect} (Maintenu)",
+            "TableTitleEffects": "Changements de l'effet",
+            "TableTitleResources": "Changements de ressource"
+        },
+        "WARNINGS": {
+            "CannotChangeRound": "Seul un utilisateur Maître du jeu peut changer le round de Combat."
+        },
+        "HeroismPct": "Héroïsme {pct}%",
+        "HeroismTooltip": "Progression vers le prochain point d'Héroïsme"
+    },
+    "DICE": {
+        "GROUP_CHECK": {
+            "STATUSES": {
+                "Complete": "Terminer",
+                "Pending": "En attente",
+                "Aborted": "Avorté",
+                "Skipped": "Passé"
+            },
+            "Resend": "Renvoyer la demande",
+            "RollOnBehalf": "Jet pour",
+            "Skip": "Passer l'Acteur",
+            "ResetPending": "Réinitialiser en attente",
+            "RequiresGM": "Seul un Maître du jeu peut initier des jets de groupe.",
+            "Title": "Jet de Compétence de groupe",
+            "DialogTitle": "Jet de {skill} : {name}",
+            "NoUserForActor": "Aucun utilisateur actif trouvé pour : {name}"
+        },
+        "DCAdditionalPassive": "{dcLabel}, Passif",
+        "DCAdditionalGroup": "{dcLabel}, Groupe",
+        "SKILLS": {
+            "AddSkill": "Ajouter une Compétence",
+            "CustomizeSkills": "Personnaliser les Compétences"
+        },
+        "Banes": {
+            "zero": "Fléaux",
+            "two": "Fléaux",
+            "few": "Fléaux",
+            "many": "Fléaux"
+        },
+        "Boons": {
+            "zero": "Faveurs",
+            "two": "Faveurs",
+            "few": "Faveurs",
+            "many": "Faveurs"
+        }
+    },
+    "HOOKS": {
+        "NoModuleHooks": "Aucun hook de module n'est enregistré pour cet identifiant.",
+        "ToggleSource": "Basculer la Source"
+    }
 }

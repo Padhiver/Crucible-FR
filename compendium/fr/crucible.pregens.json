@@ -105,7 +105,7 @@
                     "actions": {
                         "lunge": {
                             "name": "Fente",
-                            "description": "<p>Vous vous élancez avec agilité, portant un coup d'une rapidité soudaine et inattendue pour effectuer une <strong>Frappe</strong> avec une arme de <strong>Finesse</strong> contre une cible unique, à une portée accrue de <strong>+2 pieds</strong>.</p><p>L'attaque est <strong>Difficile</strong>, mais vous ne quittez pas votre position actuelle et elle ne provoque pas de Désengagement.</p>"
+                            "description": "<p>Vous vous élancez avec agilité, portant un coup d'une rapidité soudaine et inattendue pour effectuer une <strong>Frappe</strong> avec une arme basée sur la <strong>Dextérité</strong> contre une cible unique, à une portée accrue de <strong>+2 pieds</strong>.</p><p>L'attaque est <strong>Difficile</strong>, mais vous ne quittez pas votre position actuelle et elle ne provoque pas de Désengagement.</p>"
                         }
                     }
                 },
@@ -366,7 +366,7 @@
                 },
                 "Weak Points": {
                     "name": "Points faibles",
-                    "description": "Vous identifiez des moments d'opportunité pour frapper les points faibles d'un ennemi. Lors de l'attaque d'une cible <strong>Distraite</strong>, <strong>Débordée</strong> ou <strong>Exposée</strong> en utilisant une arme de Finesse, vous gagnez +2 dégâts à toute Frappe."
+                    "description": "<p>Vous identifiez des moments d'opportunité pour frapper les points faibles d'un ennemi. Lors de l'attaque d'une cible @Condition[unaware], @Condition[flanked], ou @Condition[exposed] en utilisant une arme basée sur la <strong>Dextérité</strong>, vous gagnez +2 dégâts à toute Frappe.</p>"
                 },
                 "Mark Prey": {
                     "name": "Marquer la proie",
@@ -528,7 +528,7 @@
                 },
                 "Rune: Flame": {
                     "name": "Rune : Flamme",
-                    "description": "<p>La force chaotique de l'énergie élémentaire et thermique. La Rune de Flamme gouverne le feu et la chaleur.</p><p>La Rune de Flamme évolue avec l'Intellect, cible le <strong>Réflexe</strong>, et inflige des dégâts de <strong>Feu</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Givre</strong>.</p>",
+                    "description": "<p>La force chaotique de l'énergie élémentaire et thermique. La Rune de Flamme gouverne le feu et la chaleur.</p><p>La Rune de Flamme évolue avec l'<strong>Intellect</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts de <strong>Feu</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Givre</strong>.</p>",
                     "actions": {
                         "enkindle": {
                             "name": "Allumer",
@@ -542,7 +542,7 @@
                 },
                 "Strong Grip": {
                     "name": "Prise solide",
-                    "description": "Votre prise sur votre armement est ferme et inflexible. Vous pouvez effectuer des Actions qui nécessitent une main libre tout en maniant une arme à deux mains. Les tentatives pour vous Désarmer sont faites avec +2 Fléaux."
+                    "description": "Votre prise sur votre armement est ferme et inflexible. Vous pouvez effectuer des Actions qui nécessitent une main libre tout en maniant une arme de mêlée à deux mains. Les tentatives pour vous Désarmer sont faites avec +2 Fléaux."
                 },
                 "Gesture: Strike": {
                     "name": "Signe : Frappe",
@@ -731,7 +731,7 @@
                     "description": "<p>Améliorez un sort en prenant plus de temps pour sa formation, réduisant d'autres coûts de ressources en échange. L'inflexion Façonner réduit le coût en <strong>Focus</strong> d'un sort de 1 tout en augmentant son coût en <strong>Action</strong> de 1 en échange.</p>"
                 },
                 "Dustbinder": {
-                    "name": "Géomancien",
+                    "name": "Terramancien",
                     "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Terre. Les sorts utilisant cette Rune causent la condition @Condition[corroding] sur les Coups critiques.</p><p>L'effet Corrodé dure <strong>3 Rounds</strong> et inflige votre score de <strong>Sagesse</strong> en dégâts d'<strong>Acide</strong> à la <strong>Santé</strong> chaque Round.</p>"
                 },
                 "Runewarden": {
@@ -908,7 +908,7 @@
                 },
                 "Strong Grip": {
                     "name": "Prise solide",
-                    "description": "Votre prise sur votre armement est ferme et inflexible. Vous pouvez effectuer des Actions qui nécessitent une main libre tout en maniant une arme à deux mains. Les tentatives pour vous Désarmer sont faites avec +2 Fléaux."
+                    "description": "Votre prise sur votre armement est ferme et inflexible. Vous pouvez effectuer des Actions qui nécessitent une main libre tout en maniant une arme de mêlée à deux mains. Les tentatives pour vous Désarmer sont faites avec +2 Fléaux."
                 },
                 "Blood Frenzy": {
                     "name": "Frénésie sanguinaire",
@@ -1203,6 +1203,12 @@
                 "Gesture: Conjure": {
                     "name": "Signe : Conjuration",
                     "description": "<p>Vous coalescez la puissance arcanique en une forme supérieure, manifestant un <strong>Visiteur</strong> qui apparaît dans les 30 pieds et rejoint le Combat avec une <strong>Initiative</strong> de 1. Votre Visiteur est un Laquais de niveau égal au vôtre.</p><p>Le signe de Conjuration évolue avec la <strong>Sagesse</strong> et le Visiteur survit pendant <strong>12 Rounds</strong>. Vous ne pouvez avoir qu'un seul Visiteur actif. Lancer un autre sort utilisant le signe de Conjuration remplace votre Visiteur précédent. Ce signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>5 Actions</strong> et <strong>2 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent est actuellement placé au <strong>palier 4</strong>. Il ne sera accessible qu'à un niveau supérieur (probablement le Niveau 6). Il est actuellement disponible en avant-première pour les tests.</p><p>Toutes les Runes n'ont pas encore d'acteur Visiteur défini. Les Runes qui n'ont pas encore de Conjuration définie manifesteront – pour l'instant – un <strong>Visiteur de Flamme</strong>.</p>"
+                },
+                "Stiletto": {
+                    "name": "Stylet",
+                    "description": {
+                        "public": "<p>Fin, effilé et conçu pour percer, le stylet est une arme de tueur — pensé pour se glisser entre les côtes ou dans les interstices d'une armure et ne laisser quasiment aucune trace.</p>"
+                    }
                 }
             },
             "ancestry": {
@@ -1456,6 +1462,12 @@
                     "description": {
                         "public": "<p>Une ceinture porte-outils optimisée, sous forme de ceinture utilitaire, de bandoulière ou d'un ensemble de poches cousues dans votre équipement.</p><p>Cet objet procure une nombre d'emplacements supplémentaires dépendant de son niveau de qualité :</p><ul><li><p><strong>Commune</strong> : +1 Emplacement de ceinture porte-outils</p></li><li><p><strong>Raffinée</strong> : +2 Emplacements de ceinture porte-outils</p></li><li><p><strong>Supérieure</strong> : +3 Emplacements de ceinture porte-outils</p></li><li><p><strong>Chef-d’œuvre</strong> : +4 Emplacements de ceinture porte-outils</p></li></ul>"
                     }
+                },
+                "Heavy Crossbow": {
+                    "name": "Arbalète lourde",
+                    "description": {
+                        "public": "<p>Arbalète puissante à branches d'acier, nécessitant une manivelle ou un levier pour être armée, elle projette des carreaux dévastateurs capables de perforer les armures ou de clouer les ennemis aux murs.</p>"
+                    }
                 }
             },
             "ancestry": {
@@ -1528,7 +1540,7 @@
                     "actions": {
                         "lunge": {
                             "name": "Fente",
-                            "description": "<p>Vous vous élancez avec agilité, portant un coup d'une rapidité soudaine et inattendue pour effectuer une <strong>Frappe</strong> avec une arme de <strong>Finesse</strong> contre une cible unique, à une portée accrue de <strong>+2 pieds</strong>.</p><p>L'attaque est <strong>Difficile</strong>, mais vous ne quittez pas votre position actuelle et elle ne provoque pas de Désengagement.</p>"
+                            "description": "<p>Vous vous élancez avec agilité, portant un coup d'une rapidité soudaine et inattendue pour effectuer une <strong>Frappe</strong> avec une arme basée sur la <strong>Dextérité</strong> contre une cible unique, à une portée accrue de <strong>+2 pieds</strong>.</p><p>L'attaque est <strong>Difficile</strong>, mais vous ne quittez pas votre position actuelle et elle ne provoque pas de Désengagement.</p>"
                         }
                     }
                 },
@@ -1579,7 +1591,7 @@
                 },
                 "Rune: Flame": {
                     "name": "Rune : Flamme",
-                    "description": "<p>La force chaotique de l'énergie élémentaire et thermique. La Rune de Flamme gouverne le feu et la chaleur.</p><p>La Rune de Flamme évolue avec l'Intellect, cible le <strong>Réflexe</strong>, et inflige des dégâts de <strong>Feu</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Givre</strong>.</p>",
+                    "description": "<p>La force chaotique de l'énergie élémentaire et thermique. La Rune de Flamme gouverne le feu et la chaleur.</p><p>La Rune de Flamme évolue avec l'<strong>Intellect</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts de <strong>Feu</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Givre</strong>.</p>",
                     "actions": {
                         "enkindle": {
                             "name": "Allumer",

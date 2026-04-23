@@ -35,7 +35,8 @@
         "Light Sources": "Sources de lumière",
         "Adventuring Gear": "Matériel d'aventurier",
         "Scrolls": "Parchemins",
-        "Traps": "Pièges"
+        "Traps": "Pièges",
+        "Unarmored": "Sans armure"
     },
     "entries": {
         "Blast Flask": {
@@ -71,8 +72,8 @@
         "Amulet of Nimbleness": {
             "name": "Amulette d'agilité",
             "description": {
-                "public": "<blockquote><p>Ce collier aux couleurs vives renferme une amulette en pierre qui brille d'une rune crépitant légèrement sous l'effet d'une résonance électrique. En le tenant, vous avez la sensation surréaliste que le monde autour de vous ralentit imperceptiblement.</p></blockquote><p>Cette amulette offre un bonus à la défense de <strong>Réflexe</strong> égal au minimum de ses bonus de <strong>Qualité</strong> et d'<strong>Enchantement</strong>.</p><ul><li><p>Qualité <strong>Raffinée</strong> et enchantement <strong>Mineur</strong> : <strong>+1 Réflexe</strong></p></li><li><p>Qualité <strong>Supérieure</strong> et enchantement <strong>Majeur</strong> : <strong>+2 Réflexe</strong></p></li><li><p>Qualité <strong>Chef-d’œuvre</strong> et enchantement <strong>Légendaire</strong> : <strong>+3 Réflexe</strong></p></li></ul>",
-                "private": "<p>Cet objet est présenté comme une amulette, mais il peut s'agir de n'importe quel type d'accessoire comme une bague, une cape, des bracelets ou tout autre type de bijou.</p>"
+                "public": "<blockquote><p>Ce collier aux couleurs vives renferme une amulette en pierre qui brille d'une rune crépitant légèrement sous l'effet d'une résonance électrique. En le tenant, vous avez la sensation surréaliste que le monde autour de vous ralentit imperceptiblement.</p></blockquote><p>Cette amulette enchantée offre un bonus à la défense de <strong>Réflexe</strong> </p>",
+                "private": "<p>Cet objet est présenté à titre d'exemple d'une Amulette raffinée avec le suffixe @UUID[Compendium.crucible.affixes.ActiveEffect.nimbleness000000]{Agilité}.</p><p>Cet affixe peut être appliqué à n'importe quelle armure ou accessoire et cette amulette pourrait être encore enchantée avec un préfixe de Palier 1.</p>"
             }
         },
         "Antitoxin": {
@@ -161,7 +162,8 @@
         "Charm of Tenacity": {
             "name": "Charme de ténacité",
             "description": {
-                "public": "<blockquote><p>Ce collier orné de breloques a un aspect rustique, mais en y regardant de plus près, vous découvrez un travail artisanal délicat. En le tenant, vous sentez votre respiration s'approfondir et les légères douleurs musculaires s'estomper.</p></blockquote><p>Cette amulette offre un bonus à la défense de <strong>Fortitude</strong> égal au minimum de ses bonus de <strong>Qualité</strong> et d'<strong>Enchantement</strong>.</p><ul><li><p>Qualité <strong>Raffinée</strong> et enchantement <strong>Mineur</strong> : <strong>+1 Fortitude</strong></p></li><li><p>Qualité <strong>Supérieure</strong> et enchantement <strong>Majeur</strong> : <strong>+2 Fortitude</strong></p></li><li><p>Qualité <strong>Chef-d’œuvre</strong> et enchantement <strong>Légendaire</strong> : <strong>+3 Fortitude</strong></p></li></ul>"
+                "public": "<blockquote><p>Ce collier orné de breloques a un aspect rustique, mais en y regardant de plus près, vous découvrez un travail artisanal délicat. En le tenant, vous sentez votre respiration s'approfondir et les légères douleurs musculaires s'estomper.</p></blockquote><p>Ce charme enchanté offre un bonus à la défense de <strong>Fortitude</strong></p>",
+                "private": "<p>Cet objet est présenté à titre d'exemple d'un Charme raffiné avec le suffixe @UUID[Compendium.crucible.affixes.ActiveEffect.tenacity00000000]{Ténacité}.</p><p>cet affixe peut être appliqué sur n'importe quelle armure ou accessoire et ce charme pourrait être encore enchanté avec un préfixe de Palier 1.</p>"
             }
         },
         "Claw Hammer": {
@@ -394,8 +396,8 @@
         },
         "Periapt of Determination": {
             "description": {
-                "public": "<blockquote><p>Une élégante amulette en argent sertie de pierres précieuses bleues vous insuffle un sentiment de constance tandis que vous la serrez contre vous, prêt à affronter tous les défis.</p></blockquote><p>Cette amulette procure un bonus à la défense de <strong>Volonté</strong> égal au minimum de ses bonus de <strong>Qualité</strong> et d'<strong>Enchantement</strong>.</p><ul><li><p>Qualité <strong>Raffinée</strong> et enchantement <strong>Mineur</strong> : <strong>+1 Volonté</strong></p></li><li>Qualité <p><strong>Supérieure</strong> et enchantement <strong>Majeur</strong> : <strong>+2 Volonté</strong></p></li><li>Qualité <p><strong>Chef-d’œuvre</strong> et enchantement <strong>Légendaire</strong> : <strong>+3 Volonté</strong></p></li></ul>",
-                "private": "<p>Cet objet est présenté comme une amulette, mais il peut s'agir de n'importe quel type d'accessoire comme une bague, une cape, des bracelets ou tout autre type de bijou.</p>"
+                "public": "<blockquote><p>Une élégante amulette en argent sertie de pierres précieuses bleues vous insuffle un sentiment de constance tandis que vous la serrez contre vous, prêt à affronter tous les défis.</p></blockquote><p>Ce périapte procure un bonus à la défense de <strong>Volonté</strong>.</p>",
+                "private": "<p>Cet objet est présenté à titre d'exemple d'un Périapte raffiné avec le suffixe @UUID[Compendium.crucible.affixes.ActiveEffect.determination000]{Détermination}.</p><p>Cet affixe peut être appliqué à n'importe quelle armure ou accessoire et ce périapte pourrait être encore enchanté avec un préfixe de Palier 1.</p>"
             },
             "name": "Périapte de détermination"
         },
@@ -493,15 +495,15 @@
         },
         "Ring of Evasion": {
             "description": {
-                "public": "<blockquote><p>Cette élégante bague ornée est légèrement glissante et difficile à prendre en main. Lorsqu'on la tient, elle vibre de façon presque imperceptible.</p></blockquote><p>Cet anneau procure un bonus à la défense d'<strong>Esquive</strong> égal au minimum de ses bonus de <strong>Qualité</strong> et d'<strong>Enchantement</strong>.</p><ul><li><p>Qualité <strong>Raffinée</strong> et enchantement <strong>Mineur</strong> : <strong>+1 Esquive</strong></p></li><li><p>Qualité <strong>Supérieure</strong> et enchantement <strong>Majeur</strong> : <strong>+2 Esquive</strong></p></li><li><p>Qualité <strong>Chef-d’œuvre</strong> et enchantement <strong>Légendaire</strong> : <strong>+3 Esquive</strong></p></li></ul>",
-                "private": "<p>Cet objet est présenté comme un anneau, mais il peut s'agir de n'importe quel type d'accessoire comme une amulette, une cape, des bracelets ou tout autre type de bijou.</p>"
+                "public": "<blockquote><p>Cette élégante bague ornée est légèrement glissante et difficile à prendre en main. Lorsqu'on la tient, elle vibre de façon presque imperceptible.</p></blockquote><p>Cet anneau enchanté procure un bonus à la défense d'<strong>Esquive</strong>.</p>",
+                "private": "<p>Cet objet est présenté à titre d'exemple d'un Anneau raffiné avec le suffixe @UUID[Compendium.crucible.affixes.ActiveEffect.evasion000000000]{Dérobade}.</p><p>Cet affixe peut être appliqué à n'importe quelle armure ou accessoire et cet anneau pourrait être encore enchanté avec un préfixe de Palier 1.</p>"
             },
             "name": "Anneau d'évasion"
         },
         "Ring of Reinforcement": {
             "description": {
-                "public": "<blockquote><p>Cet anneau en acier reste toujours frais au toucher et donne l'impression d'être plus lourd qu'on ne le penserait compte tenu de sa finesse.</p></blockquote><p>Cet anneau procure un bonus à la défense d'<strong>Armure</strong> au minimum de ses bonus de <strong>Qualité</strong> et d'<strong>Enchantement</strong>.</p><ul><li><p>Qualité <strong>Raffinée</strong> et enchantement <strong>Mineur</strong> : <strong>+1 Armure</strong></p></li><li><p>Qualité <strong>Supérieure</strong> et enchantement <strong>Majeur</strong> : <strong>+2 Armure</strong></p></li><li><p>Qualité <strong>Chef-d’œuvre</strong> et enchantement <strong>Légendaire</strong> : <strong>+3 Armure</strong></p></li></ul>",
-                "private": "<p>Cet objet est présenté comme un anneau, mais il peut s'agir de n'importe quel type d'accessoire comme une amulette, une cape, des bracelets ou tout autre type de bijou.</p>"
+                "public": "<blockquote><p>Cet anneau en acier reste toujours frais au toucher et donne l'impression d'être plus lourd qu'on ne le penserait compte tenu de sa finesse.</p></blockquote><p>Cet anneau enchanté procure un bonus à la défense d'<strong>Armure</strong>.</p>",
+                "private": "<p>Cet objet est présenté à titre d'exemple d'un Anneau raffiné avec le suffixe @UUID[Compendium.crucible.affixes.ActiveEffect.reinforcement000]{Renforcement}.</p><p>Cet affixe peut être appliqué à n'importe quelle armure ou accessoire et cet anneau pourrait être encore enchanté avec un préfixe de Palier 1.</p>"
             },
             "name": "Anneau de renforcement"
         },
@@ -561,15 +563,16 @@
         },
         "Spellband": {
             "description": {
-                "public": "<p>Cette bague est composée d'une pierre opaque soigneusement sculptée en couches gracieuses et fluides, évoquant une esthétique ancienne. L'anneau sert de puissant focalisateur de sorts pour le porteur <strong>Investi</strong>.</p>"
+                "public": "<blockquote><p>Cette bague est composée d'une pierre opaque soigneusement sculptée en couches gracieuses et fluides, évoquant une esthétique ancienne. L'anneau sert de puissant focalisateur de sorts pour le porteur <strong>Investi</strong>.</p></blockquote><p>Cette bague enchantée procure la capacité de puiser dans une réserve supplémentaire de <strong>Focus</strong> dans les moment difficiles.</p>",
+                "private": "<p>Cet objet est présenté à titre d'exemple d'un Anneau raffiné avec le préfixe @UUID[Compendium.crucible.affixes.ActiveEffect.focusing00000000]{Focus de réserve}.</p><p>Cet affixz peut être appliqué à n'importe quel accessoire et cet anneau pourrait être encore enchanté avec un suffixe de Palier 1.</p>"
             },
+            "name": "Bague de stockage",
             "actions": {
-                "spellband": {
-                    "description": "<p>En cas de difficulté, vous pouvez puiser une réserve supplémentaire de <strong>Focus</strong> de ce stockage. Le montant de Focus restauré dépend du bonus d'enchantement de la bague.</p><ul><li><p>Enchantement <strong>Mineur</strong> : <strong>4 Focus</strong></p></li><li><p>Enchantement <strong>Majeur</strong> : <strong>6 Focus</strong></p></li><li><p>Enchantement <strong>Légendaire</strong> : <strong>8 Focus</strong></p></li></ul>",
-                    "name": "Bague de stockage"
+                "affixFocus": {
+                    "name": "Restauration de focus",
+                    "description": "<p>En cas de difficulté, vous pouvez puiser dans une réserve supplémentaire de <strong>Focus</strong> depuis cet objet. Le montant de Focus restauré dépend du <strong>Palier</strong> de ce préfixe.</p><ul><li><p><strong>Palier 1 :</strong> <strong>4 Focus</strong></p></li><li><p><strong>Palier 2 :</strong> <strong>6 Focus</strong></p></li><li><p><strong>Palier 3 :</strong> <strong>8 Focus</strong></p></li></ul>"
                 }
-            },
-            "name": "Bague de stockage"
+            }
         },
         "Spiked Greatclub": {
             "description": {
@@ -670,7 +673,7 @@
         "Common Clothing": {
             "name": "Vêtements communs",
             "description": {
-                "public": "<p>Une chemise, un pantalon, des sous-vêtements, des chaussettes et des chaussures ou bottes adaptées aux travaux manuels ou aux voyages, qui ne peuvent être portés avec une armure.</p>"
+                "public": "<p>Une chemise, un pantalon, des sous-vêtements, des chaussettes et des chaussures ou bottes adaptées aux travaux manuels ou aux voyages.</p>"
             }
         },
         "Cooking Oil": {
@@ -849,14 +852,14 @@
         },
         "Ring of Gliding": {
             "description": {
-                "public": "<p>Une bague élégante en acier bleu pâle, ornée d'un motif en spirale qui donne l'illusion d'une rotation lente et perpétuelle au doigt de celui ou celle qui la porte.</p><p>Cette bague peut être activée instinctivement par son porteur en chute libre pour amorcer une descente gracieuse et maîtrisée.</p>",
-                "private": "<p>Cet objet est présenté comme un anneau, mais il peut s'agir de n'importe quel type d'accessoire comme une amulette, une cape, des bracelets ou tout autre type de bijou.</p>"
+                "public": "<blockquote><p>Une bague élégante en acier bleu pâle, ornée d'un motif en spirale qui donne l'illusion d'une rotation lente et perpétuelle au doigt de celui ou celle qui la porte.</p></blockquote><p>Cette bague enchantée procure la capacité de planer latéralement lors d'une chute.</p>",
+                "private": "<p>Cet objet est présenté à titre d'exemple d'un anneau raffiné avec le préfixe @UUID[Compendium.crucible.affixes.ActiveEffect.gliding000000000]{Planeur}.</p><p>Cet affixe peut être appliqué à n'importe quel accessoire et cet anneau pourrait être encore enchanté avec un suffixe de Palier 1.</p>"
             },
             "name": "Anneau de chute lente",
             "actions": {
                 "gliding": {
-                    "name": "Anneau de chute lente",
-                    "description": "<p>Si vous l'utilisez lorsque vous <strong>Chutez</strong>, vous pouvez vous déplacer latéralement de plusieurs cases par rapport à votre position initiale pendant votre vol plané.</p><ul><li><p>Enchantement <strong>Mineur</strong> : <strong>1 pied</strong> pour 20 pieds de descente.</p></li><li><p>Enchantement <strong>Majeur</strong> : <strong>2 pieds</strong> pour <strong>20 pieds</strong> de descente.</p></li><li><p>Enchantement <strong>Légendaire</strong> : <strong>4 pieds</strong> pour <strong>20 pieds</strong> de descente.</p></li></ul><p>Vous ne subissez aucun dégât de chute à l'atterrissage, et vous n'êtes pas @Condition[prone].</p>"
+                    "name": "Vol plané",
+                    "description": "<p>Si vous l'utilisez lorsque vous <strong>Chutez</strong>, vous pouvez vous déplacer latéralement de plusieurs cases par rapport à votre position initiale pendant votre vol plané. La distance du vol plané dépend du <strong>Palier</strong> de ce préfixe.</p><ul><li><p><strong>Palier 1 :</strong> <strong>1 pied</strong> pour 20 pieds de descente.</p></li><li><p><strong>Palier 2 :</strong> <strong>2 pieds</strong> pour 20 pieds de descente.</p></li><li><p><strong>Palier 3 :</strong> <strong>4 pieds</strong> pour 20 pieds de descente.</p></li></ul><p>Vous ne subissez aucun dégât de chute à l'atterrissage, et vous n'êtes pas @Condition[prone].</p>"
                 }
             }
         },
@@ -971,16 +974,16 @@
         "Cloak of Kindly Visage": {
             "name": "Cape au Visage bienveillant",
             "description": {
-                "public": "<p>Une cape noire sans signe distinctif, qui semble pouvoir s’accorder avec presque n’importe quelle tenue.</p>",
-                "private": "<p>Tant qu’elle est équipée et <strong>Investie</strong>, son porteur gagne l’action <strong>Visage bienveillant</strong> et bénéficie d’un bonus à tous les tests de <strong>Diplomatie</strong> dépendant du niveau d’enchantement de l’objet.</p><ul><li><p><strong>Enchantement mineur</strong> : <strong>+1 Faveur</strong></p></li><li><p><strong>Enchantement majeur</strong> : <strong>+2 Faveurs</strong></p></li><li><p><strong>Enchantement légendaire</strong> : <strong>+3 Faveurs</strong></p></li></ul>"
+                "public": "<blockquote><p>Une cape noire sans signe distinctif, qui semble pouvoir s’accorder avec presque n’importe quelle tenue.</p></blockquote><p>Cette cape enchantée offre un bonus d'enchantement aux jets de compétence de <strong>Diplomatie</strong> et fournit la capacité d'assumer un <strong>Déguisement</strong> illusoire.</p>",
+                "private": "<p>Cet objet est présenté à titre d'exemple d'une Cape raffinée avec le préfixe @UUID[Compendium.crucible.affixes.ActiveEffect.diplomacySkill00]{Diplomatie} et le suffixe @UUID[Compendium.crucible.affixes.ActiveEffect.disguise00000000]{Déguisement}.</p>"
             },
             "actions": {
-                "kindlyVisage": {
-                    "name": "Visage bienveillant",
-                    "description": "<p>Une fois par repos, vous adoptez une apparence illusoire qui modifie aussi bien votre visage que votre tenue. L’illusion ne peut pas changer votre ascendance, mais peut altérer d’autres aspects de votre anatomie, y compris votre genre apparent. La cape elle-même ne change pas d’apparence et reste visible.</p><p>L’illusion persiste indéfiniment et peut être dissipée à volonté. Une fois activée, la cape ne peut pas produire une nouvelle illusion de cette manière avant que 24 heures ne se soient écoulées.</p>",
+                "affixDisguise": {
+                    "name": "Déguisement",
+                    "description": "<p>Une fois par repos, vous adoptez une apparence illusoire qui modifie aussi bien votre visage que votre tenue. L’illusion ne peut pas changer votre ascendance, mais peut altérer d’autres aspects de votre anatomie, y compris votre genre apparent. L'objet lui-même ne change pas d’apparence et reste visible.</p><p>L’illusion persiste indéfiniment et peut être dissipée à volonté. Une fois activé, cet objet ne peut pas produire une nouvelle illusion de cette manière avant que 24 heures ne se soient écoulées.</p>",
                     "effects": [
                         {
-                            "name": "Visage bienveillant"
+                            "name": "Déguisement"
                         }
                     ]
                 }
@@ -989,8 +992,8 @@
         "Luminary Band": {
             "name": "Anneau luminaire",
             "description": {
-                "public": "<p>Un anneau d’or finement gravé, serti d’une gemme ovale orange aux reflets scintillants.</p><p>Tant qu’il est équipé et <strong>Investi</strong>, cet anneau confère des Faveurs aux incantations de tout sort composé intégrant une <strong>Inflexion</strong>.</p><ul><li><p><strong>Enchantement mineur</strong> : <strong>+1 Faveur</strong></p></li><li><p><strong>Enchantement majeur</strong> : <strong>+2 Faveurs</strong></p></li><li><p><strong>Enchantement légendaire</strong> : <strong>+3 Faveurs</strong></p></li></ul>",
-                "private": "<p>Cet objet est présenté sous la forme d’un anneau, mais peut en réalité prendre l’apparence de tout autre type d’accessoire, comme une amulette, une cape, des brassards ou un autre bibelot.</p>"
+                "public": "<blockquote><p>Un anneau d’or finement gravé, serti d’une gemme ovale orange aux reflets scintillants.</p></blockquote><p>Cet anneau enchanté offre des faveurs aux actions <strong>Composées</strong> qui incluent une <strong>Inflexion</strong>.</p>",
+                "private": "<p>Cet objet est présenté à titre d'exemple d’un Anneau raffiné avec le préfixe @UUID[Compendium.crucible.affixes.ActiveEffect.luminary00000000]{Astral}.</p><p>Cet affixe peut être appliqué à n'importe quel accessoire et cet anneau pourrait être encore enchanté avec un suffixe de Palier 1.</p>"
             }
         },
         "Pen": {
@@ -1055,57 +1058,6 @@
                 }
             }
         },
-        "Spell Scroll (Legendary)": {
-            "name": "Parchemin de sort (Légendaire)",
-            "description": {
-                "public": "<p>Un parchemin de sort est un morceau de vélin ou de parchemin spécialisé sur lequel sont soigneusement incrustés les glyphes d'un ou plusieurs composantes de sorcellerie. Activer ce parchemin de sort confère temporairement à son lecteur une profonde familiarité avec ces composantes, comme s'il les connaissait depuis des années.</p><p>Les parchemins de sorts sont classés en trois catégories, selon leur niveau d'enchantement. Les parchemins les plus puissants peuvent contenir simultanément un plus grand nombre de composantes de sorcellerie.</p><ul><li><p><strong>Mineur</strong> : Peut contenir une seule composante de sorcellerie</p></li><li><p><strong>Majeur</strong> : Peut contenir deux composantes de sorcellerie</p></li><li><p><strong>Légendaire</strong> : Peut contenir trois composantes de sorcellerie</p></li></ul>"
-            },
-            "actions": {
-                "readScroll": {
-                    "name": "Lire un parchemin",
-                    "description": "<p>Lire ce parchemin de sort permet d'obtenir temporairement la connaissance de ses composantes de sorcellerie pendant 10 minutes.</p><p>Vous ne pouvez avoir qu'un seul effet de parchemin de sort actif à un moment donné. Lire un autre parchemin remplace tout effet courant.</p>",
-                    "effects": [
-                        {
-                            "name": "Lire un parchemin"
-                        }
-                    ]
-                }
-            }
-        },
-        "Spell Scroll (Major)": {
-            "name": "Parchemin de sort (Majeur)",
-            "description": {
-                "public": "<p>Un parchemin de sort est un morceau de vélin ou de parchemin spécialisé sur lequel sont soigneusement incrustés les glyphes d'un ou plusieurs composantes de sorcellerie. Activer ce parchemin de sort confère temporairement à son lecteur une profonde familiarité avec ces composantes, comme s'il les connaissait depuis des années.</p><p>Les parchemins de sorts sont classés en trois catégories, selon leur niveau d'enchantement. Les parchemins les plus puissants peuvent contenir simultanément un plus grand nombre de composantes de sorcellerie.</p><ul><li><p><strong>Mineur</strong> : Peut contenir une seule composante de sorcellerie</p></li><li><p><strong>Majeur</strong> : Peut contenir deux composantes de sorcellerie</p></li><li><p><strong>Légendaire</strong> : Peut contenir trois composantes de sorcellerie</p></li></ul>"
-            },
-            "actions": {
-                "readScroll": {
-                    "name": "Lire un parchemin",
-                    "description": "<p>Lire ce parchemin de sort permet d'obtenir temporairement la connaissance de ses composantes de sorcellerie pendant 10 minutes.</p><p>Vous ne pouvez avoir qu'un seul effet de parchemin de sort actif à un moment donné. Lire un autre parchemin remplace tout effet courant.</p>",
-                    "effects": [
-                        {
-                            "name": "Lire un parchemin"
-                        }
-                    ]
-                }
-            }
-        },
-        "Spell Scroll (Minor)": {
-            "name": "Parchemin de sort (Mineur)",
-            "description": {
-                "public": "<p>Un parchemin de sort est un morceau de vélin ou de parchemin spécialisé sur lequel sont soigneusement incrustés les glyphes d'un ou plusieurs composantes de sorcellerie. Activer ce parchemin de sort confère temporairement à son lecteur une profonde familiarité avec ces composantes, comme s'il les connaissait depuis des années.</p><p>Les parchemins de sorts sont classés en trois catégories, selon leur niveau d'enchantement. Les parchemins les plus puissants peuvent contenir simultanément un plus grand nombre de composantes de sorcellerie.</p><ul><li><p><strong>Mineur</strong> : Peut contenir une seule composante de sorcellerie</p></li><li><p><strong>Majeur</strong> : Peut contenir deux composantes de sorcellerie</p></li><li><p><strong>Légendaire</strong> : Peut contenir trois composantes de sorcellerie</p></li></ul>"
-            },
-            "actions": {
-                "readScroll": {
-                    "name": "Lire un parchemin",
-                    "description": "<p>Lire ce parchemin de sort permet d'obtenir temporairement la connaissance de ses composantes de sorcellerie pendant 10 minutes.</p><p>Vous ne pouvez avoir qu'un seul effet de parchemin de sort actif à un moment donné. Lire un autre parchemin remplace tout effet courant.</p>",
-                    "effects": [
-                        {
-                            "name": "Lire un parchemin"
-                        }
-                    ]
-                }
-            }
-        },
         "Steel-Jaw Trap": {
             "name": "Piège à mâchoire de fer",
             "description": {
@@ -1122,6 +1074,116 @@
                     "effects": [
                         {
                             "name": "Piège à mâchoire de fer"
+                        }
+                    ]
+                }
+            }
+        },
+        "Amulet": {
+            "name": "Amulette",
+            "description": {
+                "public": "<p>Une simple amulette suspendue à un simple cordon, attendant le toucher d'un enchanteur habile.</p>",
+                "private": "<p>Il s'agit d'un modèle d'accessoire de base destiné à être amélioré en qualité et enchanté avec des affixes.</p>"
+            }
+        },
+        "Belt": {
+            "name": "Ceinture",
+            "description": {
+                "public": "<p>Une simple ceinture en cuir avec une boucle métallique simple.</p>",
+                "private": "<p>Il s'agit d'un modèle d'accessoire de base destiné à être amélioré en qualité et enchanté avec des affixes.</p>"
+            }
+        },
+        "Bracer": {
+            "name": "Bracelet",
+            "description": {
+                "public": "<p>Un bracelet en cuir robuste qui protège l'avant-bras.</p>",
+                "private": "<p>Il s'agit d'un modèle d'accessoire de base destiné à être amélioré en qualité et enchanté avec des affixes.</p>"
+            }
+        },
+        "Cloak": {
+            "name": "Manteau",
+            "description": {
+                "public": "<p>Un simple manteau de voyage en laine non teinte.</p>",
+                "private": "<p>Il s'agit d'un modèle d'accessoire de base destiné à être amélioré en qualité et enchanté avec des affixes.</p>"
+            }
+        },
+        "Helm": {
+            "name": "Heaume",
+            "description": {
+                "public": "<p>Un casque basique à visière ouverte en cuir durci.</p>",
+                "private": "<p>Il s'agit d'un modèle d'accessoire de base destiné à être amélioré en qualité et enchanté avec des affixes.</p>"
+            }
+        },
+        "Net": {
+            "name": "Filet",
+            "description": {
+                "public": "<p>Ces fibres à tissage serré sont renforcées pour être utilisées au combat afin de piéger et d'emmêler même les ennemis les plus dangereux, les rendant vulnérables.</p>"
+            },
+            "actions": {
+                "net": {
+                    "name": "Jeté de filet",
+                    "description": "<p>La cible capturée par le filet lancé est @Condition[restrained] jusqu'à ce qu'elle puisse se libérer.</p>",
+                    "effects": [
+                        {
+                            "name": "Ficelé"
+                        }
+                    ]
+                }
+            }
+        },
+        "Ring": {
+            "name": "Anneau",
+            "description": {
+                "public": "<p>Une simple bague sans ornement, en métal ordinaire.</p>",
+                "private": "<p>Il s'agit d'un modèle d'accessoire de base destiné à être amélioré en qualité et enchanté avec des affixes.</p>"
+            }
+        },
+        "Spell Scroll (Fine)": {
+            "name": "Parchemin de sort (Raffiné)",
+            "description": {
+                "public": "<p>Un parchemin de sort est un morceau de vélin ou de parchemin spécialisé sur lequel sont soigneusement incrustés les glyphes d'un ou plusieurs composantes de sorcellerie. Activer ce parchemin de sort confère temporairement à son lecteur une profonde familiarité avec ces composantes, comme s'il les connaissait depuis des années.</p><p>Le nombre de composantes de sorcellerie qu'un parchemin peut contenir dépend de la qualité de sa fabrication.</p><ul><li><p><strong>Raffiné</strong> : Ne peut contenir qu'une seule composante de sorcellerie</p></li><li><p><strong>Supérieure</strong> : Peur contenir deux composantes de sorcellerie</p></li><li><p><strong>Chef-d’œuvre</strong> : Peur contenir trois composantes de sorcellerie</p></li></ul>"
+            },
+            "actions": {
+                "readScroll": {
+                    "name": "Lire un parchemin",
+                    "description": "<p>Lire ce parchemin de sort permet d'obtenir temporairement la connaissance de ses composantes de sorcellerie pendant 10 minutes.</p><p>Vous ne pouvez avoir qu'un seul effet de parchemin de sort actif à un moment donné. Lire un autre parchemin remplace tout effet courant.</p>",
+                    "effects": [
+                        {
+                            "name": "Lire un parchemin"
+                        }
+                    ]
+                }
+            }
+        },
+        "Spell Scroll (Masterwork)": {
+            "name": "Parchemin de sort (Chef-d’œuvre)",
+            "description": {
+                "public": "<p>Un parchemin de sort est un morceau de vélin ou de parchemin spécialisé sur lequel sont soigneusement incrustés les glyphes d'un ou plusieurs composantes de sorcellerie. Activer ce parchemin de sort confère temporairement à son lecteur une profonde familiarité avec ces composantes, comme s'il les connaissait depuis des années.</p><p>Le nombre de composantes de sorcellerie qu'un parchemin peut contenir dépend de la qualité de sa fabrication.</p><ul><li><p><strong>Raffiné</strong> : Ne peut contenir qu'une seule composante de sorcellerie</p></li><li><p><strong>Supérieure</strong> : Peur contenir deux composantes de sorcellerie</p></li><li><p><strong>Chef-d’œuvre</strong> : Peur contenir trois composantes de sorcellerie</p></li></ul>"
+            },
+            "actions": {
+                "readScroll": {
+                    "name": "Lire un parchemin",
+                    "description": "<p>Lire ce parchemin de sort permet d'obtenir temporairement la connaissance de ses composantes de sorcellerie pendant 10 minutes.</p><p>Vous ne pouvez avoir qu'un seul effet de parchemin de sort actif à un moment donné. Lire un autre parchemin remplace tout effet courant.</p>",
+                    "effects": [
+                        {
+                            "name": "Lire un parchemin"
+                        }
+                    ]
+                }
+            }
+        },
+        "Spell Scroll (Superior)": {
+            "name": "Parchemin de sort (Supérieur)",
+            "description": {
+                "public": "<p>Un parchemin de sort est un morceau de vélin ou de parchemin spécialisé sur lequel sont soigneusement incrustés les glyphes d'un ou plusieurs composantes de sorcellerie. Activer ce parchemin de sort confère temporairement à son lecteur une profonde familiarité avec ces composantes, comme s'il les connaissait depuis des années.</p><p>Le nombre de composantes de sorcellerie qu'un parchemin peut contenir dépend de la qualité de sa fabrication.</p><ul><li><p><strong>Raffiné</strong> : Ne peut contenir qu'une seule composante de sorcellerie</p></li><li><p><strong>Supérieure</strong> : Peur contenir deux composantes de sorcellerie</p></li><li><p><strong>Chef-d’œuvre</strong> : Peur contenir trois composantes de sorcellerie</p></li></ul>"
+            },
+            "actions": {
+                "readScroll": {
+                    "name": "Lire un parchemin",
+                    "description": "<p>Lire ce parchemin de sort permet d'obtenir temporairement la connaissance de ses composantes de sorcellerie pendant 10 minutes.</p><p>Vous ne pouvez avoir qu'un seul effet de parchemin de sort actif à un moment donné. Lire un autre parchemin remplace tout effet courant.</p>",
+                    "effects": [
+                        {
+                            "name": "Lire un parchemin"
                         }
                     ]
                 }

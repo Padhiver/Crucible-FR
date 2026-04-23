@@ -19,7 +19,7 @@
         "Dodge": "Esquive",
         "Willpower": "Volonté",
         "One-Handed": "À une main",
-        "Resistances": "Résistance",
+        "Resistances": "Résistances",
         "Utility": "Utilitaire",
         "Finesse": "Finesse",
         "Thrown": "Lancer",
@@ -64,10 +64,6 @@
         "Death Proficiency": {
             "name": "Maîtrise de la Mort",
             "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Mort. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Énerver</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
-        },
-        "Earth  Proficiency": {
-            "name": "Maîtrise de la Terre",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Terre. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Façonner</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "Frost Proficiency": {
             "name": "Maîtrise du Givre",
@@ -550,7 +546,7 @@
             }
         },
         "Dustbinder": {
-            "name": "Géomancien",
+            "name": "Terramancien",
             "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Terre. Les sorts utilisant cette Rune causent la condition @Condition[corroding] sur les Coups critiques.</p><p>L'effet Corrodé dure <strong>3 Rounds</strong> et inflige votre score de <strong>Sagesse</strong> en dégâts d'<strong>Acide</strong> à la <strong>Santé</strong> chaque Round.</p>"
         },
         "Enchanting Journeyman": {
@@ -685,7 +681,7 @@
         },
         "Focused Anticipation": {
             "name": "Anticipation focalisée",
-            "description": "<p>L'anticipation mène à l'action décisive. Lorsque vous avez le score d'<strong>Initiative</strong> le plus élevé pour un Round de combat, vous gagnez <strong>+1 Focus</strong>.</p>"
+            "description": "L'anticipation mène à l'action décisive. Lorsque vous avez le score d'<strong>Initiative</strong> le plus élevé pour un Round de combat, vous gagnez <strong>+1 Focus</strong>.<p></p>"
         },
         "Fulcrum": {
             "name": "Pivot",
@@ -1003,7 +999,7 @@
             "actions": {
                 "lunge": {
                     "name": "Fente",
-                    "description": "<p>Vous vous élancez avec agilité, portant un coup d'une rapidité soudaine et inattendue pour effectuer une <strong>Frappe</strong> avec une arme de <strong>Finesse</strong> contre une cible unique, à une portée accrue de <strong>+2 pieds</strong>.</p><p>L'attaque est <strong>Difficile</strong>, mais vous ne quittez pas votre position actuelle et elle ne provoque pas de Désengagement.</p>"
+                    "description": "<p>Vous vous élancez avec agilité, portant un coup d'une rapidité soudaine et inattendue pour effectuer une <strong>Frappe</strong> avec une arme basée sur la <strong>Dextérité</strong> contre une cible unique, à une portée accrue de <strong>+2 pieds</strong>.</p><p>L'attaque est <strong>Difficile</strong>, mais vous ne quittez pas votre position actuelle et elle ne provoque pas de Désengagement.</p>"
                 }
             }
         },
@@ -1332,7 +1328,7 @@
         },
         "Rune: Control": {
             "name": "Rune : Contrôle",
-            "description": "<p>La force ordonnée de la discipline et de la permanence. La Rune de Contrôle gouverne la pensée, la raison et la persistance.</p><p>La Rune de Contrôle évolue avec l'<strong>Intellect</strong>, cible la <strong>Volonté</strong>, et inflige des dégâts <strong>Psychiques</strong> au <strong>Moral</strong>. Elle est opposée par la rune chaotique de <strong>Kinésie</strong>.</p>",
+            "description": "<p>La force ordonnée de la discipline et de la permanence. La Rune de Contrôle gouverne la pensée, la raison et la persistance.</p><p>La Rune de Contrôle évolue avec la <strong>Sagesse</strong>, cible la <strong>Volonté</strong>, et inflige des dégâts <strong>Psychiques</strong> au <strong>Moral</strong>. Elle est opposée par la rune chaotique de <strong>Kinésie</strong>.</p>",
             "actions": {
                 "motivate": {
                     "name": "Motiver",
@@ -1362,7 +1358,7 @@
         },
         "Rune: Flame": {
             "name": "Rune : Flamme",
-            "description": "<p>La force chaotique de l'énergie élémentaire et thermique. La Rune de Flamme gouverne le feu et la chaleur.</p><p>La Rune de Flamme évolue avec l'Intellect, cible le <strong>Réflexe</strong>, et inflige des dégâts de <strong>Feu</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Givre</strong>.</p>",
+            "description": "<p>La force chaotique de l'énergie élémentaire et thermique. La Rune de Flamme gouverne le feu et la chaleur.</p><p>La Rune de Flamme évolue avec l' <strong>Intellect</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts de <strong>Feu</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Givre</strong>.</p>",
             "actions": {
                 "enkindle": {
                     "name": "Allumer",
@@ -1847,7 +1843,7 @@
         },
         "Weak Points": {
             "name": "Points faibles",
-            "description": "Vous identifiez des moments d'opportunité pour frapper les points faibles d'un ennemi. Lors de l'attaque d'une cible <strong>Distraite</strong>, <strong>Débordée</strong> ou <strong>Exposée</strong> en utilisant une arme de Finesse, vous gagnez +2 dégâts à toute Frappe."
+            "description": "<p>Vous identifiez des moments d'opportunité pour frapper les points faibles d'un ennemi. Lors de l'attaque d'une cible @Condition[unaware], @Condition[flanked], ou @Condition[exposed] en utilisant une arme basée sur la <strong>Dextérité</strong>, vous gagnez +2 dégâts à toute Frappe.</p>"
         },
         "Wilderness Adept": {
             "name": "Nature : Adepte",
@@ -1993,6 +1989,77 @@
         "Deft Grip": {
             "description": "Votre prise sur votre armement est ferme et inflexible. Vous pouvez effectuer des Actions qui nécessitent une main libre tout en maniant une arme à deux mains de mêlée.",
             "name": "Prise habile"
+        },
+        "Adrenaline": {
+            "name": "Adrénaline",
+            "description": "<p>La douleur aiguise votre concentration. Une fois par round, lorsque vous subissez des dégâts à la <strong>Santé</strong> provenant d'une attaque, vous obtenez <strong>+1 Focus</strong>.</p>"
+        },
+        "Armor Crusher": {
+            "name": "Broyeur d'armure",
+            "description": "<p>Vous maîtrisez l'art de frapper des adversaires en armure avec une telle force que l'armure elle-même devient une arme contre eux.</p>",
+            "actions": {
+                "armorCrusher": {
+                    "name": "Broyeur d'armure",
+                    "description": "<p>Vous réalisez une <strong>Frappe</strong> à mains nues contre un ennemi proche. Si l'attaque résulte en un <strong>Coup superficiel</strong>, vous dépensez <strong>1 Focus</strong> si possible, pour infliger un bonus aux dégâts égal à votre score de <strong>Robustesse</strong>.</p>"
+                }
+            }
+        },
+        "Armored Instinct": {
+            "name": "Instinct blindé",
+            "description": "<p>Vous orientez instinctivement votre corps pour absorber le plus gros des coups déviés. Lorsqu'une attaque contre vous résulte en un <strong>Coup superficiel</strong>, vous obtenez <strong>+1 Resistance</strong> contre les dégâts subis.</p>"
+        },
+        "Battle-Worn": {
+            "name": "Repos du guerrier",
+            "description": "<p>Votre corps a subi tant de blessures qu'il a appris à se réparer avec une efficacité remarquable. Lorsque vous effectuez une action de <strong>Repos</strong>, vous recouvrez un nombre de <strong>Lésions</strong> supplémentaires égal à la moitié de votre score de <strong>Robustesse</strong> (arrondi à l'inférieur).</p><h3 class=\"divider\">Notes de Playtest</h3><p>Ce talent n'est pas encore automatisé. Appliquez la récupération des lésions supplémentaires manuellement en vous reposant.</p>"
+        },
+        "Defiant Will": {
+            "description": "<p>À mesure que votre corps s'affaiblit, votre esprit s'endurcit. Vous obtenez un bonus de défense de <strong>Volonté</strong> égal à votre score de <strong>Robustesse</strong> dépendant de la proportion de <strong>Santé</strong> que vous avez perdu.</p>",
+            "name": "Volonté provocante"
+        },
+        "Earth Proficiency": {
+            "name": "Maîtrise de la Terre",
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Terre. Vous obtenez un <strong>Bonus de compétence de +1</strong> pour les sorts utilisant cette Rune.</p><h3 class=\"divider\">Notes de Playtest</h3><p> Ce talent permettra également éventuellement d'améliorer l'action <strong>Façonner</strong>, augmentant son efficacité ou incluant de nouvelles options quant à son utilisation.</p>"
+        },
+        "Evasive Armor": {
+            "description": "<p>Vous êtes suffisamment rapide pour encaisser les coups et les réceptionner sur les points les plus résistants de votre armure. Toute défense de <strong>Réflexe</strong> en surplus de votre défense <strong>Physique</strong> est ajoutée en tant que bonus d'<strong>Armure</strong>.</p>",
+            "name": "Armure évasive"
+        },
+        "Headbutt": {
+            "name": "Coup de boule",
+            "description": "<p>Vous pouvez porter un coup brutal à courte portée avec votre tête, prenant vos adversaires par surprise.</p>",
+            "actions": {
+                "headbutt": {
+                    "name": "Coup de boule",
+                    "description": "<p>Effectuez une <strong>Frappe</strong> à mains nues contre la défense de <strong>Fortitude</strong> d'un ennemi adjacent. Si votre <strong>Initiative</strong> est supérieure à celle de votre cible, vous obtenez <strong>+1 Faveur</strong> à cette attaque.</p><p>L'attaque est <strong>Difficile</strong> et n'inflige que des dégâts <strong>Réduits</strong>, mais sur une réussite, elle inflige la condition @Condition[staggered] pendant un round.</p><p>Cette action utilise toujours une arme à mains nues, même si vos emplacements d'arme sont occupés.</p>",
+                    "effects": [
+                        {
+                            "name": "Coup de boule"
+                        }
+                    ]
+                }
+            }
+        },
+        "Impenetrable Guard": {
+            "name": "Garde impénetrable",
+            "description": "<p>Vos défenses déstabilisent les attaquants qui peinent à trouver une faille dans votre garde. Lorsque la <strong>Frappe</strong> d'un ennemi contre vous résulte en un <strong>Blocage</strong> ou un <strong>Coup superficiel</strong>, cet ennemi souffre de <strong>1 Fléau</strong> sur sa prochaine Frappe contre vous.</p>"
+        },
+        "Interpose": {
+            "name": "Interposer",
+            "description": "<p>Vous êtes prêt à vous jeter dans la mêlée pour protéger vos alliés, vous exposant au danger à leur place.</p>",
+            "actions": {
+                "interpose": {
+                    "name": "Interposer",
+                    "description": "<p>Par une <strong>Réaction</strong> lorsqu'un allié adjacent est touché, même superficiellement, par une attaque à cible unique ciblant sa <strong>Défense physique</strong>, vous pouvez vous Interposer pour devenir la cible de cette attaque.</p><p>L'attaque est neutralisée et réévaluée contre votre propre <strong>Défense physique</strong> utilisant le même jet de dés que l'attaque originelle. Les conséquences de l'attaque sont résolues en fonction de ce nouveau résultat avec vous en tat que cible.</p>"
+                }
+            }
+        },
+        "Iron Resolve": {
+            "name": "Résolution de fer",
+            "description": "<p>Votre résistance physique vous rend trop robuste pour être profondément affecté par un coup puissant. Le seuil de succès critique pour les <strong>Frappes</strong> contre vous est augmenté de +1, vous rendant plus difficile à toucher avec un critique.</p>"
+        },
+        "Never Yield": {
+            "description": "<p>Votre détermination vous empêche de laisser les limites de votre corps vous ralentir. En étant <strong>Affaibli</strong>, votre pénalité de points d'action est réduite de -2 à -1.</p>",
+            "name": "Ne jamais céder"
         }
     }
 }

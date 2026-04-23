@@ -150,6 +150,14 @@
         "Ultra Drake": {
             "name": "Ultra drake",
             "description": "<p>Drakes adultes qui sont les super-prédateurs de leur espèce.</p>"
+        },
+        "Geomancer": {
+            "name": "Géomancien",
+            "description": "<p>Mages spécialistes des runes de Terre et de Flamme.</p>"
+        },
+        "Herd Beast": {
+            "description": "<p>Bovins, bêtes de somme et autres animaux de proie qui se regroupent en troupeaux.</p>",
+            "name": "Bête de troupeau"
         }
     }
 }

@@ -43,7 +43,7 @@
         "Name": "Defend"
       },
       "Delay": {
-        "Description": "You delay your action until a later point in the Combat round. Choose an Initiative between 1 and the Initiative value of the combatant after you. You will act at this new Initiative value. You may only delay your turn once per round.",
+        "Description": "You delay your action until a later point in the Combat round. Choose an Initiative between 1 and one less than your current Initiative. You will act at this new Initiative value, and if other combatants share that value you will act before them. You may only delay your turn once per round.",
         "Name": "Delay"
       },
       "Investiture": {
@@ -478,7 +478,7 @@
     "ChooseWeaponHint": "You may choose which weapon to use for this Action.",
     "Condition": "Condition",
     "Confirmed": "Confirmed",
-    "DelayHint": "Choose an initiative value between 1 and {maximum} when you wish to act.",
+    "DelayHint": "Choose an Initiative between 1 and {maximum} at which to act. See @UUID[Compendium.crucible.rules.JournalEntry.QhZgmBrdLAGwYy5c.JournalEntryPage.DPrsFbPo3tD7TJ5g]{Initiative and Turn Order} for how delayed Initiative interacts with tiebreaking.",
     "DelayLabel": "Delayed Initiative",
     "DelayTitle": "Delay Turn",
     "DurationRounds": "{value}R",
@@ -556,6 +556,7 @@
       "Slowed": "Slowed",
       "Staggered": "Staggered",
       "Stunned": "Stunned",
+      "Suffocating": "Suffocating",
       "Unaware": "Unaware",
       "Weakened": "Weakened"
     }
@@ -1284,6 +1285,7 @@
     }
   },
   "CONTROLS": {
+    "CrucibleForcedMovement": "Forced Movement",
     "VisualizeFlanking": "Visualize Flanking"
   },
   "CRUCIBLE": {
@@ -1477,6 +1479,30 @@
       "GemConjuredFlameShoddy": "A Shoddy quality Gem of Conjured Flame fails to summon any elemental.",
       "NoLanternOil": "You must have a unit of Lantern Oil in your inventory to light a lantern.",
       "RestRecoverIncapacitated": "You may not Rest or Recover while Dead or Insane."
+    }
+  },
+  "HAZARD": {
+    "Hazard": "Hazard",
+    "UseHazard": "Use Hazard",
+    "WindowTitle": "Hazard: {name}",
+    "CONFIG": {
+      "Title": "Hazard Configuration",
+      "Name": "Name",
+      "Danger": "Danger Level",
+      "Defense": "Target Defense",
+      "Damage": "Damage Type",
+      "Tags": "Action Tags"
+    },
+    "TARGETS": {
+      "Title": "Affected Targets",
+      "Hint": "Drop tokens or actors here, or click the party button to add party members.",
+      "Add": "Add Target",
+      "Remove": "Remove Target",
+      "Clear": "Clear All",
+      "Party": "Add Party"
+    },
+    "WARNINGS": {
+      "GMOnly": "Only the GM can configure and roll hazards."
     }
   },
   "ITEM": {
@@ -2327,6 +2353,10 @@
           "description": "Move a distance up to your Stride attribute per Action.",
           "label": "Walk"
         }
+      },
+      "COST": {
+        "Forced": "Forced",
+        "Impossible": "Impossible"
       }
     }
   },

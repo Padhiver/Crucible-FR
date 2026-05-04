@@ -123,7 +123,7 @@
             "actions": {
                 "curseAtrophy": {
                     "name": "Malédiction de l'atrophie",
-                    "description": "<p>Touchez la cible pour l'affliger d'une malédiction débilitante qui réduit de façon permanente sa <strong>Force </strong>de 2.</p>",
+                    "description": "<p>Touchez la cible pour l'affliger d'une malédiction débilitante qui réduit de façon permanente sa <strong>Force</strong> de 2.</p>",
                     "effects": [
                         {
                             "name": "Malédiction de l'atrophie"

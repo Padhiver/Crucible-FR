@@ -235,7 +235,11 @@
             },
             "ThrowWeapon": {
                 "Name": "Lancer une arme",
-                "Description": "Lancez votre arme de mêlée équipée pour Frapper une cible proche. L'attaque souffre de +2 <strong>Fléaux</strong> et l'arme devient <strong>Lâchée</strong>."
+                "Description": "Lancez votre arme de mêlée équipée pour Frapper une cible proche. L'arme devient <strong>Lâchée</strong>, et l'attaque souffre de +2 <strong>Fléaux</strong> si l'arme ne possède pas la propriété <strong>Lancer</strong>."
+            },
+            "Investiture": {
+                "Description": "Consacrez du temps hors combat à vous harmoniser avec vos objets magiques équipés, afin qu'ils soient Investis.",
+                "Name": "Investiture"
             }
         },
         "EFFECT_RESULT_TYPES": {
@@ -433,7 +437,7 @@
             "CannotSpendFocus": "{name} ne peut pas dépenser de Focus en étant actuellement {status} !",
             "CannotTargetSelf": "Vous ne pouvez pas vous cibler vous-même avec cette Action !",
             "CannotThrow": "Vous ne pouvez pas lancer cette arme.",
-            "CannotUse": "{name} ne remplit pas les pré-requis pour utiliser {action} : {reason}",
+            "CannotUse": "{name} ne remplit pas les pré-requis pour utiliser {action}.",
             "DirectMovementOnly": "Cette action nécessite un déplacement direct en ligne droite, sans points intermédiaires.",
             "IncorrectTargets": "Vous ne pouvez désigner qu'un maximum de {number} cibles de type {type} pour l'action {action} !",
             "InvalidTarget": "Vous devez désigner au moins une cible de type {type} pour l'action {action} !",
@@ -474,7 +478,10 @@
                 "few": "{name} doit avoir {hands} mains de libre pour utiliser {action} !",
                 "many": "{name} doit avoir {hands} mains de libre pour utiliser {action} !"
             },
-            "AuraNoToken": "Vous ne pouvez pas utiliser une action de type Aura sans qu'il y ait un token sur la scène !"
+            "AuraNoToken": "Vous ne pouvez pas utiliser une action de type Aura sans qu'il y ait un token sur la scène !",
+            "CannotUseReason": "{name} ne remplit pas les pré-requis pour utiliser {action} : {reason}",
+            "InvalidTargetsGeneric": "Cibles invalides pour cette action !",
+            "NoViewedScene": "Une scène visualisée est nécessaire afin d'acquérir des cibles pour cette action."
         },
         "ChooseWeaponLabel": "Arme",
         "ChooseWeaponHint": "Choisissez l'arme à utiliser pour cette Action.",
@@ -485,7 +492,12 @@
         "PlanRegion": "Placer une région",
         "RequiresMovement": "Vous devez établir un déplacement avant de pouvoir utiliser cette action.",
         "RequiresRegion": "Vous devez placer une Région avant de pouvoir utiliser cette action.",
-        "SkillCheckGeneric": "Test de compétence"
+        "SkillCheckGeneric": "Test de compétence",
+        "SUMMARY": {
+            "Investiture": "Investiture",
+            "ItemInvested": "Investi",
+            "ItemDivested": "Non-investi"
+        }
     },
     "ACTOR": {
         "FIELDS": {
@@ -785,7 +797,7 @@
                 "hint": "Une chaîne d'identifiant utilisée pour faire référence de manière unique à cette Ascendance dans les étiquettes, les actions ou d'autres éléments de l'interface utilisateur. Cet identifiant doit être alphanumérique sans espaces ni caractères spéciaux."
             },
             "movement": {
-                "label": "Déplacement et stature",
+                "label": "Déplacement",
                 "size": {
                     "label": "Taille",
                     "hint": "La taille de cette Ascendance en nombre de cases."
@@ -832,13 +844,20 @@
                     "label": "Icône de l'Ascendance",
                     "hint": "Une petite icône utilisée pour représenter cette Ascendance dans l'interface utilisateur."
                 }
+            },
+            "characteristics": {
+                "label": "Caractéristiques d'Ascendance",
+                "temperature.hint": "Température corporelle de cette Ascendance, tiède par défaut.",
+                "temperature.label": "Température corporelle"
             }
         },
         "SHEET": {
             "Browse": "Parcourir les Ascendances",
             "Choose": "Choisir l'Ascendance",
             "Clear": "Effacer l'Ascendance",
-            "Identity": "Identité"
+            "Identity": "Identité",
+            "Physiology": "Physiologie",
+            "TemperatureBlank": "Défaut ({température})"
         },
         "WARNINGS": {
             "Abilities": "Les Caractéristiques principale et secondaire d'une Ascendance ne peuvent pas être les mêmes.",
@@ -1330,7 +1349,8 @@
             "Generate": "Générer",
             "GMOnly": "Seul un Maître du jeu peut générer des objets aléatoires.",
             "Flavor": "Objet aléatoire : {type}"
-        }
+        },
+        "QuantityNone": "Aucun"
     },
     "ITEM.EnchantmentMundane": "Trivial",
     "ITEM.EnchantmentMinor": "Mineur",
@@ -1904,7 +1924,9 @@
             "characteristics": {
                 "label": "Caractéristiques de Taxonomie",
                 "equipment.label": "Peut utiliser de l'équipement",
-                "spells.label": "Peut lancer des sorts"
+                "spells.label": "Peut lancer des sorts",
+                "temperature.hint": "Température corporelle des créatures de cette Taxonomie. Si ce champ est laissé vide, la température par défaut sera celle de la catégorie de créature choisie.",
+                "temperature.label": "Température corporelle"
             }
         },
         "CATEGORIES": {
@@ -1931,7 +1953,8 @@
             "Choose": "Choisir une Taxonomie",
             "Clear": "Effacer la Taxonomie",
             "Physiology": "Physiologie",
-            "Stature": "Stature de Taxonomie"
+            "Stature": "Stature de Taxonomie",
+            "TemperatureBlank": "Défaut ({température})"
         },
         "WARNINGS": {
             "InvalidAbilities": "La somme des valeurs de caractéristique initiale doit être égale à 12. Actuellement {sum}",
@@ -2427,6 +2450,21 @@
     },
     "HOOKS": {
         "NoModuleHooks": "Aucun hook de module n'est enregistré pour cet identifiant.",
-        "ToggleSource": "Basculer la Source"
+        "ToggleSource": "Basculer la Source",
+        "WARNINGS": {
+            "GemConjuredFlameShoddy": "Une Gemme de conjuration de flamme de qualité Bâclée ne permet pas d'invoquer d'élémentaire.",
+            "NoLanternOil": "Vous devez avoir une unité d'Huile pour lanterne dans votre inventaire pour allumer une lanterne.",
+            "RestRecoverIncapacitated": "Vous ne pouvez pas faire de Repos ou de Récupération si vous êtes Mort ou Dément."
+        }
+    },
+    "DETECTION_MODES": {
+        "ThermalVision": "Vision thermique"
+    },
+    "TEMPERATURE_TIERS": {
+        "Boiling": "Bouillant",
+        "Warm": "Chaud",
+        "Neutral": "Tiède",
+        "Cool": "Frais",
+        "Gelid": "Glacial"
     }
 }

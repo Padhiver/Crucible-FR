@@ -1972,7 +1972,7 @@
         },
         "Demolitionist": {
             "name": "Démolisseur",
-            "description": "<p>YVotre remarquable expertise en matière de munitions vous permet de les utiliser efficacement au milieu du chaos des combats. Chaque tour, votre première utilisation d'une <strong>Bombe</strong> a un coût réduit de <strong>-1 Action</strong>. </p><p>Vous n'êtes plus la cible de vos propres bombes, même si vous vous trouvez par ailleurs dans leur zone d'effet.</p>"
+            "description": "<p>Votre remarquable expertise en matière de munitions vous permet de les utiliser efficacement au milieu du chaos des combats. Chaque tour, votre première utilisation d'une <strong>Bombe</strong> a un coût réduit de <strong>-1 Action</strong>. </p><p>Vous n'êtes plus la cible de vos propres bombes, même si vous vous trouvez par ailleurs dans leur zone d'effet.</p>"
         },
         "Glyphweaving Journeyman": {
             "name": "Tissage de glyphe : Compagnon",

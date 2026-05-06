@@ -224,7 +224,7 @@
             "actions": {
                 "backstab": {
                     "name": "Frappe traîtresse",
-                    "description": "<p>Vous <strong>Frappez</strong>, avec l'arme de votre main principale, une créature <strong>Débordée</strong>, lui infligeant des dégâts <strong>Mortels</strong>.</p>",
+                    "description": "<p>Vous <strong>Frappez</strong> une cible <strong>Débordée</strong> avec votre arme, lui infligeant des dégâts <strong>Mortels</strong>.</p>",
                     "condition": "Vous attaquez une cible avec la condition Débordé."
                 }
             }
@@ -234,9 +234,9 @@
             "description": "<p>Vous pratiquez les traditions orales et musicales du conte héroïque pour inspirer du courage à vos alliés, démoraliser vos ennemis et trouver rapidement des solutions non conventionnelles aux problèmes.</p><p>Vous apprenez la <strong>Rune : Âme</strong> si vous ne la connaissez pas déjà. Lorsque vous restaurez le moral d'alliés en utilisant la Rune d'Âme, vous gagnez <strong>+2 Faveurs</strong> à votre jet.</p>",
             "actions": {
                 "laughingMatter": {
-                    "description": "<p>Lorsqu'un ennemi rate une attaque vous affectant vous ou un de vos alliés, vous créez une plaisanterie mordante ou une pantomime qui ridiculise ses faibles efforts.</p><p>Effectuez une attaque de compétence de <strong>Performance</strong> contre la <strong>Fortitude</strong> de la cible, lui infligeant des dégâts <strong>Psychiques</strong> au <strong>Moral</strong> sur un succès. De plus, sur une réussite, la cible souffre de 1 <strong>Fléau</strong> à tous ses jets jusqu'au début de son prochain tour.</p><p>La cible doit pouvoir vous voir et vous comprendre pour être affectée par cette capacité.</p>",
+                    "description": "<p>Lorsqu'une attaque ennemie ne parvient pas à infliger de dégâts ni à produire d'effet sur vous ou sur un allié, vous créez une plaisanterie mordante ou une pantomime qui ridiculise ses faibles efforts.</p><p>Effectuez une attaque de compétence de <strong>Performance</strong> contre la <strong>Fortitude</strong> de la cible, lui infligeant des dégâts <strong>Psychiques</strong> au <strong>Moral</strong> sur un succès. De plus, sur une réussite, la cible souffre de 1 <strong>Fléau</strong> à tous ses jets jusqu'au début de son prochain tour.</p><p>La cible doit pouvoir vous voir et vous comprendre pour être affectée par cette capacité.</p>",
                     "name": "Importance du rire",
-                    "condition": "Un ennemi ne parvient pas à vous affecter, vous ou un allié, avec une attaque.",
+                    "condition": "L'attaque d'un ennemi ne parvient pas à infliger de dégâts ni à produire d'effet sur vous ou sur un allié.",
                     "effects": [
                         {
                             "name": "Importance du rire"
@@ -2010,7 +2010,7 @@
         },
         "Battle-Worn": {
             "name": "Repos du guerrier",
-            "description": "<p>Votre corps a subi tant de blessures qu'il a appris à se réparer avec une efficacité remarquable. Lorsque vous effectuez une action de <strong>Repos</strong>, vous recouvrez un nombre de <strong>Lésions</strong> supplémentaires égal à la moitié de votre score de <strong>Robustesse</strong> (arrondi à l'inférieur).</p><h3 class=\"divider\">Notes de Playtest</h3><p>Ce talent n'est pas encore automatisé. Appliquez la récupération des lésions supplémentaires manuellement en vous reposant.</p>"
+            "description": "<p>Votre corps a subi tant de blessures qu'il a appris à se réparer avec une efficacité remarquable. Lorsque vous effectuez une action de <strong>Repos</strong>, vous recouvrez un nombre de <strong>Lésions</strong> supplémentaires égal à la moitié de votre score de <strong>Robustesse</strong> (arrondi à l'inférieur).</p>"
         },
         "Defiant Will": {
             "description": "<p>À mesure que votre corps s'affaiblit, votre esprit s'endurcit. Vous obtenez un bonus de défense de <strong>Volonté</strong> égal à votre score de <strong>Robustesse</strong> dépendant de la proportion de <strong>Santé</strong> que vous avez perdu.</p>",

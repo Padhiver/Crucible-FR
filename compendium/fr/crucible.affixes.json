@@ -20,7 +20,8 @@
         "Bonuses": "Bonus",
         "Runes": "Runes",
         "Conversion": "Conversion",
-        "Creature Bane": "Fléau des créatures"
+        "Creature Bane": "Fléau des créatures",
+        "Senses": "Sens"
     },
     "entries": {
         "Acid Conversion": {
@@ -286,9 +287,9 @@
             "adjective": "Flamme runique"
         },
         "Focusing": {
-            "name": "Concentration",
+            "name": "Focalisation",
             "description": "<p>Fournit l'action <strong>Restauration de focus</strong>, permettant au porteur de récupérer du <strong>Focus</strong> dans les moments difficiles. Le montant restauré dépend du <strong>Palier</strong> de ce préfixe.</p>",
-            "adjective": "Concentration",
+            "adjective": "Focalisation",
             "actions": {
                 "affixFocusing": {
                     "name": "Restauration de focus",
@@ -661,6 +662,17 @@
             "name": "Nature",
             "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les jets de compétence de <strong>Nature</strong> de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
             "adjective": "Survivaliste"
+        },
+        "Luminous": {
+            "name": "Lumineux",
+            "description": "<p>Confère l'action <strong>Activer l'illumination</strong>, permettant au porteur de projeter une lumière surnaturelle. Le rayon de cette lumière est proportionnel au <strong>Palier</strong> de cet affixe.</p>",
+            "adjective": "Lumineux",
+            "actions": {
+                "affixLuminous": {
+                    "name": "Activer l'illumination",
+                    "description": "<p>Vous prononcez le mot de commande et @ref[item.name]{l'objet} s'illumine d'une lueur stable et surnaturelle. Le rayon de lumière vive émise dépend du <strong>Palier</strong> de ce préfixe, avec un rayon supplémentaire de lumière tamisée s'étendant à une distance égale au-delà.</p><ul><li><p><strong>Palier 1 :</strong> 20 pieds de lumière vive, 40 pieds de lumière tamisée.</p></li><li><p><strong>Palier 2 :</strong> 40 pieds de lumière vive, 80 pieds de lumière tamisée.</p></li><li><p><strong>Palier 3 :</strong> 60 pieds de lumière vive, 120 pieds de lumière tamisée.</p></li></ul><p>La lumière persiste jusqu'à ce que vous désactiviez l'effet ou retiriez l'objet.</p>"
+                }
+            }
         }
     }
 }

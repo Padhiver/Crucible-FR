@@ -111,6 +111,14 @@
         "Wraith": {
             "name": "Âme-en-peine",
             "description": "<p>Les âmes-en-peine sont des morts-vivants incorporels, nés d'âmes ayant refusé la libération. Leur forme physique s'est entièrement dissoute dans l'ombre, ne laissant subsister que la rancœur et le chagrin animés. Ils ignorent les défenses conventionnelles ; leur contact ignore armures et parades pour attaquer directement les vulnérabilités psychiques et nécrotiques des vivants. Une exposition prolongée à la présence d'une âme-en-peine draine le moral autant que la santé, et ceux qui survivent à une rencontre ont souvent du mal à retrouver leur concentration et leur détermination.</p>"
+        },
+        "Automaton": {
+            "name": "Automate",
+            "description": "<p>Artificiels conçus comme un reflet des humanoïdes pour servir à l'accomplissement de tâches manuelles simples.</p>"
+        },
+        "Deep Behemoth": {
+            "name": "Béhémoth des profondeurs",
+            "description": "<p>Prédateurs souterrains colossaux au sommet de la chaîne alimentaire, monstruosités immenses qui tonnent dans les cavernes les plus profondes.</p>"
         }
     }
 }

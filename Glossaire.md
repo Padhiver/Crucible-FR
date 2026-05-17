@@ -246,6 +246,7 @@
 | Construct | Artificiel |
 | Dragon | Dragon |
 | Elemental | Élémentaire |
+| Elemental Sprite | Lutin élémentaire |
 | Fey | Fée |
 | Fiend | Fiélon |
 | Giant | Géant |

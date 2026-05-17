@@ -633,7 +633,7 @@
         },
         "Echolocation": {
             "name": "Écholocalisation",
-            "description": "<p>@ref[actor.name]{Cette créature} perçoit le monde grâce à l'émission d'impulsions sonores qui détectent les formes avec précision, ce qui lui permet de localiser les créatures en mouvement ou émettant un son, jusqu'à 18 mètres de distance, à condition qu'elles n'aient pas une couverture totale. Si la créature est @Condition[deafened], ce sens ne peut être utilisé.</p><p>Une créature détectée par l'@ref[name] est concidérée comme visible pour les actions nécessitant que vous voyiez votre cible.</p><h3 class=\"divider\">En développement</h3><p>Cela devrait à terme être géré par un <strong>Mode de détection</strong> spécialisé ajouté aux tokens qui possèdent ce talent.</p>"
+            "description": "<p>@ref[actor.name]{Cette créature} perçoit le monde grâce à l'émission d'impulsions sonores qui détectent les formes avec précision, ce qui lui permet de localiser les créatures en mouvement ou émettant un son, jusqu'à 18 mètres de distance, à condition qu'elles n'aient pas une couverture totale. Si la créature est @Condition[deafened], ce sens ne peut être utilisé.</p><p>Une créature détectée par l'@ref[name] est concidérée comme visible pour les actions nécessitant que vous voyiez votre cible.</p>"
         },
         "Lightning Burst": {
             "name": "Explosion de foudre",

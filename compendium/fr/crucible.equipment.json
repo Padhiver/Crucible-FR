@@ -36,7 +36,9 @@
         "Adventuring Gear": "Matériel d'aventurier",
         "Scrolls": "Parchemins",
         "Traps": "Pièges",
-        "Unarmored": "Sans armure"
+        "Unarmored": "Sans armure",
+        "Summons": "Invocations",
+        "Trinket": "Bibelot"
     },
     "entries": {
         "Blast Flask": {
@@ -48,7 +50,7 @@
             "actions": {
                 "blastFlask": {
                     "name": "Fiole explosive",
-                    "description": "<p>Vous allumez et lancez la @ref[name], infligeant des dégâts de <strong>Feu</strong> à tous les ennemis dans le rayon de l'explosion. Le rayon de l'<strong>Explosion</strong> dépend de la qualité de la bombe :</p><ul><li><p><strong>Baclée</strong> - 3 pieds</p></li><li><p><strong>Commune</strong> - 4 pieds</p></li><li><p><strong>Raffinée</strong> - 6 pieds</p></li><li><p><strong>Supérieure</strong> - 8 pieds</p></li><li><p><strong>Chef-d’œuvre</strong> - 10 pieds</p></li></ul>"
+                    "description": "<p>Vous allumez et lancez la @ref[name], infligeant des dégâts de <strong>Feu</strong> à tous les ennemis dans le rayon de l'explosion. Le rayon de l'<strong>Explosion</strong> dépend de la qualité de la bombe :</p><ul><li><p><strong>Bâclée</strong> - 3 pieds</p></li><li><p><strong>Commune</strong> - 4 pieds</p></li><li><p><strong>Raffinée</strong> - 6 pieds</p></li><li><p><strong>Supérieure</strong> - 8 pieds</p></li><li><p><strong>Chef-d’œuvre</strong> - 10 pieds</p></li></ul>"
                 }
             }
         },
@@ -73,7 +75,7 @@
             "name": "Amulette d'agilité",
             "description": {
                 "public": "<blockquote><p>Ce collier aux couleurs vives renferme une amulette en pierre qui brille d'une rune crépitant légèrement sous l'effet d'une résonance électrique. En le tenant, vous avez la sensation surréaliste que le monde autour de vous ralentit imperceptiblement.</p></blockquote><p>Cette amulette enchantée offre un bonus à la défense de <strong>Réflexe</strong> </p>",
-                "private": "<p>Cet objet est présenté à titre d'exemple d'une Amulette raffinée avec le suffixe @UUID[Compendium.crucible.affixes.ActiveEffect.nimbleness000000]{Agilité}.</p><p>Cet affixe peut être appliqué à n'importe quelle armure ou accessoire et cette amulette pourrait être encore enchantée avec un préfixe de Palier 1.</p>"
+                "private": "<p>Cet objet est présenté à titre d'exemple comme une Amulette raffinée avec le suffixe @UUID[Compendium.crucible.affixes.ActiveEffect.nimbleness000000]{Agilité}.</p><p>Cet affixe peut être appliqué à n'importe quelle armure ou accessoire et cette amulette pourrait être encore enchantée avec un préfixe de Palier 1.</p>"
             }
         },
         "Antitoxin": {
@@ -163,7 +165,7 @@
             "name": "Charme de ténacité",
             "description": {
                 "public": "<blockquote><p>Ce collier orné de breloques a un aspect rustique, mais en y regardant de plus près, vous découvrez un travail artisanal délicat. En le tenant, vous sentez votre respiration s'approfondir et les légères douleurs musculaires s'estomper.</p></blockquote><p>Ce charme enchanté offre un bonus à la défense de <strong>Fortitude</strong></p>",
-                "private": "<p>Cet objet est présenté à titre d'exemple d'un Charme raffiné avec le suffixe @UUID[Compendium.crucible.affixes.ActiveEffect.tenacity00000000]{Ténacité}.</p><p>cet affixe peut être appliqué sur n'importe quelle armure ou accessoire et ce charme pourrait être encore enchanté avec un préfixe de Palier 1.</p>"
+                "private": "<p>Cet objet est présenté à titre d'exemple comme un Charme raffiné avec le suffixe @UUID[Compendium.crucible.affixes.ActiveEffect.tenacity00000000]{Ténacité}.</p><p>cet affixe peut être appliqué sur n'importe quelle armure ou accessoire et ce charme pourrait être encore enchanté avec un préfixe de Palier 1.</p>"
             }
         },
         "Claw Hammer": {
@@ -356,6 +358,17 @@
             "name": "Lanterne",
             "description": {
                 "public": "<p>Une lanterne à huile ou illuminée magiquement qui projette une lumière vive dans un rayon de 20 pieds et une lumière tamisée dans un rayon de 40 pieds.</p>"
+            },
+            "actions": {
+                "lightLantern": {
+                    "name": "Allumer une lanterne",
+                    "description": "<p>Vous allumez la @ref[name], produisant un éclairage constant dans un large rayon. Cette action consume une unité de @UUID[Compendium.crucible.equipment.Item.lanternOil000000]{Huile pour lanterne} de votre inventaire ; la durée de combustion dépend de la qualité de l'huile consommée :</p><ul><li><p><strong>Bâclée</strong> - 1 heure</p></li><li><p><strong>Commune</strong> - 4 heures</p></li><li><p><strong>Raffinée</strong> - 12 heures</p></li><li><p><strong>Supérieure</strong> - 24 heures</p></li><li><p><strong>Chef-d’œuvre</strong> - 48 heures</p></li></ul>",
+                    "effects": [
+                        {
+                            "name": "Lanterne"
+                        }
+                    ]
+                }
             }
         },
         "Leather Armor": {
@@ -397,7 +410,7 @@
         "Periapt of Determination": {
             "description": {
                 "public": "<blockquote><p>Une élégante amulette en argent sertie de pierres précieuses bleues vous insuffle un sentiment de constance tandis que vous la serrez contre vous, prêt à affronter tous les défis.</p></blockquote><p>Ce périapte procure un bonus à la défense de <strong>Volonté</strong>.</p>",
-                "private": "<p>Cet objet est présenté à titre d'exemple d'un Périapte raffiné avec le suffixe @UUID[Compendium.crucible.affixes.ActiveEffect.determination000]{Détermination}.</p><p>Cet affixe peut être appliqué à n'importe quelle armure ou accessoire et ce périapte pourrait être encore enchanté avec un préfixe de Palier 1.</p>"
+                "private": "<p>Cet objet est présenté à titre d'exemple comme un Périapte raffiné avec le suffixe @UUID[Compendium.crucible.affixes.ActiveEffect.determination000]{Détermination}.</p><p>Cet affixe peut être appliqué à n'importe quelle armure ou accessoire et ce périapte pourrait être encore enchanté avec un préfixe de Palier 1.</p>"
             },
             "name": "Périapte de détermination"
         },
@@ -496,14 +509,14 @@
         "Ring of Evasion": {
             "description": {
                 "public": "<blockquote><p>Cette élégante bague ornée est légèrement glissante et difficile à prendre en main. Lorsqu'on la tient, elle vibre de façon presque imperceptible.</p></blockquote><p>Cet anneau enchanté procure un bonus à la défense d'<strong>Esquive</strong>.</p>",
-                "private": "<p>Cet objet est présenté à titre d'exemple d'un Anneau raffiné avec le suffixe @UUID[Compendium.crucible.affixes.ActiveEffect.evasion000000000]{Dérobade}.</p><p>Cet affixe peut être appliqué à n'importe quelle armure ou accessoire et cet anneau pourrait être encore enchanté avec un préfixe de Palier 1.</p>"
+                "private": "<p>Cet objet est présenté à titre d'exemple comme un Anneau raffiné avec le suffixe @UUID[Compendium.crucible.affixes.ActiveEffect.evasion000000000]{Dérobade}.</p><p>Cet affixe peut être appliqué à n'importe quelle armure ou accessoire et cet anneau pourrait être encore enchanté avec un préfixe de Palier 1.</p>"
             },
             "name": "Anneau d'évasion"
         },
         "Ring of Reinforcement": {
             "description": {
                 "public": "<blockquote><p>Cet anneau en acier reste toujours frais au toucher et donne l'impression d'être plus lourd qu'on ne le penserait compte tenu de sa finesse.</p></blockquote><p>Cet anneau enchanté procure un bonus à la défense d'<strong>Armure</strong>.</p>",
-                "private": "<p>Cet objet est présenté à titre d'exemple d'un Anneau raffiné avec le suffixe @UUID[Compendium.crucible.affixes.ActiveEffect.reinforcement000]{Renforcement}.</p><p>Cet affixe peut être appliqué à n'importe quelle armure ou accessoire et cet anneau pourrait être encore enchanté avec un préfixe de Palier 1.</p>"
+                "private": "<p>Cet objet est présenté à titre d'exemple comme un Anneau raffiné avec le suffixe @UUID[Compendium.crucible.affixes.ActiveEffect.reinforcement000]{Renforcement}.</p><p>Cet affixe peut être appliqué à n'importe quelle armure ou accessoire et cet anneau pourrait être encore enchanté avec un préfixe de Palier 1.</p>"
             },
             "name": "Anneau de renforcement"
         },
@@ -564,7 +577,7 @@
         "Spellband": {
             "description": {
                 "public": "<blockquote><p>Cette bague est composée d'une pierre opaque soigneusement sculptée en couches gracieuses et fluides, évoquant une esthétique ancienne. L'anneau sert de puissant focalisateur de sorts pour le porteur <strong>Investi</strong>.</p></blockquote><p>Cette bague enchantée procure la capacité de puiser dans une réserve supplémentaire de <strong>Focus</strong> dans les moment difficiles.</p>",
-                "private": "<p>Cet objet est présenté à titre d'exemple d'un Anneau raffiné avec le préfixe @UUID[Compendium.crucible.affixes.ActiveEffect.focusing00000000]{Focus de réserve}.</p><p>Cet affixz peut être appliqué à n'importe quel accessoire et cet anneau pourrait être encore enchanté avec un suffixe de Palier 1.</p>"
+                "private": "<p>Cet objet est présenté à titre d'exemple comme un Anneau raffiné avec le préfixe @UUID[Compendium.crucible.affixes.ActiveEffect.focusing00000000]{Focus de réserve}.</p><p>Cet affixe peut être appliqué à n'importe quel accessoire et cet anneau pourrait être encore enchanté avec un suffixe de Palier 1.</p>"
             },
             "name": "Bague de stockage",
             "actions": {
@@ -608,6 +621,17 @@
             "name": "Torche",
             "description": {
                 "public": "<p>Tissu imbibé d'huile fixé à l'extrémité d'une tige en os ou autre matériau ininflammable, cette torche constitue une source de lumière temporaire peu coûteuse, quoique peu efficace. Chaque torche peut brûler pendant une heure avant de devenir inutilisable.</p>"
+            },
+            "actions": {
+                "lightTorch": {
+                    "name": "Allumer une torche",
+                    "description": "<p>Vous allumer la @ref[name], produisant une illumination vacillante dans un large rayon pendant une heure. La torche est consumée par cette action et ne peut plus être utilisée, mais sa lumière persiste jusqu'à ce qu'elle s'éteigne complètement.</p>",
+                    "effects": [
+                        {
+                            "name": "Torche"
+                        }
+                    ]
+                }
             }
         },
         "Tower Shield": {
@@ -853,7 +877,7 @@
         "Ring of Gliding": {
             "description": {
                 "public": "<blockquote><p>Une bague élégante en acier bleu pâle, ornée d'un motif en spirale qui donne l'illusion d'une rotation lente et perpétuelle au doigt de celui ou celle qui la porte.</p></blockquote><p>Cette bague enchantée procure la capacité de planer latéralement lors d'une chute.</p>",
-                "private": "<p>Cet objet est présenté à titre d'exemple d'un anneau raffiné avec le préfixe @UUID[Compendium.crucible.affixes.ActiveEffect.gliding000000000]{Planeur}.</p><p>Cet affixe peut être appliqué à n'importe quel accessoire et cet anneau pourrait être encore enchanté avec un suffixe de Palier 1.</p>"
+                "private": "<p>Cet objet est présenté à titre d'exemple comme un Anneau raffiné avec le préfixe @UUID[Compendium.crucible.affixes.ActiveEffect.gliding000000000]{Planeur}.</p><p>Cet affixe peut être appliqué à n'importe quel accessoire et cet anneau pourrait être encore enchanté avec un suffixe de Palier 1.</p>"
             },
             "name": "Anneau de chute lente",
             "actions": {
@@ -975,7 +999,7 @@
             "name": "Cape au Visage bienveillant",
             "description": {
                 "public": "<blockquote><p>Une cape noire sans signe distinctif, qui semble pouvoir s’accorder avec presque n’importe quelle tenue.</p></blockquote><p>Cette cape enchantée offre un bonus d'enchantement aux jets de compétence de <strong>Diplomatie</strong> et fournit la capacité d'assumer un <strong>Déguisement</strong> illusoire.</p>",
-                "private": "<p>Cet objet est présenté à titre d'exemple d'une Cape raffinée avec le préfixe @UUID[Compendium.crucible.affixes.ActiveEffect.diplomacySkill00]{Diplomatie} et le suffixe @UUID[Compendium.crucible.affixes.ActiveEffect.disguise00000000]{Déguisement}.</p>"
+                "private": "<p>Cet objet est présenté à titre d'exemple comme une Cape raffinée avec le préfixe @UUID[Compendium.crucible.affixes.ActiveEffect.diplomacySkill00]{Diplomatie} et le suffixe @UUID[Compendium.crucible.affixes.ActiveEffect.disguise00000000]{Déguisement}.</p>"
             },
             "actions": {
                 "affixDisguise": {
@@ -993,7 +1017,7 @@
             "name": "Anneau luminaire",
             "description": {
                 "public": "<blockquote><p>Un anneau d’or finement gravé, serti d’une gemme ovale orange aux reflets scintillants.</p></blockquote><p>Cet anneau enchanté offre des faveurs aux actions <strong>Composées</strong> qui incluent une <strong>Inflexion</strong>.</p>",
-                "private": "<p>Cet objet est présenté à titre d'exemple d’un Anneau raffiné avec le préfixe @UUID[Compendium.crucible.affixes.ActiveEffect.luminary00000000]{Astral}.</p><p>Cet affixe peut être appliqué à n'importe quel accessoire et cet anneau pourrait être encore enchanté avec un suffixe de Palier 1.</p>"
+                "private": "<p>Cet objet est présenté à titre d'exemple comme un Anneau raffiné avec le préfixe @UUID[Compendium.crucible.affixes.ActiveEffect.luminary00000000]{Astral}.</p><p>Cet affixe peut être appliqué à n'importe quel accessoire et cet anneau pourrait être encore enchanté avec un suffixe de Palier 1.</p>"
             }
         },
         "Pen": {
@@ -1005,7 +1029,7 @@
         "Choking Ampoule": {
             "name": "Ampoule d'étouffement",
             "description": {
-                "public": "<p>Cette fiole de verre scellée contient un nuage tourbillonnant de gaz vert dense maintenu sous pression. Briser l'ampoule libère les vapeurs qu'elle renferme, provoquant un effet démoralisant et suffocant sur les créatures exposées.</p>"
+                "public": "<p>Cette fiole de verre scellée contient un nuage tourbillonnant de gaz vert dense maintenu sous pression. Briser l'ampoule libère les vapeurs qu'elle renferme, provoquant un effet démoralisant et asphyxiant sur les créatures exposées.</p>"
             },
             "actions": {
                 "chokingAmpoule": {
@@ -1101,9 +1125,9 @@
             }
         },
         "Cloak": {
-            "name": "Manteau",
+            "name": "Cape",
             "description": {
-                "public": "<p>Un simple manteau de voyage en laine non teinte.</p>",
+                "public": "<p>Une simple cape de voyage en laine non teinte.</p>",
                 "private": "<p>Il s'agit d'un modèle d'accessoire de base destiné à être amélioré en qualité et enchanté avec des affixes.</p>"
             }
         },
@@ -1188,6 +1212,114 @@
                     ]
                 }
             }
+        },
+        "Disguise Toolkit": {
+            "name": "Kit de déguisement",
+            "description": {
+                "public": "<p>Une trousse en bois recouverte de cuir contenant un miroir à main, des morceaux de tissu soigneusement triés, des cosmétiques, des teintures, des perruques, de la fausse barbe, des bijoux, des adhésifs hypoallergéniques et d'autres fournitures de déguisement conçues pour aider une personne à masquer son apparence.</p>"
+            }
+        },
+        "Electrocharge Ampoule": {
+            "description": {
+                "public": "<p>Un tube de verre scellé, rempli d'un liquide jaune, explose lorsqu'il se brise, créant une décharge électrique soudaine.</p>",
+                "private": "<p></p><p>Principalement utilisés pour alimenter de petites machines électromécaniques pendant de courtes périodes, ces récipients alchimiques sont relativement instables et réagissent mal au contact de l'air, ce qui en fait des explosifs improvisés utiles, bien qu'imprévisibles. Combinés en quantité suffisante et de manière appropriée, ils peuvent également alimenter des appareils plus importants et libérer une énergie électrique encore plus grande.</p>"
+            },
+            "name": "Ampoule de charge électrique",
+            "actions": {
+                "electrochargeAmpoule": {
+                    "name": "Ampoule de charge électrique",
+                    "description": "<p>Vous lancez l'@ref[name], infligeant des dégâts amoindris d'<strong>Électricité</strong> à tous les ennemis dans le rayon de la décharge et les laissant @Condition[staggered] brièvement. Le rayon de la <strong>Décharge</strong> dépend de la qualité de la bombe :</p><ul><li><p><strong>Bâclée</strong> - 3 pieds</p></li><li><p><strong>Commune</strong> - 4 pieds</p></li><li><p><strong>Raffinée</strong> - 6 pieds</p></li><li><p><strong>Supérieure</strong> - 8 pieds</p></li><li><p><strong>Chef-d’œuvre</strong> - 10 pieds</p></li></ul>",
+                    "effects": [
+                        {
+                            "name": "Ampoule de charge électrique"
+                        }
+                    ]
+                }
+            }
+        },
+        "Focusing Pearl": {
+            "name": "Perle de focalisation",
+            "description": {
+                "public": "<blockquote><p>Une petite perle d'un bleu éclatant, agréablement fraîche au toucher quelle que soit la température ambiante.</p></blockquote><p>Cette perle enchantée offre à son porteur l'action <strong>Restauration de focus</strong>, constituant une réserve supplémentaire de <strong>Focus</strong> qui peut être utilisée dans les moments difficiles.</p>",
+                "private": "<p>Cet objet est présenté à tire d'exemple comme une Perle raffinée avec le préfixe @UUID[Compendium.crucible.affixes.ActiveEffect.focusing00000000]{Focalisation}.</p><p>Cet affixe peut être appliqué à n'importe quel accessoire et cette perle pourrait être encore enchantée avec un suffixe de Palier 1.</p>"
+            },
+            "actions": {
+                "affixFocusing": {
+                    "name": "Restauration de focus",
+                    "description": "<p>En cas de difficulté, vous pouvez puiser dans une réserve supplémentaire de <strong>Focus</strong> depuis cet objet. Le montant de Focus restauré dépend du <strong>Palier</strong> de ce préfixe.</p><ul><li><p><strong>Palier 1 :</strong> <strong>4 Focus</strong></p></li><li><p><strong>Palier 2 :</strong> <strong>6 Focus</strong></p></li><li><p><strong>Palier 3 :</strong> <strong>8 Focus</strong></p></li></ul>"
+                }
+            }
+        },
+        "Frostdrop Phial": {
+            "name": "Fiole de gouttes de givre",
+            "description": {
+                "public": "<p>Une suspension de cristaux blancs dans un liquide bleu contenu dans un récipient en verre scellé. Son contenu s'évapore rapidement au contact de l'air, créant une petite explosion de liquide glacé qui recouvre les objets environnants d'un film de glace.</p>",
+                "private": "<p></p><p>Principalement utilisées pour refroidir rapidement les composés métallurgiques en forge de pointe, ces fioles alchimiques peuvent être très dangereuses pour les tissus vivants en cas d'exposition prolongée.</p>"
+            },
+            "actions": {
+                "frostFlask": {
+                    "name": "Flacon de gouttes de givre",
+                    "description": "<p>Vous lancez la @ref[name], infligeant des dégâts amoindris de <strong>Froid</strong> à tous les ennemis dans le rayon de l'explosion et les rendant @Condition[slowed] brièvement. Le rayon de l'<strong>Explosion</strong> dépend de la qualité de la bombe :</p><ul><li><p><strong>Bâclée</strong> - 3 pieds</p></li><li><p><strong>Commune</strong> - 4 pieds</p></li><li><p><strong>Raffinée</strong> - 6 pieds</p></li><li><p><strong>Supérieure</strong> - 8 pieds</p></li><li><p><strong>Chef-d’œuvre</strong> - 10 pieds</p></li></ul>",
+                    "effects": [
+                        {
+                            "name": "Flacon de gouttes de givre"
+                        }
+                    ]
+                }
+            }
+        },
+        "Gem Of Conjured Flame": {
+            "name": "Gemme de conjuration de flamme",
+            "description": {
+                "public": "<p>Une gemme brute aux multiples facettes, imprégnée d'énergies élémentaires. Lorsqu'elle est lancée, cette gemme se brise et invoque un esprit élémentaire sous le contrôle de celui qui l'a brisée. Sa qualité détermine le niveau de l'élémentaire invoqué.</p>"
+            },
+            "actions": {
+                "gemOfConjuredFlame": {
+                    "name": "Invocation d'élémentaire de feu",
+                    "description": "<p>La @ref[name] se brise dans une explosion de flammes, laissant à sa place un élémentaire flamboyant. Les élémentaires invoqués par cette gemme restent 6 Rounds (1 minute).</p><ul><li><p><strong>Bâclée</strong> - Aucun élémentaire n'est invoqué</p></li><li><p><strong>Commune</strong> - Particule</p></li><li><p><strong>Raffinée</strong> - Lutin</p></li><li><p><strong>Supérieure</strong> - Visiteur</p></li><li><p><strong>Chef-d’œuvre</strong> - Vagabond</p></li></ul>"
+                }
+            }
+        },
+        "Gem of Illumination": {
+            "name": "Gemme d'illumination",
+            "description": {
+                "public": "<blockquote><p>Cette pierre précieuse soigneusement taillée brille d'une douce lumière chaude et est agréable au toucher.</p></blockquote><p>Cette gemme enchantée confère au porteur l'action <strong>Activer l'illumination</strong>, projetant une lumière surnaturelle dans un large rayon jusqu'à son interruption.</p>",
+                "private": "<p>Cet objet est présenté à titre d'exemple comme une Gemme raffinée avec le préfixe@UUID[Compendium.crucible.affixes.ActiveEffect.luminous00000000]{Lumineux}.</p><p>Cet affixe peut être appliqué à n'importe quel accessoire et cette gemme pourrait être encore enchantée avec un suffixe de Palier 1.</p>"
+            },
+            "actions": {
+                "affixLuminous": {
+                    "name": "Activer l'illumination",
+                    "description": "<p>Vous prononcez le mot de commande et la @ref[name] s'illumine d'une lueur stable et surnaturelle. Le rayon de lumière vive émise dépend du <strong>Palier</strong> de ce préfixe, avec un rayon supplémentaire de lumière tamisée s'étendant à une distance égale au-delà.</p><ul><li><p><strong>Palier 1 :</strong> 20 pieds de lumière vive, 40 pieds de lumière tamisée</p></li><li><p><strong>Palier 2 :</strong> 40 pieds de lumière vive, 80 pieds de lumière tamisée</p></li><li><p><strong>Palier 3 :</strong> 60 pieds de lumière vive, 120 pieds de lumière tamisée</p></li></ul> <p>La lumière persiste jusqu'à ce que vous désactiviez l'effet ou retiriez l'objet.</p>",
+                    "effects": [
+                        {
+                            "name": "Lumineux"
+                        }
+                    ]
+                }
+            }
+        },
+        "Lantern Oil": {
+            "name": "Huile pour lanterne",
+            "description": {
+                "public": "<p>Une petite fiole d'huile à brûler. Une unité d'Huile pour lanterne est consommée pour allumer une @UUID[Compendium.crucible.equipment.Item.lantern000000000]{Lanterne} ; la durée de combustion dépend de la qualité de l'huile :</p><ul><li><p><strong>Bâclée</strong> - 1 heure</p></li><li><p><strong>Commune</strong> - 4 heures</p></li><li><p><strong>Raffinée</strong> - 12 heures</p></li><li><p><strong>Supérieure</strong> - 24 heures</p></li><li><p><strong>Chef-d’œuvre</strong> - 48 heures</p></li></ul>"
+            }
+        },
+        "Omniglot Decoction": {
+            "description": {
+                "public": "<p>Un liquide étonnamment fluide au goût terreux et herbacé.</p>"
+            },
+            "actions": {
+                "omniglotDecoction": {
+                    "description": "<p>Consommée, cette décoction confère à celui qui la boit la fascinante capacité de lire, de parler et de comprendre les langues. Sa qualité détermine la durée de l'effet :</p><ul><li><p><strong>Bâclée</strong> - 10 minutes</p></li><li><p><strong>Commune</strong> - 1 heure</p></li><li><p><strong>Raffinée</strong> - 4 heures</p></li><li><p><strong>Supérieure</strong> - 12 heures</p></li><li><p><strong>Chef-d’œuvre</strong> - 24 heures</p></li></ul>",
+                    "name": "Décoction omniglotte",
+                    "effects": [
+                        {
+                            "name": "Décoction omniglotte"
+                        }
+                    ]
+                }
+            },
+            "name": "Décoction omniglotte"
         }
     }
 }

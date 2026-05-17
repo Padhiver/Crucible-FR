@@ -158,6 +158,14 @@
         "Herd Beast": {
             "description": "<p>Bovins, bêtes de somme et autres animaux de proie qui se regroupent en troupeaux.</p>",
             "name": "Bête de troupeau"
+        },
+        "Lightweaver": {
+            "description": "<p>Mages spécialistes des runes d'Illumination et de Flamme.</p>",
+            "name": "Tisse-lumière"
+        },
+        "Swarm": {
+            "name": "Nuée",
+            "description": "<p>Cet adversaire représente plusieurs créatures qui bougent comme une unique entité grouillante, submergeant l'opposition par le nombre.</p>"
         }
     }
 }

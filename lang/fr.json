@@ -207,7 +207,7 @@
             },
             "Delay": {
                 "Name": "Retarder",
-                "Description": "Vous reportez votre action à un moment ultérieur du round de combat. Choisissez une initiative entre 1 et celle du combattant suivant. Vous agirez avec cette nouvelle initiative. Vous ne pouvez reporter votre tour qu'une seule fois par round."
+                "Description": "Vous reportez votre action à un moment ultérieur du round de combat. Choisissez une initiative entre 1 et un de moins que votre Initiative actuelle. Vous agirez à cette nouvelle valeur d'Initiative, et si d'autres combattants partagent cette valeur, vous agirez avant eux. Vous ne pouvez reporter votre tour qu'une seule fois par round."
             },
             "Move": {
                 "Name": "Déplacement",
@@ -909,7 +909,8 @@
             "Shocked": "Électrocuté",
             "Burrowing": "Enfoui",
             "Dominated": "Dominé",
-            "Invulnerable": "Invulnérable"
+            "Invulnerable": "Invulnérable",
+            "Suffocating": "Asphyxié"
         },
         "ACTIONS": {
             "Delete": "Supprimer l'effet",
@@ -2086,6 +2087,10 @@
                 "slow.label": "Prudent",
                 "normal.label": "Normal",
                 "fast.label": "Pressé"
+            },
+            "COST": {
+                "Forced": "Forcé",
+                "Impossible": "Impossible"
             }
         },
         "LABELS": {
@@ -2149,7 +2154,7 @@
     "ACTION.AffectsScope": "Affecte {scope}",
     "ACTION.DelayTitle": "Retarder le Tour",
     "ACTION.DelayLabel": "Initiative retardée",
-    "ACTION.DelayHint": "Choisissez une valeur d'initiative entre 1 et {maximum} lorsque vous souhaitez agir.",
+    "ACTION.DelayHint": "Choisissez une valeur d'Initiative entre 1 et {maximum} à laquelle agir. Voir @UUID[Compendium.crucible.rules.JournalEntry.QhZgmBrdLAGwYy5c.JournalEntryPage.DPrsFbPo3tD7TJ5g]{Initiative et ordre de tour} pour savoir comment l'Initiative retardée interagit avec les égalités.",
     "ACTION.DurationRounds": "{value}R",
     "ACTION.DurationUntilEnded": "Jusqu'à expiration",
     "ACTION.NoTargets": "Pas de Cibles",
@@ -2224,7 +2229,8 @@
     "ACTION.EffectSpecific": "Effet : {effect}",
     "ADVANCEMENT.MilestoneAward": "Attribuer des Échelons",
     "CONTROLS": {
-        "VisualizeFlanking": "Visualiser le Débordement"
+        "VisualizeFlanking": "Visualiser le Débordement",
+        "CrucibleForcedMovement": "Déplacement forcé"
     },
     "DEFENSES.TOOLTIPS": {
         "Fortitude": "{base} + ((Force + Sagesse) / 4)",
@@ -2466,5 +2472,29 @@
         "Neutral": "Tiède",
         "Cool": "Frais",
         "Gelid": "Glacial"
+    },
+    "HAZARD": {
+        "Hazard": "Péril",
+        "UseHazard": "Utiliser un Péril",
+        "WindowTitle": "Péril : {name}",
+        "CONFIG": {
+            "Title": "Configuration de Péril",
+            "Name": "Nom",
+            "Danger": "Niveau de danger",
+            "Defense": "Défense ciblée",
+            "Damage": "Type de dégâts",
+            "Tags": "Étiquettes d'Action"
+        },
+        "TARGETS": {
+            "Title": "Cibles affectées",
+            "Hint": "Déposez des tokens ou des acteurs ici, ou cliquez sur le bouton Groupe pour ajouter des membres du groupe.",
+            "Add": "Ajouter une Cible",
+            "Remove": "Retirer une Cible",
+            "Clear": "Tout effacer",
+            "Party": "Ajouter un Groupe"
+        },
+        "WARNINGS": {
+            "GMOnly": "Seul un MJ peut configurer et lancer des périls."
+        }
     }
 }

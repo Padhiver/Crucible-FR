@@ -13,7 +13,6 @@
         "Resistances": "Résistances",
         "Breath": "Souffle",
         "Senses": "Sens",
-        "Passive": "Passif",
         "Charge": "Charge",
         "Flight": "Vol",
         "Bites": "Morsures",
@@ -25,7 +24,8 @@
         "Death": "Mort",
         "Strikes": "Frappes",
         "Tail": "Queue",
-        "Critical Hits": "Coups critiques"
+        "Critical Hits": "Coups critiques",
+        "Form": "Forme"
     },
     "label": "Talents d'Adversaire",
     "entries": {
@@ -69,11 +69,11 @@
         },
         "Aqueous Transmission": {
             "name": "Transmission aqueuse",
-            "description": "<p>La @ref[name] est capable de se déplacer instantanément à travers l'eau.</p>",
+            "description": "<p>La @ref[actor.name]{créature} est capable de se déplacer instantanément à travers l'eau.</p>",
             "actions": {
                 "aqueousTransmission": {
                     "name": "Transmission aqueuse",
-                    "description": "<p>Lorsque la @ref[name] est dans l'eau, elle peut se transporter instantanément vers n'importe quel espace inoccupé dans la même étendue d'eau jusqu'à 120 pieds de distance. Elle n'a pas besoin de voir la destination pour effectuer ce <strong>Déplacement</strong>.</p>"
+                    "description": "<p>Lorsque la @ref[actor.name]{créature} est dans l'eau, elle peut se transporter instantanément vers n'importe quel espace inoccupé dans la même étendue d'eau jusqu'à 120 pieds de distance. Elle n'a pas besoin de voir la destination pour effectuer ce <strong>Déplacement</strong>.</p>"
                 }
             }
         },
@@ -360,8 +360,13 @@
             "actions": {
                 "radiantDeathBurst": {
                     "name": "Flamboiement funeste",
-                    "description": "<p>Lorsque la @ref[actor.name]{créature} devient @Condition[dead], elle explose en une impulsion d’énergie <strong>Radiante</strong> qui attaque la défense de <strong>Fortitude</strong> de toutes les créatures proches ayant échoué à résister à l’effet.</p>",
-                    "condition": "La créature meurt."
+                    "description": "<p>Lorsque la @ref[actor.name]{créature} devient @Condition[dead], elle explose en une impulsion d’énergie <strong>Radiante</strong> qui attaque la défense de <strong>Fortitude</strong> de toutes les créatures proches ayant échoué à résister à l’effet, et sur un succès critique, les afflige de la condition @Condition[irradiated] pour <strong>3 rounds</strong>.</p>",
+                    "condition": "La créature meurt.",
+                    "effects": [
+                        {
+                            "name": "Flamboiement funeste"
+                        }
+                    ]
                 }
             }
         },
@@ -535,7 +540,7 @@
         },
         "Thermal Vision": {
             "name": "Vision thermique",
-            "description": "<p>La @ref[actor.name]{créature} perçoit le monde avec précision grâce aux différences de température, lui permettant de localiser les créatures à sang chaud ou émettant de la chaleur jusqu'à 60 pieds de distance, à condition qu'elles ne disposent pas d'une couverture totale et que vous ne soyez ni Aveuglé ni Neutralisé. Une créature détectée par cette Vision thermique est considérée comme visible pour les actions nécessitant de voir sa cible.</p><p></p>"
+            "description": "<p>La @ref[actor.name]{créature} perçoit le monde avec précision grâce aux différences de température, lui permettant de localiser les créatures dont la température corporelle s'écarte des normes ambiantes.</p><p>Cela permet de détecter les créatures dont la température corporelle est <strong>Glaciale</strong>, <strong>Fraîche</strong>, <strong>Chaude</strong>, ou <strong>Bouillante</strong> jusqu'à 60 pieds de distance, à condition qu'elles ne disposent pas d'une couverture totale et que la @ref[actor.name]{céeature} n'est pas @Condition[blinded] ou @Condition[incapacitated]. Une créature détectée par ce biais est considérée comme visible pour les Actions nécessitant la vision.</p>"
         },
         "Trampling Charge": {
             "name": "Charge écrasante",
@@ -585,6 +590,76 @@
                     "effects": [
                         {
                             "name": "Engloutissement"
+                        }
+                    ]
+                }
+            }
+        },
+        "Swarm": {
+            "name": "Nuée",
+            "description": "<p>Cet adversaire est un groupe de nombreuses créatures identiques qui opèrent comme une unique foule grouillante d'ennemis.</p><ul><li><p>Le maximum de <strong>Santé</strong> est doublé.</p></li><li><p>Contre toute source de dégâts à cible unique, la nuée obtient une <strong>Résistance</strong> additionnelle égale à sa <strong>Robustesse</strong>.</p></li><li><p>La <strong>Taille</strong> de la nuée décroît à mesure que sa Santé diminue, jusqu'à une taille minimum de 2.</p></li></ul>"
+        },
+        "Burnout": {
+            "description": "<p>Les artificiels à vapeur stockent des quantités dangereuses de vapeur surchauffée dans leur structure qui, si elles ne sont pas évacuées en toute sécurité, peuvent provoquer des blessures graves.</p>",
+            "name": "Surchauffe",
+            "actions": {
+                "steamVent": {
+                    "name": "Surchauffe",
+                    "description": "<p>L'@ref[actor.name]{artificiel} se rompt, déversant un souffle de flammes et de fumée, attaquant le <strong>Réflexe</strong> de chaque cible dans le rayon et inflige des dégâts de <strong>Feu</strong>. Celles qui subissent des dégâts de cette attaque sont @Condition[blinded] pour 3 tours.</p>",
+                    "condition": "L'@ref[actor.name]{artificiel} a des Lésions",
+                    "effects": [
+                        {
+                            "name": "Surchauffe"
+                        }
+                    ]
+                }
+            }
+        },
+        "Corrupting Death Burst": {
+            "name": "Explosion corruptrice mortelle",
+            "description": "<p>À sa mort, la @ref[actor.name]{créature} explose en une déflagration instable d’énergie corruptrice.</p>",
+            "actions": {
+                "corruptingDeathBurst": {
+                    "name": "Explosion corruptrice mortelle",
+                    "description": "<p>Lorsque la @ref[actor.name]{créature} devient @Condition[dead], elle explose en une onde de spores qui inflige des dégâts de <strong>Corruption</strong>, attaquant la défense de <strong>Fortitude</strong> de toutes les créatures proches qui ne parviennent pas à résister à l'effet et, en cas de succès critique, les afflige de la condition [decaying] pour <strong>3 rounds</strong>.</p>",
+                    "condition": "La créature meurt.",
+                    "effects": [
+                        {
+                            "name": "Explosion corruptrice mortelle"
+                        }
+                    ]
+                }
+            }
+        },
+        "Echolocation": {
+            "name": "Écholocalisation",
+            "description": "<p>@ref[actor.name]{Cette créature} perçoit le monde grâce à l'émission d'impulsions sonores qui détectent les formes avec précision, ce qui lui permet de localiser les créatures en mouvement ou émettant un son, jusqu'à 18 mètres de distance, à condition qu'elles n'aient pas une couverture totale. Si la créature est @Condition[deafened], ce sens ne peut être utilisé.</p><p>Une créature détectée par l'@ref[name] est concidérée comme visible pour les actions nécessitant que vous voyiez votre cible.</p><h3 class=\"divider\">En développement</h3><p>Cela devrait à terme être géré par un <strong>Mode de détection</strong> spécialisé ajouté aux tokens qui possèdent ce talent.</p>"
+        },
+        "Lightning Burst": {
+            "name": "Explosion de foudre",
+            "description": "<p>La @ref[actor.name]{créature} est capable de produire et d'expulser une explosion voltaïque puissante.</p>",
+            "actions": {
+                "lightningBurst": {
+                    "name": "Explosion de foudre",
+                    "description": "<p>La @ref[actor.name]{créature} expulse un éclair dans une explosion de 15 pieds, attaquant le <strong>Réflexe</strong> de chaque cible dans cette portée et infligeant des dégâts <strong>Électriques</strong>.</p><p>Sur un <strong>Coup critique</strong>, l'attaque cause la condition @Condition[shocked] pendant <strong>3 Tours</strong>.</p>",
+                    "effects": [
+                        {
+                            "name": "Explosion de foudre"
+                        }
+                    ]
+                }
+            }
+        },
+        "Steam Vent": {
+            "description": "<p>Les artificiels à vapeur stockent des quantités dangereuses de vapeur surchauffée dans leur structure qui, si elles ne sont pas évacuées en toute sécurité, peuvent provoquer des blessures graves.</p>",
+            "name": "Conduit de vapeur",
+            "actions": {
+                "steamVent": {
+                    "name": "Conduit de vapeur",
+                    "description": "<p>De la vapeur surchauffée jaillit de l'intérieur de l'artificiel à vapeur dans une explosion de dégâts brûlants, repoussant ceux qui se trouvent trop près, les laissant @Condition[prone] .</p>",
+                    "effects": [
+                        {
+                            "name": "Conduit de vapeur"
                         }
                     ]
                 }

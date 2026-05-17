@@ -100,6 +100,7 @@
 | Movement | Déplacement |
 | Reaction | Réaction |
 | Spell | Sort |
+| Composed Spell | Sort façonné |
 | Mainhand | Main principale |
 | Twohand | À deux mains |
 | Offhand | Main secondaire |
@@ -115,7 +116,10 @@
 | Willpower | Volonté |
 | Healing | Guérison |
 | Rallying | Ralliement |
-| Brute | Brute |
+| Brute | Brutal |
+| Auditory | Auditif |
+| Accurate | Précis |
+| After strike | Post frappe |
 | <Damage Type> | <Type de dégâts> |
 | <Resource> | <Ressource> |
 | <Skill> | <Compétence> |
@@ -185,6 +189,17 @@
 | Superior | Supérieure |
 | Masterwork | Chef-d’œuvre |
 
+### Enchantement
+| Anglais | Français |
+|---------|----------|
+| Affix | Affixe |
+| Prefix | Préfixe |
+| Suffix | Suffixe |
+| Tier | Palier |
+| Investment | Investissement |
+| Invested | Investi |
+| Potency | Puissance |
+
 ### Niveau d’Enchantement
 | Anglais | Français |
 |---------|----------|
@@ -246,7 +261,10 @@
 | Construct | Artificiel |
 | Dragon | Dragon |
 | Elemental | Élémentaire |
+| Elemental Mote | Particule élémentaire |
 | Elemental Sprite | Lutin élémentaire |
+| Elemental Visitor | Visiteur élémentaire |
+| Elemental Wanderer | Vagabond élémentaire |
 | Fey | Fée |
 | Fiend | Fiélon |
 | Giant | Géant |
@@ -256,6 +274,7 @@
 | Outsider | Extérieur |
 | Undead | Mort-vivant |
 | Outsider | Extérieur |
+| Swarm | Nuée |
 
 ### Menace (Threat)
 | Anglais | Français |
@@ -264,6 +283,20 @@
 | Normal | Normal |
 | Elite | Élite |
 | Boss | Chef |
+
+### Température corporelle (Body temperature)
+| Anglais | Français |
+|---------|----------|
+| Gelid | Glacial |
+| Cool | Frais |
+| Neutral | Tiède |
+| Warm | Chaud |
+| Boiled | Bouillant |
+
+### Capacités spéciales
+| Anglais | Français |
+|---------|----------|
+| Thermal vision | Vision thermique |
 
 ---
 
@@ -528,6 +561,7 @@
 | Prone | À terre |
 | Slowed | Ralenti |
 | Restrained | Entravé |
+| Forced mouvement | Déplacement forcé |
 
 ### Actions
 | Anglais | Français |
@@ -573,5 +607,28 @@
 | Shocked | Électrocuté |
 | Mending | Vivifié |
 | Entropy | Dérangé |
+| Suffocating | Asphyxié |
+
+---
+
+## Péril (Hazard)
+
+### Périls environnementaux (Environmental Hazards)
+| Anglais | Français |
+|---------|----------|
+| Dehydration | Déshydratation |
+| Maddening thirst | Soif démente |
+| Starvation | Famine |
+| Maddening hunger | Faim démente |
+| Sleep deprivation | Privation de sommeil |
+| Suffocation | Asphyxie |
+| Falling | Chute |
+| Minor Fall | Chute mineure |
+| Serious fall | Chute sérieuse |
+| Exposure | Exposition |
+| Extreme cold | Froid extrême |
+| Extreme heat | Chaleur extrême |
+| Deadly cold | Froid mortel |
+| Deadly heat | Chaleur mortelle |
 
 ---

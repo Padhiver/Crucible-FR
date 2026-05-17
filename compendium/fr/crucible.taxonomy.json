@@ -115,10 +115,6 @@
         "Automaton": {
             "name": "Automate",
             "description": "<p>Artificiels conçus comme un reflet des humanoïdes pour servir à l'accomplissement de tâches manuelles simples.</p>"
-        },
-        "Deep Behemoth": {
-            "name": "Béhémoth des profondeurs",
-            "description": "<p>Prédateurs souterrains colossaux au sommet de la chaîne alimentaire, monstruosités immenses qui tonnent dans les cavernes les plus profondes.</p>"
         }
     }
 }

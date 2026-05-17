@@ -166,6 +166,10 @@
         "Swarm": {
             "name": "Nuée",
             "description": "<p>Cet adversaire représente plusieurs créatures qui bougent comme une unique entité grouillante, submergeant l'opposition par le nombre.</p>"
+        },
+        "Deep Behemoth": {
+            "name": "Béhémoth des profondeurs",
+            "description": "<p>Prédateurs souterrains colossaux au sommet de la chaîne alimentaire, monstruosités immenses qui tonnent dans les cavernes les plus profondes.</p>"
         }
     }
 }

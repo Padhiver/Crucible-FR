@@ -26,6 +26,9 @@
         "ActiveEffect": {
             "flanked": "Débordé",
             "affix": "Affixes"
+        },
+        "RegionBehavior": {
+            "crucible.hazard": "Danger Crucible"
         }
     },
     "CRUCIBLE": {
@@ -481,7 +484,8 @@
             "AuraNoToken": "Vous ne pouvez pas utiliser une action de type Aura sans qu'il y ait un token sur la scène !",
             "CannotUseReason": "{name} ne remplit pas les pré-requis pour utiliser {action} : {reason}",
             "InvalidTargetsGeneric": "Cibles invalides pour cette action !",
-            "NoViewedScene": "Une scène visualisée est nécessaire afin d'acquérir des cibles pour cette action."
+            "NoViewedScene": "Une scène visualisée est nécessaire afin d'acquérir des cibles pour cette action.",
+            "LastNotMeleeCrit": "Vous ne pouvez effectuer {action} qu'immédiatement après une Frappe en mêlée ayant abouti à un succès critique."
         },
         "ChooseWeaponLabel": "Arme",
         "ChooseWeaponHint": "Choisissez l'arme à utiliser pour cette Action.",
@@ -738,6 +742,26 @@
                     "few": "Membres",
                     "many": "Membres"
                 }
+            },
+            "REST": {
+                "FIELDS": {
+                    "allowInterruption": {
+                        "label": "Autoriser l'interruption",
+                        "hint": "Si coché, ce repos peut être interrompu par des événements de jeu configurés."
+                    },
+                    "hours": {
+                        "hint": "Nombre d'heures qui s'écouleront si le repos n'est pas interrompu.",
+                        "label": "Heures de repos"
+                    },
+                    "participants": {
+                        "label": "Personnages au repos",
+                        "hint": "Chaque personnage sélectionné effectuera l'action Repos."
+                    }
+                },
+                "ContinuationHint": "Ce repos est la poursuite d'un repos précédent ayant été interrompu. {hoursCompleted} sur {hoursRequired} heures ont été effectuées.",
+                "Interrupted": "Votre repos a été interrompu après {hours} heures !",
+                "Title": "Confirmer le repos du groupe",
+                "Confirm": "Commencer le repos"
             }
         },
         "DisarmedStatus": "Désarmé !"
@@ -863,6 +887,9 @@
             "Abilities": "Les Caractéristiques principale et secondaire d'une Ascendance ne peuvent pas être les mêmes.",
             "ResistancesBoth": "Vous devez attribuer à la fois la Résistance et la Vulnérabilité si vous définissez l'une ou l'autre.",
             "ResistancesDifferent": "La Résistance et la Vulnérabilité choisies pour une Ascendance ne peuvent pas être les mêmes."
+        },
+        "SECTIONS": {
+            "Traits": "Traits"
         }
     },
     "ACTIVE_EFFECT": {
@@ -910,7 +937,8 @@
             "Burrowing": "Enfoui",
             "Dominated": "Dominé",
             "Invulnerable": "Invulnérable",
-            "Suffocating": "Asphyxié"
+            "Suffocating": "Asphyxié",
+            "Limitless": "Illimité"
         },
         "ACTIONS": {
             "Delete": "Supprimer l'effet",
@@ -1052,7 +1080,10 @@
         "PROPERTIES": {
             "Bulky": "Encombrante",
             "Noisy": "Bruyante",
-            "Natural": "Naturelle"
+            "Natural": "Naturelle",
+            "BulkyTooltip": "Une armure <strong>Encombrante</strong> est difficile à porter et confère une pénalité de +2 Fléaux à tous les jets d'Initiative.",
+            "NaturalTooltip": "Une armure naturelle est une caractéristique de l'être qui la « porte ». Elle ne peut généralement pas être retirée.",
+            "NoisyTooltip": "Une armure <strong>Bruyante</strong> rend les déplacements furtifs difficiles."
         }
     },
     "ATTRIBUTES.Abilities": "Scores de Caractéristique",
@@ -1155,6 +1186,10 @@
                 "few": "{value}/{max} Utilisations",
                 "many": "{value}/{max} Utilisations"
             }
+        },
+        "PROPERTIES": {
+            "Thrown": "Lancer",
+            "ThrownTooltip": "Cet objet consommable est conçu pour être lancé."
         }
     },
     "CURRENCY_DENOMINATIONS": {
@@ -1351,7 +1386,11 @@
             "GMOnly": "Seul un Maître du jeu peut générer des objets aléatoires.",
             "Flavor": "Objet aléatoire : {type}"
         },
-        "QuantityNone": "Aucun"
+        "QuantityNone": "Aucun",
+        "COMPOSED_NAME": {
+            "Prefix": "{prefixes} {name}",
+            "Suffix": "{name} de {suffixes}"
+        }
     },
     "ITEM.EnchantmentMundane": "Trivial",
     "ITEM.EnchantmentMinor": "Mineur",
@@ -2433,7 +2472,8 @@
             "RequiresGM": "Seul un Maître du jeu peut initier des jets de groupe.",
             "Title": "Jet de Compétence de groupe",
             "DialogTitle": "Jet de {skill} : {name}",
-            "NoUserForActor": "Aucun utilisateur actif trouvé pour : {name}"
+            "NoUserForActor": "Aucun utilisateur actif trouvé pour : {name}",
+            "AggregateDetail": "{required} requis"
         },
         "DCAdditionalPassive": "{dcLabel}, Passif",
         "DCAdditionalGroup": "{dcLabel}, Groupe",
@@ -2464,7 +2504,9 @@
         }
     },
     "DETECTION_MODES": {
-        "ThermalVision": "Vision thermique"
+        "ThermalVision": "Vision thermique",
+        "Echolocation": "Écholocalisation",
+        "SenseCreature": "Détection de créature"
     },
     "TEMPERATURE_TIERS": {
         "Boiling": "Bouillant",
@@ -2495,6 +2537,41 @@
         },
         "WARNINGS": {
             "GMOnly": "Seul un MJ peut configurer et lancer des périls."
+        },
+        "DefaultActor": "Environnement",
+        "DefaultName": "Danger environnemental"
+    },
+    "REGION_BEHAVIORS": {
+        "HAZARD": {
+            "FIELDS": {
+                "danger": {
+                    "label": "Niveau de danger"
+                },
+                "defenseType": {
+                    "label": "Type de défense"
+                },
+                "damageType": {
+                    "label": "Type de dégâts"
+                },
+                "resource": {
+                    "label": "Ressource ciblée"
+                },
+                "tags": {
+                    "label": "Étiquettes de danger"
+                },
+                "name": {
+                    "label": "Nom"
+                },
+                "promptGM": {
+                    "hint": "Si vrai, le MJ recevra une fenêtre de dialogue pour le lancer, sinon le danger sera lancé automatiquement.",
+                    "label": "Demander au MJ"
+                }
+            }
+        }
+    },
+    "SCENE": {
+        "WARNINGS": {
+            "MicrogridUnavailable": "La scène \"{name}\" est configurée avec une grille carrée et des distances en pieds mais ne peut pas utiliser la micro-grille Crucible. La distance de la grille doit être de 5ft (actuellement {distance}) et la taille de la grille doit être un multiple de 5px (actuellement {size}px)."
         }
     }
 }

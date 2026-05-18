@@ -1,11 +1,4 @@
 {
-    "mapping": {
-        "description": "system.description",
-        "actions": {
-            "path": "system.actions",
-            "converter": "actions_converter"
-        }
-    },
     "folders": {
         "Construct": "Artificiel",
         "Ooze": "Vase",

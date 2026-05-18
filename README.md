@@ -1,10 +1,9 @@
 # Traduction française non officielle de Crucible
 <p align="center">
-  <img width="424" height="320" alt="crucible-text-light-FR" src="https://github.com/user-attachments/assets/59d811a2-0aa8-4dfa-b0ad-9787fbb9da9d" />
+  <img width="424" height="320" alt="crucible-text-light-FR" src="https://github.com/Padhiver/Crucible-FR/blob/main/assets/Crucible-banner.webp?raw=true" />
 </p>
 
-
-
+https://github.com/Padhiver/Crucible-FR/tree/main/assets
 Ce dépôt est une traduction non officielle et communautaire du système de jeu Crucible pour Foundry VTT.
 
 Le projet original est en constante évolution, et de ce fait, une traduction complète et statique n'aurait pour le moment pas énormément de sens. Ce travail vise à fournir une base fonctionnelle pour les joueurs et les maîtres de jeu francophones, en mettant l'accent sur les éléments les plus stables du système.

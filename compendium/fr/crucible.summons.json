@@ -1,35 +1,5 @@
 {
     "label": "Créatures invoquées",
-    "mapping": {
-        "items": {
-            "path": "items",
-            "converter": "adventure_items_converter"
-        },
-        "actions": {
-            "path": "system.actions",
-            "converter": "actions_converter"
-        },
-        "ancestry": {
-            "path": "system.details.ancestry",
-            "converter": "nested_object_converter"
-        },
-        "background": {
-            "path": "system.details.background",
-            "converter": "nested_object_converter"
-        },
-        "biography": {
-            "path": "system.details.biography",
-            "converter": "nested_object_converter"
-        },
-        "archetype": {
-            "path": "system.details.archetype",
-            "converter": "nested_object_converter"
-        },
-        "taxonomy": {
-            "path": "system.details.taxonomy",
-            "converter": "nested_object_converter"
-        }
-    },
     "folders": {
         "Gesture: Create": "Signe : Création",
         "Gesture: Conjure": "Signe : Conjuration"

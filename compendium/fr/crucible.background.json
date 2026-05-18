@@ -1,8 +1,5 @@
 {
     "label": "Origines",
-    "mapping": {
-        "description": "system.description"
-    },
     "entries": {
         "Acolyte": {
             "name": "Acolyte",

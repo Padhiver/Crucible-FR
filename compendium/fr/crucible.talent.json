@@ -1,12 +1,5 @@
 {
     "label": "Talents",
-    "mapping": {
-        "description": "system.description",
-        "actions": {
-            "path": "system.actions",
-            "converter": "actions_converter"
-        }
-    },
     "folders": {
         "Runes": "Runes",
         "Shield": "Bouclier",

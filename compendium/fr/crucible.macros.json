@@ -1,0 +1,23 @@
+{
+    "label": "Macros du système",
+    "mapping": {
+        "description": "system.description"
+    },
+    "entries": {
+        "Configure Group Check": {
+            "name": "Configurer un Test de groupe"
+        },
+        "Configure Hazard": {
+            "name": "Configurer un Danger"
+        },
+        "Randomize Item": {
+            "name": "Randomiser un objet"
+        },
+        "Recover": {
+            "name": "Récupération"
+        },
+        "Rest": {
+            "name": "Repos"
+        }
+    }
+}

@@ -1,8 +1,5 @@
 {
     "label": "Ascendances",
-    "mapping": {
-        "description": "system.description"
-    },
     "entries": {
         "Devilkin": {
             "name": "Diable",

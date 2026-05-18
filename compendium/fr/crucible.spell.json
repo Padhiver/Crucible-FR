@@ -1,11 +1,4 @@
 {
-    "mapping": {
-        "description": "system.description",
-        "actions": {
-            "path": "system.actions",
-            "converter": "actions_converter"
-        }
-    },
     "label": "Sorts iconiques",
     "entries": {
         "Bind Armament": {

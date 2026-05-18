@@ -2423,37 +2423,5 @@
                 }
             }
         }
-    },
-    "mapping": {
-        "actors": {
-            "items": {
-                "path": "items",
-                "converter": "adventure_items_converter"
-            },
-            "actions": {
-                "path": "system.actions",
-                "converter": "actions_converter"
-            },
-            "ancestry": {
-                "path": "system.details.ancestry",
-                "converter": "nested_object_converter"
-            },
-            "background": {
-                "path": "system.details.background",
-                "converter": "nested_object_converter"
-            },
-            "biography": {
-                "path": "system.details.biography",
-                "converter": "nested_object_converter"
-            },
-            "taxonomy": {
-                "converter": "nested_object_converter",
-                "path": "system.details.taxonomy"
-            },
-            "archetype": {
-                "path": "system.details.archetype",
-                "converter": "nested_object_converter"
-            }
-        }
     }
 }

@@ -79,13 +79,10 @@ const adventureItemsConverter = (items, translations) => {
 
         if (itemTranslation.description !== undefined) {
             item.system ??= {};
-            if (typeof itemTranslation.description === 'object') {
-                item.system.description ??= {};
-                if (itemTranslation.description.public) item.system.description.public = itemTranslation.description.public;
-                if (itemTranslation.description.private) item.system.description.private = itemTranslation.description.private;
-            } else {
-                item.system.description = itemTranslation.description;
-            }
+            item.system.description = descriptionConverter(
+                item.system.description,
+                itemTranslation.description
+            );
         }
 
         if (itemTranslation.actions && item.system?.actions) {
@@ -93,6 +90,33 @@ const adventureItemsConverter = (items, translations) => {
         }
     }
     return items;
+};
+
+/**
+ * Convertisseur universel pour system.description.
+ *
+ * Gère trois cas :
+ *  1. La traduction est une string  → on écrase directement (background, ancestry,
+ *     spell, talent, archetype, taxonomy, etc.)
+ *  2. La traduction est un objet    → on fusionne clé par clé (items avec {public, private})
+ *  3. La traduction est null/undefined → on retourne l'original intact
+ */
+const descriptionConverter = (original, translation) => {
+    if (translation === undefined || translation === null) return original;
+
+    // Cas string : remplacement direct
+    if (typeof translation === "string") return translation;
+
+    // Cas objet : fusion clé par clé (on ne touche qu'aux clés présentes dans la trad)
+    if (typeof translation === "object" && !Array.isArray(translation)) {
+        const result = (original && typeof original === "object") ? { ...original } : {};
+        for (const [key, value] of Object.entries(translation)) {
+            if (value !== undefined) result[key] = value;
+        }
+        return result;
+    }
+
+    return original;
 };
 
 /**
@@ -108,11 +132,13 @@ Hooks.once("babele.init", (babele) => {
         dir: 'compendium/fr'
     });
 
-    // 2. Enregistrement des convertisseurs épurés
+    // 2. Enregistrement des convertisseurs
     babele.registerConverters({
         "actions_converter": actionsConverter,
         "adventure_items_converter": adventureItemsConverter,
-        
+
+        "description_converter": descriptionConverter,
+
         "categories_converter": (categories, translations) => {
             if (!categories || !translations) return categories;
             const arr = asArray(categories);

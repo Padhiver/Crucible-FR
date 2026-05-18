@@ -1,11 +1,5 @@
 {
   "label": "Archetypes",
-  "mapping": {
-    "description": {
-      "path": "system.description",
-      "converter": "nested_object_converter"
-    }
-  },
   "folders": {
     "Dragons": "Dragons",
     "Constructs": "Constructs",

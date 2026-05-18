@@ -1,15 +1,5 @@
 {
   "label": "Adversary Talents",
-  "mapping": {
-    "description": {
-      "path": "system.description",
-      "converter": "nested_object_converter"
-    },
-    "actions": {
-      "path": "system.actions",
-      "converter": "actions_converter"
-    }
-  },
   "folders": {
     "Charge": "Charge",
     "Bites": "Bites",

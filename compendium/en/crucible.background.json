@@ -1,11 +1,5 @@
 {
   "label": "Backgrounds",
-  "mapping": {
-    "description": {
-      "path": "system.description",
-      "converter": "nested_object_converter"
-    }
-  },
   "folders": {},
   "entries": {
     "Acolyte": {

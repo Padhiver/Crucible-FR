@@ -1,11 +1,5 @@
 {
   "label": "System Rules",
-  "mapping": {
-    "categories": {
-      "path": "categories",
-      "converter": "categories_converter"
-    }
-  },
   "folders": {
     "Getting Started": "Getting Started",
     "Game Mechanics": "Game Mechanics"

@@ -1,11 +1,5 @@
 {
   "label": "Ancestries",
-  "mapping": {
-    "description": {
-      "path": "system.description",
-      "converter": "nested_object_converter"
-    }
-  },
   "folders": {},
   "entries": {
     "Devilkin": {

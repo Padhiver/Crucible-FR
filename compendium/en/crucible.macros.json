@@ -1,11 +1,5 @@
 {
   "label": "System Macros",
-  "mapping": {
-    "description": {
-      "path": "system.description",
-      "converter": "nested_object_converter"
-    }
-  },
   "folders": {},
   "entries": {
     "Configure Group Check": {

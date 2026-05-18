@@ -1,0 +1,59 @@
+{
+  "_comment": "Fichier de mappings global Babele — Crucible. À placer dans votre dossier de traduction et à référencer dans votre module babele.",
+  "_usage": "Chaque clé correspond au metadata.type du compendium (ou à l'itemType détecté). Le champ 'id' est le metadata.id du compendium Foundry.",
+
+  "Item.talent": {
+    "description": { "path": "system.description", "converter": "nested_object_converter" },
+    "actions": { "path": "system.actions", "converter": "actions_converter" }
+  },
+
+  "Item.spell": {
+    "description": { "path": "system.description", "converter": "nested_object_converter" },
+    "actions": { "path": "system.actions", "converter": "actions_converter" }
+  },
+
+  "Item.consumable": {
+    "description": { "path": "system.description", "converter": "nested_object_converter" },
+    "actions": { "path": "system.actions", "converter": "actions_converter" }
+  },
+
+  "Item.affix": {
+    "description": "description",
+    "adjective": "system.adjective",
+    "actions": { "path": "system.actions", "converter": "actions_converter" }
+  },
+
+  "Item.default": {
+    "description": { "path": "system.description", "converter": "nested_object_converter" }
+  },
+
+  "Actor": {
+    "items": { "path": "items", "converter": "adventure_items_converter" },
+    "actions": { "path": "system.actions", "converter": "actions_converter" },
+    "ancestry": { "path": "system.details.ancestry", "converter": "nested_object_converter" },
+    "background": { "path": "system.details.background", "converter": "nested_object_converter" },
+    "biography": { "path": "system.details.biography", "converter": "nested_object_converter" },
+    "archetype": { "path": "system.details.archetype", "converter": "nested_object_converter" },
+    "taxonomy": { "path": "system.details.taxonomy", "converter": "nested_object_converter" }
+  },
+
+  "JournalEntry": {
+    "categories": { "path": "categories", "converter": "categories_converter" }
+  },
+
+  "Adventure": {
+    "actors": {
+      "items": { "path": "items", "converter": "adventure_items_converter" },
+      "actions": { "path": "system.actions", "converter": "actions_converter" },
+      "ancestry": { "path": "system.details.ancestry", "converter": "nested_object_converter" },
+      "background": { "path": "system.details.background", "converter": "nested_object_converter" },
+      "biography": { "path": "system.details.biography", "converter": "nested_object_converter" },
+      "archetype": { "path": "system.details.archetype", "converter": "nested_object_converter" },
+      "taxonomy": { "path": "system.details.taxonomy", "converter": "nested_object_converter" }
+    },
+    "items": {},
+    "journals": {},
+    "scenes": {},
+    "macros": {}
+  }
+}

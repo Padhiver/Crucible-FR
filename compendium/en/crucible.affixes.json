@@ -1,9 +1,5 @@
 {
   "label": "Affixes",
-  "mapping": {
-    "description": "description",
-    "adjective": "system.adjective"
-  },
   "folders": {
     "Suffixes": "Suffixes",
     "Defenses": "Defenses",

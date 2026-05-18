@@ -1,8 +1,5 @@
 {
     "label": "Archétypes",
-    "mapping": {
-        "description": "system.description"
-    },
     "folders": {
         "Humanoids": "Humanoïdes",
         "Dragons": "Dragons",

@@ -1,8 +1,5 @@
 {
     "label": "Macros du système",
-    "mapping": {
-        "description": "system.description"
-    },
     "entries": {
         "Configure Group Check": {
             "name": "Configurer un Test de groupe"

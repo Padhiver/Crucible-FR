@@ -1,8 +1,5 @@
 {
     "label": "Taxonomies",
-    "mapping": {
-        "description": "system.description"
-    },
     "folders": {
         "Dragon": "Dragon",
         "Elemental": "Élémentaire",

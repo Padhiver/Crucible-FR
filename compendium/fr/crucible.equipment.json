@@ -86,7 +86,7 @@
         "Arcane Orb": {
             "name": "Orbe arcanique",
             "description": {
-                "public": "<p>Une sphère de cristal ou de verre qui — dans la paume d'un lanceur de sorts capable — devient un conduit pour son pouvoir. Elle accumule l'énergie voltaïque à l'intérieur de son globe avant de projeter une force électrifiante sur une cible.</p>"
+                "public": "<p>Une sphère de cristal ou de verre qui - dans la paume d'un lanceur de sorts capable - devient un conduit pour son pouvoir. Elle accumule l'énergie voltaïque à l'intérieur de son globe avant de projeter une force électrifiante sur une cible.</p>"
             }
         },
         "Bag of Holding": {

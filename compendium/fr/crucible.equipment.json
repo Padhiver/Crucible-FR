@@ -1,12 +1,5 @@
 {
     "label": "Équipement",
-    "mapping": {
-        "description": "system.description",
-        "actions": {
-            "path": "system.actions",
-            "converter": "actions_converter"
-        }
-    },
     "folders": {
         "Talisman": "Talisman",
         "Consumables": "Consommables",

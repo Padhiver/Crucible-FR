@@ -1,7 +1,10 @@
 {
   "label": "Equipment",
   "mapping": {
-    "description": "system.description",
+    "description": {
+      "path": "system.description",
+      "converter": "nested_object_converter"
+    },
     "actions": {
       "path": "system.actions",
       "converter": "actions_converter"

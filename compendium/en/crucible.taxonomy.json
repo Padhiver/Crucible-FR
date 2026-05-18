@@ -1,7 +1,10 @@
 {
   "label": "Taxonomies",
   "mapping": {
-    "description": "system.description"
+    "description": {
+      "path": "system.description",
+      "converter": "nested_object_converter"
+    }
   },
   "folders": {
     "Dragon": "Dragon",

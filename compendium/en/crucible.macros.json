@@ -1,7 +1,10 @@
 {
   "label": "System Macros",
   "mapping": {
-    "description": "system.description"
+    "description": {
+      "path": "system.description",
+      "converter": "nested_object_converter"
+    }
   },
   "folders": {},
   "entries": {

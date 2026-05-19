@@ -14,6 +14,14 @@
     "adjective": "system.adjective"
   },
 
+  "ActiveEffect": {
+    "adjective": "system.adjective",
+    "actions": {
+      "path": "system.actions",
+      "converter": "actions_converter"
+    }
+  },
+
   "Actor": {
     "items": {
       "path": "items",

@@ -1083,7 +1083,7 @@
             "actions": {
                 "steelJawArm": {
                     "name": "Armer le piège à mâchoire de fer",
-                    "description": "<p>La mise en place de ce piège représente un danger important pouvant causer des dégâts considérables en cas de déclenchement. Il doit être fixé par une chaîne solide à un objet immobile, tel qu'un arbre ou un pieu enfoncé dans le sol. La zone du piège est un cercle de 2 pieds de rayon.</p>"
+                    "description": "<p>La mise en place de ce piège représente un péril important pouvant causer des dégâts considérables en cas de déclenchement. Il doit être fixé par une chaîne solide à un objet immobile, tel qu'un arbre ou un pieu enfoncé dans le sol. La zone du piège est un cercle de 2 pieds de rayon.</p>"
                 },
                 "steelJawTrigger": {
                     "name": "Déclencher le piège à mâchoire de fer",

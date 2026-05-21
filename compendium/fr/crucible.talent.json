@@ -625,7 +625,7 @@
             "actions": {
                 "flamingArrow": {
                     "name": "Flèche enflammée",
-                    "description": "<p>Vous décochez une frappe à distance <strong>Amplifiée</strong> utilisant une arme à <strong>Projectile</strong> qui inflige des dégâts de <strong>Feu</strong> à l'impact.</p>"
+                    "description": "<p>Vous décochez une frappe à distance <strong>Améliorée</strong> utilisant une arme à <strong>Projectile</strong> qui inflige des dégâts de <strong>Feu</strong> à l'impact.</p>"
                 }
             }
         },
@@ -664,11 +664,11 @@
         },
         "Flying Kick": {
             "name": "Coup de pied volant",
-            "description": "Une technique à mains nues où vous vous lancez en courant vers un ennemi dans un coup de pied sauté qui est amplifié pour infliger des dégâts supplémentaires.",
+            "description": "Une technique à mains nues où vous vous lancez en courant vers un ennemi dans un coup de pied sauté qui est amélioré pour infliger des dégâts supplémentaires.",
             "actions": {
                 "flyingKick": {
                     "name": "Coup de pied volant",
-                    "description": "<p>Vous vous <strong>Déplacez</strong> en ligne droite de 3 à 6 pieds pour donner un coup de pied à un ennemi avec une <strong>Frappe</strong> amplifiée.</p>"
+                    "description": "<p>Vous vous <strong>Déplacez</strong> en ligne droite de 3 à 6 pieds pour donner un coup de pied à un ennemi avec une <strong>Frappe</strong> améliorée.</p>"
                 }
             }
         },

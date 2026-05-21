@@ -88,7 +88,7 @@
         },
         "Elusive Flight": {
             "name": "Vol insaisissable",
-            "description": "<p>Cette @ref[actor.name]{créature} est particulièrement insaisissable en vol, capable de plonger dans et hors du combat sans provoquer d'<strong>Assaut opportuniste</strong>. Elle peut être engagée si elle atterrit au sol et l'Assaut opportuniste peut s'appliquer si elle tente de retourner en vol.</p>"
+            "description": "<p>Cette @ref[actor.name]{créature} est particulièrement insaisissable en vol, capable de plonger dans et hors du combat sans provoquer de <strong>Désengagement</strong>. Elle peut être engagée si elle atterrit au sol et l'Assaut opportuniste peut s'appliquer si elle tente de retourner en vol.</p>"
         },
         "False Appearance": {
             "name": "Faux-semblant",
@@ -313,7 +313,7 @@
             "actions": {
                 "explosiveEmergence": {
                     "name": "Émergence explosive",
-                    "description": "<p>La @ref[actor.name]{créature} surgit d’une position souterraine avec une force soudaine et surprenante. Cette action ne peut être activée qu’immédiatement après que la créature ait quitté l’état @Condition[burrowing].</p><p>La @ref[actor.name]{créature} <strong>Frappe</strong> toutes les cibles ennemies à portée de son arme avec une attaque <strong>Amplifiée</strong>.</p>",
+                    "description": "<p>La @ref[actor.name]{créature} surgit d’une position souterraine avec une force soudaine et surprenante. Cette action ne peut être activée qu’immédiatement après que la créature ait quitté l’état @Condition[burrowing].</p><p>La @ref[actor.name]{créature} <strong>Frappe</strong> toutes les cibles ennemies à portée de son arme avec une attaque <strong>Améliorée</strong>.</p>",
                     "condition": "Être Enfoui."
                 }
             }
@@ -334,7 +334,7 @@
             "actions": {
                 "droppingStrike": {
                     "name": "Frappe plongeante",
-                    "description": "<p>La @ref[actor.name]{créature} peut se laisser tomber depuis une position en hauteur pour <strong>Frapper</strong> une créature située en dessous. La cible subit une attaque <strong>Amplifiée</strong> qui, si elle touche, la met @Condition[prone] en plus de lui infliger des dégâts.</p><p>La @ref[actor.name]{créature} ne subit des dégâts de chute que si l’attaque rate sa cible.</p>",
+                    "description": "<p>La @ref[actor.name]{créature} peut se laisser tomber depuis une position en hauteur pour <strong>Frapper</strong> une créature située en dessous. La cible subit une attaque <strong>Améliorée</strong> qui, si elle touche, la met @Condition[prone] en plus de lui infliger des dégâts.</p><p>La @ref[actor.name]{créature} ne subit des dégâts de chute que si l’attaque rate sa cible.</p>",
                     "effects": [
                         {
                             "name": "Frappe plongeante"
@@ -463,7 +463,7 @@
             "actions": {
                 "necroticBite": {
                     "name": "Morsure nécrotique",
-                    "description": "<p>La @ref[actor.name]{créature} attaque avec une morsure pestilentielle <strong>Amplifiée</strong> et inflige des dégâts de <strong>Corruption</strong>.</p><p>Sur une <strong>Réussite critique</strong>, l'attaque cause la condition @Condition[decaying] pendant <strong>3 Tours</strong>.</p>",
+                    "description": "<p>La @ref[actor.name]{créature} attaque avec une morsure pestilentielle <strong>Améliorée</strong> et inflige des dégâts de <strong>Corruption</strong>.</p><p>Sur une <strong>Réussite critique</strong>, l'attaque cause la condition @Condition[decaying] pendant <strong>3 Tours</strong>.</p>",
                     "effects": [
                         {
                             "name": "Morsure nécrotique"

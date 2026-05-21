@@ -21,7 +21,7 @@
     "ACCESSORY": {
         "CATEGORIES": {
             "Clothing": "Vêtements",
-            "Jewelry": "Bijou",
+            "Jewelry": "Bijoux",
             "Other": "Autre",
             "Trinket": "Bibelot"
         }
@@ -56,7 +56,7 @@
             },
             "ReactiveStrike": {
                 "Description": "Effectuez une attaque lorsqu'un ennemi quitte votre engagement et que vous n'êtes pas totalement engagé.",
-                "Name": "Assaut opportuniste"
+                "Name": "Frappe réactive"
             },
             "Recover": {
                 "Description": "Consacrez 10 minutes hors-combat à récupérer de l'effort afin de rétablir pleinement vos scores de Santé, Moral, Action et Focus.",
@@ -121,7 +121,7 @@
                 "hint": "Configurez le coût d'utilisation de cette action en points d'Action, Focus ou Héroïsme.",
                 "label": "Coût de l'action",
                 "weapon": {
-                    "hint": "Le coût en points d'Action de l'arme équipée est-il ajouté au coût de cette Action?",
+                    "hint": "Le coût en points d'Action de l'arme équipée est-il ajouté au coût de cette Action ?",
                     "label": "Ajouter le coût de l'arme"
                 }
             },
@@ -215,7 +215,7 @@
                 },
                 "type": {
                     "hint": "Quel type de cible ou de zone est affecté par cette action ?",
-                    "label": "Type de cible"
+                    "label": "Type de ciblage"
                 }
             }
         },
@@ -270,7 +270,7 @@
             "DisarmTooltip": "Cette action, si elle réussit, provoque le lâcher de l'arme de la cible.",
             "DualWield": "Ambidextrie",
             "DualWieldTooltip": "Cette action requiert de manier deux armes distinctes ou d'être entièrement à mains nues pour être effectuée.",
-            "Empowered": "Amplifié",
+            "Empowered": "Amélioré",
             "EmpoweredTooltip": "Cette action est puissante et inflige des dégâts supplémentaires, obtenant un bonus de dégâts de +6 en cas de succès.",
             "Finesse": "Finesse",
             "FinesseTooltip": "Cette action requiert une certaine finesse pour être effectuée. Vous devez manier une arme basée sur la Dextérité.",
@@ -702,9 +702,9 @@
                     "label": "Avancement",
                     "milestones": {
                         "element": {
-                            "number.label": "Award Number",
-                            "reason.label": "Award Reason",
-                            "reason.placeholder": "An optional award reason."
+                            "number.label": "Nombre de récompense",
+                            "reason.label": "Raison de la récompense",
+                            "reason.placeholder": "Une raison de récompense optionnelle."
                         },
                         "hint": "Un enregistrement des échelons obtenus qui ont été obtenus par ce groupe.",
                         "label": "Échelons obtenus"
@@ -712,14 +712,14 @@
                 },
                 "details": {
                     "biography": {
-                        "private.label": "Private Biography",
-                        "public.label": "Public Biography"
+                        "private.label": "Biographie privée",
+                        "public.label": "Biographie publique"
                     }
                 },
                 "members": {
-                    "actor.label": "Actor ID",
+                    "actor.label": "ID de l'acteur",
                     "label": "Membres du groupe",
-                    "quantity.label": "Actor Quantity",
+                    "quantity.label": "Quantité d'Acteurs",
                     "zero": "Membres",
                     "one": "Membre",
                     "two": "Membres",
@@ -728,11 +728,11 @@
                     "other": "Membres"
                 },
                 "movement": {
-                    "air.label": "Air Speed",
+                    "air.label": "Vitesse aérienne",
                     "label": "Vitesse de déplacement",
-                    "land.label": "Land Speed",
-                    "pace.label": "Travel Pace",
-                    "water.label": "Water Speed"
+                    "land.label": "Vitesse terrestre",
+                    "pace.label": "Allure de voyage",
+                    "water.label": "Vitesse aquatique"
                 }
             },
             "LABELS": {
@@ -950,8 +950,8 @@
             },
             "characteristics": {
                 "label": "Caractéristiques d'Ascendance",
-                "temperature.hint": "The body temperature of this Ancestry, neutral by default.",
-                "temperature.label": "Body Temperature"
+                "temperature.hint": "La température corporelle de cette Ascendance, Tiède par défaut.",
+                "temperature.label": "Température corporelle"
             },
             "movement": {
                 "label": "Déplacement",
@@ -1274,9 +1274,9 @@
         },
         "FIELDS": {
             "scroll": {
-                "gestures.label": "Gestures",
+                "gestures.label": "Signes",
                 "hint": "Configurez les composantes fournissant une connaissance temporaire par ce parchemin de sort.",
-                "inflections.label": "Inflections",
+                "inflections.label": "Inflexions",
                 "label": "Parchemin de sort",
                 "runes.label": "Runes"
             },
@@ -1284,7 +1284,7 @@
                 "hint": "Configurez un nombre limité d'utilisations de cet objet avant qu'il ne soit épuisé.",
                 "label": "Utilisations",
                 "max.label": "Maximum",
-                "value.label": "Value"
+                "value.label": "Valeur"
             }
         },
         "PROPERTIES": {
@@ -1824,7 +1824,7 @@
                                 "hint": "Ces ingrédients sont-ils consommés dans le processus de tentative de fabrication ?",
                                 "label": "Consommé"
                             },
-                            "item.label": "Ingredient Item UUID",
+                            "item.label": "UUID de l'objet Ingrédient",
                             "quality": {
                                 "hint": "Une qualité minimale requise pour cet ingrédient.",
                                 "label": "Qualité requise"
@@ -1835,14 +1835,14 @@
                         },
                         "label": "Ingrédients"
                     },
-                    "mode.label": "Combination Mode"
+                    "mode.label": "Mode de combinaison"
                 },
                 "label": "Entrées du Schéma"
             },
-            "mode.label": "Combination Mode",
+            "mode.label": "Mode de combinaison",
             "outputs": {
                 "element": {
-                    "items.element.label": "Created Item UUID",
+                    "items.element.label": "UUID de l'Objet créé",
                     "mode": "Mode"
                 },
                 "label": "Sorties du Schéma"
@@ -2227,8 +2227,8 @@
             "training": {
                 "hint": "Ce talent accorde-t-il un certain rang de formation dans un domaine particulier ?",
                 "label": "Formation accordée",
-                "rank.label": "Training Rank",
-                "type.label": "Training Type"
+                "rank.label": "Rang d'entraînement",
+                "type.label": "Type d'entraînement"
             }
         },
         "HOOKS": {
@@ -2331,11 +2331,11 @@
                 "label": "Catégorie"
             },
             "characteristics": {
-                "equipment.label": "Can Use Equipment",
+                "equipment.label": "Peu utiliser un équipement",
                 "label": "Caractéristiques de Taxonomie",
-                "spells.label": "Can Cast Spells",
-                "temperature.hint": "The body temperature of creatures with this Taxonomy. If left blank, defaults to the temperature of the chosen creature category.",
-                "temperature.label": "Body Temperature"
+                "spells.label": "Peut lancer des sorts",
+                "temperature.hint": "La température corporelle des créatures de cette Taxonomie. Si laissé vide, la température par défaut sera celle de la catégorie de créature choisie.",
+                "temperature.label": "Température corporelle"
             },
             "identifier": {
                 "hint": "Un identifiant textuel utilisé pour référencer uniquement cette Taxonomie dans les étiquettes, actions ou autres éléments d'interface. Cet identifiant doit être alphanumérique sans espaces ni caractères spéciaux.",
@@ -2457,7 +2457,7 @@
     },
     "TYPES": {
         "ActiveEffect": {
-            "affix": "Affixes",
+            "affix": "Affixe",
             "flanked": "Débordé"
         },
         "Actor": {
@@ -2566,7 +2566,7 @@
             "Blocking": "Blocage",
             "BlockingTooltip": "Cette arme fournit un bonus à votre défense de Blocage.",
             "DamageTooltip": "Une représentation abrégée des capacités offensives de cette arme, exprimée sous la forme Bonus d'Attaque / Bonus de dégâts / Multiplicateur de dégâts.",
-            "Engaging": "Engagée",
+            "Engaging": "Engagement",
             "EngagingTooltip": "Les armes de cette catégorie vous permettent de mieux combattre plusieurs ennemis, augmentant votre Engagement de +1.",
             "Intuitive": "Intuitive",
             "IntuitiveTooltip": "Cette arme est assez intuitive pour être utilisée sans formation. La pénalité de Compétence lors de l'utilisation de cette arme sans formation est seulement de -1 au lieu de -4.",

@@ -1,21 +1,20 @@
 {
-  "label": "System Macros",
-  "folders": {},
-  "entries": {
-    "Configure Group Check": {
-      "name": "Configure Group Check"
-    },
-    "Configure Hazard": {
-      "name": "Configure Hazard"
-    },
-    "Randomize Item": {
-      "name": "Randomize Item"
-    },
-    "Recover": {
-      "name": "Recover"
-    },
-    "Rest": {
-      "name": "Rest"
+    "label": "Macros",
+    "entries": {
+        "Configure Group Check": {
+            "name": "Configure Group Check"
+        },
+        "Configure Hazard": {
+            "name": "Configure Hazard"
+        },
+        "Randomize Item": {
+            "name": "Randomize Item"
+        },
+        "Recover": {
+            "name": "Recover"
+        },
+        "Rest": {
+            "name": "Rest"
+        }
     }
-  }
 }

@@ -40,7 +40,7 @@
             "description": "<p>Fournit l'action <strong>Restauration d'action</strong>, permettant au porteur de récupérer de l' <strong>Action</strong> dans les moments difficiles. Le montant restauré dépend du <strong>Palier</strong> de ce préfixe.</p>",
             "adjective": "Activation",
             "actions": {
-                "affixActivating": {
+                "Replenish Action": {
                     "name": "Restauration d'action",
                     "description": "<p>En cas de difficulté, vous pouvez puiser dans une réserve supplémentaire d'<strong>Actions</strong> depuis cet objet. Le montant d'Actions restauré dépend du <strong>Palier</strong> de cet affixe.</p><ul><li><p><strong>Palier 1 :</strong> <strong>1 Action</strong></p></li><li><p><strong>Palier 2 :</strong> <strong>2 Actions</strong></p></li><li><p><strong>Palier 3 :</strong> <strong>3 Actions</strong></p></li></ul>"
                 }
@@ -196,9 +196,14 @@
             "description": "<p>Fournit l'action <strong>Déguisement</strong>, permettant au porteur de prendre une apparence illusoire une fois par repos.</p>",
             "adjective": "Déguisement",
             "actions": {
-                "affixDisguise": {
+                "Disguise": {
                     "name": "Déguisement",
-                    "description": "<p>Une fois par repos, vous adoptez une apparence illusoire qui modifie aussi bien votre visage que votre tenue. L’illusion ne peut pas changer votre ascendance, mais peut altérer d’autres aspects de votre anatomie, y compris votre genre apparent. L'objet lui-même ne change pas d’apparence et reste visible.</p><p>L’illusion persiste indéfiniment et peut être dissipée à volonté. Une fois activé, cet objet ne peut pas produire une nouvelle illusion de cette manière avant que 24 heures ne se soient écoulées.</p>"
+                    "description": "<p>Une fois par repos, vous adoptez une apparence illusoire qui modifie aussi bien votre visage que votre tenue. L’illusion ne peut pas changer votre ascendance, mais peut altérer d’autres aspects de votre anatomie, y compris votre genre apparent. L'objet lui-même ne change pas d’apparence et reste visible.</p><p>L’illusion persiste indéfiniment et peut être dissipée à volonté. Une fois activé, cet objet ne peut pas produire une nouvelle illusion de cette manière avant que 24 heures ne se soient écoulées.</p>",
+                    "effects": {
+                        "Disguise": {
+                            "name": "Déguisement"
+                        }
+                    }
                 }
             }
         },
@@ -287,7 +292,7 @@
             "description": "<p>Fournit l'action <strong>Restauration de focus</strong>, permettant au porteur de récupérer du <strong>Focus</strong> dans les moments difficiles. Le montant restauré dépend du <strong>Palier</strong> de ce préfixe.</p>",
             "adjective": "Focalisation",
             "actions": {
-                "affixFocusing": {
+                "Replenish Focus": {
                     "name": "Restauration de focus",
                     "description": "<p>En cas de difficulté, vous pouvez puiser dans une réserve supplémentaire de <strong>Focus</strong> depuis cet objet. Le montant de Focus restauré dépend du <strong>Palier</strong> de ce préfixe.</p><ul><li><p><strong>Palier 1 :</strong> <strong>4 Focus</strong></p></li><li><p><strong>Palier 2 :</strong> <strong>6 Focus</strong></p></li><li><p><strong>Palier 3 :</strong> <strong>8 Focus</strong></p></li></ul>"
                 }
@@ -318,7 +323,7 @@
             "description": "<p>Fournit l'action <strong>Planant</strong>, permettant au porteur de planer latéralement durant une chute. La distance planée dépend du <strong>Palier</strong> de ce préfixe.</p>",
             "adjective": "Planant",
             "actions": {
-                "gliding": {
+                "Gliding": {
                     "name": "Planant",
                     "description": "<p>Utilisé durant une <strong>Chute</strong>, vous pouvez vous déplacer latéralement d'un nombre d'espaces depuis votre position initiale en planant. La distance planée dépend du <strong>Palier</strong> de ce préfixe.</p><ul><li><p><strong>Palier 1 :</strong> <strong>1 pied</strong> par 20 pieds de descente.</p></li><li><p><strong>Palier 2 :</strong> <strong>2 pieds</strong> par 20 pieds de descente.</p></li><li><p><strong>Palier 3 :</strong> <strong>4 pieds</strong> par 20 pieds de descente.</p></li></ul><p>Vous ne subissez aucun dégât de chute à l'atterrissage, et n'êtes pas @Condition[prone].</p>"
                 }
@@ -664,11 +669,24 @@
             "description": "<p>Confère l'action <strong>Activer l'illumination</strong>, permettant au porteur de projeter une lumière surnaturelle. Le rayon de cette lumière est proportionnel au <strong>Palier</strong> de cet affixe.</p>",
             "adjective": "Lumineux",
             "actions": {
-                "affixLuminous": {
+                "Activate Illumination": {
                     "name": "Activer l'illumination",
-                    "description": "<p>Vous prononcez le mot de commande et @ref[item.name]{l'objet} s'illumine d'une lueur stable et surnaturelle. Le rayon de lumière vive émise dépend du <strong>Palier</strong> de ce préfixe, avec un rayon supplémentaire de lumière tamisée s'étendant à une distance égale au-delà.</p><ul><li><p><strong>Palier 1 :</strong> 20 pieds de lumière vive, 40 pieds de lumière tamisée.</p></li><li><p><strong>Palier 2 :</strong> 40 pieds de lumière vive, 80 pieds de lumière tamisée.</p></li><li><p><strong>Palier 3 :</strong> 60 pieds de lumière vive, 120 pieds de lumière tamisée.</p></li></ul><p>La lumière persiste jusqu'à ce que vous désactiviez l'effet ou retiriez l'objet.</p>"
+                    "description": "<p>Vous prononcez le mot de commande et @ref[item.name]{l'objet} s'illumine d'une lueur stable et surnaturelle. Le rayon de lumière vive émise dépend du <strong>Palier</strong> de ce préfixe, avec un rayon supplémentaire de lumière tamisée s'étendant à une distance égale au-delà.</p><ul><li><p><strong>Palier 1 :</strong> 20 pieds de lumière vive, 40 pieds de lumière tamisée.</p></li><li><p><strong>Palier 2 :</strong> 40 pieds de lumière vive, 80 pieds de lumière tamisée.</p></li><li><p><strong>Palier 3 :</strong> 60 pieds de lumière vive, 120 pieds de lumière tamisée.</p></li></ul><p>La lumière persiste jusqu'à ce que vous désactiviez l'effet ou retiriez l'objet.</p>",
+                    "effects": {
+                        "Luminous": {
+                            "name": "Lumineux"
+                        }
+                    }
                 }
             }
+        }
+    },
+    "mapping": {
+        "adjective": "system.adjective",
+        "description": "description",
+        "actions": {
+            "path": "system.actions",
+            "converter": "actions_converter"
         }
     }
 }

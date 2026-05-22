@@ -30,14 +30,14 @@
             "name": "Crachat acide",
             "description": "<p>La créature possède des glandes salivaires qui produisent un acide caustique.</p>",
             "actions": {
-                "acidSpit": {
+                "Acid Spit": {
                     "name": "Crachat acide",
                     "description": "<p>La @ref[actor.name]{créature} crache un globe de bile acide sur une cible à moins de 20 pieds.</p><p>Sur un <strong>Coup critique</strong>, cette attaque cause la condition @Condition[corroding] pendant <strong>3 Tours</strong>.</p>",
-                    "effects": [
-                        {
+                    "effects": {
+                        "Acid Spit": {
                             "name": "Crachat acide"
                         }
-                    ]
+                    }
                 }
             }
         },
@@ -45,14 +45,14 @@
             "name": "Aspersion acide",
             "description": "<p>La créature possède des glandes salivaires qui produisent un jet acide caustique.</p>",
             "actions": {
-                "acidSpray": {
+                "Acid Spray": {
                     "name": "Aspersion acide",
                     "description": "<p>La créature expulse un jet de bile acide dans un cône de 10 pieds.</p><p>Sur un <strong>Coup critique</strong>, cette attaque cause la condition @Condition[corroding] pendant <strong>3 Tours</strong>.</p>",
-                    "effects": [
-                        {
+                    "effects": {
+                        "Acid Spray": {
                             "name": "Aspersion acide"
                         }
-                    ]
+                    }
                 }
             }
         },
@@ -64,7 +64,7 @@
             "name": "Transmission aqueuse",
             "description": "<p>La @ref[actor.name]{créature} est capable de se déplacer instantanément à travers l'eau.</p>",
             "actions": {
-                "aqueousTransmission": {
+                "Aqueous Transmission": {
                     "name": "Transmission aqueuse",
                     "description": "<p>Lorsque la @ref[actor.name]{créature} est dans l'eau, elle peut se transporter instantanément vers n'importe quel espace inoccupé dans la même étendue d'eau jusqu'à 120 pieds de distance. Elle n'a pas besoin de voir la destination pour effectuer ce <strong>Déplacement</strong>.</p>"
                 }
@@ -102,10 +102,10 @@
             "name": "Corrosion d’arme",
             "description": "<p>Le métabolisme corrosif interne de la @ref[actor.name]{vase} menace de dissoudre les armes métalliques qui la frappent.</p>",
             "actions": {
-                "oozeCorrodeWeapon": {
+                "Corrode Weapon": {
                     "name": "Corrosion d’arme",
-                    "description": "<p>Lorsqu'elle est frappée par une arme de mêlée en métal, la vase tente de consommer l'arme elle-même, la brisant potentiellement.</p><p>Cette attaque est <strong>Inoffensive</strong>, mais si elle réussit, la <strong>Qualité</strong> de l'arme utilisée dans l'attaque est rétrogradée d'un rang. Sur une Réussite critique ou si l'arme est déjà <strong>Bâclée</strong>, l'arme devient entièrement <strong>Brisée</strong>. Les armes enchantées sont protégées contre cet effet.</p>",
-                    "condition": "Frappée en mêlée par une arme faite de métal."
+                    "condition": "Frappée en mêlée par une arme faite de métal.",
+                    "description": "<p>Lorsqu'elle est frappée par une arme de mêlée en métal, la vase tente de consommer l'arme elle-même, la brisant potentiellement.</p><p>Cette attaque est <strong>Inoffensive</strong>, mais si elle réussit, la <strong>Qualité</strong> de l'arme utilisée dans l'attaque est rétrogradée d'un rang. Sur une Réussite critique ou si l'arme est déjà <strong>Bâclée</strong>, l'arme devient entièrement <strong>Brisée</strong>. Les armes enchantées sont protégées contre cet effet.</p>"
                 }
             }
         },
@@ -113,7 +113,7 @@
             "name": "Multiplier",
             "description": "<p>La @ref[actor.name]{vase} grandit rapidement, augmentant en santé et en taille.</p>",
             "actions": {
-                "oozeMultiply": {
+                "Multiply": {
                     "name": "Multiplier",
                     "description": "<p>Les cellules de la vase se multiplient rapidement à mesure que la créature grandit. Sa <strong>Taille</strong> augmente de 1 et sa <strong>Santé</strong> augmente de sa valeur de <strong>Robustesse</strong>.</p>"
                 }
@@ -123,7 +123,7 @@
             "name": "Subdiviser",
             "description": "<p>La @ref[actor.name]{vase} peut se diviser en plusieurs parties, chacune étant une copie indépendante de l'original.</p>",
             "actions": {
-                "oozeSubdivide": {
+                "Subdivide": {
                     "name": "Subdiviser",
                     "description": "<p>Les cellules de la vase se divisent rapidement et la créature se sépare en deux ! La créature originale et son clone divisent également sa <strong>Santé</strong> restante. La <strong>Taille</strong> de chaque créature résultante est diminuée de 1.</p><p>Si elle est en combat, la nouvelle créature agit comme une <strong>Invocation</strong> et rejoint le combat avec une <strong>Initiative</strong> de 1. Cette Action ne peut être utilisée que si la créature a une Taille supérieure à 2. La vase créée n'a jamais un rang supérieur à <strong>Normal</strong>.</p>"
                 }
@@ -137,14 +137,14 @@
             "name": "Frappe bondissante",
             "description": "<p>Cette créature se jette en avant, mettant tout son poids dans une frappe sautée.</p>",
             "actions": {
-                "pouncingStrike": {
+                "Pouncing Strike": {
                     "name": "Frappe bondissante",
                     "description": "<p>Cette attaque peut être utilisée après un <strong>Déplacement</strong> qui rapproche la @ref[actor.name]{créature} d'au moins 10 pieds de sa cible. Si la créature était au-dessus de la cible, cette attaque gagne <strong>+1 Faveur</strong> par tranche de 10 pieds de diminution d'élévation dans ce mouvement.</p><p>Si cette attaque est un <strong>Coup critique</strong>, la cible de l'attaque est immédiatement mise @Condition[prone].</p>",
-                    "effects": [
-                        {
+                    "effects": {
+                        "Pouncing Strike": {
                             "name": "Frappe bondissante"
                         }
-                    ]
+                    }
                 }
             }
         },
@@ -160,14 +160,14 @@
             "name": "Serres lacérantes",
             "description": "<p>La @ref[actor.name]{créature} attaque rapidement avec ses serres, infligeant de multiples coups lacérants contre une cible unique.</p>",
             "actions": {
-                "rakingTalons": {
+                "Raking Talons": {
                     "name": "Serres lacérantes",
                     "description": "<p>La @ref[actor.name]{créature} attaque rapidement avec ses deux serres.</p><p>Si au moins une attaque résulte en une <strong>Réussite critique</strong>, elle inflige la condition @Condition[bleeding] pendant <strong>2 Rounds</strong>.</p>",
-                    "effects": [
-                        {
+                    "effects": {
+                        "Raking Talons": {
                             "name": "Serres lacérantes"
                         }
-                    ]
+                    }
                 }
             }
         },
@@ -175,14 +175,14 @@
             "name": "Morsure entravante",
             "description": "<p>La @ref[actor.name]{créature} utilise ses puissantes mâchoires pour mordre et maintenir une cible avec sa morsure.</p>",
             "actions": {
-                "restrainingChomp": {
+                "Restraining Chomp": {
                     "name": "Morsure entravante",
                     "description": "<p>La créature mord sa cible. Si l'attaque est réussie et que la cible est de <strong>Taille</strong> égale ou inférieure, la cible est également <strong>Entravée</strong> jusqu'à ce que cette créature choisisse de la relâcher ou que l'entrave soit brisée autrement. Une seule cible peut être entravée par cette action à un moment donné.</p>",
-                    "effects": [
-                        {
+                    "effects": {
+                        "Restraining Chomp": {
                             "name": "Morsure entravante"
                         }
-                    ]
+                    }
                 }
             }
         },
@@ -190,7 +190,7 @@
             "name": "Auto-réparation",
             "description": "<p>L'@ref[actor.name]{artificiel} active des mécanismes de réparation internes pour atténuer les dégâts qu'il a subis.</p>",
             "actions": {
-                "selfRepair": {
+                "Self-Repair": {
                     "name": "Auto-réparation",
                     "description": "<p>L'artificiel récupère sa valeur de <strong>Robustesse</strong> en <strong>Santé</strong> et met immédiatement fin à une condition de statut unique de son choix qui l'affecte actuellement.</p>"
                 }
@@ -200,7 +200,7 @@
             "name": "Forme glissante",
             "description": "<p>Cette créature est glissante en permanence, lui donnant la capacité d'échapper à la capture par des entraves physiques.</p>",
             "actions": {
-                "slipperyEscape": {
+                "Slippery Escape": {
                     "name": "Évasion glissante",
                     "description": "<p>La créature utilise sa forme glissante pour échapper aux entraves, mettant immédiatement fin à la condition <strong>Entravé</strong>.</p>"
                 }
@@ -210,14 +210,14 @@
             "name": "Frappe en piqué",
             "description": "<p>Cette @ref[actor.name]{créature} fond depuis les hauteurs dans une attaque plongeante.</p>",
             "actions": {
-                "swoopingStrike": {
+                "Swooping Strike": {
                     "name": "Frappe en piqué",
                     "description": "<p>Cette attaque peut être utilisée après un <strong>Déplacement</strong> avec une descente d'au moins 10 pieds vers la cible. L'attaque gagne <strong>+1 Faveur</strong> par tranche de 10 pieds de diminution d'élévation dans ce déplacement.</p><p>Si cette attaque est un <strong>Coup critique</strong>, la cible de l'attaque est immédiatement mise @Condition[prone].</p>",
-                    "effects": [
-                        {
+                    "effects": {
+                        "Swooping Strike": {
                             "name": "Frappe en piqué"
                         }
-                    ]
+                    }
                 }
             }
         },
@@ -225,10 +225,10 @@
             "name": "Violenter",
             "description": "<p>Une fois que la @ref[actor.name]{créature} a un ennemi entravé, elle se débattra violemment infligeant des coups terribles à la victime saisie.</p>",
             "actions": {
-                "thrash": {
+                "Thrash": {
                     "name": "Violenter",
-                    "description": "<p>La créature inflige des dégâts <strong>Mortels</strong> à une cible qu'elle a actuellement <strong>Entravée</strong>.</p>",
-                    "condition": "La cible est Entravée par cette créature."
+                    "condition": "La cible est Entravée par cette créature.",
+                    "description": "<p>La créature inflige des dégâts <strong>Mortels</strong> à une cible qu'elle a actuellement <strong>Entravée</strong>.</p>"
                 }
             }
         },
@@ -236,14 +236,14 @@
             "name": "Charge du sanglier",
             "description": "Le Sanglier baisse la tête et charge à une vitesse frénétique, ses défenses dépassant sous un gosier baveux.",
             "actions": {
-                "tuskCharge": {
+                "Tusk Charge": {
                     "name": "Charge du sanglier",
                     "description": "<p>Charge en ligne directe sur une distance égale à la Foulée au maximum pour effectuer une Frappe contre la première créature rencontrée. En cas de succès, la cible est mise À terre.</p>",
-                    "effects": [
-                        {
+                    "effects": {
+                        "Tusk Charge": {
                             "name": "Charge du sanglier"
                         }
-                    ]
+                    }
                 }
             }
         },
@@ -255,14 +255,14 @@
             "name": "Morsure venimeuse",
             "description": "<p>La @ref[actor.name]{créature} injecte une toxine avec sa morsure.</p>",
             "actions": {
-                "venomousBite": {
+                "Venomous Bite": {
                     "name": "Morsure venimeuse",
                     "description": "<p>La @ref[actor.name]{créature} attaque, injecte une toxine qui, en cas de succès, inflige la condition @Condition[poisoned] pendant <strong>6 Tours</strong>.</p>",
-                    "effects": [
-                        {
+                    "effects": {
+                        "Venomous Bite": {
                             "name": "Morsure venimeuse"
                         }
-                    ]
+                    }
                 }
             }
         },
@@ -274,7 +274,7 @@
             "name": "Tisseur de toile",
             "description": "<p>La @ref[actor.name]{créature} peut créer une toile puissamment adhésive. Elle ignore toutes les restrictions de mouvement ou entraves causées par la toile.</p><p>Tant qu'elle est en contact avec une toile, la @ref[actor.name]{créature} connaît la localisation précise de toute autre créature en contact avec la même toile.</p>",
             "actions": {
-                "webSpinner": {
+                "Web Spinner": {
                     "name": "Tisseur de toile",
                     "description": "<p>La créature peut passer 10 minutes à tisser une nouvelle section de toile qui couvre une zone de 5 pieds.</p>"
                 }
@@ -292,14 +292,14 @@
             "name": "Pustules répugnantes",
             "description": "<p>Un nuage malodorant enveloppe cette créature comme un linceul, dégageant l'odeur fétide et nocive de la décomposition. Frapper cette créature risque de libérer une essence répugnante et corruptrice.</p>",
             "actions": {
-                "repugnantPustules": {
+                "Repugnant Pustules": {
                     "name": "Pustules répugnantes",
                     "description": "<p>Lorsque la @ref[actor.name]{créature} est touchée par une <strong>Frappe</strong>, elle peut partiellement éclater pour libérer un jet de fluide écœurant qui inflige des dégâts de <strong>Corruption</strong>. Cette action dépend de la <strong>Robustesse</strong> et cible la défense de <strong>Réflexes</strong> de toute créature à moins de 3 pieds.</p><p>Sur une <strong>Réussite critique</strong>, la cible affectée devient temporairement @Condition[diseased] pendant 3 rounds.</p>",
-                    "effects": [
-                        {
+                    "effects": {
+                        "Repugnant Pustules": {
                             "name": "Pustules répugnantes"
                         }
-                    ]
+                    }
                 }
             }
         },
@@ -311,10 +311,10 @@
             "name": "Fouisseur",
             "description": "<p>La @ref[actor.name]{créature} possède la capacité surnaturelle de creuser rapidement à travers des surfaces solides qui ne sont pas totalement imperméables.</p><p>De plus, elle peut comprimer son corps pour passer par des ouvertures pouvant accueillir ¼ de sa <strong>Taille</strong>.</p>",
             "actions": {
-                "explosiveEmergence": {
+                "Explosive Emergence": {
                     "name": "Émergence explosive",
-                    "description": "<p>La @ref[actor.name]{créature} surgit d’une position souterraine avec une force soudaine et surprenante. Cette action ne peut être activée qu’immédiatement après que la créature ait quitté l’état @Condition[burrowing].</p><p>La @ref[actor.name]{créature} <strong>Frappe</strong> toutes les cibles ennemies à portée de son arme avec une attaque <strong>Améliorée</strong>.</p>",
-                    "condition": "Être Enfoui."
+                    "condition": "Être Enfoui.",
+                    "description": "<p>La @ref[actor.name]{créature} surgit d’une position souterraine avec une force soudaine et surprenante. Cette action ne peut être activée qu’immédiatement après que la créature ait quitté l’état @Condition[burrowing].</p><p>La @ref[actor.name]{créature} <strong>Frappe</strong> toutes les cibles ennemies à portée de son arme avec une attaque <strong>Améliorée</strong>.</p>"
                 }
             }
         },
@@ -322,7 +322,7 @@
             "name": "Serviteur",
             "description": "<p>La @ref[actor.name]{créature} sert la volonté d’un autre et maintient un lien avec ce maître qui permet la transmission de messages ou même le partage de perceptions entre le serviteur et son contrôleur.</p>",
             "actions": {
-                "servitorSending": {
+                "Servitor Sending": {
                     "name": "Voie du serviteur",
                     "description": "<p>La @ref[actor.name]{créature} peut contacter son maître en envoyant une communication inaudible qui est instantanément reçue par le contrôleur, tant que celui-ci est capable de recevoir des messages.</p>"
                 }
@@ -332,14 +332,14 @@
             "name": "Prise adhérente",
             "description": "<p>La @ref[actor.name]{créature} peut s’agripper à des surfaces verticales ou suspendues avec une adhérence exceptionnelle. Elle peut éviter de tomber tant qu’elle est adjacente à toute surface solide capable de la supporter.</p>",
             "actions": {
-                "droppingStrike": {
+                "Dropping Strike": {
                     "name": "Frappe plongeante",
                     "description": "<p>La @ref[actor.name]{créature} peut se laisser tomber depuis une position en hauteur pour <strong>Frapper</strong> une créature située en dessous. La cible subit une attaque <strong>Améliorée</strong> qui, si elle touche, la met @Condition[prone] en plus de lui infliger des dégâts.</p><p>La @ref[actor.name]{créature} ne subit des dégâts de chute que si l’attaque rate sa cible.</p>",
-                    "effects": [
-                        {
+                    "effects": {
+                        "Dropping Strike": {
                             "name": "Frappe plongeante"
                         }
-                    ]
+                    }
                 }
             }
         },
@@ -351,15 +351,15 @@
             "name": "Flamboiement funeste",
             "description": "<p>À sa mort, la @ref[actor.name]{créature} explose en une déflagration instable d’énergie radiante.</p>",
             "actions": {
-                "radiantDeathBurst": {
+                "Radiant Death Burst": {
                     "name": "Flamboiement funeste",
-                    "description": "<p>Lorsque la @ref[actor.name]{créature} devient @Condition[dead], elle explose en une impulsion d’énergie <strong>Radiante</strong> qui attaque la défense de <strong>Fortitude</strong> de toutes les créatures proches ayant échoué à résister à l’effet, et sur un succès critique, les afflige de la condition @Condition[irradiated] pour <strong>3 rounds</strong>.</p>",
                     "condition": "La créature meurt.",
-                    "effects": [
-                        {
+                    "description": "<p>Lorsque la @ref[actor.name]{créature} devient @Condition[dead], elle explose en une impulsion d’énergie <strong>Radiante</strong> qui attaque la défense de <strong>Fortitude</strong> de toutes les créatures proches ayant échoué à résister à l’effet, et sur un succès critique, les afflige de la condition @Condition[irradiated] pour <strong>3 rounds</strong>.</p>",
+                    "effects": {
+                        "Radiant Death Burst": {
                             "name": "Flamboiement funeste"
                         }
-                    ]
+                    }
                 }
             }
         },
@@ -367,15 +367,15 @@
             "name": "Sacrifice de soi",
             "description": "<p>La @ref[actor.name]{créature} peut intervenir pour subir une attaque à la place d’un allié adjacent.</p>",
             "actions": {
-                "sacrificeSelf": {
+                "Sacrifice Self": {
                     "name": "Sacrifice de soi",
-                    "description": "<p>La @ref[actor.name]{créature} réagit, effectuant un <strong>Déplacement</strong> jusqu’à sa <strong>Foulée</strong> pour se placer entre un allié proche et une source de danger qu’elle peut percevoir.</p><p>La @ref[actor.name]{créature} devient @Condition[dead], détruite dans son sacrifice, mais l’action déclenchante ne produit aucun effet sur la cible initiale.</p>",
                     "condition": "Un allié à proximité est ciblé par une action hostile.",
-                    "effects": [
-                        {
+                    "description": "<p>La @ref[actor.name]{créature} réagit, effectuant un <strong>Déplacement</strong> jusqu’à sa <strong>Foulée</strong> pour se placer entre un allié proche et une source de danger qu’elle peut percevoir.</p><p>La @ref[actor.name]{créature} devient @Condition[dead], détruite dans son sacrifice, mais l’action déclenchante ne produit aucun effet sur la cible initiale.</p>",
+                    "effects": {
+                        "Sacrifice Self": {
                             "name": "Sacrifice de soi"
                         }
-                    ]
+                    }
                 }
             }
         },
@@ -399,15 +399,15 @@
             "name": "Marque funéraire",
             "description": "<p>Lorsque la @ref[actor.name]{créature} réussit un Coup critique avec une attaque mêlée, elle laisse une Marque funéraire funeste sur sa cible.</p>",
             "actions": {
-                "graveMark": {
+                "Grave Mark": {
                     "name": "Marque funéraire",
-                    "description": "<p>Après avoir réussi un <strong>Coup critique</strong> avec une attaque de mêlée, la @ref[actor.name]{créature} attaque la défense de <strong>Volonté</strong> de la cible, laissant une Marque funéraire sur un succès, ce qui inflige la condition @Condition[exhausted] qui persiste jusqu'à ce que la cible termine un <strong>Repos</strong>.</p><p>Si une créature humanoïde portant une Marque funéraire meurt sous l'effet de cette marque, elle se relève à son tour suivant en tant que @UUID[Compendium.crucible.taxonomy.Item.ghoul00000000000]{Goule}.</p>",
                     "condition": "Lors d'un Coup critique avec une attaque de mêlée.",
-                    "effects": [
-                        {
+                    "description": "<p>Après avoir réussi un <strong>Coup critique</strong> avec une attaque de mêlée, la @ref[actor.name]{créature} attaque la défense de <strong>Volonté</strong> de la cible, laissant une Marque funéraire sur un succès, ce qui inflige la condition @Condition[exhausted] qui persiste jusqu'à ce que la cible termine un <strong>Repos</strong>.</p><p>Si une créature humanoïde portant une Marque funéraire meurt sous l'effet de cette marque, elle se relève à son tour suivant en tant que @UUID[Compendium.crucible.taxonomy.Item.ghoul00000000000]{Goule}.</p>",
+                    "effects": {
+                        "Grave Mark": {
                             "name": "Marque funéraire"
                         }
-                    ]
+                    }
                 }
             }
         },
@@ -415,15 +415,15 @@
             "name": "Critique horrible",
             "description": "<p>La @ref[actor.name]{créature} assène des coups sauvages et grotesques qui inspirent la peur à tous ceux qui les contemplent.</p>",
             "actions": {
-                "horrificCritical": {
+                "Horrific Critical": {
                     "name": "Critique horrible",
-                    "description": "<p>Lorsque la @ref[actor.name]{créature} réussit un <strong>Coup critique</strong> avec une attaque de mêlée, elle peut exagérer la violence du coup au point de susciter la peur chez ceux qui en sont témoins.</p><p>Tous les ennemis à moins de 30 pieds pouvant voir la créature subissent une attaque <strong>Inoffensive</strong> contre leur <strong>Volonté</strong> ou deviennent @Condition[frightened] pendant <strong>3 Tours</strong>.</p>",
                     "condition": "Immédiatement après que la créature réussit un Coup critique avec une attaque de mêlée.",
-                    "effects": [
-                        {
+                    "description": "<p>Lorsque la @ref[actor.name]{créature} réussit un <strong>Coup critique</strong> avec une attaque de mêlée, elle peut exagérer la violence du coup au point de susciter la peur chez ceux qui en sont témoins.</p><p>Tous les ennemis à moins de 30 pieds pouvant voir la créature subissent une attaque <strong>Inoffensive</strong> contre leur <strong>Volonté</strong> ou deviennent @Condition[frightened] pendant <strong>3 Tours</strong>.</p>",
+                    "effects": {
+                        "Horrific Critical": {
                             "name": "Critique horrible"
                         }
-                    ]
+                    }
                 }
             }
         },
@@ -431,14 +431,14 @@
             "name": "Crachat de foudre",
             "description": "<p>La @ref[actor.name]{créature} est capable de produire et d'expulser une décharge voltaïque mineure.</p>",
             "actions": {
-                "lightningSpit": {
+                "Lightning Spit": {
                     "name": "Crachat de foudre",
                     "description": "<p>La @ref[actor.name]{créature} crache un petit éclair sur une créature ciblée à moins de 20 pieds, attaquant son <strong>Réflexe</strong> et infligeant des dégâts <strong>Électriques</strong>.</p><p>Sur un <strong>Coup critique</strong>, l'attaque cause la condition @Condition[shocked] pendant <strong>3 Tours</strong>.</p>",
-                    "effects": [
-                        {
+                    "effects": {
+                        "Lightning Spit": {
                             "name": "Crachat de foudre"
                         }
-                    ]
+                    }
                 }
             }
         },
@@ -446,14 +446,14 @@
             "name": "Spray de foudre",
             "description": "<p>La @ref[actor.name]{créature} est capable de produire et d'expulser une décharge voltaïque puissante.</p>",
             "actions": {
-                "lightningSpray": {
+                "Lightning Spray": {
                     "name": "Spray de foudre",
                     "description": "<p>La @ref[actor.name]{créature} expulse un éclair dans un rayon de 30 pieds de long et 4 pieds de large, attaquant le <strong>Réflexe</strong> de chaque cible sur son chemin et infligeant des dégâts <strong>Électriques</strong>.</p><p>Sur un <strong>Coup critique</strong>, l'attaque cause la condition @Condition[shocked] pendant <strong>3 Tours</strong>.</p>",
-                    "effects": [
-                        {
+                    "effects": {
+                        "Lightning Spray": {
                             "name": "Spray de foudre"
                         }
-                    ]
+                    }
                 }
             }
         },
@@ -461,14 +461,14 @@
             "name": "Morsure nécrotique",
             "description": "<p>La @ref[actor.name]{créature} déchire la chair avec une gueule corrompue par la peste et la non-mort.</p>",
             "actions": {
-                "necroticBite": {
+                "Necrotic Bite": {
                     "name": "Morsure nécrotique",
                     "description": "<p>La @ref[actor.name]{créature} attaque avec une morsure pestilentielle <strong>Améliorée</strong> et inflige des dégâts de <strong>Corruption</strong>.</p><p>Sur une <strong>Réussite critique</strong>, l'attaque cause la condition @Condition[decaying] pendant <strong>3 Tours</strong>.</p>",
-                    "effects": [
-                        {
+                    "effects": {
+                        "Necrotic Bite": {
                             "name": "Morsure nécrotique"
                         }
-                    ]
+                    }
                 }
             }
         },
@@ -476,14 +476,14 @@
             "name": "Crachat nocif",
             "description": "<p>La @ref[actor.name]{créature} produit une toxine salivaire qu'elle peut expulser sous forme de globule projeté.</p>",
             "actions": {
-                "noxiousSpit": {
+                "Noxious Spit": {
                     "name": "Crachat nocif",
                     "description": "<p>La @ref[actor.name]{créature} crache un globule de toxine sur une créature ciblée à moins de 20 pieds, attaquant son <strong>Réflexe</strong> et infligeant des dégâts de <strong>Poison</strong>.</p><p>Sur un <strong>Coup critique</strong>, l'attaque cause la condition @Condition[poisoned] pendant <strong>3 Tours</strong>.</p>",
-                    "effects": [
-                        {
+                    "effects": {
+                        "Noxious Spit": {
                             "name": "Crachat nocif"
                         }
-                    ]
+                    }
                 }
             }
         },
@@ -491,14 +491,14 @@
             "name": "Spray nocif",
             "description": "<p>La @ref[actor.name]{créature} est capable de produire et d'expulser une décharge toxique en un rayon projeté.</p>",
             "actions": {
-                "noxiousSpray": {
+                "Noxious Spray": {
                     "name": "Spray nocif",
                     "description": "<p>La @ref[actor.name]{créature} expulse une décharge toxique dans une rayon de 30 pieds de long et 4 pieds de large, attaquant le <strong>Réflexe</strong> de chaque cible sur son chemin et infligeant des dégâts de <strong>Poison</strong>.</p><p>Sur un <strong>Coup critique</strong>, l'attaque cause la condition @Condition[poisoned] pendant <strong>3 Tours</strong>.</p>",
-                    "effects": [
-                        {
+                    "effects": {
+                        "Noxious Spray": {
                             "name": "Spray nocif"
                         }
-                    ]
+                    }
                 }
             }
         },
@@ -506,7 +506,7 @@
             "name": "Démarche de l'ombre",
             "description": "<p>La @ref[actor.name]{créature} est capable de passer d'une ombre à l'autre pour se déplacer de manière cauchemardesque et imprévisible.</p>",
             "actions": {
-                "shadowGait": {
+                "Shadow Gait": {
                     "name": "Démarche de l'ombre",
                     "description": "<p>Dans une lumière tamisée ou l'obscurité, la @ref[actor.name]{créature} peut se fondre dans l'ombre et disparaître à la vue. Elle peut se <strong>Déplacer</strong> et réapparaître dans une zone différente de lumière tamisée ou d'obscurité. Il s'agit d'un déplacement <strong>Clignotant</strong> qui ne provoque pas de désengagement.</p>"
                 }
@@ -514,20 +514,26 @@
         },
         "Sunlight Weakness": {
             "name": "Morsure du soleil",
-            "description": "<p>Sous la lumière du soleil, la @ref[actor.name]{créature} soufre de <strong>2 Fléaux</strong> pour toutes ses actions. </p><p>cette mécanique est géré à travers un <strong>Effet actif</strong> dont l'activation peut être facilement basculée au besoin.</p>"
+            "description": "<p>La créature subit des fléaux à toutes ses actions lorsqu'elle est exposée à la lumière du soleil.</p>",
+            "effects": {
+                "Sunlight Weakness": {
+                    "name": "Morsure du soleil",
+                    "description": "<p>La créature subit des fléaux à toutes ses actions lorsqu'elle est exposée à la lumière du soleil.</p>"
+                }
+            }
         },
         "Tail Sweep": {
             "name": "Balayage de queue",
             "description": "<p>La @ref[actor.name]{créature} peut fouetter avec sa lourde queue à travers le champ de bataille avec une force terrible.</p>",
             "actions": {
-                "tailSweep": {
+                "Tail Sweep": {
                     "name": "Balayage de queue",
                     "description": "<p>La @ref[actor.name]{créature} décrit un arc de cercle avec sa lourde queue, frappant toutes les créatures à portée. Sur un <strong>Coup critique</strong>, les cibles affectées deviennent @Condition[staggered] jusqu'à la fin de leur prochain tour.</p>",
-                    "effects": [
-                        {
+                    "effects": {
+                        "Tail Sweep": {
                             "name": "Balayage de queue"
                         }
-                    ]
+                    }
                 }
             }
         },
@@ -539,14 +545,14 @@
             "name": "Charge écrasante",
             "description": "<p>La @ref[actor.name]{créature} utilise sa taille prodigieuse pour charger en avant, piétinant les créatures plus petites qui se dressent sur son chemin.</p>",
             "actions": {
-                "tramplingCharge": {
+                "Trampling Charge": {
                     "name": "Charge écrasante",
                     "description": "<p>La @ref[actor.name]{créature} se déplace vers l'avant jusqu'à deux fois sa <strong>Foulée</strong>, attaquant la défense de <strong>Réflexe</strong> de toutes les créatures sur son chemin. Les cibles qui font la moitié de la taille de la créature ou moins sont @Condition[stunned] jusqu'à la fin de leur prochain tour alors qu'elles sont brutalement écartées.</p>",
-                    "effects": [
-                        {
+                    "effects": {
+                        "Trampling Charge": {
                             "name": "Charge écrasante"
                         }
-                    ]
+                    }
                 }
             }
         },
@@ -562,14 +568,14 @@
             "name": "Invisibilité naturelle",
             "description": "<p>Par un aspect organique ou arcanique de sa physiologie, @ref[actor.name]{cette créature] possède la capacité de devenir complètement invisible.</p>",
             "actions": {
-                "invisibility": {
+                "Natural Invisibility": {
                     "name": "Invisibilité naturelle",
                     "description": "<p>Vous devenez @Condition[invisible] et ne pouvez pas être détecté par la perception visuelle. Vous ne pouvez être la cible directe d'aucune action. Cet effet reste actif pendant 10 minutes ou jusqu'à ce que toute autre action qu'un <strong>Déplacement</strong> soit utilisée.</p>",
-                    "effects": [
-                        {
+                    "effects": {
+                        "Natural Invisibility": {
                             "name": "Invisibilité naturelle"
                         }
-                    ]
+                    }
                 }
             }
         },
@@ -577,14 +583,14 @@
             "name": "Engloutissement",
             "description": "<p>@Ref[actor.name]{Cette créature} a la capacité d'avaler en entier des créatures plus petites qu'elle, bien qu'une seule créature puisse être affectée par cette action à la fois.</p>",
             "actions": {
-                "swallow": {
+                "Swallow": {
                     "name": "Engloutissement",
                     "description": "<p>Vous avalez un ennemi ciblé, le mettant ainsi hors de combat. La cible engloutie est @Condition[blinded] et @Condition[restrained] jusqu'à sa libération.</p><p>Si vous subissez des dégâts <strong>Graves</strong>, des <strong>Lésions</strong>, ou devenez @Condition[incapacitated], vous régurgitez la créature engloutie.</p>",
-                    "effects": [
-                        {
+                    "effects": {
+                        "Swallow": {
                             "name": "Engloutissement"
                         }
-                    ]
+                    }
                 }
             }
         },
@@ -596,15 +602,15 @@
             "description": "<p>Les artificiels à vapeur stockent des quantités dangereuses de vapeur surchauffée dans leur structure qui, si elles ne sont pas évacuées en toute sécurité, peuvent provoquer des blessures graves.</p>",
             "name": "Surchauffe",
             "actions": {
-                "steamVent": {
+                "Burnout": {
                     "name": "Surchauffe",
-                    "description": "<p>L'@ref[actor.name]{artificiel} se rompt, déversant un souffle de flammes et de fumée, attaquant le <strong>Réflexe</strong> de chaque cible dans le rayon et inflige des dégâts de <strong>Feu</strong>. Celles qui subissent des dégâts de cette attaque sont @Condition[blinded] pour 3 tours.</p>",
                     "condition": "L'@ref[actor.name]{artificiel} a des Lésions",
-                    "effects": [
-                        {
+                    "description": "<p>L'@ref[actor.name]{artificiel} se rompt, déversant un souffle de flammes et de fumée, attaquant le <strong>Réflexe</strong> de chaque cible dans le rayon et inflige des dégâts de <strong>Feu</strong>. Celles qui subissent des dégâts de cette attaque sont @Condition[blinded] pour 3 tours.</p>",
+                    "effects": {
+                        "Burnout": {
                             "name": "Surchauffe"
                         }
-                    ]
+                    }
                 }
             }
         },
@@ -612,15 +618,15 @@
             "name": "Explosion corruptrice mortelle",
             "description": "<p>À sa mort, la @ref[actor.name]{créature} explose en une déflagration instable d’énergie corruptrice.</p>",
             "actions": {
-                "corruptingDeathBurst": {
+                "Corrupting Death Burst": {
                     "name": "Explosion corruptrice mortelle",
-                    "description": "<p>Lorsque la @ref[actor.name]{créature} devient @Condition[dead], elle explose en une onde de spores qui inflige des dégâts de <strong>Corruption</strong>, attaquant la défense de <strong>Fortitude</strong> de toutes les créatures proches qui ne parviennent pas à résister à l'effet et, en cas de succès critique, les afflige de la condition [decaying] pour <strong>3 rounds</strong>.</p>",
                     "condition": "La créature meurt.",
-                    "effects": [
-                        {
+                    "description": "<p>Lorsque la @ref[actor.name]{créature} devient @Condition[dead], elle explose en une onde de spores qui inflige des dégâts de <strong>Corruption</strong>, attaquant la défense de <strong>Fortitude</strong> de toutes les créatures proches qui ne parviennent pas à résister à l'effet et, en cas de succès critique, les afflige de la condition [decaying] pour <strong>3 rounds</strong>.</p>",
+                    "effects": {
+                        "Corrupting Death Burst": {
                             "name": "Explosion corruptrice mortelle"
                         }
-                    ]
+                    }
                 }
             }
         },
@@ -632,14 +638,14 @@
             "name": "Explosion de foudre",
             "description": "<p>La @ref[actor.name]{créature} est capable de produire et d'expulser une explosion voltaïque puissante.</p>",
             "actions": {
-                "lightningBurst": {
+                "Lightning Burst": {
                     "name": "Explosion de foudre",
                     "description": "<p>La @ref[actor.name]{créature} expulse un éclair dans une explosion de 15 pieds, attaquant le <strong>Réflexe</strong> de chaque cible dans cette portée et infligeant des dégâts <strong>Électriques</strong>.</p><p>Sur un <strong>Coup critique</strong>, l'attaque cause la condition @Condition[shocked] pendant <strong>3 Tours</strong>.</p>",
-                    "effects": [
-                        {
+                    "effects": {
+                        "Lightning Burst": {
                             "name": "Explosion de foudre"
                         }
-                    ]
+                    }
                 }
             }
         },
@@ -647,16 +653,27 @@
             "description": "<p>Les artificiels à vapeur stockent des quantités dangereuses de vapeur surchauffée dans leur structure qui, si elles ne sont pas évacuées en toute sécurité, peuvent provoquer des blessures graves.</p>",
             "name": "Conduit de vapeur",
             "actions": {
-                "steamVent": {
+                "Steam Vent": {
                     "name": "Conduit de vapeur",
                     "description": "<p>De la vapeur surchauffée jaillit de l'intérieur de l'artificiel à vapeur dans une explosion de dégâts brûlants, repoussant ceux qui se trouvent trop près, les laissant @Condition[prone] .</p>",
-                    "effects": [
-                        {
+                    "effects": {
+                        "Steam Vent": {
                             "name": "Conduit de vapeur"
                         }
-                    ]
+                    }
                 }
             }
+        }
+    },
+    "mapping": {
+        "description": "system.description",
+        "actions": {
+            "path": "system.actions",
+            "converter": "actions_converter"
+        },
+        "effects": {
+            "path": "effects",
+            "converter": "embedded_effects_converter"
         }
     }
 }

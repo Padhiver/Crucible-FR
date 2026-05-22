@@ -33,5 +33,8 @@
             "name": "Orque",
             "description": "<p>Votre naissance a été marquée par les étoiles et les traditions d'un peuple fier et endurant. Votre corps grand et tonique ainsi que votre propension naturelle à la robustesse ont des origines venant d'un peuple exposé à la lutte incessante d'un climat nordique rigoureux. Votre peuple est avant tout connu pour sa force et sa résilience.</p>"
         }
+    },
+    "mapping": {
+        "description": "system.description"
     }
 }

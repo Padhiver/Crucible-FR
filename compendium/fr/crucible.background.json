@@ -37,5 +37,8 @@
             "name": "Vagabond",
             "description": "<p>Vous avez vécu une vie itinérante. Vous n'appréciez rien de plus que la sensation d'être sur une charrette ou une monture, regardant quelque ciel étranger passer lentement au-dessus de vous. Vous avez appris à prêter une attention particulière à votre environnement et à ses besoins, à soigner les créatures sur lesquelles vous comptez, et à vous débrouiller avec ce que vous pouvez trouver.</p>"
         }
+    },
+    "mapping": {
+        "description": "system.description"
     }
 }

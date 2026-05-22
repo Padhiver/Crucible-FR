@@ -113,5 +113,8 @@
             "name": "Automate",
             "description": "<p>Artificiels conçus comme un reflet des humanoïdes pour servir à l'accomplissement de tâches manuelles simples.</p>"
         }
+    },
+    "mapping": {
+        "description": "system.description"
     }
 }

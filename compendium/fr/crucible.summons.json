@@ -16,11 +16,11 @@
                 },
                 "Rune: Death": {
                     "name": "Rune : Mort",
-                    "description": "<p>La force ordonnée de la destruction, responsable de la corruption de toute matière biologique. La Rune de Mort gouverne la pourriture et la destruction.</p><p>La Rune de Mort évolue avec l'<strong>Intellect</strong>, cible la <strong>Fortitude</strong>, et inflige des dégâts de <strong>Corruption</strong> à la <strong>Santé</strong>. Elle est opposée par la rune chaotique de <strong>Vie</strong>.</p>"
+                    "description": "Vous apprenez la Rune de Mort, vous permettant de manipuler une puissance impie."
                 },
                 "Gesture: Fan": {
                     "name": "Signe : Éventail",
-                    "description": "<p>Vous façonnez l'essence d'une Rune en un arc de cercle balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate.</p><p>Le signe Éventail évolue avec l'<strong>Intellect</strong> et cible un arc de 120 degrés avec un rayon de 6 pieds. Il inflige <strong>6 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                    "description": "<p>Canalisez l'essence d'une rune en un arc balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate. Utilisé avec la Terre, cela peut projeter une gerbe de pierres en arc de cercle, tandis qu'avec la Kinésie, cela peut trancher plusieurs ennemis d'un coup.</p><p>Le signe Éventail dépend de l'<strong>Intellect</strong> et cible un cône de 120 degrés sur 6 pieds, infligeant 6 dégâts de base en cas d'attaque réussie.</p>"
                 },
                 "False Appearance": {
                     "name": "Faux-semblant",
@@ -41,7 +41,7 @@
             "items": {
                 "Rune: Flame": {
                     "name": "Rune : Flamme",
-                    "description": "<p>La force chaotique de l'énergie élémentaire et thermique. La Rune de Flamme gouverne le feu et la chaleur.</p><p>La Rune de Flamme évolue avec l'Intellect, cible le <strong>Réflexe</strong>, et inflige des dégâts de <strong>Feu</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Givre</strong>.</p>"
+                    "description": "Vous apprenez la Rune de Flamme, vous permettant de tisser l'élément arcanique du feu."
                 },
                 "Fire Absorption": {
                     "name": "Absorption de Feu",
@@ -77,16 +77,13 @@
                 "Elemental Armor": {
                     "name": "Armure élémentaire"
                 },
-                "Voltaic Claw": {
-                    "name": "Griffe Voltaïque"
-                },
                 "Gesture: Arrow": {
                     "name": "Signe : Flèche",
-                    "description": "<p>Vous lancez un projectile imprégné du pouvoir magique d'une Rune sur une cible distante.</p><p>Le signe de Flèche évolue avec l'<strong>Intellect</strong> et cible une créature unique jusqu'à une distance de 60 pieds, infligeant <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                    "description": "<p>Vous apprenez le Signe Flèche, vous permettant de projeter un trait dirigé de puissance arcanique vers une cible lointaine.</p>\n<p>Le Signe Flèche inflige des dégâts correspondant à la Rune utilisée à une cible ennemie unique à portée.</p>"
                 },
                 "Rune: Lightning": {
                     "name": "Rune : Foudre",
-                    "description": "<p>La force chaotique de l'énergie électrique brute. La Rune de Foudre gouverne les sources de charge et de décharge électrique.</p><p>La Rune de Foudre évolue avec l'<strong>Intellect</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts <strong>Électriques</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Terre</strong>.</p>"
+                    "description": "<p>La force chaotique de l'énergie électrique brute. La Rune de Foudre gouverne les sources d'énergie électrique et de décharge électrique. Elle est opposée par la rune ordonnée de la Terre.</p><p>La Rune de Foudre évolue avec l'<strong>Intellect</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts <strong>Électriques</strong> à la <strong>Santé</strong>.</p>"
                 },
                 "Electricity Absorption": {
                     "name": "Absorption d'Électricité",
@@ -99,6 +96,9 @@
                 "Gesture: Fan": {
                     "name": "Signe : Éventail",
                     "description": "<p>Vous façonnez l'essence d'une Rune en un arc de cercle balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate.</p><p>Le signe Éventail évolue avec l'<strong>Intellect</strong> et cible un arc de 120 degrés avec un rayon de 6 pieds. Il inflige <strong>6 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                },
+                "Earthen Claw": {
+                    "name": "Griffe de Terre"
                 }
             },
             "archetype": {
@@ -115,11 +115,11 @@
             "items": {
                 "Rune: Flame": {
                     "name": "Rune : Flamme",
-                    "description": "<p>La force chaotique de l'énergie élémentaire et thermique. La Rune de Flamme gouverne le feu et la chaleur.</p><p>La Rune de Flamme évolue avec l'Intellect, cible le <strong>Réflexe</strong>, et inflige des dégâts de <strong>Feu</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Givre</strong>.</p>"
+                    "description": "Vous apprenez la Rune de Flamme, vous permettant de tisser l'élément arcanique du feu."
                 },
                 "Gesture: Fan": {
                     "name": "Signe : Éventail",
-                    "description": "<p>Vous façonnez l'essence d'une Rune en un arc de cercle balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate.</p><p>Le signe Éventail évolue avec l'<strong>Intellect</strong> et cible un arc de 120 degrés avec un rayon de 6 pieds. Il inflige <strong>6 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                    "description": "<p>Canalisez l'essence d'une rune en un arc balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate. Utilisé avec la Terre, cela peut projeter une gerbe de pierres en arc de cercle, tandis qu'avec la Kinésie, cela peut trancher plusieurs ennemis d'un coup.</p><p>Le signe Éventail dépend de l'<strong>Intellect</strong> et cible un cône de 120 degrés sur 6 pieds, infligeant 6 dégâts de base en cas d'attaque réussie.</p>"
                 },
                 "Flame Claw": {
                     "name": "Griffe de Flamme"
@@ -193,13 +193,13 @@
                 },
                 "Rune: Frost": {
                     "name": "Rune : Givre",
-                    "description": "<p>La force ordonnée de l'eau et du froid. La Rune de Givre gouverne la création d'eau ou d'autres fluides et leur transfert entre les états liquide et gelé.</p><p>La Rune de Givre évolue avec la <strong>Sagesse</strong>, cible la <strong>Fortitude</strong>, et inflige des dégâts de <strong>Froid</strong> à la <strong>Santé</strong>. Elle est opposée par la rune chaotique de <strong>Flamme</strong>.</p>"
+                    "description": "Vous apprenez la Rune de Givre, vous permettant de canaliser l'élément arcanique de la glace."
                 },
                 "Aqueous Transmission": {
                     "name": "Transmission aqueuse",
                     "description": "<p>La @ref[name] est capable de se déplacer instantanément à travers l'eau.</p>",
                     "actions": {
-                        "aqueousTransmission": {
+                        "Aqueous Transmission": {
                             "name": "Transmission aqueuse",
                             "description": "<p>Lorsque la @ref[name] est dans l'eau, elle peut se transporter instantanément vers n'importe quel espace inoccupé dans la même étendue d'eau jusqu'à 120 pieds de distance. Elle n'a pas besoin de voir la destination pour effectuer ce <strong>Déplacement</strong>.</p>"
                         }
@@ -240,11 +240,11 @@
                 },
                 "Rune: Frost": {
                     "name": "Rune : Givre",
-                    "description": "<p>La force ordonnée de l'eau et du froid. La Rune de Givre gouverne la création d'eau ou d'autres fluides et leur transfert entre les états liquide et gelé.</p><p>La Rune de Givre évolue avec la <strong>Sagesse</strong>, cible la <strong>Fortitude</strong>, et inflige des dégâts de <strong>Froid</strong> à la <strong>Santé</strong>. Elle est opposée par la rune chaotique de <strong>Flamme</strong>.</p>"
+                    "description": "Vous apprenez la Rune de Givre, vous permettant de canaliser l'élément arcanique de la glace."
                 },
                 "Gesture: Influence": {
                     "name": "Signe : Influence",
-                    "description": "<p>Vous intensifiez la puissance arcanique d'une Rune en un contact direct concentré qui est généralement une évolution plus puissante du signe de Contact de base.</p><p>Le signe d'Influence évolue avec la <strong>Présence</strong> et cible une créature adjacente unique. Il inflige <strong>10 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                    "description": "<p>Vous apprenez le signe Influence, vous permettant d'intensifier ou de diminuer un phénomène arcanique à courte portée.</p>\n<p>Le signe d'Influence est une évolution plus puissante du signe Contact, infligeant plus de dégâts ou de soins, mais nécessitant 2 Actions pour être exécuté.</p>"
                 },
                 "Cold Absorption": {
                     "name": "Absorption de Froid",
@@ -258,7 +258,7 @@
                     "name": "Transmission aqueuse",
                     "description": "<p>La @ref[name] est capable de se déplacer instantanément à travers l'eau.</p>",
                     "actions": {
-                        "aqueousTransmission": {
+                        "Aqueous Transmission": {
                             "name": "Transmission aqueuse",
                             "description": "<p>Lorsque la @ref[name] est dans l'eau, elle peut se transporter instantanément vers n'importe quel espace inoccupé dans la même étendue d'eau jusqu'à 120 pieds de distance. Elle n'a pas besoin de voir la destination pour effectuer ce <strong>Déplacement</strong>.</p>"
                         }
@@ -287,7 +287,7 @@
             "items": {
                 "Rune: Earth": {
                     "name": "Rune : Terre",
-                    "description": "<p>La force ordonnée de la terre élémentaire, responsable de la matière physique. La Rune de Terre gouverne les minéraux, les métaux, les sols et autres composés physiques.</p><p>La Rune de Terre évolue avec la <strong>Sagesse</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts d'<strong>Acide</strong> à la <strong>Santé</strong>. Elle est opposée par la rune chaotique de <strong>Foudre</strong>.</p>"
+                    "description": "Vous apprenez la Rune de Terre, vous permettant de contrôler les forces tectoniques et corrosives."
                 },
                 "Acid Absorption": {
                     "name": "Absorption d'Acide",
@@ -328,11 +328,11 @@
                 },
                 "Rune: Earth": {
                     "name": "Rune : Terre",
-                    "description": "<p>La force ordonnée de la terre élémentaire, responsable de la matière physique. La Rune de Terre gouverne les minéraux, les métaux, les sols et autres composés physiques.</p><p>La Rune de Terre évolue avec la <strong>Sagesse</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts d'<strong>Acide</strong> à la <strong>Santé</strong>. Elle est opposée par la rune chaotique de <strong>Foudre</strong>.</p>"
+                    "description": "Vous apprenez la Rune de Terre, vous permettant de contrôler les forces tectoniques et corrosives."
                 },
                 "Gesture: Ray": {
                     "name": "Signe : Rayon",
-                    "description": "<p>Vous canalisez la puissance arcanique d'une Rune en un point et la projetez vers l'extérieur en un faisceau.</p><p>Le signe de Rayon évolue avec la <strong>Sagesse</strong> et produit une ligne de 1 pied de large et 30 pieds de long partant du lanceur, infligeant <strong>6 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Le signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>4 Actions</strong> et <strong>1 Focus</strong>.</p>"
+                    "description": "Vous apprenez le Signe Rayon, vous permettant de manifester de l'énergie arcanique en une ligne concentrée."
                 },
                 "Acid Absorption": {
                     "name": "Absorption d'Acide",
@@ -355,6 +355,117 @@
                 "name": "Élémentaire de terre",
                 "description": "<p>Créatures élémentaires correspondant à l'élément de la terre.</p>"
             }
+        },
+        "Acid Absorption": {
+            "name": "Absorption d'Acide"
+        },
+        "Amorphous": {
+            "name": "Informe"
+        },
+        "Aqueous Transmission": {
+            "name": "Transmission aqueuse",
+            "actions": {
+                "Aqueous Transmission": {
+                    "name": "Transmission aqueuse",
+                    "description": "<p>Lorsque la @ref[name] est dans l'eau, elle peut se transporter instantanément vers n'importe quel espace inoccupé dans la même étendue d'eau jusqu'à 120 pieds de distance. Elle n'a pas besoin de voir la destination pour effectuer ce <strong>Déplacement</strong>.</p>"
+                }
+            }
+        },
+        "Bony Claws": {
+            "name": "Griffes osseuses"
+        },
+        "Cold Absorption": {
+            "name": "Absorption de Froid"
+        },
+        "Deathly Armor": {
+            "name": "Armure mortelle"
+        },
+        "Earthen Claw": {
+            "name": "Griffe de Terre"
+        },
+        "Electricity Absorption": {
+            "name": "Absorption d'Électricité"
+        },
+        "Elemental Armor": {
+            "name": "Armure élémentaire"
+        },
+        "False Appearance": {
+            "name": "Faux-semblant"
+        },
+        "Fire Absorption": {
+            "name": "Absorption de Feu"
+        },
+        "Flame Claw": {
+            "name": "Griffe de Flamme"
+        },
+        "Frost Claw": {
+            "name": "Griffe de Givre"
+        },
+        "Gesture: Arrow": {
+            "name": "Signe : Flèche"
+        },
+        "Gesture: Aspect": {
+            "name": "Signe : Aspect"
+        },
+        "Gesture: Fan": {
+            "name": "Signe : Éventail"
+        },
+        "Gesture: Influence": {
+            "name": "Signe : Influence"
+        },
+        "Gesture: Ray": {
+            "name": "Signe : Rayon"
+        },
+        "Icy Claw": {
+            "name": "Griffe Glacée"
+        },
+        "Rune: Death": {
+            "name": "Rune : Mort"
+        },
+        "Rune: Earth": {
+            "name": "Rune : Terre"
+        },
+        "Rune: Flame": {
+            "name": "Rune : Flamme"
+        },
+        "Rune: Frost": {
+            "name": "Rune : Givre"
+        },
+        "Rune: Lightning": {
+            "name": "Rune : Foudre"
+        },
+        "Voltaic Claw": {
+            "name": "Griffe Voltaïque"
+        }
+    },
+    "mapping": {
+        "actions": {
+            "path": "system.actions",
+            "converter": "actions_converter"
+        },
+        "items": {
+            "path": "items",
+            "converter": "adventure_items_converter"
+        },
+        "ancestry": {
+            "path": "system.details.ancestry",
+            "converter": "nested_object_converter"
+        },
+        "background": {
+            "path": "system.details.background",
+            "converter": "nested_object_converter"
+        },
+        "biography": {
+            "path": "system.details.biography",
+            "converter": "nested_object_converter"
+        },
+        "archetype": {
+            "path": "system.details.archetype",
+            "converter": "nested_object_converter"
+        },
+        "taxonomy": {
+            "path": "system.details.taxonomy",
+            "converter": "nested_object_converter"
         }
     }
 }

@@ -20,6 +20,7 @@ Le projet original est en constante évolution, et de ce fait, une traduction co
             - [x] Pregenerated Heroes
             - [x] Summoned Creatures
         - [x] Adversary Options
+            - [ ] Adversary Equipment (Vide pour le moment)
             - [x] Adversary Talents
             - [x] Archetypes
             - [x] Taxonomies

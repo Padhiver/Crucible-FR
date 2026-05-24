@@ -920,7 +920,10 @@
   },
   "ADVANCEMENT": {
     "ExpectedLevel": "Expected Level",
+    "Important": "Important",
     "Level": "Level",
+    "MarkImportant": "Mark as Important",
+    "MarkNotImportant": "Mark not Important",
     "MilestoneAward": "Award Milestones",
     "MilestoneTooltip": "{progress} of {required} milestones until next level",
     "Progress": "Milestone Progress"
@@ -1485,6 +1488,7 @@
     "DCAdditionalPassive": "{dcLabel}, Passive",
     "DCAdditionalGroup": "{dcLabel}, Group",
     "DCSpecific": "DC {dc}",
+    "DCTargetSpecific": "{skill} DC Target",
     "DiceTotal": "Dice Total",
     "Enchantment": "Enchantment",
     "EnchantmentBonus": "Enchantment Bonus",
@@ -1494,7 +1498,8 @@
     "RollTotal": "Roll Total",
     "SetDifficulty": "Set Difficulty",
     "Skill": "Skill",
-    "SkillBonus": "Skill Bonus"
+    "SkillBonus": "Skill Bonus",
+    "UnknownScore": "???"
   },
   "FLANKED_EFFECT": {
     "FIELDS": {

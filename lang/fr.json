@@ -923,7 +923,10 @@
         "Level": "Niveau",
         "MilestoneAward": "Attribuer des Échelons",
         "MilestoneTooltip": "{progress} sur {required} Échelons avant le niveau suivant",
-        "Progress": "Progression des Échelons"
+        "Progress": "Progression des Échelons",
+        "Important": "Important",
+        "MarkImportant": "Marquer comme Important",
+        "MarkNotImportant": "Marquer non Important"
     },
     "ANCESTRY": {
         "SECTIONS": {
@@ -934,11 +937,11 @@
                 "label": "Scores de caractéristique",
                 "primary": {
                     "hint": "Sélectionnez une caractéristique principale qui commence à 3.",
-                    "label": "Caractéristique principale"
+                    "label": "Principale"
                 },
                 "secondary": {
                     "hint": "Sélectionnez une caractéristique secondaire qui commence à 2.",
-                    "label": "Caractéristique secondaire"
+                    "label": "Secondaire"
                 }
             },
             "description": {
@@ -1494,7 +1497,9 @@
         "RollTotal": "Total du Jet",
         "SetDifficulty": "Définir la difficulté",
         "Skill": "Compétence",
-        "SkillBonus": "Bonus de Compétence"
+        "SkillBonus": "Bonus de Compétence",
+        "DCTargetSpecific": "{skill} DD Cible",
+        "UnknownScore": "???"
     },
     "FLANKED_EFFECT": {
         "FIELDS": {
@@ -1709,8 +1714,8 @@
         "Elementals": "Élémentaires",
         "Fey": "Fées",
         "Fiends": "Fiélons",
-        "Forensics": "Criminalistique",
-        "Gods": "Dieux",
+        "Forensics": "Médecine Légale",
+        "Gods": "Divinités",
         "Intrigue": "Intrigue",
         "Legends": "Légendes",
         "Machines": "Machines",
@@ -1726,7 +1731,7 @@
         "Trade": "Commerce",
         "Undeath": "Non-mort",
         "Warfare": "Guerre",
-        "Weather": "Météo"
+        "Weather": "Climat"
     },
     "LANGUAGE_CATEGORIES": {
         "Nonspoken": "Langues non-parlées",
@@ -1912,7 +1917,9 @@
         "CruciblePartyHint": "Configurez quel groupe d'Acteurs est le groupe principal de protagonistes.",
         "CruciblePartyLabel": "Groupe d'Aventuriers Principal",
         "EnableVFXHint": "Jouer des effets visuels d'animation sur le canevas lorsque les actions sont confirmées.",
-        "EnableVFXName": "Activer les effets visuels d'Action"
+        "EnableVFXName": "Activer les effets visuels d'Action",
+        "FlexibleAncestryAbilitiesHint": "Lorsqu'elle est activée, cette option permet aux héros de réattribuer les bonus de caractéristiques Principale et Secondaire de leur Ascendance aux caractéristiques de leur choix lors de la création du personnage. L'Ascendance conserve ses bonus de départ de +2 et +1 ; seules les caractéristiques qui en bénéficient sont modifiables.",
+        "FlexibleAncestryAbilitiesName": "Bonus de caractéristiques d'Ascendance modifiables"
     },
     "SKILL": {
         "CATEGORY": {

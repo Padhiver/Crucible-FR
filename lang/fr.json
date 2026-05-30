@@ -77,6 +77,11 @@
             "ThrowWeapon": {
                 "Description": "Lancez votre arme de mêlée équipée pour Frapper une cible proche. L'arme devient <strong>Lâchée</strong>, et l'attaque souffre de +2 <strong>Fléaux</strong> si l'arme ne possède pas la propriété <strong>Lancer</strong>.",
                 "Name": "Lancer une arme"
+            },
+            "Fall": {
+                "Description": "Vous chutez vers une surface au-dessous de vous. Les chutes de 11 à 30 pieds ciblent le Réflexe, infligeant des dégâts Contondants à la Santé. Une chute de plus de 30 pieds est un péril Grave ciblant la Fortitude. À moins de résister, la créature tombe À terre.",
+                "Name": "Chute",
+                "NameDistance": "Chute ({distance} pieds)"
             }
         },
         "EFFECT_RESULT_TYPES": {
@@ -506,7 +511,8 @@
         "Targets": "Cibles",
         "TemplateTargets": "Cibles du Gabarit",
         "Unconfirmed": "Non confirmé",
-        "UseAction": "Utiliser l'Action"
+        "UseAction": "Utiliser l'Action",
+        "DragToHotbar": "Glissez dans la barre de raccourcis pour créer une Macro de cette action."
     },
     "ACTIVE_EFFECT": {
         "ACTIONS": {
@@ -562,7 +568,9 @@
             "Stunned": "Étourdi",
             "Suffocating": "Asphyxié",
             "Unaware": "Distrait",
-            "Weakened": "Affaibli"
+            "Weakened": "Affaibli",
+            "Falling": "En chute",
+            "Flying": "En vol"
         }
     },
     "ACTOR": {
@@ -589,9 +597,9 @@
                 "IncreaseLevel": "Augmenter le Niveau"
             },
             "THREAT_RANKS": {
-                "Boss": "Chef",
+                "Boss": "Boss",
                 "Elite": "Élite",
-                "Minion": "Laquais",
+                "Minion": "Minion",
                 "Normal": "Normal"
             }
         },
@@ -1096,7 +1104,8 @@
             "Hit": "Touché",
             "Miss": "Manqué",
             "Parry": "Parade",
-            "Resist": "Résistance"
+            "Resist": "Résistance",
+            "CriticalHit": "Coup critique"
         }
     },
     "ATTRIBUTES": {
@@ -1407,7 +1416,9 @@
         "Physical": "Physique",
         "Reflex": "Réflexe",
         "Willpower": "Volonté",
-        "Wounds": "Seuil de guérison"
+        "Wounds": "Seuil de guérison",
+        "MadnessShort": "Ralliement",
+        "WoundsShort": "Guérison"
     },
     "DETECTION_MODES": {
         "Echolocation": "Écholocalisation",
@@ -1499,7 +1510,8 @@
         "Skill": "Compétence",
         "SkillBonus": "Bonus de Compétence",
         "DCTargetSpecific": "{skill} DD Cible",
-        "UnknownScore": "???"
+        "UnknownScore": "???",
+        "ReplayAnimation": "Rejouer l'animation"
     },
     "FLANKED_EFFECT": {
         "FIELDS": {
@@ -1547,7 +1559,8 @@
         },
         "WARNINGS": {
             "GMOnly": "Seul un MJ peut configurer et lancer des périls."
-        }
+        },
+        "Falling": "Chute"
     },
     "ITEM": {
         "ACTIONS": {
@@ -1671,7 +1684,12 @@
             "NotTalent": "Le document déposé doit être un Talent.",
             "QualityReductionBlocked": "La qualité de {name} ne peut être réduite car il contient des affixes qui nécessitent la capacité actuelle.",
             "UniqueWithAffixes": "Impossible de marquer {name} comme unique car il contient des affixes. Supprimez d'abord tous les affixes.",
-            "LootDropError": "Impossible de créer l'objet de butin \"{name}\". {reason}"
+            "LootDropError": "Impossible de créer l'objet de butin \"{name}\". {reason}",
+            "CombineDifferent": "{item} ne peut être combiné avec {target} car les objets ne sont pas identiques.",
+            "CombineEquipped": "{item} ne peut être combiné dans un empilement en étant équipé.",
+            "CombineInvalidTarget": "{item} ne peut être combiné : la cible doit être un objet différent du même acteur.",
+            "CombineQuantity": "Impossible de combiner {quantity} unités de {item} contenant un empilement de {available}.",
+            "SplitQuantity": "Impossible de dissocier {quantity} unités de {item} contenant un empilement de {available}."
         },
         "RANDOMIZE": {
             "Title": "Objet enchanté aléatoire",
@@ -2435,6 +2453,20 @@
                 "walk": {
                     "description": "Déplacez-vous d'une distance jusqu'à votre attribut Foulée par Action.",
                     "label": "Marche"
+                },
+                "blink.label": "Clignotement",
+                "displace.label": "Téléportation",
+                "burrow": {
+                    "description": "Creusez un tunnel dans la terre ou les sols meubles sur une distance maximale égale à la moitié de votre Foulée par Action, passant sous les murs et à travers les autres créatures librement. Seules les créatures possédant une vitesse de Fouissement explicite peuvent utiliser ce mode de déplacement.",
+                    "label": "Fouissement"
+                },
+                "fall": {
+                    "description": "Descente gravitationnelle vers une surface d'appui. Le coût du Déplacement est toujours nul.",
+                    "label": "Chute"
+                },
+                "push": {
+                    "description": "Déplacement forcé appliqué par un effet externe tel qu'une bousculade. Le coût du Déplacement est toujours nul.",
+                    "label": "Poussée"
                 }
             },
             "COST": {

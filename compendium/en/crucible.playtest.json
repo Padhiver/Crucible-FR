@@ -6,42 +6,16 @@
             "caption": "Test your mettle in the Ring of Valor, the first available playtest for the Crucible game system.",
             "description": "<p><em>The Ring of Valor</em> is a guided introduction to character development and combat mechanics in Crucible which places players in the role of a gladiatorial team facing a sequence of escalating challenges.</p>",
             "folders": {
-                "s18l4vss8CZR7C41": {
-                    "name": "Crucible Playtest"
-                },
-                "k9N9LdmDsy32wzSv": {
-                    "name": "Crucible Playtest"
-                },
-                "fbyOxizw6hvlQoMg": {
-                    "name": "The Ring of Valor"
-                },
-                "RIKlaSiHOWrF12cu": {
-                    "name": "Day 1"
-                },
-                "yhNxctruag3MRzdB": {
-                    "name": "Day 2"
-                },
-                "N3M2uruVXSupKCH5": {
-                    "name": "Day 3"
-                },
-                "5RIhvyZe3N99ckET": {
-                    "name": "Day 4"
-                },
-                "TtUkSYQfx7wu09PY": {
-                    "name": "Day 5"
-                },
-                "mBfkFDwhaQE3syo3": {
-                    "name": "Crucible Playtest"
-                },
-                "4UpoTGqP4amIS23h": {
-                    "name": "Pregenerated Heroes"
-                },
-                "aoXDBsBdhTAww10u": {
-                    "name": "Level 1"
-                },
-                "2tdnCBbxNPNuhxzT": {
-                    "name": "Level 6"
-                }
+                "Crucible Playtest": "Crucible Playtest",
+                "The Ring of Valor": "The Ring of Valor",
+                "Day 1": "Day 1",
+                "Day 2": "Day 2",
+                "Day 3": "Day 3",
+                "Day 4": "Day 4",
+                "Day 5": "Day 5",
+                "Pregenerated Heroes": "Pregenerated Heroes",
+                "Level 1": "Level 1",
+                "Level 6": "Level 6"
             },
             "journals": {
                 "mwPldduxbQwyZ9nI": {

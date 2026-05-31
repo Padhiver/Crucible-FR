@@ -3,170 +3,170 @@
     "folders": {
         "Humanoids": "Humanoïdes",
         "Dragons": "Dragons",
+        "Constructs": "Artificiels",
         "Elementals": "Élémentaires",
-        "Beasts": "Bêtes",
-        "Constructs": "Artificiels"
+        "Beasts": "Bêtes"
     },
     "entries": {
-        "Adult Drake": {
+        "adultDrake000000": {
             "name": "Drake adulte",
             "description": "<p>Des drakes pleinement développés qui sont des traqueurs dangereux et des chasseurs de meute.</p>"
         },
-        "Archer": {
+        "archer0000000000": {
             "name": "Archer",
             "description": "Combattants à distance entraînés à l'utilisation des arcs."
         },
-        "Brigand": {
+        "archetypeBrigand": {
             "name": "Brigand",
             "description": "<p>Hors-la-loi scélérats, qu'ils soient bandits, pirates, ruffians ou autres fripons.</p>"
         },
-        "Commonfolk": {
+        "archetypeCommonf": {
             "name": "Roturier",
             "description": "<p>Citoyens du monde ordinaires qui n'ont pas de compétences ou de capacités d'aventure exceptionnelles.</p>"
         },
-        "Scout": {
+        "archetypeScout00": {
             "name": "Éclaireur",
             "description": "<p>Individus entraînés à la reconnaissance et à l'exploration avancée de zones inconnues.</p>"
         },
-        "Spellblade": {
+        "archetypeSpellbl": {
             "name": "Sorcelame",
             "description": "<p>Les Sorcelames sont des guerriers dotés de magie qui tissent la sorcellerie dans leurs attaques d'armes pour créer des frappes dévastatrices.</p>"
         },
-        "Bard": {
-            "name": "Barde",
-            "description": "<p>Vous pratiquez les traditions orales et musicales du conte héroïque pour inspirer du courage à vos alliés, démoraliser vos ennemis et trouver rapidement des solutions non conventionnelles aux problèmes.</p>"
-        },
-        "Berserker": {
-            "name": "Berserker",
-            "description": "Un guerrier alimenté par la rage qui préfère les attaques à deux mains utilisant des armes Lourdes."
-        },
-        "Chomper": {
-            "name": "Mastiqueur",
-            "description": "<p>Bêtes qui comptent sur des morsures vicieuses de leurs gueules surdimensionnées.</p>"
-        },
-        "Drakeling": {
-            "name": "Draketeau",
-            "description": "<p>Drakes plus petits ou plus jeunes qui sont individuellement chétifs, mais dangereux quand ils chassent en meute.</p>"
-        },
-        "Elemental Mote": {
-            "name": "Particule élémentaire",
-            "description": "<p>Les particules sont les plus petites incarnations élémentaires qui prennent encore une forme physique. Elles sont généralement inintelligentes et agissent selon des stimuli environnementaux ou suivent la direction instinctive d'un élémentaire supérieur proche.</p>"
-        },
-        "Elemental Sprite": {
-            "name": "Lutin élémentaire",
-            "description": "<p>Les Lutins sont des élémentaires moindres qui sont des incarnations de leur élément brut, mais manquent de la sapience de leurs parents plus imposants.</p>"
-        },
-        "Elemental Visitor": {
-            "name": "Visiteur élémentaire",
-            "description": "<p>Les Visiteurs sont des incarnations d'énergie élémentaire brute qui assument des formes vaguement humanoïdes. Contrairement à leurs parents plus petits, les Visiteurs élémentaires sont capables de communication et de compréhension, bien que leurs motivations soient rarement alignées avec celles des mortels.</p>"
-        },
-        "Elemental Wanderer": {
-            "name": "Vagabond élémentaire",
-            "description": "<p>Les Vagabonds sont des manifestations significatives d'énergie élémentaire qui assument une forme imposante ou majestueuse. Ils sont conscients d'eux-mêmes, sages, et comprennent qu'ils sont des intrus non naturels lorsqu'ils sont hors de leur royaume habituel. Ils sont souvent poussés par quelque but instinctif ou prémédité qui les a attirés.</p>"
-        },
-        "Fighter": {
-            "name": "Guerrier",
-            "description": "Combattants de mêlée endurcis experts dans le maniement d'armes à une main, du bouclier et de l'armure lourde."
-        },
-        "Grappler": {
-            "name": "Lutteur",
-            "description": "Combattants spécialisés dans l'entrave physique de leurs adversaires et se mettant ainsi à l'abri de nouvelles attaques de leur part."
-        },
-        "Mage": {
-            "name": "Mage",
-            "description": "Un utilisateur de magie qui manie la flamme et l'électricité au combat."
-        },
-        "Occultist": {
-            "name": "Occultiste",
-            "description": "Utilisateurs de magie qui pratiquent la sorcellerie en utilisant des forces d'autres mondes et occultes."
-        },
-        "Operator": {
-            "name": "Opérateur",
-            "description": "<p>Les Opérateurs sont des experts pour manœuvrer dans des situations tendues, capables de faire preuve d'un sens politique avisé par une action rusée et décisive.</p>"
-        },
-        "Pack Member": {
-            "name": "Membre de meute",
-            "description": "Bêtes qui chassent en meute."
-        },
-        "Priest": {
-            "name": "Prêtre",
-            "description": "<p>Serviteurs dévots des dieux qui tirent leur pouvoir de leur foi et de leur dévotion à leur divinité.</p>"
-        },
-        "Shapeshifter": {
-            "name": "Métamorphe",
-            "description": "<p>Les Métamorphes pratiquent les arts de la transformation bestiale, un type de magie primale qui est ancienne et différente de la sorcellerie runique communément pratiquée.</p>"
-        },
-        "Skirmisher": {
-            "name": "Querelleur",
-            "description": "Un combattant de mêlée implacable et déterminé qui utilise un mélange d'agilité et de puissance pour soumettre les ennemis."
-        },
-        "Thief": {
-            "name": "Voleur",
-            "description": "<p>Personnages roublards qui sont adeptes de l'infiltration dans des zones où ils ne sont pas censés entrer et de l'acquisition de choses qu'ils ne sont pas censés avoir.</p>"
-        },
-        "Trader": {
-            "name": "Commerçant",
-            "description": "<p>Votre expertise est de voyager à travers le monde et de faciliter l'échange de marchandises.</p>"
-        },
-        "Tusker": {
-            "name": "Bête à défenses",
-            "description": "<p>Bêtes qui combattent en utilisant leur propre masse, leur élan et leurs défenses aiguisées.</p>"
-        },
-        "Justiciar": {
-            "name": "Inquisiteur",
-            "description": "<p>Les inquisiteurs sont des champions divins qui déchaînent le courroux et le jugement du pouvoir divin sur les corrompus ou les indignes.</p>"
-        },
-        "Necromancer": {
-            "name": "Nécromancien",
-            "description": "<p>Les Nécromanciens sont des lanceurs de sorts qui ont consacré leur intellect et leur sagesse à défier la finalité de la mort, étudiant les forces nécrotiques et psychiques qui subsistent entre la vie et le néant. On les trouve rarement seuls : un Nécromancien, quel que soit son niveau de menace, aura soumis les morts-vivants environnants à sa volonté, et en vaincre un sans perturber au préalable ses serviteurs invoqués est une entreprise périlleuse. En combat direct, ils sont physiquement fragiles, avec une faible esquive et sans parade ni blocage efficaces, mais leur capacité à maintenir des effets nécrotiques continus, à saper la concentration et le moral de leurs ennemis et à régénérer leurs propres ressources grâce à la souffrance d'autrui fait d'eux des adversaires redoutables à tous les niveaux.</p>"
-        },
-        "Protector": {
-            "name": "Protecteur",
-            "description": "<p>Guerriers inflexibles qui s'interposent entre leurs alliés et le danger, dévoués avant tout à préserver autrui de toute menace.</p>"
-        },
-        "Swashbuckler": {
-            "name": "Bretteur",
-            "description": "<p>Ceux qui mènent une vie dangereuse à bord d'un voilier ou qui pratiquent la piraterie en haute mer. Vous êtes connus pour votre esprit, votre charme et parfois pour votre témérité.</p>"
-        },
-        "Burrower": {
-            "name": "Fouisseur",
-            "description": "<p>Bêtes ou créatures similaires à des bêtes, expertes dans l’art de creuser et de se déplacer à travers des matériaux solides.</p>"
-        },
-        "Servitor": {
-            "name": "Serviteur",
-            "description": "<p>Créatures spécialisées dans l’espionnage ou dans l’exécution de tâches à distance pour le compte d’un maître qui les contrôle.</p>"
-        },
-        "Guardian Beast": {
-            "name": "Bête gardienne",
-            "description": "<p>Bêtes qui servent de gardiens, veillant sur des lieux ou des personnes envers lesquelles elles sont d'une loyauté inébranlable.</p>"
-        },
-        "Lawkeeper": {
-            "name": "Gardeloi",
-            "description": "<p>Gendarmes, détectives, enquêteurs et autres officiers de la loi chargés du maintien de l'ordre et de la traque de ceux qui le troublent.</p>"
-        },
-        "Ultra Drake": {
-            "name": "Ultra drake",
-            "description": "<p>Drakes adultes qui sont les super-prédateurs de leur espèce.</p>"
-        },
-        "Geomancer": {
-            "name": "Géomancien",
-            "description": "<p>Mages spécialistes des runes de Terre et de Flamme.</p>"
-        },
-        "Herd Beast": {
-            "description": "<p>Bovins, bêtes de somme et autres animaux de proie qui se regroupent en troupeaux.</p>",
-            "name": "Bête de troupeau"
-        },
-        "Lightweaver": {
-            "description": "<p>Mages spécialistes des runes d'Illumination et de Flamme.</p>",
-            "name": "Tisse-lumière"
-        },
-        "Swarm": {
+        "archetypeswarm00": {
             "name": "Nuée",
             "description": "<p>Cet adversaire représente plusieurs créatures qui bougent comme une unique entité grouillante, submergeant l'opposition par le nombre.</p>"
         },
-        "Deep Behemoth": {
+        "bard000000000000": {
+            "name": "Barde",
+            "description": "<p>Vous pratiquez les traditions orales et musicales du conte héroïque pour inspirer du courage à vos alliés, démoraliser vos ennemis et trouver rapidement des solutions non conventionnelles aux problèmes.</p>"
+        },
+        "berserker0000000": {
+            "name": "Berserker",
+            "description": "Un guerrier alimenté par la rage qui préfère les attaques à deux mains utilisant des armes Lourdes."
+        },
+        "burrower00000000": {
+            "name": "Fouisseur",
+            "description": "<p>Bêtes ou créatures similaires à des bêtes, expertes dans l’art de creuser et de se déplacer à travers des matériaux solides.</p>"
+        },
+        "chomper000000000": {
+            "name": "Mastiqueur",
+            "description": "<p>Bêtes qui comptent sur des morsures vicieuses de leurs gueules surdimensionnées.</p>"
+        },
+        "deepBehemoth0000": {
             "name": "Béhémoth des profondeurs",
             "description": "<p>Prédateurs souterrains colossaux au sommet de la chaîne alimentaire, monstruosités immenses qui tonnent dans les cavernes les plus profondes.</p>"
+        },
+        "drakeling0000000": {
+            "name": "Draketeau",
+            "description": "<p>Drakes plus petits ou plus jeunes qui sont individuellement chétifs, mais dangereux quand ils chassent en meute.</p>"
+        },
+        "elementalMote000": {
+            "name": "Particule élémentaire",
+            "description": "<p>Les particules sont les plus petites incarnations élémentaires qui prennent encore une forme physique. Elles sont généralement inintelligentes et agissent selon des stimuli environnementaux ou suivent la direction instinctive d'un élémentaire supérieur proche.</p>"
+        },
+        "elementalSprite0": {
+            "name": "Lutin élémentaire",
+            "description": "<p>Les Lutins sont des élémentaires moindres qui sont des incarnations de leur élément brut, mais manquent de la sapience de leurs parents plus imposants.</p>"
+        },
+        "elementalVisitor": {
+            "name": "Visiteur élémentaire",
+            "description": "<p>Les Visiteurs sont des incarnations d'énergie élémentaire brute qui assument des formes vaguement humanoïdes. Contrairement à leurs parents plus petits, les Visiteurs élémentaires sont capables de communication et de compréhension, bien que leurs motivations soient rarement alignées avec celles des mortels.</p>"
+        },
+        "elementalWandere": {
+            "name": "Vagabond élémentaire",
+            "description": "<p>Les Vagabonds sont des manifestations significatives d'énergie élémentaire qui assument une forme imposante ou majestueuse. Ils sont conscients d'eux-mêmes, sages, et comprennent qu'ils sont des intrus non naturels lorsqu'ils sont hors de leur royaume habituel. Ils sont souvent poussés par quelque but instinctif ou prémédité qui les a attirés.</p>"
+        },
+        "fighter000000000": {
+            "name": "Guerrier",
+            "description": "Combattants de mêlée endurcis experts dans le maniement d'armes à une main, du bouclier et de l'armure lourde."
+        },
+        "geomancer0000000": {
+            "name": "Géomancien",
+            "description": "<p>Mages spécialistes des runes de Terre et de Flamme.</p>"
+        },
+        "grappler00000000": {
+            "name": "Lutteur",
+            "description": "Combattants spécialisés dans l'entrave physique de leurs adversaires et se mettant ainsi à l'abri de nouvelles attaques de leur part."
+        },
+        "guardianBeast000": {
+            "name": "Bête gardienne",
+            "description": "<p>Bêtes qui servent de gardiens, veillant sur des lieux ou des personnes envers lesquelles elles sont d'une loyauté inébranlable.</p>"
+        },
+        "herdBeast0000000": {
+            "name": "Bête de troupeau",
+            "description": "<p>Bovins, bêtes de somme et autres animaux de proie qui se regroupent en troupeaux.</p>"
+        },
+        "justiciar0000000": {
+            "name": "Inquisiteur",
+            "description": "<p>Les inquisiteurs sont des champions divins qui déchaînent le courroux et le jugement du pouvoir divin sur les corrompus ou les indignes.</p>"
+        },
+        "lawkeeper0000000": {
+            "name": "Gardeloi",
+            "description": "<p>Gendarmes, détectives, enquêteurs et autres officiers de la loi chargés du maintien de l'ordre et de la traque de ceux qui le troublent.</p>"
+        },
+        "lightweaver00000": {
+            "name": "Tisse-lumière",
+            "description": "<p>Mages spécialistes des runes d'Illumination et de Flamme.</p>"
+        },
+        "mage000000000000": {
+            "name": "Mage",
+            "description": "Un utilisateur de magie qui manie la flamme et l'électricité au combat."
+        },
+        "necromancer00000": {
+            "name": "Nécromancien",
+            "description": "<p>Les Nécromanciens sont des lanceurs de sorts qui ont consacré leur intellect et leur sagesse à défier la finalité de la mort, étudiant les forces nécrotiques et psychiques qui subsistent entre la vie et le néant. On les trouve rarement seuls : un Nécromancien, quel que soit son niveau de menace, aura soumis les morts-vivants environnants à sa volonté, et en vaincre un sans perturber au préalable ses serviteurs invoqués est une entreprise périlleuse. En combat direct, ils sont physiquement fragiles, avec une faible esquive et sans parade ni blocage efficaces, mais leur capacité à maintenir des effets nécrotiques continus, à saper la concentration et le moral de leurs ennemis et à régénérer leurs propres ressources grâce à la souffrance d'autrui fait d'eux des adversaires redoutables à tous les niveaux.</p>"
+        },
+        "occultist0000000": {
+            "name": "Occultiste",
+            "description": "Utilisateurs de magie qui pratiquent la sorcellerie en utilisant des forces d'autres mondes et occultes."
+        },
+        "operator00000000": {
+            "name": "Opérateur",
+            "description": "<p>Les Opérateurs sont des experts pour manœuvrer dans des situations tendues, capables de faire preuve d'un sens politique avisé par une action rusée et décisive.</p>"
+        },
+        "packmember000000": {
+            "name": "Membre de meute",
+            "description": "Bêtes qui chassent en meute."
+        },
+        "priest0000000000": {
+            "name": "Prêtre",
+            "description": "<p>Serviteurs dévots des dieux qui tirent leur pouvoir de leur foi et de leur dévotion à leur divinité.</p>"
+        },
+        "protector0000000": {
+            "name": "Protecteur",
+            "description": "<p>Guerriers inflexibles qui s'interposent entre leurs alliés et le danger, dévoués avant tout à préserver autrui de toute menace.</p>"
+        },
+        "servitor00000000": {
+            "name": "Serviteur",
+            "description": "<p>Créatures spécialisées dans l’espionnage ou dans l’exécution de tâches à distance pour le compte d’un maître qui les contrôle.</p>"
+        },
+        "shapeshifter0000": {
+            "name": "Métamorphe",
+            "description": "<p>Les Métamorphes pratiquent les arts de la transformation bestiale, un type de magie primale qui est ancienne et différente de la sorcellerie runique communément pratiquée.</p>"
+        },
+        "skirmisher000000": {
+            "name": "Querelleur",
+            "description": "Un combattant de mêlée implacable et déterminé qui utilise un mélange d'agilité et de puissance pour soumettre les ennemis."
+        },
+        "swashbuckler0000": {
+            "name": "Bretteur",
+            "description": "<p>Ceux qui mènent une vie dangereuse à bord d'un voilier ou qui pratiquent la piraterie en haute mer. Vous êtes connus pour votre esprit, votre charme et parfois pour votre témérité.</p>"
+        },
+        "thief00000000000": {
+            "name": "Voleur",
+            "description": "<p>Personnages roublards qui sont adeptes de l'infiltration dans des zones où ils ne sont pas censés entrer et de l'acquisition de choses qu'ils ne sont pas censés avoir.</p>"
+        },
+        "trader0000000000": {
+            "name": "Commerçant",
+            "description": "<p>Votre expertise est de voyager à travers le monde et de faciliter l'échange de marchandises.</p>"
+        },
+        "tusker0000000000": {
+            "name": "Bête à défenses",
+            "description": "<p>Bêtes qui combattent en utilisant leur propre masse, leur élan et leurs défenses aiguisées.</p>"
+        },
+        "ultraDrake000000": {
+            "name": "Ultra drake",
+            "description": "<p>Drakes adultes qui sont les super-prédateurs de leur espèce.</p>"
         }
     },
     "mapping": {

@@ -212,11 +212,11 @@
 | Elementals | Élémentaires |
 | Fey | Fées |
 | Fiends | Fiélons |
-| Gods | Dieux |
+| Gods | Divinités |
 | Outsiders | Extérieurs |
 | Rituals | Rituels |
 | Souls | Âmes |
-| Forsenics | Criminalistique |
+| Forsenics | Médecine Légale |
 | Tracking | Pistage |
 | Intrigue | Intrigue |
 | Politics | Politique |
@@ -227,7 +227,7 @@
 | Arts | Arts |
 | Cosmology | Cosmologie |
 | Machines | Machines |
-| Weather | Météo |
+| Weather | Climat |
 | Ancients | Anciens |
 | Artifacts | Artefacts |
 | Crafts | Artisanat |

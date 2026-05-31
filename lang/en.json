@@ -46,6 +46,11 @@
         "Description": "You delay your action until a later point in the Combat round. Choose an Initiative between 1 and one less than your current Initiative. You will act at this new Initiative value, and if other combatants share that value you will act before them. You may only delay your turn once per round.",
         "Name": "Delay"
       },
+      "Fall": {
+        "Description": "You plummet to the surface beneath you. Falls of 11-30 feet challenge Reflex, dealing Bludgeoning damage to Health. Falls of more than 30 feet are a Severe hazard challenging Fortitude. Unless resisted, the creature falls Prone.",
+        "Name": "Fall",
+        "NameDistance": "Fall ({distance} feet)"
+      },
       "Investiture": {
         "Description": "Spend time outside of Combat attuning to your equipped magic items, causing them to enter the Invested state.",
         "Name": "Investiture"
@@ -484,6 +489,7 @@
     "DelayHint": "Choose an Initiative between 1 and {maximum} at which to act. See @UUID[Compendium.crucible.rules.JournalEntry.QhZgmBrdLAGwYy5c.JournalEntryPage.DPrsFbPo3tD7TJ5g]{Initiative and Turn Order} for how delayed Initiative interacts with tiebreaking.",
     "DelayLabel": "Delayed Initiative",
     "DelayTitle": "Delay Turn",
+    "DragToHotbar": "Drag to the hotbar to create a Macro for this Action.",
     "DurationRounds": "{value}R",
     "DurationSeconds": "{value}S",
     "DurationUntilEnded": "Until Ended",
@@ -536,9 +542,11 @@
       "Entropy": "Entropy",
       "Exhausted": "Exhausted",
       "Exposed": "Exposed",
+      "Falling": "Falling",
       "Fear": "Frightened",
       "Flanked": "Flanked",
       "FlankedDescription": "You are flanked by multiple enemies who gain additional Boons to their attacks!",
+      "Flying": "Flying",
       "Freezing": "Freezing",
       "Guarded": "Guarded",
       "Hastened": "Hastened",
@@ -937,11 +945,11 @@
         "label": "Ability Scores",
         "primary": {
           "hint": "Select a primary ability score which begins at 3.",
-          "label": "Primary Ability"
+          "label": "Primary"
         },
         "secondary": {
           "hint": "Select a secondary ability score which begins at 2.",
-          "label": "Secondary Ability"
+          "label": "Secondary"
         }
       },
       "description": {
@@ -1091,6 +1099,7 @@
     "RESULT_TYPES": {
       "Armor": "Armor",
       "Block": "Block",
+      "CriticalHit": "Critical Hit",
       "Dodge": "Dodge",
       "Glance": "Glance",
       "Hit": "Hit",
@@ -1403,11 +1412,13 @@
     "Dodge": "Dodge",
     "Fortitude": "Fortitude",
     "Madness": "Rallying Threshold",
+    "MadnessShort": "Rallying",
     "Parry": "Parry",
     "Physical": "Physical",
     "Reflex": "Reflex",
     "Willpower": "Willpower",
-    "Wounds": "Healing Threshold"
+    "Wounds": "Healing Threshold",
+    "WoundsShort": "Healing"
   },
   "DETECTION_MODES": {
     "Echolocation": "Echolocation",
@@ -1493,6 +1504,7 @@
     "Enchantment": "Enchantment",
     "EnchantmentBonus": "Enchantment Bonus",
     "Healing": "Healing",
+    "ReplayAnimation": "Replay Animation",
     "Reverse": "Reverse",
     "Roll": "Roll",
     "RollTotal": "Roll Total",
@@ -1526,6 +1538,7 @@
   "HAZARD": {
     "DefaultActor": "Environment",
     "DefaultName": "Environmental Hazard",
+    "Falling": "Falling",
     "Hazard": "Hazard",
     "UseHazard": "Use Hazard",
     "WindowTitle": "Hazard: {name}",
@@ -1666,10 +1679,15 @@
       "Talents": "Talents"
     },
     "WARNINGS": {
+      "CombineDifferent": "{item} cannot be combined with {target} because the items are not identical.",
+      "CombineEquipped": "{item} cannot be combined into a stack while it is equipped.",
+      "CombineInvalidTarget": "{item} cannot be combined: the target must be a different item on the same actor.",
+      "CombineQuantity": "Cannot combine {quantity} units of {item} which holds a stack of {available}.",
       "HookAlreadyExists": "{item} already declares a function for the \"{hook}\" hook.",
       "InvalidIdentifier": "Invalid Crucible identifier value \"{id}\" which must be alphanumeric without spaces or special characters",
       "NotTalent": "The dropped document must be a Talent.",
       "QualityReductionBlocked": "Cannot reduce quality of {name} because it has affixes that require the current capacity.",
+      "SplitQuantity": "Cannot split {quantity} from {item} which holds a stack of {available}.",
       "UniqueWithAffixes": "Cannot mark {name} as unique because it has affixes. Remove all affixes first.",
       "LootDropError": "Failed to create loot item \"{name}\". {reason}"
     },
@@ -1917,7 +1935,9 @@
     "CruciblePartyHint": "Configure which which Group Actor is the primary group of protagonists.",
     "CruciblePartyLabel": "Primary Adventuring Party",
     "EnableVFXHint": "Play visual effects animations on the canvas when actions are confirmed.",
-    "EnableVFXName": "Enable Action Visual Effects"
+    "EnableVFXName": "Enable Action Visual Effects",
+    "FlexibleAncestryAbilitiesHint": "When enabled, hero characters may reassign their Ancestry's Primary and Secondary Ability Score bonuses to abilities of their choice during character creation. The Ancestry still contributes the same +2 and +1 starting bonuses; only the abilities receiving them are flexible.",
+    "FlexibleAncestryAbilitiesName": "Flexible Ancestry Ability Bonuses"
   },
   "SKILL": {
     "CATEGORY": {
@@ -2397,6 +2417,12 @@
     },
     "MOVEMENT": {
       "ACTIONS": {
+        "blink.label": "Blink",
+        "displace.label": "Teleport",
+        "burrow": {
+          "description": "Tunnel through earth or soft terrain a distance up to half your Stride attribute per Action, passing beneath walls and freely through other creatures. Only creatures with an explicit Burrow speed can use this movement mode.",
+          "label": "Burrow"
+        },
         "climb": {
           "description": "Climb or descend a surface, a distance or elevation up to half your Stride attribute per Action. Creatures with an explicit Climb speed instead use this speed instead of half their Stride.",
           "label": "Climb"
@@ -2404,6 +2430,10 @@
         "crawl": {
           "description": "Move while Prone a distance up to half your Stride attribute per Action.",
           "label": "Crawl"
+        },
+        "fall": {
+          "description": "Gravitational descent toward a supporting surface. Movement cost is always zero.",
+          "label": "Fall"
         },
         "fast": {
           "label": "Hurried"
@@ -2418,6 +2448,10 @@
         },
         "normal": {
           "label": "Normal"
+        },
+        "push": {
+          "description": "Forced displacement applied by an external effect such as a knockback. Movement cost is always zero.",
+          "label": "Push"
         },
         "slow": {
           "label": "Cautious"

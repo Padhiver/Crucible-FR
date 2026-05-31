@@ -5,44 +5,6 @@
             "name": "Playtest 1 - L'Arène de la Vaillance",
             "caption": "Mettez votre courage à l'épreuve dans L'Arène de la Vaillance, le premier Playtest disponible pour le système de jeu Crucible.",
             "description": "<p><em>L'Arène de la Vaillance</em> est une introduction guidée au développement des personnages et aux mécaniques de combat de Crucible, qui place les joueurs dans le rôle d'une équipe de gladiateurs confrontée à une série de défis de plus en plus difficiles.</p>",
-            "folders": {
-                "s18l4vss8CZR7C41": {
-                    "name": "Playtest de Crucible"
-                },
-                "k9N9LdmDsy32wzSv": {
-                    "name": "Playtest de Crucible"
-                },
-                "fbyOxizw6hvlQoMg": {
-                    "name": "L'Arène de la Vaillance"
-                },
-                "RIKlaSiHOWrF12cu": {
-                    "name": "Jour 1"
-                },
-                "yhNxctruag3MRzdB": {
-                    "name": "Jour 2"
-                },
-                "N3M2uruVXSupKCH5": {
-                    "name": "Jour 3"
-                },
-                "5RIhvyZe3N99ckET": {
-                    "name": "Jour 4"
-                },
-                "TtUkSYQfx7wu09PY": {
-                    "name": "Jour 5"
-                },
-                "mBfkFDwhaQE3syo3": {
-                    "name": "Playtest de Crucible"
-                },
-                "4UpoTGqP4amIS23h": {
-                    "name": "Héros prétirés"
-                },
-                "aoXDBsBdhTAww10u": {
-                    "name": "Niveau 1"
-                },
-                "2tdnCBbxNPNuhxzT": {
-                    "name": "Niveau 6"
-                }
-            },
             "journals": {
                 "mwPldduxbQwyZ9nI": {
                     "name": "Playtest un : L'Arène de la Vaillance",
@@ -3129,6 +3091,18 @@
                     "name": "Groupe",
                     "tokenName": "Groupe"
                 }
+            },
+            "folders": {
+                "Crucible Playtest": "Playtest de Crucible",
+                "The Ring of Valor": "L'Arène de la Vaillance",
+                "Day 1": "Jour 1",
+                "Day 2": "Jour 2",
+                "Day 3": "Jour 3",
+                "Day 4": "Jour 4",
+                "Day 5": "Jour 5",
+                "Pregenerated Heroes": "Héros prétirés",
+                "Level 1": "Niveau 1",
+                "Level 6": "Niveau 6"
             }
         }
     },

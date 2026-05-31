@@ -5,142 +5,25 @@
         "Gesture: Conjure": "Gesture: Conjure"
     },
     "entries": {
-        "Acid Absorption": {
-            "name": "Acid Absorption"
-        },
-        "Amorphous": {
-            "name": "Amorphous"
-        },
-        "Aqueous Transmission": {
-            "name": "Aqueous Transmission",
-            "actions": {
-                "Aqueous Transmission": {
-                    "name": "Aqueous Transmission",
-                    "description": "<p>When the @ref[name] is within water, it can instantaneously transport itself to any unoccupied space within the same body of water up to 120 feet away. It does not need to be able to see the destination to make this <strong>Move</strong>.</p>"
-                }
-            }
-        },
-        "Bony Claws": {
-            "name": "Bony Claws"
-        },
-        "Cold Absorption": {
-            "name": "Cold Absorption"
-        },
-        "Deathly Armor": {
-            "name": "Deathly Armor"
-        },
-        "Earth Sprite": {
-            "name": "Earth Sprite",
+        "56puGK932Qc0cowe": {
+            "name": "Moldy Skeleton",
+            "tokenName": {
+                "name": "Creation of Death"
+            },
             "items": {
-                "Elemental Armor": {
-                    "name": "Elemental Armor"
+                "Deathly Armor": {
+                    "name": "Deathly Armor"
                 },
-                "Earthen Claw": {
-                    "name": "Earthen Claw"
+                "Bony Claws": {
+                    "name": "Bony Claws"
                 },
-                "Rune: Earth": {
-                    "name": "Rune: Earth",
-                    "description": "You learn Rune of Earth, allowing you to control tectonic and corrosive forces."
-                },
-                "Gesture: Ray": {
-                    "name": "Gesture: Ray",
-                    "description": "You learn the Ray gesture, allowing you to manifest arcane energy in a concentrated line."
-                },
-                "Acid Absorption": {
-                    "name": "Acid Absorption",
-                    "description": "<p>The @ref[actor.name]{creature} has an exceptional ability to thrive within acidic environments. Its <strong>Acid</strong> resistance is doubled and if that resistance would reduce an amount of damage below zero, the negative amount is received as <strong>Healing</strong> instead.</p>"
-                },
-                "False Appearance": {
-                    "name": "False Appearance",
-                    "description": "<p>While it remains motionless, the @ref[actor.name]{creature} is indistinguishable from some other object or material.</p>"
+                "Rune: Death": {
+                    "name": "Rune: Death",
+                    "description": "You learn Rune of Death, allowing you to manipulate unholy power."
                 },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
                     "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree, 6 foot cone, dealing 6 base damage on a successful attack.</p>"
-                }
-            },
-            "archetype": {
-                "name": "Elemental Sprite",
-                "description": "<p>Sprites are lesser elementals which are embodiments of their raw element, but lack the sapience of their greater kin.</p>"
-            },
-            "taxonomy": {
-                "name": "Earth Elemental",
-                "description": "<p>Elemental creatures corresponding to the element of Earth.</p>"
-            }
-        },
-        "Earth Visitor": {
-            "name": "Earth Visitor",
-            "items": {
-                "Rune: Earth": {
-                    "name": "Rune: Earth",
-                    "description": "You learn Rune of Earth, allowing you to control tectonic and corrosive forces."
-                },
-                "Acid Absorption": {
-                    "name": "Acid Absorption",
-                    "description": "<p>The @ref[actor.name]{creature} has an exceptional ability to thrive within acidic environments. Its <strong>Acid</strong> resistance is doubled and if that resistance would reduce an amount of damage below zero, the negative amount is received as <strong>Healing</strong> instead.</p>"
-                },
-                "Gesture: Fan": {
-                    "name": "Gesture: Fan",
-                    "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree, 6 foot cone, dealing 6 base damage on a successful attack.</p>"
-                },
-                "Earthen Claw": {
-                    "name": "Earthen Claw"
-                },
-                "Elemental Armor": {
-                    "name": "Elemental Armor"
-                },
-                "Gesture: Aspect": {
-                    "name": "Gesture: Aspect",
-                    "description": "<p>Infuse the essence of a Rune into the self, empowering your own physical form or psyche.</p>\n\n<p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p>\n\n<p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect.</p>"
-                }
-            },
-            "archetype": {
-                "name": "Elemental Visitor",
-                "description": "<p>Visitors are embodiments of raw elemental energy that assume forms that are vaguely humanoid in shape. Unlike their lesser kin, Elemental Visitors are are capable of communication and understanding, although their motivations are seldom aligned with those of mortals.</p>"
-            },
-            "taxonomy": {
-                "name": "Earth Elemental",
-                "description": "<p>Elemental creatures corresponding to the element of Earth.</p>"
-            }
-        },
-        "Earthen Claw": {
-            "name": "Earthen Claw"
-        },
-        "Electricity Absorption": {
-            "name": "Electricity Absorption"
-        },
-        "Elemental Armor": {
-            "name": "Elemental Armor"
-        },
-        "False Appearance": {
-            "name": "False Appearance"
-        },
-        "Fire Absorption": {
-            "name": "Fire Absorption"
-        },
-        "Flame Claw": {
-            "name": "Flame Claw"
-        },
-        "Flame Sprite": {
-            "name": "Flame Sprite",
-            "items": {
-                "Rune: Flame": {
-                    "name": "Rune: Flame",
-                    "description": "You learn Rune of Flame, allowing you to weave the arcane element of fire."
-                },
-                "Gesture: Fan": {
-                    "name": "Gesture: Fan",
-                    "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree, 6 foot cone, dealing 6 base damage on a successful attack.</p>"
-                },
-                "Flame Claw": {
-                    "name": "Flame Claw"
-                },
-                "Elemental Armor": {
-                    "name": "Elemental Armor"
-                },
-                "Fire Absorption": {
-                    "name": "Fire Absorption",
-                    "description": "<p>The @ref[actor.name]{creature} has an exceptional ability to thrive within scorching environments. Its <strong>Fire</strong> resistance is doubled and if that resistance would reduce an amount of damage below zero, the negative amount is received as <strong>Healing</strong> instead.</p>"
                 },
                 "False Appearance": {
                     "name": "False Appearance",
@@ -152,12 +35,15 @@
                 "description": "<p>Sprites are lesser elementals which are embodiments of their raw element, but lack the sapience of their greater kin.</p>"
             },
             "taxonomy": {
-                "name": "Fire Elemental",
-                "description": "<p>Elemental creatures corresponding to the element of Fire.</p>"
+                "name": "Skeleton",
+                "description": "<p>Undeathly denizens fashioned of bone and sinew.</p>"
             }
         },
-        "Flame Visitor": {
+        "AlwoqQKoL1BnnZjd": {
             "name": "Flame Visitor",
+            "tokenName": {
+                "name": "Conjuration of Flame"
+            },
             "items": {
                 "Rune: Flame": {
                     "name": "Rune: Flame",
@@ -191,11 +77,49 @@
                 "description": "<p>Elemental creatures corresponding to the element of Fire.</p>"
             }
         },
-        "Frost Claw": {
-            "name": "Frost Claw"
+        "c5B0l3VQPNMSw0MQ": {
+            "name": "Storm Visitor",
+            "tokenName": {
+                "name": "Storm Sprite"
+            },
+            "items": {
+                "Rune: Lightning": {
+                    "name": "Rune: Lightning",
+                    "description": "<p>The chaotic force of raw, electrical energy. The Lightning rune governs sources of electrical energy and electrical discharge. It is opposed by the orderly rune of Earth.</p>\n<p>The Lightning rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electrical</strong> damage to <strong>Health</strong>.</p>"
+                },
+                "Electricity Absorption": {
+                    "name": "Electricity Absorption",
+                    "description": "<p>The @ref[actor.name]{creature} has an exceptional ability to take lightning blasts in stride. Its <strong>Electricity</strong> resistance is doubled and if that resistance would reduce an amount of damage below zero, the negative amount is received as <strong>Healing</strong> instead.</p>"
+                },
+                "Gesture: Fan": {
+                    "name": "Gesture: Fan",
+                    "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree, 6 foot cone, dealing 6 base damage on a successful attack.</p>"
+                },
+                "Voltaic Claw": {
+                    "name": "Voltaic Claw"
+                },
+                "Elemental Armor": {
+                    "name": "Elemental Armor"
+                },
+                "Gesture: Aspect": {
+                    "name": "Gesture: Aspect",
+                    "description": "<p>Infuse the essence of a Rune into the self, empowering your own physical form or psyche.</p>\n\n<p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p>\n\n<p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect.</p>"
+                }
+            },
+            "archetype": {
+                "name": "Elemental Visitor",
+                "description": "<p>Visitors are embodiments of raw elemental energy that assume forms that are vaguely humanoid in shape. Unlike their lesser kin, Elemental Visitors are are capable of communication and understanding, although their motivations are seldom aligned with those of mortals.</p>"
+            },
+            "taxonomy": {
+                "name": "Storm Elemental",
+                "description": "<p>Elemental creatures corresponding to the element of Lightning.</p>"
+            }
         },
-        "Frost Sprite": {
+        "me5glbOshiijlVUH": {
             "name": "Frost Sprite",
+            "tokenName": {
+                "name": "Creation of Frost"
+            },
             "items": {
                 "Elemental Armor": {
                     "name": "Elemental Armor"
@@ -247,8 +171,11 @@
                 "description": "<p>Elemental creatures corresponding to the element of Frost.</p>"
             }
         },
-        "Frost Visitor": {
+        "mMBMYzpipJdqVf7k": {
             "name": "Frost Visitor",
+            "tokenName": {
+                "name": "Frost Sprite"
+            },
             "items": {
                 "Cold Absorption": {
                     "name": "Cold Absorption",
@@ -296,72 +223,11 @@
                 "description": "<p>Elemental creatures corresponding to the element of Frost.</p>"
             }
         },
-        "Gesture: Arrow": {
-            "name": "Gesture: Arrow"
-        },
-        "Gesture: Aspect": {
-            "name": "Gesture: Aspect"
-        },
-        "Gesture: Fan": {
-            "name": "Gesture: Fan"
-        },
-        "Gesture: Influence": {
-            "name": "Gesture: Influence"
-        },
-        "Gesture: Ray": {
-            "name": "Gesture: Ray"
-        },
-        "Icy Claw": {
-            "name": "Icy Claw"
-        },
-        "Moldy Skeleton": {
-            "name": "Moldy Skeleton",
-            "items": {
-                "Deathly Armor": {
-                    "name": "Deathly Armor"
-                },
-                "Bony Claws": {
-                    "name": "Bony Claws"
-                },
-                "Rune: Death": {
-                    "name": "Rune: Death",
-                    "description": "You learn Rune of Death, allowing you to manipulate unholy power."
-                },
-                "Gesture: Fan": {
-                    "name": "Gesture: Fan",
-                    "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree, 6 foot cone, dealing 6 base damage on a successful attack.</p>"
-                },
-                "False Appearance": {
-                    "name": "False Appearance",
-                    "description": "<p>While it remains motionless, the @ref[actor.name]{creature} is indistinguishable from some other object or material.</p>"
-                }
-            },
-            "archetype": {
-                "name": "Elemental Sprite",
-                "description": "<p>Sprites are lesser elementals which are embodiments of their raw element, but lack the sapience of their greater kin.</p>"
-            },
-            "taxonomy": {
-                "name": "Skeleton",
-                "description": "<p>Undeathly denizens fashioned of bone and sinew.</p>"
-            }
-        },
-        "Rune: Death": {
-            "name": "Rune: Death"
-        },
-        "Rune: Earth": {
-            "name": "Rune: Earth"
-        },
-        "Rune: Flame": {
-            "name": "Rune: Flame"
-        },
-        "Rune: Frost": {
-            "name": "Rune: Frost"
-        },
-        "Rune: Lightning": {
-            "name": "Rune: Lightning"
-        },
-        "Storm Sprite": {
+        "Ne25xsSqYijgcrm0": {
             "name": "Storm Sprite",
+            "tokenName": {
+                "name": "Creation of Storm"
+            },
             "items": {
                 "Elemental Armor": {
                     "name": "Elemental Armor"
@@ -399,23 +265,64 @@
                 "description": "<p>Elemental creatures corresponding to the element of Lightning.</p>"
             }
         },
-        "Storm Visitor": {
-            "name": "Storm Visitor",
+        "RuNh1bFGiHKdHeKI": {
+            "name": "Flame Sprite",
+            "tokenName": {
+                "name": "Creation of Flame"
+            },
             "items": {
-                "Rune: Lightning": {
-                    "name": "Rune: Lightning",
-                    "description": "<p>The chaotic force of raw, electrical energy. The Lightning rune governs sources of electrical energy and electrical discharge. It is opposed by the orderly rune of Earth.</p>\n<p>The Lightning rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electrical</strong> damage to <strong>Health</strong>.</p>"
-                },
-                "Electricity Absorption": {
-                    "name": "Electricity Absorption",
-                    "description": "<p>The @ref[actor.name]{creature} has an exceptional ability to take lightning blasts in stride. Its <strong>Electricity</strong> resistance is doubled and if that resistance would reduce an amount of damage below zero, the negative amount is received as <strong>Healing</strong> instead.</p>"
+                "Rune: Flame": {
+                    "name": "Rune: Flame",
+                    "description": "You learn Rune of Flame, allowing you to weave the arcane element of fire."
                 },
                 "Gesture: Fan": {
                     "name": "Gesture: Fan",
                     "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree, 6 foot cone, dealing 6 base damage on a successful attack.</p>"
                 },
-                "Voltaic Claw": {
-                    "name": "Voltaic Claw"
+                "Flame Claw": {
+                    "name": "Flame Claw"
+                },
+                "Elemental Armor": {
+                    "name": "Elemental Armor"
+                },
+                "Fire Absorption": {
+                    "name": "Fire Absorption",
+                    "description": "<p>The @ref[actor.name]{creature} has an exceptional ability to thrive within scorching environments. Its <strong>Fire</strong> resistance is doubled and if that resistance would reduce an amount of damage below zero, the negative amount is received as <strong>Healing</strong> instead.</p>"
+                },
+                "False Appearance": {
+                    "name": "False Appearance",
+                    "description": "<p>While it remains motionless, the @ref[actor.name]{creature} is indistinguishable from some other object or material.</p>"
+                }
+            },
+            "archetype": {
+                "name": "Elemental Sprite",
+                "description": "<p>Sprites are lesser elementals which are embodiments of their raw element, but lack the sapience of their greater kin.</p>"
+            },
+            "taxonomy": {
+                "name": "Fire Elemental",
+                "description": "<p>Elemental creatures corresponding to the element of Fire.</p>"
+            }
+        },
+        "ugQYiiEmj9idwvqW": {
+            "name": "Earth Visitor",
+            "tokenName": {
+                "name": "Earth Sprite"
+            },
+            "items": {
+                "Rune: Earth": {
+                    "name": "Rune: Earth",
+                    "description": "You learn Rune of Earth, allowing you to control tectonic and corrosive forces."
+                },
+                "Acid Absorption": {
+                    "name": "Acid Absorption",
+                    "description": "<p>The @ref[actor.name]{creature} has an exceptional ability to thrive within acidic environments. Its <strong>Acid</strong> resistance is doubled and if that resistance would reduce an amount of damage below zero, the negative amount is received as <strong>Healing</strong> instead.</p>"
+                },
+                "Gesture: Fan": {
+                    "name": "Gesture: Fan",
+                    "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree, 6 foot cone, dealing 6 base damage on a successful attack.</p>"
+                },
+                "Earthen Claw": {
+                    "name": "Earthen Claw"
                 },
                 "Elemental Armor": {
                     "name": "Elemental Armor"
@@ -430,12 +337,51 @@
                 "description": "<p>Visitors are embodiments of raw elemental energy that assume forms that are vaguely humanoid in shape. Unlike their lesser kin, Elemental Visitors are are capable of communication and understanding, although their motivations are seldom aligned with those of mortals.</p>"
             },
             "taxonomy": {
-                "name": "Storm Elemental",
-                "description": "<p>Elemental creatures corresponding to the element of Lightning.</p>"
+                "name": "Earth Elemental",
+                "description": "<p>Elemental creatures corresponding to the element of Earth.</p>"
             }
         },
-        "Voltaic Claw": {
-            "name": "Voltaic Claw"
+        "xTFgTg5Rh2s0s5gZ": {
+            "name": "Earth Sprite",
+            "tokenName": {
+                "name": "Creation of Earth"
+            },
+            "items": {
+                "Elemental Armor": {
+                    "name": "Elemental Armor"
+                },
+                "Earthen Claw": {
+                    "name": "Earthen Claw"
+                },
+                "Rune: Earth": {
+                    "name": "Rune: Earth",
+                    "description": "You learn Rune of Earth, allowing you to control tectonic and corrosive forces."
+                },
+                "Gesture: Ray": {
+                    "name": "Gesture: Ray",
+                    "description": "You learn the Ray gesture, allowing you to manifest arcane energy in a concentrated line."
+                },
+                "Acid Absorption": {
+                    "name": "Acid Absorption",
+                    "description": "<p>The @ref[actor.name]{creature} has an exceptional ability to thrive within acidic environments. Its <strong>Acid</strong> resistance is doubled and if that resistance would reduce an amount of damage below zero, the negative amount is received as <strong>Healing</strong> instead.</p>"
+                },
+                "False Appearance": {
+                    "name": "False Appearance",
+                    "description": "<p>While it remains motionless, the @ref[actor.name]{creature} is indistinguishable from some other object or material.</p>"
+                },
+                "Gesture: Fan": {
+                    "name": "Gesture: Fan",
+                    "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree, 6 foot cone, dealing 6 base damage on a successful attack.</p>"
+                }
+            },
+            "archetype": {
+                "name": "Elemental Sprite",
+                "description": "<p>Sprites are lesser elementals which are embodiments of their raw element, but lack the sapience of their greater kin.</p>"
+            },
+            "taxonomy": {
+                "name": "Earth Elemental",
+                "description": "<p>Elemental creatures corresponding to the element of Earth.</p>"
+            }
         }
     },
     "mapping": {

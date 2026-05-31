@@ -1,19 +1,19 @@
 {
     "label": "System Macros",
     "entries": {
-        "Configure Group Check": {
-            "name": "Configure Group Check"
-        },
-        "Configure Hazard": {
+        "ConfigureHazard00": {
             "name": "Configure Hazard"
         },
-        "Randomize Item": {
+        "GroupSkillCheck0": {
+            "name": "Configure Group Check"
+        },
+        "RandomizeItem000": {
             "name": "Randomize Item"
         },
-        "Recover": {
+        "Recover000000000": {
             "name": "Recover"
         },
-        "Rest": {
+        "Rest000000000000": {
             "name": "Rest"
         }
     }

@@ -11,21 +11,21 @@
                 "name": "Creation of Death"
             },
             "items": {
-                "Deathly Armor": {
+                "mRRdlP89QJPwBeHp": {
                     "name": "Deathly Armor"
                 },
-                "Bony Claws": {
+                "EBS39VwHFZ4jvcMK": {
                     "name": "Bony Claws"
                 },
-                "Rune: Death": {
+                "runedeath0000000": {
                     "name": "Rune: Death",
                     "description": "You learn Rune of Death, allowing you to manipulate unholy power."
                 },
-                "Gesture: Fan": {
+                "gesturefan000000": {
                     "name": "Gesture: Fan",
                     "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree, 6 foot cone, dealing 6 base damage on a successful attack.</p>"
                 },
-                "False Appearance": {
+                "falseAppearance0": {
                     "name": "False Appearance",
                     "description": "<p>While it remains motionless, the @ref[actor.name]{creature} is indistinguishable from some other object or material.</p>"
                 }
@@ -45,25 +45,25 @@
                 "name": "Conjuration of Flame"
             },
             "items": {
-                "Rune: Flame": {
+                "runeflame0000000": {
                     "name": "Rune: Flame",
                     "description": "You learn Rune of Flame, allowing you to weave the arcane element of fire."
                 },
-                "Fire Absorption": {
+                "fireAbsorption00": {
                     "name": "Fire Absorption",
                     "description": "<p>The @ref[actor.name]{creature} has an exceptional ability to thrive within scorching environments. Its <strong>Fire</strong> resistance is doubled and if that resistance would reduce an amount of damage below zero, the negative amount is received as <strong>Healing</strong> instead.</p>"
                 },
-                "Gesture: Fan": {
+                "gesturefan000000": {
                     "name": "Gesture: Fan",
                     "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree, 6 foot cone, dealing 6 base damage on a successful attack.</p>"
                 },
-                "Elemental Armor": {
+                "n9O5nEIhY2OgZFsO": {
                     "name": "Elemental Armor"
                 },
-                "Flame Claw": {
+                "RSSqSCjBzvD0z67R": {
                     "name": "Flame Claw"
                 },
-                "Gesture: Aspect": {
+                "gestureaspect000": {
                     "name": "Gesture: Aspect",
                     "description": "<p>Infuse the essence of a Rune into the self, empowering your own physical form or psyche.</p>\n\n<p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p>\n\n<p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect.</p>"
                 }
@@ -83,25 +83,25 @@
                 "name": "Storm Sprite"
             },
             "items": {
-                "Rune: Lightning": {
+                "runelightning000": {
                     "name": "Rune: Lightning",
                     "description": "<p>The chaotic force of raw, electrical energy. The Lightning rune governs sources of electrical energy and electrical discharge. It is opposed by the orderly rune of Earth.</p>\n<p>The Lightning rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electrical</strong> damage to <strong>Health</strong>.</p>"
                 },
-                "Electricity Absorption": {
+                "electricityAbsor": {
                     "name": "Electricity Absorption",
                     "description": "<p>The @ref[actor.name]{creature} has an exceptional ability to take lightning blasts in stride. Its <strong>Electricity</strong> resistance is doubled and if that resistance would reduce an amount of damage below zero, the negative amount is received as <strong>Healing</strong> instead.</p>"
                 },
-                "Gesture: Fan": {
+                "gesturefan000000": {
                     "name": "Gesture: Fan",
                     "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree, 6 foot cone, dealing 6 base damage on a successful attack.</p>"
                 },
-                "Voltaic Claw": {
+                "feNVndyyNP8lNnqr": {
                     "name": "Voltaic Claw"
                 },
-                "Elemental Armor": {
+                "DxCEPc6zCfAVdQSw": {
                     "name": "Elemental Armor"
                 },
-                "Gesture: Aspect": {
+                "gestureaspect000": {
                     "name": "Gesture: Aspect",
                     "description": "<p>Infuse the essence of a Rune into the self, empowering your own physical form or psyche.</p>\n\n<p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p>\n\n<p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect.</p>"
                 }
@@ -121,43 +121,43 @@
                 "name": "Creation of Frost"
             },
             "items": {
-                "Elemental Armor": {
+                "rJmycH98CA6nkh5f": {
                     "name": "Elemental Armor"
                 },
-                "Icy Claw": {
+                "7RSTMS2y9bqVGtgb": {
                     "name": "Icy Claw"
                 },
-                "Rune: Frost": {
+                "runefrost0000000": {
                     "name": "Rune: Frost",
                     "description": "You learn Rune of Frost, allowing you to channel the arcane element of ice."
                 },
-                "Gesture: Influence": {
+                "gestureinfluence": {
                     "name": "Gesture: Influence",
                     "description": "<p>You learn the Influence gesture, allowing you to heighten or diminish an arcane phenomenon at close range.</p>\n<p>The Influence gesture is a stronger evolution of the Touch gesture, dealing more damage or healing but requiring 2 Action to perform.</p>"
                 },
-                "Cold Absorption": {
+                "coldAbsorption00": {
                     "name": "Cold Absorption",
                     "description": "<p>The @ref[actor.name]{creature} has an exceptional ability to thrive within frigid environments. Its <strong>Cold</strong> resistance is doubled and if that resistance would reduce an amount of damage below zero, the negative amount is received as <strong>Healing</strong> instead.</p>"
                 },
-                "Amorphous": {
+                "amorphous0000000": {
                     "name": "Amorphous",
                     "description": "<p>The @ref[actor.name]{creature} may move through a space as narrow as 1 inch in diameter without any penalty to its <strong>Stride</strong>. It is immune to the @Condition[restrained] condition.</p>"
                 },
-                "Aqueous Transmission": {
+                "aqueousTransmiss": {
                     "name": "Aqueous Transmission",
                     "description": "<p>The @ref[name] is able to move instantaneously through water.</p>",
                     "actions": {
-                        "Aqueous Transmission": {
+                        "aqueousTransmission": {
                             "name": "Aqueous Transmission",
                             "description": "<p>When the @ref[name] is within water, it can instantaneously transport itself to any unoccupied space within the same body of water up to 120 feet away. It does not need to be able to see the destination to make this <strong>Move</strong>.</p>"
                         }
                     }
                 },
-                "False Appearance": {
+                "falseAppearance0": {
                     "name": "False Appearance",
                     "description": "<p>While it remains motionless, the @ref[actor.name]{creature} is indistinguishable from some other object or material.</p>"
                 },
-                "Gesture: Fan": {
+                "gesturefan000000": {
                     "name": "Gesture: Fan",
                     "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree, 6 foot cone, dealing 6 base damage on a successful attack.</p>"
                 }
@@ -177,39 +177,39 @@
                 "name": "Frost Sprite"
             },
             "items": {
-                "Cold Absorption": {
+                "coldAbsorption00": {
                     "name": "Cold Absorption",
                     "description": "<p>The @ref[actor.name]{creature} has an exceptional ability to thrive within frigid environments. Its <strong>Cold</strong> resistance is doubled and if that resistance would reduce an amount of damage below zero, the negative amount is received as <strong>Healing</strong> instead.</p>"
                 },
-                "Amorphous": {
+                "amorphous0000000": {
                     "name": "Amorphous",
                     "description": "<p>The @ref[actor.name]{creature} may move through a space as narrow as 1 inch in diameter without any penalty to its <strong>Stride</strong>. It is immune to the @Condition[restrained] condition.</p>"
                 },
-                "Rune: Frost": {
+                "runefrost0000000": {
                     "name": "Rune: Frost",
                     "description": "You learn Rune of Frost, allowing you to channel the arcane element of ice."
                 },
-                "Aqueous Transmission": {
+                "aqueousTransmiss": {
                     "name": "Aqueous Transmission",
                     "description": "<p>The @ref[name] is able to move instantaneously through water.</p>",
                     "actions": {
-                        "Aqueous Transmission": {
+                        "aqueousTransmission": {
                             "name": "Aqueous Transmission",
                             "description": "<p>When the @ref[name] is within water, it can instantaneously transport itself to any unoccupied space within the same body of water up to 120 feet away. It does not need to be able to see the destination to make this <strong>Move</strong>.</p>"
                         }
                     }
                 },
-                "Gesture: Fan": {
+                "gesturefan000000": {
                     "name": "Gesture: Fan",
                     "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree, 6 foot cone, dealing 6 base damage on a successful attack.</p>"
                 },
-                "Elemental Armor": {
+                "k0YORkxCqPLxrdNj": {
                     "name": "Elemental Armor"
                 },
-                "Frost Claw": {
+                "9xN7cJJFkD00Nr2G": {
                     "name": "Frost Claw"
                 },
-                "Gesture: Aspect": {
+                "gestureaspect000": {
                     "name": "Gesture: Aspect",
                     "description": "<p>Infuse the essence of a Rune into the self, empowering your own physical form or psyche.</p>\n\n<p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p>\n\n<p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect.</p>"
                 }
@@ -229,29 +229,29 @@
                 "name": "Creation of Storm"
             },
             "items": {
-                "Elemental Armor": {
+                "kxuUSxeLhkQ5J1Nn": {
                     "name": "Elemental Armor"
                 },
-                "Earthen Claw": {
+                "Qu8kL7eiBNkcOXpn": {
                     "name": "Earthen Claw"
                 },
-                "Gesture: Arrow": {
+                "gesturearrow0000": {
                     "name": "Gesture: Arrow",
                     "description": "<p>You learn the Arrow gesture, allowing you to hurl a directed bolt of arcane power towards a distant target.</p>\n<p>The Arrow gesture deals damage corresponding to the Rune used to a single enemy target at range.</p>"
                 },
-                "Rune: Lightning": {
+                "runelightning000": {
                     "name": "Rune: Lightning",
                     "description": "<p>The chaotic force of raw, electrical energy. The Lightning rune governs sources of electrical energy and electrical discharge. It is opposed by the orderly rune of Earth.</p>\n<p>The Lightning rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electrical</strong> damage to <strong>Health</strong>.</p>"
                 },
-                "Electricity Absorption": {
+                "electricityAbsor": {
                     "name": "Electricity Absorption",
                     "description": "<p>The @ref[actor.name]{creature} has an exceptional ability to take lightning blasts in stride. Its <strong>Electricity</strong> resistance is doubled and if that resistance would reduce an amount of damage below zero, the negative amount is received as <strong>Healing</strong> instead.</p>"
                 },
-                "False Appearance": {
+                "falseAppearance0": {
                     "name": "False Appearance",
                     "description": "<p>While it remains motionless, the @ref[actor.name]{creature} is indistinguishable from some other object or material.</p>"
                 },
-                "Gesture: Fan": {
+                "gesturefan000000": {
                     "name": "Gesture: Fan",
                     "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree, 6 foot cone, dealing 6 base damage on a successful attack.</p>"
                 }
@@ -271,25 +271,25 @@
                 "name": "Creation of Flame"
             },
             "items": {
-                "Rune: Flame": {
+                "runeflame0000000": {
                     "name": "Rune: Flame",
                     "description": "You learn Rune of Flame, allowing you to weave the arcane element of fire."
                 },
-                "Gesture: Fan": {
+                "gesturefan000000": {
                     "name": "Gesture: Fan",
                     "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree, 6 foot cone, dealing 6 base damage on a successful attack.</p>"
                 },
-                "Flame Claw": {
+                "vk1SK4IwNZkxQEQL": {
                     "name": "Flame Claw"
                 },
-                "Elemental Armor": {
+                "kxuUSxeLhkQ5J1Nn": {
                     "name": "Elemental Armor"
                 },
-                "Fire Absorption": {
+                "fireAbsorption00": {
                     "name": "Fire Absorption",
                     "description": "<p>The @ref[actor.name]{creature} has an exceptional ability to thrive within scorching environments. Its <strong>Fire</strong> resistance is doubled and if that resistance would reduce an amount of damage below zero, the negative amount is received as <strong>Healing</strong> instead.</p>"
                 },
-                "False Appearance": {
+                "falseAppearance0": {
                     "name": "False Appearance",
                     "description": "<p>While it remains motionless, the @ref[actor.name]{creature} is indistinguishable from some other object or material.</p>"
                 }
@@ -309,25 +309,25 @@
                 "name": "Earth Sprite"
             },
             "items": {
-                "Rune: Earth": {
+                "runeearth0000000": {
                     "name": "Rune: Earth",
                     "description": "You learn Rune of Earth, allowing you to control tectonic and corrosive forces."
                 },
-                "Acid Absorption": {
+                "acidAbsorption00": {
                     "name": "Acid Absorption",
                     "description": "<p>The @ref[actor.name]{creature} has an exceptional ability to thrive within acidic environments. Its <strong>Acid</strong> resistance is doubled and if that resistance would reduce an amount of damage below zero, the negative amount is received as <strong>Healing</strong> instead.</p>"
                 },
-                "Gesture: Fan": {
+                "gesturefan000000": {
                     "name": "Gesture: Fan",
                     "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree, 6 foot cone, dealing 6 base damage on a successful attack.</p>"
                 },
-                "Earthen Claw": {
+                "70JmOia6MhgONfpq": {
                     "name": "Earthen Claw"
                 },
-                "Elemental Armor": {
+                "47fiS0EI8OD46Uj2": {
                     "name": "Elemental Armor"
                 },
-                "Gesture: Aspect": {
+                "gestureaspect000": {
                     "name": "Gesture: Aspect",
                     "description": "<p>Infuse the essence of a Rune into the self, empowering your own physical form or psyche.</p>\n\n<p>When you assume a certain Aspect, you become more closely attuned to the damage type of the Rune used in your spell. You gain <strong>+2 Resistance</strong> to that damage type, and deal an additional <strong>+2 Damage</strong> whenever dealing damage of that type.</p>\n\n<p>Your Aspect lasts for <strong>6 Rounds</strong>. You may only have one active Aspect, casting another spell using the Aspect gesture replaces the previous effect.</p>"
                 }
@@ -347,29 +347,29 @@
                 "name": "Creation of Earth"
             },
             "items": {
-                "Elemental Armor": {
+                "kxuUSxeLhkQ5J1Nn": {
                     "name": "Elemental Armor"
                 },
-                "Earthen Claw": {
+                "Qu8kL7eiBNkcOXpn": {
                     "name": "Earthen Claw"
                 },
-                "Rune: Earth": {
+                "runeearth0000000": {
                     "name": "Rune: Earth",
                     "description": "You learn Rune of Earth, allowing you to control tectonic and corrosive forces."
                 },
-                "Gesture: Ray": {
+                "gestureray000000": {
                     "name": "Gesture: Ray",
                     "description": "You learn the Ray gesture, allowing you to manifest arcane energy in a concentrated line."
                 },
-                "Acid Absorption": {
+                "acidAbsorption00": {
                     "name": "Acid Absorption",
                     "description": "<p>The @ref[actor.name]{creature} has an exceptional ability to thrive within acidic environments. Its <strong>Acid</strong> resistance is doubled and if that resistance would reduce an amount of damage below zero, the negative amount is received as <strong>Healing</strong> instead.</p>"
                 },
-                "False Appearance": {
+                "falseAppearance0": {
                     "name": "False Appearance",
                     "description": "<p>While it remains motionless, the @ref[actor.name]{creature} is indistinguishable from some other object or material.</p>"
                 },
-                "Gesture: Fan": {
+                "gesturefan000000": {
                     "name": "Gesture: Fan",
                     "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree, 6 foot cone, dealing 6 base damage on a successful attack.</p>"
                 }

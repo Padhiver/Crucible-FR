@@ -40,7 +40,7 @@
                 "public": "<p>A flammable concoction that ignites upon impact and burns intensely for a short time.</p>"
             },
             "actions": {
-                "Alchemist's Fire": {
+                "alchemistsFire": {
                     "name": "Alchemist's Fire",
                     "description": "<p>You hurl the @ref[name], dealing <strong>Weakened</strong> immediate damage but causing the @Condition[burning] condition to all enemies in a 4 foot radius <strong>Blast</strong> who fail to avoid the attack.</p><p>The amount of burning damage and its duration is dependent on the quality of the @ref[name]:</p><ul><li><p><strong>Shoddy</strong> - 2 damage for 2 rounds</p></li><li><p><strong>Standard</strong> - 3 damage for 3 rounds</p></li><li><p><strong>Fine</strong> - 4 damage for 4 rounds</p></li><li><p><strong>Superior</strong> - 6 damage for 5 rounds</p></li><li><p><strong>Masterwork</strong> - 8 damage for 6 rounds</p></li></ul>",
                     "effects": {
@@ -77,7 +77,7 @@
                 "private": "<p>This item is presented as an example of a Fine Amulet with the @UUID[Compendium.crucible.affixes.ActiveEffect.nimbleness000000]{Nimbleness} suffix.</p><p>This affix can be applied to any armor or accessory and this amulet could be further enchanted with a Tier 1 prefix.</p>"
             },
             "effects": {
-                "Nimbleness": {
+                "nimbleness000000": {
                     "name": "Nimbleness",
                     "description": "<p>Increase <strong>Reflex</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
                     "adjective": "Nimbleness"
@@ -90,7 +90,7 @@
                 "public": "<p>A slender phial that contains a slightly golden-colored liquid. It smells foul, but contains the alchemical agents necessary to neutralize a wide variety of toxins.</p>"
             },
             "actions": {
-                "Antitoxin": {
+                "antitoxin": {
                     "name": "Antitoxin",
                     "description": "<p>Consuming this @ref[name] is able to neutralize any @Condition[poisoned] conditions affecting the target. Stronger poisons require a stronger antitoxin to neutralize.</p><p>The category of poison negated by this @ref[name] depends on its quality:</p><ul><li><p><strong>Shoddy</strong> - Poisons dealing 3 damage or less per round</p></li><li><p><strong>Standard</strong> - Poisons dealing 5 damage or less per round</p></li><li><p><strong>Fine</strong> - Poisons dealing 7 damage or less per round</p></li><li><p><strong>Superior</strong> - Poisons dealing 9 damage or less per round</p></li><li><p><strong>Masterwork</strong> - Poisons dealing 11 damage or less per round</p></li></ul>"
                 }
@@ -170,7 +170,7 @@
                 "public": "<p>Corrosive liquid swirls within this vial of intentionally thin glass, designed to shatter on impact and spill the caustic substance upon a target.</p>"
             },
             "actions": {
-                "Caustic Phial": {
+                "causticPhial": {
                     "name": "Caustic Phial",
                     "description": "<p>You fling the @ref[name], dealing <strong>Weakened</strong> immediate damage but causing the @Condition[corroding] condition to all enemies in a 4 foot radius <strong>Blast</strong> who fail to avoid the attack.</p><p>The amount of burning damage and its duration is dependent on the quality of the @ref[name]:</p><ul><li><p><strong>Shoddy</strong> - 2 damage for 2 rounds</p></li><li><p><strong>Standard</strong> - 3 damage for 3 rounds</p></li><li><p><strong>Fine</strong> - 4 damage for 4 rounds</p></li><li><p><strong>Superior</strong> - 6 damage for 5 rounds</p></li><li><p><strong>Masterwork</strong> - 8 damage for 6 rounds</p></li></ul>",
                     "effects": {
@@ -212,7 +212,7 @@
                 "private": "<p>This item is presented as an example of a Fine Charm with the @UUID[Compendium.crucible.affixes.ActiveEffect.tenacity00000000]{Tenacity} suffix.</p><p>This affix can be applied to any armor or accessory and this charm could be further enchanted with a Tier 1 prefix.</p>"
             },
             "effects": {
-                "Tenacity": {
+                "tenacity00000000": {
                     "name": "Tenacity",
                     "description": "<p>Increase <strong>Fortitude</strong> defense by 1 per each <strong>Tier</strong> of this suffix.</p>",
                     "adjective": "Tenacity"
@@ -231,7 +231,7 @@
                 "public": "<p>This sealed glass phial contains a swirling cloud of dense green gas held at pressure within. Shattering the ampoule would release its contained fumes which cause a demoralizing and suffocating effect on those exposed to it.</p>"
             },
             "actions": {
-                "Choking Ampoule": {
+                "chokingAmpoule": {
                     "name": "Choking Ampoule",
                     "description": "<p>You hurl the @ref[name], which is <strong>Harmless</strong> in its immediate effect but causes the @Condition[poisoned] condition to all enemies in an 8 foot radius <strong>Blast</strong> who fail to resist the attack with their <strong>Fortitude</strong>.</p><p>The gas deals poison damage to <strong>Morale</strong> in an amount dependent on the quality of the @ref[name]. Upon a critical success, the affected target also becomes @Condition[silenced] for the duration.</p><ul><li><p><strong>Shoddy</strong> - 2 damage for 3 rounds</p></li><li><p><strong>Standard</strong> - 6 damage for 3 rounds</p></li><li><p><strong>Fine</strong> - 12 damage for 3 rounds</p></li><li><p><strong>Superior</strong> - 20 damage for 3 rounds</p></li><li><p><strong>Masterwork</strong> - 30 damage for 3 rounds</p></li></ul>",
                     "effects": {
@@ -268,18 +268,18 @@
                 "private": "<p>This item is presented as an example of a Fine Cloak with the @UUID[Compendium.crucible.affixes.ActiveEffect.diplomacySkill00]{Diplomacy} prefix and the @UUID[Compendium.crucible.affixes.ActiveEffect.disguise00000000]{Disguise} suffix.</p>"
             },
             "effects": {
-                "Disguise": {
+                "disguise00000000": {
                     "name": "Disguise",
                     "description": "<p>Grants the <strong>Disguise</strong> action, allowing the bearer to assume an illusory appearance once per rest.</p>",
                     "adjective": "Disguise",
                     "actions": {
-                        "Disguise": {
+                        "affixDisguise": {
                             "name": "Disguise",
                             "description": "<p>You assume an illusory appearance once per rest which alters your appearance as well as your attire. The illusion cannot alter your ancestry, but can change other aspects of your anatomy including your apparent gender. The item itself does not change in appearance and remains visible.</p><p>The illusion persists indefinitely and can be dismissed at-will. Once activated, this item cannot produce another illusion in this way until 24 hours have passed.</p>"
                         }
                     }
                 },
-                "Diplomacy": {
+                "diplomacySkill00": {
                     "name": "Diplomacy",
                     "description": "<p>Increase the <strong>Enchantment Bonus</strong> for <strong>Diplomacy</strong> skill checks by 1 for each <strong>Tier</strong> of this prefix.</p>",
                     "adjective": "Diplomatic"
@@ -353,7 +353,7 @@
                 "private": "<p></p><p>Primarily used to power small electromechanical machines for short periods of time, these alchemical containers are somewhat unstable and react poorly when their contents are exposed to air, making them useful if unpredictable improvised explosives. If combined in a large enough quantity in the correct way, they can also be used to power more significant devices and discharge even more electrical energy.</p>"
             },
             "actions": {
-                "Electrocharge Ampoule": {
+                "electrochargeAmpoule": {
                     "name": "Electrocharge Ampoule",
                     "description": "<p>You throw the @ref[name], dealing weakened <strong>Electricity </strong>damage to all enemies in the radius of the discharge and leaving them briefly @Condition[staggered]. The radius of the <strong>Discharge</strong> depends on the quality of the bomb:</p><ul><li><p><strong>Shoddy</strong> - 3 feet</p></li><li><p><strong>Standard</strong> - 4 feet</p></li><li><p><strong>Fine</strong> - 6 feet</p></li><li><p><strong>Superior</strong> - 8 feet</p></li><li><p><strong>Masterwork</strong> - 10 feet</p></li></ul>",
                     "effects": {
@@ -413,12 +413,12 @@
                 "private": "<p>This item is presented as an example of a Fine Pearl with the @UUID[Compendium.crucible.affixes.ActiveEffect.focusing00000000]{Focusing} prefix.</p><p>This affix can be applied to any accessory and this pearl could be further enchanted with a Tier 1 suffix.</p>"
             },
             "effects": {
-                "Focusing": {
+                "focusing00000000": {
                     "name": "Focusing",
                     "description": "<p>Grants the <strong>Replenish Focus</strong> action, allowing the bearer to restore <strong>Focus</strong> in moments of duress. The amount restored scales with the <strong>Tier</strong> of this affix.</p>",
                     "adjective": "Focusing",
                     "actions": {
-                        "Replenish Focus": {
+                        "affixFocusing": {
                             "name": "Replenish Focus",
                             "description": "<p>In moments of duress you can withdraw an additional reserve of <strong>Focus</strong> from this item. The amount of Focus restored depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> <strong>4 Focus</strong></p></li><li><p><strong>Tier 2:</strong> <strong>6 Focus</strong></p></li><li><p><strong>Tier 3:</strong> <strong>8 Focus</strong></p></li></ul>"
                         }
@@ -433,7 +433,7 @@
                 "private": "<p></p><p>Primarily used to rapidly cool metallurgical compounds in advanced smithing, these alchemical phials can be quite dangerous to living tissue if exposed for a long period of time.</p>"
             },
             "actions": {
-                "Frostdrop Flask": {
+                "frostFlask": {
                     "name": "Frostdrop Flask",
                     "description": "<p>You throw the @ref[name], dealing weakened <strong>Cold </strong>damage to all enemies in the radius of the explosion and causing them to be @Condition[slowed] briefly. The radius of the <strong>Blast</strong> depends on the quality of the bomb:</p><ul><li><p><strong>Shoddy</strong> - 3 feet</p></li><li><p><strong>Standard</strong> - 4 feet</p></li><li><p><strong>Fine</strong> - 6 feet</p></li><li><p><strong>Superior</strong> - 8 feet</p></li><li><p><strong>Masterwork</strong> - 10 feet</p></li></ul>",
                     "effects": {
@@ -450,7 +450,7 @@
                 "public": "<p>A multifaceted, rough-cut gem imbued with elemental energies. When thrown, this gem shatters and conjures an elemental spirit under the control of the individual that shattered it. Its quality determines the level of elemental summoned.</p>"
             },
             "actions": {
-                "Summon Flame Elemental": {
+                "gemOfConjuredFlame": {
                     "name": "Summon Flame Elemental",
                     "description": "<p>The @ref[name] shatters in a burst of flame, leaving in its place a fiery elemental. Elementals summoned by this gem remain for 6 Rounds (1 minute).</p><ul><li><p><strong>Shoddy - </strong>No elemental is summoned</p></li><li><p><strong>Standard </strong>- Mote</p></li><li><p><strong>Fine</strong> - Sprite</p></li><li><p><strong>Superior</strong> - Visitor</p></li><li><p><strong>Masterwork - </strong>Wanderer</p></li></ul>"
                 }
@@ -463,12 +463,12 @@
                 "private": "<p>This item is presented as an example of a Fine Gem with the @UUID[Compendium.crucible.affixes.ActiveEffect.luminous00000000]{Luminous} prefix.</p><p>This affix can be applied to any accessory and this gem could be further enchanted with a Tier 1 suffix.</p>"
             },
             "effects": {
-                "Luminous": {
+                "luminous00000000": {
                     "name": "Luminous",
                     "description": "<p>Grants the <strong>Activate Illumination</strong> action, allowing the bearer to shed an otherworldly light. The radius of light scales with the <strong>Tier</strong> of this affix.</p>",
                     "adjective": "Luminous",
                     "actions": {
-                        "Activate Illumination": {
+                        "affixLuminous": {
                             "name": "Activate Illumination",
                             "description": "<p>You speak the command word and the @ref[name] kindles into a steady otherworldly glow. The radius of bright light shed depends on the <strong>Tier</strong> of this prefix, with an additional radius of dim light extending an equal distance beyond.</p><ul><li><p><strong>Tier 1:</strong> 20 feet of bright light, 40 feet of dim</p></li><li><p><strong>Tier 2:</strong> 40 feet of bright light, 80 feet of dim</p></li><li><p><strong>Tier 3:</strong> 60 feet of bright light, 120 feet of dim</p></li></ul> <p>The light persists until you dismiss the effect or remove the item.</p>"
                         }
@@ -596,7 +596,7 @@
                 "public": "<p>This potion contains a specialized alchemical formula to rapidly close wounds and improve bodily health.</p>"
             },
             "actions": {
-                "Healing Elixir": {
+                "healingElixir": {
                     "name": "Healing Elixir",
                     "description": "<p>Immediately recover an amount of <strong>Health</strong> dependant on the quality of the elixir.</p><ul><li><p><strong>Shoddy</strong> - Immediately heals 6 <strong>Health</strong>.</p></li><li><p><strong>Standard</strong> - Immediately heals 12 <strong>Health</strong>.</p></li><li><p><strong>Fine</strong> - Immediately heals 24 <strong>Health</strong>.</p></li><li><p><strong>Superior</strong> - Immediately heals 48 <strong>Health</strong>.</p></li><li><p><strong>Masterwork</strong> - Immediately heals 96 <strong>Health</strong>.</p></li></ul>"
                 }
@@ -608,7 +608,7 @@
                 "public": "<p>This potion contains a specialized alchemical formula to gradually close wounds and improve bodily health.</p>"
             },
             "actions": {
-                "Healing Tonic": {
+                "healingTonic": {
                     "name": "Healing Tonic",
                     "description": "<p>Immediately, and at the beginning of each of the next 5 <strong>Rounds</strong>, recover an amount of <strong>Health</strong> dependent on the quality of the tonic.</p><ul><li><p><strong>Shoddy</strong> - Heals 2 <strong>Health</strong> each Round</p></li><li><p><strong>Standard</strong> - Heals 4 <strong>Health </strong>each Round</p></li><li><p><strong>Fine </strong>- Heals 8 <strong>Health </strong>each Round</p></li><li><p><strong>Superior</strong> - Heals 16 <strong>Health </strong>each Round</p></li><li><p><strong>Masterwork</strong> - Heals 32 <strong>Health </strong>each Round</p></li></ul>",
                     "effects": {
@@ -706,7 +706,7 @@
                 "private": "<p></p><p>Primarily used to break apart large pieces of ore, these alchemical flasks pack a concentrated punch. If combined in a large enough quantity, they can also be used to create a chain reaction that results in larger explosions.</p>"
             },
             "actions": {
-                "Blast Flask": {
+                "blastFlask": {
                     "name": "Blast Flask",
                     "description": "<p>You light and throw the @ref[name], dealing <strong>Fire </strong>damage to all enemies in the radius of the explosion. The radius of the <strong>Blast</strong> depends on the quality of the bomb:</p><ul><li><p><strong>Shoddy</strong> - 3 feet</p></li><li><p><strong>Standard</strong> - 4 feet</p></li><li><p><strong>Fine</strong> - 6 feet</p></li><li><p><strong>Superior</strong> - 8 feet</p></li><li><p><strong>Masterwork</strong> - 10 feet</p></li></ul>"
                 }
@@ -724,7 +724,7 @@
                 "public": "<p>An oil-burning or magically illuminated lantern that sheds bright light in a 20 foot radius and dim light in a 40 foot radius.</p>"
             },
             "actions": {
-                "Light Lantern": {
+                "lightLantern": {
                     "name": "Light Lantern",
                     "description": "<p>You ignite the @ref[name], producing steady illumination in a wide radius. This action consumes one unit of @UUID[Compendium.crucible.equipment.Item.lanternOil000000]{Lantern Oil} from your inventory; the burn duration depends on the quality of the oil consumed:</p><ul><li><p><strong>Shoddy</strong> - 1 hour</p></li><li><p><strong>Standard</strong> - 4 hours</p></li><li><p><strong>Fine</strong> - 12 hours</p></li><li><p><strong>Superior</strong> - 24 hours</p></li><li><p><strong>Masterwork</strong> - 48 hours</p></li></ul>",
                     "effects": {
@@ -772,7 +772,7 @@
                 "private": "<p>This item is presented as an example of a Fine Band with the @UUID[Compendium.crucible.affixes.ActiveEffect.luminary00000000]{Luminary} prefix.</p><p>This affix can be applied to any accessory and this band could be further enchanted with a Tier 1 suffix.</p>"
             },
             "effects": {
-                "Luminary": {
+                "luminary00000000": {
                     "name": "Luminary",
                     "description": "<p>Gain boons to <strong>Composed</strong> actions that include an <strong>Inflection</strong>. The number of boons gained equals the <strong>Tier</strong> of this prefix.</p>",
                     "adjective": "Luminary"
@@ -809,7 +809,7 @@
                 "public": "<p>These thickly woven fibers are reinforced for use in combat to entrap and entangle even the most dangerous foes, rendering them vulnerable.</p>"
             },
             "actions": {
-                "Throw Net": {
+                "net": {
                     "name": "Throw Net",
                     "description": "<p>The target captured by the thrown net is @Condition[restrained] until they can get free.</p>",
                     "effects": {
@@ -826,7 +826,7 @@
                 "public": "<p>A surprisingly thin liquid that tastes earthy and herbal.</p>"
             },
             "actions": {
-                "Omniglot Decoction": {
+                "omniglotDecoction": {
                     "name": "Omniglot Decoction",
                     "description": "<p>When consumed, this decoction affords the drinker the fascinating ability to read, speak, and comprehend languages. Its quality determines the duration of the effect:</p><ul><li><p><strong>Shoddy</strong> - 10 minutes</p></li><li><p><strong>Standard</strong> - 1 hour</p></li><li><p><strong>Fine</strong> - 4 hours</p></li><li><p><strong>Superior</strong> - 12 hours</p></li><li><p><strong>Masterwork</strong> - 24 hours</p></li></ul>",
                     "effects": {
@@ -849,7 +849,7 @@
                 "public": "<p>This small vial contains an oily liquid that is noticeably thicker than water. It emits a an acrid scent that evokes a sense of wrongness.</p>"
             },
             "actions": {
-                "Ingest Paralytic": {
+                "paralyticIngest": {
                     "name": "Ingest Paralytic",
                     "description": "<p>When this toxin is ingested or otherwise enters the bloodstream of a creature, it is initially <strong>Harmless</strong>, but the target must defend an attack against its <strong>Fortitude</strong> or become @Condition[paralyzed].</p><p>The duration is dependent on the quality of the @ref[name]:</p><ul><li><p><strong>Shoddy</strong> - 1 rounds</p></li><li><p><strong>Standard</strong> - 2 rounds</p></li><li><p><strong>Fine</strong> - 4 rounds</p></li><li><p><strong>Superior</strong> - 8 rounds</p></li><li><p><strong>Masterwork</strong> - Indefinite</p></li></ul><p><em>This action should be used when the poison is ingested rather than when it is first applied.</em></p>",
                     "effects": {
@@ -858,7 +858,7 @@
                         }
                     }
                 },
-                "Apply Paralytic": {
+                "paralyticApply": {
                     "name": "Apply Paralytic",
                     "description": "<p>The contents of this vial can be added to food, drink, smeared upon a bladed weapon, or combined with some alternative delivery mechanism.</p><p><em>This action, which consumes the available usage of the poison, should be used when it is first applied.</em></p>"
                 }
@@ -883,7 +883,7 @@
                 "private": "<p>This item is presented as an example of a Fine Periapt with the @UUID[Compendium.crucible.affixes.ActiveEffect.determination000]{Determination} suffix.</p><p>This affix can be applied to any armor or accessory and this periapt could be further enchanted with a Tier 1 prefix.</p>"
             },
             "effects": {
-                "Determination": {
+                "determination000": {
                     "name": "Determination",
                     "description": "<p>Increase <strong>Willpower</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
                     "adjective": "Determination"
@@ -920,7 +920,7 @@
                 "public": "<p>This small vial contains murky liquid that is noticeably thicker than water. It emits a disconcerting scent that evokes a sense of wrongness.</p>"
             },
             "actions": {
-                "Ingest Poison": {
+                "poisonIngest": {
                     "name": "Ingest Poison",
                     "description": "<p>When this toxin is ingested or otherwise enters the bloodstream of a creature, it is initially <strong>Harmless</strong>, but the target must defend an attack against its <strong>Fortitude</strong> or become @Condition[poisoned].</p><p>The amount of poison damage and its duration is dependent on the quality of the @ref[name]:</p><ul><li><p><strong>Shoddy</strong> - 2 damage for 4 rounds</p></li><li><p><strong>Standard</strong> - 4 damage for 6 rounds</p></li><li><p><strong>Fine</strong> - 6 damage for 8 rounds</p></li><li><p><strong>Superior</strong> - 8 damage for 10 rounds</p></li><li><p><strong>Masterwork</strong> - 10 damage for 12 rounds</p></li></ul><p><em>This action should be used when the poison is ingested rather than when it is first applied.</em></p>",
                     "effects": {
@@ -929,7 +929,7 @@
                         }
                     }
                 },
-                "Apply Poison": {
+                "poisonApply": {
                     "name": "Apply Poison",
                     "description": "<p>The contents of this vial can be added to food, drink, smeared upon a bladed weapon, or combined with some alternative delivery mechanism.</p><p><em>This action, which consumes the available usage of the poison, should be used when it is first applied.</em></p>"
                 }
@@ -953,7 +953,7 @@
                 "public": "<p>This potion contains a specialized alchemical formula to rapidly fortify the psyche and improve morale.</p>"
             },
             "actions": {
-                "Rallying Elixir": {
+                "rallyingElixir": {
                     "name": "Rallying Elixir",
                     "description": "<p>Immediately recover an amount of <strong>Morale </strong>dependant on the quality of the elixir.</p><ul><li><p><strong>Shoddy</strong> - Immediately heals 6 <strong>Morale</strong>.</p></li><li><p><strong>Standard</strong> - Immediately heals 12 <strong>Morale</strong>.</p></li><li><p><strong>Fine</strong> - Immediately heals 24 <strong>Morale</strong>.</p></li><li><p><strong>Superior</strong> - Immediately heals 48 <strong>Morale</strong>.</p></li><li><p><strong>Masterwork</strong> - Immediately heals 96 <strong>Morale</strong>.</p></li></ul>"
                 }
@@ -965,7 +965,7 @@
                 "public": "<p>This potion contains a specialized alchemical formula to gradually fortify the psyche and improve morale.</p>"
             },
             "actions": {
-                "Rallying Tonic": {
+                "rallyingTonic": {
                     "name": "Rallying Tonic",
                     "description": "<p>Immediately, and at the beginning of each of the next 5 <strong>Rounds</strong>, recover an amount of <strong>Morale</strong> dependent on the quality of the tonic.</p><ul><li><p><strong>Shoddy</strong> - Heals 2 <strong>Morale</strong> each Round</p></li><li><p><strong>Standard</strong> - Heals 4 <strong>Morale</strong> each Round</p></li><li><p><strong>Fine </strong>- Heals 8 <strong>Morale </strong>each Round</p></li><li><p><strong>Superior</strong> - Heals 16 <strong>Morale</strong> each Round</p></li><li><p><strong>Masterwork</strong> - Heals 32 <strong>Morale</strong> each Round</p></li></ul>",
                     "effects": {
@@ -1026,7 +1026,7 @@
                 "private": "<p>This item is presented as an example of a Fine Ring with the @UUID[Compendium.crucible.affixes.ActiveEffect.evasion000000000]{Evasion} suffix.</p><p>This affix can be applied to any armor or accessory and this ring could be further enchanted with a Tier 1 prefix.</p>"
             },
             "effects": {
-                "Evasion": {
+                "evasion000000000": {
                     "name": "Evasion",
                     "description": "<p>Increase <strong>Dodge</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
                     "adjective": "Evasion"
@@ -1040,12 +1040,12 @@
                 "private": "<p>This item is presented as an example of a Fine Ring with the @UUID[Compendium.crucible.affixes.ActiveEffect.gliding000000000]{Gliding} prefix.</p><p>This affix can be applied to any accessory and this ring could be further enchanted with a Tier 1 suffix.</p>"
             },
             "effects": {
-                "Gliding": {
+                "gliding000000000": {
                     "name": "Gliding",
                     "description": "<p>Grants the <strong>Gliding</strong> action, allowing the bearer to laterally glide during a fall. The gliding distance scales with the <strong>Tier</strong> of this prefix.</p>",
                     "adjective": "Gliding",
                     "actions": {
-                        "Gliding": {
+                        "gliding": {
                             "name": "Gliding",
                             "description": "<p>If used while <strong>Falling</strong>, you may laterally move a number of spaces from your initial location as you glide. The gliding distance depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> <strong>1 foot</strong> per 20 feet of descent.</p></li><li><p><strong>Tier 2:</strong> <strong>2 feet</strong> per 20 feet of descent.</p></li><li><p><strong>Tier 3:</strong> <strong>4 feet</strong> per 20 feet of descent.</p></li></ul><p>You take no falling damage upon landing, nor are you rendered @Condition[prone].</p>"
                         }
@@ -1060,7 +1060,7 @@
                 "private": "<p>This item is presented as an example of a Fine Ring with the @UUID[Compendium.crucible.affixes.ActiveEffect.reinforcement000]{Reinforcement} suffix.</p><p>This affix can be applied to any armor or accessory and this ring could be further enchanted with a Tier 1 prefix.</p>"
             },
             "effects": {
-                "Reinforcement": {
+                "reinforcement000": {
                     "name": "Reinforcement",
                     "description": "<p>Increase <strong>Armor</strong> defense by 1 for each <strong>Tier</strong> of this suffix.</p>",
                     "adjective": "Reinforcement"
@@ -1176,12 +1176,12 @@
                 "private": "<p>This item is presented as an example of a Fine Ring with the @UUID[Compendium.crucible.affixes.ActiveEffect.focusing00000000]{Reserved Focus} prefix.</p><p>This affix can be applied to any accessory and this ring could be further enchanted with a Tier 1 suffix.</p>"
             },
             "effects": {
-                "Focusing": {
+                "focusing00000000": {
                     "name": "Focusing",
                     "description": "<p>Grants the <strong>Replenish Focus</strong> action, allowing the bearer to restore <strong>Focus</strong> in moments of duress. The amount restored scales with the <strong>Tier</strong> of this prefix.</p>",
                     "adjective": "Focusing",
                     "actions": {
-                        "Replenish Focus": {
+                        "affixFocus": {
                             "name": "Replenish Focus",
                             "description": "<p>In moments of duress you can withdraw an additional reserve of <strong>Focus</strong> from this item. The amount of Focus restored depends on the <strong>Tier</strong> of this prefix.</p><ul><li><p><strong>Tier 1:</strong> <strong>4 Focus</strong></p></li><li><p><strong>Tier 2:</strong> <strong>6 Focus</strong></p></li><li><p><strong>Tier 3:</strong> <strong>8 Focus</strong></p></li></ul>"
                         }
@@ -1195,7 +1195,7 @@
                 "public": "<p>A spell scroll is a specialized piece of vellum or parchment upon which are carefully inlaid the glyphs of one or more spellcraft components. Activating this spell scroll temporarily imbues its reader with a deep familiarity with those components as if they have known them for years.</p><p>The number of spellcraft components a scroll can contain depends on the quality of its construction.</p><ul><li><p><strong>Fine</strong>: May contain a single spellcraft component</p></li><li><p><strong>Superior</strong>: May contain two spellcraft components</p></li><li><p><strong>Masterwork</strong>: May contain three spellcraft components</p></li></ul>"
             },
             "actions": {
-                "Read Scroll": {
+                "readScroll": {
                     "name": "Read Scroll",
                     "description": "<p>Read this spell scroll, temporarily gaining knowledge of its spellcraft components for 10 minutes.</p><p>You may only have one spell scroll effect active at a given time. Reading a different scroll replaces any current effect.</p>",
                     "effects": {
@@ -1212,7 +1212,7 @@
                 "public": "<p>A spell scroll is a specialized piece of vellum or parchment upon which are carefully inlaid the glyphs of one or more spellcraft components. Activating this spell scroll temporarily imbues its reader with a deep familiarity with those components as if they have known them for years.</p><p>The number of spellcraft components a scroll can contain depends on the quality of its construction.</p><ul><li><p><strong>Fine</strong>: May contain a single spellcraft component</p></li><li><p><strong>Superior</strong>: May contain two spellcraft components</p></li><li><p><strong>Masterwork</strong>: May contain three spellcraft components</p></li></ul>"
             },
             "actions": {
-                "Read Scroll": {
+                "readScroll": {
                     "name": "Read Scroll",
                     "description": "<p>Read this spell scroll, temporarily gaining knowledge of its spellcraft components for 10 minutes.</p><p>You may only have one spell scroll effect active at a given time. Reading a different scroll replaces any current effect.</p>",
                     "effects": {
@@ -1229,7 +1229,7 @@
                 "public": "<p>A spell scroll is a specialized piece of vellum or parchment upon which are carefully inlaid the glyphs of one or more spellcraft components. Activating this spell scroll temporarily imbues its reader with a deep familiarity with those components as if they have known them for years.</p><p>The number of spellcraft components a scroll can contain depends on the quality of its construction.</p><ul><li><p><strong>Fine</strong>: May contain a single spellcraft component</p></li><li><p><strong>Superior</strong>: May contain two spellcraft components</p></li><li><p><strong>Masterwork</strong>: May contain three spellcraft components</p></li></ul>"
             },
             "actions": {
-                "Read Scroll": {
+                "readScroll": {
                     "name": "Read Scroll",
                     "description": "<p>Read this spell scroll, temporarily gaining knowledge of its spellcraft components for 10 minutes.</p><p>You may only have one spell scroll effect active at a given time. Reading a different scroll replaces any current effect.</p>",
                     "effects": {
@@ -1270,11 +1270,11 @@
                 "public": "<p>A particularly cruel and sharp mechanical trap designed to immobilize and kill the unwary. A saw-toothed steel ring that snaps shut when a creature steps on a pressure plate in the center</p>"
             },
             "actions": {
-                "Arm Steel-Jaw Trap": {
+                "steelJawArm": {
                     "name": "Arm Steel-Jaw Trap",
                     "description": "<p>Setting the trap places a dangerous hazard that deals significant damage if triggered. It must be affixed by heavy chain to an immobile object, such as a tree or spike driven into the ground. The area of the trap is a circle with a radius of 2 feet.</p>"
                 },
-                "Trigger Steel-Jaw Trap": {
+                "steelJawTrigger": {
                     "name": "Trigger Steel-Jaw Trap",
                     "description": "<p>When triggered the creature that set the trap makes a <strong>Wilderness</strong> skill attack against the <strong>Reflex</strong> defense of a single target which triggered the trap. If not resisted, it deals piercing damage and applies the @Condition[restrained] condition. The base damage dealt by the trap varies according to the quality of the trap.</p><ul><li><p><strong>Shoddy</strong> - 1 damage</p></li><li><p><strong>Standard</strong> - 2 damage</p></li><li><p><strong>Fine</strong> - 4 damage</p></li><li><p><strong>Superior</strong> - 8 damage</p></li><li><p><strong>Masterwork</strong> - 16 damage</p></li></ul><p></p>",
                     "effects": {
@@ -1333,7 +1333,7 @@
                 "public": "<p>Layered oil-soaked affixed around the end of a rod made of bone or another non-flammable material, an inexpensive, if inefficient, temporary lightsource. Each torch can burned for one hour before it can no longer be used.</p>"
             },
             "actions": {
-                "Light Torch": {
+                "lightTorch": {
                     "name": "Light Torch",
                     "description": "<p>You ignite the @ref[name], producing flickering illumination in a wide radius for one hour. The torch is consumed by this action and cannot be used again, but its light remains until it burns out.</p>",
                     "effects": {

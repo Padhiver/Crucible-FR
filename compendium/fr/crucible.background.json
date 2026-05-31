@@ -1,39 +1,39 @@
 {
     "label": "Origines",
     "entries": {
-        "Acolyte": {
+        "acolyte000000000": {
             "name": "Acolyte",
             "description": "<p>Vous étiez une personne de foi. Vous avez appris à vivre de manière désintéressée au service des autres ou à la poursuite d'un idéal supérieur.</p>"
         },
-        "Constable": {
+        "constable0000000": {
             "name": "Connétable",
             "description": "<p>Vous faisiez partie d'une organisation de maintien de l'ordre. Vous avez appris à rester vigilant envers votre environnement, à travailler au sein de structures sociales complexes et à affecter une présence imposante.</p>"
         },
-        "Merchant": {
+        "merchant00000000": {
             "name": "Marchand",
             "description": "<p>Vous étiez un vendeur itinérant ou teniez une petite boutique. Vous avez passé une partie importante de votre temps à apprendre l'art de la négociation avec des gens de tous horizons, et où se situaient les limites de la meilleure offre.</p>"
         },
-        "Performer": {
+        "performer0000000": {
             "name": "Artiste",
             "description": "Vous étiez un animateur itinérant. Vous avez appris à être à l'aise lors de diverses manifestations sociales, à jouer pour votre public, embellissant les détails de votre performance pour évoquer des réponses émotionnelles particulières."
         },
-        "Physician": {
+        "physician0000000": {
             "name": "Médecin",
             "description": "<p>Vous étiez un guérisseur ou un professionnel de la santé de diverses sortes. Vous avez passé une partie de votre vie à apprendre la science médicale, et vous avez une propension à remarquer la maladie chez les autres. Vous savez comment traiter les blessures, les maladies et comment identifier leurs sources.</p>"
         },
-        "Scholar": {
+        "scholar000000000": {
             "name": "Érudit",
             "description": "<p>Vous avez toujours été le plus à l'aise dans une bibliothèque ou une salle de classe. Vos études se sont concentrées sur la résolution des mystères du monde qui vous entoure, et il y a peu de sujets théoriques avec lesquels vous n'êtes pas déjà familier.</p>"
         },
-        "Soldier": {
+        "soldier000000000": {
             "name": "Soldat",
             "description": "<p>Vous étiez un simple soldat d'une organisation militaire de quelque nature que ce soit. La discipline a fait de vous un survivant et a souligné l'importance de démontrer force et domination sur les autres, et des années passées à cheval ou à marcher vous ont appris à gérer toutes sortes de terrains.</p>"
         },
-        "Urchin": {
+        "urchin0000000000": {
             "name": "Gamin des rues",
             "description": "<p>Peu de gens apprennent à survivre comme vous l'avez fait. Votre éducation à la méfiance a été rude. Vous avez appris à surveiller les autres pour détecter les signes révélateurs de danger ou de déloyauté, à éviter l'attention des autres, fouillant les rues de quelque expansion urbaine pour trouver des restes de nourriture.</p>"
         },
-        "Wanderer": {
+        "wanderer00000000": {
             "name": "Vagabond",
             "description": "<p>Vous avez vécu une vie itinérante. Vous n'appréciez rien de plus que la sensation d'être sur une charrette ou une monture, regardant quelque ciel étranger passer lentement au-dessus de vous. Vous avez appris à prêter une attention particulière à votre environnement et à ses besoins, à soigner les créatures sur lesquelles vous comptez, et à vous débrouiller avec ce que vous pouvez trouver.</p>"
         }

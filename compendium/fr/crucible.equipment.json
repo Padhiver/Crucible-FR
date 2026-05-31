@@ -1,59 +1,46 @@
 {
-    "label": "Équipement",
+    "label": "Equipment",
     "folders": {
-        "Talisman": "Talisman",
         "Consumables": "Consommables",
         "Accessories": "Accessoires",
         "Melee (1h)": "Mêlée (1m)",
+        "Implements": "Ustensiles",
+        "Trinket": "Bibelot",
         "Bombs": "Bombes",
-        "Other": "Autre",
+        "Other": "Other",
+        "Unarmored": "Sans Armure",
         "Clothing": "Vêtements",
-        "Ranged": "À distance",
-        "Armor": "Armures",
+        "Ranged": "À Distance",
+        "Armor": "Armor",
+        "Scrolls": "Parchemins",
         "Flasks": "Fioles",
         "Heavy": "Lourde",
         "Jewelry": "Bijoux",
+        "Wilderness": "Nature",
+        "Ingredients": "Ingrédients",
         "Light": "Légère",
         "Weapons": "Armes",
-        "Medium": "Intermédiaire",
+        "Medium": "Medium",
+        "Traps": "Pièges",
+        "Light Sources": "Sources de lumière",
         "Tools": "Outils",
         "Toxins": "Toxines",
         "Unarmed": "Mains nues",
-        "Shields": "Boucliers",
-        "Crafting Kits": "Kits d'artisanat",
         "Melee (2h)": "Mêlée (2m)",
-        "Implements": "Ustensiles",
-        "Wilderness": "Nature",
-        "Ingredients": "Ingrédients",
-        "Light Sources": "Sources de lumière",
-        "Adventuring Gear": "Matériel d'aventurier",
-        "Scrolls": "Parchemins",
-        "Traps": "Pièges",
-        "Unarmored": "Sans armure",
         "Summons": "Invocations",
-        "Trinket": "Bibelot"
+        "Adventuring Gear": "Matériel d'aventurier",
+        "Shields": "Boucliers",
+        "Talisman": "Talisman",
+        "Crafting Kits": "Kits d'artisanat"
     },
     "entries": {
-        "Blast Flask": {
-            "name": "Fiole explosive",
-            "description": {
-                "public": "<p>Une fiole remplie d'un liquide rougeâtre explose lorsqu'elle se brise, créant un petit feu explosif qui se dissipe rapidement.</p>",
-                "private": "<p></p><p>Principalement utilisées pour briser de gros morceaux de minerai, ces fioles alchimiques renferment une puissance concentrée. Combinés en quantité suffisante, elles peuvent également être utilisés pour créer une réaction en chaîne qui engendre des explosions plus importantes.</p>"
-            },
-            "actions": {
-                "Blast Flask": {
-                    "name": "Fiole explosive",
-                    "description": "<p>Vous allumez et lancez la @ref[name], infligeant des dégâts de <strong>Feu</strong> à tous les ennemis dans le rayon de l'explosion. Le rayon de l'<strong>Explosion</strong> dépend de la qualité de la bombe :</p><ul><li><p><strong>Bâclée</strong> - 3 pieds</p></li><li><p><strong>Commune</strong> - 4 pieds</p></li><li><p><strong>Raffinée</strong> - 6 pieds</p></li><li><p><strong>Supérieure</strong> - 8 pieds</p></li><li><p><strong>Chef-d’œuvre</strong> - 10 pieds</p></li></ul>"
-                }
-            }
-        },
-        "Alchemist's Fire": {
+        "alchemistsFire00": {
             "name": "Feu de l'alchimiste",
             "description": {
                 "public": "<p>Un mélange inflammable qui s'enflamme à l'impact et brûle intensément pendant un court laps de temps.</p>"
             },
             "actions": {
-                "Alchemist's Fire": {
+                "alchemistsFire": {
                     "name": "Feu de l'alchimiste",
                     "description": "<p>Vous jetez le @ref[name], infligeant des dégâts <strong>Affaiblis</strong> immédiats mais causant la condition @Condition[burning] à tous les ennemis qui ne parviennent pas à éviter l'attaque dans un rayon d'<strong>Explosion</strong> de 4 pieds.</p><p>Le montant des dégâts enflammés et leur durée dépendent de la qualité du @ref[name]:</p><ul><li><p><strong>Bâclée</strong> - 2 dégâts pendant 2 rounds</p></li><li><p><strong>Commune</strong> - 3 dégâts pendant 3 rounds</p></li><li><p><strong>Raffinée</strong> - 4 dégâts pendant 4 rounds</p></li><li><p><strong>Supérieure</strong> - 6 dégâts pendant 5 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - 8 dégâts pendant 6 rounds</p></li></ul>",
                     "effects": {
@@ -64,75 +51,126 @@
                 }
             }
         },
-        "Amulet of Nimbleness": {
+        "alchemistsPortab": {
+            "name": "Établi d'alchimiste portatif",
+            "description": {
+                "public": "<p>Un alambic portatif en cuivre, prisé des alchimistes sans atelier personnel grâce à sa conception pliable. La plupart de ses accessoires se dévissent et se rangent à l'intérieur pour faciliter le transport. Bien que son montage et son démontage soient un peu longs, il peut remplacer un laboratoire permanent pour les voyageurs.</p>"
+            }
+        },
+        "alchemistsToolki": {
+            "name": "Kit d'alchimiste",
+            "description": {
+                "public": "<p>Une boîte en bois recouverte de cuir contenant un mortier et un pilon en pierre, des emplacements pour ranger plusieurs fioles à bouchon, une cuillère en bois, ainsi qu'un petit cadre en fer pliable et une petite casserole en laiton pour mélanger les ingrédients au-dessus d'un feu.</p>"
+            }
+        },
+        "amulet0000000000": {
+            "name": "Amulette",
+            "description": {
+                "public": "<p>Une simple amulette suspendue à un simple cordon, attendant le toucher d'un enchanteur habile.</p>",
+                "private": "<p>Il s'agit d'un modèle d'accessoire de base destiné à être amélioré en qualité et enchanté avec des affixes.</p>"
+            }
+        },
+        "amuletOfNimblene": {
             "name": "Amulette d'agilité",
             "description": {
                 "public": "<blockquote><p>Ce collier aux couleurs vives renferme une amulette en pierre qui brille d'une rune crépitant légèrement sous l'effet d'une résonance électrique. En le tenant, vous avez la sensation surréaliste que le monde autour de vous ralentit imperceptiblement.</p></blockquote><p>Cette amulette enchantée offre un bonus à la défense de <strong>Réflexe</strong> </p>",
                 "private": "<p>Cet objet est présenté à titre d'exemple comme une Amulette raffinée avec le suffixe @UUID[Compendium.crucible.affixes.ActiveEffect.nimbleness000000]{Agilité}.</p><p>Cet affixe peut être appliqué à n'importe quelle armure ou accessoire et cette amulette pourrait être encore enchantée avec un préfixe de Palier 1.</p>"
             },
             "effects": {
-                "Nimbleness": {
+                "nimbleness000000": {
                     "name": "Agilité",
                     "description": "<p>Augmente la défense de <strong>Réflexe</strong> de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
                     "adjective": "Agilité"
                 }
             }
         },
-        "Antitoxin": {
+        "antitoxin0000000": {
             "name": "Antidote",
             "description": {
                 "public": "<p>Une fiole élancée contenant un liquide légèrement doré. Son odeur est nauséabonde, mais elle renferme les agents alchimiques nécessaires à la neutralisation d'une grande variété de toxines.</p>"
             },
             "actions": {
-                "Antitoxin": {
+                "antitoxin": {
                     "name": "Antidote",
                     "description": "<p>Consommer cet @ref[name] permet de neutraliser toutes les conditions @Condition[poisoned] affectant la cible. Les poisons plus puissants nécessitent un antidote plus puissant pour être neutralisés.</p><p>La catégorie de poison annulée par cet @ref[name] dépend de sa qualité :</p><ul><li><p><strong>Bâclée</strong> - Poisons infligeant 3 dégâts ou moins par round</p></li><li><p><strong>Commune</strong> - Poisons infligeant 5 dégâts ou moins par round</p></li><li><p><strong>Raffinée</strong> - Poisons infligeant 7 dégâts ou moins par round</p></li><li><p><strong>Supérieure</strong> - Poisons infligeant 9 dégâts ou moins par round</p></li><li><p><strong>Chef-d’œuvre</strong> - Poisons infligeant 11 dégâts ou moins par round</p></li></ul>"
                 }
             }
         },
-        "Arcane Orb": {
+        "arcaneOrb0000000": {
             "name": "Orbe arcanique",
             "description": {
                 "public": "<p>Une sphère de cristal ou de verre qui - dans la paume d'un lanceur de sorts capable - devient un conduit pour son pouvoir. Elle accumule l'énergie voltaïque à l'intérieur de son globe avant de projeter une force électrifiante sur une cible.</p>"
             }
         },
-        "Bag of Holding": {
+        "bagOfHolding0000": {
             "name": "Sac sans fond",
             "description": {
                 "public": "<p>Ce sac à main au travail exceptionnel présente des ornements élaborés qui indiquent clairement qu'il ne s'agit pas d'un simple sac. Lorsqu'il est <strong>Equipé</strong> et <strong>Investi</strong>, votre capacité de charge est triplée.</p>"
             }
         },
-        "Bastard Sword": {
+        "bastardSword0000": {
             "name": "Épée bâtarde",
             "description": {
                 "public": "<p>Une épée bâtarde, aussi connue sous le nom d'épée à une main et demi, est une arme flexible dotée d'une lame droite à double tranchant d'environ 40 pouces de long. Cette arme est conçue pour allier agilité à une main et puissance à deux mains.</p>"
             }
         },
-        "Battle Axe": {
+        "battleAxe0000000": {
             "name": "Hache de bataille",
             "description": {
                 "public": "<p>Une arme lourde à lame en croissant, conçue pour fendre armures et os. Son manche porte les marques d'innombrables coups. Cette arme peut être maniée à une ou deux mains. </p>"
             }
         },
-        "Brigandine": {
+        "belt000000000000": {
+            "name": "Ceinture",
+            "description": {
+                "public": "<p>Une simple ceinture en cuir avec une boucle métallique simple.</p>",
+                "private": "<p>Il s'agit d'un modèle d'accessoire de base destiné à être amélioré en qualité et enchanté avec des affixes.</p>"
+            }
+        },
+        "blanket000000000": {
+            "name": "Couverture",
+            "description": {
+                "public": "<p>Un tissu épais en feutre de laine ou de fibres aux multiples usages.</p>"
+            }
+        },
+        "book000000000000": {
+            "name": "Livre",
+            "description": {
+                "public": "<p>Un livre à couverture de bois relié en tissu ou en cuir.</p>"
+            }
+        },
+        "bracer0000000000": {
+            "name": "Bracelet",
+            "description": {
+                "public": "<p>Un bracelet en cuir robuste qui protège l'avant-bras.</p>",
+                "private": "<p>Il s'agit d'un modèle d'accessoire de base destiné à être amélioré en qualité et enchanté avec des affixes.</p>"
+            }
+        },
+        "brigandine000000": {
             "name": "Brigandine",
             "description": {
                 "public": "<p>La brigandine, un manteau ou un gilet en tissu ou en cuir doublé de petites plaques d'acier rivetées dissimulées à l'intérieur, est prisée des mercenaires et des gardes pour son impressionnant mélange de flexibilité et de défense solide.</p>"
             }
         },
-        "Buckler": {
+        "buckler000000000": {
             "name": "Targe",
             "description": {
                 "public": "<p>Petit bouclier métallique rond de la taille d'une assiette, la targe est l'outil du duelliste pour dévier les lames et contrôler l'espace, il se porte sur l'avant-bras ou se tient comme une arme.</p>"
             }
         },
-        "Caustic Phial": {
+        "candle0000000000": {
+            "name": "Bougie",
+            "description": {
+                "public": "<p>Une petite bougie en cire pressée autour d'une mèche centrale qui émet une douce lumière chaude lorsqu'elle est allumée. Chaque bougie peut brûler pendant environ huit heures.</p>"
+            }
+        },
+        "causticPhial0000": {
             "name": "Fiole d'acide",
             "description": {
                 "public": "<p>Un liquide corrosif tourbillonne dans ce flacon en verre volontairement fin, conçu pour se briser à l'impact et répandre la substance caustique sur une cible.</p>"
             },
             "actions": {
-                "Caustic Phial": {
+                "causticPhial": {
                     "name": "Fiole d'acide",
                     "description": "<p>Vous jetez la @ref[name], infligeant des dégâts <strong>Affaiblis</strong> immédiats mais causant la condition @Condition[corroding] à tous les ennemis qui ne parviennent pas à éviter l'attaque, dans un rayon d'<strong>Explosion</strong> de 4 pieds.</p><p>Le montant de dégâts corrodés et leur durée dépend de la qualité de la @ref[name]:</p><ul><li><p><strong>Bâclée</strong> - 2 damage for 2 rounds</p></li><li><p><strong>Commune</strong> - 3 dégâts pendant 3 rounds</p></li><li><p><strong>Raffinée</strong> - 4 dégâts pendant 4 rounds</p></li><li><p><strong>Supérieure</strong> - 6 dégâts pendant 5 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - 8 dégâts pendant 6 rounds</p></li></ul>",
                     "effects": {
@@ -143,952 +181,57 @@
                 }
             }
         },
-        "Ceremonial Dagger": {
+        "ceremonialDagger": {
             "name": "Dague de cérémonie",
             "description": {
                 "public": "<p>Cette lame est moins fonctionnelle et plus ornementée qu'une dague ordinaire. Ses inscriptions et sa facture sont pensées pour servir d'outil de sorcellerie. Au combat, elle projette des décharges perçantes d'énergie arcanique.</p>"
             }
         },
-        "Chain Hook": {
+        "chain00000000000": {
+            "name": "Chaîne",
+            "description": {
+                "public": "<p>Une chaîne en acier de 30 pieds de long, pouvant servir à faciliter l'escalade ou être utilisée avec des dispositifs de fixation pour immobiliser des objets.</p>"
+            }
+        },
+        "chainHook0000000": {
             "name": "Chaîne à crochet",
             "description": {
                 "public": "<p>Une chaîne robuste et flexible, munie d'un crochet barbelé à son extrémité. Entre les mains d'un combattant expérimenté, la chaîne peut être lancée sur une cible, déchirant sa chair ou son équipement.</p>"
             }
         },
-        "Chain Mail": {
+        "chainMail0000000": {
             "name": "Cotte de mailles",
             "description": {
                 "public": "<p>Composée d'un treillis d'anneaux d'acier entrelacés portés sur un rembourrage, la cotte de mailles offre une excellente protection contre les coupures et une défense correcte contre les coups d'estoc, bien qu'elle répartisse le poids sur tout le corps.</p>"
             }
         },
-        "Charm of Tenacity": {
+        "charmOfTenacity0": {
             "name": "Charme de ténacité",
             "description": {
                 "public": "<blockquote><p>Ce collier orné de breloques a un aspect rustique, mais en y regardant de plus près, vous découvrez un travail artisanal délicat. En le tenant, vous sentez votre respiration s'approfondir et les légères douleurs musculaires s'estomper.</p></blockquote><p>Ce charme enchanté offre un bonus à la défense de <strong>Fortitude</strong></p>",
                 "private": "<p>Cet objet est présenté à titre d'exemple comme un Charme raffiné avec le suffixe @UUID[Compendium.crucible.affixes.ActiveEffect.tenacity00000000]{Ténacité}.</p><p>cet affixe peut être appliqué sur n'importe quelle armure ou accessoire et ce charme pourrait être encore enchanté avec un préfixe de Palier 1.</p>"
             },
             "effects": {
-                "Tenacity": {
+                "tenacity00000000": {
                     "name": "Ténacité",
                     "description": "<p>Augmente la défense de <strong>Fortitude</strong> de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
                     "adjective": "Ténacité"
                 }
             }
         },
-        "Claw Hammer": {
-            "description": {
-                "public": "<p>Outil d'apparence modeste, avec sa surface de frappe plate et sa griffe incurvée, le marteau léger peut devenir une arme redoutable entre des mains déterminées.</p>"
-            },
-            "name": "Marteau léger"
-        },
-        "Claws": {
-            "name": "Griffes",
-            "description": {
-                "public": "<p>Portées sur les mains comme un second set de doigts, les griffes — qu'il s'agisse d'extensions en acier ou de monstruosités forgées en os — déchirent et lacèrent dans des coups sauvages et rapides.</p>"
-            }
-        },
-        "Club": {
-            "name": "Gourdin",
-            "description": {
-                "public": "<p>Arme rudimentaire mais efficace, le gourdin est un morceau de bois ou d'os à bout rond, conçu pour écraser plutôt que pour couper. Il peut s'avérer dangereux même entre les mains de combattants inexpérimentés.</p>"
-            }
-        },
-        "Crowbar": {
-            "name": "Pied de biche",
-            "description": {
-                "public": "<p>Barre métallique robuste légèrement courbée, munie d'un crochet à tête aplatie à une extrémité. Sert à faire levier pour détacher un objet d'un autre.</p>"
-            }
-        },
-        "Dagger": {
-            "name": "Dague",
-            "description": {
-                "public": "<p>Petite, rapide et mortelle, la dague se glisse aisément entre les côtes ou dans les interstices d'une armure, son tranchant redoutable est prisé les assassins, les voleurs et ceux qui privilégient une mort silencieuse.</p>"
-            }
-        },
-        "Dart Gun": {
-            "name": "Pistolet à fléchettes",
-            "description": {
-                "public": "<p>Arme compacte et tubulaire conçue pour lancer silencieusement de petits projectiles, souvent empoisonnés, le pistolet à fléchettes est prisé des assassins, des dompteurs de bêtes et des alchimistes de l'ombre.</p>"
-            }
-        },
-        "Expanded Toolbelt": {
-            "description": {
-                "public": "<p>Une ceinture porte-outils optimisée, sous forme de ceinture utilitaire, de bandoulière ou d'un ensemble de poches cousues dans votre équipement.</p><p>Cet objet procure une nombre d'emplacements supplémentaires dépendant de son niveau de qualité :</p><ul><li><p><strong>Commune</strong> : +1 Emplacement de ceinture porte-outils</p></li><li><p><strong>Raffinée</strong> : +2 Emplacements de ceinture porte-outils</p></li><li><p><strong>Supérieure</strong> : +3 Emplacements de ceinture porte-outils</p></li><li><p><strong>Chef-d’œuvre</strong> : +4 Emplacements de ceinture porte-outils</p></li></ul>"
-            },
-            "name": "Ceinture porte-outils optimisée"
-        },
-        "Flame Staff": {
-            "name": "Bâton de flamme",
-            "description": {
-                "public": "<p>Ce bâton de mage est un talisman destiné à faciliter la sorcellerie ou à projeter des jets de flammes arcaniques sur les ennemis.</p>"
-            }
-        },
-        "Glaive": {
-            "name": "Coutille",
-            "description": {
-                "public": "<p>Arme d'hast dotée d'une lame courbe semblable à une épée fixée à l'extrémité d'un long manche, la coutille tranche les ennemis par de larges coups en arc de cercle.</p>"
-            }
-        },
-        "Great Hammer": {
-            "name": "Marteau à deux mains",
-            "description": {
-                "public": "<p>Cette arme monstrueuse à deux mains est dotée d'une tête massive en fer ou en pierre, capable de broyer armures, os et volontés d'un seul coup tonitruant.</p>"
-            }
-        },
-        "Greataxe": {
-            "name": "Hache à deux mains",
-            "description": {
-                "public": "<p>Arme imposante dotée d'une large tête, souvent à double tranchant, la hache à deux mains est conçue pour porter des coups dévastateurs, fauchant hommes et bêtes avec une force terrible.</p>"
-            }
-        },
-        "Greatclub": {
-            "name": "Massue",
-            "description": {
-                "public": "<p>Une longueur noueuse de bois épais, parfois cloutée de fer, la massue est une arme rudimentaire mais redoutable, dangereuse même entre des mains inexpérimentées.</p>"
-            }
-        },
-        "Greatsword": {
-            "name": "Épée à deux mains",
-            "description": {
-                "public": "<p>Plus longue et plus lourde qu'une épée longue standard, l'épée à deux mains est une lame conçue pour de puissantes frappes circulaires, sa longueur imposant à la fois allonge et crainte.</p>"
-            }
-        },
-        "Grimoire": {
-            "name": "Grimoire",
-            "description": {
-                "public": "<p>Cet ouvrage lourd sert à la fois de recueil de connaissances et d'instrument de sorcellerie. Entre les mains d'un praticien des arcanes, il peut projeter des rafales percutantes de force vers une cible.</p>"
-            }
-        },
-        "Halberd": {
-            "name": "Hallebarde",
-            "description": {
-                "public": "<p>Combinant une lame de hache, une pointe de lance et un crochet sur un seul manche, la hallebarde est une arme polyvalente capable de percer, de fendre ou de coincer les armes pour des contre-attaques.</p>"
-            }
-        },
-        "Hand Axe": {
-            "name": "Hachette",
-            "description": {
-                "public": "<p>Compacte et redoutable, la hachette est une arme de jet à une main, dotée d'un manche court et d'une lame tranchante, idéale pour le lancer ou les frappes rapprochées où la vitesse prime sur la précision.</p>"
-            }
-        },
-        "Hand Crossbow": {
-            "name": "Arbalète de poing",
-            "description": {
-                "public": "<p>Cette arbalète de poche privilégie la discrétion à la puissance, idéale pour les tirs surprises à courte portée ou le dernier carreau désespéré d'un voleur acculé.</p>"
-            }
-        },
-        "Healing Elixir": {
-            "name": "Élixir de santé",
-            "description": {
-                "public": "<p>Cette potion contient une formule alchimique spéciale pour refermer rapidement les blessures et améliorer la santé corporelle.</p>"
-            },
-            "actions": {
-                "Healing Elixir": {
-                    "name": "Élixir de santé",
-                    "description": "<p>Recouvrez immédiatement un montant de <strong>Santé</strong> dépendant de la qualité de l'élixir.</p><ul><li><p><strong>Bâclée</strong> - Soigne immédiatement 6 points de <strong>Santé</strong>.</p></li><li><p><strong>Commune</strong> - Soigne immédiatement 12 points de <strong>Santé</strong>.</p></li><li><p><strong>Raffinée</strong> - Soigne immédiatement 24 points de <strong>Santé</strong>.</p></li><li><p><strong>Supérieure</strong> - Soigne immédiatement 48 points de <strong>Santé</strong>.</p></li><li><p><strong>Chef-d’œuvre</strong> - Soigne immédiatement 96 points de <strong>Santé</strong>.</p></li></ul>"
-                }
-            }
-        },
-        "Healing Tonic": {
-            "name": "Stimulant de santé",
-            "description": {
-                "public": "<p>Cette potion contient une formule alchimique spéciale pour refermer progressivement les blessures et améliorer la santé corporelle.</p>"
-            },
-            "actions": {
-                "Healing Tonic": {
-                    "name": "Stimulant de santé",
-                    "description": "<p>Recouvrez immédiatement, et au début de chacun des 5 prochains <strong>Rounds</strong>, un montant de <strong>Santé</strong> dépendant de la qualité du stimulant.</p><ul><li><p><strong>Bâclée</strong> - Soigne 2 points de <strong>Santé</strong> à chaque Round</p></li><li><p><strong>Commune</strong> - Soigne 4 points de <strong>Santé</strong> à chaque Round</p></li><li><p><strong>Raffinée</strong> - Soigne 8 points de <strong>Santé</strong> à chaque Round</p></li><li><p><strong>Supérieure</strong> - Soigne 16 points de <strong>Santé</strong> à chaque Round</p></li><li><p><strong>Chef-d’œuvre</strong> - Soigne 32 points de <strong>Santé</strong> à chaque Round</p></li></ul>",
-                    "effects": {
-                        "Healing Tonic": {
-                            "name": "Stimulant de santé"
-                        }
-                    }
-                }
-            }
-        },
-        "Heater Shield": {
-            "name": "Écu",
-            "description": {
-                "public": "<p>Également appelé bouclier chauffant en raison de sa forme en fer rappelant la base d'un fer à repasser, l'écu offre un équilibre entre protection et mobilité.</p>"
-            }
-        },
-        "Heavy Crossbow": {
-            "name": "Arbalète lourde",
-            "description": {
-                "public": "<p>Arbalète puissante à branches d'acier, nécessitant une manivelle ou un levier pour être armée, elle projette des carreaux dévastateurs capables de perforer les armures ou de clouer les ennemis aux murs.</p>"
-            }
-        },
-        "Heavy Hides": {
-            "name": "Armure de peaux",
-            "description": {
-                "public": "<p>Fabriquées à partir de peaux durcies de grandes bêtes ou de monstres, ces armures robustes sont portées par les chasseurs et les peuples sauvages, offrant une défense durable — mais rudimentaire — sur le terrain.</p>"
-            }
-        },
-        "Holy Symbol": {
-            "name": "Symbole sacré",
-            "description": {
-                "public": "<p>Ce talisman est une proclamation visible de la foi de son porteur et du pouvoir qu'il lui confère. Au combat, il peut être utilisé pour projeter un rayon de lumière intense et radiante sur un ennemi.</p>",
-                "private": "<p>Le type de dégâts infligés par ce talisman peut être adapté au domaine de la divinité vénérée par son porteur.</p>"
-            }
-        },
-        "Ice Staff": {
-            "name": "Bâton de glace",
-            "description": {
-                "public": "<p>Ce bâton de mage est un talisman permettant de faciliter la sorcellerie ou de projeter des rafales de glace hivernale sur les ennemis.</p>"
-            }
-        },
-        "Javelin": {
-            "name": "Javeline",
-            "description": {
-                "public": "<p>Dotée d'une pointe métallique acérée fixée au sommet d'une longue tige, la javeline est suffisamment légère pour être lancée mais suffisamment robuste pour rester utile en combat rapproché.</p>"
-            }
-        },
-        "Katana": {
-            "name": "Katana",
-            "description": {
-                "public": "<p>Forgé avec une précision méticuleuse, le katana est une lame courbe à un seul tranchant en acier plié, dont la grâce mortelle reflète la discipline de celui qui le manie.</p>"
-            }
-        },
-        "Katar": {
-            "name": "Katar",
-            "description": {
-                "public": "<p>Dague de poing à lame droite et poignée horizontale, le katar frappe avec une force brutale, conçu pour percer armures et entrailles d'un seul coup direct.</p>"
-            }
-        },
-        "Kite Shield": {
-            "name": "Bouclier en amande",
-            "description": {
-                "public": "<p>Haut et fuselé pour une protection intégrale, le bouclier en amande épouse la forme du corps de celui qui le porte et est plébiscité par la cavalerie et l'infanterie pour son excellente couverture et sa silhouette emblématique.</p>"
-            }
-        },
-        "Lantern": {
-            "name": "Lanterne",
-            "description": {
-                "public": "<p>Une lanterne à huile ou illuminée magiquement qui projette une lumière vive dans un rayon de 20 pieds et une lumière tamisée dans un rayon de 40 pieds.</p>"
-            },
-            "actions": {
-                "Light Lantern": {
-                    "name": "Allumer une lanterne",
-                    "description": "<p>Vous allumez la @ref[name], produisant un éclairage constant dans un large rayon. Cette action consume une unité de @UUID[Compendium.crucible.equipment.Item.lanternOil000000]{Huile pour lanterne} de votre inventaire ; la durée de combustion dépend de la qualité de l'huile consommée :</p><ul><li><p><strong>Bâclée</strong> - 1 heure</p></li><li><p><strong>Commune</strong> - 4 heures</p></li><li><p><strong>Raffinée</strong> - 12 heures</p></li><li><p><strong>Supérieure</strong> - 24 heures</p></li><li><p><strong>Chef-d’œuvre</strong> - 48 heures</p></li></ul>",
-                    "effects": {
-                        "Lantern": {
-                            "name": "Lanterne"
-                        }
-                    }
-                }
-            }
-        },
-        "Leather Armor": {
-            "name": "Armure de cuir",
-            "description": {
-                "public": "<p>Fabriquée à partir de cuir épais bouilli et durci en panneaux ou en cuirasse, l'armure de cuir offre une protection légère idéale pour les éclaireurs, les brigands et les querelleurs légèrement armés.</p>"
-            }
-        },
-        "Longbow": {
-            "name": "Arc long",
-            "description": {
-                "public": "<p>Un arc long, souvent plus grand que l'archer qui le bande, nécessite une force considérable et des années d'entraînement pour être maîtrisé, et permet de propulser des flèches d'une force mortelle à travers le champ de bataille.</p>"
-            }
-        },
-        "Longsword": {
-            "name": "Épée longue",
-            "description": {
-                "public": "<p>L'épée longue est une lame à double tranchant maniée à deux mains pour plus d'équilibre et de force, généralement munie d'une grande garde croisée servant à parer les coups.</p>"
-            }
-        },
-        "Mace": {
-            "name": "Masse d’armes",
-            "description": {
-                "public": "<p>Une arme contondante à une main dotée d'une tête lourde, généralement en métal, qui convertit l'élan du coup de son utilisateur en un impact fracassant les os.</p>"
-            }
-        },
-        "Messenger Coin": {
-            "name": "Pièce de communication",
-            "description": {
-                "public": "<p>Une petite pièce de laiton ornée d'un large visage souriant et de petits yeux rouges grenat. Elle est frappée d'une séquence spécifique de symboles qui la relient à une pièce jumelle, permettant ainsi à leurs détenteurs de communiquer sur de grandes distances.</p><p>Si vous tenez la pièce et que vous lui parlez, elle se connecte immédiatement à sa jumelle et se met à parler fort, restituant ce que vous dites et ce qui est répondu. La connexion dure jusqu'à 1 minute avant d'être interrompue. Chaque pièce peut être utilisée une fois par repos long.</p><p>La pièce peut être utilisée 5 fois après quoi sa magie s'estompe, la rendant presque sans valeur.</p>"
-            }
-        },
-        "Padded Armor": {
-            "name": "Armure matelassée",
-            "description": {
-                "public": "<p>Composée de couches de tissu matelassées remplies de chiffons ou de laine, l'armure matelassée protège le corps des chocs et sert de base sous les équipements plus lourds.</p>"
-            }
-        },
-        "Periapt of Determination": {
-            "description": {
-                "public": "<blockquote><p>Une élégante amulette en argent sertie de pierres précieuses bleues vous insuffle un sentiment de constance tandis que vous la serrez contre vous, prêt à affronter tous les défis.</p></blockquote><p>Ce périapte procure un bonus à la défense de <strong>Volonté</strong>.</p>",
-                "private": "<p>Cet objet est présenté à titre d'exemple comme un Périapte raffiné avec le suffixe @UUID[Compendium.crucible.affixes.ActiveEffect.determination000]{Détermination}.</p><p>Cet affixe peut être appliqué à n'importe quelle armure ou accessoire et ce périapte pourrait être encore enchanté avec un préfixe de Palier 1.</p>"
-            },
-            "name": "Périapte de détermination",
-            "effects": {
-                "Determination": {
-                    "name": "Détermination",
-                    "description": "<p>Augmente la défense de <strong>Volonté</strong> de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
-                    "adjective": "Détermination"
-                }
-            }
-        },
-        "Pickaxe": {
-            "description": {
-                "public": "<p>La pioche, munie d'une pointe en forme de croissant fixée au sommet d'un manche robuste, est traditionnellement un outil minier, mais peut être utilisée au combat pour porter des coups perforants dangereux.</p>"
-            },
-            "name": "Pioche"
-        },
-        "Pistol": {
-            "name": "Pistolet",
-            "description": {
-                "public": "<p>Arme à feu à poudre noire primitive, à tir unique et tonitruant, le pistolet à silex est l'arme du joueur — mortel en un éclair, mais lent à recharger dans le chaos du combat.</p>"
-            }
-        },
-        "Plate Mail": {
-            "name": "Armure de plaques",
-            "description": {
-                "public": "<p>Le summum de la protection individuelle, l'armure de plaques enveloppe le corps de plaques d'acier soigneusement ajustées, offrant une protection quasi complète tout en permettant une mobilité impressionnante à un porteur entraîné.</p>"
-            }
-        },
-        "Poison Vial": {
-            "name": "Fiole de poison",
-            "description": {
-                "public": "<p>Ce petit flacon contient un liquide trouble, nettement plus épais que l'eau. Il dégage une odeur inquiétante qui crée un sentiment de malaise.</p>"
-            },
-            "actions": {
-                "Ingest Poison": {
-                    "name": "Poison d'ingestion",
-                    "description": "<p>Lorsque cette toxine est ingérée ou entre autrement dans le sang d'une créature, elle est initialement <strong>Inoffensive</strong>, mais la cible doit se défendre d'une attaque contre sa <strong>Fortitude</strong> ou être @Condition[poisoned].</p><p>Le montant des dégâts de poison et leur durée dépendent de la qualité du @ref[name]:</p><ul><li><p><strong>Bâclée</strong> - 2 dégâts pendant 4 rounds</p></li><li><p><strong>Commune</strong> - 4 dégâts pendant 6 rounds</p></li><li><p><strong>Raffinée</strong> - 6 dégâts pendant 8 rounds</p></li><li><p><strong>Supérieure</strong> - 8 dégâts pendant 10 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - 10 dégâts pendant 12 rounds</p></li></ul><p><em>Cette action doit être utilisée lorsque le poison est ingéré plutôt que lors de sa première application.</em></p>",
-                    "effects": {
-                        "Poisoned": {
-                            "name": "Empoisonné"
-                        }
-                    }
-                },
-                "Apply Poison": {
-                    "description": "<p>Le contenu de ce flacon peut être ajouté à des aliments ou des boissons, appliqué sur une arme blanche ou combiné à un autre mode d'administration.</p><p><em>Cette action, qui consomme la quantité de poison disponible, doit être utilisée lors de sa première application.</em></p>",
-                    "name": "Poison de contact"
-                }
-            }
-        },
-        "Primordial Seed": {
-            "name": "Graine primordiale",
-            "description": {
-                "public": "<p>Ce talisman, prisé des druides sensibles au pouvoir de la terre, facilite la pratique de la sorcellerie ou peut être utilisé au combat pour diriger un jet de spores empoisonnées vers un ennemi.</p>"
-            }
-        },
-        "Quarterstaff": {
-            "name": "Bâton de combat",
-            "description": {
-                "public": "<p>Le bâton de combat, une simple canne en bois d'environ 6 à 8 pieds de long, est une arme d'un équilibre trompeur qui peut se révéler mortelle entre des mains expertes.</p>"
-            }
-        },
-        "Rallying Elixir": {
-            "name": "Élixir de ralliement",
-            "description": {
-                "public": "<p>Cette potion contient une formule alchimique spéciale pour fortifier rapidement la psyché et améliorer le moral.</p>"
-            },
-            "actions": {
-                "Rallying Elixir": {
-                    "name": "Élixir de ralliement",
-                    "description": "<p>Recouvrez immédiatement un montant de <strong>Moral</strong> dépendant de la qualité de l'élixir.</p><ul><li><p><strong>Bâclée</strong> - Soigne immédiatement 6 points de <strong>Moral</strong>.</p></li><li><p><strong>Commune</strong> - Soigne immédiatement 12 points de <strong>Moral</strong>.</p></li><li><p><strong>Raffinée</strong> - Soigne immédiatement 24 points de <strong>Moral</strong>.</p></li><li><p><strong>Supérieure</strong> - Soigne immédiatement 48 points de <strong>Moral</strong>.</p></li><li><p><strong>Chef-d’œuvre</strong> - Soigne immédiatement 96 points de <strong>Moral</strong>.</p></li></ul>"
-                }
-            }
-        },
-        "Rallying Tonic": {
-            "name": "Stimulant de ralliement",
-            "description": {
-                "public": "<p>Cette potion contient une formule alchimique spéciale destinée à fortifier progressivement la psyché et à améliorer le moral.</p>"
-            },
-            "actions": {
-                "Rallying Tonic": {
-                    "name": "Stimulant de ralliement",
-                    "description": "<p>Recouvrez immédiatement, et au début de chacun des 5 prochains <strong>Rounds</strong>, un montant de <strong>Moral</strong> dépendant de la qualité du stimulant.</p><ul><li><p><strong>Bâclée</strong> - Soigne 2 points de <strong>Moral</strong> à chaque Round</p></li><li><p><strong>Commune</strong> - Soigne 4 points de <strong>Moral</strong> à chaque Round</p></li><li><p><strong>Raffinée</strong>- Soigne 8 points de <strong>Moral</strong> à chaque Round</p></li><li><p><strong>Supérieure</strong> - Soigne 16 points de <strong>Moral</strong> à chaque Round</p></li><li><p><strong>Chef-d’œuvre</strong> - Soigne 32 points de <strong>Moral</strong> à chaque Round</p></li></ul>",
-                    "effects": {
-                        "Rallying Tonic": {
-                            "name": "Stimulant de ralliement"
-                        }
-                    }
-                }
-            }
-        },
-        "Rapier": {
-            "name": "Rapière",
-            "description": {
-                "public": "<p>Longue, fine et d'un équilibre exquis, la rapière est l'arme de prédilection des escrimeurs, sa pointe acérée étant parfaite pour des estocs fulgurants et des duels mortels.</p>"
-            }
-        },
-        "Ring Mail": {
-            "name": "Broigne",
-            "description": {
-                "public": "<p>La broigne est composée d'anneaux métalliques cousus sur une base matelassée, offrant un compromis entre une protection moindre que armures plus lourdes et une plus grande mobilité.</p>"
-            }
-        },
-        "Ring of Evasion": {
-            "description": {
-                "public": "<blockquote><p>Cette élégante bague ornée est légèrement glissante et difficile à prendre en main. Lorsqu'on la tient, elle vibre de façon presque imperceptible.</p></blockquote><p>Cet anneau enchanté procure un bonus à la défense d'<strong>Esquive</strong>.</p>",
-                "private": "<p>Cet objet est présenté à titre d'exemple comme un Anneau raffiné avec le suffixe @UUID[Compendium.crucible.affixes.ActiveEffect.evasion000000000]{Dérobade}.</p><p>Cet affixe peut être appliqué à n'importe quelle armure ou accessoire et cet anneau pourrait être encore enchanté avec un préfixe de Palier 1.</p>"
-            },
-            "name": "Anneau d'évasion",
-            "effects": {
-                "Evasion": {
-                    "name": "Dérobade",
-                    "description": "<p>Augmente la défense d'<strong>Esquive</strong> de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
-                    "adjective": "Dérobade"
-                }
-            }
-        },
-        "Ring of Reinforcement": {
-            "description": {
-                "public": "<blockquote><p>Cet anneau en acier reste toujours frais au toucher et donne l'impression d'être plus lourd qu'on ne le penserait compte tenu de sa finesse.</p></blockquote><p>Cet anneau enchanté procure un bonus à la défense d'<strong>Armure</strong>.</p>",
-                "private": "<p>Cet objet est présenté à titre d'exemple comme un Anneau raffiné avec le suffixe @UUID[Compendium.crucible.affixes.ActiveEffect.reinforcement000]{Renforcement}.</p><p>Cet affixe peut être appliqué à n'importe quelle armure ou accessoire et cet anneau pourrait être encore enchanté avec un préfixe de Palier 1.</p>"
-            },
-            "name": "Anneau de renforcement",
-            "effects": {
-                "Reinforcement": {
-                    "name": "Renforcement",
-                    "description": "<p>Augmente la défense d'<strong>Armure</strong> de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
-                    "adjective": "Renforcement"
-                }
-            }
-        },
-        "Round Shield": {
-            "name": "Bouclier rond",
-            "description": {
-                "public": "<p>Un bouclier métallique rond d'environ soixante centimètres de diamètre, qui constitue l'armement défensif de base des fantassins ne possédant pas d'entraînement spécialisé au combat au bouclier.</p>"
-            }
-        },
-        "Sai": {
-            "name": "Saï",
-            "description": {
-                "public": "<p>Arme en forme de trident dotée de pointes émoussées et d'un manche pointu, le saï est un outil de précision et de contrôle, utilisé pour coincer les lames et frapper avec un éclair de fureur maîtrisée.</p>"
-            }
-        },
-        "Scale Mail": {
-            "name": "Armure d’écailles",
-            "description": {
-                "public": "<p>Composée de plaques de métal superposées, cousues ou rivetées sur un support en cuir ou en tissu, l'armure d'écailles ressemble à la peau d'un dragon et protège bien contre les coupures et les coups de couteau, bien qu'elle soit bruyante et peu flexible.</p>"
-            }
-        },
-        "Scimitar": {
-            "name": "Cimeterre",
-            "description": {
-                "public": "<p>Avec sa large lame incurvée et son arc mortel, le cimeterre danse sur le champ de bataille, son fil tranchant les ennemis dans des coups amples et élégants.</p>"
-            }
-        },
-        "Shortbow": {
-            "name": "Arc court",
-            "description": {
-                "public": "<p>Compact et rapide à armer, l'arc court excelle dans l'archerie rapide et rapprochée ainsi que dans les escarmouches, et est prisé des éclaireurs, des chasseurs et des pillards agiles.</p>"
-            }
-        },
-        "Shortsword": {
-            "name": "Épée courte",
-            "description": {
-                "public": "<p>L'épée courte est une arme à lame droite, facile et rapide à manier au corps à corps. Elle est dotée d'une garde croisée idéale pour parer les coups.</p>"
-            }
-        },
-        "Skull Fetish": {
-            "name": "Fétiche du crâne",
-            "description": {
-                "public": "<p>Ce talisman macabre invoque la peur et les énergies de la mort pour faciliter la sorcellerie ou affliger les ennemis d'une influence corruptrice.</p>"
-            }
-        },
-        "Sling": {
-            "name": "Fronde",
-            "description": {
-                "public": "<p>Un simple morceau de corde ou de cuir servant à projeter des pierres à grande vitesse, la fronde est l'une des plus anciennes armes de l'histoire — elle exige de l'habileté, mais se révèle redoutable entre des mains expertes.</p>"
-            }
-        },
-        "Spear": {
-            "name": "Lance",
-            "description": {
-                "public": "<p>Arme de portée et de rythme, la lance est dotée d'un long manche à pointe d'acier, idéale pour tenir la ligne ou pour lancer avec une force mortelle depuis un mur de boucliers.</p>"
-            }
-        },
-        "Spellband": {
-            "description": {
-                "public": "<blockquote><p>Cette bague est composée d'une pierre opaque soigneusement sculptée en couches gracieuses et fluides, évoquant une esthétique ancienne. L'anneau sert de puissant focalisateur de sorts pour le porteur <strong>Investi</strong>.</p></blockquote><p>Cette bague enchantée procure la capacité de puiser dans une réserve supplémentaire de <strong>Focus</strong> dans les moment difficiles.</p>",
-                "private": "<p>Cet objet est présenté à titre d'exemple comme un Anneau raffiné avec le préfixe @UUID[Compendium.crucible.affixes.ActiveEffect.focusing00000000]{Focus de réserve}.</p><p>Cet affixe peut être appliqué à n'importe quel accessoire et cet anneau pourrait être encore enchanté avec un suffixe de Palier 1.</p>"
-            },
-            "name": "Bague de stockage",
-            "effects": {
-                "Focusing": {
-                    "name": "Focalisation",
-                    "description": "<p>Fournit l'action <strong>Restauration de focus</strong>, permettant au porteur de récupérer du <strong>Focus</strong> dans les moments difficiles. Le montant restauré dépend du <strong>Palier</strong> de ce préfixe.</p>",
-                    "adjective": "Focalisation",
-                    "actions": {
-                        "Replenish Focus": {
-                            "name": "Restauration de focus",
-                            "description": "<p>En cas de difficulté, vous pouvez puiser dans une réserve supplémentaire de <strong>Focus</strong> depuis cet objet. Le montant de Focus restauré dépend du <strong>Palier</strong> de ce préfixe.</p><ul><li><p><strong>Palier 1 :</strong> <strong>4 Focus</strong></p></li><li><p><strong>Palier 2 :</strong> <strong>6 Focus</strong></p></li><li><p><strong>Palier 3 :</strong> <strong>8 Focus</strong></p></li></ul>"
-                        }
-                    }
-                }
-            }
-        },
-        "Spiked Greatclub": {
-            "description": {
-                "public": "<p>Cette longue et noueuse pièce de bois massif est hérissée de pointes acérées, ce qui la rend encore plus redoutable et sauvage dans les coups qu'elle porte, au prix de son poids conséquent.</p>"
-            },
-            "name": "Massue cloutée"
-        },
-        "Spiked Knuckles": {
-            "name": "Gantelets cloutés",
-            "description": {
-                "public": "<p>Mélange brutal d'arme de poing et d'outil de perforation, les gantelets cloutés transforment chaque coup en une attaque mutilante, idéale pour les bagarreurs qui veulent que leurs poings fassent couler le sang et inspirent la peur.</p>"
-            }
-        },
-        "Splint Mail": {
-            "name": "Clibanion",
-            "description": {
-                "public": "<p>Composée de bandes métalliques verticales rivetées sur un support en cuir ou mailles, le clibanion offre une protection robuste des membres, au détriment de la flexibilité.</p>"
-            }
-        },
-        "Stiletto": {
-            "name": "Stylet",
-            "description": {
-                "public": "<p>Fin, effilé et conçu pour percer, le stylet est une arme de tueur — pensé pour se glisser entre les côtes ou dans les interstices d'une armure et ne laisser quasiment aucune trace.</p>"
-            }
-        },
-        "Studded Leather Armor": {
-            "name": "Armure de cuir cloutée",
-            "description": {
-                "public": "<p>Composée d'une base en cuir renforcée par de petits clous métalliques ou des plaques rivetées, cette armure offre un équilibre entre mobilité et protection modeste contre les coups tranchants.</p>"
-            }
-        },
-        "Torch": {
-            "name": "Torche",
-            "description": {
-                "public": "<p>Tissu imbibé d'huile fixé à l'extrémité d'une tige en os ou autre matériau ininflammable, cette torche constitue une source de lumière temporaire peu coûteuse, quoique peu efficace. Chaque torche peut brûler pendant une heure avant de devenir inutilisable.</p>"
-            },
-            "actions": {
-                "Light Torch": {
-                    "name": "Allumer une torche",
-                    "description": "<p>Vous allumer la @ref[name], produisant une illumination vacillante dans un large rayon pendant une heure. La torche est consumée par cette action et ne peut plus être utilisée, mais sa lumière persiste jusqu'à ce qu'elle s'éteigne complètement.</p>",
-                    "effects": {
-                        "Torch": {
-                            "name": "Torche"
-                        }
-                    }
-                }
-            }
-        },
-        "Tower Shield": {
-            "name": "Pavois",
-            "description": {
-                "public": "<p>Mur massif et rectangulaire de bois et de métal, le pavois transforme son porteur en une forteresse ambulante, idéal pour tenir des points stratégiques, mais au prix de la vitesse et de la vision.</p>"
-            }
-        },
-        "War Hammer": {
-            "name": "Marteau de guerre",
-            "description": {
-                "public": "<p>Conçu pour écraser les plaques et briser les boucliers, le marteau de guerre est doté d'une tête lourde et émoussée montée au sommet d'un manche renforcé, semant la destruction entre les mains de ceux qui privilégient la force à la finesse.</p>"
-            }
-        },
-        "War Lance": {
-            "name": "Lance d'arçon",
-            "description": {
-                "public": "<p>Conçue pour le combat monté, la lance d'arçon est une arme longue et effilée, utilisée pour briser les armures grâce à l'élan d'un destrier au galop, son manche étant renforcé pour un impact dévastateur.</p>"
-            }
-        },
-        "Alchemist's Portable Workbench": {
-            "name": "Établi d'alchimiste portatif",
-            "description": {
-                "public": "<p>Un alambic portatif en cuivre, prisé des alchimistes sans atelier personnel grâce à sa conception pliable. La plupart de ses accessoires se dévissent et se rangent à l'intérieur pour faciliter le transport. Bien que son montage et son démontage soient un peu longs, il peut remplacer un laboratoire permanent pour les voyageurs.</p>"
-            }
-        },
-        "Alchemist's Toolkit": {
-            "name": "Kit d'alchimiste",
-            "description": {
-                "public": "<p>Une boîte en bois recouverte de cuir contenant un mortier et un pilon en pierre, des emplacements pour ranger plusieurs fioles à bouchon, une cuillère en bois, ainsi qu'un petit cadre en fer pliable et une petite casserole en laiton pour mélanger les ingrédients au-dessus d'un feu.</p>"
-            }
-        },
-        "Blanket": {
-            "name": "Couverture",
-            "description": {
-                "public": "<p>Un tissu épais en feutre de laine ou de fibres aux multiples usages.</p>"
-            }
-        },
-        "Book": {
-            "name": "Livre",
-            "description": {
-                "public": "<p>Un livre à couverture de bois relié en tissu ou en cuir.</p>"
-            }
-        },
-        "Candle": {
-            "name": "Bougie",
-            "description": {
-                "public": "<p>Une petite bougie en cire pressée autour d'une mèche centrale qui émet une douce lumière chaude lorsqu'elle est allumée. Chaque bougie peut brûler pendant environ huit heures.</p>"
-            }
-        },
-        "Chain": {
-            "name": "Chaîne",
-            "description": {
-                "public": "<p>Une chaîne en acier de 30 pieds de long, pouvant servir à faciliter l'escalade ou être utilisée avec des dispositifs de fixation pour immobiliser des objets.</p>"
-            }
-        },
-        "Chirurgeon's Toolkit": {
+        "chirurgeonsToolk": {
             "name": "Kit de chirurgien",
             "description": {
                 "public": "<p>Une trousse en bois recouverte de cuir. Elle contient un rasoir, une scie à main, une pince, des bandages, une bouteille d'alcool alchimique, une aiguille et du fil, ainsi qu'une branche de bois de dix centimètres enveloppée de cuir. Tout le nécessaire pour pratiquer des amputations ou des excisions.</p>"
             }
         },
-        "Common Clothing": {
-            "name": "Vêtements communs",
-            "description": {
-                "public": "<p>Une chemise, un pantalon, des sous-vêtements, des chaussettes et des chaussures ou bottes adaptées aux travaux manuels ou aux voyages.</p>"
-            }
-        },
-        "Cooking Oil": {
-            "name": "Huile de cuisson",
-            "description": {
-                "public": "<p>Une fiole en verre ou en terre cuite gainée de cuir, contenant de l'huile végétale adaptée à la cuisson.</p>"
-            }
-        },
-        "Cook's Toolkit": {
-            "name": "Kit de cuisinier",
-            "description": {
-                "public": "<p>Une marmite en fer avec un couvercle hermétique, un grand couteau et des ustensiles en bois conçus pour être rangés à l'intérieur pendant le voyage, laissant de la place pour une bourse en cuir destinée à contenir des céréales, un flacon d'huile de cuisson, des épices ou du sel, et d'autres petites denrées alimentaires en toute sécurité.</p>"
-            }
-        },
-        "Disarming Toolkit": {
-            "description": {
-                "public": "<p>Une petite pochette en cuir contenant une pince coupante, des poinçons et un jeu de tiges métalliques pliables pouvant être vissées ensemble. Conçue pour désamorcer ou déclencher les collets, les fils-pièges, les plaques de pression et autres pièges courants.</p>"
-            },
-            "name": "Kit de désarmement"
-        },
-        "Dress Clothing": {
-            "name": "Vêtements raffinés",
-            "description": {
-                "public": "<p>Un ensemble royal de vêtements raffinés, parfait pour assister à des célébrations et des réceptions mondaines, comprend un pardessus ou une robe, un mouchoir ou une cravate, une chemise ou un corset de qualité, un gilet ou un corsage, un pantalon ou un jupon, une ceinture ou des bretelles, des bas et des chaussures élégantes.</p>"
-            }
-        },
-        "Enchanter's Portable Workbench": {
-            "name": "Établi d'enchanteur portatif",
-            "description": {
-                "public": "<p>Une boîte en bois pliable qui se déplie pour former un petit autel décoratif. Elle contient un bol à offrandes en pierre, un tapis en cuir pour protéger la surface de travail et un espace de rangement pour les baguettes magiques, les bougies rituelles, les sachets d'encens et les outils de gravure.</p>"
-            }
-        },
-        "Enchanter's Toolkit": {
-            "name": "Kit d'enchanteur",
-            "description": {
-                "public": "<p>n coffret en bois recouvert de cuir. Il contient des bougies rituelles, un petit bol à offrandes, des sachets d'encens et des réactifs en poudre, ainsi qu'un tapis en tissu servant de surface de travail.</p>"
-            }
-        },
-        "Firestarter": {
-            "description": {
-                "public": "<p>Une petite bourse en cuir ciré contenant des fibres végétales sèches et broyées et des copeaux de bois, avec un petit fermoir intérieur pour fixer un morceau de silex et un anneau de percussion en acier pour allumer des feux.</p>"
-            },
-            "name": "Allume-feu"
-        },
-        "Fishing Pole": {
-            "name": "Canne à pêche",
-            "description": {
-                "public": "<p>Une canne en bois pliable, munie d'anneaux métalliques et d'un support pour y accrocher une ligne. Se range facilement dans ou à côté d'un sac à dos.</p>"
-            }
-        },
-        "Fletcher's Toolkit": {
-            "name": "Kit de Flechier",
-            "description": {
-                "public": "<p>Un carquois en cuir à extrémité refermable, contenant un étau à monter, un rabot à rayons, des brosses et un petit dévidoir pour enrouler de la corde tressée. Déplié, il se transforme en tapis pouvant servir de plan de travail.</p>"
-            }
-        },
-        "Glue": {
-            "name": "Colle",
-            "description": {
-                "public": "<p>Un flacon de colle animale ordinaire.</p>"
-            }
-        },
-        "Grapnel": {
-            "name": "Grappin",
-            "description": {
-                "public": "<p>Un simple crochet en acier à deux ou quatre branches conçu pour être utilisé avec une corde ou une chaîne afin de fixer une corde à des structures en bois.</p>"
-            }
-        },
-        "Hacksaw": {
-            "name": "Scie à métaux",
-            "description": {
-                "public": "<p>Un outil manuel courant utilisé pour couper le métal.</p>"
-            }
-        },
-        "Hammer": {
-            "name": "Marteau",
-            "description": {
-                "public": "<p>Outil à main courant utilisé en menuiserie ou en métallurgie. Non conçu pour le combat.</p>"
-            }
-        },
-        "Handmirror": {
-            "name": "Miroir à main",
-            "description": {
-                "public": "<p>Un simple morceau de verre poli, portatif, avec un support métallique réfléchissant, qui permet de voir son reflet.</p>"
-            }
-        },
-        "Handsaw": {
-            "name": "Scie",
-            "description": {
-                "public": "<p>Un outil manuel courant utilisé pour couper le bois.</p>"
-            }
-        },
-        "Harness": {
-            "name": "Harnais",
-            "description": {
-                "public": "<p>Un harnais ajustable en cuir et en acier, conçu pour s'adapter à un torse humanoïde, pouvant être utilisé avec une corde ou une chaîne pour faciliter l'escalade ou à des fins de contention.</p>"
-            }
-        },
-        "Healer's Toolkit": {
-            "name": "Kit de guérisseur",
-            "description": {
-                "public": "<p>Une trousse en bois recouverte de cuir. Elle contient des bandages, une bouteille d'alcool alchimique, une aiguille et du fil, ainsi qu'une variété de petites herbes et de composés utilisés pour traiter les maladies et les blessures courantes.</p>"
-            }
-        },
-        "Incense": {
-            "name": "Encens",
-            "description": {
-                "public": "<p>Bâtonnets ou cônes de résine, de poudre de bois et d'huiles florales conçus pour dégager une fumée odorante lorsqu'ils brûlent. Chaque paquet contient 12 pièces individuelles.</p>"
-            }
-        },
-        "Ink": {
-            "name": "Encre",
-            "description": {
-                "public": "<p>Un flacon d'encre à écrire ordinaire.</p>"
-            }
-        },
-        "Jeweler's Portable Workbench": {
-            "name": "Établi de joaillier portatif",
-            "description": {
-                "public": "<p>Une boîte en bois peu profonde, recouverte de cuir, contenant une meule pliable, une pierre à aiguiser et une pierre à polir, un marteau de lapidaire et une petite enclume en acier, laissant suffisamment d'espace pour ranger en toute sécurité les projets en cours lors des déplacements.</p>"
-            }
-        },
-        "Lockpicks": {
-            "description": {
-                "public": "<p>Un ensemble de longues et fines goupilles métalliques aux extrémités légèrement recourbées, conçues pour manipuler les mécanismes internes des serrures, et une barre métallique permettant d'appliquer une torsion. Entre de bonnes mains, elles peuvent ouvrir les serrures aussi efficacement qu'une clé.</p>"
-            },
-            "name": "Set de crochetage"
-        },
-        "Lyre": {
-            "name": "Lyre",
-            "description": {
-                "public": "<p>Instrument à cordes à cadre incurvé, la lyre est un instrument de prédilection de nombreux bardes ou conteurs itinérants qui utilisent la musique pour amplifier leur magie ou leur éloquence.</p>"
-            }
-        },
-        "Mealkit": {
-            "description": {
-                "public": "<p>Une pochette en cuir contenant une tasse en métal, une assiette, une fourchette et un morceau de chiffon pour les essuyer.</p>"
-            },
-            "name": "Vaisselle de voyage"
-        },
-        "Perfume": {
-            "name": "Parfum",
-            "description": {
-                "public": "<p>Un soin délicat sous forme d'huiles florales parfumées, conçu pour masquer l'odeur naturelle et offrir une expérience olfactive plus agréable. Chaque petit flacon contient 20 applications.</p>"
-            }
-        },
-        "Poisoner's Toolkit": {
-            "name": "Kit d'empoisonneur",
-            "description": {
-                "public": "<p>Une boîte en bois recouverte de cuir orné d'un point de croix décoratif indiquant clairement qu'elle contient des marchandises dangereuses. Elle renferme un mortier et un pilon en pierre, des compartiments pour maintenir en place plusieurs fioles bouchées contenant des ingrédients toxiques, une cuillère en argent, ainsi qu'un petit cadre en fer pliable et un petit pot en laiton pour mélanger les ingrédients au-dessus d'un feu.</p>"
-            }
-        },
-        "Rations": {
-            "name": "Rations",
-            "description": {
-                "public": "<p>Pain sec, noix, fromage fumé et viande, constituant un repas rudimentaire permettant de survivre une journée.</p>"
-            }
-        },
-        "Razor": {
-            "name": "Rasoir",
-            "description": {
-                "public": "<p>Une lame particulièrement tranchante utilisée pour le rasage ou, dans certains cas, pour la chirurgie.</p>"
-            }
-        },
-        "Repair Kit (smith)": {
-            "name": "Kit de réparation (forge)",
-            "description": {
-                "public": "<p>Un sac en cuir contenant des pierres à aiguiser et une meuleuse, un petit marteau, un petit creuset pour liquéfier le métal et un assortiment de petits morceaux de ferraille. Peut servir à réparer les armures, les armes et les accessoires métalliques.</p>"
-            }
-        },
-        "Repair Kit (tailor)": {
-            "name": "Kit de réparation (couture)",
-            "description": {
-                "public": "<p>Un sac en cuir contenant des ciseaux, des aiguilles, un métier à tisser et un assortiment de petits morceaux de tissu, de cuir, de fil et de ficelle. Peut servir à réparer les armures et accessoires en tissu et en cuir.</p>"
-            }
-        },
-        "Ring of Gliding": {
-            "description": {
-                "public": "<blockquote><p>Une bague élégante en acier bleu pâle, ornée d'un motif en spirale qui donne l'illusion d'une rotation lente et perpétuelle au doigt de celui ou celle qui la porte.</p></blockquote><p>Cette bague enchantée procure la capacité de planer latéralement lors d'une chute.</p>",
-                "private": "<p>Cet objet est présenté à titre d'exemple comme un Anneau raffiné avec le préfixe @UUID[Compendium.crucible.affixes.ActiveEffect.gliding000000000]{Planeur}.</p><p>Cet affixe peut être appliqué à n'importe quel accessoire et cet anneau pourrait être encore enchanté avec un suffixe de Palier 1.</p>"
-            },
-            "name": "Anneau de chute lente",
-            "effects": {
-                "Gliding": {
-                    "name": "Planant",
-                    "description": "<p>Fournit l'action <strong>Planant</strong>, permettant au porteur de planer latéralement durant une chute. La distance planée dépend du <strong>Palier</strong> de ce préfixe.</p>",
-                    "adjective": "Planant",
-                    "actions": {
-                        "Gliding": {
-                            "name": "Planant",
-                            "description": "<p>Utilisé durant une <strong>Chute</strong>, vous pouvez vous déplacer latéralement d'un nombre d'espaces depuis votre position initiale en planant. La distance planée dépend du <strong>Palier</strong> de ce préfixe.</p><ul><li><p><strong>Palier 1 :</strong> <strong>1 pied</strong> par 20 pieds de descente.</p></li><li><p><strong>Palier 2 :</strong> <strong>2 pieds</strong> par 20 pieds de descente.</p></li><li><p><strong>Palier 3 :</strong> <strong>4 pieds</strong> par 20 pieds de descente.</p></li></ul><p>Vous ne subissez aucun dégât de chute à l'atterrissage, et n'êtes pas @Condition[prone].</p>"
-                        }
-                    }
-                }
-            }
-        },
-        "Rope": {
-            "name": "Corde",
-            "description": {
-                "public": "<p>Une corde en fibres végétales de 30 pieds de long, pouvant servir à faciliter l'escalade ou à de nombreuses autres fins.</p>"
-            }
-        },
-        "Rope Ladder": {
-            "name": "Échelle de corde",
-            "description": {
-                "public": "<p>Un système de 25 pieds de lattes de bois et de corde nouée liés ensemble, formant un dispositif d'escalade pratique. Fixé à une extrémité, il réduit considérablement les risques de chute.</p>"
-            }
-        },
-        "Scrivener's Portable Workbench": {
-            "name": "Établi de scribe portatif",
-            "description": {
-                "public": "<p>Un coffret en bois recouvert de cuir, à peine plus grand qu'un livre. Il contient des pinceaux et des plumes de calligraphie, une aiguille et du fil, ainsi qu'un compartiment pour ranger les flacons d'encre séparément du papier plié. Une fois ouvert, le coffret se déplie pour servir de surface d'écriture plane.</p>"
-            }
-        },
-        "Scrivener's Toolkit": {
-            "name": "Kit de scribe",
-            "description": {
-                "public": "<p>Une trousse en bois reliée en cuir. Elle contient une pochette cirée pour protéger les documents de l'humidité, un sachet de cire à cacheter, plusieurs plumes et encres, ainsi qu'une planchette en bois servant de support d'écriture.</p>"
-            }
-        },
-        "Shovel": {
-            "name": "Pelle",
-            "description": {
-                "public": "<p>Un outil courant à deux mains utilisé pour creuser la terre et les pierres.</p>"
-            }
-        },
-        "Smith's Portable Forge": {
-            "name": "Forge de forgeron portative",
-            "description": {
-                "public": "<p>Un chaudron en fer épais, doublé d'argile et étanche, percé d'un trou pour fixer un soufflet manuel et d'une petite ouverture pour y introduire le métal à chauffer. Un soufflet et une petite enclume sont inclus. Cet outil lourd permet au forgeron d'exercer son métier en déplacement, bien que son transport puisse exiger une bonne condition physique. Il convient à la fabrication de la plupart des outils et armes métalliques courants, mais s'avère insuffisant pour un travail de haute qualité.</p>"
-            }
-        },
-        "Smith's Toolkit": {
-            "name": "Kit de forgeron",
-            "description": {
-                "public": "<p>Une trousse en bois recouverte de cuir. Elle contient des poinçons, des pinces, de la ferraille et une petite enclume, ainsi qu'un espace pour ranger des morceaux de ferraille.</p>"
-            }
-        },
-        "Soap": {
-            "name": "Savon",
-            "description": {
-                "public": "<p>Un pain de savon de nettoyage courant utilisé pour l'hygiène personnelle. Chaque pain contient environ 20 utilisations.</p>"
-            }
-        },
-        "Spyglass": {
-            "name": "Longue-vue",
-            "description": {
-                "public": "<p>Un télescope portatif en laiton et en bois, doté de lentilles en verre poli. Utilisé pour agrandir l'image d'un objet éloigné.</p>"
-            }
-        },
-        "Tailor's Portable Workbench": {
-            "name": "Établi de couturier portatif",
-            "description": {
-                "public": "<p>Coffret en bois peu profond, recouvert de cuir, contenant des bobines de fil, des aiguilles et épingles adaptées, un couteau à dépecer, un couteau à crochet, des poinçons, des alênes et des marques pour le travail du tissu et du cuir en voyage. Déplié, il se transforme en surface de travail plane.</p>"
-            }
-        },
-        "Tailor's Toolkit": {
-            "name": "Kit de couturier",
-            "description": {
-                "public": "<p>Une trousse en bois recouverte de cuir contenant des bobines de fil, des aiguilles et des épingles adaptées, un couteau à dépecer, des poinçons, convenant au travail du tissu et du cuir.</p>"
-            }
-        },
-        "Tent (caravan)": {
-            "name": "Tente (caravane)",
-            "description": {
-                "public": "<p>Une grande bâche pliable ou enroulable pour construire un abri temporaire pouvant accueillir jusqu'à douze personnes. Comprend des cordes, des piquets et six barres transversales pliables à assembler avant de pouvoir tendre la bâche.</p>"
-            }
-        },
-        "Tent (large)": {
-            "name": "Tente (grande)",
-            "description": {
-                "public": "<p>Une grande bâche pliable ou enroulable pour construire un abri temporaire pouvant accueillir jusqu'à six personnes. Comprend des cordes, des piquets et une traverse centrale pliable.</p>"
-            }
-        },
-        "Tent (small)": {
-            "name": "Tente (petite)",
-            "description": {
-                "public": "<p>Bâche pliable ou enroulable pour la construction d'un abri temporaire, pouvant accueillir une ou deux personnes. Comprend des cordes, des piquets et une traverse centrale pliable.</p>"
-            }
-        },
-        "Travel Jug": {
-            "description": {
-                "public": "<p>Cruche en terre cuite avec bouchon, gainée de cuir, pouvant être fixée à une ceinture ou à l'extérieur d'un sac à dos pour plus de praticité. Contenance : 40 once de liquide.</p>"
-            },
-            "name": "Pichet de voyage"
-        },
-        "Weather Clothing": {
-            "description": {
-                "public": "<p>Un ensemble de vêtements conçu pour protéger celui qui le porte contre les intempéries telles que les températures extrêmes, le vent ou l'humidité.</p>"
-            },
-            "name": "Vêtements chauds"
-        },
-        "Wetskin": {
-            "description": {
-                "public": "<p>Poche à eau gainée de cuir, fixable à la ceinture ou à l'extérieur d'un sac à dos pour plus de praticité. Contenance : 26 onces de liquide.</p>"
-            },
-            "name": "Outre"
-        },
-        "Whistle": {
-            "name": "Sifflet",
-            "description": {
-                "public": "<p>Instrument en bois sculpté ou en os qui, lorsqu'on souffle dedans, produit un son aigu et strident audible à grande distance. Souvent utilisé par les chasseurs et les pêcheurs pour communiquer entre eux en pleine nature ou en mer.</p>"
-            }
-        },
-        "Cloak of Kindly Visage": {
-            "name": "Cape au Visage bienveillant",
-            "description": {
-                "public": "<blockquote><p>Une cape noire sans signe distinctif, qui semble pouvoir s’accorder avec presque n’importe quelle tenue.</p></blockquote><p>Cette cape enchantée offre un bonus d'enchantement aux jets de compétence de <strong>Diplomatie</strong> et fournit la capacité d'assumer un <strong>Déguisement</strong> illusoire.</p>",
-                "private": "<p>Cet objet est présenté à titre d'exemple comme une Cape raffinée avec le préfixe @UUID[Compendium.crucible.affixes.ActiveEffect.diplomacySkill00]{Diplomatie} et le suffixe @UUID[Compendium.crucible.affixes.ActiveEffect.disguise00000000]{Déguisement}.</p>"
-            },
-            "effects": {
-                "Disguise": {
-                    "name": "Déguisement",
-                    "description": "<p>Fournit l'action <strong>Déguisement</strong>, permettant au porteur de prendre une apparence illusoire une fois par repos.</p>",
-                    "adjective": "Déguisement",
-                    "actions": {
-                        "Disguise": {
-                            "name": "Déguisement",
-                            "description": "<p>Une fois par repos, vous adoptez une apparence illusoire qui modifie aussi bien votre visage que votre tenue. L’illusion ne peut pas changer votre ascendance, mais peut altérer d’autres aspects de votre anatomie, y compris votre genre apparent. L'objet lui-même ne change pas d’apparence et reste visible.</p><p>L’illusion persiste indéfiniment et peut être dissipée à volonté. Une fois activé, cet objet ne peut pas produire une nouvelle illusion de cette manière avant que 24 heures ne se soient écoulées.</p>"
-                        }
-                    }
-                },
-                "Diplomacy": {
-                    "name": "Diplomatie",
-                    "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les jets de compétence de <strong>Diplomatie</strong> de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
-                    "adjective": "Diplomatique"
-                }
-            }
-        },
-        "Luminary Band": {
-            "name": "Anneau luminaire",
-            "description": {
-                "public": "<blockquote><p>Un anneau d’or finement gravé, serti d’une gemme ovale orange aux reflets scintillants.</p></blockquote><p>Cet anneau enchanté offre des faveurs aux actions <strong>Composées</strong> qui incluent une <strong>Inflexion</strong>.</p>",
-                "private": "<p>Cet objet est présenté à titre d'exemple comme un Anneau raffiné avec le préfixe @UUID[Compendium.crucible.affixes.ActiveEffect.luminary00000000]{Astral}.</p><p>Cet affixe peut être appliqué à n'importe quel accessoire et cet anneau pourrait être encore enchanté avec un suffixe de Palier 1.</p>"
-            },
-            "effects": {
-                "Luminary": {
-                    "name": "Astre",
-                    "description": "<p>Obtient des Faveurs pour les actions <strong>Composées</strong> qui incluent une <strong>Inflexion</strong>. Le nombre de faveurs obtenues est égal au <strong>Palier</strong> de ce préfixe.</p>",
-                    "adjective": "Astral"
-                }
-            }
-        },
-        "Pen": {
-            "name": "Plume",
-            "description": {
-                "public": "<p>Un instrument d’écriture courant utilisé par les scribes, permettant d’interchanger différentes pointes afin d’obtenir divers styles de trait.</p>"
-            }
-        },
-        "Choking Ampoule": {
+        "chokingAmpoule00": {
             "name": "Ampoule d'étouffement",
             "description": {
                 "public": "<p>Cette fiole de verre scellée contient un nuage tourbillonnant de gaz vert dense maintenu sous pression. Briser l'ampoule libère les vapeurs qu'elle renferme, provoquant un effet démoralisant et asphyxiant sur les créatures exposées.</p>"
             },
             "actions": {
-                "Choking Ampoule": {
+                "chokingAmpoule": {
                     "name": "Ampoule d'étouffement",
                     "description": "<p>Vous lancez l'@ref[name], qui a un effet immédiat <strong>Inoffensif</strong>, mais cause la condition @Condition[poisoned] à tous les ennemis qui échouent à résister à l'attaque contre leur <strong>Fortitude</strong>, dans une <strong>Explosion</strong> de 8 pieds de rayon.</p><p>Le gaz inflige des dégâts de poison au <strong>Moral</strong> d'un montant dépendant de la Qualité de l'@ref[name]. Sur un succès critique, la cible affectée devient également @Condition[silenced] pour la même durée.</p><ul><li><p><strong>Bâclée</strong> - 2 dégâts pendant 3 rounds</p></li><li><p><strong>Commune</strong> - 6 dégâts pendant 3 rounds</p></li><li><p><strong>Raffinée</strong> - 12 dégâts pendant 3 rounds</p></li><li><p><strong>Supérieure</strong> - 20 dégâts pendant 3 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - 30 dégâts pendant 3 rounds</p></li></ul>",
                     "effects": {
@@ -1099,190 +242,118 @@
                 }
             }
         },
-        "Glyphweaver's Portable Workbench": {
-            "name": "Établi de tisseur de glyphe portatif",
+        "clawHammer000000": {
+            "name": "Marteau léger",
             "description": {
-                "public": "<p>Une boîte en bois pliable qui se déplie pour former un petit établi servant de surface de travail pour la fabrication de glyphes. Elle contient des ciseaux et des poinçons à graver, un marteau de lapidaire, un tapis décoratif en cuir et un espace de rangement pour les glyphes et autres matériaux rituels.</p>"
+                "public": "<p>Outil d'apparence modeste, avec sa surface de frappe plate et sa griffe incurvée, le marteau léger peut devenir une arme redoutable entre des mains déterminées.</p>"
             }
         },
-        "Glyphweaver's Toolkit": {
-            "name": "Kit de tisseur de glyphe",
+        "claws00000000000": {
+            "name": "Griffes",
             "description": {
-                "public": "<p>Une trousse en bois recouverte de cuir. Contient des ciseaux et des poinçons à graver, un marteau de lapidaire, un tapis décoratif en cuir et un espace pour ranger les glyphes et autres matériaux rituels.</p>"
+                "public": "<p>Portées sur les mains comme un second set de doigts, les griffes — qu'il s'agisse d'extensions en acier ou de monstruosités forgées en os — déchirent et lacèrent dans des coups sauvages et rapides.</p>"
             }
         },
-        "Jeweler's Toolkit": {
-            "name": "Kit de joaillier",
-            "description": {
-                "public": "<p>Une trousse en bois recouverte de cuir. Elle contient des limes, un pied à coulisse, une petite meule, des pâtes à polir, des chiffons et un assortiment de réglages économiques. La trousse se déplie complètement pour offrir une surface de travail lisse.</p>"
-            }
-        },
-        "Paralytic Vial": {
-            "name": "Fiole paralytique",
-            "description": {
-                "public": "<p>Ce petit flacon contient un liquide huileux nettement plus épais que l'eau. Il dégage une odeur âcre qui met mal à l'aise.</p>"
-            },
-            "actions": {
-                "Ingest Paralytic": {
-                    "name": "Ingestion paralytique",
-                    "description": "<p>Lorsque cette toxine est ingérée ou pénètre d'une autre manière dans le flux sanguin d'une créature, cela est initialement <strong>Inoffensif</strong>, mais la cible doit se défendre d'une attaque contre sa <strong>Fortitude</strong> ou être @Condition[paralyzed].</p><p>La durée dépend de la qualité de la @ref[name]{fiole} :</p><ul><li><p><strong>Bâclée</strong> - 1 rounds</p></li><li><p><strong>Commune</strong> - 2 rounds</p></li><li><p><strong>Raffinée</strong> - 4 rounds</p></li><li><p><strong>Supérieure</strong> - 8 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - Indéfini</p></li></ul><p><em>Cette action doit être prise lorsque le poison est ingéré plutôt que lors de sa première application.</em></p>",
-                    "effects": {
-                        "Paralytic Toxin": {
-                            "name": "Toxine paralytique"
-                        }
-                    }
-                },
-                "Apply Paralytic": {
-                    "description": "<p>Le contenu de ce flacon peut être ajouté à des aliments ou des boissons, appliqué sur une arme blanche ou combiné à un autre mode d'administration.</p><p><em>Cette action, qui consomme la quantité de poison disponible, doit être utilisée lors de sa première application.</em></p>",
-                    "name": "Contact paralytique"
-                }
-            }
-        },
-        "Steel-Jaw Trap": {
-            "name": "Piège à mâchoire de fer",
-            "description": {
-                "public": "<p>Un piège mécanique particulièrement cruel et tranchant, conçu pour immobiliser et tuer les imprudents. Un anneau d'acier dentelé qui se referme brusquement lorsqu'une créature marche sur une plaque de pression au centre.</p>"
-            },
-            "actions": {
-                "Arm Steel-Jaw Trap": {
-                    "name": "Armer le piège à mâchoire de fer",
-                    "description": "<p>La mise en place de ce piège représente un péril important pouvant causer des dégâts considérables en cas de déclenchement. Il doit être fixé par une chaîne solide à un objet immobile, tel qu'un arbre ou un pieu enfoncé dans le sol. La zone du piège est un cercle de 2 pieds de rayon.</p>"
-                },
-                "Trigger Steel-Jaw Trap": {
-                    "name": "Déclencher le piège à mâchoire de fer",
-                    "description": "<p>Lorsque le piège est déclenché, la créature qui l'a posé fait une attaque de la compétence <strong>Nature</strong> contre la défense de <strong>Réflexe</strong> d'une cible unique qui a déclenché le piège. Sur une réussite, il inflige des dégâts perforants et applique la condition @Condition[restrained]. Les dégâts de base infligés par le piège varient en fonction de sa qualité.</p><ul><li><p><strong>Bâclée</strong> - 1 dégât</p></li><li><p><strong>Commune</strong> - 2 dégâts</p></li><li><p><strong>Raffinée</strong> - 4 dégâts</p></li><li><p><strong>Supérieure</strong> - 8 dégâts</p></li><li><p><strong>Chef-d’œuvre</strong> - 16 dégâts</p></li></ul><p></p>",
-                    "effects": {
-                        "Steel-Jaw Trap": {
-                            "name": "Piège à mâchoire de fer"
-                        }
-                    }
-                }
-            }
-        },
-        "Amulet": {
-            "name": "Amulette",
-            "description": {
-                "public": "<p>Une simple amulette suspendue à un simple cordon, attendant le toucher d'un enchanteur habile.</p>",
-                "private": "<p>Il s'agit d'un modèle d'accessoire de base destiné à être amélioré en qualité et enchanté avec des affixes.</p>"
-            }
-        },
-        "Belt": {
-            "name": "Ceinture",
-            "description": {
-                "public": "<p>Une simple ceinture en cuir avec une boucle métallique simple.</p>",
-                "private": "<p>Il s'agit d'un modèle d'accessoire de base destiné à être amélioré en qualité et enchanté avec des affixes.</p>"
-            }
-        },
-        "Bracer": {
-            "name": "Bracelet",
-            "description": {
-                "public": "<p>Un bracelet en cuir robuste qui protège l'avant-bras.</p>",
-                "private": "<p>Il s'agit d'un modèle d'accessoire de base destiné à être amélioré en qualité et enchanté avec des affixes.</p>"
-            }
-        },
-        "Cloak": {
+        "cloak00000000000": {
             "name": "Cape",
             "description": {
                 "public": "<p>Une simple cape de voyage en laine non teinte.</p>",
                 "private": "<p>Il s'agit d'un modèle d'accessoire de base destiné à être amélioré en qualité et enchanté avec des affixes.</p>"
             }
         },
-        "Helm": {
-            "name": "Heaume",
+        "cloakOfKindlyVis": {
+            "name": "Cape au Visage bienveillant",
             "description": {
-                "public": "<p>Un casque basique à visière ouverte en cuir durci.</p>",
-                "private": "<p>Il s'agit d'un modèle d'accessoire de base destiné à être amélioré en qualité et enchanté avec des affixes.</p>"
-            }
-        },
-        "Net": {
-            "name": "Filet",
-            "description": {
-                "public": "<p>Ces fibres à tissage serré sont renforcées pour être utilisées au combat afin de piéger et d'emmêler même les ennemis les plus dangereux, les rendant vulnérables.</p>"
+                "public": "<blockquote><p>Une cape noire sans signe distinctif, qui semble pouvoir s’accorder avec presque n’importe quelle tenue.</p></blockquote><p>Cette cape enchantée offre un bonus d'enchantement aux jets de compétence de <strong>Diplomatie</strong> et fournit la capacité d'assumer un <strong>Déguisement</strong> illusoire.</p>",
+                "private": "<p>Cet objet est présenté à titre d'exemple comme une Cape raffinée avec le préfixe @UUID[Compendium.crucible.affixes.ActiveEffect.diplomacySkill00]{Diplomatie} et le suffixe @UUID[Compendium.crucible.affixes.ActiveEffect.disguise00000000]{Déguisement}.</p>"
             },
-            "actions": {
-                "Throw Net": {
-                    "name": "Jeté de filet",
-                    "description": "<p>La cible capturée par le filet lancé est @Condition[restrained] jusqu'à ce qu'elle puisse se libérer.</p>",
-                    "effects": {
-                        "Netted": {
-                            "name": "Ficelé"
+            "effects": {
+                "disguise00000000": {
+                    "name": "Déguisement",
+                    "description": "<p>Fournit l'action <strong>Déguisement</strong>, permettant au porteur de prendre une apparence illusoire une fois par repos.</p>",
+                    "adjective": "Déguisement",
+                    "actions": {
+                        "affixDisguise": {
+                            "name": "Déguisement",
+                            "description": "<p>Une fois par repos, vous adoptez une apparence illusoire qui modifie aussi bien votre visage que votre tenue. L’illusion ne peut pas changer votre ascendance, mais peut altérer d’autres aspects de votre anatomie, y compris votre genre apparent. L'objet lui-même ne change pas d’apparence et reste visible.</p><p>L’illusion persiste indéfiniment et peut être dissipée à volonté. Une fois activé, cet objet ne peut pas produire une nouvelle illusion de cette manière avant que 24 heures ne se soient écoulées.</p>"
                         }
                     }
+                },
+                "diplomacySkill00": {
+                    "name": "Diplomatie",
+                    "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les jets de compétence de <strong>Diplomatie</strong> de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+                    "adjective": "Diplomatique"
                 }
             }
         },
-        "Ring": {
-            "name": "Anneau",
+        "club000000000000": {
+            "name": "Gourdin",
             "description": {
-                "public": "<p>Une simple bague sans ornement, en métal ordinaire.</p>",
-                "private": "<p>Il s'agit d'un modèle d'accessoire de base destiné à être amélioré en qualité et enchanté avec des affixes.</p>"
+                "public": "<p>Arme rudimentaire mais efficace, le gourdin est un morceau de bois ou d'os à bout rond, conçu pour écraser plutôt que pour couper. Il peut s'avérer dangereux même entre les mains de combattants inexpérimentés.</p>"
             }
         },
-        "Spell Scroll (Fine)": {
-            "name": "Parchemin de sort (Raffiné)",
+        "commonClothing00": {
+            "name": "Vêtements communs",
             "description": {
-                "public": "<p>Un parchemin de sort est un morceau de vélin ou de parchemin spécialisé sur lequel sont soigneusement incrustés les glyphes d'un ou plusieurs composantes de sorcellerie. Activer ce parchemin de sort confère temporairement à son lecteur une profonde familiarité avec ces composantes, comme s'il les connaissait depuis des années.</p><p>Le nombre de composantes de sorcellerie qu'un parchemin peut contenir dépend de la qualité de sa fabrication.</p><ul><li><p><strong>Raffiné</strong> : Ne peut contenir qu'une seule composante de sorcellerie</p></li><li><p><strong>Supérieure</strong> : Peur contenir deux composantes de sorcellerie</p></li><li><p><strong>Chef-d’œuvre</strong> : Peur contenir trois composantes de sorcellerie</p></li></ul>"
-            },
-            "actions": {
-                "Read Scroll": {
-                    "name": "Lire un parchemin",
-                    "description": "<p>Lire ce parchemin de sort permet d'obtenir temporairement la connaissance de ses composantes de sorcellerie pendant 10 minutes.</p><p>Vous ne pouvez avoir qu'un seul effet de parchemin de sort actif à un moment donné. Lire un autre parchemin remplace tout effet courant.</p>",
-                    "effects": {
-                        "Read Scroll": {
-                            "name": "Lire un parchemin"
-                        }
-                    }
-                }
+                "public": "<p>Une chemise, un pantalon, des sous-vêtements, des chaussettes et des chaussures ou bottes adaptées aux travaux manuels ou aux voyages.</p>"
             }
         },
-        "Spell Scroll (Masterwork)": {
-            "name": "Parchemin de sort (Chef-d’œuvre)",
+        "cookingOil000000": {
+            "name": "Huile de cuisson",
             "description": {
-                "public": "<p>Un parchemin de sort est un morceau de vélin ou de parchemin spécialisé sur lequel sont soigneusement incrustés les glyphes d'un ou plusieurs composantes de sorcellerie. Activer ce parchemin de sort confère temporairement à son lecteur une profonde familiarité avec ces composantes, comme s'il les connaissait depuis des années.</p><p>Le nombre de composantes de sorcellerie qu'un parchemin peut contenir dépend de la qualité de sa fabrication.</p><ul><li><p><strong>Raffiné</strong> : Ne peut contenir qu'une seule composante de sorcellerie</p></li><li><p><strong>Supérieure</strong> : Peur contenir deux composantes de sorcellerie</p></li><li><p><strong>Chef-d’œuvre</strong> : Peur contenir trois composantes de sorcellerie</p></li></ul>"
-            },
-            "actions": {
-                "Read Scroll": {
-                    "name": "Lire un parchemin",
-                    "description": "<p>Lire ce parchemin de sort permet d'obtenir temporairement la connaissance de ses composantes de sorcellerie pendant 10 minutes.</p><p>Vous ne pouvez avoir qu'un seul effet de parchemin de sort actif à un moment donné. Lire un autre parchemin remplace tout effet courant.</p>",
-                    "effects": {
-                        "Read Scroll": {
-                            "name": "Lire un parchemin"
-                        }
-                    }
-                }
+                "public": "<p>Une fiole en verre ou en terre cuite gainée de cuir, contenant de l'huile végétale adaptée à la cuisson.</p>"
             }
         },
-        "Spell Scroll (Superior)": {
-            "name": "Parchemin de sort (Supérieur)",
+        "cooksToolkit0000": {
+            "name": "Kit de cuisinier",
             "description": {
-                "public": "<p>Un parchemin de sort est un morceau de vélin ou de parchemin spécialisé sur lequel sont soigneusement incrustés les glyphes d'un ou plusieurs composantes de sorcellerie. Activer ce parchemin de sort confère temporairement à son lecteur une profonde familiarité avec ces composantes, comme s'il les connaissait depuis des années.</p><p>Le nombre de composantes de sorcellerie qu'un parchemin peut contenir dépend de la qualité de sa fabrication.</p><ul><li><p><strong>Raffiné</strong> : Ne peut contenir qu'une seule composante de sorcellerie</p></li><li><p><strong>Supérieure</strong> : Peur contenir deux composantes de sorcellerie</p></li><li><p><strong>Chef-d’œuvre</strong> : Peur contenir trois composantes de sorcellerie</p></li></ul>"
-            },
-            "actions": {
-                "Read Scroll": {
-                    "name": "Lire un parchemin",
-                    "description": "<p>Lire ce parchemin de sort permet d'obtenir temporairement la connaissance de ses composantes de sorcellerie pendant 10 minutes.</p><p>Vous ne pouvez avoir qu'un seul effet de parchemin de sort actif à un moment donné. Lire un autre parchemin remplace tout effet courant.</p>",
-                    "effects": {
-                        "Read Scroll": {
-                            "name": "Lire un parchemin"
-                        }
-                    }
-                }
+                "public": "<p>Une marmite en fer avec un couvercle hermétique, un grand couteau et des ustensiles en bois conçus pour être rangés à l'intérieur pendant le voyage, laissant de la place pour une bourse en cuir destinée à contenir des céréales, un flacon d'huile de cuisson, des épices ou du sel, et d'autres petites denrées alimentaires en toute sécurité.</p>"
             }
         },
-        "Disguise Toolkit": {
+        "crowbar000000000": {
+            "name": "Pied de biche",
+            "description": {
+                "public": "<p>Barre métallique robuste légèrement courbée, munie d'un crochet à tête aplatie à une extrémité. Sert à faire levier pour détacher un objet d'un autre.</p>"
+            }
+        },
+        "dagger0000000000": {
+            "name": "Dague",
+            "description": {
+                "public": "<p>Petite, rapide et mortelle, la dague se glisse aisément entre les côtes ou dans les interstices d'une armure, son tranchant redoutable est prisé les assassins, les voleurs et ceux qui privilégient une mort silencieuse.</p>"
+            }
+        },
+        "dartGun000000000": {
+            "name": "Pistolet à fléchettes",
+            "description": {
+                "public": "<p>Arme compacte et tubulaire conçue pour lancer silencieusement de petits projectiles, souvent empoisonnés, le pistolet à fléchettes est prisé des assassins, des dompteurs de bêtes et des alchimistes de l'ombre.</p>"
+            }
+        },
+        "disarmingToolkit": {
+            "name": "Kit de désarmement",
+            "description": {
+                "public": "<p>Une petite pochette en cuir contenant une pince coupante, des poinçons et un jeu de tiges métalliques pliables pouvant être vissées ensemble. Conçue pour désamorcer ou déclencher les collets, les fils-pièges, les plaques de pression et autres pièges courants.</p>"
+            }
+        },
+        "disguiseToolkit0": {
             "name": "Kit de déguisement",
             "description": {
                 "public": "<p>Une trousse en bois recouverte de cuir contenant un miroir à main, des morceaux de tissu soigneusement triés, des cosmétiques, des teintures, des perruques, de la fausse barbe, des bijoux, des adhésifs hypoallergéniques et d'autres fournitures de déguisement conçues pour aider une personne à masquer son apparence.</p>"
             }
         },
-        "Electrocharge Ampoule": {
+        "dressClothing000": {
+            "name": "Vêtements raffinés",
+            "description": {
+                "public": "<p>Un ensemble royal de vêtements raffinés, parfait pour assister à des célébrations et des réceptions mondaines, comprend un pardessus ou une robe, un mouchoir ou une cravate, une chemise ou un corset de qualité, un gilet ou un corsage, un pantalon ou un jupon, une ceinture ou des bretelles, des bas et des chaussures élégantes.</p>"
+            }
+        },
+        "electrochargeFla": {
+            "name": "Ampoule de charge électrique",
             "description": {
                 "public": "<p>Un tube de verre scellé, rempli d'un liquide jaune, explose lorsqu'il se brise, créant une décharge électrique soudaine.</p>",
                 "private": "<p></p><p>Principalement utilisés pour alimenter de petites machines électromécaniques pendant de courtes périodes, ces récipients alchimiques sont relativement instables et réagissent mal au contact de l'air, ce qui en fait des explosifs improvisés utiles, bien qu'imprévisibles. Combinés en quantité suffisante et de manière appropriée, ils peuvent également alimenter des appareils plus importants et libérer une énergie électrique encore plus grande.</p>"
             },
-            "name": "Ampoule de charge électrique",
             "actions": {
-                "Electrocharge Ampoule": {
+                "electrochargeAmpoule": {
                     "name": "Ampoule de charge électrique",
                     "description": "<p>Vous lancez l'@ref[name], infligeant des dégâts amoindris d'<strong>Électricité</strong> à tous les ennemis dans le rayon de la décharge et les laissant @Condition[staggered] brièvement. Le rayon de la <strong>Décharge</strong> dépend de la qualité de la bombe :</p><ul><li><p><strong>Bâclée</strong> - 3 pieds</p></li><li><p><strong>Commune</strong> - 4 pieds</p></li><li><p><strong>Raffinée</strong> - 6 pieds</p></li><li><p><strong>Supérieure</strong> - 8 pieds</p></li><li><p><strong>Chef-d’œuvre</strong> - 10 pieds</p></li></ul>",
                     "effects": {
@@ -1293,19 +364,61 @@
                 }
             }
         },
-        "Focusing Pearl": {
+        "enchantersPortab": {
+            "name": "Établi d'enchanteur portatif",
+            "description": {
+                "public": "<p>Une boîte en bois pliable qui se déplie pour former un petit autel décoratif. Elle contient un bol à offrandes en pierre, un tapis en cuir pour protéger la surface de travail et un espace de rangement pour les baguettes magiques, les bougies rituelles, les sachets d'encens et les outils de gravure.</p>"
+            }
+        },
+        "enchantersToolki": {
+            "name": "Kit d'enchanteur",
+            "description": {
+                "public": "<p>n coffret en bois recouvert de cuir. Il contient des bougies rituelles, un petit bol à offrandes, des sachets d'encens et des réactifs en poudre, ainsi qu'un tapis en tissu servant de surface de travail.</p>"
+            }
+        },
+        "expandedToolbelt": {
+            "name": "Ceinture porte-outils optimisée",
+            "description": {
+                "public": "<p>Une ceinture porte-outils optimisée, sous forme de ceinture utilitaire, de bandoulière ou d'un ensemble de poches cousues dans votre équipement.</p><p>Cet objet procure une nombre d'emplacements supplémentaires dépendant de son niveau de qualité :</p><ul><li><p><strong>Commune</strong> : +1 Emplacement de ceinture porte-outils</p></li><li><p><strong>Raffinée</strong> : +2 Emplacements de ceinture porte-outils</p></li><li><p><strong>Supérieure</strong> : +3 Emplacements de ceinture porte-outils</p></li><li><p><strong>Chef-d’œuvre</strong> : +4 Emplacements de ceinture porte-outils</p></li></ul>"
+            }
+        },
+        "firestarter00000": {
+            "name": "Allume-feu",
+            "description": {
+                "public": "<p>Une petite bourse en cuir ciré contenant des fibres végétales sèches et broyées et des copeaux de bois, avec un petit fermoir intérieur pour fixer un morceau de silex et un anneau de percussion en acier pour allumer des feux.</p>"
+            }
+        },
+        "fishingPole00000": {
+            "name": "Canne à pêche",
+            "description": {
+                "public": "<p>Une canne en bois pliable, munie d'anneaux métalliques et d'un support pour y accrocher une ligne. Se range facilement dans ou à côté d'un sac à dos.</p>"
+            }
+        },
+        "flameStaff000000": {
+            "name": "Bâton de flamme",
+            "description": {
+                "public": "<p>Ce bâton de mage est un talisman destiné à faciliter la sorcellerie ou à projeter des jets de flammes arcaniques sur les ennemis.</p>"
+            }
+        },
+        "fletchersToolkit": {
+            "name": "Kit de Flechier",
+            "description": {
+                "public": "<p>Un carquois en cuir à extrémité refermable, contenant un étau à monter, un rabot à rayons, des brosses et un petit dévidoir pour enrouler de la corde tressée. Déplié, il se transforme en tapis pouvant servir de plan de travail.</p>"
+            }
+        },
+        "focusingPearl000": {
             "name": "Perle de focalisation",
             "description": {
                 "public": "<blockquote><p>Une petite perle d'un bleu éclatant, agréablement fraîche au toucher quelle que soit la température ambiante.</p></blockquote><p>Cette perle enchantée offre à son porteur l'action <strong>Restauration de focus</strong>, constituant une réserve supplémentaire de <strong>Focus</strong> qui peut être utilisée dans les moments difficiles.</p>",
                 "private": "<p>Cet objet est présenté à tire d'exemple comme une Perle raffinée avec le préfixe @UUID[Compendium.crucible.affixes.ActiveEffect.focusing00000000]{Focalisation}.</p><p>Cet affixe peut être appliqué à n'importe quel accessoire et cette perle pourrait être encore enchantée avec un suffixe de Palier 1.</p>"
             },
             "effects": {
-                "Focusing": {
+                "focusing00000000": {
                     "name": "Focalisation",
                     "description": "<p>Fournit l'action <strong>Restauration de focus</strong>, permettant au porteur de récupérer du <strong>Focus</strong> dans les moments difficiles. Le montant restauré dépend du <strong>Palier</strong> de ce préfixe.</p>",
                     "adjective": "Focalisation",
                     "actions": {
-                        "Replenish Focus": {
+                        "affixFocusing": {
                             "name": "Restauration de focus",
                             "description": "<p>En cas de difficulté, vous pouvez puiser dans une réserve supplémentaire de <strong>Focus</strong> depuis cet objet. Le montant de Focus restauré dépend du <strong>Palier</strong> de ce préfixe.</p><ul><li><p><strong>Palier 1 :</strong> <strong>4 Focus</strong></p></li><li><p><strong>Palier 2 :</strong> <strong>6 Focus</strong></p></li><li><p><strong>Palier 3 :</strong> <strong>8 Focus</strong></p></li></ul>"
                         }
@@ -1313,14 +426,14 @@
                 }
             }
         },
-        "Frostdrop Phial": {
+        "frostdropFlask00": {
             "name": "Fiole de gouttes de givre",
             "description": {
                 "public": "<p>Une suspension de cristaux blancs dans un liquide bleu contenu dans un récipient en verre scellé. Son contenu s'évapore rapidement au contact de l'air, créant une petite explosion de liquide glacé qui recouvre les objets environnants d'un film de glace.</p>",
                 "private": "<p></p><p>Principalement utilisées pour refroidir rapidement les composés métallurgiques en forge de pointe, ces fioles alchimiques peuvent être très dangereuses pour les tissus vivants en cas d'exposition prolongée.</p>"
             },
             "actions": {
-                "Frostdrop Flask": {
+                "frostFlask": {
                     "name": "Flacon de gouttes de givre",
                     "description": "<p>Vous lancez la @ref[name], infligeant des dégâts amoindris de <strong>Froid</strong> à tous les ennemis dans le rayon de l'explosion et les rendant @Condition[slowed] brièvement. Le rayon de l'<strong>Explosion</strong> dépend de la qualité de la bombe :</p><ul><li><p><strong>Bâclée</strong> - 3 pieds</p></li><li><p><strong>Commune</strong> - 4 pieds</p></li><li><p><strong>Raffinée</strong> - 6 pieds</p></li><li><p><strong>Supérieure</strong> - 8 pieds</p></li><li><p><strong>Chef-d’œuvre</strong> - 10 pieds</p></li></ul>",
                     "effects": {
@@ -1331,31 +444,31 @@
                 }
             }
         },
-        "Gem Of Conjured Flame": {
+        "gemConjuredFlame": {
             "name": "Gemme de conjuration de flamme",
             "description": {
                 "public": "<p>Une gemme brute aux multiples facettes, imprégnée d'énergies élémentaires. Lorsqu'elle est lancée, cette gemme se brise et invoque un esprit élémentaire sous le contrôle de celui qui l'a brisée. Sa qualité détermine le niveau de l'élémentaire invoqué.</p>"
             },
             "actions": {
-                "Summon Flame Elemental": {
+                "gemOfConjuredFlame": {
                     "name": "Invocation d'élémentaire de feu",
                     "description": "<p>La @ref[name] se brise dans une explosion de flammes, laissant à sa place un élémentaire flamboyant. Les élémentaires invoqués par cette gemme restent 6 Rounds (1 minute).</p><ul><li><p><strong>Bâclée</strong> - Aucun élémentaire n'est invoqué</p></li><li><p><strong>Commune</strong> - Particule</p></li><li><p><strong>Raffinée</strong> - Lutin</p></li><li><p><strong>Supérieure</strong> - Visiteur</p></li><li><p><strong>Chef-d’œuvre</strong> - Vagabond</p></li></ul>"
                 }
             }
         },
-        "Gem of Illumination": {
+        "gemOfIlluminatio": {
             "name": "Gemme d'illumination",
             "description": {
                 "public": "<blockquote><p>Cette pierre précieuse soigneusement taillée brille d'une douce lumière chaude et est agréable au toucher.</p></blockquote><p>Cette gemme enchantée confère au porteur l'action <strong>Activer l'illumination</strong>, projetant une lumière surnaturelle dans un large rayon jusqu'à son interruption.</p>",
                 "private": "<p>Cet objet est présenté à titre d'exemple comme une Gemme raffinée avec le préfixe@UUID[Compendium.crucible.affixes.ActiveEffect.luminous00000000]{Lumineux}.</p><p>Cet affixe peut être appliqué à n'importe quel accessoire et cette gemme pourrait être encore enchantée avec un suffixe de Palier 1.</p>"
             },
             "effects": {
-                "Luminous": {
+                "luminous00000000": {
                     "name": "Lumineux",
                     "description": "<p>Confère l'action <strong>Activer l'illumination</strong>, permettant au porteur de projeter une lumière surnaturelle. Le rayon de cette lumière est proportionnel au <strong>Palier</strong> de cet affixe.</p>",
                     "adjective": "Lumineux",
                     "actions": {
-                        "Activate Illumination": {
+                        "affixLuminous": {
                             "name": "Activer l'illumination",
                             "description": "<p>Vous prononcez le mot de commande et la @ref[name] s'illumine d'une lueur stable et surnaturelle. Le rayon de lumière vive émise dépend du <strong>Palier</strong> de ce préfixe, avec un rayon supplémentaire de lumière tamisée s'étendant à une distance égale au-delà.</p><ul><li><p><strong>Palier 1 :</strong> 20 pieds de lumière vive, 40 pieds de lumière tamisée</p></li><li><p><strong>Palier 2 :</strong> 40 pieds de lumière vive, 80 pieds de lumière tamisée</p></li><li><p><strong>Palier 3 :</strong> 60 pieds de lumière vive, 120 pieds de lumière tamisée</p></li></ul> <p>La lumière persiste jusqu'à ce que vous désactiviez l'effet ou retiriez l'objet.</p>"
                         }
@@ -1363,19 +476,357 @@
                 }
             }
         },
-        "Lantern Oil": {
+        "glaive0000000000": {
+            "name": "Coutille",
+            "description": {
+                "public": "<p>Arme d'hast dotée d'une lame courbe semblable à une épée fixée à l'extrémité d'un long manche, la coutille tranche les ennemis par de larges coups en arc de cercle.</p>"
+            }
+        },
+        "glue000000000000": {
+            "name": "Colle",
+            "description": {
+                "public": "<p>Un flacon de colle animale ordinaire.</p>"
+            }
+        },
+        "glyphweaversPort": {
+            "name": "Établi de tisseur de glyphe portatif",
+            "description": {
+                "public": "<p>Une boîte en bois pliable qui se déplie pour former un petit établi servant de surface de travail pour la fabrication de glyphes. Elle contient des ciseaux et des poinçons à graver, un marteau de lapidaire, un tapis décoratif en cuir et un espace de rangement pour les glyphes et autres matériaux rituels.</p>"
+            }
+        },
+        "glyphweaversTool": {
+            "name": "Kit de tisseur de glyphe",
+            "description": {
+                "public": "<p>Une trousse en bois recouverte de cuir. Contient des ciseaux et des poinçons à graver, un marteau de lapidaire, un tapis décoratif en cuir et un espace pour ranger les glyphes et autres matériaux rituels.</p>"
+            }
+        },
+        "grapnel000000000": {
+            "name": "Grappin",
+            "description": {
+                "public": "<p>Un simple crochet en acier à deux ou quatre branches conçu pour être utilisé avec une corde ou une chaîne afin de fixer une corde à des structures en bois.</p>"
+            }
+        },
+        "greataxe00000000": {
+            "name": "Hache à deux mains",
+            "description": {
+                "public": "<p>Arme imposante dotée d'une large tête, souvent à double tranchant, la hache à deux mains est conçue pour porter des coups dévastateurs, fauchant hommes et bêtes avec une force terrible.</p>"
+            }
+        },
+        "greatclub0000000": {
+            "name": "Massue",
+            "description": {
+                "public": "<p>Une longueur noueuse de bois épais, parfois cloutée de fer, la massue est une arme rudimentaire mais redoutable, dangereuse même entre des mains inexpérimentées.</p>"
+            }
+        },
+        "greatHammer00000": {
+            "name": "Marteau à deux mains",
+            "description": {
+                "public": "<p>Cette arme monstrueuse à deux mains est dotée d'une tête massive en fer ou en pierre, capable de broyer armures, os et volontés d'un seul coup tonitruant.</p>"
+            }
+        },
+        "greatsword000000": {
+            "name": "Épée à deux mains",
+            "description": {
+                "public": "<p>Plus longue et plus lourde qu'une épée longue standard, l'épée à deux mains est une lame conçue pour de puissantes frappes circulaires, sa longueur imposant à la fois allonge et crainte.</p>"
+            }
+        },
+        "grimoire00000000": {
+            "name": "Grimoire",
+            "description": {
+                "public": "<p>Cet ouvrage lourd sert à la fois de recueil de connaissances et d'instrument de sorcellerie. Entre les mains d'un praticien des arcanes, il peut projeter des rafales percutantes de force vers une cible.</p>"
+            }
+        },
+        "hacksaw000000000": {
+            "name": "Scie à métaux",
+            "description": {
+                "public": "<p>Un outil manuel courant utilisé pour couper le métal.</p>"
+            }
+        },
+        "halberd000000000": {
+            "name": "Hallebarde",
+            "description": {
+                "public": "<p>Combinant une lame de hache, une pointe de lance et un crochet sur un seul manche, la hallebarde est une arme polyvalente capable de percer, de fendre ou de coincer les armes pour des contre-attaques.</p>"
+            }
+        },
+        "hammer0000000000": {
+            "name": "Marteau",
+            "description": {
+                "public": "<p>Outil à main courant utilisé en menuiserie ou en métallurgie. Non conçu pour le combat.</p>"
+            }
+        },
+        "handAxe000000000": {
+            "name": "Hachette",
+            "description": {
+                "public": "<p>Compacte et redoutable, la hachette est une arme de jet à une main, dotée d'un manche court et d'une lame tranchante, idéale pour le lancer ou les frappes rapprochées où la vitesse prime sur la précision.</p>"
+            }
+        },
+        "handCrossbow0000": {
+            "name": "Arbalète de poing",
+            "description": {
+                "public": "<p>Cette arbalète de poche privilégie la discrétion à la puissance, idéale pour les tirs surprises à courte portée ou le dernier carreau désespéré d'un voleur acculé.</p>"
+            }
+        },
+        "handmirror000000": {
+            "name": "Miroir à main",
+            "description": {
+                "public": "<p>Un simple morceau de verre poli, portatif, avec un support métallique réfléchissant, qui permet de voir son reflet.</p>"
+            }
+        },
+        "handsaw000000000": {
+            "name": "Scie",
+            "description": {
+                "public": "<p>Un outil manuel courant utilisé pour couper le bois.</p>"
+            }
+        },
+        "harness000000000": {
+            "name": "Harnais",
+            "description": {
+                "public": "<p>Un harnais ajustable en cuir et en acier, conçu pour s'adapter à un torse humanoïde, pouvant être utilisé avec une corde ou une chaîne pour faciliter l'escalade ou à des fins de contention.</p>"
+            }
+        },
+        "healersToolkit00": {
+            "name": "Kit de guérisseur",
+            "description": {
+                "public": "<p>Une trousse en bois recouverte de cuir. Elle contient des bandages, une bouteille d'alcool alchimique, une aiguille et du fil, ainsi qu'une variété de petites herbes et de composés utilisés pour traiter les maladies et les blessures courantes.</p>"
+            }
+        },
+        "healingElixir000": {
+            "name": "Élixir de santé",
+            "description": {
+                "public": "<p>Cette potion contient une formule alchimique spéciale pour refermer rapidement les blessures et améliorer la santé corporelle.</p>"
+            },
+            "actions": {
+                "healingElixir": {
+                    "name": "Élixir de santé",
+                    "description": "<p>Recouvrez immédiatement un montant de <strong>Santé</strong> dépendant de la qualité de l'élixir.</p><ul><li><p><strong>Bâclée</strong> - Soigne immédiatement 6 points de <strong>Santé</strong>.</p></li><li><p><strong>Commune</strong> - Soigne immédiatement 12 points de <strong>Santé</strong>.</p></li><li><p><strong>Raffinée</strong> - Soigne immédiatement 24 points de <strong>Santé</strong>.</p></li><li><p><strong>Supérieure</strong> - Soigne immédiatement 48 points de <strong>Santé</strong>.</p></li><li><p><strong>Chef-d’œuvre</strong> - Soigne immédiatement 96 points de <strong>Santé</strong>.</p></li></ul>"
+                }
+            }
+        },
+        "healingTonic0000": {
+            "name": "Stimulant de santé",
+            "description": {
+                "public": "<p>Cette potion contient une formule alchimique spéciale pour refermer progressivement les blessures et améliorer la santé corporelle.</p>"
+            },
+            "actions": {
+                "healingTonic": {
+                    "name": "Stimulant de santé",
+                    "description": "<p>Recouvrez immédiatement, et au début de chacun des 5 prochains <strong>Rounds</strong>, un montant de <strong>Santé</strong> dépendant de la qualité du stimulant.</p><ul><li><p><strong>Bâclée</strong> - Soigne 2 points de <strong>Santé</strong> à chaque Round</p></li><li><p><strong>Commune</strong> - Soigne 4 points de <strong>Santé</strong> à chaque Round</p></li><li><p><strong>Raffinée</strong> - Soigne 8 points de <strong>Santé</strong> à chaque Round</p></li><li><p><strong>Supérieure</strong> - Soigne 16 points de <strong>Santé</strong> à chaque Round</p></li><li><p><strong>Chef-d’œuvre</strong> - Soigne 32 points de <strong>Santé</strong> à chaque Round</p></li></ul>",
+                    "effects": {
+                        "Healing Tonic": {
+                            "name": "Stimulant de santé"
+                        }
+                    }
+                }
+            }
+        },
+        "heaterShield0000": {
+            "name": "Écu",
+            "description": {
+                "public": "<p>Également appelé bouclier chauffant en raison de sa forme en fer rappelant la base d'un fer à repasser, l'écu offre un équilibre entre protection et mobilité.</p>"
+            }
+        },
+        "heavyCrossbow000": {
+            "name": "Arbalète lourde",
+            "description": {
+                "public": "<p>Arbalète puissante à branches d'acier, nécessitant une manivelle ou un levier pour être armée, elle projette des carreaux dévastateurs capables de perforer les armures ou de clouer les ennemis aux murs.</p>"
+            }
+        },
+        "heavyHides000000": {
+            "name": "Armure de peaux",
+            "description": {
+                "public": "<p>Fabriquées à partir de peaux durcies de grandes bêtes ou de monstres, ces armures robustes sont portées par les chasseurs et les peuples sauvages, offrant une défense durable — mais rudimentaire — sur le terrain.</p>"
+            }
+        },
+        "helm000000000000": {
+            "name": "Heaume",
+            "description": {
+                "public": "<p>Un casque basique à visière ouverte en cuir durci.</p>",
+                "private": "<p>Il s'agit d'un modèle d'accessoire de base destiné à être amélioré en qualité et enchanté avec des affixes.</p>"
+            }
+        },
+        "holySymbol000000": {
+            "name": "Symbole sacré",
+            "description": {
+                "public": "<p>Ce talisman est une proclamation visible de la foi de son porteur et du pouvoir qu'il lui confère. Au combat, il peut être utilisé pour projeter un rayon de lumière intense et radiante sur un ennemi.</p>",
+                "private": "<p>Le type de dégâts infligés par ce talisman peut être adapté au domaine de la divinité vénérée par son porteur.</p>"
+            }
+        },
+        "iceStaff00000000": {
+            "name": "Bâton de glace",
+            "description": {
+                "public": "<p>Ce bâton de mage est un talisman permettant de faciliter la sorcellerie ou de projeter des rafales de glace hivernale sur les ennemis.</p>"
+            }
+        },
+        "incense000000000": {
+            "name": "Encens",
+            "description": {
+                "public": "<p>Bâtonnets ou cônes de résine, de poudre de bois et d'huiles florales conçus pour dégager une fumée odorante lorsqu'ils brûlent. Chaque paquet contient 12 pièces individuelles.</p>"
+            }
+        },
+        "ink0000000000000": {
+            "name": "Encre",
+            "description": {
+                "public": "<p>Un flacon d'encre à écrire ordinaire.</p>"
+            }
+        },
+        "javelin000000000": {
+            "name": "Javeline",
+            "description": {
+                "public": "<p>Dotée d'une pointe métallique acérée fixée au sommet d'une longue tige, la javeline est suffisamment légère pour être lancée mais suffisamment robuste pour rester utile en combat rapproché.</p>"
+            }
+        },
+        "jewelersPortable": {
+            "name": "Établi de joaillier portatif",
+            "description": {
+                "public": "<p>Une boîte en bois peu profonde, recouverte de cuir, contenant une meule pliable, une pierre à aiguiser et une pierre à polir, un marteau de lapidaire et une petite enclume en acier, laissant suffisamment d'espace pour ranger en toute sécurité les projets en cours lors des déplacements.</p>"
+            }
+        },
+        "jewelersToolkit0": {
+            "name": "Kit de joaillier",
+            "description": {
+                "public": "<p>Une trousse en bois recouverte de cuir. Elle contient des limes, un pied à coulisse, une petite meule, des pâtes à polir, des chiffons et un assortiment de réglages économiques. La trousse se déplie complètement pour offrir une surface de travail lisse.</p>"
+            }
+        },
+        "katana0000000000": {
+            "name": "Katana",
+            "description": {
+                "public": "<p>Forgé avec une précision méticuleuse, le katana est une lame courbe à un seul tranchant en acier plié, dont la grâce mortelle reflète la discipline de celui qui le manie.</p>"
+            }
+        },
+        "katar00000000000": {
+            "name": "Katar",
+            "description": {
+                "public": "<p>Dague de poing à lame droite et poignée horizontale, le katar frappe avec une force brutale, conçu pour percer armures et entrailles d'un seul coup direct.</p>"
+            }
+        },
+        "KdlUUFhAnpv6YIHT": {
+            "name": "Fiole explosive",
+            "description": {
+                "public": "<p>Une fiole remplie d'un liquide rougeâtre explose lorsqu'elle se brise, créant un petit feu explosif qui se dissipe rapidement.</p>",
+                "private": "<p></p><p>Principalement utilisées pour briser de gros morceaux de minerai, ces fioles alchimiques renferment une puissance concentrée. Combinés en quantité suffisante, elles peuvent également être utilisés pour créer une réaction en chaîne qui engendre des explosions plus importantes.</p>"
+            },
+            "actions": {
+                "blastFlask": {
+                    "name": "Fiole explosive",
+                    "description": "<p>Vous allumez et lancez la @ref[name], infligeant des dégâts de <strong>Feu</strong> à tous les ennemis dans le rayon de l'explosion. Le rayon de l'<strong>Explosion</strong> dépend de la qualité de la bombe :</p><ul><li><p><strong>Bâclée</strong> - 3 pieds</p></li><li><p><strong>Commune</strong> - 4 pieds</p></li><li><p><strong>Raffinée</strong> - 6 pieds</p></li><li><p><strong>Supérieure</strong> - 8 pieds</p></li><li><p><strong>Chef-d’œuvre</strong> - 10 pieds</p></li></ul>"
+                }
+            }
+        },
+        "kiteShield000000": {
+            "name": "Bouclier en amande",
+            "description": {
+                "public": "<p>Haut et fuselé pour une protection intégrale, le bouclier en amande épouse la forme du corps de celui qui le porte et est plébiscité par la cavalerie et l'infanterie pour son excellente couverture et sa silhouette emblématique.</p>"
+            }
+        },
+        "lantern000000000": {
+            "name": "Lanterne",
+            "description": {
+                "public": "<p>Une lanterne à huile ou illuminée magiquement qui projette une lumière vive dans un rayon de 20 pieds et une lumière tamisée dans un rayon de 40 pieds.</p>"
+            },
+            "actions": {
+                "lightLantern": {
+                    "name": "Allumer une lanterne",
+                    "description": "<p>Vous allumez la @ref[name], produisant un éclairage constant dans un large rayon. Cette action consume une unité de @UUID[Compendium.crucible.equipment.Item.lanternOil000000]{Huile pour lanterne} de votre inventaire ; la durée de combustion dépend de la qualité de l'huile consommée :</p><ul><li><p><strong>Bâclée</strong> - 1 heure</p></li><li><p><strong>Commune</strong> - 4 heures</p></li><li><p><strong>Raffinée</strong> - 12 heures</p></li><li><p><strong>Supérieure</strong> - 24 heures</p></li><li><p><strong>Chef-d’œuvre</strong> - 48 heures</p></li></ul>",
+                    "effects": {
+                        "Lantern": {
+                            "name": "Lanterne"
+                        }
+                    }
+                }
+            }
+        },
+        "lanternOil000000": {
             "name": "Huile pour lanterne",
             "description": {
                 "public": "<p>Une petite fiole d'huile à brûler. Une unité d'Huile pour lanterne est consommée pour allumer une @UUID[Compendium.crucible.equipment.Item.lantern000000000]{Lanterne} ; la durée de combustion dépend de la qualité de l'huile :</p><ul><li><p><strong>Bâclée</strong> - 1 heure</p></li><li><p><strong>Commune</strong> - 4 heures</p></li><li><p><strong>Raffinée</strong> - 12 heures</p></li><li><p><strong>Supérieure</strong> - 24 heures</p></li><li><p><strong>Chef-d’œuvre</strong> - 48 heures</p></li></ul>"
             }
         },
-        "Omniglot Decoction": {
+        "leatherArmor0000": {
+            "name": "Armure de cuir",
+            "description": {
+                "public": "<p>Fabriquée à partir de cuir épais bouilli et durci en panneaux ou en cuirasse, l'armure de cuir offre une protection légère idéale pour les éclaireurs, les brigands et les querelleurs légèrement armés.</p>"
+            }
+        },
+        "lockpicks0000000": {
+            "name": "Set de crochetage",
+            "description": {
+                "public": "<p>Un ensemble de longues et fines goupilles métalliques aux extrémités légèrement recourbées, conçues pour manipuler les mécanismes internes des serrures, et une barre métallique permettant d'appliquer une torsion. Entre de bonnes mains, elles peuvent ouvrir les serrures aussi efficacement qu'une clé.</p>"
+            }
+        },
+        "longbow000000000": {
+            "name": "Arc long",
+            "description": {
+                "public": "<p>Un arc long, souvent plus grand que l'archer qui le bande, nécessite une force considérable et des années d'entraînement pour être maîtrisé, et permet de propulser des flèches d'une force mortelle à travers le champ de bataille.</p>"
+            }
+        },
+        "longsword0000000": {
+            "name": "Épée longue",
+            "description": {
+                "public": "<p>L'épée longue est une lame à double tranchant maniée à deux mains pour plus d'équilibre et de force, généralement munie d'une grande garde croisée servant à parer les coups.</p>"
+            }
+        },
+        "luminaryBand0000": {
+            "name": "Anneau luminaire",
+            "description": {
+                "public": "<blockquote><p>Un anneau d’or finement gravé, serti d’une gemme ovale orange aux reflets scintillants.</p></blockquote><p>Cet anneau enchanté offre des faveurs aux actions <strong>Composées</strong> qui incluent une <strong>Inflexion</strong>.</p>",
+                "private": "<p>Cet objet est présenté à titre d'exemple comme un Anneau raffiné avec le préfixe @UUID[Compendium.crucible.affixes.ActiveEffect.luminary00000000]{Astral}.</p><p>Cet affixe peut être appliqué à n'importe quel accessoire et cet anneau pourrait être encore enchanté avec un suffixe de Palier 1.</p>"
+            },
+            "effects": {
+                "luminary00000000": {
+                    "name": "Astre",
+                    "description": "<p>Obtient des Faveurs pour les actions <strong>Composées</strong> qui incluent une <strong>Inflexion</strong>. Le nombre de faveurs obtenues est égal au <strong>Palier</strong> de ce préfixe.</p>",
+                    "adjective": "Astral"
+                }
+            }
+        },
+        "lyre000000000000": {
+            "name": "Lyre",
+            "description": {
+                "public": "<p>Instrument à cordes à cadre incurvé, la lyre est un instrument de prédilection de nombreux bardes ou conteurs itinérants qui utilisent la musique pour amplifier leur magie ou leur éloquence.</p>"
+            }
+        },
+        "mace000000000000": {
+            "name": "Masse d’armes",
+            "description": {
+                "public": "<p>Une arme contondante à une main dotée d'une tête lourde, généralement en métal, qui convertit l'élan du coup de son utilisateur en un impact fracassant les os.</p>"
+            }
+        },
+        "mealkit000000000": {
+            "name": "Vaisselle de voyage",
+            "description": {
+                "public": "<p>Une pochette en cuir contenant une tasse en métal, une assiette, une fourchette et un morceau de chiffon pour les essuyer.</p>"
+            }
+        },
+        "messengerCoin000": {
+            "name": "Pièce de communication",
+            "description": {
+                "public": "<p>Une petite pièce de laiton ornée d'un large visage souriant et de petits yeux rouges grenat. Elle est frappée d'une séquence spécifique de symboles qui la relient à une pièce jumelle, permettant ainsi à leurs détenteurs de communiquer sur de grandes distances.</p><p>Si vous tenez la pièce et que vous lui parlez, elle se connecte immédiatement à sa jumelle et se met à parler fort, restituant ce que vous dites et ce qui est répondu. La connexion dure jusqu'à 1 minute avant d'être interrompue. Chaque pièce peut être utilisée une fois par repos long.</p><p>La pièce peut être utilisée 5 fois après quoi sa magie s'estompe, la rendant presque sans valeur.</p>"
+            }
+        },
+        "net0000000000000": {
+            "name": "Filet",
+            "description": {
+                "public": "<p>Ces fibres à tissage serré sont renforcées pour être utilisées au combat afin de piéger et d'emmêler même les ennemis les plus dangereux, les rendant vulnérables.</p>"
+            },
+            "actions": {
+                "net": {
+                    "name": "Jeté de filet",
+                    "description": "<p>La cible capturée par le filet lancé est @Condition[restrained] jusqu'à ce qu'elle puisse se libérer.</p>",
+                    "effects": {
+                        "Netted": {
+                            "name": "Ficelé"
+                        }
+                    }
+                }
+            }
+        },
+        "omniglotDecoctio": {
+            "name": "Décoction omniglotte",
             "description": {
                 "public": "<p>Un liquide étonnamment fluide au goût terreux et herbacé.</p>"
             },
-            "name": "Décoction omniglotte",
             "actions": {
-                "Omniglot Decoction": {
+                "omniglotDecoction": {
                     "name": "Décoction omniglotte",
                     "description": "<p>Consommée, cette décoction confère à celui qui la boit la fascinante capacité de lire, de parler et de comprendre les langues. Sa qualité détermine la durée de l'effet :</p><ul><li><p><strong>Bâclée</strong> - 10 minutes</p></li><li><p><strong>Commune</strong> - 1 heure</p></li><li><p><strong>Raffinée</strong> - 4 heures</p></li><li><p><strong>Supérieure</strong> - 12 heures</p></li><li><p><strong>Chef-d’œuvre</strong> - 24 heures</p></li></ul>",
                     "effects": {
@@ -1384,6 +835,555 @@
                         }
                     }
                 }
+            }
+        },
+        "paddedArmor00000": {
+            "name": "Armure matelassée",
+            "description": {
+                "public": "<p>Composée de couches de tissu matelassées remplies de chiffons ou de laine, l'armure matelassée protège le corps des chocs et sert de base sous les équipements plus lourds.</p>"
+            }
+        },
+        "paralyticVial000": {
+            "name": "Fiole paralytique",
+            "description": {
+                "public": "<p>Ce petit flacon contient un liquide huileux nettement plus épais que l'eau. Il dégage une odeur âcre qui met mal à l'aise.</p>"
+            },
+            "actions": {
+                "paralyticIngest": {
+                    "name": "Ingestion paralytique",
+                    "description": "<p>Lorsque cette toxine est ingérée ou pénètre d'une autre manière dans le flux sanguin d'une créature, cela est initialement <strong>Inoffensif</strong>, mais la cible doit se défendre d'une attaque contre sa <strong>Fortitude</strong> ou être @Condition[paralyzed].</p><p>La durée dépend de la qualité de la @ref[name]{fiole} :</p><ul><li><p><strong>Bâclée</strong> - 1 rounds</p></li><li><p><strong>Commune</strong> - 2 rounds</p></li><li><p><strong>Raffinée</strong> - 4 rounds</p></li><li><p><strong>Supérieure</strong> - 8 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - Indéfini</p></li></ul><p><em>Cette action doit être prise lorsque le poison est ingéré plutôt que lors de sa première application.</em></p>",
+                    "effects": {
+                        "Paralytic Toxin": {
+                            "name": "Toxine paralytique"
+                        }
+                    }
+                },
+                "paralyticApply": {
+                    "name": "Contact paralytique",
+                    "description": "<p>Le contenu de ce flacon peut être ajouté à des aliments ou des boissons, appliqué sur une arme blanche ou combiné à un autre mode d'administration.</p><p><em>Cette action, qui consomme la quantité de poison disponible, doit être utilisée lors de sa première application.</em></p>"
+                }
+            }
+        },
+        "pen0000000000000": {
+            "name": "Plume",
+            "description": {
+                "public": "<p>Un instrument d’écriture courant utilisé par les scribes, permettant d’interchanger différentes pointes afin d’obtenir divers styles de trait.</p>"
+            }
+        },
+        "perfume000000000": {
+            "name": "Parfum",
+            "description": {
+                "public": "<p>Un soin délicat sous forme d'huiles florales parfumées, conçu pour masquer l'odeur naturelle et offrir une expérience olfactive plus agréable. Chaque petit flacon contient 20 applications.</p>"
+            }
+        },
+        "periaptOfDetermi": {
+            "name": "Périapte de détermination",
+            "description": {
+                "public": "<blockquote><p>Une élégante amulette en argent sertie de pierres précieuses bleues vous insuffle un sentiment de constance tandis que vous la serrez contre vous, prêt à affronter tous les défis.</p></blockquote><p>Ce périapte procure un bonus à la défense de <strong>Volonté</strong>.</p>",
+                "private": "<p>Cet objet est présenté à titre d'exemple comme un Périapte raffiné avec le suffixe @UUID[Compendium.crucible.affixes.ActiveEffect.determination000]{Détermination}.</p><p>Cet affixe peut être appliqué à n'importe quelle armure ou accessoire et ce périapte pourrait être encore enchanté avec un préfixe de Palier 1.</p>"
+            },
+            "effects": {
+                "determination000": {
+                    "name": "Détermination",
+                    "description": "<p>Augmente la défense de <strong>Volonté</strong> de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
+                    "adjective": "Détermination"
+                }
+            }
+        },
+        "pickaxe000000000": {
+            "name": "Pioche",
+            "description": {
+                "public": "<p>La pioche, munie d'une pointe en forme de croissant fixée au sommet d'un manche robuste, est traditionnellement un outil minier, mais peut être utilisée au combat pour porter des coups perforants dangereux.</p>"
+            }
+        },
+        "pistol0000000000": {
+            "name": "Pistolet",
+            "description": {
+                "public": "<p>Arme à feu à poudre noire primitive, à tir unique et tonitruant, le pistolet à silex est l'arme du joueur — mortel en un éclair, mais lent à recharger dans le chaos du combat.</p>"
+            }
+        },
+        "plateMail0000000": {
+            "name": "Armure de plaques",
+            "description": {
+                "public": "<p>Le summum de la protection individuelle, l'armure de plaques enveloppe le corps de plaques d'acier soigneusement ajustées, offrant une protection quasi complète tout en permettant une mobilité impressionnante à un porteur entraîné.</p>"
+            }
+        },
+        "poisonersToolkit": {
+            "name": "Kit d'empoisonneur",
+            "description": {
+                "public": "<p>Une boîte en bois recouverte de cuir orné d'un point de croix décoratif indiquant clairement qu'elle contient des marchandises dangereuses. Elle renferme un mortier et un pilon en pierre, des compartiments pour maintenir en place plusieurs fioles bouchées contenant des ingrédients toxiques, une cuillère en argent, ainsi qu'un petit cadre en fer pliable et un petit pot en laiton pour mélanger les ingrédients au-dessus d'un feu.</p>"
+            }
+        },
+        "poisonVial000000": {
+            "name": "Fiole de poison",
+            "description": {
+                "public": "<p>Ce petit flacon contient un liquide trouble, nettement plus épais que l'eau. Il dégage une odeur inquiétante qui crée un sentiment de malaise.</p>"
+            },
+            "actions": {
+                "poisonIngest": {
+                    "name": "Poison d'ingestion",
+                    "description": "<p>Lorsque cette toxine est ingérée ou entre autrement dans le sang d'une créature, elle est initialement <strong>Inoffensive</strong>, mais la cible doit se défendre d'une attaque contre sa <strong>Fortitude</strong> ou être @Condition[poisoned].</p><p>Le montant des dégâts de poison et leur durée dépendent de la qualité du @ref[name]:</p><ul><li><p><strong>Bâclée</strong> - 2 dégâts pendant 4 rounds</p></li><li><p><strong>Commune</strong> - 4 dégâts pendant 6 rounds</p></li><li><p><strong>Raffinée</strong> - 6 dégâts pendant 8 rounds</p></li><li><p><strong>Supérieure</strong> - 8 dégâts pendant 10 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - 10 dégâts pendant 12 rounds</p></li></ul><p><em>Cette action doit être utilisée lorsque le poison est ingéré plutôt que lors de sa première application.</em></p>",
+                    "effects": {
+                        "Poisoned": {
+                            "name": "Empoisonné"
+                        }
+                    }
+                },
+                "poisonApply": {
+                    "name": "Poison de contact",
+                    "description": "<p>Le contenu de ce flacon peut être ajouté à des aliments ou des boissons, appliqué sur une arme blanche ou combiné à un autre mode d'administration.</p><p><em>Cette action, qui consomme la quantité de poison disponible, doit être utilisée lors de sa première application.</em></p>"
+                }
+            }
+        },
+        "primordialSeed00": {
+            "name": "Graine primordiale",
+            "description": {
+                "public": "<p>Ce talisman, prisé des druides sensibles au pouvoir de la terre, facilite la pratique de la sorcellerie ou peut être utilisé au combat pour diriger un jet de spores empoisonnées vers un ennemi.</p>"
+            }
+        },
+        "quarterstaff0000": {
+            "name": "Bâton de combat",
+            "description": {
+                "public": "<p>Le bâton de combat, une simple canne en bois d'environ 6 à 8 pieds de long, est une arme d'un équilibre trompeur qui peut se révéler mortelle entre des mains expertes.</p>"
+            }
+        },
+        "rallyingElixir00": {
+            "name": "Élixir de ralliement",
+            "description": {
+                "public": "<p>Cette potion contient une formule alchimique spéciale pour fortifier rapidement la psyché et améliorer le moral.</p>"
+            },
+            "actions": {
+                "rallyingElixir": {
+                    "name": "Élixir de ralliement",
+                    "description": "<p>Recouvrez immédiatement un montant de <strong>Moral</strong> dépendant de la qualité de l'élixir.</p><ul><li><p><strong>Bâclée</strong> - Soigne immédiatement 6 points de <strong>Moral</strong>.</p></li><li><p><strong>Commune</strong> - Soigne immédiatement 12 points de <strong>Moral</strong>.</p></li><li><p><strong>Raffinée</strong> - Soigne immédiatement 24 points de <strong>Moral</strong>.</p></li><li><p><strong>Supérieure</strong> - Soigne immédiatement 48 points de <strong>Moral</strong>.</p></li><li><p><strong>Chef-d’œuvre</strong> - Soigne immédiatement 96 points de <strong>Moral</strong>.</p></li></ul>"
+                }
+            }
+        },
+        "rallyingTonic000": {
+            "name": "Stimulant de ralliement",
+            "description": {
+                "public": "<p>Cette potion contient une formule alchimique spéciale destinée à fortifier progressivement la psyché et à améliorer le moral.</p>"
+            },
+            "actions": {
+                "rallyingTonic": {
+                    "name": "Stimulant de ralliement",
+                    "description": "<p>Recouvrez immédiatement, et au début de chacun des 5 prochains <strong>Rounds</strong>, un montant de <strong>Moral</strong> dépendant de la qualité du stimulant.</p><ul><li><p><strong>Bâclée</strong> - Soigne 2 points de <strong>Moral</strong> à chaque Round</p></li><li><p><strong>Commune</strong> - Soigne 4 points de <strong>Moral</strong> à chaque Round</p></li><li><p><strong>Raffinée</strong>- Soigne 8 points de <strong>Moral</strong> à chaque Round</p></li><li><p><strong>Supérieure</strong> - Soigne 16 points de <strong>Moral</strong> à chaque Round</p></li><li><p><strong>Chef-d’œuvre</strong> - Soigne 32 points de <strong>Moral</strong> à chaque Round</p></li></ul>",
+                    "effects": {
+                        "Rallying Tonic": {
+                            "name": "Stimulant de ralliement"
+                        }
+                    }
+                }
+            }
+        },
+        "rapier0000000000": {
+            "name": "Rapière",
+            "description": {
+                "public": "<p>Longue, fine et d'un équilibre exquis, la rapière est l'arme de prédilection des escrimeurs, sa pointe acérée étant parfaite pour des estocs fulgurants et des duels mortels.</p>"
+            }
+        },
+        "rations000000000": {
+            "name": "Rations",
+            "description": {
+                "public": "<p>Pain sec, noix, fromage fumé et viande, constituant un repas rudimentaire permettant de survivre une journée.</p>"
+            }
+        },
+        "razor00000000000": {
+            "name": "Rasoir",
+            "description": {
+                "public": "<p>Une lame particulièrement tranchante utilisée pour le rasage ou, dans certains cas, pour la chirurgie.</p>"
+            }
+        },
+        "repairKitSmith00": {
+            "name": "Kit de réparation (forge)",
+            "description": {
+                "public": "<p>Un sac en cuir contenant des pierres à aiguiser et une meuleuse, un petit marteau, un petit creuset pour liquéfier le métal et un assortiment de petits morceaux de ferraille. Peut servir à réparer les armures, les armes et les accessoires métalliques.</p>"
+            }
+        },
+        "repairKitTailor0": {
+            "name": "Kit de réparation (couture)",
+            "description": {
+                "public": "<p>Un sac en cuir contenant des ciseaux, des aiguilles, un métier à tisser et un assortiment de petits morceaux de tissu, de cuir, de fil et de ficelle. Peut servir à réparer les armures et accessoires en tissu et en cuir.</p>"
+            }
+        },
+        "ring000000000000": {
+            "name": "Anneau",
+            "description": {
+                "public": "<p>Une simple bague sans ornement, en métal ordinaire.</p>",
+                "private": "<p>Il s'agit d'un modèle d'accessoire de base destiné à être amélioré en qualité et enchanté avec des affixes.</p>"
+            }
+        },
+        "ringMail00000000": {
+            "name": "Broigne",
+            "description": {
+                "public": "<p>La broigne est composée d'anneaux métalliques cousus sur une base matelassée, offrant un compromis entre une protection moindre que armures plus lourdes et une plus grande mobilité.</p>"
+            }
+        },
+        "ringOfEvasion000": {
+            "name": "Anneau d'évasion",
+            "description": {
+                "public": "<blockquote><p>Cette élégante bague ornée est légèrement glissante et difficile à prendre en main. Lorsqu'on la tient, elle vibre de façon presque imperceptible.</p></blockquote><p>Cet anneau enchanté procure un bonus à la défense d'<strong>Esquive</strong>.</p>",
+                "private": "<p>Cet objet est présenté à titre d'exemple comme un Anneau raffiné avec le suffixe @UUID[Compendium.crucible.affixes.ActiveEffect.evasion000000000]{Dérobade}.</p><p>Cet affixe peut être appliqué à n'importe quelle armure ou accessoire et cet anneau pourrait être encore enchanté avec un préfixe de Palier 1.</p>"
+            },
+            "effects": {
+                "evasion000000000": {
+                    "name": "Dérobade",
+                    "description": "<p>Augmente la défense d'<strong>Esquive</strong> de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
+                    "adjective": "Dérobade"
+                }
+            }
+        },
+        "ringOfGliding000": {
+            "name": "Anneau de chute lente",
+            "description": {
+                "public": "<blockquote><p>Une bague élégante en acier bleu pâle, ornée d'un motif en spirale qui donne l'illusion d'une rotation lente et perpétuelle au doigt de celui ou celle qui la porte.</p></blockquote><p>Cette bague enchantée procure la capacité de planer latéralement lors d'une chute.</p>",
+                "private": "<p>Cet objet est présenté à titre d'exemple comme un Anneau raffiné avec le préfixe @UUID[Compendium.crucible.affixes.ActiveEffect.gliding000000000]{Planeur}.</p><p>Cet affixe peut être appliqué à n'importe quel accessoire et cet anneau pourrait être encore enchanté avec un suffixe de Palier 1.</p>"
+            },
+            "effects": {
+                "gliding000000000": {
+                    "name": "Planant",
+                    "description": "<p>Fournit l'action <strong>Planant</strong>, permettant au porteur de planer latéralement durant une chute. La distance planée dépend du <strong>Palier</strong> de ce préfixe.</p>",
+                    "adjective": "Planant",
+                    "actions": {
+                        "gliding": {
+                            "name": "Planant",
+                            "description": "<p>Utilisé durant une <strong>Chute</strong>, vous pouvez vous déplacer latéralement d'un nombre d'espaces depuis votre position initiale en planant. La distance planée dépend du <strong>Palier</strong> de ce préfixe.</p><ul><li><p><strong>Palier 1 :</strong> <strong>1 pied</strong> par 20 pieds de descente.</p></li><li><p><strong>Palier 2 :</strong> <strong>2 pieds</strong> par 20 pieds de descente.</p></li><li><p><strong>Palier 3 :</strong> <strong>4 pieds</strong> par 20 pieds de descente.</p></li></ul><p>Vous ne subissez aucun dégât de chute à l'atterrissage, et n'êtes pas @Condition[prone].</p>"
+                        }
+                    }
+                }
+            }
+        },
+        "ringOfReinforcem": {
+            "name": "Anneau de renforcement",
+            "description": {
+                "public": "<blockquote><p>Cet anneau en acier reste toujours frais au toucher et donne l'impression d'être plus lourd qu'on ne le penserait compte tenu de sa finesse.</p></blockquote><p>Cet anneau enchanté procure un bonus à la défense d'<strong>Armure</strong>.</p>",
+                "private": "<p>Cet objet est présenté à titre d'exemple comme un Anneau raffiné avec le suffixe @UUID[Compendium.crucible.affixes.ActiveEffect.reinforcement000]{Renforcement}.</p><p>Cet affixe peut être appliqué à n'importe quelle armure ou accessoire et cet anneau pourrait être encore enchanté avec un préfixe de Palier 1.</p>"
+            },
+            "effects": {
+                "reinforcement000": {
+                    "name": "Renforcement",
+                    "description": "<p>Augmente la défense d'<strong>Armure</strong> de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
+                    "adjective": "Renforcement"
+                }
+            }
+        },
+        "rope000000000000": {
+            "name": "Corde",
+            "description": {
+                "public": "<p>Une corde en fibres végétales de 30 pieds de long, pouvant servir à faciliter l'escalade ou à de nombreuses autres fins.</p>"
+            }
+        },
+        "ropeLadder000000": {
+            "name": "Échelle de corde",
+            "description": {
+                "public": "<p>Un système de 25 pieds de lattes de bois et de corde nouée liés ensemble, formant un dispositif d'escalade pratique. Fixé à une extrémité, il réduit considérablement les risques de chute.</p>"
+            }
+        },
+        "roundShield00000": {
+            "name": "Bouclier rond",
+            "description": {
+                "public": "<p>Un bouclier métallique rond d'environ soixante centimètres de diamètre, qui constitue l'armement défensif de base des fantassins ne possédant pas d'entraînement spécialisé au combat au bouclier.</p>"
+            }
+        },
+        "sai0000000000000": {
+            "name": "Saï",
+            "description": {
+                "public": "<p>Arme en forme de trident dotée de pointes émoussées et d'un manche pointu, le saï est un outil de précision et de contrôle, utilisé pour coincer les lames et frapper avec un éclair de fureur maîtrisée.</p>"
+            }
+        },
+        "scaleMail0000000": {
+            "name": "Armure d’écailles",
+            "description": {
+                "public": "<p>Composée de plaques de métal superposées, cousues ou rivetées sur un support en cuir ou en tissu, l'armure d'écailles ressemble à la peau d'un dragon et protège bien contre les coupures et les coups de couteau, bien qu'elle soit bruyante et peu flexible.</p>"
+            }
+        },
+        "scimitar00000000": {
+            "name": "Cimeterre",
+            "description": {
+                "public": "<p>Avec sa large lame incurvée et son arc mortel, le cimeterre danse sur le champ de bataille, son fil tranchant les ennemis dans des coups amples et élégants.</p>"
+            }
+        },
+        "scrivenersPortab": {
+            "name": "Établi de scribe portatif",
+            "description": {
+                "public": "<p>Un coffret en bois recouvert de cuir, à peine plus grand qu'un livre. Il contient des pinceaux et des plumes de calligraphie, une aiguille et du fil, ainsi qu'un compartiment pour ranger les flacons d'encre séparément du papier plié. Une fois ouvert, le coffret se déplie pour servir de surface d'écriture plane.</p>"
+            }
+        },
+        "scrivenersToolki": {
+            "name": "Kit de scribe",
+            "description": {
+                "public": "<p>Une trousse en bois reliée en cuir. Elle contient une pochette cirée pour protéger les documents de l'humidité, un sachet de cire à cacheter, plusieurs plumes et encres, ainsi qu'une planchette en bois servant de support d'écriture.</p>"
+            }
+        },
+        "shortbow00000000": {
+            "name": "Arc court",
+            "description": {
+                "public": "<p>Compact et rapide à armer, l'arc court excelle dans l'archerie rapide et rapprochée ainsi que dans les escarmouches, et est prisé des éclaireurs, des chasseurs et des pillards agiles.</p>"
+            }
+        },
+        "shortsword000000": {
+            "name": "Épée courte",
+            "description": {
+                "public": "<p>L'épée courte est une arme à lame droite, facile et rapide à manier au corps à corps. Elle est dotée d'une garde croisée idéale pour parer les coups.</p>"
+            }
+        },
+        "shovel0000000000": {
+            "name": "Pelle",
+            "description": {
+                "public": "<p>Un outil courant à deux mains utilisé pour creuser la terre et les pierres.</p>"
+            }
+        },
+        "skullFetish00000": {
+            "name": "Fétiche du crâne",
+            "description": {
+                "public": "<p>Ce talisman macabre invoque la peur et les énergies de la mort pour faciliter la sorcellerie ou affliger les ennemis d'une influence corruptrice.</p>"
+            }
+        },
+        "sling00000000000": {
+            "name": "Fronde",
+            "description": {
+                "public": "<p>Un simple morceau de corde ou de cuir servant à projeter des pierres à grande vitesse, la fronde est l'une des plus anciennes armes de l'histoire — elle exige de l'habileté, mais se révèle redoutable entre des mains expertes.</p>"
+            }
+        },
+        "smithsPortableFo": {
+            "name": "Forge de forgeron portative",
+            "description": {
+                "public": "<p>Un chaudron en fer épais, doublé d'argile et étanche, percé d'un trou pour fixer un soufflet manuel et d'une petite ouverture pour y introduire le métal à chauffer. Un soufflet et une petite enclume sont inclus. Cet outil lourd permet au forgeron d'exercer son métier en déplacement, bien que son transport puisse exiger une bonne condition physique. Il convient à la fabrication de la plupart des outils et armes métalliques courants, mais s'avère insuffisant pour un travail de haute qualité.</p>"
+            }
+        },
+        "smithsToolkit000": {
+            "name": "Kit de forgeron",
+            "description": {
+                "public": "<p>Une trousse en bois recouverte de cuir. Elle contient des poinçons, des pinces, de la ferraille et une petite enclume, ainsi qu'un espace pour ranger des morceaux de ferraille.</p>"
+            }
+        },
+        "soap000000000000": {
+            "name": "Savon",
+            "description": {
+                "public": "<p>Un pain de savon de nettoyage courant utilisé pour l'hygiène personnelle. Chaque pain contient environ 20 utilisations.</p>"
+            }
+        },
+        "spear00000000000": {
+            "name": "Lance",
+            "description": {
+                "public": "<p>Arme de portée et de rythme, la lance est dotée d'un long manche à pointe d'acier, idéale pour tenir la ligne ou pour lancer avec une force mortelle depuis un mur de boucliers.</p>"
+            }
+        },
+        "spellband0000000": {
+            "name": "Bague de stockage",
+            "description": {
+                "public": "<blockquote><p>Cette bague est composée d'une pierre opaque soigneusement sculptée en couches gracieuses et fluides, évoquant une esthétique ancienne. L'anneau sert de puissant focalisateur de sorts pour le porteur <strong>Investi</strong>.</p></blockquote><p>Cette bague enchantée procure la capacité de puiser dans une réserve supplémentaire de <strong>Focus</strong> dans les moment difficiles.</p>",
+                "private": "<p>Cet objet est présenté à titre d'exemple comme un Anneau raffiné avec le préfixe @UUID[Compendium.crucible.affixes.ActiveEffect.focusing00000000]{Focus de réserve}.</p><p>Cet affixe peut être appliqué à n'importe quel accessoire et cet anneau pourrait être encore enchanté avec un suffixe de Palier 1.</p>"
+            },
+            "effects": {
+                "focusing00000000": {
+                    "name": "Focalisation",
+                    "description": "<p>Fournit l'action <strong>Restauration de focus</strong>, permettant au porteur de récupérer du <strong>Focus</strong> dans les moments difficiles. Le montant restauré dépend du <strong>Palier</strong> de ce préfixe.</p>",
+                    "adjective": "Focalisation",
+                    "actions": {
+                        "affixFocus": {
+                            "name": "Restauration de focus",
+                            "description": "<p>En cas de difficulté, vous pouvez puiser dans une réserve supplémentaire de <strong>Focus</strong> depuis cet objet. Le montant de Focus restauré dépend du <strong>Palier</strong> de ce préfixe.</p><ul><li><p><strong>Palier 1 :</strong> <strong>4 Focus</strong></p></li><li><p><strong>Palier 2 :</strong> <strong>6 Focus</strong></p></li><li><p><strong>Palier 3 :</strong> <strong>8 Focus</strong></p></li></ul>"
+                        }
+                    }
+                }
+            }
+        },
+        "spellScrollFine0": {
+            "name": "Parchemin de sort (Raffiné)",
+            "description": {
+                "public": "<p>Un parchemin de sort est un morceau de vélin ou de parchemin spécialisé sur lequel sont soigneusement incrustés les glyphes d'un ou plusieurs composantes de sorcellerie. Activer ce parchemin de sort confère temporairement à son lecteur une profonde familiarité avec ces composantes, comme s'il les connaissait depuis des années.</p><p>Le nombre de composantes de sorcellerie qu'un parchemin peut contenir dépend de la qualité de sa fabrication.</p><ul><li><p><strong>Raffiné</strong> : Ne peut contenir qu'une seule composante de sorcellerie</p></li><li><p><strong>Supérieure</strong> : Peur contenir deux composantes de sorcellerie</p></li><li><p><strong>Chef-d’œuvre</strong> : Peur contenir trois composantes de sorcellerie</p></li></ul>"
+            },
+            "actions": {
+                "readScroll": {
+                    "name": "Lire un parchemin",
+                    "description": "<p>Lire ce parchemin de sort permet d'obtenir temporairement la connaissance de ses composantes de sorcellerie pendant 10 minutes.</p><p>Vous ne pouvez avoir qu'un seul effet de parchemin de sort actif à un moment donné. Lire un autre parchemin remplace tout effet courant.</p>",
+                    "effects": {
+                        "Read Scroll": {
+                            "name": "Lire un parchemin"
+                        }
+                    }
+                }
+            }
+        },
+        "spellScrollMaste": {
+            "name": "Parchemin de sort (Chef-d’œuvre)",
+            "description": {
+                "public": "<p>Un parchemin de sort est un morceau de vélin ou de parchemin spécialisé sur lequel sont soigneusement incrustés les glyphes d'un ou plusieurs composantes de sorcellerie. Activer ce parchemin de sort confère temporairement à son lecteur une profonde familiarité avec ces composantes, comme s'il les connaissait depuis des années.</p><p>Le nombre de composantes de sorcellerie qu'un parchemin peut contenir dépend de la qualité de sa fabrication.</p><ul><li><p><strong>Raffiné</strong> : Ne peut contenir qu'une seule composante de sorcellerie</p></li><li><p><strong>Supérieure</strong> : Peur contenir deux composantes de sorcellerie</p></li><li><p><strong>Chef-d’œuvre</strong> : Peur contenir trois composantes de sorcellerie</p></li></ul>"
+            },
+            "actions": {
+                "readScroll": {
+                    "name": "Lire un parchemin",
+                    "description": "<p>Lire ce parchemin de sort permet d'obtenir temporairement la connaissance de ses composantes de sorcellerie pendant 10 minutes.</p><p>Vous ne pouvez avoir qu'un seul effet de parchemin de sort actif à un moment donné. Lire un autre parchemin remplace tout effet courant.</p>",
+                    "effects": {
+                        "Read Scroll": {
+                            "name": "Lire un parchemin"
+                        }
+                    }
+                }
+            }
+        },
+        "spellScrollSuper": {
+            "name": "Parchemin de sort (Supérieur)",
+            "description": {
+                "public": "<p>Un parchemin de sort est un morceau de vélin ou de parchemin spécialisé sur lequel sont soigneusement incrustés les glyphes d'un ou plusieurs composantes de sorcellerie. Activer ce parchemin de sort confère temporairement à son lecteur une profonde familiarité avec ces composantes, comme s'il les connaissait depuis des années.</p><p>Le nombre de composantes de sorcellerie qu'un parchemin peut contenir dépend de la qualité de sa fabrication.</p><ul><li><p><strong>Raffiné</strong> : Ne peut contenir qu'une seule composante de sorcellerie</p></li><li><p><strong>Supérieure</strong> : Peur contenir deux composantes de sorcellerie</p></li><li><p><strong>Chef-d’œuvre</strong> : Peur contenir trois composantes de sorcellerie</p></li></ul>"
+            },
+            "actions": {
+                "readScroll": {
+                    "name": "Lire un parchemin",
+                    "description": "<p>Lire ce parchemin de sort permet d'obtenir temporairement la connaissance de ses composantes de sorcellerie pendant 10 minutes.</p><p>Vous ne pouvez avoir qu'un seul effet de parchemin de sort actif à un moment donné. Lire un autre parchemin remplace tout effet courant.</p>",
+                    "effects": {
+                        "Read Scroll": {
+                            "name": "Lire un parchemin"
+                        }
+                    }
+                }
+            }
+        },
+        "spikedGreatclub0": {
+            "name": "Massue cloutée",
+            "description": {
+                "public": "<p>Cette longue et noueuse pièce de bois massif est hérissée de pointes acérées, ce qui la rend encore plus redoutable et sauvage dans les coups qu'elle porte, au prix de son poids conséquent.</p>"
+            }
+        },
+        "spikedKnuckles00": {
+            "name": "Gantelets cloutés",
+            "description": {
+                "public": "<p>Mélange brutal d'arme de poing et d'outil de perforation, les gantelets cloutés transforment chaque coup en une attaque mutilante, idéale pour les bagarreurs qui veulent que leurs poings fassent couler le sang et inspirent la peur.</p>"
+            }
+        },
+        "splintMail000000": {
+            "name": "Clibanion",
+            "description": {
+                "public": "<p>Composée de bandes métalliques verticales rivetées sur un support en cuir ou mailles, le clibanion offre une protection robuste des membres, au détriment de la flexibilité.</p>"
+            }
+        },
+        "spyglass00000000": {
+            "name": "Longue-vue",
+            "description": {
+                "public": "<p>Un télescope portatif en laiton et en bois, doté de lentilles en verre poli. Utilisé pour agrandir l'image d'un objet éloigné.</p>"
+            }
+        },
+        "steeljawTrap0000": {
+            "name": "Piège à mâchoire de fer",
+            "description": {
+                "public": "<p>Un piège mécanique particulièrement cruel et tranchant, conçu pour immobiliser et tuer les imprudents. Un anneau d'acier dentelé qui se referme brusquement lorsqu'une créature marche sur une plaque de pression au centre.</p>"
+            },
+            "actions": {
+                "steelJawArm": {
+                    "name": "Armer le piège à mâchoire de fer",
+                    "description": "<p>La mise en place de ce piège représente un péril important pouvant causer des dégâts considérables en cas de déclenchement. Il doit être fixé par une chaîne solide à un objet immobile, tel qu'un arbre ou un pieu enfoncé dans le sol. La zone du piège est un cercle de 2 pieds de rayon.</p>"
+                },
+                "steelJawTrigger": {
+                    "name": "Déclencher le piège à mâchoire de fer",
+                    "description": "<p>Lorsque le piège est déclenché, la créature qui l'a posé fait une attaque de la compétence <strong>Nature</strong> contre la défense de <strong>Réflexe</strong> d'une cible unique qui a déclenché le piège. Sur une réussite, il inflige des dégâts perforants et applique la condition @Condition[restrained]. Les dégâts de base infligés par le piège varient en fonction de sa qualité.</p><ul><li><p><strong>Bâclée</strong> - 1 dégât</p></li><li><p><strong>Commune</strong> - 2 dégâts</p></li><li><p><strong>Raffinée</strong> - 4 dégâts</p></li><li><p><strong>Supérieure</strong> - 8 dégâts</p></li><li><p><strong>Chef-d’œuvre</strong> - 16 dégâts</p></li></ul><p></p>",
+                    "effects": {
+                        "Steel-Jaw Trap": {
+                            "name": "Piège à mâchoire de fer"
+                        }
+                    }
+                }
+            }
+        },
+        "stiletto00000000": {
+            "name": "Stylet",
+            "description": {
+                "public": "<p>Fin, effilé et conçu pour percer, le stylet est une arme de tueur — pensé pour se glisser entre les côtes ou dans les interstices d'une armure et ne laisser quasiment aucune trace.</p>"
+            }
+        },
+        "studdedLeatherAr": {
+            "name": "Armure de cuir cloutée",
+            "description": {
+                "public": "<p>Composée d'une base en cuir renforcée par de petits clous métalliques ou des plaques rivetées, cette armure offre un équilibre entre mobilité et protection modeste contre les coups tranchants.</p>"
+            }
+        },
+        "tailorsPortableW": {
+            "name": "Établi de couturier portatif",
+            "description": {
+                "public": "<p>Coffret en bois peu profond, recouvert de cuir, contenant des bobines de fil, des aiguilles et épingles adaptées, un couteau à dépecer, un couteau à crochet, des poinçons, des alênes et des marques pour le travail du tissu et du cuir en voyage. Déplié, il se transforme en surface de travail plane.</p>"
+            }
+        },
+        "tailorsToolkit00": {
+            "name": "Kit de couturier",
+            "description": {
+                "public": "<p>Une trousse en bois recouverte de cuir contenant des bobines de fil, des aiguilles et des épingles adaptées, un couteau à dépecer, des poinçons, convenant au travail du tissu et du cuir.</p>"
+            }
+        },
+        "tentCaravan00000": {
+            "name": "Tente (caravane)",
+            "description": {
+                "public": "<p>Une grande bâche pliable ou enroulable pour construire un abri temporaire pouvant accueillir jusqu'à douze personnes. Comprend des cordes, des piquets et six barres transversales pliables à assembler avant de pouvoir tendre la bâche.</p>"
+            }
+        },
+        "tentLarge0000000": {
+            "name": "Tente (grande)",
+            "description": {
+                "public": "<p>Une grande bâche pliable ou enroulable pour construire un abri temporaire pouvant accueillir jusqu'à six personnes. Comprend des cordes, des piquets et une traverse centrale pliable.</p>"
+            }
+        },
+        "tentSmall0000000": {
+            "name": "Tente (petite)",
+            "description": {
+                "public": "<p>Bâche pliable ou enroulable pour la construction d'un abri temporaire, pouvant accueillir une ou deux personnes. Comprend des cordes, des piquets et une traverse centrale pliable.</p>"
+            }
+        },
+        "torch00000000000": {
+            "name": "Torche",
+            "description": {
+                "public": "<p>Tissu imbibé d'huile fixé à l'extrémité d'une tige en os ou autre matériau ininflammable, cette torche constitue une source de lumière temporaire peu coûteuse, quoique peu efficace. Chaque torche peut brûler pendant une heure avant de devenir inutilisable.</p>"
+            },
+            "actions": {
+                "lightTorch": {
+                    "name": "Allumer une torche",
+                    "description": "<p>Vous allumer la @ref[name], produisant une illumination vacillante dans un large rayon pendant une heure. La torche est consumée par cette action et ne peut plus être utilisée, mais sa lumière persiste jusqu'à ce qu'elle s'éteigne complètement.</p>",
+                    "effects": {
+                        "Torch": {
+                            "name": "Torche"
+                        }
+                    }
+                }
+            }
+        },
+        "towerShield00000": {
+            "name": "Pavois",
+            "description": {
+                "public": "<p>Mur massif et rectangulaire de bois et de métal, le pavois transforme son porteur en une forteresse ambulante, idéal pour tenir des points stratégiques, mais au prix de la vitesse et de la vision.</p>"
+            }
+        },
+        "travelJug0000000": {
+            "name": "Pichet de voyage",
+            "description": {
+                "public": "<p>Cruche en terre cuite avec bouchon, gainée de cuir, pouvant être fixée à une ceinture ou à l'extérieur d'un sac à dos pour plus de praticité. Contenance : 40 once de liquide.</p>"
+            }
+        },
+        "warHammer0000000": {
+            "name": "Marteau de guerre",
+            "description": {
+                "public": "<p>Conçu pour écraser les plaques et briser les boucliers, le marteau de guerre est doté d'une tête lourde et émoussée montée au sommet d'un manche renforcé, semant la destruction entre les mains de ceux qui privilégient la force à la finesse.</p>"
+            }
+        },
+        "warLance00000000": {
+            "name": "Lance d'arçon",
+            "description": {
+                "public": "<p>Conçue pour le combat monté, la lance d'arçon est une arme longue et effilée, utilisée pour briser les armures grâce à l'élan d'un destrier au galop, son manche étant renforcé pour un impact dévastateur.</p>"
+            }
+        },
+        "weatherClothing0": {
+            "name": "Vêtements chauds",
+            "description": {
+                "public": "<p>Un ensemble de vêtements conçu pour protéger celui qui le porte contre les intempéries telles que les températures extrêmes, le vent ou l'humidité.</p>"
+            }
+        },
+        "wetskin000000000": {
+            "name": "Outre",
+            "description": {
+                "public": "<p>Poche à eau gainée de cuir, fixable à la ceinture ou à l'extérieur d'un sac à dos pour plus de praticité. Contenance : 26 onces de liquide.</p>"
+            }
+        },
+        "whistle000000000": {
+            "name": "Sifflet",
+            "description": {
+                "public": "<p>Instrument en bois sculpté ou en os qui, lorsqu'on souffle dedans, produit un son aigu et strident audible à grande distance. Souvent utilisé par les chasseurs et les pêcheurs pour communiquer entre eux en pleine nature ou en mer.</p>"
             }
         }
     },

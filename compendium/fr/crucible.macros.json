@@ -1,19 +1,19 @@
 {
-    "label": "Macros du système",
+    "label": "System Macros",
     "entries": {
-        "Configure Group Check": {
-            "name": "Configurer un Test de groupe"
-        },
-        "Configure Hazard": {
+        "ConfigureHazard00": {
             "name": "Configurer un Péril"
         },
-        "Randomize Item": {
+        "GroupSkillCheck0": {
+            "name": "Configurer un Test de groupe"
+        },
+        "RandomizeItem000": {
             "name": "Randomiser un objet"
         },
-        "Recover": {
+        "Recover000000000": {
             "name": "Récupération"
         },
-        "Rest": {
+        "Rest000000000000": {
             "name": "Repos"
         }
     }

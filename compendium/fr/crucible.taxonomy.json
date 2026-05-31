@@ -13,105 +13,105 @@
         "Ooze": "Vase"
     },
     "entries": {
-        "Amphibian": {
+        "amphibian0000000": {
             "name": "Amphibien",
             "description": "<p>Bêtes qui habitent dans ou près de l'eau. Les Amphibiens sont généralement habiles, mais certaines variétés sont puissantes ou de grande taille.</p><ul><li><p><strong>Taille</strong> : variable</p></li><li><p><strong>Foulée</strong> : variable</p></li></ul>"
         },
-        "Boar": {
-            "name": "Sanglier",
-            "description": "<p>Mammifères avec une peau épaisse, des défenses dangereuses et un centre de masse bas et puissant.</p>"
-        },
-        "Hyena": {
-            "name": "Hyène",
-            "description": "Mammifères de la famille des hyènes. Les hyènes sont des chasseurs de meute carnivores avec une encolure et des mâchoires puissantes."
-        },
-        "Drake": {
-            "name": "Drake",
-            "description": "<p>Créatures serpentines qui sont des cousins inférieurs des dragons. Les Drakes vivent et chassent généralement en meute, contrairement aux vrais dragons plus solitaires. Les Drakes varient d'espèces plus jeunes et plus petites souvent appelées \"Draketeaux\" à des spécimens énormes parfois appelés \"Ultra Drakes\".</p><p>Les variations de taille observées incluent :</p><ul><li><p><strong>Draketeau</strong> : Taille 3, Foulée 10</p></li><li><p><strong>Drake</strong> : Taille 6, Foulée 16</p></li><li><p><strong>Ultra Drake</strong> : Taille 9, Foulée 12</p></li></ul><p>Différents types de Drakes présentent une gamme différente de résistances et de vulnérabilités aux dégâts selon leur sous-espèce.</p>"
-        },
-        "Earth Elemental": {
-            "name": "Élémentaire de terre",
-            "description": "<p>Créatures élémentaires correspondant à l'élément de la Terre.</p>"
-        },
-        "Fire Elemental": {
-            "name": "Élémentaire de feu",
-            "description": "<p>Créatures élémentaires correspondant à l'élément du Feu.</p>"
-        },
-        "Frost Elemental": {
-            "name": "Élémentaire de givre",
-            "description": "<p>Créatures élémentaires correspondant à l'élément du Givre.</p>"
-        },
-        "Harbinger": {
-            "name": "Annonciateur",
-            "description": "<p>Êtres d'un autre monde venant du vide au-delà.</p>"
-        },
-        "Hobgoblin": {
-            "name": "Hobgobelin",
-            "description": "Les Hobgobelins sont des humanoïdes qui se rassemblent généralement dans des sociétés martiales qui sont ordonnées et disciplinées. Les Hobgobelins sont à la fois rusés et intransigeants, faisant des ennemis dangereux ou des alliés puissants."
-        },
-        "Ogre": {
-            "name": "Ogre",
-            "description": "<p>Géants massifs qui sont renommés pour leur force brute et leur approche directe de la résolution de problèmes.</p>"
-        },
-        "Skeleton": {
-            "name": "Squelette",
-            "description": "<p>Créatures éternelles et malveillantes ramenées à la vie par la nécromancie, créées à partir des restes squelettiques d'humanoïdes morts depuis longtemps. Animés par des forces impies échappant à leur contrôle, les @ref[name] existent rarement de leur propre chef et sont souvent rencontrés en tant que serviteurs de lanceurs de sorts maléfiques ou de morts-vivants supérieurs.</p>"
-        },
-        "Storm Elemental": {
-            "name": "Élémentaire de tempête",
-            "description": "<p>Créatures élémentaires correspondant à l'élément de la Foudre.</p>"
-        },
-        "Crystal Spider": {
-            "name": "Araignée de cristal",
-            "description": "<p>Arachnide composé ou incrusté de plaques et de formations cristallines réfractives.</p>"
-        },
-        "Slime": {
-            "name": "Limon",
-            "description": "<p>Créatures faites principalement de matière gélatineuse. Elles sont généralement lentes, de petite taille, et incapables de sorcellerie ou de parole. Certaines exceptions ont été documentées avec des variations de limons pouvant être grands, rapides ou capables de communication.</p>"
-        },
-        "War Machine": {
-            "name": "Machine de guerre",
-            "description": "<p>Artificiels bâtis dans le but d'être des instruments de guerre ou des gardiens formidables.</p>"
-        },
-        "Werewolf": {
-            "name": "Loup-garou",
-            "description": "<p>Métamorphes lycanthropes qui marchent comme des hommes mais prennent une forme de loup.</p>"
-        },
-        "Winged Terror": {
-            "name": "Terreur ailée",
-            "description": "<p>Créatures monstrueuses qui règnent sur les cieux et s'attaquent à ceux qui sont en dessous.</p>"
-        },
-        "Arachnid": {
-            "name": "Arachnide",
-            "description": "<p>Bêtes de la famille des arachnides qui tissent des toiles pour piéger et chasser de petites créatures ou des insectes. Les arachnides sont généralement agiles et patients, mais certaines variétés privilégient la puissance ou l'agression.</p><ul><li><p><strong>Taille</strong> : variable</p></li><li><p><strong>Foulée</strong> : variable</p></li></ul>"
-        },
-        "Rodent": {
-            "name": "Rongeur",
-            "description": "<p>Bêtes qui se rassemblent généralement en populations denses dans et autour des colonies humanoïdes et qui sont des charognards opportunistes.</p>"
-        },
-        "Zombie": {
-            "name": "Zombi",
-            "description": "<p>Cadavres traînants de morts sans repos, leurs corps en décomposition gonflés par la putrescence. Ils se déplacent sans se soucier des blessures qu'ils subissent et ne cherchent qu'à consommer tout ce qu'ils croisent de manière insensée.</p>"
-        },
-        "Apparatus": {
+        "apparatus0000000": {
             "name": "Mécanisme",
             "description": "<p>Des constructions conçues pour des usages simples, comme des dispositifs de pièges automatisés à plusieurs étapes ou des machines destinées à accomplir une fonction répétitive précise.</p>"
         },
-        "Ghoul": {
+        "arachnid00000000": {
+            "name": "Arachnide",
+            "description": "<p>Bêtes de la famille des arachnides qui tissent des toiles pour piéger et chasser de petites créatures ou des insectes. Les arachnides sont généralement agiles et patients, mais certaines variétés privilégient la puissance ou l'agression.</p><ul><li><p><strong>Taille</strong> : variable</p></li><li><p><strong>Foulée</strong> : variable</p></li></ul>"
+        },
+        "automaton0000000": {
+            "name": "Automate",
+            "description": "<p>Artificiels conçus comme un reflet des humanoïdes pour servir à l'accomplissement de tâches manuelles simples.</p>"
+        },
+        "boar000000000000": {
+            "name": "Sanglier",
+            "description": "<p>Mammifères avec une peau épaisse, des défenses dangereuses et un centre de masse bas et puissant.</p>"
+        },
+        "canine0000000000": {
+            "name": "Hyène",
+            "description": "Mammifères de la famille des hyènes. Les hyènes sont des chasseurs de meute carnivores avec une encolure et des mâchoires puissantes."
+        },
+        "drake00000000000": {
+            "name": "Drake",
+            "description": "<p>Créatures serpentines qui sont des cousins inférieurs des dragons. Les Drakes vivent et chassent généralement en meute, contrairement aux vrais dragons plus solitaires. Les Drakes varient d'espèces plus jeunes et plus petites souvent appelées \"Draketeaux\" à des spécimens énormes parfois appelés \"Ultra Drakes\".</p><p>Les variations de taille observées incluent :</p><ul><li><p><strong>Draketeau</strong> : Taille 3, Foulée 10</p></li><li><p><strong>Drake</strong> : Taille 6, Foulée 16</p></li><li><p><strong>Ultra Drake</strong> : Taille 9, Foulée 12</p></li></ul><p>Différents types de Drakes présentent une gamme différente de résistances et de vulnérabilités aux dégâts selon leur sous-espèce.</p>"
+        },
+        "earthElemental00": {
+            "name": "Élémentaire de terre",
+            "description": "<p>Créatures élémentaires correspondant à l'élément de la Terre.</p>"
+        },
+        "fireElemental000": {
+            "name": "Élémentaire de feu",
+            "description": "<p>Créatures élémentaires correspondant à l'élément du Feu.</p>"
+        },
+        "frostElemental00": {
+            "name": "Élémentaire de givre",
+            "description": "<p>Créatures élémentaires correspondant à l'élément du Givre.</p>"
+        },
+        "ghoul00000000000": {
             "name": "Goule",
             "description": "<p>Morts-vivants malveillants et rusés qui conservent suffisamment de leurs facultés cognitives mortelles pour élaborer et mettre à exécution des plans et des stratagèmes visant à tourmenter ou à détruire les créatures vivantes.</p>"
         },
-        "Grave Hound": {
+        "graveHound000000": {
             "name": "Molosse du sépulcre",
             "description": "<p>Terribles canidés morts-vivants, corrompus et devenus serviteurs de la non-mort. On les trouve gardiens de lieux impies, compagnons des forces mortes-vivantes, ou encore en meutes féroces envoyées pour traquer et terroriser les vivants.</p>"
         },
-        "Wraith": {
+        "harbinger0000000": {
+            "name": "Annonciateur",
+            "description": "<p>Êtres d'un autre monde venant du vide au-delà.</p>"
+        },
+        "hobgoblin0000000": {
+            "name": "Hobgobelin",
+            "description": "Les Hobgobelins sont des humanoïdes qui se rassemblent généralement dans des sociétés martiales qui sont ordonnées et disciplinées. Les Hobgobelins sont à la fois rusés et intransigeants, faisant des ennemis dangereux ou des alliés puissants."
+        },
+        "ogre000000000000": {
+            "name": "Ogre",
+            "description": "<p>Géants massifs qui sont renommés pour leur force brute et leur approche directe de la résolution de problèmes.</p>"
+        },
+        "rodent0000000000": {
+            "name": "Rongeur",
+            "description": "<p>Bêtes qui se rassemblent généralement en populations denses dans et autour des colonies humanoïdes et qui sont des charognards opportunistes.</p>"
+        },
+        "skeleton00000000": {
+            "name": "Squelette",
+            "description": "<p>Créatures éternelles et malveillantes ramenées à la vie par la nécromancie, créées à partir des restes squelettiques d'humanoïdes morts depuis longtemps. Animés par des forces impies échappant à leur contrôle, les @ref[name] existent rarement de leur propre chef et sont souvent rencontrés en tant que serviteurs de lanceurs de sorts maléfiques ou de morts-vivants supérieurs.</p>"
+        },
+        "stormElemental00": {
+            "name": "Élémentaire de tempête",
+            "description": "<p>Créatures élémentaires correspondant à l'élément de la Foudre.</p>"
+        },
+        "taxCrystalSpider": {
+            "name": "Araignée de cristal",
+            "description": "<p>Arachnide composé ou incrusté de plaques et de formations cristallines réfractives.</p>"
+        },
+        "taxonomySlime000": {
+            "name": "Limon",
+            "description": "<p>Créatures faites principalement de matière gélatineuse. Elles sont généralement lentes, de petite taille, et incapables de sorcellerie ou de parole. Certaines exceptions ont été documentées avec des variations de limons pouvant être grands, rapides ou capables de communication.</p>"
+        },
+        "taxonomyWarMachi": {
+            "name": "Machine de guerre",
+            "description": "<p>Artificiels bâtis dans le but d'être des instruments de guerre ou des gardiens formidables.</p>"
+        },
+        "werewolf00000000": {
+            "name": "Loup-garou",
+            "description": "<p>Métamorphes lycanthropes qui marchent comme des hommes mais prennent une forme de loup.</p>"
+        },
+        "wingedTerror0000": {
+            "name": "Terreur ailée",
+            "description": "<p>Créatures monstrueuses qui règnent sur les cieux et s'attaquent à ceux qui sont en dessous.</p>"
+        },
+        "wraith0000000000": {
             "name": "Âme-en-peine",
             "description": "<p>Les âmes-en-peine sont des morts-vivants incorporels, nés d'âmes ayant refusé la libération. Leur forme physique s'est entièrement dissoute dans l'ombre, ne laissant subsister que la rancœur et le chagrin animés. Ils ignorent les défenses conventionnelles ; leur contact ignore armures et parades pour attaquer directement les vulnérabilités psychiques et nécrotiques des vivants. Une exposition prolongée à la présence d'une âme-en-peine draine le moral autant que la santé, et ceux qui survivent à une rencontre ont souvent du mal à retrouver leur concentration et leur détermination.</p>"
         },
-        "Automaton": {
-            "name": "Automate",
-            "description": "<p>Artificiels conçus comme un reflet des humanoïdes pour servir à l'accomplissement de tâches manuelles simples.</p>"
+        "zombie0000000000": {
+            "name": "Zombi",
+            "description": "<p>Cadavres traînants de morts sans repos, leurs corps en décomposition gonflés par la putrescence. Ils se déplacent sans se soucier des blessures qu'ils subissent et ne cherchent qu'à consommer tout ce qu'ils croisent de manière insensée.</p>"
         }
     },
     "mapping": {

@@ -253,6 +253,9 @@
                     }
                 }
             },
+            "biography": {
+                "public": "<p>Belladonna is a cunning rogue who fights with two daggers, dealing a rapid sequence of blows against an unwary target. Belladonna aspires to obtain the <strong>Poisoner</strong> signature talent.</p>"
+            },
             "ancestry": {
                 "name": "Human",
                 "description": "<p>Found amid countless conditions and far-flung places, you were born an ever-adaptable human. Tall or short, thin, muscular, or rotund, your physical appearance is nothing if not varied. Humans are most known for a genetic predisposition toward determination, with traditions that drive a stubborn will to survive.</p>"
@@ -448,6 +451,9 @@
                     }
                 }
             },
+            "biography": {
+                "public": "<p>Eliorwen is a nimble skirmisher who uses archery and spellcraft to suppress and eliminates foes from a tremendous distnace. Eliorwen aspires to obtain the <strong>Arcane Archer</strong> signature talent.</p>"
+            },
             "ancestry": {
                 "name": "Elvish",
                 "description": "<p>Graceful in movement and swift in thought, you were born a long-lived elf. Your slight and nimble frame and sculpted features are the inherited traits of a people for whom elegance is a way of life. Your predisposition toward quick-thinking and precise movement the evolutionary results of hundreds of years of tradition.</p>"
@@ -603,6 +609,9 @@
                     }
                 }
             },
+            "biography": {
+                "public": "<p>Agnath is a sword-wielding necromancer who imbues deathly magic into their heavy blows. Agnath aspires to obtain the <strong>Spellblade</strong> signature talent.</p>"
+            },
             "ancestry": {
                 "name": "Orcish",
                 "description": "<p>Your birth was marked by the stars and traditions of a proud and enduring people. Your tall and well-toned body and natural propensity for toughness has origins amid a people exposed to the relentless struggle of a harsh northern clime. Your people are known for their strength and resilience above all else.</p>"
@@ -695,6 +704,9 @@
                         }
                     }
                 }
+            },
+            "biography": {
+                "public": "<p>Belladonna is a cunning rogue who fights with two daggers, dealing a rapid sequence of blows against an unwary target. Belladonna aspires to obtain the <strong>Poisoner</strong> signature talent.</p>"
             },
             "ancestry": {
                 "name": "Human",
@@ -868,6 +880,9 @@
                         }
                     }
                 }
+            },
+            "biography": {
+                "public": "<p>Kagura is a stalwart healer who bolsters the health and morale of her allies amidst the frenzy of battle. Kagura aspires to obtain the <strong>Healer</strong> signature Talent.</p>"
             },
             "ancestry": {
                 "name": "Giantkin",
@@ -1113,6 +1128,9 @@
                     }
                 }
             },
+            "biography": {
+                "public": "<p>Duurath is a stout dwarven defender who uses a hammer and shield to protect his allies and punish enemies by sapping their morale. Duurath aspires to obtain the <strong>Runewarden</strong> signature talent.</p>"
+            },
             "ancestry": {
                 "name": "Dwarven",
                 "description": "<p>Like your parents before you, you were born with the enduring fortitude of the Dwarves. Your stout stature and burly physical appearance are the hallmarks of a people born of earth and stone. A legacy of physical resilience is yours to inherit, for in your breast beats a heart of stone.</p>"
@@ -1176,6 +1194,9 @@
                         }
                     }
                 }
+            },
+            "biography": {
+                "public": "<p>Agnath is a sword-wielding necromancer who imbues deathly magic into their heavy blows. Agnath aspires to obtain the <strong>Spellblade</strong> signature talent.</p>"
             },
             "ancestry": {
                 "name": "Orcish",
@@ -1263,6 +1284,9 @@
                         }
                     }
                 }
+            },
+            "biography": {
+                "public": "<p>Eliorwen is a nimble skirmisher who uses archery and spellcraft to suppress and eliminates foes from a tremendous distnace. Eliorwen aspires to obtain the <strong>Arcane Archer</strong> signature talent.</p>"
             },
             "ancestry": {
                 "name": "Elvish",
@@ -1488,6 +1512,9 @@
                     }
                 }
             },
+            "biography": {
+                "public": "<p>Ulfen is a fierce warrior who fights with a two-handed greataxe, favoring heavy blows that do significant damage or hit multiple targets. Ulfen aspires to obtain the <strong>Berserker </strong>signature talent.</p>"
+            },
             "ancestry": {
                 "name": "Human",
                 "description": "<p>Found amid countless conditions and far-flung places, you were born an ever-adaptable human. Tall or short, thin, muscular, or rotund, your physical appearance is nothing if not varied. Humans are most known for a genetic predisposition toward determination, with traditions that drive a stubborn will to survive.</p>"
@@ -1675,6 +1702,9 @@
                     }
                 }
             },
+            "biography": {
+                "public": "<p>Fizzit is a clever spellcrafter and scholar who slings spells from a distance and seeks to harness elemental forces to work in their service. Fizzit aspires to obtain the <strong>Conjurer</strong> signature talent.</p>"
+            },
             "ancestry": {
                 "name": "Gnome",
                 "description": "<p>Yours was a birth of exuberant celebration. Your diminutive body and delicate features are paired with an almost supernatural propensity for discovery. The traditions of your people embrace a lust for life and the importance of quick-thinking and quick-action.</p>"
@@ -1785,6 +1815,9 @@
                     "description": "<p>You have expertise in using a <strong>Shield</strong> to defend yourself and others.</p><p>Once per Turn while you have a Shield equipped, you may use the <strong>Defend</strong> action at a reduced cost of 1 Action Point.</p>"
                 }
             },
+            "biography": {
+                "public": "<p>Duurath is a stout dwarven defender who uses a hammer and shield to protect his allies and punish enemies by sapping their morale. Duurath aspires to obtain the <strong>Runewarden</strong> signature talent.</p>"
+            },
             "ancestry": {
                 "name": "Dwarven",
                 "description": "<p>Like your parents before you, you were born with the enduring fortitude of the Dwarves. Your stout stature and burly physical appearance are the hallmarks of a people born of earth and stone. A legacy of physical resilience is yours to inherit, for in your breast beats a heart of stone.</p>"
@@ -1865,6 +1898,9 @@
                     "name": "Gesture: Arrow",
                     "description": "<p>You hurl a projectile imbued with the magical power of a Rune at a distant target.</p><p>The Arrow gesture scales using <strong>Intellect</strong> and targets a single creature up to a distance of 60 feet, dealing <strong>8 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>3 Action</strong> and <strong>1 Focus</strong>.</p>"
                 }
+            },
+            "biography": {
+                "public": "<p>Zarajah is a spirited Devilkin with a penchant for pyromancy who weaves dangerous and warding spells to control the battlefield. Zarajah aspires to obtain the <strong>War Mage</strong> signature Talent.</p>"
             },
             "ancestry": {
                 "name": "Devilkin",
@@ -2020,6 +2056,9 @@
                     "description": "<p>You hurl the arcane power of a Rune into an intense explosion of energy at a nearby point you can see.</p><p>The Blast gesture scales with <strong>Intellect</strong> and produces a blast with 6 feet radius centered on a point within 60 feet of the spellcaster. The blast deals <strong>8 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>2 Hands</strong> to cast and has a base cost of <strong>5 Action</strong> and <strong>2 Focus</strong>.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent is currently placed at a <strong>Tier 4</strong> node. It will eventually only be attainable at a higher level (probably Level 6 required). It is currently available \"early\" for testing.</p>"
                 }
             },
+            "biography": {
+                "public": "<p>Zarajah is a spirited Devilkin with a penchant for pyromancy who weaves dangerous and warding spells to control the battlefield. Zarajah aspires to obtain the <strong>War Mage</strong> signature Talent.</p>"
+            },
             "ancestry": {
                 "name": "Devilkin",
                 "description": "<p>You were born with unexpected magical influence over your creation. Your physical appearance shows tell-tale signs that the superstitious associate with planar beings- crimson flesh, ineffective wings or horns, reptilian eyes. Your dislike of light and preternatural resistance to fire does little to dissuade people from thinking you are an actual devil.</p>"
@@ -2101,6 +2140,9 @@
                         }
                     }
                 }
+            },
+            "biography": {
+                "public": "<p>Fizzit is a clever spellcrafter and scholar who slings spells from a distance and seeks to harness elemental forces to work in their service. Fizzit aspires to obtain the <strong>Conjurer</strong> signature talent.</p>"
             },
             "ancestry": {
                 "name": "Gnome",
@@ -2189,6 +2231,9 @@
                     }
                 }
             },
+            "biography": {
+                "public": "<p>Ulfen is a fierce warrior who fights with a two-handed greataxe, favoring heavy blows that do significant damage or hit multiple targets. Ulfen aspires to obtain the <strong>Berserker </strong>signature talent.</p>"
+            },
             "ancestry": {
                 "name": "Human",
                 "description": "<p>Found amid countless conditions and far-flung places, you were born an ever-adaptable human. Tall or short, thin, muscular, or rotund, your physical appearance is nothing if not varied. Humans are most known for a genetic predisposition toward determination, with traditions that drive a stubborn will to survive.</p>"
@@ -2264,6 +2309,9 @@
                         }
                     }
                 }
+            },
+            "biography": {
+                "public": "<p>Kagura is a stalwart healer who bolsters the health and morale of her allies amidst the frenzy of battle. Kagura aspires to obtain the <strong>Healer</strong> signature Talent.</p>"
             },
             "ancestry": {
                 "name": "Giantkin",

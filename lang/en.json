@@ -421,6 +421,9 @@
           "AttackMissed": "You may only Interpose against an attack that hit or glanced your ally.",
           "RequiresStrike": "Interpose requires the most recent action to be a weapon Strike.",
           "SingleTarget": "Interpose can only be used against a single-target Strike."
+        },
+        "REVIVE": {
+          "RequiresDead": "Revive requires a Dead target."
         }
       },
       "AuraNoToken": "You cannot use an Aura-target action without having a token on the scene!",
@@ -454,6 +457,9 @@
       "MissingSummonEffect": "ActiveEffect data must be defined to track the non-permanent summon created by the action \"{action}\"",
       "MovementTooFar": "The planned movement path exceeds the maximum range allowed by this action.",
       "MovementTooShort": "The planned movement path does not meet the minimum range required by this action.",
+      "MustFollowMainhandStrike": "You may only perform the {action} action after a basic Strike action with your mainhand weapon.",
+      "MustFollowMeleeDefense": "You may only perform the {action} action after defending a melee attack with a {defense}.",
+      "MustFollowMeleeKill": "You may only perform the {action} action after incapacitating an enemy with a melee attack.",
       "MustFollowStrike": "You may only perform the {action} action after a basic Strike action",
       "MustReload": "Your weapon requires reloading in order to use this action.",
       "MustScaleDex": "Every weapon used in this action must scale using dexterity.",
@@ -472,6 +478,7 @@
       "RequiresRanged": "This action requires a ranged weapon equipped.",
       "RequiresSlashingMelee": "{action} requires a melee weapon which deals slashing damage.",
       "RequiresTalisman": "{action} requires use of a Talisman weapon.",
+      "RequiresTargetWounded": "{action} requires a target that is wounded.",
       "RequiresTwoHanded": "This action requires a two-handed weapon equipped.",
       "RequireTemplate": "You must place a Measured Template to indicate the area of effect of {action}.",
       "Restrained": "You may not move while Restrained!",
@@ -1668,6 +1675,7 @@
       "Equipment": "Equipment Details",
       "EquipmentDrop": "Add starting equipment by dragging and dropping items into this area.",
       "EquipmentRemove": "Remove Equipment",
+      "EquipmentScale": "Automatically scale quality with creature level",
       "ScaledPrice": "Scaled Price",
       "Spellcraft": "Spellcraft",
       "SpellDrop": "Add an iconic spell by dragging and dropping a Spell item into this area.",
@@ -2379,6 +2387,10 @@
         "temperature.hint": "The body temperature of creatures with this Taxonomy. If left blank, defaults to the temperature of the chosen creature category.",
         "temperature.label": "Body Temperature"
       },
+      "equipment": {
+        "hint": "Configure equipment which creatures of this Taxonomy possess automatically.",
+        "label": "Granted Equipment"
+      },
       "identifier": {
         "hint": "A string identifier used to uniquely reference this Taxonomy in tags, actions, or other UI elements. This identifier must be alphanumeric with no spaces or special characters.",
         "label": "Identifier"
@@ -2415,6 +2427,7 @@
       "TemperatureBlank": "Default ({temperature})"
     },
     "WARNINGS": {
+      "EquipmentNotNatural": "Taxonomy \"{name}\" cannot use equipment that does not have the natural tag.",
       "InvalidAbilities": "The sum of initial ability values must equal 12. Currently {sum}",
       "InvalidResistances": "The sum of resistance scaling values must equal zero. Currently {sum}"
     }

@@ -36,6 +36,10 @@
             "name": "Swarm",
             "description": "<p>This adversary represents multiple creatures that move as a single swarming entity, overwhelming opposition with sheer numbers.</p>"
         },
+        "assassin00000000": {
+            "name": "Assassin",
+            "description": "<p>Merciless characters adept at infiltration and ruthless killing.</p>"
+        },
         "bard000000000000": {
             "name": "Bard",
             "description": "<p>You practice the oral and musical traditions of heroic storytelling to inspire courage in your allies, demoralize your foes, and be quick with unconventional solutions to problems.</p>"

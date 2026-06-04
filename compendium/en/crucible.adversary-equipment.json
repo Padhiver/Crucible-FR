@@ -1,0 +1,330 @@
+{
+    "label": "Adversary Equipment",
+    "folders": {
+        "Creature Parts": "Creature Parts",
+        "Damage-Typed Bites": "Damage-Typed Bites",
+        "Damage-Typed Limbs": "Damage-Typed Limbs",
+        "Giant Parts": "Giant Parts",
+        "Natural Armor": "Natural Armor",
+        "Natural Weapons": "Natural Weapons"
+    },
+    "entries": {
+        "beak000000000000": {
+            "name": "Beak",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} has a sharp, tearing beak.</p>"
+            }
+        },
+        "bite000000000000": {
+            "name": "Bite",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} possesses a formidable bite of sharp teeth.</p>"
+            }
+        },
+        "burningBite00000": {
+            "name": "Burning Bite",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} bites with jaws wreathed in searing flame.</p>"
+            }
+        },
+        "burningLimb00000": {
+            "name": "Burning Limb",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} strikes with a limb of concentrated flame.</p>"
+            }
+        },
+        "causticBite00000": {
+            "name": "Caustic Bite",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} has a bite dripping with dissolving acids.</p>"
+            }
+        },
+        "causticLimb00000": {
+            "name": "Caustic Limb",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} strikes with a dripping limb of corrosive ichor.</p>"
+            }
+        },
+        "chargedBite00000": {
+            "name": "Charged Bite",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} bites with jaws that crackle with storm energy.</p>"
+            }
+        },
+        "chargedLimb00000": {
+            "name": "Charged Limb",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} strikes with a crackling limb of storm energy.</p>"
+            }
+        },
+        "claws00000000000": {
+            "name": "Claws",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} has elongated and sharpened claws.</p>"
+            }
+        },
+        "densePelt0000000": {
+            "name": "Dense Pelt",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} has heavy, layered fur that blunts blows.</p>"
+            }
+        },
+        "elementalArmor00": {
+            "name": "Elemental Armor",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} is enveloped by a fortified shell of elemental carapace which provides a defensive barrier.</p>"
+            }
+        },
+        "exoskeleton00000": {
+            "name": "Exoskeleton",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} has a jointed external skeleton of hardened plates.</p>"
+            }
+        },
+        "fangs00000000000": {
+            "name": "Fangs",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} has long, piercing fangs.</p>"
+            }
+        },
+        "fists00000000000": {
+            "name": "Fists",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} pounds its foes with massive fists.</p>"
+            }
+        },
+        "frigidBite000000": {
+            "name": "Frigid Bite",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} has a bite of numbing, merciless cold.</p>"
+            }
+        },
+        "frigidLimb000000": {
+            "name": "Frigid Limb",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} swipes with an aqueous limb, frigid with cold.</p>"
+            }
+        },
+        "fusedExoskeleton": {
+            "name": "Fused Exoskeleton",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} is armored in thick external bone fused into a rigid shell.</p>"
+            }
+        },
+        "giantBeak0000000": {
+            "name": "Giant Beak",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} has an oversized beak that delivers shearing bites.</p>"
+            }
+        },
+        "giantClaws000000": {
+            "name": "Giant Claws",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} has formidable claws, each the size of a steel blade.</p>"
+            }
+        },
+        "giantJaws0000000": {
+            "name": "Giant Jaws",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} has cavernous jaws that engulf and crush its prey.</p>"
+            }
+        },
+        "giantTail0000000": {
+            "name": "Giant Tail",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} has a trunk-thick tail that sweeps and slams.</p>"
+            }
+        },
+        "heavyCarapace000": {
+            "name": "Heavy Carapace",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} has a heavy, articulated shell which protects it from harm.</p>"
+            }
+        },
+        "heavyPlating0000": {
+            "name": "Heavy Plating",
+            "description": {
+                "public": "<p>The @ref[actor.name]{construct} is encased in heavy armor plating.</p>"
+            }
+        },
+        "heavyScales00000": {
+            "name": "Heavy Scales",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} has a rough hide of thick and interlocking scales.</p>"
+            }
+        },
+        "hooves0000000000": {
+            "name": "Hooves",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} has heavy hooves that kick and trample anything underfoot.</p>"
+            }
+        },
+        "horns00000000000": {
+            "name": "Horns",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} has stout, curved horns used for goring.</p>"
+            }
+        },
+        "lightCarapace000": {
+            "name": "Light Carapace",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} is protected by a flexible, chitinous shell.</p>"
+            }
+        },
+        "lightHide0000000": {
+            "name": "Light Hide",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} has tough skin that turns aside glancing blows.</p>"
+            }
+        },
+        "lightPelt0000000": {
+            "name": "Light Pelt",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} has a short fur coat that softens impacts.</p>"
+            }
+        },
+        "lightPlating0000": {
+            "name": "Light Plating",
+            "description": {
+                "public": "<p>The @ref[actor.name]{construct} is protected by fitted armor plating.</p>"
+            }
+        },
+        "lightScales00000": {
+            "name": "Light Scales",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature}'s skin is covered in lightweight scales that provide protection without slowing it down.</p>"
+            }
+        },
+        "pestilentBite000": {
+            "name": "Pestilent Bite",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} has a diseased bite that festers and blights.</p>"
+            }
+        },
+        "pestilentLimb000": {
+            "name": "Pestilent Limb",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} strikes with a rotting limb that seeps blight.</p>"
+            }
+        },
+        "pincers000000000": {
+            "name": "Pincers",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} has crushing, snipping pincers.</p>"
+            }
+        },
+        "pseudopod0000000": {
+            "name": "Pseudopod",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} lashes out with an amorphous limb of slime.</p>"
+            }
+        },
+        "psychicBite00000": {
+            "name": "Psychic Bite",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} has a bite that wounds the mind more than the body.</p>"
+            }
+        },
+        "psychicLimb00000": {
+            "name": "Psychic Limb",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} strikes with a phantasmal limb that wounds the mind.</p>"
+            }
+        },
+        "quills0000000000": {
+            "name": "Quills",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} can launch a spray of barbed quills from its flanks.</p>"
+            }
+        },
+        "radiantBite00000": {
+            "name": "Radiant Bite",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} bites with jaws shining with searing light.</p>"
+            }
+        },
+        "radiantLimb00000": {
+            "name": "Radiant Limb",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} strikes with a limb of searing, luminous energy.</p>"
+            }
+        },
+        "shadowBite000000": {
+            "name": "Shadow Bite",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} bites with jaws of devouring darkness.</p>"
+            }
+        },
+        "shadowLimb000000": {
+            "name": "Shadow Limb",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} strikes with a limb of grasping darkness.</p>"
+            }
+        },
+        "stinger000000000": {
+            "name": "Stinger",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} has a barbed stinger which pierces flesh and injects venom.</p>"
+            }
+        },
+        "stoneSkin0000000": {
+            "name": "Stone Skin",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} has craggy, rock-like skin.</p>"
+            }
+        },
+        "tail000000000000": {
+            "name": "Tail",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} can lash out with its elongated, muscular tail.</p>"
+            }
+        },
+        "talons0000000000": {
+            "name": "Talons",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} has curved talons for gripping and rending prey.</p>"
+            }
+        },
+        "tentacles0000000": {
+            "name": "Tentacles",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} attacks with writhing, grasping tentacles.</p>"
+            }
+        },
+        "thickHide0000000": {
+            "name": "Thick Hide",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} has a thick, leathery hide that is resilient against attack.</p>"
+            }
+        },
+        "tusks00000000000": {
+            "name": "Tusks",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} has jutting tusks that rip and tear with each charging strike.</p>"
+            }
+        },
+        "venomousBite0000": {
+            "name": "Venomous Bite",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} has a bite that injects potent venom.</p>"
+            }
+        },
+        "venomousLimb0000": {
+            "name": "Venomous Limb",
+            "description": {
+                "public": "<p>The @ref[actor.name]{creature} strikes with a toxin-slicked limb that poisons whatever it touches.</p>"
+            }
+        }
+    },
+    "mapping": {
+        "description": {
+            "path": "system.description",
+            "converter": "structured",
+            "cardinality": "one",
+            "mapping": {
+                "public": "public",
+                "private": "private"
+            }
+        }
+    }
+}

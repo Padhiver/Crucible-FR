@@ -407,22 +407,15 @@
     },
     "WARNINGS": {
       "SPECIFIC": {
-        "BODY_BLOCK": {
-          "AlreadyConfirmed": "The attack against you has already been confirmed and can no longer be blocked.",
-          "InvalidOutcome": "You may only use Body Block after an attack against you is defended by Armor or a Glance.",
-          "MeleeOnly": "You may only use Body Block against an incoming melee attack."
-        },
         "DELAY": {
           "AlreadyDelayed": "You may not delay your turn again this combat round.",
           "WrongTurn": "You may only use the Delay action on your own turn in combat."
         },
-        "INTERPOSE": {
-          "AllyMustBeTarget": "The selected ally must be the target of the most recent Strike.",
-          "AttackMissed": "You may only Interpose against an attack that hit or glanced your ally.",
-          "RequiresStrike": "Interpose requires the most recent action to be a weapon Strike.",
-          "SingleTarget": "Interpose can only be used against a single-target Strike."
+        "REVIVE": {
+          "RequiresDead": "Revive requires a Dead target."
         }
       },
+      "AlreadyConfirmed": "The action against you has already been confirmed and can no longer be reacted to.",
       "AuraNoToken": "You cannot use an Aura-target action without having a token on the scene!",
       "BadStatus": "You may not perform {action} while {status}.",
       "CannotAffordCost": "{name} has insufficient {resource} to use {action}!",
@@ -454,10 +447,18 @@
       "MissingSummonEffect": "ActiveEffect data must be defined to track the non-permanent summon created by the action \"{action}\"",
       "MovementTooFar": "The planned movement path exceeds the maximum range allowed by this action.",
       "MovementTooShort": "The planned movement path does not meet the minimum range required by this action.",
+      "MustFollowMainhandStrike": "You may only perform the {action} action after a basic Strike action with your mainhand weapon.",
+      "MustFollowMeleeDefense": "You may only perform the {action} action after defending a melee attack with a {defense}.",
+      "MustFollowMeleeKill": "You may only perform the {action} action after incapacitating an enemy with a melee attack.",
+      "MustFollowRanged": "You may only perform the {action} action after a ranged weapon attack.",
       "MustFollowStrike": "You may only perform the {action} action after a basic Strike action",
+      "MustReactHit": "You may only perform the {action} action in response to an attack that hit or glanced.",
+      "MustReactSingleTarget": "You may only perform the {action} action in response to an action that had a single target.",
+      "MustReactStrike": "You may only perform the {action} action in response to a weapon Strike.",
       "MustReload": "Your weapon requires reloading in order to use this action.",
       "MustScaleDex": "Every weapon used in this action must scale using dexterity.",
       "MustScaleStrength": "Every weapon used in this action must scale using strength.",
+      "MustTargetTarget": "The {action} action may only be used on the target of the most recent action.",
       "NoAbility": "{actor} has no {ability} score, and therefore cannot use {action}.",
       "NoConsumable": "No consumable Item identified for action \"{action}\"",
       "NoConsumableUses": "Consumable item \"{item}\" has no uses remaining for Action \"{action}\"",
@@ -601,7 +602,10 @@
         "Elite": "Elite",
         "Minion": "Minion",
         "Normal": "Normal"
-      }
+      },
+      "NoArchetype": "No Archetype",
+      "NoTaxonomy": "No Taxonomy",
+      "ThreatLevelSpecific": "Threat Level {threat}"
     },
     "CREATION": {
       "AbandonContent": "Discard creation progress and exit the creator?",
@@ -664,7 +668,7 @@
           "base": "Base Engagement",
           "label": "Engagement",
           "labelShort": "Engage",
-          "tooltip": "Number of Enemies Engaged<br>(Size - 2) + Engagement Bonus"
+          "tooltip": "Number of Enemies able to be Engaged<br>(Size - 2) + Engagement Bonus"
         },
         "engagementBonus": {
           "hint": "An additive modifier to base engagement.",
@@ -1442,6 +1446,7 @@
     },
     "GROUP_CHECK": {
       "Title": "Group Skill Check",
+      "TitleSpecific": "Group {skill} Skill Check",
       "DialogTitle": "{skill} Check: {name}",
       "NoUserForActor": "No active user found for: {name}",
       "STATUSES": {
@@ -1463,6 +1468,7 @@
       "AnyActorHint": "Choose any world Actors.",
       "ChooseTarget": "Choose Target",
       "ClearRequest": "Clear Request",
+      "GroupCheck": "Group Check",
       "Request": "Request",
       "RequestRolls": "Request Rolls",
       "SpecificActors": "Specific Actors",
@@ -1540,6 +1546,10 @@
     "DefaultName": "Environmental Hazard",
     "Falling": "Falling",
     "Hazard": "Hazard",
+    "Parenthetical": "{label} ({tags})",
+    "Rank": "Hazard {danger}",
+    "TooltipDamage": "{rank} vs. {defense} dealing {damage} damage to {resource}",
+    "TooltipRestoration": "{rank} vs. {defense} restoring {resource}",
     "UseHazard": "Use Hazard",
     "WindowTitle": "Hazard: {name}",
     "CONFIG": {
@@ -1567,14 +1577,17 @@
       "Create": "Create Item",
       "Delete": "Delete Item",
       "Drop": "Drop Weapon",
+      "DropDetail": "Drop the {item}",
       "Edit": "Edit Item",
       "Equip": "Equip {typeLabel}",
       "EquipDetail": "Equip the {item}",
+      "Read": "Read {item}",
       "Recover": "Recover {typeLabel}",
       "RecoverAllContent": "Pick up all of {actor}'s dropped items?",
       "RecoverAllTitle": "Recover Dropped Items",
       "RecoverDetail": "Recover the dropped {item}",
-      "UnEquip": "Un-equip {typeLabel}"
+      "UnEquip": "Un-equip {typeLabel}",
+      "UnEquipDetail": "Un-equip the {item}"
     },
     "COMPOSED_NAME": {
       "Prefix": "{prefixes} {name}",
@@ -1657,6 +1670,7 @@
       "Equipment": "Equipment Details",
       "EquipmentDrop": "Add starting equipment by dragging and dropping items into this area.",
       "EquipmentRemove": "Remove Equipment",
+      "EquipmentScale": "Automatically scale quality with creature level",
       "ScaledPrice": "Scaled Price",
       "Spellcraft": "Spellcraft",
       "SpellDrop": "Add an iconic spell by dragging and dropping a Spell item into this area.",
@@ -2215,6 +2229,8 @@
       "PurchaseNodeReverse": "Remove point spent on empty node \"{node}\"?",
       "PurchaseNodeTitle": "Purchase Talent Node?",
       "PurchaseTitle": "Purchase Talent: {name}",
+      "Remove": "<p>Remove talent <strong>{name}</strong>, reclaiming 1 Talent Point?</p>",
+      "RemoveTitle": "Remove Talent: {name}",
       "Reset": "Reset"
     },
     "FIELDS": {
@@ -2320,10 +2336,14 @@
       "RequiresRuneGesture": "You must know a spellcraft Rune in order to utilize a Gesture.",
       "RequiresRuneInflection": "You must know a spellcraft Rune in order to utilize an Inflection."
     },
+    "Banned": "Banned",
+    "Empty": "Empty",
     "GrantsSpells": "<strong>Iconic Spells:</strong>: {name} grants {spells} Iconic Spell slots.",
+    "Locked": "Locked",
     "NodeSpecific": "{nodeType} Node",
     "PointsAvailable": "Points Available",
-    "Prerequisites": "Prerequisites"
+    "Prerequisites": "Prerequisites",
+    "Tier": "Tier {tier}"
   },
   "TAXONOMY": {
     "CATEGORIES": {
@@ -2362,6 +2382,10 @@
         "temperature.hint": "The body temperature of creatures with this Taxonomy. If left blank, defaults to the temperature of the chosen creature category.",
         "temperature.label": "Body Temperature"
       },
+      "equipment": {
+        "hint": "Configure equipment which creatures of this Taxonomy possess automatically.",
+        "label": "Granted Equipment"
+      },
       "identifier": {
         "hint": "A string identifier used to uniquely reference this Taxonomy in tags, actions, or other UI elements. This identifier must be alphanumeric with no spaces or special characters.",
         "label": "Identifier"
@@ -2398,6 +2422,7 @@
       "TemperatureBlank": "Default ({temperature})"
     },
     "WARNINGS": {
+      "EquipmentNotNatural": "Taxonomy \"{name}\" cannot use equipment that does not have the natural tag.",
       "InvalidAbilities": "The sum of initial ability values must equal 12. Currently {sum}",
       "InvalidResistances": "The sum of resistance scaling values must equal zero. Currently {sum}"
     }

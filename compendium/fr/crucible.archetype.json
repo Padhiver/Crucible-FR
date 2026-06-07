@@ -167,6 +167,10 @@
         "ultraDrake000000": {
             "name": "Ultra drake",
             "description": "<p>Drakes adultes qui sont les super-prédateurs de leur espèce.</p>"
+        },
+        "assassin00000000": {
+            "name": "Assassin",
+            "description": "<p>Personnages impitoyables, passés maîtres dans l'art de l'infiltration et du meurtre sans pitié.</p>"
         }
     },
     "mapping": {

@@ -138,7 +138,7 @@
         },
         "armoredShell0000": {
             "name": "Coquille blindée",
-            "description": "<p>Vous êtes expert dans l'utilisation combinée de votre armure et de votre bouclier pour créer une coquille défensive.</p><p>Lorsque vous avez la condition <strong>Protégé</strong> et êtes équipé d'un <strong>Bouclier lourd</strong>, votre défense d'<strong>Armure</strong> de base est réduite de moitié mais votre défense de <strong>Blocage</strong> augmente d'un montant correspondant.</p>"
+            "description": "<p>Vous êtes expert dans l'utilisation combinée de votre armure et de votre bouclier pour créer une coquille défensive.</p><p>Lorsque vous avez la condition @Condition[guarded] et êtes équipé d'un <strong>Bouclier lourd</strong>, votre défense d'<strong>Armure</strong> de base est réduite de moitié mais votre défense de <strong>Blocage</strong> augmente d'un montant correspondant.</p>"
         },
         "artfulparry00000": {
             "name": "Parade artistique",
@@ -153,12 +153,12 @@
         },
         "assassin00000000": {
             "name": "Assassin",
-            "description": "<p>Vous vous spécialisez dans l'art d'apporter la mort aux imprudents. Toute Frappe ou Attaque magique contre une cible <strong>Distraite</strong> devient <strong>Mortelle</strong>.</p><p>Une créature Distraite touchée par votre attaque ne peut pas alerter ses alliés avant son propre tour de Combat.</p>",
+            "description": "<p>Vous vous spécialisez dans l'art d'apporter la mort aux imprudents. Toute <strong>Frappe</strong> ou attaque de <strong>Sort</strong> contre une cible @Condition[unaware] devient <strong>Mortelle</strong>.</p><p>Une créature <strong>Distraite</strong> touchée par votre attaque ne peut pas alerter ses alliés avant son propre tour de <strong>Combat</strong>.</p>",
             "actions": {
                 "markForDeath": {
                     "name": "Marquer pour la Mort",
                     "condition": "Vous n'êtes pas observé.",
-                    "description": "<p>Vous étudiez une créature pendant 1 minute. Effectuez un Test de Connaissance à propos de votre cible. Sur une réussite, vous apprenez toutes ses Vulnérabilités aux dégâts. Votre Initiative minimale pendant le premier round de Combat devient supérieure de 1 à l'Initiative de la cible que vous avez marqué.</p>"
+                    "description": "<p>Vous étudiez une créature pendant 1 minute. Effectuez un Test de Connaissance à propos de votre cible. Sur une réussite, vous apprenez toutes ses Vulnérabilités aux dégâts. Votre Initiative minimale pendant le premier round de Combat devient supérieure de 1 à l'Initiative de la cible que vous avez marqué.</p><h3 class=\"divider\">Notes de playtest</h3><p>Cette action n'est pas encore automatisée.</p>"
                 }
             }
         },
@@ -211,7 +211,7 @@
                 "backstab": {
                     "name": "Frappe traîtresse",
                     "condition": "Vous attaquez une cible avec la condition Débordé.",
-                    "description": "<p>Vous <strong>Frappez</strong> une cible <strong>Débordée</strong> avec votre arme, lui infligeant des dégâts <strong>Mortels</strong>.</p>"
+                    "description": "<p>Vous <strong>Frappez</strong> une cible @Condition[flanked] avec votre arme, lui infligeant des dégâts <strong>Mortels</strong>.</p>"
                 }
             }
         },
@@ -241,7 +241,7 @@
         },
         "beastmaster00000": {
             "name": "Maître des bêtes",
-            "description": "<p>Vous avez dressé votre compagnon animal pour vous aider au combat. Votre compagnon peut participer aux rencontres en tant que combattant allié.</p>"
+            "description": "<p>Vous avez dressé votre compagnon animal pour vous aider au combat. Votre compagnon peut participer aux rencontres en tant que combattant allié.</p><h3 class=\"divider\">Notes de playtest</h3><p>Ce talent n'est pas encore automatisé.</p>"
         },
         "berserker0000000": {
             "name": "Berserker",
@@ -250,7 +250,7 @@
                 "berserkerRage": {
                     "name": "Rage de Berserker",
                     "condition": "Vous avez subi des dégâts à votre réserve de Santé depuis votre dernier tour de Combat.",
-                    "description": "Vous devenez Enragé. Tant que vous êtes Enragé, vous infligez 4 dégâts supplémentaires sur toutes vos attaques de mêlée. Vous pouvez tenter de mettre fin cet effet à votre propre tour en réussissant un test de Volonté contre un DD de 20. Cet effet se termine automatiquement à la fin du Combat.",
+                    "description": "Vous devenez @Condition[enraged]. Tant que vous êtes Enragé, vous infligez 4 dégâts supplémentaires sur toutes vos attaques de mêlée. Vous pouvez tenter de mettre fin cet effet à votre propre tour en réussissant un test de Volonté contre un DD de 20. Cet effet se termine automatiquement à la fin du Combat.",
                     "effects": {
                         "Berserker Rage": {
                             "name": "Rage de Berserker"
@@ -275,7 +275,7 @@
         },
         "bloodletter00000": {
             "name": "Écorcheur",
-            "description": "<p>Votre précision avec les armes infligeant des dégâts Tranchants ou Perforants peut causer la condition Ensanglantée sur les Coups critiques infligeant des dégâts à la Santé.</p><p>L'effet Ensanglantée dure 1 round et inflige votre score de Dextérité en dégâts supplémentaires à la Santé.</p>"
+            "description": "<p>Votre précision avec les armes infligeant des dégâts Tranchants ou Perforants peut causer la condition @Condition[bleeding] sur les Coups critiques infligeant des dégâts à la Santé.</p><p>L'effet @Condition[bleeding] dure 3 rounds et inflige votre score de Dextérité en dégâts supplémentaires à la Santé.</p>"
         },
         "bloodmagic000000": {
             "name": "Magie du sang",
@@ -298,7 +298,7 @@
             "actions": {
                 "bullrush": {
                     "name": "Charge du taureau",
-                    "description": "<p>Effectuez une Attaque de compétence d'<strong>Athlétisme</strong> contre la défense de Fortitude d'un ennemi adjacent. Sur un succès, vous pouvez vous déplacer de votre <strong>Foulée</strong> directement à travers l'espace de l'ennemi. Votre ennemi se retrouve À terre et ne peut effectuer d'assaut opportuniste contre vous. Sur un échec, votre déplacement est bloqué et vous restez à votre position présente.</p>",
+                    "description": "<p>Effectuez une Attaque de compétence d'<strong>Athlétisme</strong> contre la défense de Fortitude d'un ennemi adjacent. Sur un succès, vous pouvez vous déplacer de votre <strong>Foulée</strong> directement à travers l'espace de l'ennemi. Votre ennemi se retrouve @Condition[prone] et ne peut effectuer d'assaut opportuniste contre vous. Sur un échec, votre déplacement est bloqué et vous restez à votre position présente.</p>",
                     "effects": {
                         "Bull Rush": {
                             "name": "Charge du taureau"
@@ -371,7 +371,7 @@
         },
         "concussiveblows0": {
             "name": "Coups concussifs",
-            "description": "<p>Votre puissance physique avec des armes de mêlée infligeant des dégâts Contondants peut causer la condition <strong>Ébranlé</strong> sur les Coups critiques infligeant des dégâts à la Santé.</p>\n<p>L'effet Ébranlé dure 1 round et réduit le maximum d'Actions de votre cible de 1.</p>"
+            "description": "<p>Votre puissance physique avec des armes de mêlée infligeant des dégâts Contondants peut causer la condition @Condition[staggered] sur les Coups critiques infligeant des dégâts à la Santé.</p><p>L'effet @Condition[staggered] dure 1 round et réduit le maximum d'Actions de votre cible de 2.</p>"
         },
         "conjurer00000000": {
             "name": "Conjurateur",
@@ -411,7 +411,7 @@
                 "counterRiposte": {
                     "name": "Contre-Riposte",
                     "condition": "Vous Parez une attaque de mêlée.",
-                    "description": "<p>Lorsque vous vous défendez d'une attaque de mêlée avec une <strong>Parade</strong>, vous pouvez réagir et dépenser du <strong>Focus</strong> pour riposter par une <strong>Frappe</strong> à coût réduit qui bénéficie de la condition <strong>Exposé</strong>.</p>"
+                    "description": "<p>Lorsque vous vous défendez d'une attaque de mêlée avec une <strong>Parade</strong>, vous pouvez réagir et dépenser du <strong>Focus</strong> pour riposter par une <strong>Frappe</strong> à coût réduit qui est <strong>Précise</strong>.</p>"
                 }
             }
         },
@@ -522,7 +522,7 @@
             "actions": {
                 "dirtyTricks": {
                     "name": "Coups bas",
-                    "description": "<p>Vous lancez des débris dans les yeux d'un ennemi. Si la Frappe est réussie, ce dernier est Aveuglé jusqu'à la fin de son prochain Tour.</p>",
+                    "description": "<p>Vous lancez des débris dans les yeux d'un ennemi. Si la <strong>Frappe</strong> est réussie, ce dernier est @Condition[blinded] jusqu'à la fin de son prochain <strong>Tour</strong>.</p>",
                     "effects": {
                         "Dirty Tricks": {
                             "name": "Coups bas"
@@ -582,7 +582,7 @@
         },
         "dustbinder000000": {
             "name": "Terramancien",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Terre. Les sorts utilisant cette Rune causent la condition @Condition[corroding] sur les Coups critiques.</p><p>L'effet Corrodé dure <strong>3 Rounds</strong> et inflige votre score de <strong>Sagesse</strong> en dégâts d'<strong>Acide</strong> à la <strong>Santé</strong> chaque Round.</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Terre. Les sorts utilisant cette Rune causent la condition @Condition[corroding] sur les Coups critiques.</p><p>L'effet Corrodé dure <strong>3 Rounds</strong> et inflige la moitié de votre score de <strong>Sagesse</strong> en dégâts d'<strong>Acide</strong> à la <strong>Santé</strong> chaque Round.</p>"
         },
         "earthProficiency": {
             "name": "Maîtrise de la Terre",
@@ -602,7 +602,13 @@
         },
         "evasiveshot00000": {
             "name": "Tir évasif",
-            "description": "<p>Vous êtes un expert pour tirer avec des armes à distance tout en évitant les attaques ennemies. Après avoir effectué une attaque d'arme à distance, vous gagnez la moitié de votre <strong>Foulée</strong> en déplacement gratuit supplémentaire.</p>"
+            "description": "<p>Vous êtes un expert pour tirer avec des armes à distance tout en évitant les attaques ennemies.</p>",
+            "actions": {
+                "evasiveShot": {
+                    "name": "Tir évasif",
+                    "description": "<p>Après avoir effectué une attaque d'arme à distance, vous pouvez vous déplacer jusqu'à la moitié de votre <strong>Foulée</strong> gratuitement.</p>"
+                }
+            }
         },
         "executionersstri": {
             "name": "Frappe du bourreau",
@@ -610,8 +616,7 @@
             "actions": {
                 "executionersStrike": {
                     "name": "Frappe du bourreau",
-                    "condition": "Votre cible est Blessée.",
-                    "description": "<p>Vous délivrez une Frappe Mortelle avec une arme à deux mains lourde. Si votre attaque réussie, votre opposant souffre également de la condition Ensanglanté pendant 3 Rounds, subissant des dégâts supplémentaires chaque Round, à hauteur de votre score de Force.</p>",
+                    "description": "<p>Vous délivrez une Frappe avec une arme à deux mains. Si votre attaque réussie et que votre opposant est en-dessous de la moitié de sa <strong>Santé</strong> maximum, la Frappe est <strong>Mortelle</strong>, et l'opposant souffre de la condition @Condition[bleeding] pendant 3 Rounds, subissant des dégâts supplémentaires chaque Round, à hauteur de votre score de Force.</p>",
                     "effects": {
                         "Executioner's Strike": {
                             "name": "Frappe du bourreau"
@@ -685,7 +690,7 @@
             "actions": {
                 "flashOfSteel": {
                     "name": "Éclair d'acier",
-                    "description": "<p>Vous effectuez une attaque d'arme de <strong>Lancer</strong>, ciblant un point faible dans les défenses de votre ennemi. Si l'attaque touche, la cible devient <strong>Exposée</strong> jusqu'au début de son prochain Tour.</p>",
+                    "description": "<p>Vous effectuez une attaque d'arme de <strong>Lancer</strong>, ciblant un point faible dans les défenses de votre ennemi. Si l'attaque touche, la cible devient @Condition[exposed] jusqu'au début de son prochain Tour.</p>",
                     "effects": {
                         "Flash of Steel": {
                             "name": "Éclair d'acier"
@@ -718,7 +723,7 @@
             "actions": {
                 "flyingKick": {
                     "name": "Coup de pied volant",
-                    "description": "<p>Vous vous <strong>Déplacez</strong> en ligne droite de 3 à 6 pieds pour donner un coup de pied à un ennemi avec une <strong>Frappe</strong> améliorée.</p>"
+                    "description": "<p>Vous vous <strong>Déplacez</strong> en ligne droite d'au moins 3 pieds jusqu'à votre valeur de foulée pour donner un coup de pied à un ennemi avec une <strong>Frappe</strong> améliorée.</p>"
                 }
             }
         },
@@ -737,7 +742,7 @@
                 "conserveMomentum": {
                     "name": "Conserver l'élan",
                     "condition": "Vous Bloquez, Parez, ou Esquivez une Frappe de mêlée.",
-                    "description": "Vous redirigez la force d'une attaque de mêlée qui vous manque, la pivotant pour qu'elle touche un autre ennemi adjacent à la place. Votre attaquant doit faire un nouveau jet d'attaque en ciblant un de ses alliés à la place."
+                    "description": "<p>Vous redirigez la force d'une attaque de mêlée qui vous manque, la pivotant pour qu'elle touche un autre ennemi adjacent à la place. Votre attaquant doit faire un nouveau jet d'attaque en ciblant un de ses alliés à la place.</p><h3 class=\"divider\">Notes de playtest</h3><p>Cette action n'est pas encore automatisée.</p>"
                 }
             }
         },
@@ -823,7 +828,7 @@
             "actions": {
                 "hamstring": {
                     "name": "Coupe-Jarret",
-                    "description": "<p>Vous effectuez une attaque de <strong>Frappe</strong> qui est <strong>Difficile</strong>, mais sur une réussite, elle inflige la condition <strong>Ralenti</strong> pendant <strong>3 Rounds</strong>.</p>",
+                    "description": "<p>Vous effectuez une attaque de <strong>Frappe</strong> qui est <strong>Difficile</strong>, mais sur une réussite, elle inflige la condition @Condition[slowed] pendant <strong>3 Rounds</strong>.</p>",
                     "effects": {
                         "Hamstring": {
                             "name": "Coupe-Jarret"
@@ -838,7 +843,7 @@
             "actions": {
                 "headbutt": {
                     "name": "Coup de boule",
-                    "description": "<p>Effectuez une <strong>Frappe</strong> à mains nues contre la défense de <strong>Fortitude</strong> d'un ennemi adjacent. Si votre <strong>Initiative</strong> est supérieure à celle de votre cible, vous obtenez <strong>+1 Faveur</strong> à cette attaque.</p><p>L'attaque est <strong>Difficile</strong> et n'inflige que des dégâts <strong>Réduits</strong>, mais sur une réussite, elle inflige la condition @Condition[staggered] pendant un round.</p><p>Cette action utilise toujours une arme à mains nues, même si vos emplacements d'arme sont occupés.</p>",
+                    "description": "<p>Effectuez une <strong>Frappe</strong> à mains nues contre la défense de <strong>Fortitude</strong> d'un ennemi adjacent. Si votre <strong>Initiative</strong> est supérieure à celle de votre cible, vous obtenez <strong>+1 Faveur</strong> à cette attaque.</p><p>L'attaque est <strong>Difficile</strong> et n'inflige que des dégâts @Condition[weakened], mais sur une réussite, elle inflige la condition @Condition[staggered] pendant un round.</p><p>Cette action utilise toujours une arme à mains nues, même si vos emplacements d'arme sont occupés.</p>",
                     "effects": {
                         "Headbutt": {
                             "name": "Coup de boule"
@@ -922,11 +927,11 @@
         },
         "inflectionpull00": {
             "name": "Inflexion : Rappeler",
-            "description": "<p>Amplifiez un sort pour attirer les créatures affectées vers le lanceur. Les créatures affectées par un sort avec l'inflexion Rappeler se déplacent de 1 case plus près du lanceur de sorts si cette case de destination est inoccupée.</p>"
+            "description": "<p>Amplifiez un sort pour attirer les créatures affectées vers le lanceur. Les créatures affectées par un sort avec l'inflexion <strong>Rappeler</strong> sont déplacés de force vers le lanceur de sorts sur une distance égale au bonus de Caractéristique appliqué au Sort, pouvant potentiellement entrer en collision avec des murs ou d'autres obstacles bloquant leur mouvement.</p>"
         },
         "inflectionpush00": {
             "name": "Inflexion : Rejeter",
-            "description": "<p>Amplifiez un sort pour repousser les créatures affectées loin du lanceur. Les créatures affectées par un sort avec l'inflexion Rejeter se déplacent de 4 feet loin du lanceur de sorts si la destination est inoccupée.</p>"
+            "description": "<p>Amplifiez un sort pour repousser les créatures affectées loin du lanceur. Les créatures affectées par un sort avec l'inflexion <strong>Rejeter</strong> sont repoussés de force à une distance du lanceur de sorts égale au bonus de Caractéristique appliqué au sort, pouvant potentiellement entrer en collision avec des murs ou d'autres obstacles bloquant leur mouvement.</p>"
         },
         "inflectionquicke": {
             "name": "Inflexion : Hâter",
@@ -976,12 +981,12 @@
         },
         "intercept0000000": {
             "name": "Intercepter",
-            "description": "Vous protégez vos alliés, interceptant les coups qui pourraient autrement être dirigés vers vos compagnons.",
+            "description": "<p>Vous protégez vos alliés, interceptant les coups qui pourraient autrement être dirigés vers vos compagnons.</p>",
             "actions": {
                 "intercept": {
                     "name": "Intercepter",
                     "condition": "Un ennemi se déplace dans ou à travers votre rayon d'Engagement.",
-                    "description": "<p>Vous interceptez la trajectoire d'un ennemi qui entre dans votre rayon d'<strong>Engagement</strong>, vous déplaçant immédiatement de votre <strong>Foulée</strong> pour vous interposer et bloquer son chemin.</p><p>Si l'ennemi sort de votre rayon d'Engagement ou attaque une autre créature pendant son tour, vous pouvez effectuer un <strong>Assaut opportuniste</strong> contre lui.</p>"
+                    "description": "<p>Vous interceptez la trajectoire d'un ennemi qui entre dans votre rayon d'<strong>Engagement</strong>, vous déplaçant immédiatement de votre <strong>Foulée</strong> pour vous interposer et bloquer son chemin.</p><p>Si l'ennemi sort de votre rayon d'Engagement ou attaque une autre créature pendant son tour, vous pouvez effectuer une @Action[default reactiveStrike] contre lui.</p><h3 class=\"divider\">Notes de playtest</h3><p>L'interruption du déplacement d'un ennemi n'est pas encore automatisée.</p>"
                 }
             }
         },
@@ -1044,7 +1049,7 @@
         },
         "iramancer0000000": {
             "name": "Furimancien",
-            "description": "Vos exploits d'arcane sont alimentés par la colère. Tant que vous êtes Enragé, vous pouvez toujours dépenser du Focus et vous infligez 2 dégâts supplémentaires à toutes les attaques de sorts."
+            "description": "<p>Vos exploits d'arcane sont alimentés par la colère. Tant que vous êtes @Condition[enraged], vous pouvez toujours dépenser du <strong>Focus</strong> et vous infligez 2 dégâts supplémentaires à toutes les attaques de sort.</p>"
         },
         "ironResolve00000": {
             "name": "Résolution de fer",
@@ -1052,7 +1057,7 @@
         },
         "irrepressiblespi": {
             "name": "Esprit irrépressible",
-            "description": "Votre ténacité vous donne un esprit irrépressible qui résiste à l'apparition du désespoir. Au début de votre tour, si vous n'êtes pas Démoralisé, vous gagnez 1 de Moral."
+            "description": "Votre ténacité vous donne un esprit irrépressible qui résiste à l'apparition du désespoir. Au début de votre tour, si vous n'êtes pas @Condition[broken], vous gagnez 1 de Moral."
         },
         "jewelcraftJourne": {
             "name": "Joaillerie : Compagnon",
@@ -1091,7 +1096,7 @@
         },
         "legerdemain00000": {
             "name": "Prestidigitation",
-            "description": "Vous pouvez altérer silencieusement votre sorcellerie. Vous pouvez appliquer des Inflexions Mineures en utilisant seulement vos mains sans avoir besoin de vocalisation."
+            "description": "<p>Vous pouvez altérer silencieusement votre sorcellerie. Vous pouvez appliquer des Inflexions de talent de palier 2 en utilisant seulement vos mains sans avoir besoin de vocalisation.</p>"
         },
         "legsweep00000000": {
             "name": "Balayette",
@@ -1099,7 +1104,7 @@
             "actions": {
                 "legSweep": {
                     "name": "Balayette",
-                    "description": "<p>Vous effectuez une attaque de <strong>Frappe</strong> avec l'arme de votre main principale. Cette technique est <strong>Difficile</strong> à exécuter et inflige des dégâts réduits, mais votre cible tombe <strong>À terre</strong> en cas de réussite.</p>",
+                    "description": "<p>Vous effectuez une attaque de <strong>Frappe</strong> avec l'arme de votre main principale. Cette technique est <strong>Difficile</strong> à exécuter et inflige des dégâts réduits, mais votre cible tombe @Condition[prone] en cas de réussite.</p>",
                     "effects": {
                         "Leg Sweep": {
                             "name": "Balayette"
@@ -1110,7 +1115,7 @@
         },
         "lesserregenerati": {
             "name": "Régénération mineure",
-            "description": "<p>Votre robustesse prodigieuse transmet une capacité surnaturelle à récupérer des blessures rapidement. Au début de votre tour, si vous n'êtes pas Affaibli, vous gagnez <strong>+1 Santé</strong>.</p>"
+            "description": "<p>Votre robustesse prodigieuse transmet une capacité surnaturelle à récupérer des blessures rapidement. Au début de votre tour, si vous n'êtes pas @Condition[weakened], vous gagnez <strong>+1 de Santé</strong>.</p>"
         },
         "lifeProficiency0": {
             "name": "Maîtrise de la Vie",
@@ -1144,7 +1149,7 @@
             "actions": {
                 "markPrey": {
                     "name": "Marquer la proie",
-                    "description": "<p>Vous Frappez en utilisant un coup spécial. Sur une attaque réussie, la cible est <strong>Exposée</strong> pour les 3 prochains Tours.</p>",
+                    "description": "<p>Vous Frappez en utilisant un coup spécial. Sur une attaque réussie, la cible est @Condition[exposed] pour les 3 prochains Tours.</p>",
                     "effects": {
                         "Marked": {
                             "name": "Marqué"
@@ -1235,11 +1240,11 @@
         },
         "necromancer00000": {
             "name": "Nécromancien",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Mort. Les sorts utilisant cette Rune causent la condition @Condition[decaying] sur les Coups critiques.</p><p>L'effet Putréfié dure <strong>3 Rounds</strong> et inflige votre score d'<strong>Intellect</strong> comme dégâts de <strong>Corruption</strong> à la <strong>Santé</strong> chaque Round.</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Mort. Les sorts utilisant cette Rune causent la condition @Condition[decaying] sur les Coups critiques.</p><p>L'effet Putréfié dure <strong>3 Rounds</strong> et inflige la moitié de votre score de <strong>Présence</strong> comme dégâts de <strong>Corruption</strong> à la <strong>Santé</strong> chaque Round.</p>"
         },
         "neverYield000000": {
             "name": "Ne jamais céder",
-            "description": "<p>Votre détermination vous empêche de laisser les limites de votre corps vous ralentir. En étant <strong>Affaibli</strong>, votre pénalité de points d'action est réduite de -2 à -1.</p>"
+            "description": "<p>Votre détermination vous empêche de laisser les limites de votre corps vous ralentir. En étant @Condition[weakened], votre pénalité de points d'action est réduite de -2 à -1.</p>"
         },
         "nosferatu0000000": {
             "name": "Nosferatu",
@@ -1248,7 +1253,7 @@
                 "vampiricBite": {
                     "name": "Morsure vampirique",
                     "condition": "Votre cible est une créature vivante.",
-                    "description": "<p>Vous saisissez un ennemi et le mordez avec vos incisives acérées, drainant rapidement son sang pour guérir vos propres blessures. Cette attaque requière un main libre pour agripper votre cible alors que vous vous nourrissez.</p>"
+                    "description": "<p>Vous saisissez un ennemi et le mordez avec vos incisives acérées, drainant rapidement son sang pour guérir vos propres blessures. Cette attaque requière un main libre pour agripper votre cible alors que vous vous nourrissez, et recouvrez votre score de <strong>Robustesse</strong> à la <strong>Santé</strong>.</p>"
                 }
             }
         },
@@ -1258,11 +1263,11 @@
         },
         "operator00000000": {
             "name": "Opérateur",
-            "description": "<p>Vous avez de la glace dans les veines et restez calme sous la pression. Votre robustesse physique et votre acuité mentale vous permettent d'affiner le danger de votre situation pour atteindre les plus grands résultats lorsque les enjeux sont les plus élevés.</p><p>En combat et non Neutralisé, vous gagnez +1 Faveur à tous les tests lorsque vous avez moins de 50% de votre Santé maximale restante. Vous gagnez +2 Faveurs à tous les tests lorsque vous avez moins de 25% de votre Santé maximale restante.</p>"
+            "description": "<p>Vous avez de la glace dans les veines et restez calme sous la pression. Votre robustesse physique et votre acuité mentale vous permettent d'affiner le danger de votre situation pour atteindre les plus grands résultats lorsque les enjeux sont les plus élevés.</p><p>En combat et non @Condition[incapacitated], vous gagnez +1 Faveur à tous les tests lorsque vous avez moins de 50% de votre Santé maximale restante. Vous gagnez +2 Faveurs à tous les tests lorsque vous avez moins de 25% de votre Santé maximale restante.</p>"
         },
         "opportunist00000": {
             "name": "Opportuniste",
-            "description": "<p>Vous saisissez toute opportunité pour capitaliser sur un ennemi qui vous tourne le dos. Vous pouvez effectuer un <strong>Assaut opportuniste</strong> même si vous êtes autrement <strong>Totalement engagé</strong>, mais vous le faites sans les 2 Faveurs qui s'appliqueraient ordinairement à une telle attaque.</p>"
+            "description": "<p>Vous saisissez toute opportunité pour capitaliser sur un ennemi qui vous tourne le dos. Vous pouvez effectuer une <strong>Frappe réactive</strong> même si vous êtes autrement <strong>Totalement engagé</strong>.</p>"
         },
         "opportunisticspe": {
             "name": "Sorcellerie opportuniste",
@@ -1329,7 +1334,7 @@
             "actions": {
                 "pinningShot": {
                     "name": "Tir de fixation",
-                    "description": "<p>Vous <strong>Frappez</strong> à distance. L'attaque est <strong>Difficile</strong>, mais si vous touchez votre cible, celle-ci devient <strong>Entravée</strong> jusqu'à la fin de son prochain Tour.</p>",
+                    "description": "<p>Vous <strong>Frappez</strong> à distance. L'attaque est <strong>Difficile</strong>, mais si vous touchez votre cible, celle-ci devient @Condition[restrained] jusqu'à la fin de son prochain Tour.</p>",
                     "effects": {
                         "Pinning Shot": {
                             "name": "Tir de fixation"
@@ -1354,11 +1359,11 @@
         },
         "poisoner00000000": {
             "name": "Empoisonneur",
-            "description": "<p>Vous pouvez appliquer du Poison sur les armes qui infligent des dégâts Tranchants ou Perforants. Vous infligez +2 dégâts supplémentaires chaque fois que vous infligez des dégâts de Poison et vos Frappes causent la condition <strong>Empoisonné</strong> sur les Frappes critiques qui infligent des dégâts à la Santé.</p>",
+            "description": "<p>Vous pouvez appliquer du Poison sur les armes qui infligent des dégâts Tranchants ou Perforants. Vous infligez +2 dégâts supplémentaires chaque fois que vous infligez des dégâts de Poison et vos Frappes causent la condition @Condition[poisoned] sur les Frappes critiques qui infligent des dégâts à la Santé.</p>",
             "actions": {
                 "poisonBlades": {
                     "name": "Lames empoisonnées",
-                    "description": "<p>Vous enduisez habilement vos lames d'huiles alchimiques toxiques qui appliquent la condition Empoisonné sur les Frappes critiques.</p>",
+                    "description": "<p>Vous enduisez habilement vos lames d'huiles alchimiques toxiques qui appliquent la condition @Condition[poisoned] sur les Frappes critiques.</p>",
                     "effects": {
                         "Poison Blades": {
                             "name": "Lames empoisonnées"
@@ -1409,12 +1414,12 @@
         },
         "provocateur00000": {
             "name": "Provocateur",
-            "description": "Vous vous spécialisez dans la répartie acerbe conçue pour souligner les lacunes de votre adversaire. En combat, vous pouvez lancer des boutades qui provoquent vos ennemis.",
+            "description": "<p>Vous vous spécialisez dans la répartie acerbe conçue pour souligner les lacunes de votre adversaire. En combat, vous pouvez lancer des boutades qui provoquent vos ennemis.</p>",
             "actions": {
                 "scathingMockery": {
                     "name": "Moquerie cinglante",
                     "condition": "Votre cible peut vous entendre et vous comprendre.",
-                    "description": "Vous exagérez les faiblesses de votre adversaire avec un bon mot cinglant, effectuant une attaque de compétence de Diplomatie contre la Volonté de votre cible. Sur une réussite, elle souffre de modestes dégâts Psychiques au Moral et devient Enragée pendant 1 Round.",
+                    "description": "<p>Vous exagérez les faiblesses de votre adversaire avec un bon mot cinglant, effectuant une attaque de compétence de <strong>Diplomatie</strong> contre la <strong>Volonté</strong> de votre cible. Sur une réussite, elle souffre de modestes dégâts <strong>Psychiques</strong> au <strong>Moral</strong> et devient @Condition[enraged] pendant 1 Round.</p>",
                     "effects": {
                         "Scathing Mockery": {
                             "name": "Moquerie cinglante"
@@ -1425,7 +1430,7 @@
         },
         "pyromancer000000": {
             "name": "Pyromancien",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Flamme. Les sorts utilisant cette Rune causent la condition @Condition[burning] sur les Coups critiques.</p><p>L'effet Enflammé dure <strong>1 Round</strong> et inflige votre score d'<strong>Intellect</strong> comme dégâts de <strong>Feu</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Flamme. Les sorts utilisant cette Rune causent la condition @Condition[burning] sur les Coups critiques.</p><p>L'effet Enflammé dure <strong>3 Rounds</strong> et inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts de <strong>Feu</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
         },
         "rallyingCry00000": {
             "name": "Cri de ralliement",
@@ -1596,7 +1601,7 @@
                 "ruthlessMomentum": {
                     "name": "Élan impitoyable",
                     "condition": "Vous neutralisez un ennemi avec une attaque de mêlée.",
-                    "description": "<p>Après avoir vaincu un ennemi, vous pouvez vous déplacer de votre <strong>Foulée</strong> et attaquer un autre opposant dans votre portée de mêlée.</p>"
+                    "description": "<p>Après avoir vaincu un ennemi, vous vous déplacez immédiatement jusqu'à votre <strong>Foulée</strong> et <strong>Frappez</strong> un autre ennemi que vous croisez ou à côté duquel vous terminez votre déplacement.</p>"
                 }
             }
         },
@@ -1634,13 +1639,13 @@
             "actions": {
                 "secondWind": {
                     "name": "Second souffle",
-                    "description": "<p>Vous concentrez votre énergie et recouvrez votre score de Robustesse à la Santé.</p>"
+                    "description": "<p>Vous concentrez votre énergie et recouvrez votre score de <strong>Robustesse</strong> à la <strong>Santé</strong>.</p>"
                 }
             }
         },
         "shapeshifter0000": {
             "name": "Métamorphe",
-            "description": "<p>Vous possédez la capacité surnaturelle de transformer votre corps en formes de bêtes.</p><p>Vous subissez une transformation où vous assumez la forme d'une bête avec laquelle vous êtes familier et qui est de la moitié de votre niveau ou moins. Tant que vous êtes transformé, vous avez les attributs et capacités exacts de la bête choisie.</p><p>Votre équipement est magiquement incorporé dans la forme que vous prenez, cependant vous ne gagnez aucun bénéfice de cet équipement tant que vous êtes transformé.</p><p>Si votre forme bestiale devient Neutralisée, vous revenez à votre forme normale avec tout dégât excédentaire devenant des Lésions. Si votre Moral est Brisé tant que vous êtes sous forme de bête, votre transformation se termine et tout dégât excédentaire devient de la Folie.</p>",
+            "description": "<p>Vous possédez la capacité surnaturelle de transformer votre corps en formes de bêtes.</p><p>Vous subissez une transformation où vous assumez la forme d'une bête avec laquelle vous êtes familier et qui est de la moitié de votre niveau ou moins. Tant que vous êtes transformé, vous avez les attributs et capacités exacts de la bête choisie.</p><p>Votre équipement est magiquement incorporé dans la forme que vous prenez, cependant vous ne gagnez aucun bénéfice de cet équipement tant que vous êtes transformé.</p><p>Si votre forme bestiale devient @Condition[incapacitated], vous revenez à votre forme normale avec tout dégât excédentaire devenant des <strong>Lésions</strong>. Si votre <strong>Moral</strong> est @Condition[broken] tant que vous êtes sous forme de bête, votre transformation se termine et tout dégât excédentaire devient de la <strong>Folie</strong>.</p><h3 class=\"divider\">Notes de playtest</h3><p>Ce talent et ses actions associées ne sont pas encore automatisées.</p>",
             "actions": {
                 "beastShape": {
                     "name": "Forme bestiale",
@@ -1692,7 +1697,7 @@
         },
         "skirmisher000000": {
             "name": "Querelleur",
-            "description": "<p>Vous êtes adepte d'entrer et sortir de la mêlée. Lorsque vous sortez du rayon d'<strong>Engagement</strong> d'un ennemi, cet ennemi a 2 Fléaux à tout <strong>Assaut opportuniste</strong> contre vous.</p>"
+            "description": "<p>Vous êtes adepte d'entrer et sortir de la mêlée. Lorsque vous sortez du rayon d'<strong>Engagement</strong> d'un ennemi, cet ennemi a 2 Fléaux à toute @Action[default reactiveStrike] contre vous.</p>"
         },
         "slipstep00000000": {
             "name": "Glissade",
@@ -1765,7 +1770,7 @@
             "actions": {
                 "steadfastResolve": {
                     "name": "Résolution inébranlable",
-                    "description": "<p>Vous vous blindez face à la démoralisation. Votre Moral est augmenté de votre score de Sagesse et vous gagnez temporairement la condition Déterminé.</p>",
+                    "description": "<p>Vous vous blindez face à la démoralisation. Votre <strong>Moral</strong> est augmenté de votre score de <strong>Sagesse</strong> et vous obtenez temporairement la condition @Condition[resolute].</p>",
                     "effects": {
                         "Steadfast Resolve": {
                             "name": "Résolution inébranlable"
@@ -1796,7 +1801,7 @@
         },
         "strategicreposit": {
             "name": "Repositionnement stratégique",
-            "description": "<p>Vous pensez toujours à l'avance à l'endroit où vous positionner si le danger menace. Avant le <strong>Tour 1</strong> d'une rencontre de Combat, à condition que vous ne soyez pas Distrait, vous pouvez immédiatement vous déplacer de 4 pieds dans n'importe quelle direction permise.</p><p>Si plusieurs combattants ont cette caractéristique, le repositionnement se produit dans l'ordre inverse de l'Initiative.</p>"
+            "description": "<p>Vous pensez toujours à l'avance à l'endroit où vous positionner si le danger menace. Avant le <strong>Tour 1</strong> d'une rencontre de Combat, à condition que vous ne soyez pas @Condition[unaware], vous pouvez immédiatement vous déplacer de 4 pieds dans n'importe quelle direction permise.</p><p>Si plusieurs combattants ont cette caractéristique, le repositionnement se produit dans l'ordre inverse de l'Initiative.</p><h3 class=\"divider\">Notes de playtest</h3><p>Ce talent n'est pas encore automatisé.</p>"
         },
         "strikefirst00000": {
             "name": "Frapper le premier",
@@ -1808,7 +1813,7 @@
         },
         "stunningstrike00": {
             "name": "Frappe étourdissante",
-            "description": "Une technique à mains nues difficile qui cible les points de pression vitaux sur les corps de vos adversaires. Vous déclenchez une frappe débilitante qui, si elle réussit, laisse votre ennemi Étourdi.",
+            "description": "<p>Une technique à mains nues difficile qui cible les points de pression vitaux sur les corps de vos adversaires. Vous déclenchez une frappe débilitante qui, si elle réussit, laisse votre ennemi @Condition[stunned].</p>",
             "actions": {
                 "stunningStrike": {
                     "name": "Frappe étourdissante",
@@ -1823,7 +1828,7 @@
         },
         "subtleextricatio": {
             "name": "Extraction subtile",
-            "description": "<p>Vous comprenez comment vous éloigner d'un adversaire sans vous exposer aux pires attaques en retour. Tout <strong>Assaut opportuniste</strong> contre vous est effectué sans les 2 Faveurs qui s'appliqueraient ordinairement à une telle attaque.</p>"
+            "description": "<p>Vous comprenez comment vous éloigner d'un adversaire sans vous exposer aux pires attaques en retour. Toute <strong>Frappe réactive</strong> contre vous est effectuée avec <strong>+1 Fléau</strong>.</p>"
         },
         "sunderingstrike0": {
             "name": "Frappe fracturante",
@@ -1831,7 +1836,7 @@
             "actions": {
                 "sunderingStrike": {
                     "name": "Frappe fracturante",
-                    "description": "<p>Vous effectuez une <strong>Frappe</strong> avec l'arme de votre main principale qui, sur un succès, applique la condition <strong>Exposé </strong> à votre cible pendant 3 rounds. Cette attaque est <strong>Difficile</strong> à effectuer et inflige des dégâts réduits.</p>",
+                    "description": "<p>Vous effectuez une <strong>Frappe</strong> avec une arme basée sur la Force qui, sur un succès, applique la condition @Condition[exposed] à votre cible pendant 3 rounds. Cette attaque est <strong>Difficile</strong> à effectuer et inflige des dégâts réduits.</p>",
                     "effects": {
                         "Sundered Armor": {
                             "name": "Armure fracturée"
@@ -1842,7 +1847,7 @@
         },
         "surgeweaver00000": {
             "name": "Tissefoudre",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Foudre. Les sorts utilisant cette Rune causent la condition @Condition[shocked] sur les Coups critiques.</p><p>L'effet Électrocuté dure <strong>1 Round</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts de <strong>Foudre</strong> au <strong>Moral</strong>, et applique la condition @Condition[staggered].</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Foudre. Les sorts utilisant cette Rune causent la condition @Condition[shocked] sur les Coups critiques.</p><p>L'effet Électrocuté dure <strong>3 Rounds</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts de <strong>Foudre</strong> au <strong>Moral</strong>, et applique la condition @Condition[staggered].</p>"
         },
         "swashbuckler0000": {
             "name": "Bretteur",
@@ -1892,7 +1897,7 @@
         },
         "testudo000000000": {
             "name": "Tortue",
-            "description": "Vous êtes hautement qualifié dans l'utilisation des boucliers pour adopter une posture défensive. Vous gagnez le double du bénéfice de la condition <strong>Protégé</strong> contre les <strong>Attaques d'Arme</strong> en maniant un bouclier."
+            "description": "Vous êtes hautement qualifié dans l'utilisation des boucliers pour adopter une posture défensive. Vous gagnez le double du bénéfice de la condition @Condition[guarded] contre les <strong>Attaques d'Arme</strong> en maniant un bouclier."
         },
         "thickskin0000000": {
             "name": "Peau épaisse",
@@ -1900,7 +1905,7 @@
         },
         "thoughtbinder000": {
             "name": "Censeur",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Contrôle. Les sorts utilisant cette Rune causent la condition @Condition[dominated] sur les Coups critiques.</p><p>L'effet Dominé dure <strong>1 Round</strong> et inflige votre score de caractéristique de <strong>Sagesse</strong> comme dégâts <strong>Psychiques</strong> additionnels au <strong>Moral</strong>.</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Contrôle. Les sorts utilisant cette Rune causent la condition @Condition[dominated] sur les Coups critiques.</p><p>L'effet Dominé dure <strong>3 Rounds</strong> et inflige votre score de caractéristique de <strong>Sagesse</strong> comme dégâts <strong>Psychiques</strong> additionnels au <strong>Moral</strong>.</p>"
         },
         "threadtheneedle0": {
             "name": "Enfiler l'aiguille",
@@ -1974,7 +1979,7 @@
         },
         "unshakeablestanc": {
             "name": "Posture inébranlable",
-            "description": "Vous ne pouvez pas être involontairement Déplacé ou mis À terre par une action qui n'est pas une Réussite critique lancée par un ennemi ou un Échec critique lancé par vous-même."
+            "description": "<p>Vous ne pouvez pas être involontairement Déplacé ou mis @Condition[prone] par une action qui n'est pas une Réussite critique lancée par un ennemi ou un Échec critique lancé par vous-même.</p><h3 class=\"divider\">Notes de playtest</h3><p>Ce talent n'est pas encore automatisé.</p>"
         },
         "uppercut00000000": {
             "name": "Uppercut",
@@ -1992,7 +1997,7 @@
         },
         "voidcaller000000": {
             "name": "Héraut du Néant",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Néant. Les sorts utilisant cette Rune causent la condition @Condition[entropy] sur les Coups critiques.</p><p>L'effet Entropie dure <strong>1 Round</strong>, inflige la moitié de votre score de <strong>Présence</strong> comme dégâts de <strong>Vide</strong> au <strong>Moral</strong>, et applique la condition @Condition[frightened].</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Néant. Les sorts utilisant cette Rune causent la condition @Condition[entropy] sur les Coups critiques.</p><p>L'effet Entropie dure <strong>1 Round</strong>, inflige la moitié de votre score de <strong>Présence</strong> comme dégâts de <strong>Vide</strong> à la <strong>Santé</strong>, et applique la condition @Condition[frightened].</p>"
         },
         "vowofanimus00000": {
             "name": "Serment d'animosité",
@@ -2045,11 +2050,11 @@
         },
         "zealoussmite0000": {
             "name": "Correction zélée",
-            "description": "<p>Vous pouvez imprégner un pouvoir vertueux dans votre coup avec une arme lourde.</p>",
+            "description": "<p>Vous pouvez imprégner un pouvoir vertueux dans votre coup avec une arme basée sur la Force.</p>",
             "actions": {
                 "zealousSmite": {
                     "name": "Correction zélée",
-                    "condition": "Vous attaquez un ennemi Exposé avec une arme Lourde.",
+                    "condition": "Vous attaquez un ennemi avec une arme basée sur la Force.",
                     "description": "<p>Vous <strong>Frappez</strong> en utilisant une arme basée sur la Force. L'attaque devient <strong>Mortelle</strong> et tout dégât infligé est <strong>Radiant</strong>.</p>"
                 }
             }

@@ -366,7 +366,7 @@
         },
         "packhunter000000": {
             "name": "Chasse en meute",
-            "description": "<p>Cette créature chasse en meute, comptant sur ses alliés pour déborder et harceler une cible afin de l'exposer à davantage de dégâts.</p><p>Cette créature double le nombre des Faveurs accordées en attaquant un ennemi <strong>Débordé</strong>.</p>"
+            "description": "<p>Cette créature chasse en meute, comptant sur ses alliés pour déborder et harceler une cible afin de l'exposer à davantage de dégâts.</p><p>Cette créature double le nombre des Faveurs accordées en attaquant un ennemi @Condition[flanked].</p>"
         },
         "pouncingStrike00": {
             "name": "Frappe bondissante",
@@ -447,7 +447,7 @@
             "actions": {
                 "restrainingChomp": {
                     "name": "Morsure entravante",
-                    "description": "<p>La créature mord sa cible. Si l'attaque est réussie et que la cible est de <strong>Taille</strong> égale ou inférieure, la cible est également <strong>Entravée</strong> jusqu'à ce que cette créature choisisse de la relâcher ou que l'entrave soit brisée autrement. Une seule cible peut être entravée par cette action à un moment donné.</p>",
+                    "description": "<p>La créature mord sa cible. Si l'attaque est réussie et que la cible est de <strong>Taille</strong> égale ou inférieure, la cible est également @Condition[restrained] jusqu'à ce que cette créature choisisse de la relâcher ou que l'entrave soit brisée autrement. Une seule cible peut être entravée par cette action à un moment donné.</p>",
                     "effects": {
                         "Restraining Chomp": {
                             "name": "Morsure entravante"
@@ -508,7 +508,7 @@
             "actions": {
                 "slipperyEscape": {
                     "name": "Évasion glissante",
-                    "description": "<p>La créature utilise sa forme glissante pour échapper aux entraves, mettant immédiatement fin à la condition <strong>Entravé</strong>.</p>"
+                    "description": "<p>La créature utilise sa forme glissante pour échapper aux entraves, mettant immédiatement fin à la condition @Condition[restrained].</p>"
                 }
             }
         },
@@ -597,7 +597,7 @@
                 "thrash": {
                     "name": "Violenter",
                     "condition": "La cible est Entravée par cette créature.",
-                    "description": "<p>La créature inflige des dégâts <strong>Mortels</strong> à une cible qu'elle a actuellement <strong>Entravée</strong>.</p>"
+                    "description": "<p>La créature inflige des dégâts <strong>Mortels</strong> à une cible qu'elle a actuellement @Condition[restrained].</p>"
                 }
             }
         },
@@ -622,7 +622,7 @@
             "actions": {
                 "tuskCharge": {
                     "name": "Charge du sanglier",
-                    "description": "<p>Charge en ligne directe sur une distance égale à la Foulée au maximum pour effectuer une Frappe contre la première créature rencontrée. En cas de succès, la cible est mise À terre.</p>",
+                    "description": "<p>Charge en ligne directe sur une distance égale à la Foulée au maximum pour effectuer une Frappe contre la première créature rencontrée. En cas de succès, la cible est mise @Condition[prone].</p>",
                     "effects": {
                         "Tusk Charge": {
                             "name": "Charge du sanglier"
@@ -661,6 +661,52 @@
                 "webSpinner": {
                     "name": "Tisseur de toile",
                     "description": "<p>La créature peut passer 10 minutes à tisser une nouvelle section de toile qui couvre une zone de 5 pieds.</p>"
+                }
+            }
+        },
+        "dyingCall0000000": {
+            "name": "Cri d'agonie",
+            "description": "<p>Lorsque @ref[actor.name]{cette créature} est à l'agonie, elle pousse un dernier appel, alertant les autres créatures à proximité qu'elle a été tuée et appelant à la vengeance.</p>",
+            "actions": {
+                "dyingCall": {
+                    "name": "Cri d'agonie",
+                    "condition": "La créature meurt.",
+                    "description": "<p>La @ref[actor.name]{créature} pousse un cri strident en guise de dernier soupir, informant les créatures similaires à proximité de sa mort, lesquelles sont instinctivement attirées vers cet endroit.</p>"
+                }
+            }
+        },
+        "maddeningShriek0": {
+            "name": "Hurlement affolant",
+            "description": "<p>Cette @ref[actor.name]{créature} est capable de pousser un cri perçant si strident qu'il peut provoquer une perte auditive temporaire chez les autres créatures qui l'entendent.</p>",
+            "actions": {
+                "maddeningShriek": {
+                    "name": "Hurlement affolant",
+                    "description": "<p>La @ref[actor.name]{créature} pousse un cri strident et perçant, attaquant le <strong>Moral</strong> de tous ceux qui se trouvent à portée et leur infligeant la condition @Condition[deafened] pendant un round.</p>",
+                    "effects": {
+                        "Maddening Shriek": {
+                            "name": "Hurlement affolant"
+                        }
+                    }
+                }
+            }
+        },
+        "polybrachial0000": {
+            "description": "<p>La @ref[actor.name]{créature} possède une multitude de bras qu'elle peut utiliser pour effectuer des actions. Elle est toujours considérée comme ayant deux mains libres pour la sorcellerie ou les interactions, quels que soient les objets qu'elle a équipés.</p>",
+            "name": "Polybrachial"
+        },
+        "terrifyingPresen": {
+            "name": "Présence terrifiante",
+            "description": "<p>La simple présence de cette créature suscite une peur pure et débridée chez quiconque la regarde.</p>",
+            "actions": {
+                "terrifyingPresence": {
+                    "name": "Présence terrifiante",
+                    "condition": "Un ennemi se déplace à moins de 20 pieds.",
+                    "description": "<p>Lorsqu'un ennemi se déplace à moins de 20 pieds de la @ref[actor.name]{créature}, il se retrouve exposé à sa terrible présence, ce qui attaque sa <strong>Volonté</strong> et lui inflige la condition @Condition[frightened] en cas de réussite.</p>",
+                    "effects": {
+                        "Terrifying Presence": {
+                            "name": "Présence terrifiante"
+                        }
+                    }
                 }
             }
         }

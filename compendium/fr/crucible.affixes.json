@@ -330,7 +330,7 @@
             "actions": {
                 "gliding": {
                     "name": "Planant",
-                    "description": "<p>Utilisé durant une <strong>Chute</strong>, vous pouvez vous déplacer latéralement d'un nombre d'espaces depuis votre position initiale en planant. La distance planée dépend du <strong>Palier</strong> de ce préfixe.</p><ul><li><p><strong>Palier 1 :</strong> <strong>1 pied</strong> par 20 pieds de descente.</p></li><li><p><strong>Palier 2 :</strong> <strong>2 pieds</strong> par 20 pieds de descente.</p></li><li><p><strong>Palier 3 :</strong> <strong>4 pieds</strong> par 20 pieds de descente.</p></li></ul><p>Vous ne subissez aucun dégât de chute à l'atterrissage, et n'êtes pas @Condition[prone].</p>"
+                    "description": "<p>Utilisé durant une @Condition[falling], vous pouvez vous déplacer latéralement d'un nombre d'espaces depuis votre position initiale en planant. La distance planée dépend du <strong>Palier</strong> de ce préfixe.</p><ul><li><p><strong>Palier 1 :</strong> <strong>1 pied</strong> par 20 pieds de descente.</p></li><li><p><strong>Palier 2 :</strong> <strong>2 pieds</strong> par 20 pieds de descente.</p></li><li><p><strong>Palier 3 :</strong> <strong>4 pieds</strong> par 20 pieds de descente.</p></li></ul><p>Vous ne subissez aucun dégât de chute à l'atterrissage, et n'êtes pas @Condition[prone].</p>"
                 }
             }
         },

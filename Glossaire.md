@@ -28,6 +28,8 @@
 | Cursed | Maudit |
 | Bloodied | Blessé |
 | Area of Effect | Zone d’effet |
+| Loot | Butin |
+| Stack | Pile |
 
 ---
 
@@ -289,6 +291,7 @@
 | Prone | À terre |
 | Restrained | Entravé |
 | Slowed | Ralenti |
+| Flying | En vol |
 
 | Actions | Actions |
 |---------|----------|
@@ -489,6 +492,7 @@
 | Swim | Nage |
 | Fly | Vol |
 | Blink | Clignotement |
+| Burrow | Fouissement |
 
 | Cover | Couverture |
 |---------|----------|

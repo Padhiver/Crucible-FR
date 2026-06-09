@@ -407,20 +407,12 @@
         },
         "WARNINGS": {
             "SPECIFIC": {
-                "BODY_BLOCK": {
-                    "AlreadyConfirmed": "L'attaque que vous subissez a déjà été confirmée et ne peut plus être contrée.",
-                    "InvalidOutcome": "Vous ne pouvez utiliser l'Opposition corporelle qu'après avoir subi une attaque défendue par l'Armure ou un Coup superficiel.",
-                    "MeleeOnly": "Vous ne pouvez utiliser l'Opposition corporelle que contre une attaque de mêlée."
-                },
                 "DELAY": {
                     "AlreadyDelayed": "Vous ne pouvez plus retarder votre tour à ce round de combat.",
                     "WrongTurn": "Vous ne pouvez utiliser l'action Retarder que lors de votre propre tour de combat."
                 },
-                "INTERPOSE": {
-                    "AllyMustBeTarget": "L'allié sélectionné doit être la cible de la Frappe la plus récente.",
-                    "AttackMissed": "Vous ne pouvez vous Interposer que contre une attaque qui touche, même superficiellement, votre allié.",
-                    "RequiresStrike": "L'Interposition requiert que l'action la plus récente soit une Frappe d'arme.",
-                    "SingleTarget": "L'Interposition ne peut être utilisée que contre une Frappe à cible unique."
+                "REVIVE": {
+                    "RequiresDead": "Ranimer requiert une cible morte."
                 }
             },
             "AuraNoToken": "Vous ne pouvez pas utiliser une action de type Aura sans qu'il y ait un token sur la scène !",
@@ -477,7 +469,16 @@
             "Restrained": "Vous ne pouvez pas vous déplacer en étant Entravé !",
             "Silenced": "Vous ne pouvez pas utiliser cette action en étant Aphone.",
             "UnimplementedTarget": "L'automation du type de ciblage {type} pour l'action {name} n'est pas encore supportée, vous devez cibler manuellement les tokens affectés.",
-            "WrongMovementToken": "Vous devez déplacer le token utilisant cette action."
+            "WrongMovementToken": "Vous devez déplacer le token utilisant cette action.",
+            "AlreadyConfirmed": "L'action contre vous a déjà été confirmée et vous ne pouvez plus y réagir.",
+            "MustFollowMainhandStrike": "Vous ne pouvez effectuer l'action {action} qu'après une action de Frappe de base avec votre arme en main principale.",
+            "MustFollowMeleeDefense": "Vous ne pouvez effectuer l'action {action} qu'après avoir défendu contre une attaque de mêlée avec une {defense}.",
+            "MustFollowMeleeKill": "Vous ne pouvez effectuer l'action {action} qu'après avoir neutralisé un ennemi avec une attaque de mêlée.",
+            "MustFollowRanged": "Vous ne pouvez effectuer l'action {action} qu'après une attaque avec une arme à distance.",
+            "MustReactHit": "Vous ne pouvez effectuer l'action {action} qu'en réponse à une attaque ayant réussi ou ayant porté un coup superficiel.",
+            "MustReactSingleTarget": "Vous ne pouvez effectuer l'action {action} qu'en réponse à une action qui avait une cible unique.",
+            "MustReactStrike": "Vous ne pouvez effectuer l'action {action} qu'en réponse à une Frappe d'arme.",
+            "MustTargetTarget": "L'action {action} ne peut être utilisée que sur la cible de l'action la plus récente."
         },
         "Action": "Action",
         "AffectsScope": "Affecte {scope}",
@@ -601,7 +602,10 @@
                 "Elite": "Élite",
                 "Minion": "Minion",
                 "Normal": "Normal"
-            }
+            },
+            "NoArchetype": "Aucun archétype",
+            "NoTaxonomy": "Aucune taxonomie",
+            "ThreatLevelSpecific": "Niveau de menace {threat}"
         },
         "CREATION": {
             "AbandonContent": "Abandonner la progression et quitter la création ?",
@@ -664,7 +668,7 @@
                     "base": "Engagement de base",
                     "label": "Engagement",
                     "labelShort": "Engagement",
-                    "tooltip": "Nombre d'ennemis engagés<br>(Taille - 2) + Bonus d'engagement"
+                    "tooltip": "Nombre d'ennemis pouvant être engagés<br>(Taille - 2) + Bonus d'engagement"
                 },
                 "engagementBonus": {
                     "hint": "Un modificateur additif à l'engagement de base.",
@@ -1455,7 +1459,8 @@
             "RollOnBehalf": "Jet pour",
             "Skip": "Passer l'Acteur",
             "ResetPending": "Réinitialiser en attente",
-            "RequiresGM": "Seul un Maître du jeu peut initier des jets de groupe."
+            "RequiresGM": "Seul un Maître du jeu peut initier des jets de groupe.",
+            "TitleSpecific": "Test de compétence de groupe : {skill}"
         },
         "REQUESTS": {
             "AddParty": "Ajouter le Groupe",
@@ -1466,7 +1471,8 @@
             "Request": "Requête",
             "RequestRolls": "Requête de Lancers",
             "SpecificActors": "Acteurs spécifiques",
-            "SpecificActorsHint": "Choisissez des acteurs spécifiques appropriés."
+            "SpecificActorsHint": "Choisissez des acteurs spécifiques appropriés.",
+            "GroupCheck": "Test de groupe"
         },
         "Ability": "Caractéristique",
         "AbilityBonus": "Bonus de Caractéristique",
@@ -1560,7 +1566,11 @@
         "WARNINGS": {
             "GMOnly": "Seul un MJ peut configurer et lancer des périls."
         },
-        "Falling": "Chute"
+        "Falling": "Chute",
+        "Parenthetical": "{label} ({tags})",
+        "Rank": "Péril {danger}",
+        "TooltipDamage": "{rank} contre {defense} infligeant {damage} points de dégâts à : {resource}",
+        "TooltipRestoration": "{rank} contre {defense} restaurant la ressource : {resource}"
     },
     "ITEM": {
         "ACTIONS": {
@@ -1574,7 +1584,10 @@
             "RecoverAllContent": "Ramasser tous les objets lâchés de {actor} ?",
             "RecoverAllTitle": "Récupérer les objets lâchés",
             "RecoverDetail": "Récupérer l'objet lâché : {item}",
-            "UnEquip": "Déséquiper : {typeLabel}"
+            "UnEquip": "Déséquiper : {typeLabel}",
+            "DropDetail": "Lâcher l'objet : {item}",
+            "Read": "Lire {item}",
+            "UnEquipDetail": "Déséquiper l'objet : {item}"
         },
         "COMPOSED_NAME": {
             "Prefix": "{prefixes} {name}",
@@ -1665,7 +1678,8 @@
             "TalentConfiguration": "Configuration de Talent",
             "TalentDrop": "Ajoutez un talent en glissant-déposant un objet Talent dans cette zone.",
             "TalentRemove": "Retirer un Talent",
-            "Type": "Type d'équipement"
+            "Type": "Type d'équipement",
+            "EquipmentScale": "Adapter automatiquement le niveau de qualité au niveau de la créature"
         },
         "TABS": {
             "Actions": "Actions",
@@ -2215,7 +2229,9 @@
             "PurchaseNodeReverse": "Retirer le point dépensé dans le nœud vide « {node} » ?",
             "PurchaseNodeTitle": "Acquérir un nœud de talent ?",
             "PurchaseTitle": "Acquérir le talent : {name}",
-            "Reset": "Réinitialiser"
+            "Reset": "Réinitialiser",
+            "Remove": "<p>Retirer le talent <strong>{name}</strong> afin de récupérer 1 point de talent ?</p>",
+            "RemoveTitle": "Retirer le talent : {name}"
         },
         "FIELDS": {
             "actions": {
@@ -2323,7 +2339,11 @@
         "GrantsSpells": "<strong>Sorts iconiques : </strong>{name} accorde {spells} emplacements de Sort iconique.",
         "NodeSpecific": "Nœud : {nodeType}",
         "PointsAvailable": "Points disponibles",
-        "Prerequisites": "Prérequis"
+        "Prerequisites": "Prérequis",
+        "Banned": "Banni",
+        "Empty": "Vide",
+        "Locked": "Verrouillé",
+        "Tier": "Palier {tier}"
     },
     "TAXONOMY": {
         "CATEGORIES": {
@@ -2388,6 +2408,10 @@
                     "hint": "Résistance numérique à ce type de dégâts, valeur entre -3 (le plus vulnérable) et 3 (le plus résistant). Évolue à mesure qu'une créature de cette Taxonomie progresse en niveau.",
                     "label": "Valeur d'évolution de Résistance"
                 }
+            },
+            "equipment": {
+                "hint": "Configurez l'équipement que les créatures de cette taxonomie possèdent automatiquement.",
+                "label": "Équipement accordé"
             }
         },
         "SHEET": {
@@ -2399,7 +2423,8 @@
         },
         "WARNINGS": {
             "InvalidAbilities": "La somme des valeurs de caractéristique initiale doit être égale à 12. Actuellement {sum}",
-            "InvalidResistances": "La somme des valeurs d'échelle de résistance doit être égale à zéro. Actuellement {sum}"
+            "InvalidResistances": "La somme des valeurs d'échelle de résistance doit être égale à zéro. Actuellement {sum}",
+            "EquipmentNotNatural": "La taxonomie \"{name}\" ne peut pas utiliser d'équipement qui ne possède pas l'étiquette \"naturelle\"."
         }
     },
     "TEMPERATURE_TIERS": {

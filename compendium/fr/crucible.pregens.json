@@ -51,7 +51,7 @@
                 },
                 "bloodletter00000": {
                     "name": "Écorcheur",
-                    "description": "<p>Votre précision avec les armes infligeant des dégâts Tranchants ou Perforants peut causer la condition Ensanglantée sur les Coups critiques infligeant des dégâts à la Santé.</p><p>L'effet Ensanglantée dure 1 round et inflige votre score de Dextérité en dégâts supplémentaires à la Santé.</p>"
+                    "description": "<p>Votre précision avec les armes infligeant des dégâts Tranchants ou Perforants peut causer la condition @Condition[bleeding] sur les Coups critiques infligeant des dégâts à la Santé.</p><p>L'effet @Condition[bleeding] dure 3 rounds et inflige votre score de Dextérité en dégâts supplémentaires à la Santé.</p>"
                 },
                 "counterevade0000": {
                     "name": "Contre-Esquive",
@@ -85,7 +85,7 @@
                 },
                 "skirmisher000000": {
                     "name": "Querelleur",
-                    "description": "<p>Vous êtes adepte d'entrer et sortir de la mêlée. Lorsque vous sortez du rayon d'<strong>Engagement</strong> d'un ennemi, cet ennemi a 2 Fléaux à tout <strong>Assaut opportuniste</strong> contre vous.</p>"
+                    "description": "<p>Vous êtes adepte d'entrer et sortir de la mêlée. Lorsque vous sortez du rayon d'<strong>Engagement</strong> d'un ennemi, cet ennemi a 2 Fléaux à toute @Action[default reactiveStrike] contre vous.</p>"
                 },
                 "impetus000000000": {
                     "name": "Impulsion",
@@ -103,12 +103,12 @@
                 },
                 "intercept0000000": {
                     "name": "Intercepter",
-                    "description": "Vous protégez vos alliés, interceptant les coups qui pourraient autrement être dirigés vers vos compagnons.",
+                    "description": "<p>Vous protégez vos alliés, interceptant les coups qui pourraient autrement être dirigés vers vos compagnons.</p>",
                     "actions": {
                         "intercept": {
                             "name": "Intercepter",
                             "condition": "Un ennemi se déplace dans ou à travers votre rayon d'Engagement.",
-                            "description": "<p>Vous interceptez la trajectoire d'un ennemi qui entre dans votre rayon d'<strong>Engagement</strong>, vous déplaçant immédiatement de votre <strong>Foulée</strong> pour vous interposer et bloquer son chemin.</p><p>Si l'ennemi sort de votre rayon d'Engagement ou attaque une autre créature pendant son tour, vous pouvez effectuer un <strong>Assaut opportuniste</strong> contre lui.</p>"
+                            "description": "<p>Vous interceptez la trajectoire d'un ennemi qui entre dans votre rayon d'<strong>Engagement</strong>, vous déplaçant immédiatement de votre <strong>Foulée</strong> pour vous interposer et bloquer son chemin.</p><p>Si l'ennemi sort de votre rayon d'Engagement ou attaque une autre créature pendant son tour, vous pouvez effectuer une @Action[default reactiveStrike] contre lui.</p><h3 class=\"divider\">Notes de playtest</h3><p>L'interruption du déplacement d'un ennemi n'est pas encore automatisée.</p>"
                         }
                     }
                 },
@@ -181,7 +181,7 @@
                     "actions": {
                         "flashOfSteel": {
                             "name": "Éclair d'acier",
-                            "description": "<p>Vous effectuez une attaque d'arme de <strong>Lancer</strong>, ciblant un point faible dans les défenses de votre ennemi. Si l'attaque touche, la cible devient <strong>Exposée</strong> jusqu'au début de son prochain Tour.</p>",
+                            "description": "<p>Vous effectuez une attaque d'arme de <strong>Lancer</strong>, ciblant un point faible dans les défenses de votre ennemi. Si l'attaque touche, la cible devient @Condition[exposed] jusqu'au début de son prochain Tour.</p>",
                             "effects": {
                                 "Flash of Steel": {
                                     "name": "Éclair d'acier"
@@ -203,12 +203,12 @@
                 },
                 "assassin00000000": {
                     "name": "Assassin",
-                    "description": "<p>Vous vous spécialisez dans l'art d'apporter la mort aux imprudents. Toute Frappe ou Attaque magique contre une cible <strong>Distraite</strong> devient <strong>Mortelle</strong>.</p><p>Une créature Distraite touchée par votre attaque ne peut pas alerter ses alliés avant son propre tour de Combat.</p>",
+                    "description": "<p>Vous vous spécialisez dans l'art d'apporter la mort aux imprudents. Toute <strong>Frappe</strong> ou Attaque de <strong>Sort</strong> contre une cible @Condition[unaware] devient <strong>Mortelle</strong>.</p><p>Une créature <strong>Distraite</strong> touchée par votre attaque ne peut pas alerter ses alliés avant son propre tour de <strong>Combat</strong>.</p>",
                     "actions": {
                         "markForDeath": {
                             "name": "Marquer pour la Mort",
                             "condition": "Vous n'êtes pas observé.",
-                            "description": "<p>Vous étudiez une créature pendant 1 minute. Effectuez un Test de Connaissance à propos de votre cible. Sur une réussite, vous apprenez toutes ses Vulnérabilités aux dégâts. Votre Initiative minimale pendant le premier round de Combat devient supérieure de 1 à l'Initiative de la cible que vous avez marqué.</p>"
+                            "description": "<p>Vous étudiez une créature pendant 1 minute. Effectuez un Test de Connaissance à propos de votre cible. Sur une réussite, vous apprenez toutes ses Vulnérabilités aux dégâts. Votre Initiative minimale pendant le premier round de Combat devient supérieure de 1 à l'Initiative de la cible que vous avez marqué.</p><h3 class=\"divider\">Notes de playtest</h3><p>Cette action n'est pas encore automatisée.</p>"
                         }
                     }
                 },
@@ -248,7 +248,7 @@
                         "backstab": {
                             "name": "Frappe traîtresse",
                             "condition": "Vous attaquez une cible avec la condition Débordé.",
-                            "description": "<p>Vous <strong>Frappez</strong>, avec l'arme de votre main principale, une créature <strong>Débordée</strong>, lui infligeant des dégâts <strong>Mortels</strong>.</p>"
+                            "description": "<p>Vous <strong>Frappez</strong> avec votre arme une cible @Condition[flanked], lui infligeant des dégâts <strong>Mortels</strong>.</p>"
                         }
                     }
                 }
@@ -260,6 +260,9 @@
             "background": {
                 "name": "Gamin des rues",
                 "description": "<p>Peu de gens apprennent à survivre comme vous l'avez fait. Votre éducation à la méfiance a été rude. Vous avez appris à surveiller les autres pour détecter les signes révélateurs de danger ou de déloyauté, à éviter l'attention des autres, fouillant les rues de quelque expansion urbaine pour trouver des restes de nourriture.</p>"
+            },
+            "biography": {
+                "public": "<p>Belladonna est une voleuse rusée qui combat à l'aide de deux dagues, infligeant une rapide succession de coups à ses adversaires imprudents. Belladonna aspire à obtenir le Talent signature <strong>Empoisonneur</strong>.</p>"
             }
         },
         "2lvTCCOj4dnBI774": {
@@ -268,12 +271,6 @@
                 "name": "Eliorwen"
             },
             "items": {
-                "WYw63RWi2vcIPylm": {
-                    "name": "Arc long",
-                    "description": {
-                        "public": "<p>Un arc long, souvent plus grand que l'archer qui le bande, nécessite une force considérable et des années d'entraînement pour être maîtrisé, et permet de propulser des flèches d'une force mortelle à travers le champ de bataille.</p>"
-                    }
-                },
                 "CItsWhgzGd5hXOQD": {
                     "name": "Cimeterre",
                     "description": {
@@ -292,7 +289,7 @@
                     "actions": {
                         "pinningShot": {
                             "name": "Tir de fixation",
-                            "description": "<p>Vous <strong>Frappez</strong> à distance. L'attaque est <strong>Difficile</strong>, mais si vous touchez votre cible, celle-ci devient <strong>Entravée</strong> jusqu'à la fin de son prochain Tour.</p>",
+                            "description": "<p>Vous <strong>Frappez</strong> à distance. L'attaque est <strong>Difficile</strong>, mais si vous touchez votre cible, celle-ci devient @Condition[restrained] jusqu'à la fin de son prochain Tour.</p>",
                             "effects": {
                                 "Pinning Shot": {
                                     "name": "Tir de fixation"
@@ -315,7 +312,7 @@
                     "actions": {
                         "markPrey": {
                             "name": "Marquer la proie",
-                            "description": "<p>Vous Frappez en utilisant un coup spécial. Sur une attaque réussie, la cible est <strong>Exposée</strong> pour les 3 prochains Tours.</p>",
+                            "description": "<p>Vous Frappez en utilisant un coup spécial. Sur une attaque réussie, la cible est @Condition[exposed] pour les 3 prochains Tours.</p>",
                             "effects": {
                                 "Marked": {
                                     "name": "Marqué"
@@ -326,7 +323,13 @@
                 },
                 "evasiveshot00000": {
                     "name": "Tir évasif",
-                    "description": "<p>Vous êtes un expert pour tirer avec des armes à distance tout en évitant les attaques ennemies. Après avoir effectué une attaque d'arme à distance, vous gagnez la moitié de votre <strong>Foulée</strong> en déplacement gratuit supplémentaire.</p>"
+                    "description": "<p>Vous êtes un expert pour tirer avec des armes à distance tout en évitant les attaques ennemies.</p>",
+                    "actions": {
+                        "evasiveShot": {
+                            "name": "Tir évasif",
+                            "description": "<p>Après avoir effectué une attaque d'arme à distance, vous pouvez vous déplacer jusqu'à la moitié de votre <strong>Foulée</strong> gratuitement.</p>"
+                        }
+                    }
                 },
                 "gesturearrow0000": {
                     "name": "Signe : Flèche",
@@ -362,7 +365,7 @@
                     "actions": {
                         "twinnedShot": {
                             "name": "Tir jumelé",
-                            "description": "<p>En utilisant cette technique <strong>Difficile</strong>, vous tirez deux projectiles simultanément, réalisant deux attaques de <strong>Frappe</strong> contre la même cible.</p>"
+                            "description": "<p>Vous vous concentrer pour encocher deux projectiles en même temps, réalisant deux attaques de <strong>Frappe</strong> simultanément contre une même cible unique.</p>"
                         }
                     }
                 },
@@ -376,7 +379,7 @@
                 },
                 "skirmisher000000": {
                     "name": "Querelleur",
-                    "description": "<p>Vous êtes adepte d'entrer et sortir de la mêlée. Lorsque vous sortez du rayon d'<strong>Engagement</strong> d'un ennemi, cet ennemi a 2 Fléaux à tout <strong>Assaut opportuniste</strong> contre vous.</p>"
+                    "description": "<p>Vous êtes adepte d'entrer et sortir de la mêlée. Lorsque vous sortez du rayon d'<strong>Engagement</strong> d'un ennemi, cet ennemi a 2 Fléaux à toute @Action[default reactiveStrike] contre vous.</p>"
                 },
                 "diversionist0000": {
                     "name": "Magouilleur",
@@ -390,7 +393,7 @@
                 },
                 "surgeweaver00000": {
                     "name": "Tissefoudre",
-                    "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Foudre. Les sorts utilisant cette Rune causent la condition @Condition[shocked] sur les Coups critiques.</p><p>L'effet Électrocuté dure <strong>1 Round</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts de <strong>Foudre</strong> au <strong>Moral</strong>, et applique la condition @Condition[staggered].</p>"
+                    "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Foudre. Les sorts utilisant cette Rune causent la condition @Condition[shocked] sur les Coups critiques.</p><p>L'effet Électrocuté dure <strong>3 Rounds</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts de <strong>Foudre</strong> au <strong>Moral</strong>, et applique la condition @Condition[staggered].</p>"
                 },
                 "awarenessNovice0": {
                     "name": "Vigilance : Novice",
@@ -408,7 +411,7 @@
                 },
                 "subtleextricatio": {
                     "name": "Extraction subtile",
-                    "description": "<p>Vous comprenez comment vous éloigner d'un adversaire sans vous exposer aux pires attaques en retour. Tout <strong>Assaut opportuniste</strong> contre vous est effectué sans les 2 Faveurs qui s'appliqueraient ordinairement à une telle attaque.</p>"
+                    "description": "<p>Vous comprenez comment vous éloigner d'un adversaire sans vous exposer aux pires attaques en retour. Toute <strong>Frappe réactive</strong> contre vous est effectuée avec <strong>+1 Fléau</strong>.</p>"
                 },
                 "focusedanticipat": {
                     "name": "Anticipation focalisée",
@@ -446,6 +449,12 @@
                             "description": "<p>Vous pouvez décocher un tir sous pression, mais avec une précision réduite. Vous effectuez une <strong>Frappe</strong> qui est <strong>Difficile</strong>, mais dont le coût en Action est réduit.</p>"
                         }
                     }
+                },
+                "f9YuKxp29iYf7PnA": {
+                    "name": "Arc court",
+                    "description": {
+                        "public": "<p>Compact et rapide à armer, l'arc court excelle dans l'archerie rapide et rapprochée ainsi que dans les escarmouches, et est prisé des éclaireurs, des chasseurs et des pillards agiles.</p>"
+                    }
                 }
             },
             "ancestry": {
@@ -455,6 +464,9 @@
             "background": {
                 "name": "Vagabond",
                 "description": "<p>Vous avez vécu une vie itinérante. Vous n'appréciez rien de plus que la sensation d'être sur une charrette ou une monture, regardant quelque ciel étranger passer lentement au-dessus de vous. Vous avez appris à prêter une attention particulière à votre environnement et à ses besoins, à soigner les créatures sur lesquelles vous comptez, et à vous débrouiller avec ce que vous pouvez trouver.</p>"
+            },
+            "biography": {
+                "public": "<p>Eliorwen est une combattante agile qui utilise le tir à l'arc et la magie pour neutraliser et éliminer ses ennemis à grande distance. Eliorwen aspire à obtenir le Talent signature <strong>Archer arcanique</strong>.</p>"
             }
         },
         "B40EKua2Q7zQ8CFZ": {
@@ -500,7 +512,7 @@
                         "counterRiposte": {
                             "name": "Contre-Riposte",
                             "condition": "Vous Parez une attaque de mêlée.",
-                            "description": "<p>Lorsque vous vous défendez d'une attaque de mêlée avec une <strong>Parade</strong>, vous pouvez réagir et dépenser du <strong>Focus</strong> pour riposter par une <strong>Frappe</strong> à coût réduit qui bénéficie de la condition <strong>Exposé</strong>.</p>"
+                            "description": "<p>Lorsque vous vous défendez d'une attaque de mêlée avec une <strong>Parade</strong>, vous pouvez réagir et dépenser du <strong>Focus</strong> pour riposter par une <strong>Frappe</strong> à coût réduit qui est <strong>Précise</strong>.</p>"
                         }
                     }
                 },
@@ -511,13 +523,13 @@
                         "ruthlessMomentum": {
                             "name": "Élan impitoyable",
                             "condition": "Vous neutralisez un ennemi avec une attaque de mêlée.",
-                            "description": "<p>Après avoir vaincu un ennemi, vous pouvez vous déplacer de votre <strong>Foulée</strong> et attaquer un autre opposant dans votre portée de mêlée.</p>"
+                            "description": "<p>Après avoir vaincu un ennemi, vous vous déplacez immédiatement jusqu'à votre <strong>Foulée</strong> et <strong>Frappez</strong> un autre ennemi que vous croisez ou à côté duquel vous terminez votre déplacement.</p>"
                         }
                     }
                 },
                 "lesserregenerati": {
                     "name": "Régénération mineure",
-                    "description": "<p>Votre robustesse prodigieuse transmet une capacité surnaturelle à récupérer des blessures rapidement. Au début de votre tour, si vous n'êtes pas Affaibli, vous gagnez <strong>+1 Santé</strong>.</p>"
+                    "description": "<p>Votre robustesse prodigieuse transmet une capacité surnaturelle à récupérer des blessures rapidement. Au début de votre tour, si vous n'êtes pas @Condition[weakened], vous gagnez <strong>+1 Santé</strong>.</p>"
                 },
                 "glaive0000000000": {
                     "name": "Coutille",
@@ -565,7 +577,7 @@
                     "actions": {
                         "sunderingStrike": {
                             "name": "Frappe fracturante",
-                            "description": "<p>Vous effectuez une <strong>Frappe</strong> avec l'arme de votre main principale qui, sur un succès, applique la condition <strong>Exposé </strong> à votre cible pendant 3 rounds. Cette attaque est <strong>Difficile</strong> à effectuer et inflige des dégâts réduits.</p>",
+                            "description": "<p>Vous effectuez une <strong>Frappe</strong> avec une arme basée sur la Force qui, sur un succès, applique la condition @Condition[exposed] à votre cible pendant 3 rounds. Cette attaque est <strong>Difficile</strong> à effectuer et inflige des dégâts réduits.</p>",
                             "effects": {
                                 "Sundered Armor": {
                                     "name": "Armure fracturée"
@@ -576,7 +588,7 @@
                 },
                 "pyromancer000000": {
                     "name": "Pyromancien",
-                    "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Flamme. Les sorts utilisant cette Rune causent la condition @Condition[burning] sur les Coups critiques.</p><p>L'effet Enflammé dure <strong>1 Round</strong> et inflige votre score d'<strong>Intellect</strong> comme dégâts de <strong>Feu</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
+                    "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Flamme. Les sorts utilisant cette Rune causent la condition @Condition[burning] sur les Coups critiques.</p><p>L'effet Enflammé dure <strong>3 Rounds</strong> et inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts de <strong>Feu</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
                 },
                 "gestureBlast0000": {
                     "name": "Signe : Explosion",
@@ -610,6 +622,9 @@
             "background": {
                 "name": "Soldat",
                 "description": "<p>Vous étiez un simple soldat d'une organisation militaire de quelque nature que ce soit. La discipline a fait de vous un survivant et a souligné l'importance de démontrer force et domination sur les autres, et des années passées à cheval ou à marcher vous ont appris à gérer toutes sortes de terrains.</p>"
+            },
+            "biography": {
+                "public": "<p>Agnath est un nécromancien maniant l'épée qui imprègne ses coups de la magie de la Mort. Agnath aspire à obtenir le Talent signature <strong>Sorcelame</strong>.</p>"
             }
         },
         "hfOaEbw4ObPXu6Qa": {
@@ -652,7 +667,7 @@
                     "actions": {
                         "offhandStrike": {
                             "name": "Frappe Main-secondaire",
-                            "description": "<p>Immédiatement après avoir effectué une Frappe basique avec l'arme de votre main principale, vous réalisez une <strong>Frappe</strong> à coût réduit ave l'arme de votre <strong>main secondaire</strong>.</p>"
+                            "description": "<p>Immédiatement après avoir effectué une Frappe basique avec l'arme de votre main principale, vous réalisez une <strong>Frappe</strong> à coût réduit avec l'arme de votre <strong>main secondaire</strong>.</p>"
                         }
                     }
                 },
@@ -668,12 +683,12 @@
                 },
                 "intercept0000000": {
                     "name": "Intercepter",
-                    "description": "Vous protégez vos alliés, interceptant les coups qui pourraient autrement être dirigés vers vos compagnons.",
+                    "description": "<p>Vous protégez vos alliés, interceptant les coups qui pourraient autrement être dirigés vers vos compagnons.</p>",
                     "actions": {
                         "intercept": {
                             "name": "Intercepter",
                             "condition": "Un ennemi se déplace dans ou à travers votre rayon d'Engagement.",
-                            "description": "<p>Vous interceptez la trajectoire d'un ennemi qui entre dans votre rayon d'<strong>Engagement</strong>, vous déplaçant immédiatement de votre <strong>Foulée</strong> pour vous interposer et bloquer son chemin.</p><p>Si l'ennemi sort de votre rayon d'Engagement ou attaque une autre créature pendant son tour, vous pouvez effectuer un <strong>Assaut opportuniste</strong> contre lui.</p>"
+                            "description": "<p>Vous interceptez la trajectoire d'un ennemi qui entre dans votre rayon d'<strong>Engagement</strong>, vous déplaçant immédiatement de votre <strong>Foulée</strong> pour vous interposer et bloquer son chemin.</p><p>Si l'ennemi sort de votre rayon d'Engagement ou attaque une autre créature pendant son tour, vous pouvez effectuer une @Action[default reactiveStrike] contre lui.</p><h3 class=\"divider\">Notes de playtest</h3><p>L'interruption du déplacement d'un ennemi n'est pas encore automatisée.</p>"
                         }
                     }
                 },
@@ -703,6 +718,9 @@
             "background": {
                 "name": "Gamin des rues",
                 "description": "<p>Peu de gens apprennent à survivre comme vous l'avez fait. Votre éducation à la méfiance a été rude. Vous avez appris à surveiller les autres pour détecter les signes révélateurs de danger ou de déloyauté, à éviter l'attention des autres, fouillant les rues de quelque expansion urbaine pour trouver des restes de nourriture.</p>"
+            },
+            "biography": {
+                "public": "<p>Belladonna est une voleuse rusée qui combat à l'aide de deux dagues, infligeant une rapide succession de coups à ses adversaires imprudents. Belladonna aspire à obtenir le Talent signature <strong>Empoisonneur</strong>.</p>"
             }
         },
         "Il4NDaNBdHNcjJ9d": {
@@ -760,7 +778,7 @@
                 },
                 "dustbinder000000": {
                     "name": "Terramancien",
-                    "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Terre. Les sorts utilisant cette Rune causent la condition @Condition[corroding] sur les Coups critiques.</p><p>L'effet Corrodé dure <strong>3 Rounds</strong> et inflige votre score de <strong>Sagesse</strong> en dégâts d'<strong>Acide</strong> à la <strong>Santé</strong> chaque Round.</p>"
+                    "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Terre. Les sorts utilisant cette Rune causent la condition @Condition[corroding] sur les Coups critiques.</p><p>L'effet Corrodé dure <strong>3 Rounds</strong> et inflige la moitié de votre score de <strong>Sagesse</strong> en dégâts d'<strong>Acide</strong> à la <strong>Santé</strong> chaque Round.</p>"
                 },
                 "talismanWeaponTr": {
                     "name": "Talismans : Entraînement",
@@ -832,7 +850,7 @@
                 },
                 "runeSoul00000000": {
                     "name": "Rune : Âme",
-                    "description": "<p>La force ordonnée de création et d'essence spirituelle. La Rune d'Âme gouverne la procession fondamentale des âmes à travers la vie et la mort et concerne les questions de sapience, de personnalité et de santé mentale.</p><p>La Rune d'Âme évolue avec la <strong>Présence</strong> et fournit une <strong>Restauration</strong> du <strong>Moral</strong> ou inflige des dégâts <strong>Psychiques</strong> opposés par la <strong>Volonté</strong>. Elle est opposée par la rune chaotique de <strong>Néant</strong>.</p>",
+                    "description": "<p>La force ordonnée de création et d'essence spirituelle. La Rune d'Âme gouverne la procession fondamentale des âmes à travers la vie et la mort et concerne les questions de sapience, de personnalité et de santé mentale.</p><p>La Rune d'Âme évolue avec la <strong>Présence</strong> et fournit une <strong>Restauration</strong> du <strong>Moral</strong>. Dans des circonstances spéciales, elle peut être utilisée pour infliger des dégâts <strong>Psychiques</strong> opposés par la <strong>Volonté</strong>. Elle est opposée par la rune chaotique de <strong>Néant</strong>.</p>",
                     "actions": {
                         "evoke": {
                             "name": "Évoquer",
@@ -842,7 +860,7 @@
                 },
                 "irrepressiblespi": {
                     "name": "Esprit irrépressible",
-                    "description": "Votre ténacité vous donne un esprit irrépressible qui résiste à l'apparition du désespoir. Au début de votre tour, si vous n'êtes pas Démoralisé, vous gagnez 1 de Moral."
+                    "description": "Votre ténacité vous donne un esprit irrépressible qui résiste à l'apparition du désespoir. Au début de votre tour, si vous n'êtes pas @Condition[broken], vous gagnez 1 de Moral."
                 },
                 "eyeofthestorm000": {
                     "name": "Œil du cyclone",
@@ -860,7 +878,7 @@
                 },
                 "runeLife00000000": {
                     "name": "Rune : Vie",
-                    "description": "<p>Une force chaotique de création, responsable de la matière vivante. La Rune de Vie gouverne la santé et les questions relatives à la croissance biologique.</p><p>La Rune de Vie évolue avec la <strong>Sagesse</strong> et fournit une <strong>Restauration</strong> de <strong>Santé</strong> ou inflige des dégâts de <strong>Poison</strong> opposés par la <strong>Fortitude</strong>. Elle est opposée par la rune ordonnée de <strong>Mort</strong>.</p>",
+                    "description": "<p>Une force chaotique de création, responsable de la matière vivante. La Rune de Vie gouverne la santé et les questions relatives à la croissance biologique.</p><p>La Rune de Vie évolue avec la <strong>Sagesse</strong> et fournit une <strong>Restauration</strong> de <strong>Santé</strong>. Dans des circonstances spéciales, elle peut être utilisée pour infliger des dégâts de <strong>Poison</strong> opposés par la <strong>Fortitude</strong>. Elle est opposée par la rune ordonnée de <strong>Mort</strong>.</p>",
                     "actions": {
                         "bloom": {
                             "name": "Fleurir",
@@ -876,6 +894,9 @@
             "background": {
                 "name": "Médecin",
                 "description": "<p>Vous étiez un guérisseur ou un professionnel de la santé de diverses sortes. Vous avez passé une partie de votre vie à apprendre la science médicale, et vous avez une propension à remarquer la maladie chez les autres. Vous savez comment traiter les blessures, les maladies et comment identifier leurs sources.</p>"
+            },
+            "biography": {
+                "public": "<p>Kagura est une guérisseuse infatigable qui soutient la santé et le moral de ses alliés au cœur de la frénésie des combats. Kagura aspire à obtenir le Talent signature <strong>Guérisseur</strong>.</p>"
             }
         },
         "iLUfMcYjAbZFY4CJ": {
@@ -906,7 +927,7 @@
                     "actions": {
                         "secondWind": {
                             "name": "Second souffle",
-                            "description": "<p>Vous concentrez votre énergie et recouvrez votre score de Robustesse à la Santé.</p>"
+                            "description": "<p>Vous concentrez votre énergie et recouvrez votre score de <strong>Robustesse</strong> à la <strong>Santé</strong>.</p>"
                         }
                     }
                 },
@@ -972,7 +993,7 @@
                 },
                 "testudo000000000": {
                     "name": "Tortue",
-                    "description": "Vous êtes hautement qualifié dans l'utilisation des boucliers pour adopter une posture défensive. Vous gagnez le double du bénéfice de la condition <strong>Protégé</strong> contre les <strong>Attaques d'Arme</strong> en maniant un bouclier."
+                    "description": "Vous êtes hautement qualifié dans l'utilisation des boucliers pour adopter une posture défensive. Vous gagnez le double du bénéfice de la condition @Condition[guarded] contre les <strong>Attaques d'Arme</strong> en maniant un bouclier."
                 },
                 "holdfast00000000": {
                     "name": "Tenir bon",
@@ -1006,12 +1027,12 @@
                 },
                 "intercept0000000": {
                     "name": "Intercepter",
-                    "description": "Vous protégez vos alliés, interceptant les coups qui pourraient autrement être dirigés vers vos compagnons.",
+                    "description": "<p>Vous protégez vos alliés, interceptant les coups qui pourraient autrement être dirigés vers vos compagnons.</p>",
                     "actions": {
                         "intercept": {
                             "name": "Intercepter",
                             "condition": "Un ennemi se déplace dans ou à travers votre rayon d'Engagement.",
-                            "description": "<p>Vous interceptez la trajectoire d'un ennemi qui entre dans votre rayon d'<strong>Engagement</strong>, vous déplaçant immédiatement de votre <strong>Foulée</strong> pour vous interposer et bloquer son chemin.</p><p>Si l'ennemi sort de votre rayon d'Engagement ou attaque une autre créature pendant son tour, vous pouvez effectuer un <strong>Assaut opportuniste</strong> contre lui.</p>"
+                            "description": "<p>Vous interceptez la trajectoire d'un ennemi qui entre dans votre rayon d'<strong>Engagement</strong>, vous déplaçant immédiatement de votre <strong>Foulée</strong> pour vous interposer et bloquer son chemin.</p><p>Si l'ennemi sort de votre rayon d'Engagement ou attaque une autre créature pendant son tour, vous pouvez effectuer une @Action[default reactiveStrike] contre lui.</p><h3 class=\"divider\">Notes de playtest</h3><p>L'interruption du déplacement d'un ennemi n'est pas encore automatisée.</p>"
                         }
                     }
                 },
@@ -1035,7 +1056,7 @@
                 },
                 "armoredShell0000": {
                     "name": "Coquille blindée",
-                    "description": "<p>Vous êtes expert dans l'utilisation combinée de votre armure et de votre bouclier pour créer une coquille défensive.</p><p>Lorsque vous avez la condition <strong>Protégé</strong> et êtes équipé d'un <strong>Bouclier lourd</strong>, votre défense d'<strong>Armure</strong> de base est réduite de moitié mais votre défense de <strong>Blocage</strong> augmente d'un montant correspondant.</p>"
+                    "description": "<p>Vous êtes expert dans l'utilisation combinée de votre armure et de votre bouclier pour créer une coquille défensive.</p><p>Lorsque vous avez la condition @Condition[guarded] et êtes équipé d'un <strong>Bouclier lourd</strong>, votre défense d'<strong>Armure</strong> de base est réduite de moitié mais votre défense de <strong>Blocage</strong> augmente d'un montant correspondant.</p>"
                 },
                 "shieldCombatTrai": {
                     "name": "Combat au bouclier : Entraînement",
@@ -1120,6 +1141,9 @@
             "background": {
                 "name": "Connétable",
                 "description": "<p>Vous faisiez partie d'une organisation de maintien de l'ordre. Vous avez appris à rester vigilant envers votre environnement, à travailler au sein de structures sociales complexes et à affecter une présence imposante.</p>"
+            },
+            "biography": {
+                "public": "<p>Duurath est un robuste défenseur nain qui utilise un marteau et un bouclier pour protéger ses alliés et punir ses ennemis en sapant leur moral. Duurath aspire à obtenir le Talent signature <strong>Gardien des Runes</strong>.</p>"
             }
         },
         "iPMperuo6ZvBLnp9": {
@@ -1184,6 +1208,9 @@
             "background": {
                 "name": "Soldat",
                 "description": "<p>Vous étiez un simple soldat d'une organisation militaire de quelque nature que ce soit. La discipline a fait de vous un survivant et a souligné l'importance de démontrer force et domination sur les autres, et des années passées à cheval ou à marcher vous ont appris à gérer toutes sortes de terrains.</p>"
+            },
+            "biography": {
+                "public": "<p>Agnath est un nécromancien maniant l'épée qui imprègne ses coups de la magie de la Mort. Agnath aspire à obtenir le Talent signature <strong>Sorcelame</strong>.</p>"
             }
         },
         "kSGFBe6ZaLDC8wRy": {
@@ -1192,12 +1219,6 @@
                 "name": "Eliorwen"
             },
             "items": {
-                "WYw63RWi2vcIPylm": {
-                    "name": "Arc long",
-                    "description": {
-                        "public": "<p>Un arc long, souvent plus grand que l'archer qui le bande, nécessite une force considérable et des années d'entraînement pour être maîtrisé, et permet de propulser des flèches d'une force mortelle à travers le champ de bataille.</p>"
-                    }
-                },
                 "CItsWhgzGd5hXOQD": {
                     "name": "Cimeterre",
                     "description": {
@@ -1220,7 +1241,7 @@
                     "actions": {
                         "pinningShot": {
                             "name": "Tir de fixation",
-                            "description": "<p>Vous <strong>Frappez</strong> à distance. L'attaque est <strong>Difficile</strong>, mais si vous touchez votre cible, celle-ci devient <strong>Entravée</strong> jusqu'à la fin de son prochain Tour.</p>",
+                            "description": "<p>Vous <strong>Frappez</strong> à distance. L'attaque est <strong>Difficile</strong>, mais si vous touchez votre cible, celle-ci devient @Condition[restrained] jusqu'à la fin de son prochain Tour.</p>",
                             "effects": {
                                 "Pinning Shot": {
                                     "name": "Tir de fixation"
@@ -1262,6 +1283,12 @@
                             "description": "<p>Vous stabilisez votre visée et tirez un seul coup précis.</p>"
                         }
                     }
+                },
+                "GO04lQS1VSYuK8fx": {
+                    "name": "Arc court",
+                    "description": {
+                        "public": "<p>Compact et rapide à armer, l'arc court excelle dans l'archerie rapide et rapprochée ainsi que dans les escarmouches, et est prisé des éclaireurs, des chasseurs et des pillards agiles.</p>"
+                    }
                 }
             },
             "ancestry": {
@@ -1271,6 +1298,9 @@
             "background": {
                 "name": "Vagabond",
                 "description": "<p>Vous avez vécu une vie itinérante. Vous n'appréciez rien de plus que la sensation d'être sur une charrette ou une monture, regardant quelque ciel étranger passer lentement au-dessus de vous. Vous avez appris à prêter une attention particulière à votre environnement et à ses besoins, à soigner les créatures sur lesquelles vous comptez, et à vous débrouiller avec ce que vous pouvez trouver.</p>"
+            },
+            "biography": {
+                "public": "<p>Eliorwen est une combattante agile qui utilise le tir à l'arc et la magie pour neutraliser et éliminer ses ennemis à grande distance. Eliorwen aspire à obtenir le Talent signature <strong>Archer arcanique</strong>.</p>"
             }
         },
         "L0qEPpUQBZQPCxN3": {
@@ -1332,7 +1362,7 @@
                         "berserkerRage": {
                             "name": "Rage de Berserker",
                             "condition": "Vous avez subi des dégâts à votre réserve de Santé depuis votre dernier tour de Combat.",
-                            "description": "Vous devenez Enragé. Tant que vous êtes Enragé, vous infligez 4 dégâts supplémentaires sur toutes vos attaques de mêlée. Vous pouvez tenter de mettre fin cet effet à votre propre tour en réussissant un test de Volonté contre un DD de 20. Cet effet se termine automatiquement à la fin du Combat.",
+                            "description": "Vous devenez @Condition[enraged]. Tant que vous êtes Enragé, vous infligez 4 dégâts supplémentaires sur toutes vos attaques de mêlée. Vous pouvez tenter de mettre fin cet effet à votre propre tour en réussissant un test de Volonté contre un DD de 20. Cet effet se termine automatiquement à la fin du Combat.",
                             "effects": {
                                 "Berserker Rage": {
                                     "name": "Rage de Berserker"
@@ -1355,8 +1385,7 @@
                     "actions": {
                         "executionersStrike": {
                             "name": "Frappe du bourreau",
-                            "condition": "Votre cible est Blessée.",
-                            "description": "<p>Vous délivrez une Frappe Mortelle avec une arme à deux mains lourde. Si votre attaque réussie, votre opposant souffre également de la condition Ensanglanté pendant 3 Rounds, subissant des dégâts supplémentaires chaque Round, à hauteur de votre score de Force.</p>",
+                            "description": "<p>Vous délivrez une Frappe avec une arme à deux mains. Si votre attaque réussie et que votre opposant est en-dessous de la moitié de sa <strong>Santé</strong> maximum, la Frappe est <strong>Mortelle</strong>, et l'opposant souffre de la condition @Condition[bleeding] pendant 3 Rounds, subissant des dégâts supplémentaires chaque Round, à hauteur de votre score de Force.</p>",
                             "effects": {
                                 "Executioner's Strike": {
                                     "name": "Frappe du bourreau"
@@ -1367,7 +1396,7 @@
                 },
                 "unshakeablestanc": {
                     "name": "Posture inébranlable",
-                    "description": "Vous ne pouvez pas être involontairement Déplacé ou mis À terre par une action qui n'est pas une Réussite critique lancée par un ennemi ou un Échec critique lancé par vous-même."
+                    "description": "<p>Vous ne pouvez pas être involontairement Déplacé ou mis @Condition[prone] par une action qui n'est pas une Réussite critique lancée par un ennemi ou un Échec critique lancé par vous-même.</p><h3 class=\"divider\">Notes de playtest</h3><p>Ce talent n'est pas encore automatisé.</p>"
                 },
                 "ruthlessmomentum": {
                     "name": "Élan impitoyable",
@@ -1376,7 +1405,7 @@
                         "ruthlessMomentum": {
                             "name": "Élan impitoyable",
                             "condition": "Vous neutralisez un ennemi avec une attaque de mêlée.",
-                            "description": "<p>Après avoir vaincu un ennemi, vous pouvez vous déplacer de votre <strong>Foulée</strong> et attaquer un autre opposant dans votre portée de mêlée.</p>"
+                            "description": "<p>Après avoir vaincu un ennemi, vous vous déplacez immédiatement jusqu'à votre <strong>Foulée</strong> et <strong>Frappez</strong> un autre ennemi que vous croisez ou à côté duquel vous terminez votre déplacement.</p>"
                         }
                     }
                 },
@@ -1386,18 +1415,18 @@
                     "actions": {
                         "secondWind": {
                             "name": "Second souffle",
-                            "description": "<p>Vous concentrez votre énergie et recouvrez votre score de Robustesse à la Santé.</p>"
+                            "description": "<p>Vous concentrez votre énergie et recouvrez votre score de <strong>Robustesse</strong> à la <strong>Santé</strong>.</p>"
                         }
                     }
                 },
                 "intercept0000000": {
                     "name": "Intercepter",
-                    "description": "Vous protégez vos alliés, interceptant les coups qui pourraient autrement être dirigés vers vos compagnons.",
+                    "description": "<p>Vous protégez vos alliés, interceptant les coups qui pourraient autrement être dirigés vers vos compagnons.</p>",
                     "actions": {
                         "intercept": {
                             "name": "Intercepter",
                             "condition": "Un ennemi se déplace dans ou à travers votre rayon d'Engagement.",
-                            "description": "<p>Vous interceptez la trajectoire d'un ennemi qui entre dans votre rayon d'<strong>Engagement</strong>, vous déplaçant immédiatement de votre <strong>Foulée</strong> pour vous interposer et bloquer son chemin.</p><p>Si l'ennemi sort de votre rayon d'Engagement ou attaque une autre créature pendant son tour, vous pouvez effectuer un <strong>Assaut opportuniste</strong> contre lui.</p>"
+                            "description": "<p>Vous interceptez la trajectoire d'un ennemi qui entre dans votre rayon d'<strong>Engagement</strong>, vous déplaçant immédiatement de votre <strong>Foulée</strong> pour vous interposer et bloquer son chemin.</p><p>Si l'ennemi sort de votre rayon d'Engagement ou attaque une autre créature pendant son tour, vous pouvez effectuer une @Action[default reactiveStrike] contre lui.</p><h3 class=\"divider\">Notes de playtest</h3><p>L'interruption du déplacement d'un ennemi n'est pas encore automatisée.</p>"
                         }
                     }
                 },
@@ -1425,7 +1454,7 @@
                     "actions": {
                         "sunderingStrike": {
                             "name": "Frappe fracturante",
-                            "description": "<p>Vous effectuez une <strong>Frappe</strong> avec l'arme de votre main principale qui, sur un succès, applique la condition <strong>Exposé </strong> à votre cible pendant 3 rounds. Cette attaque est <strong>Difficile</strong> à effectuer et inflige des dégâts réduits.</p>",
+                            "description": "<p>Vous effectuez une <strong>Frappe</strong> avec une arme basée sur la Force qui, sur un succès, applique la condition @Condition[exposed] à votre cible pendant 3 rounds. Cette attaque est <strong>Difficile</strong> à effectuer et inflige des dégâts réduits.</p>",
                             "effects": {
                                 "Sundered Armor": {
                                     "name": "Armure fracturée"
@@ -1495,6 +1524,9 @@
             "background": {
                 "name": "Connétable",
                 "description": "<p>Vous faisiez partie d'une organisation de maintien de l'ordre. Vous avez appris à rester vigilant envers votre environnement, à travailler au sein de structures sociales complexes et à affecter une présence imposante.</p>"
+            },
+            "biography": {
+                "public": "<p>Ulfen est un guerrier féroce qui combat à l'aide d'une grande hache à deux mains, privilégiant les coups puissants qui infligent des dégâts importants ou touchent plusieurs cibles. Ulfen aspire à obtenir le Talent signature <strong>Berserker</strong>.</p>"
             }
         },
         "lP2MOJyk5oHs6oSS": {
@@ -1598,7 +1630,7 @@
                 },
                 "surgeweaver00000": {
                     "name": "Tissefoudre",
-                    "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Foudre. Les sorts utilisant cette Rune causent la condition @Condition[shocked] sur les Coups critiques.</p><p>L'effet Électrocuté dure <strong>1 Round</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts de <strong>Foudre</strong> au <strong>Moral</strong>, et applique la condition @Condition[staggered].</p>"
+                    "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Foudre. Les sorts utilisant cette Rune causent la condition @Condition[shocked] sur les Coups critiques.</p><p>L'effet Électrocuté dure <strong>3 Rounds</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts de <strong>Foudre</strong> au <strong>Moral</strong>, et applique la condition @Condition[staggered].</p>"
                 },
                 "mesmer0000000000": {
                     "name": "Envoûteur",
@@ -1682,6 +1714,9 @@
             "background": {
                 "name": "Érudit",
                 "description": "<p>Vous avez toujours été le plus à l'aise dans une bibliothèque ou une salle de classe. Vos études se sont concentrées sur la résolution des mystères du monde qui vous entoure, et il y a peu de sujets théoriques avec lesquels vous n'êtes pas déjà familier.</p>"
+            },
+            "biography": {
+                "public": "<p>Fizzit est un habile lanceur de sorts et érudit qui jette des sorts à distance et cherche à exploiter les forces élémentaires pour les mettre à son service. Fizzit aspire à obtenir le Talent signature <strong>Conjurateur</strong>.</p>"
             }
         },
         "nPOVNsOFhqA7SUud": {
@@ -1739,7 +1774,7 @@
                     "actions": {
                         "secondWind": {
                             "name": "Second souffle",
-                            "description": "<p>Vous concentrez votre énergie et recouvrez votre score de Robustesse à la Santé.</p>"
+                            "description": "<p>Vous concentrez votre énergie et recouvrez votre score de <strong>Robustesse</strong> à la <strong>Santé</strong>.</p>"
                         }
                     }
                 },
@@ -1771,12 +1806,12 @@
                 },
                 "intercept0000000": {
                     "name": "Intercepter",
-                    "description": "Vous protégez vos alliés, interceptant les coups qui pourraient autrement être dirigés vers vos compagnons.",
+                    "description": "<p>Vous protégez vos alliés, interceptant les coups qui pourraient autrement être dirigés vers vos compagnons.</p>",
                     "actions": {
                         "intercept": {
                             "name": "Intercepter",
                             "condition": "Un ennemi se déplace dans ou à travers votre rayon d'Engagement.",
-                            "description": "<p>Vous interceptez la trajectoire d'un ennemi qui entre dans votre rayon d'<strong>Engagement</strong>, vous déplaçant immédiatement de votre <strong>Foulée</strong> pour vous interposer et bloquer son chemin.</p><p>Si l'ennemi sort de votre rayon d'Engagement ou attaque une autre créature pendant son tour, vous pouvez effectuer un <strong>Assaut opportuniste</strong> contre lui.</p>"
+                            "description": "<p>Vous interceptez la trajectoire d'un ennemi qui entre dans votre rayon d'<strong>Engagement</strong>, vous déplaçant immédiatement de votre <strong>Foulée</strong> pour vous interposer et bloquer son chemin.</p><p>Si l'ennemi sort de votre rayon d'Engagement ou attaque une autre créature pendant son tour, vous pouvez effectuer une @Action[default reactiveStrike] contre lui.</p><h3 class=\"divider\">Notes de playtest</h3><p>L'interruption du déplacement d'un ennemi n'est pas encore automatisée.</p>"
                         }
                     }
                 },
@@ -1792,6 +1827,9 @@
             "background": {
                 "name": "Connétable",
                 "description": "<p>Vous faisiez partie d'une organisation de maintien de l'ordre. Vous avez appris à rester vigilant envers votre environnement, à travailler au sein de structures sociales complexes et à affecter une présence imposante.</p>"
+            },
+            "biography": {
+                "public": "<p>Duurath est un robuste défenseur nain qui utilise un marteau et un bouclier pour protéger ses alliés et punir ses ennemis en sapant leur moral. Duurath aspire à obtenir le Talent signature <strong>Gardien des Runes</strong>.</p>"
             }
         },
         "sqTUaPrXpwCzk3xs": {
@@ -1873,6 +1911,9 @@
             "background": {
                 "name": "Artiste",
                 "description": "Vous étiez un animateur itinérant. Vous avez appris à être à l'aise lors de diverses manifestations sociales, à jouer pour votre public, embellissant les détails de votre performance pour évoquer des réponses émotionnelles particulières."
+            },
+            "biography": {
+                "public": "<p>Zarajah est une diablotine fougueuse qui affectionne particulièrement la pyromancie et qui tisse des sorts dangereux et protecteurs pour contrôler le champ de bataille. Zarajah aspire à obtenir le Talent signature <strong>Mage de guerre</strong>.</p>"
             }
         },
         "tCBBi3Kyc3M4KHGZ": {
@@ -1930,7 +1971,7 @@
                 },
                 "pyromancer000000": {
                     "name": "Pyromancien",
-                    "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Flamme. Les sorts utilisant cette Rune causent la condition @Condition[burning] sur les Coups critiques.</p><p>L'effet Enflammé dure <strong>1 Round</strong> et inflige votre score d'<strong>Intellect</strong> comme dégâts de <strong>Feu</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
+                    "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Flamme. Les sorts utilisant cette Rune causent la condition @Condition[burning] sur les Coups critiques.</p><p>L'effet Enflammé dure <strong>3 Rounds</strong> et inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts de <strong>Feu</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
                 },
                 "gesturepulse0000": {
                     "name": "Signe : Onde",
@@ -1952,7 +1993,7 @@
                 },
                 "strategicreposit": {
                     "name": "Repositionnement stratégique",
-                    "description": "<p>Vous pensez toujours à l'avance à l'endroit où vous positionner si le danger menace. Avant le <strong>Tour 1</strong> d'une rencontre de Combat, à condition que vous ne soyez pas Distrait, vous pouvez immédiatement vous déplacer de 4 pieds dans n'importe quelle direction permise.</p><p>Si plusieurs combattants ont cette caractéristique, le repositionnement se produit dans l'ordre inverse de l'Initiative.</p>"
+                    "description": "<p>Vous pensez toujours à l'avance à l'endroit où vous positionner si le danger menace. Avant le <strong>Tour 1</strong> d'une rencontre de Combat, à condition que vous ne soyez pas @Condition[unaware], vous pouvez immédiatement vous déplacer de 4 pieds dans n'importe quelle direction permise.</p><p>Si plusieurs combattants ont cette caractéristique, le repositionnement se produit dans l'ordre inverse de l'Initiative.</p><h3 class=\"divider\">Notes de playtest</h3><p>Ce talent n'est pas encore automatisé.</p>"
                 },
                 "lightbringer0000": {
                     "name": "Porteur de lumière",
@@ -1978,7 +2019,7 @@
                 },
                 "iramancer0000000": {
                     "name": "Furimancien",
-                    "description": "Vos exploits d'arcane sont alimentés par la colère. Tant que vous êtes Enragé, vous pouvez toujours dépenser du Focus et vous infligez 2 dégâts supplémentaires à toutes les attaques de sorts."
+                    "description": "<p>Vos exploits d'arcane sont alimentés par la colère. Tant que vous êtes @Condition[enraged], vous pouvez toujours dépenser du <strong>Focus</strong> et vous infligez 2 dégâts supplémentaires à toutes les attaques de sort.</p>"
                 },
                 "counterspell0000": {
                     "name": "Contresort",
@@ -2027,6 +2068,9 @@
             "background": {
                 "name": "Artiste",
                 "description": "Vous étiez un animateur itinérant. Vous avez appris à être à l'aise lors de diverses manifestations sociales, à jouer pour votre public, embellissant les détails de votre performance pour évoquer des réponses émotionnelles particulières."
+            },
+            "biography": {
+                "public": "<p>Zarajah est une diablotine fougueuse qui affectionne particulièrement la pyromancie et qui tisse des sorts dangereux et protecteurs pour contrôler le champ de bataille. Zarajah aspire à obtenir le Talent signature <strong>Mage de guerre</strong>.</p>"
             }
         },
         "TffJlCvt39DEhFX7": {
@@ -2109,6 +2153,9 @@
             "background": {
                 "name": "Érudit",
                 "description": "<p>Vous avez toujours été le plus à l'aise dans une bibliothèque ou une salle de classe. Vos études se sont concentrées sur la résolution des mystères du monde qui vous entoure, et il y a peu de sujets théoriques avec lesquels vous n'êtes pas déjà familier.</p>"
+            },
+            "biography": {
+                "public": "<p>Fizzit est un habile lanceur de sorts et érudit qui jette des sorts à distance et cherche à exploiter les forces élémentaires pour les mettre à son service. Fizzit aspire à obtenir le Talent signature <strong>Conjurateur</strong>.</p>"
             }
         },
         "vT1UpPCVxKRg2A1J": {
@@ -2161,12 +2208,12 @@
                 },
                 "intercept0000000": {
                     "name": "Intercepter",
-                    "description": "Vous protégez vos alliés, interceptant les coups qui pourraient autrement être dirigés vers vos compagnons.",
+                    "description": "<p>Vous protégez vos alliés, interceptant les coups qui pourraient autrement être dirigés vers vos compagnons.</p>",
                     "actions": {
                         "intercept": {
                             "name": "Intercepter",
                             "condition": "Un ennemi se déplace dans ou à travers votre rayon d'Engagement.",
-                            "description": "<p>Vous interceptez la trajectoire d'un ennemi qui entre dans votre rayon d'<strong>Engagement</strong>, vous déplaçant immédiatement de votre <strong>Foulée</strong> pour vous interposer et bloquer son chemin.</p><p>Si l'ennemi sort de votre rayon d'Engagement ou attaque une autre créature pendant son tour, vous pouvez effectuer un <strong>Assaut opportuniste</strong> contre lui.</p>"
+                            "description": "<p>Vous interceptez la trajectoire d'un ennemi qui entre dans votre rayon d'<strong>Engagement</strong>, vous déplaçant immédiatement de votre <strong>Foulée</strong> pour vous interposer et bloquer son chemin.</p><p>Si l'ennemi sort de votre rayon d'Engagement ou attaque une autre créature pendant son tour, vous pouvez effectuer une @Action[default reactiveStrike] contre lui.</p><h3 class=\"divider\">Notes de playtest</h3><p>L'interruption du déplacement d'un ennemi n'est pas encore automatisée.</p>"
                         }
                     }
                 },
@@ -2196,6 +2243,9 @@
             "background": {
                 "name": "Connétable",
                 "description": "<p>Vous faisiez partie d'une organisation de maintien de l'ordre. Vous avez appris à rester vigilant envers votre environnement, à travailler au sein de structures sociales complexes et à affecter une présence imposante.</p>"
+            },
+            "biography": {
+                "public": "<p>Ulfen est un guerrier féroce qui combat à l'aide d'une grande hache à deux mains, privilégiant les coups puissants qui infligent des dégâts importants ou touchent plusieurs cibles. Ulfen aspire à obtenir le Talent signature <strong>Berserker</strong>.</p>"
             }
         },
         "z8PYWkq3bxce7vwb": {
@@ -2236,7 +2286,7 @@
                 },
                 "runeSoul00000000": {
                     "name": "Rune : Âme",
-                    "description": "<p>La force ordonnée de création et d'essence spirituelle. La Rune d'Âme gouverne la procession fondamentale des âmes à travers la vie et la mort et concerne les questions de sapience, de personnalité et de santé mentale.</p><p>La Rune d'Âme évolue avec la <strong>Présence</strong> et fournit une <strong>Restauration</strong> du <strong>Moral</strong> ou inflige des dégâts <strong>Psychiques</strong> opposés par la <strong>Volonté</strong>. Elle est opposée par la rune chaotique de <strong>Néant</strong>.</p>",
+                    "description": "<p>La force ordonnée de création et d'essence spirituelle. La Rune d'Âme gouverne la procession fondamentale des âmes à travers la vie et la mort et concerne les questions de sapience, de personnalité et de santé mentale.</p><p>La Rune d'Âme évolue avec la <strong>Présence</strong> et fournit une <strong>Restauration</strong> du <strong>Moral</strong>. Dans des circonstances spéciales, elle peut être utilisée pour infliger des dégâts <strong>Psychiques</strong> opposés par la <strong>Volonté</strong>. Elle est opposée par la rune chaotique de <strong>Néant</strong>.</p>",
                     "actions": {
                         "evoke": {
                             "name": "Évoquer",
@@ -2256,7 +2306,7 @@
                 },
                 "runeLife00000000": {
                     "name": "Rune : Vie",
-                    "description": "<p>Une force chaotique de création, responsable de la matière vivante. La Rune de Vie gouverne la santé et les questions relatives à la croissance biologique.</p><p>La Rune de Vie évolue avec la <strong>Sagesse</strong> et fournit une <strong>Restauration</strong> de <strong>Santé</strong> ou inflige des dégâts de <strong>Poison</strong> opposés par la <strong>Fortitude</strong>. Elle est opposée par la rune ordonnée de <strong>Mort</strong>.</p>",
+                    "description": "<p>Une force chaotique de création, responsable de la matière vivante. La Rune de Vie gouverne la santé et les questions relatives à la croissance biologique.</p><p>La Rune de Vie évolue avec la <strong>Sagesse</strong> et fournit une <strong>Restauration</strong> de <strong>Santé</strong>. Dans des circonstances spéciales, elle peut être utilisée pour infliger des dégâts de <strong>Poison</strong> opposés par la <strong>Fortitude</strong>. Elle est opposée par la rune ordonnée de <strong>Mort</strong>.</p>",
                     "actions": {
                         "bloom": {
                             "name": "Fleurir",
@@ -2272,6 +2322,9 @@
             "background": {
                 "name": "Médecin",
                 "description": "<p>Vous étiez un guérisseur ou un professionnel de la santé de diverses sortes. Vous avez passé une partie de votre vie à apprendre la science médicale, et vous avez une propension à remarquer la maladie chez les autres. Vous savez comment traiter les blessures, les maladies et comment identifier leurs sources.</p>"
+            },
+            "biography": {
+                "public": "<p>Kagura est une guérisseuse infatigable qui soutient la santé et le moral de ses alliés au cœur de la frénésie des combats. Kagura aspire à obtenir le Talent signature <strong>Guérisseur</strong>.</p>"
             }
         }
     },

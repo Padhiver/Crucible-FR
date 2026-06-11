@@ -289,6 +289,8 @@
       "HealingTooltip": "This action provides restoration by testing an ally's Wounds threshold.",
       "IconicSpell": "Iconic Spell",
       "IconicSpellTooltip": "This action is an Iconic Spell learned through mastery of its components.",
+      "Keen": "Keen",
+      "KeenTooltip": "This action is precise, lowering its critical hit threshold by 2 and making a Critical Hit more likely.",
       "MainHand": "Main-Hand",
       "MainHandTooltip": "This action utilizes your main-hand weapon to make an attack.",
       "Maintained": "Maintained",
@@ -413,6 +415,9 @@
           "AlreadyDelayed": "You may not delay your turn again this combat round.",
           "WrongTurn": "You may only use the Delay action on your own turn in combat."
         },
+        "ESTOCADE": {
+          "RequiresOpening": "Estocade requires a target who is Exposed, Prone, Slowed, Staggered, Paralyzed, or Disarmed."
+        },
         "REVIVE": {
           "RequiresDead": "Revive requires a Dead target."
         }
@@ -436,6 +441,7 @@
       "CannotThrow": "You cannot throw this weapon.",
       "CannotUse": "{name} does not satisfy the prerequisites to use {action}.",
       "CannotUseReason": "{name} does not satisfy the prerequisites to use {action}: {reason}",
+      "CannotUseTagGeneric": "with tag {tag}",
       "DirectMovementOnly": "This action requires a direct movement path with no intermediate waypoints.",
       "IncorrectTargets": "You may only designate up to {number} {type} targets for {action}!",
       "InvalidTarget": "You must designate at least one {type} target for {action}!",
@@ -501,6 +507,8 @@
     "DurationSeconds": "{value}S",
     "DurationUntilEnded": "Until Ended",
     "EffectSpecific": "Effect: {effect}",
+    "MaintainContent": "<p>Spend {cost} Focus to maintain {effect}?</p>",
+    "MaintainTitle": "Maintain Focus: {effect}",
     "NoTargets": "No Targets",
     "Overview": "Action Overview",
     "PlanMovement": "Plan Movement",
@@ -558,6 +566,9 @@
       "Edit": "Edit Effect",
       "Enable": "Enable Effect",
       "New": "New Effect"
+    },
+    "CHANGE_TYPES": {
+      "scaleResource": "Scale Resource"
     },
     "DURATION": {
       "Combat": "Combat",
@@ -627,6 +638,8 @@
       "IncreaseAbilitySpecific": "Increase {ability}",
       "LevelUp": "Level Up!",
       "ResetTalents": "Reset All Talents",
+      "ResetTalentsContent": "<p>Are you sure you wish to reset all Talents?</p>",
+      "ResetTalentsTitle": "Reset Talents: {actor}",
       "RollCheck": "Roll Check",
       "TalentTreeClose": "Close Talent Tree",
       "TalentTreeOpen": "Open Talent Tree",
@@ -1315,6 +1328,7 @@
     "WARNINGS": {
       "CannotChangeRound": "Only a Gamemaster user may change the Combat round."
     },
+    "Escalation": "Escalation",
     "HeroismPct": "Heroism {pct}%",
     "HeroismTooltip": "Progress to next Heroism point"
   },

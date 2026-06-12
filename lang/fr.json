@@ -361,7 +361,11 @@
             "Weakened": "Affaibli",
             "WeakenedTooltip": "Cette action est plus faible que les attaques normales et applique un malus de dégâts de -6.",
             "Undetectable": "Indétectable",
-            "UndetectableTooltip": "Cette action ne déclenche ni alerte classique ni détection magique, ce qui permet de conserver la furtivité et l'invisibilité lors de son utilisation."
+            "UndetectableTooltip": "Cette action ne déclenche ni alerte classique ni détection magique, ce qui permet de conserver la furtivité et l'invisibilité lors de son utilisation.",
+            "Rest": "Après repos",
+            "RestTooltip": "Cette action ne peut être effectuée qu'immédiatement après la confirmation d'une action de Repos, et une seule action de ce type peut suivre chaque Repos.",
+            "Keen": "Aiguisée",
+            "KeenTooltip": "Cette action est précise, abaissant son seuil de coup critique de 2 et augmentant ainsi la probabilité d'un Coup critique."
         },
         "TAG_CATEGORIES": {
             "Attack": "Attaque",
@@ -413,6 +417,9 @@
                 },
                 "REVIVE": {
                     "RequiresDead": "Ranimer requiert une cible morte."
+                },
+                "ESTOCADE": {
+                    "RequiresOpening": "L'estocade nécessite une cible Exposée, À terre, Ralentie, Ébranlée, Paralysée ou Désarmée."
                 }
             },
             "AuraNoToken": "Vous ne pouvez pas utiliser une action de type Aura sans qu'il y ait un token sur la scène !",
@@ -478,7 +485,12 @@
             "MustReactHit": "Vous ne pouvez effectuer l'action {action} qu'en réponse à une attaque ayant réussi ou ayant porté un coup superficiel.",
             "MustReactSingleTarget": "Vous ne pouvez effectuer l'action {action} qu'en réponse à une action qui avait une cible unique.",
             "MustReactStrike": "Vous ne pouvez effectuer l'action {action} qu'en réponse à une Frappe d'arme.",
-            "MustTargetTarget": "L'action {action} ne peut être utilisée que sur la cible de l'action la plus récente."
+            "MustTargetTarget": "L'action {action} ne peut être utilisée que sur la cible de l'action la plus récente.",
+            "MustFollowRest": "Vous ne pouvez effectuer l'action {action} qu'immédiatement après un Repos.",
+            "OncePerRound": "Vous ne pouvez effectuer l'action {action} qu'une seule fois par tour.",
+            "OncePerTurn": "Vous ne pouvez effectuer l'action {action} qu'une seule fois par tour.",
+            "RequiresRune": "Vous devez connaître la Rune nécessaire pour cette action.",
+            "CannotUseTagGeneric": "avec l'étiquette {tag}"
         },
         "Action": "Action",
         "AffectsScope": "Affecte {scope}",
@@ -513,7 +525,9 @@
         "TemplateTargets": "Cibles du Gabarit",
         "Unconfirmed": "Non confirmé",
         "UseAction": "Utiliser l'Action",
-        "DragToHotbar": "Glissez dans la barre de raccourcis pour créer une Macro de cette action."
+        "DragToHotbar": "Glissez dans la barre de raccourcis pour créer une Macro de cette action.",
+        "MaintainContent": "<p>Dépenser {cost} Focus pour maintenir l'effet {effect} ?</p>",
+        "MaintainTitle": "Maintenir le Focus : {effect}"
     },
     "ACTIVE_EFFECT": {
         "ACTIONS": {
@@ -572,6 +586,14 @@
             "Weakened": "Affaibli",
             "Falling": "En chute",
             "Flying": "En vol"
+        },
+        "DURATION": {
+            "Combat": "Combat",
+            "Infinite": "∞",
+            "Rounds": "{value}R"
+        },
+        "CHANGE_TYPES": {
+            "scaleResource": "Évolution de la Ressource"
         }
     },
     "ACTOR": {
@@ -590,7 +612,9 @@
             "RollCheck": "Lancer un Test",
             "TalentTreeClose": "Fermer l'Arbre des talents",
             "TalentTreeOpen": "Ouvrir l'Arbre des talents",
-            "ToggleTree": "Basculer l'Arbre des talents"
+            "ToggleTree": "Basculer l'Arbre des talents",
+            "ResetTalentsContent": "<p>Êtes-vous sûr de vouloir réinitialiser tous les Talents ?</p>",
+            "ResetTalentsTitle": "Réinitialisation des Talents : {actor}"
         },
         "ADVERSARY": {
             "ACTIONS": {
@@ -1253,6 +1277,10 @@
             "summons": {
                 "hint": "Les Tokens invoqués dépendent de cet effet.",
                 "label": "Invocations"
+            },
+            "magical": {
+                "hint": "Cet effet est-il de nature magique ?",
+                "label": "Magique"
             }
         }
     },
@@ -1276,7 +1304,8 @@
             "CannotChangeRound": "Seul un utilisateur Maître du jeu peut changer le round de Combat."
         },
         "HeroismPct": "Héroïsme {pct}%",
-        "HeroismTooltip": "Progression vers le prochain point d'Héroïsme"
+        "HeroismTooltip": "Progression vers le prochain point d'Héroïsme",
+        "Escalation": "Intensification"
     },
     "CONSUMABLE": {
         "CATEGORIES": {
@@ -2653,7 +2682,48 @@
             "Thrown": "Lancer",
             "ThrownTooltip": "Cette arme est conçue pour être adaptée au lancer et ne subit pas la pénalité de Fléaux qui est habituellement appliquée à l'action Lancer une Arme.",
             "Versatile": "Flexible",
-            "VersatileTooltip": "Cette arme peut être maniée à une ou deux mains, et changée entre ces modes sans aucun coût en point d'Action. Lorsqu'elle est maniée à deux mains, l'arme gagne +2 dégâts de base supplémentaires mais occasionne 1 coût d'Action supplémentaire pour Frapper."
+            "VersatileTooltip": "Cette arme peut être maniée à une ou deux mains, et changée entre ces modes sans aucun coût en point d'Action. Lorsqu'elle est maniée à deux mains, l'arme gagne +2 dégâts de base supplémentaires mais occasionne 1 coût d'Action supplémentaire pour Frapper.",
+            "UntrainedTooltip": "Votre personnage manque de formation aux armes {training} et subit un malus de Compétence de -4 lorsqu'il attaque avec cette arme."
+        }
+    },
+    "ACTIONS": {
+        "AmplifyAffix": {
+            "Effect": "Amplifier l'affixe",
+            "Label": "Affixe à amplifier",
+            "NoAffixes": "Vous n'avez aucun affixe équipé pouvant être amplifié.",
+            "Required": "Vous devez choisir un affixe à amplifier.",
+            "Title": "Amplifier l'affixe"
+        },
+        "FieldStudy": {
+            "Effect": "Domaine d'étude : {knowledge}",
+            "Label": "Sujet d'étude",
+            "Required": "Vous devez choisir un domaine de Connaissances à étudier.",
+            "Title": "Domaine d'étude"
+        },
+        "ImbueAffix": {
+            "AffixLabel": "Affixe",
+            "Incompatible": "Cet affixe ne peut pas être appliqué à l'objet choisit.",
+            "InvalidAffix": "Vous devez choisir un affixe valide à imprégner.",
+            "InvalidItem": "Vous devez choisir un objet physique que vous possédez et qui peut être enchanté.",
+            "ItemLabel": "Objet à imprégner",
+            "NoCapacity": "Cet objet ne possède aucun emplacement d'affixe libre pour cet enchantement.",
+            "Required": "Vous devez choisir à la fois un objet et un affixe.",
+            "TierTooHigh": "Cet affixe ne peut pas être imprégné au Palier 1.",
+            "Title": "Imprégner l'affixe"
+        },
+        "Glide": {
+            "MustDescend": "Un vol plané doit se terminer à une altitude inférieure à celle de son point de départ."
+        },
+        "Grapple": {
+            "AlreadyGrappled": "{name} est déjà Agrippé par une autre créature.",
+            "AlreadyGrappling": "Vous Agrippez déjà une autre créature.",
+            "TooLarge": "{name} est trop imposant pour que vous l'agrippiez."
+        },
+        "Throw": {
+            "NotGrappling": "Vous ne pouvez Lancer qu'une créature que vous Agrippez."
+        },
+        "Challenge": {
+            "Dominance": "Dominance"
         }
     }
 }

@@ -46,6 +46,10 @@
         "Description": "You delay your action until a later point in the Combat round. Choose an Initiative between 1 and one less than your current Initiative. You will act at this new Initiative value, and if other combatants share that value you will act before them. You may only delay your turn once per round.",
         "Name": "Delay"
       },
+      "Escape": {
+        "Description": "Struggle free of an effect which causes you to be @Condition[restrained]. You perform an <strong>Athletics</strong> check and remove the Restrained condition from each effect where your roll exceeds its Removal Difficulty.",
+        "Name": "Escape"
+      },
       "Fall": {
         "Description": "You plummet to the surface beneath you. Falls of 11-30 feet challenge Reflex, dealing Bludgeoning damage to Health. Falls of more than 30 feet are a Severe hazard challenging Fortitude. Unless resisted, the creature falls Prone.",
         "Name": "Fall",
@@ -445,6 +449,7 @@
       "DirectMovementOnly": "This action requires a direct movement path with no intermediate waypoints.",
       "IncorrectTargets": "You may only designate up to {number} {type} targets for {action}!",
       "InvalidTarget": "You must designate at least one {type} target for {action}!",
+      "InvalidTargetScope": "That creature is not a valid target for {action}.",
       "InvalidTargetsGeneric": "Invalid targets for this action!",
       "LastCriticallyMissed": "You may only perform {action} after a basic Strike which did not critically miss.",
       "LastNotMeleeCrit": "You may only perform {action} immediately after a melee Strike which critically succeeded.",
@@ -1284,7 +1289,21 @@
     }
   },
   "BASE_EFFECT": {
+    "Difficulty": "Difficulty {dc}",
+    "Suspended": "Suspended",
+    "PROPERTIES": {
+      "Magical": "Magical",
+      "MagicalTooltip": "This effect is magical in nature and may be removed by anti-magic abilities."
+    },
+    "SECTIONS": {
+      "Removal": "Removal",
+      "General": "General"
+    },
     "FIELDS": {
+      "dc": {
+        "hint": "The difficulty of removing this effect, e.g. by dispelling magic. Leave blank for an effect that cannot be removed.",
+        "label": "Removal DC"
+      },
       "dot": {
         "element": {
           "amount": {
@@ -1304,9 +1323,9 @@
         },
         "label": "Damage Over Time"
       },
-      "magical": {
-        "hint": "Is this effect magical in nature?",
-        "label": "Magical"
+      "properties": {
+        "hint": "Traits describing the nature of this effect.",
+        "label": "Properties"
       },
       "maintenance": {
         "cost": {
@@ -1416,6 +1435,7 @@
       "Archetype": "Crucible Archetype Sheet",
       "Armor": "Crucible Armor Sheet",
       "Background": "Crucible Background Sheet",
+      "Effect": "Crucible Effect Sheet",
       "Group": "Crucible Group Sheet",
       "Hero": "Crucible Hero Sheet",
       "HeroCreation": "Crucible Hero Creation Sheet",

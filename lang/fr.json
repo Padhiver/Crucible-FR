@@ -82,6 +82,10 @@
                 "Description": "Vous chutez vers une surface au-dessous de vous. Les chutes de 11 à 30 pieds ciblent le Réflexe, infligeant des dégâts Contondants à la Santé. Une chute de plus de 30 pieds est un péril Grave ciblant la Fortitude. À moins de résister, la créature tombe À terre.",
                 "Name": "Chute",
                 "NameDistance": "Chute ({distance} pieds)"
+            },
+            "Escape": {
+                "Description": "Vous essayez de vous libérer d'un effet qui vous rend @Condition[restrained]. Vous effectuez un test d'<strong>Athlétisme</strong> et supprimez la condition Entravé de chaque effet pour lequel votre jet dépasse sa Difficulté de suppression.",
+                "Name": "Évasion"
             }
         },
         "EFFECT_RESULT_TYPES": {
@@ -490,7 +494,8 @@
             "OncePerRound": "Vous ne pouvez effectuer l'action {action} qu'une seule fois par tour.",
             "OncePerTurn": "Vous ne pouvez effectuer l'action {action} qu'une seule fois par tour.",
             "RequiresRune": "Vous devez connaître la Rune nécessaire pour cette action.",
-            "CannotUseTagGeneric": "avec l'étiquette {tag}"
+            "CannotUseTagGeneric": "avec l'étiquette {tag}",
+            "InvalidTargetScope": "Cette créature n'est pas une cible valide pour l'action {action}."
         },
         "Action": "Action",
         "AffectsScope": "Affecte {scope}",
@@ -1278,10 +1283,24 @@
                 "hint": "Les Tokens invoqués dépendent de cet effet.",
                 "label": "Invocations"
             },
-            "magical": {
-                "hint": "Cet effet est-il de nature magique ?",
-                "label": "Magique"
+            "dc": {
+                "hint": "Difficulté à supprimer cet effet, par exemple en dissipant la magie. Laisser vide pour un effet qui ne peut être supprimé.",
+                "label": "DD de suppression"
+            },
+            "properties": {
+                "hint": "Caractéristiques décrivant la nature de cet effet.",
+                "label": "Propriétés"
             }
+        },
+        "Difficulty": "Difficulté {dc}",
+        "Suspended": "Suspendu",
+        "PROPERTIES": {
+            "Magical": "Magique",
+            "MagicalTooltip": "Cet effet est de nature magique et peut être annulé par des pouvoirs anti-magie."
+        },
+        "SECTIONS": {
+            "Removal": "Suppression",
+            "General": "General"
         }
     },
     "COMBAT": {
@@ -1386,7 +1405,8 @@
             "Talent": "Feuille de talent de Crucible",
             "Taxonomy": "Feuille de taxonomie de Crucible",
             "Tool": "Feuille d'outil de Crucible",
-            "Weapon": "Feuille d'arme de Crucible"
+            "Weapon": "Feuille d'arme de Crucible",
+            "Effect": "Feuille d'Effet de Crucible"
         },
         "Base": "Base",
         "Bonus": "Bonus",
@@ -2209,12 +2229,12 @@
             "KinesisAdj": "Kinésie",
             "Life": "Vie",
             "LifeAdj": "Vie",
-            "Lightning": "Foudre",
-            "LightningAdj": "Foudre",
             "Oblivion": "Néant",
             "OblivionAdj": "Néant",
             "Soul": "Âme",
-            "SoulAdj": "Âme"
+            "SoulAdj": "Âme",
+            "Storm": "Orage",
+            "StormAdj": "Voltaïque"
         },
         "SHEET": {
             "Knowledge": "Connaissances requises"
@@ -2363,7 +2383,9 @@
             "Inaccessible": "Vous ne pouvez pas acquérir \"{name}\" car vous n'avez pas déverrouillé ce nœud de l'arbre de talents.",
             "Locked": "Vous ne satisfaites pas les prérequis pour acquérir \"{name}\" qui nécessite {requires} {requirement}.",
             "RequiresRuneGesture": "Vous devez connaître une Rune de sorcellerie afin d'utiliser un Signe.",
-            "RequiresRuneInflection": "Vous devez connaître une Rune de sorcellerie afin d'utiliser une Inflexion."
+            "RequiresRuneInflection": "Vous devez connaître une Rune de sorcellerie afin d'utiliser une Inflexion.",
+            "SignatureLimit": "Vous avez atteint le maximum de {max} Talents signature Talents autorisés au niveau de personnage {level}.",
+            "SignatureLimitNext": "Vous avez atteint le maximum de {max} Talents signature autorisés au niveau de personnage {level}. Vous pourrez en obtenir un autre en atteignant le niveau {next}."
         },
         "GrantsSpells": "<strong>Sorts iconiques : </strong>{name} accorde {spells} emplacements de Sort iconique.",
         "NodeSpecific": "Nœud : {nodeType}",
@@ -2372,7 +2394,9 @@
         "Banned": "Banni",
         "Empty": "Vide",
         "Locked": "Verrouillé",
-        "Tier": "Palier {tier}"
+        "Tier": "Palier {tier}",
+        "SignatureLimit": "Limite de Signatures atteinte",
+        "SignatureNext": "Prochaine au niveau {level}"
     },
     "TAXONOMY": {
         "CATEGORIES": {
@@ -2724,6 +2748,16 @@
         },
         "Challenge": {
             "Dominance": "Dominance"
+        },
+        "AllIn": {
+            "CannotAfford": "{name} doit dépenser 1 point d'Héroïsme ou 6 charges de Gambit pour faire un Tapis.",
+            "Marker": "Tapis"
+        },
+        "Gambit": {
+            "AnteWon": "Gambit (+{count})",
+            "Charges": "Gambit ({count})",
+            "ChargeDescription": "Un nombre de charges de Gambit qui doivent être dépensées à la place de l'<strong>Héroïsme</strong> pour effectuer votre action \"Tapis\".",
+            "LoadedDice": "Dés chargés"
         }
     }
 }

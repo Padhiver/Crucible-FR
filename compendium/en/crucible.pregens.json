@@ -231,16 +231,6 @@
                     "name": "Awareness Novice",
                     "description": "<p>You have been trained in the basics of situational awareness, and are able to notice important details about your environment. You gain the <strong>Novice</strong> rank in the <strong>Awareness </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</p><p>You know to check for exits when you enter a room, and how to look for concealed weapons, hidden traps, and other threats. You know how to spot when you are being followed, and how to search for common hiding places.</p>"
                 },
-                "dualWield0000000": {
-                    "name": "Dual Wield",
-                    "description": "<p>You are adept at fighting with two weapons simultaneously. You can weave attacks together to strike more rapidly than possible with a single weapon.</p>",
-                    "actions": {
-                        "offhandStrike": {
-                            "name": "Offhand Strike",
-                            "description": "<p>Immediately after you perform a basic Strike with your mainhand weapon, you make a reduced-cost follow-up <strong>Strike</strong> with your <strong>offhand</strong> weapon.</p>"
-                        }
-                    }
-                },
                 "backstab00000000": {
                     "name": "Backstab",
                     "description": "<p>You focus your cunning instincts on exploiting the weak points of a flanked target. You identify an opportunity and strike with deadly efficiency.</p>",
@@ -249,6 +239,16 @@
                             "name": "Backstab",
                             "condition": "You are attacking a target with the Flanked condition.",
                             "description": "<p>You <strong>Strike</strong> with your weapon against a @Condition[flanked] target, dealing <strong>Deadly</strong> damage.</p>"
+                        }
+                    }
+                },
+                "dualWield0000000": {
+                    "name": "Dual Wield",
+                    "description": "<p>You are adept at fighting with two weapons simultaneously. You can weave attacks together to strike more rapidly than possible with a single weapon.</p>",
+                    "actions": {
+                        "offhandStrike": {
+                            "name": "Offhand Strike",
+                            "description": "<p>Immediately after you perform a basic Strike with your mainhand weapon, you make a reduced-cost follow-up <strong>Strike</strong> with your <strong>offhand</strong> weapon.</p>"
                         }
                     }
                 }
@@ -393,7 +393,7 @@
                 },
                 "surgeweaver00000": {
                     "name": "Surgeweaver",
-                    "description": "<p>You are highly skilled in weaving the Rune of Lightning. Spells which use this Rune cause the @Condition[shocked] condition on Critical Hits.</p><p>The Shocked effect lasts for <strong>3 Rounds</strong>, deals half your <strong>Intellect</strong> score as <strong>Lightning</strong> damage to <strong>Morale</strong>, and applies the @Condition[staggered] condition.</p>"
+                    "description": "<p>You are highly skilled in weaving the Rune of Storm. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[shocked] condition.</p><p>The Shocked effect lasts for <strong>3 Rounds</strong>, deals half your <strong>Intellect</strong> score as <strong>Electricity</strong> damage to <strong>Morale</strong>, and applies the @Condition[staggered] condition.</p>"
                 },
                 "awarenessNovice0": {
                     "name": "Awareness Novice",
@@ -430,16 +430,6 @@
                         }
                     }
                 },
-                "runeLightning000": {
-                    "name": "Rune: Lightning",
-                    "description": "<p>The chaotic force of raw electrical energy. The Lightning rune governs sources of electrical charge and discharge.</p><p>The Lightning rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electrical</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Earth</strong>.</p>",
-                    "actions": {
-                        "energize": {
-                            "name": "Energize",
-                            "description": "<p>Your command of the Rune of Lightning allows you to conduct the flow of both air and electricity, manipulating charge and aerodynamics to produce one of the following effects:</p><ul><li><p>Instill an electromagnetic charge into a metallic object that you touch no larger than a one-foot cube, causing it to strongly adhere to other metals. Only one object can be charged in this way at a given time, casting this spell on a different object causes the prior object to lose its magnetic effect.</p></li><li><p>Gather a squall of wind at your current location in a six-foot radius which blows either as a gust in a single controlled direction or as a cyclone with centripetal force in all directions. Airborne effects in the immediate area are dispersed and unsecured objects with weight less than 1 are flung in the direction of the gust.</p></li><li><p>Produce the concussive sound of a thunderclap at a location you can see within 15 feet of your current position.</p></li></ul><p>Energize may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
-                        }
-                    }
-                },
                 "projectileWeapon": {
                     "name": "Projectile Weapon Training",
                     "description": "<p>You have a basic education in archery and other projectile weaponry. You are no longer treated as <strong>Untrained</strong> with weapons in the <strong>Projectile </strong>categories.</p>",
@@ -454,6 +444,16 @@
                     "name": "Shortbow",
                     "description": {
                         "public": "<p>Compact and quick to draw, the shortbow excels in rapid, close-quarters archery and skirmishes, favored by scouts, hunters, and swift-footed raiders.</p>"
+                    }
+                },
+                "runeStorm0000000": {
+                    "name": "Rune: Storm",
+                    "description": "<p>The chaotic force of raw electrical energy. The Storm rune governs sources of electrical charge and discharge.</p><p>The Storm rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electrical</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Earth</strong>.</p>",
+                    "actions": {
+                        "energize": {
+                            "name": "Energize",
+                            "description": "<p>Your command of the Rune of Storm allows you to conduct the flow of both air and electricity, manipulating charge and aerodynamics to produce one of the following effects:</p><ul><li><p>Instill an electromagnetic charge into a metallic object that you touch no larger than a one-foot cube, causing it to strongly adhere to other metals. Only one object can be charged in this way at a given time, casting this spell on a different object causes the prior object to lose its magnetic effect.</p></li><li><p>Gather a squall of wind at your current location in a six-foot radius which blows either as a gust in a single controlled direction or as a cyclone with centripetal force in all directions. Airborne effects in the immediate area are dispersed and unsecured objects with weight less than 1 are flung in the direction of the gust.</p></li><li><p>Produce the concussive sound of a thunderclap at a location you can see within 15 feet of your current position.</p></li></ul><p>Energize may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
+                        }
                     }
                 }
             },
@@ -483,7 +483,7 @@
                 },
                 "cadence000000000": {
                     "name": "Cadence",
-                    "description": "<p>You are drilled in performing sequences of melee attacks with rhythmic precision. When you <strong>Strike</strong> multiple times in sequence using a one-handed melee weapon you gain a stacking <strong>+1 Boon</strong> for each successive attack.</p><p></p>"
+                    "description": "<p>You are drilled in performing sequences of melee attacks with rhythmic precision. When you <strong>Strike</strong> multiple times in sequence using a one-handed melee weapon you gain a stacking <strong>+1 Boon</strong> for each successive attack.</p>"
                 },
                 "gesturearrow0000": {
                     "name": "Gesture: Arrow",
@@ -495,7 +495,7 @@
                 },
                 "stronggrip000000": {
                     "name": "Strong Grip",
-                    "description": "Your grasp of your weaponry is firm and unyielding. You can perform Actions which require a free hand while wielding a two-handed melee weapon. Attempts to Disarm you are made with +2 Banes."
+                    "description": "<p>Your grasp of your weaponry is firm and unyielding. While wielding a two-handed weapon that scales with Strength you may cast spells which require two hands, and attempts to Disarm you are made with +2 Banes. </p><p>Additionally, you may wield a one-handed Heavy weapon in your off-hand.</p>"
                 },
                 "gesturestrike000": {
                     "name": "Gesture: Strike",
@@ -588,21 +588,11 @@
                 },
                 "pyromancer000000": {
                     "name": "Pyromancer",
-                    "description": "<p>You are highly skilled in weaving the Rune of Flame. Spells which use this Rune cause @Condition[burning] on Critical Hits.</p><p>The Burning effect lasts for <strong>3 Rounds</strong> and deals half your <strong>Intellect</strong> score as <strong>Fire</strong> damage to both <strong>Health</strong> and <strong>Morale</strong>.</p>"
+                    "description": "<p>You are highly skilled in weaving the Rune of Flame. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[burning] condition.</p><p>The Burning effect lasts for <strong>3 Rounds</strong> and deals half your <strong>Intellect</strong> score as <strong>Fire</strong> damage to both <strong>Health</strong> and <strong>Morale</strong>.</p>"
                 },
                 "gestureBlast0000": {
                     "name": "Gesture: Blast",
                     "description": "<p>You hurl the arcane power of a Rune into an intense explosion of energy at a nearby point you can see.</p><p>The Blast gesture scales with <strong>Intellect</strong> and produces a blast with 6 feet radius centered on a point within 60 feet of the spellcaster. The blast deals <strong>8 Base Damage</strong> to targets which fail to Resist the spell. This gesture requires <strong>2 Hands</strong> to cast and has a base cost of <strong>5 Action</strong> and <strong>2 Focus</strong>.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent is currently placed at a <strong>Tier 4</strong> node. It will eventually only be attainable at a higher level (probably Level 6 required). It is currently available \"early\" for testing.</p>"
-                },
-                "runeLightning000": {
-                    "name": "Rune: Lightning",
-                    "description": "<p>The chaotic force of raw electrical energy. The Lightning rune governs sources of electrical charge and discharge.</p><p>The Lightning rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electrical</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Earth</strong>.</p>",
-                    "actions": {
-                        "energize": {
-                            "name": "Energize",
-                            "description": "<p>Your command of the Rune of Lightning allows you to conduct the flow of both air and electricity, manipulating charge and aerodynamics to produce one of the following effects:</p><ul><li><p>Instill an electromagnetic charge into a metallic object that you touch no larger than a one-foot cube, causing it to strongly adhere to other metals. Only one object can be charged in this way at a given time, casting this spell on a different object causes the prior object to lose its magnetic effect.</p></li><li><p>Gather a squall of wind at your current location in a six-foot radius which blows either as a gust in a single controlled direction or as a cyclone with centripetal force in all directions. Airborne effects in the immediate area are dispersed and unsecured objects with weight less than 1 are flung in the direction of the gust.</p></li><li><p>Produce the concussive sound of a thunderclap at a location you can see within 15 feet of your current position.</p></li></ul><p>Energize may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
-                        }
-                    }
                 },
                 "runeFlame0000000": {
                     "name": "Rune: Flame",
@@ -611,6 +601,16 @@
                         "enkindle": {
                             "name": "Enkindle",
                             "description": "<p>Your command of the Rune of Flame allows you to manipulate fire and thermal energy in creative ways, producing one of the following effects:</p><ul><li><p>Manifest a burst of elemental flame in one inch sphere which can ignite a candle, torch, or other flammable materials.</p></li><li><p>Imbue your body with momentary thermal shielding which provides you with immunity to fire damage on an immediately subsequent action that costs <strong>1 Action</strong> or less.</p></li><li><p>Control the movement of flames within a small area, causing them to flicker, dance, or shift in an animated performance of light and shadow.</p></li></ul><p>Enkindle may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
+                        }
+                    }
+                },
+                "runeStorm0000000": {
+                    "name": "Rune: Storm",
+                    "description": "<p>The chaotic force of raw electrical energy. The Storm rune governs sources of electrical charge and discharge.</p><p>The Storm rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electrical</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Earth</strong>.</p>",
+                    "actions": {
+                        "energize": {
+                            "name": "Energize",
+                            "description": "<p>Your command of the Rune of Storm allows you to conduct the flow of both air and electricity, manipulating charge and aerodynamics to produce one of the following effects:</p><ul><li><p>Instill an electromagnetic charge into a metallic object that you touch no larger than a one-foot cube, causing it to strongly adhere to other metals. Only one object can be charged in this way at a given time, casting this spell on a different object causes the prior object to lose its magnetic effect.</p></li><li><p>Gather a squall of wind at your current location in a six-foot radius which blows either as a gust in a single controlled direction or as a cyclone with centripetal force in all directions. Airborne effects in the immediate area are dispersed and unsecured objects with weight less than 1 are flung in the direction of the gust.</p></li><li><p>Produce the concussive sound of a thunderclap at a location you can see within 15 feet of your current position.</p></li></ul><p>Energize may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
                         }
                     }
                 }
@@ -661,16 +661,6 @@
                         }
                     }
                 },
-                "dualwield0000000": {
-                    "name": "Dual Wield",
-                    "description": "<p>You are adept at fighting with two weapons simultaneously. You can weave attacks together to strike more rapidly than possible with a single weapon.</p>",
-                    "actions": {
-                        "offhandStrike": {
-                            "name": "Offhand Strike",
-                            "description": "<p>Immediately after you perform a basic Strike with your mainhand weapon, you make a reduced-cost fullow-up <strong>Strike</strong> with your <strong>offhand</strong> weapon.</p>"
-                        }
-                    }
-                },
                 "flurry0000000000": {
                     "name": "Flurry",
                     "description": "<p>A martial technique using two weapons to overwhelm a single target with a relentless sequence of attacks.</p>",
@@ -707,6 +697,16 @@
                         "lunge": {
                             "name": "Lunge",
                             "description": "<p>You dart forward nimbly, making a strike with sudden and unexpected swiftness to perform a <strong>Strike </strong>with a weapon which scales using <strong>Dexterity</strong> against a single target, with an increased range of <strong>+2 feet</strong>.</p><p>The attack is <strong>Difficult</strong>, but you do not move from your current position nor does this attack provoke Disengagement.</p>"
+                        }
+                    }
+                },
+                "dualWield0000000": {
+                    "name": "Dual Wield",
+                    "description": "<p>You are adept at fighting with two weapons simultaneously. You can weave attacks together to strike more rapidly than possible with a single weapon.</p>",
+                    "actions": {
+                        "offhandStrike": {
+                            "name": "Offhand Strike",
+                            "description": "<p>Immediately after you perform a basic Strike with your mainhand weapon, you make a reduced-cost follow-up <strong>Strike</strong> with your <strong>offhand</strong> weapon.</p>"
                         }
                     }
                 }
@@ -778,7 +778,7 @@
                 },
                 "dustbinder000000": {
                     "name": "Dustbinder",
-                    "description": "<p>You are highly skilled in weaving the Rune of Earth. Spells which use this Rune cause the @Condition[corroding] condition on Critical Hits.</p><p>The Corroding effect lasts for <strong>3 Rounds</strong> and deals half your <strong>Wisdom</strong> score as <strong>Acid</strong> damage to <strong>Health</strong> each Round.</p>"
+                    "description": "<p>You are highly skilled in weaving the Rune of Earth. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[corroding] condition.</p><p>The Corroding effect lasts for <strong>3 Rounds</strong> and deals half your <strong>Wisdom</strong> score as <strong>Acid</strong> damage to <strong>Health</strong> each Round.</p>"
                 },
                 "talismanWeaponTr": {
                     "name": "Talisman Weapon Training",
@@ -838,11 +838,11 @@
                 },
                 "inspirator000000": {
                     "name": "Inspirator",
-                    "description": "<p>You are highly skilled in weaving the Rune of Soul. Spells which use this Rune cause the @Condition[inspired] condition on Critical Hits.</p><p>The Inspired effect lasts for <strong>1 Round</strong> and deals your <strong>Presence</strong> score as additional <strong>Restoration</strong> to <strong>Morale</strong>.</p>"
+                    "description": "<p>You are highly skilled in weaving the Rune of Soul. When you cast a Spell or use an action that involves this Rune, your Critical Hits which restore Morale cause the @Condition[inspired] condition.</p><p>The Inspired effect lasts for <strong>1 Round</strong> and deals your <strong>Presence</strong> score as additional <strong>Restoration</strong> to <strong>Morale</strong>.</p>"
                 },
                 "mender0000000000": {
                     "name": "Mender",
-                    "description": "<p>You are highly skilled in weaving the Rune of Life. Spells which use this Rune cause the @Condition[mending] condition on Critical Hits.</p><p>The Mending effect lasts for <strong>1 Round</strong> and deals your <strong>Wisdom</strong> score as additional <strong>Restoration</strong> to <strong>Health</strong>.</p>"
+                    "description": "<p>You are highly skilled in weaving the Rune of Life. When you cast a Spell or use an action that involves this Rune, your Critical Hits which restore Health cause the @Condition[mending] condition.</p><p>The Mending effect lasts for <strong>1 Round</strong> and deals your <strong>Wisdom</strong> score as additional <strong>Restoration</strong> to <strong>Health</strong>.</p>"
                 },
                 "arcanaNovice0000": {
                     "name": "Arcana Novice",
@@ -868,7 +868,7 @@
                 },
                 "runeEarth0000000": {
                     "name": "Rune: Earth",
-                    "description": "<p>The orderly force of elemental earth, responsible for physical matter. The Earth rune governs minerals, metals, soils, and other physical compounds.</p><p>The Earth rune scales using <strong>Wisdom</strong>, targets <strong>Reflex</strong>, and deals <strong>Acid</strong> damage to <strong>Health</strong>. It is opposed by the chaotic rune of <strong>Lightning</strong>.</p>",
+                    "description": "<p>The orderly force of elemental earth, responsible for physical matter. The Earth rune governs minerals, metals, soils, and other physical compounds.</p><p>The Earth rune scales using <strong>Wisdom</strong>, targets <strong>Reflex</strong>, and deals <strong>Acid</strong> damage to <strong>Health</strong>. It is opposed by the chaotic rune of <strong>Storm</strong>.</p>",
                     "actions": {
                         "mould": {
                             "name": "Mould",
@@ -935,17 +935,6 @@
                     "name": "Gesture: Ward",
                     "description": "<p>You shape the arcane power of a Rune into a protective barrier used to shield yourself from harm.</p><p>The Ward gesture scales using <strong>Toughness</strong> and provides <strong>+6 Resistance</strong> against the damage type of the Rune used in the spell. This resistance lasts for <strong>1 Round</strong> and you may only have a single Ward at a time. Casting another spell using the Ward gesture replaces your prior Ward. This gesture requires <strong>1 Hand</strong> to cast and has a base cost of <strong>2 Action</strong> and <strong>1 Focus</strong>.</p>"
                 },
-                "bodyblock0000000": {
-                    "name": "Body Block",
-                    "description": "You lean into an attack which was otherwise defended with your Armor, converting its result into a Block instead.",
-                    "actions": {
-                        "bodyBlock": {
-                            "name": "Body Block",
-                            "condition": "You defend against a melee attack with your Armor or as a Glance.",
-                            "description": "<p>An attack which otherwise is defended by your Armor or produced a Glancing blow is converted to a Block and deals no damage.</p>"
-                        }
-                    }
-                },
                 "counterstrike000": {
                     "name": "Counter Strike",
                     "description": "<p>You are trained to transition between defending with your shield and a swift counter-attack.</p>",
@@ -967,21 +956,6 @@
                             "effects": {
                                 "Formidable Presence": {
                                     "name": "Formidable Presence"
-                                }
-                            }
-                        }
-                    }
-                },
-                "rallyingcry00000": {
-                    "name": "Rallying Cry",
-                    "description": "You are a battlefield leader, using your presence and voice to harden the resolve of your allies.",
-                    "actions": {
-                        "rallyingCry": {
-                            "name": "Rallying Cry",
-                            "description": "<p>You emit a courageous bellow that inspires Allies within 12 feet of you to remain stalwart in the face of danger. You perform an <strong>Intimidation</strong> skill test against the Madness threshold of your allies. On a success, affected allies become @Condition[resolute] for one Round.</p>",
-                            "effects": {
-                                "Rallying Cry": {
-                                    "name": "Rallying Cry"
                                 }
                             }
                         }
@@ -1132,6 +1106,25 @@
                     "description": {
                         "public": "<p>A powerful, steel-limbed crossbow requiring a crank or lever to draw, it delivers devastating bolts capable of punching through armor or pinning enemies to walls.</p>"
                     }
+                },
+                "mentalfortress00": {
+                    "name": "Mental Fortress",
+                    "description": "<p>Your strong will makes you exceedingly difficult to influence. You gain +1 to your <strong>Willpower</strong> defense and +5 resistance to <strong>Psychic</strong> damage.</p>"
+                },
+                "rallyingCry00000": {
+                    "name": "Rallying Cry",
+                    "description": "<p>Your presence as a battlefield leader fortifies and restores the morale of your allies.</p>",
+                    "actions": {
+                        "rallyingCry": {
+                            "name": "Rallying Cry",
+                            "description": "<p>You emit a courageous bellow that inspires allies within 12 feet of you to remain stalwart in the face of peril. All allies within range immediately recover your <strong>Presence</strong> score in <strong>Morale</strong> and become @Condition[resolute] for 3 Rounds.</p>",
+                            "effects": {
+                                "Rallying Cry": {
+                                    "name": "Rallying Cry"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "biography": {
@@ -1166,7 +1159,7 @@
                 },
                 "cadence000000000": {
                     "name": "Cadence",
-                    "description": "<p>You are drilled in performing sequences of melee attacks with rhythmic precision. When you <strong>Strike</strong> multiple times in sequence using a one-handed melee weapon you gain a stacking <strong>+1 Boon</strong> for each successive attack.</p><p></p>"
+                    "description": "<p>You are drilled in performing sequences of melee attacks with rhythmic precision. When you <strong>Strike</strong> multiple times in sequence using a one-handed melee weapon you gain a stacking <strong>+1 Boon</strong> for each successive attack.</p>"
                 },
                 "athleticsNovice0": {
                     "name": "Athletics Novice",
@@ -1373,7 +1366,7 @@
                 },
                 "stronggrip000000": {
                     "name": "Strong Grip",
-                    "description": "Your grasp of your weaponry is firm and unyielding. You can perform Actions which require a free hand while wielding a two-handed melee weapon. Attempts to Disarm you are made with +2 Banes."
+                    "description": "<p>Your grasp of your weaponry is firm and unyielding. While wielding a two-handed weapon that scales with Strength you may cast spells which require two hands, and attempts to Disarm you are made with +2 Banes. </p><p>Additionally, you may wield a one-handed Heavy weapon in your off-hand.</p>"
                 },
                 "bloodfrenzy00000": {
                     "name": "Blood Frenzy",
@@ -1581,7 +1574,7 @@
                 },
                 "rimecaller000000": {
                     "name": "Rimecaller",
-                    "description": "<p>You are highly skilled in weaving the Rune of Frost. Spells which use this Rune cause the @Condition[freezing] condition on Critical Hits.</p><p>The Freezing effect lasts for <strong>1 Round</strong>, deals half your <strong>Wisdom</strong> score as <strong>Frost</strong> damage to <strong>Health</strong>, and applies the @Condition[slowed] condition.</p>"
+                    "description": "<p>You are highly skilled in weaving the Rune of Frost. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[freezing] condition.</p><p>The Freezing effect lasts for <strong>1 Round</strong>, deals half your <strong>Wisdom</strong> score as <strong>Frost</strong> damage to <strong>Health</strong>, and applies the @Condition[slowed] condition.</p>"
                 },
                 "recognizespellcr": {
                     "name": "Recognize Spellcraft",
@@ -1630,21 +1623,11 @@
                 },
                 "surgeweaver00000": {
                     "name": "Surgeweaver",
-                    "description": "<p>You are highly skilled in weaving the Rune of Lightning. Spells which use this Rune cause the @Condition[shocked] condition on Critical Hits.</p><p>The Shocked effect lasts for <strong>3 Rounds</strong>, deals half your <strong>Intellect</strong> score as <strong>Lightning</strong> damage to <strong>Morale</strong>, and applies the @Condition[staggered] condition.</p>"
+                    "description": "<p>You are highly skilled in weaving the Rune of Storm. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[shocked] condition.</p><p>The Shocked effect lasts for <strong>3 Rounds</strong>, deals half your <strong>Intellect</strong> score as <strong>Electricity</strong> damage to <strong>Morale</strong>, and applies the @Condition[staggered] condition.</p>"
                 },
                 "mesmer0000000000": {
                     "name": "Mesmer",
-                    "description": "<p>You are highly skilled in weaving the Rune of Illusion. Spells which use this Rune cause @Condition[confused] on Critical Hits.</p><p>The Confused effect lasts for <strong>1 Round</strong>, deals half your <strong>Intellect</strong> score as <strong>Psychic</strong> damage to <strong>Morale</strong>, and applies the @Condition[disoriented] condition.</p>"
-                },
-                "runeLightning000": {
-                    "name": "Rune: Lightning",
-                    "description": "<p>The chaotic force of raw electrical energy. The Lightning rune governs sources of electrical charge and discharge.</p><p>The Lightning rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electrical</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Earth</strong>.</p>",
-                    "actions": {
-                        "energize": {
-                            "name": "Energize",
-                            "description": "<p>Your command of the Rune of Lightning allows you to conduct the flow of both air and electricity, manipulating charge and aerodynamics to produce one of the following effects:</p><ul><li><p>Instill an electromagnetic charge into a metallic object that you touch no larger than a one-foot cube, causing it to strongly adhere to other metals. Only one object can be charged in this way at a given time, casting this spell on a different object causes the prior object to lose its magnetic effect.</p></li><li><p>Gather a squall of wind at your current location in a six-foot radius which blows either as a gust in a single controlled direction or as a cyclone with centripetal force in all directions. Airborne effects in the immediate area are dispersed and unsecured objects with weight less than 1 are flung in the direction of the gust.</p></li><li><p>Produce the concussive sound of a thunderclap at a location you can see within 15 feet of your current position.</p></li></ul><p>Energize may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
-                        }
-                    }
+                    "description": "<p>You are highly skilled in weaving the Rune of Illusion. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[confused] condition.</p><p>The Confused effect lasts for <strong>1 Round</strong>, deals half your <strong>Intellect</strong> score as <strong>Psychic</strong> damage to <strong>Morale</strong>, and applies the @Condition[disoriented] condition.</p>"
                 },
                 "runeKinesis00000": {
                     "name": "Rune: Kinesis",
@@ -1704,6 +1687,16 @@
                     "name": "Stiletto",
                     "description": {
                         "public": "<p>Thin, tapered, and made for piercing, the stiletto is a killer’s weapon — designed to slide between ribs or gaps in armor and leave barely a trace.</p>"
+                    }
+                },
+                "runeStorm0000000": {
+                    "name": "Rune: Storm",
+                    "description": "<p>The chaotic force of raw electrical energy. The Storm rune governs sources of electrical charge and discharge.</p><p>The Storm rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electrical</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Earth</strong>.</p>",
+                    "actions": {
+                        "energize": {
+                            "name": "Energize",
+                            "description": "<p>Your command of the Rune of Storm allows you to conduct the flow of both air and electricity, manipulating charge and aerodynamics to produce one of the following effects:</p><ul><li><p>Instill an electromagnetic charge into a metallic object that you touch no larger than a one-foot cube, causing it to strongly adhere to other metals. Only one object can be charged in this way at a given time, casting this spell on a different object causes the prior object to lose its magnetic effect.</p></li><li><p>Gather a squall of wind at your current location in a six-foot radius which blows either as a gust in a single controlled direction or as a cyclone with centripetal force in all directions. Airborne effects in the immediate area are dispersed and unsecured objects with weight less than 1 are flung in the direction of the gust.</p></li><li><p>Produce the concussive sound of a thunderclap at a location you can see within 15 feet of your current position.</p></li></ul><p>Energize may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
+                        }
                     }
                 }
             },
@@ -1955,7 +1948,7 @@
                 },
                 "warmage000000000": {
                     "name": "War Mage",
-                    "description": "<p>Your spellcraft is honed as a weapon of war to thwart the incantations of other magi. You may ask the Gamemaster if you know a Rune capable of countering an enemy spell, even if you do not recognize the spell being cast. You gain +2 Boons to any Counterspell attempt.</p>"
+                    "description": "<p>Your spellcraft is honed as a weapon of war to thwart the incantations of other magi. You may ask the Gamemaster if you know a <strong>Rune</strong> capable of countering an enemy spell, even if you do not recognize the spell being cast. You gain +2 Boons to any @Action[Compendium.crucible.talent.Item.counterspell0000 counterspell] attempt.</p>"
                 },
                 "gesturearrow0000": {
                     "name": "Gesture: Arrow",
@@ -1971,7 +1964,7 @@
                 },
                 "pyromancer000000": {
                     "name": "Pyromancer",
-                    "description": "<p>You are highly skilled in weaving the Rune of Flame. Spells which use this Rune cause @Condition[burning] on Critical Hits.</p><p>The Burning effect lasts for <strong>3 Rounds</strong> and deals half your <strong>Intellect</strong> score as <strong>Fire</strong> damage to both <strong>Health</strong> and <strong>Morale</strong>.</p>"
+                    "description": "<p>You are highly skilled in weaving the Rune of Flame. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[burning] condition.</p><p>The Burning effect lasts for <strong>3 Rounds</strong> and deals half your <strong>Intellect</strong> score as <strong>Fire</strong> damage to both <strong>Health</strong> and <strong>Morale</strong>.</p>"
                 },
                 "gesturepulse0000": {
                     "name": "Gesture: Pulse",
@@ -1997,7 +1990,7 @@
                 },
                 "lightbringer0000": {
                     "name": "Lightbringer",
-                    "description": "<p>You are highly skilled in weaving the Rune of Illumination. Spells which use this Rune cause the @Condition[irradiated] condition on Critical Hits.</p><p>The Irradiated effect lasts for <strong>1 Round</strong> and deals your <strong>Presence</strong> score as <strong>Radiant</strong> damage to both <strong>Health</strong> and <strong>Morale</strong>.</p>"
+                    "description": "<p>You are highly skilled in weaving the Rune of Illumination. When you cast a Spell or use an action that involves this Rune, your Critical Hits which deal damage cause the @Condition[irradiated] condition.</p><p>The Irradiated effect lasts for <strong>1 Round</strong> and deals your <strong>Presence</strong> score as <strong>Radiant</strong> damage to both <strong>Health</strong> and <strong>Morale</strong>.</p>"
                 },
                 "awarenessNovice0": {
                     "name": "Awareness Novice",
@@ -2105,16 +2098,6 @@
                     "name": "Gesture: Create",
                     "description": "<p>You coalesce arcane power into tangible form, manifesting a <strong>Sprite</strong> which appears within 10 feet and joins Combat at Initiative 1. Your Sprite is a <strong>Minion</strong> of half your own Level.</p><p>The Create gesture scales with <strong>Wisdom</strong> and the Sprite survives for <strong>6 Rounds</strong>. You may only have one active Sprite, casting another spell using the Create gesture replaces your previous Sprite. This gesture requires <strong>2 Hands</strong> to cast and has a base cost of <strong>4 Action</strong> and <strong>1 Focus</strong>.</p><h3 class=\"divider\">Playtest Notes</h3><p>Not all Runes have a Sprite actor defined yet. Runes that do not yet have a defined Creation will — for now — manifest a <strong>Flame Sprite</strong>.</p>"
                 },
-                "runeLightning000": {
-                    "name": "Rune: Lightning",
-                    "description": "<p>The chaotic force of raw electrical energy. The Lightning rune governs sources of electrical charge and discharge.</p><p>The Lightning rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electrical</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Earth</strong>.</p>",
-                    "actions": {
-                        "energize": {
-                            "name": "Energize",
-                            "description": "<p>Your command of the Rune of Lightning allows you to conduct the flow of both air and electricity, manipulating charge and aerodynamics to produce one of the following effects:</p><ul><li><p>Instill an electromagnetic charge into a metallic object that you touch no larger than a one-foot cube, causing it to strongly adhere to other metals. Only one object can be charged in this way at a given time, casting this spell on a different object causes the prior object to lose its magnetic effect.</p></li><li><p>Gather a squall of wind at your current location in a six-foot radius which blows either as a gust in a single controlled direction or as a cyclone with centripetal force in all directions. Airborne effects in the immediate area are dispersed and unsecured objects with weight less than 1 are flung in the direction of the gust.</p></li><li><p>Produce the concussive sound of a thunderclap at a location you can see within 15 feet of your current position.</p></li></ul><p>Energize may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
-                        }
-                    }
-                },
                 "runeKinesis00000": {
                     "name": "Rune: Kinesis",
                     "description": "<p>The chaotic force of space and physical movement. The Kinesis rune governs all things related to the act of movement and physicality.</p><p>The Kinesis rune scales using <strong>Presence</strong>, targets <strong>Physical</strong> defense, and deals <strong>Bludgeoning</strong>, <strong>Piercing</strong>, or <strong>Slashing</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Control</strong>.</p>",
@@ -2142,6 +2125,16 @@
                         "rapidReload": {
                             "name": "Rapid Reload",
                             "description": "<p>You focus deeply and calm your nerves to quickly <strong>Reload</strong> your mechanical weapon with exceptional haste.</p>"
+                        }
+                    }
+                },
+                "runeStorm0000000": {
+                    "name": "Rune: Storm",
+                    "description": "<p>The chaotic force of raw electrical energy. The Storm rune governs sources of electrical charge and discharge.</p><p>The Storm rune scales using <strong>Intellect</strong>, targets <strong>Reflex</strong>, and deals <strong>Electrical</strong> damage to <strong>Health</strong>. It is opposed by the orderly rune of <strong>Earth</strong>.</p>",
+                    "actions": {
+                        "energize": {
+                            "name": "Energize",
+                            "description": "<p>Your command of the Rune of Storm allows you to conduct the flow of both air and electricity, manipulating charge and aerodynamics to produce one of the following effects:</p><ul><li><p>Instill an electromagnetic charge into a metallic object that you touch no larger than a one-foot cube, causing it to strongly adhere to other metals. Only one object can be charged in this way at a given time, casting this spell on a different object causes the prior object to lose its magnetic effect.</p></li><li><p>Gather a squall of wind at your current location in a six-foot radius which blows either as a gust in a single controlled direction or as a cyclone with centripetal force in all directions. Airborne effects in the immediate area are dispersed and unsecured objects with weight less than 1 are flung in the direction of the gust.</p></li><li><p>Produce the concussive sound of a thunderclap at a location you can see within 15 feet of your current position.</p></li></ul><p>Energize may only affect a creature or object you can physically touch. You may attempt other uses similar those above, the effectiveness of which is decided by the Gamemaster.</p>"
                         }
                     }
                 }
@@ -2296,7 +2289,7 @@
                 },
                 "runeEarth0000000": {
                     "name": "Rune: Earth",
-                    "description": "<p>The orderly force of elemental earth, responsible for physical matter. The Earth rune governs minerals, metals, soils, and other physical compounds.</p><p>The Earth rune scales using <strong>Wisdom</strong>, targets <strong>Reflex</strong>, and deals <strong>Acid</strong> damage to <strong>Health</strong>. It is opposed by the chaotic rune of <strong>Lightning</strong>.</p>",
+                    "description": "<p>The orderly force of elemental earth, responsible for physical matter. The Earth rune governs minerals, metals, soils, and other physical compounds.</p><p>The Earth rune scales using <strong>Wisdom</strong>, targets <strong>Reflex</strong>, and deals <strong>Acid</strong> damage to <strong>Health</strong>. It is opposed by the chaotic rune of <strong>Storm</strong>.</p>",
                     "actions": {
                         "mould": {
                             "name": "Mould",

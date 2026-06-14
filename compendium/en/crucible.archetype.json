@@ -24,6 +24,14 @@
             "name": "Commonfolk",
             "description": "<p>Ordinary citizens of the world who have no exceptional adventuring skills or abilities.</p>"
         },
+        "archetypeConstri": {
+            "name": "Constrictor",
+            "description": "<p>Predators that seize prey in coils, tendrils, or jaws, drag it into reach, and crush the life from it while it struggles to break free.</p>"
+        },
+        "archetypeJuggern": {
+            "name": "Juggernaut",
+            "description": "<p>Relentless brawlers who close the distance, seize their foes in unbreakable holds, and overpower them through sheer brawn and resilience. They fight bare-handed, turning their own bulk into both weapon and shield.</p>"
+        },
         "archetypeScout00": {
             "name": "Scout",
             "description": "<p>Individuals trained in reconnaissance and advance exploration of unknown areas.</p>"
@@ -35,6 +43,10 @@
         "archetypeswarm00": {
             "name": "Swarm",
             "description": "<p>This adversary represents multiple creatures that move as a single swarming entity, overwhelming opposition with sheer numbers.</p>"
+        },
+        "archetypeTelekin": {
+            "name": "Telekinetic",
+            "description": "<p>Telekinetic mages who weave the Rune of Kinesis to hurl, drag, and crush their foes with raw kinetic force, dominating the battlefield through relentless Push and Pull.</p>"
         },
         "assassin00000000": {
             "name": "Assassin",

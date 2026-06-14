@@ -41,6 +41,10 @@
             "name": "Drake",
             "description": "<p>Serpentine creatures which are lesser kin of dragons. Drakes generally live and hunt in packs, unlike more solitary full dragons. Drakes range from younger and smaller varieties often called \"Drakelings\" to huge specimens sometimes referred to as \"Ultra Drakes\".</p><p>Observed size variations include:</p><ul><li><p><strong>Drakeling</strong>: Size 3, Stride 10</p></li><li><p><strong>Drake</strong>: Size 6, Stride 16</p></li><li><p><strong>Ultra Drake</strong>: Size 9, Stride 12</p></li></ul><p>Different types of Drakes feature a different range of damage resistances and vulnerabilities depending on their sub-species.</p>"
         },
+        "dustDevil0000000": {
+            "name": "Dust Devil",
+            "description": "<p>Elemental embodiments of swirling dust and grit. The smallest, a Dust Mote, is among the weakest of all elementals; greater specimens grow into devils, whirlwinds, and roaring dust storms.</p>"
+        },
         "earthElemental00": {
             "name": "Earth Elemental",
             "description": "<p>Elemental creatures corresponding to the element of Earth.</p>"
@@ -69,6 +73,10 @@
             "name": "Hobgoblin",
             "description": "Hobgoblins are humanoids which typically congregate in martial societies which are orderly and disciplined. Hobgoblins are both cunning and uncompromising, making dangerous foes or powerful allies."
         },
+        "mudElemental0000": {
+            "name": "Mud Elemental",
+            "description": "<p>Shapeless elementals of caustic mud and sludge: soft, mindless, and corrosive. They engulf and dissolve what they cannot crush.</p>"
+        },
         "ogre000000000000": {
             "name": "Ogre",
             "description": "<p>Hulking giantkin which are reknowned for their brute strength and direct problem-solving approach.</p>"
@@ -81,9 +89,13 @@
             "name": "Skeleton",
             "description": "<p>Malevolent undying creatures brought to life by necromancy, created from the skeletal remains of long-dead humanoids. Driven by unholy forces beyond their control, @ref[name] rarely exist of their own accord, and are often encountered as the minions of evil spellcasters and greater undead.</p>"
         },
+        "stoneElemental00": {
+            "name": "Stone Elemental",
+            "description": "<p>Towering elementals of solid living rock: ponderous, immovable, and enduring. They channel the raw might of the earth through their own immense mass.</p>"
+        },
         "stormElemental00": {
             "name": "Storm Elemental",
-            "description": "<p>Elemental creatures corresponding to the element of Lightning.</p>"
+            "description": "<p>Elemental creatures corresponding to the element of Storm.</p>"
         },
         "taxCrystalSpider": {
             "name": "Crystal Spider",

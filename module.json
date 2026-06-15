@@ -45,8 +45,8 @@
   "media": [
     {
       "type": "setup",
-      "url": "modules/crucible-fr/crucible-text-light-FR.png",
-      "thumbnail": "modules/crucible-fr/crucible-text-light-FR.png"
+      "url": "modules/crucible-fr/assets/crucible-text-light-FR.png",
+      "thumbnail": "modules/crucible-fr/assets/crucible-text-light-FR.png"
     }
   ],
   "url": "This is auto replaced",

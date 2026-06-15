@@ -17,7 +17,8 @@
         "Resources": "Ressources",
         "Senses": "Senses",
         "Damage": "Dégâts",
-        "Resistances": "Résistances"
+        "Resistances": "Résistances",
+        "Inflections": "Inflexions"
     },
     "entries": {
         "acidConv00000000": {
@@ -214,12 +215,12 @@
         },
         "earthPtcy0000000": {
             "name": "Puissance terrestre",
-            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les sorts utilisant la rune de la <strong>Terre</strong> de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
+            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les sorts utilisant la rune de <strong>Terre</strong> de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
             "adjective": "Puissance terrestre"
         },
         "earthSpellcraft0": {
             "name": "Sorcellerie de terre",
-            "description": "<p>Cet objet est imprégné de l'essence de magie de <strong>Terre</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune de la <strong>Terre</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
+            "description": "<p>Cet objet est imprégné de l'essence de magie de <strong>Terre</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune de <strong>Terre</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
             "adjective": "Terre runique"
         },
         "electricityConv0": {
@@ -393,16 +394,6 @@
             "name": "Sorcellerie de vie",
             "description": "<p>Cet objet est imprégné de l'essence de magie de <strong>Vie</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune de <strong>Vie</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
             "adjective": "Vie runique"
-        },
-        "lightningPtcy000": {
-            "name": "Puissance foudroyante",
-            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les sorts utilisant la rune de <strong>Foudre</strong> de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
-            "adjective": "Puissance foudroyante"
-        },
-        "lightningSpellcr": {
-            "name": "Sorcellerie de foudre",
-            "description": "<p>Cet objet est imprégné de l'essence de magie de <strong>Foudre</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune de <strong>Foudre</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
-            "adjective": "Foudre runique"
         },
         "luminary00000000": {
             "name": "Astre",
@@ -679,6 +670,71 @@
             "name": "Nature",
             "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les jets de compétence de <strong>Nature</strong> de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
             "adjective": "Survivaliste"
+        },
+        "composeSpellcraf": {
+            "name": "Sorcellerie de façonnage",
+            "description": "<p>Cet objet est imprégné de l'essence de sorcellerie de <strong>Façonnage</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de l'inflexion <strong>Façonner</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
+            "adjective": "Façonnage"
+        },
+        "determineSpellcr": {
+            "name": "Sorcellerie de scellement",
+            "description": "<p>Cet objet est imprégné de l'essence de sorcellerie de <strong>Scellement</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de l'inflexion <strong>Sceller</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
+            "adjective": "Scellement"
+        },
+        "eludingSpellcraf": {
+            "name": "Sorcellerie d'élusion",
+            "description": "<p>Cet objet est imprégné de l'essence de sorcellerie d'<strong>Élusion</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de l'inflexion <strong>Éluder</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
+            "adjective": "Élusion"
+        },
+        "extendSpellcraft": {
+            "name": "Sorcellerie de perpétuation",
+            "description": "<p>Cet objet est imprégné de l'essence de sorcellerie de <strong>Perpétuation</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de l'inflexion <strong>Perpétuer</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
+            "adjective": "Perpétuation"
+        },
+        "negateSpellcraft": {
+            "name": "Sorcellerie d'inversion",
+            "description": "<p>Cet objet est imprégné de l'essence de sorcellerie d'<strong>Inversion</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de l'inflexion <strong>Inverser</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
+            "adjective": "Inversion"
+        },
+        "pullSpellcraft00": {
+            "name": "Sorcellerie de rappel",
+            "description": "<p>Cet objet est imprégné de l'essence de sorcellerie de <strong>Rappel</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de l'inflexion <strong>Rappeler</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
+            "adjective": "Rappel"
+        },
+        "pushSpellcraft00": {
+            "name": "Sorcellerie de rejet",
+            "description": "<p>Cet objet est imprégné de l'essence de sorcellerie de <strong>Rejet</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de l'inflexion <strong>Rejeter</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
+            "adjective": "Rejet"
+        },
+        "quickenSpellcraf": {
+            "name": "Sorcellerie de hâte",
+            "description": "<p>Cet objet est imprégné de l'essence de sorcellerie de <strong>Hâte</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de l'inflexion <strong>Hâter</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
+            "adjective": "Hâte"
+        },
+        "reactSpellcraft0": {
+            "name": "Sorcellerie de réaction",
+            "description": "<p>Cet objet est imprégné de l'essence de sorcellerie de <strong>Réaction</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de l'inflexion <strong>Réagir</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
+            "adjective": "Réaction"
+        },
+        "reshapeSpellcraf": {
+            "name": "Sorcellerie de remodelage",
+            "description": "<p>Cet objet est imprégné de l'essence de sorcellerie de <strong>Remodelage</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de l'inflexion <strong>Remodeler</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
+            "adjective": "Remodelage"
+        },
+        "stormPotency0000": {
+            "name": "Puissance de l'Orage",
+            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les sorts utilisant la rune d' <strong>Orage</strong> de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
+            "adjective": "Puissance de l'Orage"
+        },
+        "stormSpellcraft0": {
+            "name": "Sorcellerie de l'orage",
+            "description": "<p>Cet objet est imprégné de l'essence de sorcellerie de l'<strong>Orage</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune d' <strong>Orage</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
+            "adjective": "Orage runique"
+        },
+        "vicious000000000": {
+            "name": "Vicieuse",
+            "description": "<p>Une Frappe qui obtient un <strong>Coup critique</strong> avec cette arme exploite brutalement la blessure.</p><ul><li><p>Les armes qui infligent des dégâts <strong>Perforants</strong> ou <strong>Tranchants</strong> amènent la cible à se retrouver @Condition[bleeding].</p></li><li><p>Les armes qui infligent des dégâts <strong>Contondants</strong> amènent la cible à se retrouver @Condition[staggered].</p></li></ul>",
+            "adjective": "Vicieuse"
         }
     },
     "mapping": {

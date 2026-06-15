@@ -313,7 +313,7 @@
         },
         "cadence000000000": {
             "name": "Cadence",
-            "description": "<p>Vous êtes entraîné à effectuer des séquences d'attaques de mêlée avec une précision rythmique. Lorsque vous <strong>Frappez</strong> plusieurs fois de suite en utilisant une arme de mêlée à une main, vous gagnez une <strong>+1 Faveur</strong> cumulative pour chaque attaque successive.</p><p></p>"
+            "description": "<p>Vous êtes entraîné à effectuer des séquences d'attaques de mêlée avec une précision rythmique. Lorsque vous <strong>Frappez</strong> plusieurs fois de suite en utilisant une arme de mêlée à une main, vous gagnez une <strong>+1 Faveur</strong> cumulative pour chaque attaque successive.</p>"
         },
         "carefree00000000": {
             "name": "Insouciant",
@@ -484,7 +484,7 @@
         },
         "deftgrip00000000": {
             "name": "Prise habile",
-            "description": "Votre prise sur votre armement est ferme et inflexible. Vous pouvez effectuer des Actions qui nécessitent une main libre tout en maniant une arme à deux mains de mêlée."
+            "description": "<p>Votre prise sur votre armement est fluide et précise. Tant que vous maniez une arme à deux mains basée sur la Dextérité, vous pouvez lancer des sorts qui nécessitent deux mains, et les tentatives de vous Désarmer se font avec +2 Fléaux.</p><p>Vous pouvez utiliser un Déplacement libre pour équiper ou déséquiper une telle arme sans aucun coût en Action.</p>"
         },
         "demolitionist000": {
             "name": "Démolisseur",
@@ -582,7 +582,7 @@
         },
         "dustbinder000000": {
             "name": "Terramancien",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Terre. Les sorts utilisant cette Rune causent la condition @Condition[corroding] sur les Coups critiques.</p><p>L'effet Corrodé dure <strong>3 Rounds</strong> et inflige la moitié de votre score de <strong>Sagesse</strong> en dégâts d'<strong>Acide</strong> à la <strong>Santé</strong> chaque Round.</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Terre. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[corroding].</p><p>L'effet Corrodé dure <strong>3 Rounds</strong> et inflige la moitié de votre score de <strong>Sagesse</strong> comme dégâts d'<strong>Acide</strong> à la <strong>Santé</strong> chaque Round.</p>"
         },
         "earthProficiency": {
             "name": "Maîtrise de la Terre",
@@ -792,7 +792,7 @@
         },
         "gestureSense0000": {
             "name": "Signe : Résonance",
-            "description": "<p>Vous harmonisez votre esprit avec la puissance arcanique d'une Rune pour sentir les sources d'énergie proches.</p><p>Le signe de Résonance évolue avec la <strong>Présence</strong> et produit une émanation de 30 pieds de rayon dont la position reste centrée sur le lanceur. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>. Il peut optionnellement être <strong>Maintenu</strong> au coût supplémentaire de <strong>1 Focus</strong> chaque round suivant.</p><p>Ce sort permet au lanceur de détecter la présence de sorcellerie utilisant la même Rune que celle incorporée dans ce sort. La Résonance détectera aussi momentanément la présence de créatures selon leur type.</p><ul><li><p><strong>Contrôle</strong> : Fiélons</p></li><li><p><strong>Mort</strong> : Morts-vivants</p></li><li><p><strong>Terre</strong> : Vases et Élémentaires de terre</p></li><li><p><strong>Flamme</strong> : Dragons et Élémentaires de feu</p></li><li><p><strong>Givre</strong> : Géants et Élémentaires de givre</p></li><li><p><strong>Illumination</strong> : Célestes</p></li><li><p><strong>Illusion</strong> : Fées</p></li><li><p><strong>Kinésie</strong> : Monstruosités</p></li><li><p><strong>Vie</strong> : Plantes et Bêtes</p></li><li><p><strong>Foudre</strong> : Artificiels et Élémentaires de tempête</p></li><li><p><strong>Néant</strong> : Extérieurs</p></li><li><p><strong>Âme</strong> : Humanoïdes</p></li></ul>"
+            "description": "<p>Vous harmonisez votre esprit avec la puissance arcanique d'une Rune pour sentir les sources d'énergie proches.</p><p>Le signe de Résonance évolue avec la <strong>Présence</strong> et produit une émanation de 30 pieds de rayon dont la position reste centrée sur le lanceur. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>. Il peut optionnellement être <strong>Maintenu</strong> au coût supplémentaire de <strong>1 Focus</strong> chaque round suivant.</p><p>Ce sort permet au lanceur de détecter la présence de sorcellerie utilisant la même Rune que celle incorporée dans ce sort. La Résonance détectera aussi momentanément la présence de créatures selon leur type.</p><ul><li><p><strong>Contrôle</strong> : Fiélons</p></li><li><p><strong>Mort</strong> : Morts-vivants</p></li><li><p><strong>Terre</strong> : Vases et Élémentaires de terre</p></li><li><p><strong>Flamme</strong> : Dragons et Élémentaires de feu</p></li><li><p><strong>Givre</strong> : Géants et Élémentaires de givre</p></li><li><p><strong>Illumination</strong> : Célestes</p></li><li><p><strong>Illusion</strong> : Fées</p></li><li><p><strong>Kinésie</strong> : Monstruosités</p></li><li><p><strong>Vie</strong> : Plantes et Bêtes</p></li><li><p><strong>Orage</strong> : Artificiels et Élémentaires de tempête</p></li><li><p><strong>Néant</strong> : Extérieurs</p></li><li><p><strong>Âme</strong> : Humanoïdes</p></li></ul>"
         },
         "gesturestep00000": {
             "name": "Signe : Charge",
@@ -843,7 +843,7 @@
             "actions": {
                 "headbutt": {
                     "name": "Coup de boule",
-                    "description": "<p>Effectuez une <strong>Frappe</strong> à mains nues contre la défense de <strong>Fortitude</strong> d'un ennemi adjacent. Si votre <strong>Initiative</strong> est supérieure à celle de votre cible, vous obtenez <strong>+1 Faveur</strong> à cette attaque.</p><p>L'attaque est <strong>Difficile</strong> et n'inflige que des dégâts @Condition[weakened], mais sur une réussite, elle inflige la condition @Condition[staggered] pendant un round.</p><p>Cette action utilise toujours une arme à mains nues, même si vos emplacements d'arme sont occupés.</p>",
+                    "description": "<p>Effectuez une <strong>Frappe</strong> à mains nues contre la défense de <strong>Fortitude</strong> d'un ennemi adjacent. Si votre <strong>Initiative</strong> est supérieure à celle de votre cible, vous obtenez <strong>+1 Faveur</strong> à cette attaque.</p><p>L'attaque est <strong>Difficile</strong> et n'inflige que des dégâts <strong>Réduits</strong>, mais sur une réussite, elle inflige la condition @Condition[staggered] pendant un round.</p><p>Cette action utilise toujours une arme à mains nues, même si vos emplacements d'arme sont occupés.</p>",
                     "effects": {
                         "Headbutt": {
                             "name": "Coup de boule"
@@ -947,18 +947,17 @@
         },
         "inquisitor000000": {
             "name": "Brise-sort",
-            "description": "<p>Vous êtes un expert en combat contre les utilisateurs de magie. Vous savez comment conserver l'énergie et frapper au moment précis pour contrecarrer leur incantation.</p>",
+            "description": "p>Vous êtes un expert du combat contre les utilisateurs de magie, entraîné à économiser votre énergie et à frapper au moment précis pour contrecarrer une incantation.</p><p>Le coût de votre @Action[default reactiveStrike] est réduit de 1 <strong>Action</strong> supplémentaire, mais coûte toujours 1 <strong>Focus</strong>. Lorsque vous effectuez une Frappe contre un ennemi en réaction au lancement d'un sort, un coup réussi draine <strong>1 Focus</strong> à cet ennemi et vous restitue le vôtre ; sur un <strong>Coup critique</strong>, son sort est interrompu et la magie est perdue.</p>",
             "actions": {
-                "inquisitorsStrike": {
-                    "name": "Frappe du Brise-sort",
-                    "condition": "Votre cible est en train de lancer un sort.",
-                    "description": "Lorsqu'un ennemi que vous pouvez voir lance un sort dans votre rayon d'Engagement, vous pouvez réagir pour Frapper cette cible. Sur un Coup critique, le sort de la cible est interrompu et sa magie perdue."
+                "abjure": {
+                    "name": "Abjurer",
+                    "description": "<p>Vous opposez votre volonté entraînée à la sorcellerie hostile, brisant son emprise sur vous et vos alliés proches. Pour vous-même et chaque allié situé à moins de 12 pieds souffrant d'un état magique infligé par un ennemi, effectuez un test d'<strong>Arcane</strong> contre le <strong>DD de suppression</strong> le plus bas parmi les états qui les affligent. Chaque état dont votre résultat dépasse le DD de suppression est retiré.</p>"
                 }
             }
         },
         "inspirator000000": {
             "name": "Inspirateur",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Âme. Les sorts utilisant cette Rune causent la condition @Condition[inspired] sur les Coups critiques.</p><p>L'effet Inspiré dure <strong>1 Round</strong> et offre votre score de <strong>Présence</strong> comme <strong>Restauration</strong> additionnelle au <strong>Moral</strong>.</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Âme. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui restaurent du Moral causent la condition @Condition[inspired].</p><p>L'effet Inspiré dure <strong>1 Round</strong> et offre votre score de <strong>Présence</strong> comme <strong>Restauration</strong> additionnelle au <strong>Moral</strong>.</p>"
         },
         "inspireheroism00": {
             "name": "Inspirer l'Héroïsme",
@@ -1077,7 +1076,7 @@
         },
         "kineturge0000000": {
             "name": "Kinéthurge",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Kinésie. Les sorts utilisant cette Rune causent la condition @Condition[bleeding] sur les Coups critiques.</p><p>L'effet Ensanglanté dure <strong>1 Round</strong> et inflige votre score de caractéristique de <strong>Présence</strong> comme dégâts <strong>Perforants</strong> additionnels à la <strong>Santé</strong>.</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Kinésie. Lorsque vous lancez un Sort ou utilisez une action qui implique cette rune, vos Coups critiques qui infligent des dégâts appliquent également la condition @Condition[bleeding].</p><p>L'effet de Saignement dure <strong>1 Round</strong> et inflige un montant de dégâts <strong>Perforants</strong> supplémentaires à la <strong>Santé</strong> égal à votre score de caractéristique de <strong>Présence</strong>.</p>"
         },
         "lastStand0000000": {
             "name": "Dernier combat",
@@ -1123,11 +1122,7 @@
         },
         "lightbringer0000": {
             "name": "Porteur de lumière",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Illumination. Les sorts utilisant cette Rune causent la condition @Condition[irradiated] sur les Coups critiques.</p><p>L'effet Irradié dure <strong>1 Round</strong> et inflige votre score de <strong>Présence</strong> comme dégâts <strong>Radiants</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
-        },
-        "lightningProfici": {
-            "name": "Maîtrise de la Foudre",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Foudre. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Énergiser</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Illumination. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[irradiated].</p><p>L'effet Irradié dure <strong>1 Round</strong> et inflige votre score de <strong>Présence</strong> comme dégâts <strong>Radiants</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
         },
         "lightWeaponProfi": {
             "name": "Armes légères : Maîtrise",
@@ -1194,7 +1189,7 @@
         },
         "mender0000000000": {
             "name": "Vivificateur",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Vie. Les sorts utilisant cette Rune causent la condition @Condition[mending] sur les Coups critiques.</p><p>L'effet Guérison dure <strong>1 Round</strong> et applique votre score de <strong>Sagesse</strong> comme <strong>Restauration</strong> additionnelle à la <strong>Santé</strong>.</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Vie. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui restaurent de la Santé causent la condition @Condition[mending].</p><p>L'effet Vivifié dure <strong>1 Round</strong> et offre votre score de <strong>Sagesse</strong> comme <strong>Restauration</strong> additionnelle à la <strong>Santé</strong>.</p>"
         },
         "mentalfortress00": {
             "name": "Forteresse mentale",
@@ -1202,7 +1197,7 @@
         },
         "mesmer0000000000": {
             "name": "Envoûteur",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Illusion. Les sorts utilisant cette Rune causent la condition @Condition[confused] sur les Coups critiques.</p><p>L'effet Confus dure <strong>1 Round</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts <strong>Psychiques</strong> au <strong>Moral</strong>, et applique la condition @Condition[disoriented].</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Illusion. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[confused].</p><p>L'effet Confus dure <strong>1 Round</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts <strong>Psychiques</strong> au <strong>Moral</strong>, et applique la condition @Condition[disoriented].</p>"
         },
         "mnemonicrealizat": {
             "name": "Réalisation mnémonique",
@@ -1240,7 +1235,7 @@
         },
         "necromancer00000": {
             "name": "Nécromancien",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Mort. Les sorts utilisant cette Rune causent la condition @Condition[decaying] sur les Coups critiques.</p><p>L'effet Putréfié dure <strong>3 Rounds</strong> et inflige la moitié de votre score de <strong>Présence</strong> comme dégâts de <strong>Corruption</strong> à la <strong>Santé</strong> chaque Round.</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la rune de Mort. Lorsque vous lancez un Sort ou utilisez une action qui implique cette rune, vos Coups critiques qui infligent des dégâts appliquent également la condition @Condition[decaying].</p><p>L'effet de Décomposition dure <strong>3 Rounds</strong> et inflige un montant de dégâts de <strong>Corruption</strong> à la <strong>Santé</strong> égal à la moitié de votre score de <strong>Présence</strong> chaque Round.</p>"
         },
         "neverYield000000": {
             "name": "Ne jamais céder",
@@ -1263,11 +1258,17 @@
         },
         "operator00000000": {
             "name": "Opérateur",
-            "description": "<p>Vous avez de la glace dans les veines et restez calme sous la pression. Votre robustesse physique et votre acuité mentale vous permettent d'affiner le danger de votre situation pour atteindre les plus grands résultats lorsque les enjeux sont les plus élevés.</p><p>En combat et non @Condition[incapacitated], vous gagnez +1 Faveur à tous les tests lorsque vous avez moins de 50% de votre Santé maximale restante. Vous gagnez +2 Faveurs à tous les tests lorsque vous avez moins de 25% de votre Santé maximale restante.</p>"
+            "description": "<p>Vous avez de la glace dans les veines et restez calme sous la pression. Votre robustesse physique et votre acuité mentale vous permettent d'affiner le danger de votre situation pour atteindre les plus grands résultats lorsque les enjeux sont les plus élevés.</p><p>En combat et non @Condition[incapacitated], vous gagnez +1 Faveur à tous les tests lorsque vous avez moins de 50% de votre Santé maximale restante. Vous gagnez +2 Faveurs à tous les tests lorsque vous avez moins de 25% de votre Santé maximale restante.</p>",
+            "actions": {
+                "coldFocus": {
+                    "name": "Focus glacial",
+                    "description": "<p>Vous dépensez de l'<strong>Héroïsme</strong>, tirant une clarté glaciale de votre situation pour restaurer 1 point de <strong>Focus</strong>, plus 1 point de Focus supplémentaire pour chaque tranche de 25 % de votre Santé maximale manquante, jusqu'à un maximum de 5.</p>"
+                }
+            }
         },
         "opportunist00000": {
             "name": "Opportuniste",
-            "description": "<p>Vous saisissez toute opportunité pour capitaliser sur un ennemi qui vous tourne le dos. Vous pouvez effectuer une <strong>Frappe réactive</strong> même si vous êtes autrement <strong>Totalement engagé</strong>.</p>"
+            "description": "<p>Vous saisissez toute opportunité pour capitaliser sur un ennemi qui vous tourne le dos. Vous pouvez effectuer une @Action[default reactiveStrike] même si vous êtes autrement <strong>Totalement engagé</strong>.</p>"
         },
         "opportunisticspe": {
             "name": "Sorcellerie opportuniste",
@@ -1275,12 +1276,12 @@
         },
         "overwatch0000000": {
             "name": "Surveillant",
-            "description": "<p>Vous êtes un expert en combat contre les utilisateurs de magie. Vous savez comment conserver l'énergie et frapper au moment précis pour contrecarrer leur incantation.</p>",
+            "description": "<p>Vous gardez le champ de bataille dans votre ligne de mire, prêt à punir tout ennemi qui agit dans votre zone de tir. Un lanceur de sorts qui tisse de la magie devant vous risque non seulement de subir votre tir, mais aussi de voir son incantation s'effondrer.</p>",
             "actions": {
-                "disruptingShot": {
-                    "name": "Coup perturbant",
-                    "condition": "Votre cible est en train de lancer un sort.",
-                    "description": "Lorsqu'un ennemi que vous pouvez voir lance un sort, vous pouvez réagir pour Frapper cette cible. La technique est difficile à exécuter, mais sur un Coup critique, le sort de la cible est interrompu et la magie perdue."
+                "coveringFire": {
+                    "name": "Tir de couverture",
+                    "condition": "Un ennemi que vous pouvez voir lance un sort, ou entreprend une action qui cible une créature autre que lui-même.",
+                    "description": "<p>Vous pouvez Réagir pour effectuer une Frappe à distance contre cet ennemi. Sur un <strong>Coup critique</strong> contre un lanceur de sorts, le sort est interrompu et la magie est perdue. Une action se ciblant soi-même qui n'est pas un sort, comme Déplacement ou Défendre, ne déclenche pas cette Réaction, qui ne peut être utilisée qu'une seule fois par Round.</p>"
                 }
             }
         },
@@ -1430,7 +1431,7 @@
         },
         "pyromancer000000": {
             "name": "Pyromancien",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Flamme. Les sorts utilisant cette Rune causent la condition @Condition[burning] sur les Coups critiques.</p><p>L'effet Enflammé dure <strong>3 Rounds</strong> et inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts de <strong>Feu</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Flamme. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[burning].</p><p>L'effet Enflammé dure <strong>3 Rounds</strong> et inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts de <strong>Feu</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
         },
         "rallyingCry00000": {
             "name": "Cri de ralliement",
@@ -1468,7 +1469,7 @@
         },
         "rimecaller000000": {
             "name": "Héraut du Givre",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Givre. Les sorts utilisant cette Rune causent la condition @Condition[freezing] sur les Coups critiques.</p><p>L'effet Gelé dure <strong>1 Round</strong>, inflige la moitié de votre score de <strong>Sagesse</strong> comme dégâts de <strong>Froid</strong> à la <strong>Santé</strong>, et applique la condition @Condition[slowed].</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Givre. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[freezing].</p><p>L'effet Gelé dure <strong>1 Round</strong>, inflige la moitié de votre score de <strong>Sagesse</strong> comme dégâts de <strong>Givre</strong> à la <strong>Santé</strong>, et applique la condition @Condition[slowed].</p>"
         },
         "runeControl00000": {
             "name": "Rune : Contrôle",
@@ -1492,7 +1493,7 @@
         },
         "runeEarth0000000": {
             "name": "Rune : Terre",
-            "description": "<p>La force ordonnée de la terre élémentaire, responsable de la matière physique. La Rune de Terre gouverne les minéraux, les métaux, les sols et autres composés physiques.</p><p>La Rune de Terre évolue avec la <strong>Sagesse</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts d'<strong>Acide</strong> à la <strong>Santé</strong>. Elle est opposée par la rune chaotique de <strong>Foudre</strong>.</p>",
+            "description": "<p>La force ordonnée de la terre élémentaire, responsable de la matière physique. La Rune de Terre gouverne les minéraux, les métaux, les sols et autres composés physiques.</p><p>La Rune de Terre évolue avec la <strong>Sagesse</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts d'<strong>Acide</strong> à la <strong>Santé</strong>. Elle est opposée par la rune chaotique d'<strong>Orage</strong>.</p>",
             "actions": {
                 "mould": {
                     "name": "Façonner",
@@ -1557,16 +1558,6 @@
                 "bloom": {
                     "name": "Fleurir",
                     "description": "<p>Votre maîtrise de la Rune de Vie vous permet de stimuler la croissance biologique et de nourrir la santé physique, produisant l'un des effets suivants :</p><ul><li><p>Cultiver 1 pied cube de plantes ou de champignons existants pour les faire croître rapidement jusqu'à un état sain, florissant ou prêt à être récolté.</p></li><li><p>Identifier une condition physique négative affectant une créature telle que @Condition[diseased], @Condition[poisoned], @Condition[bleeding], or @Condition[weakened].</p></li><li><p>Vérifier si une portion d'aliment ou de boisson est exempte de contamination par des bactéries, des parasites ou du poison.</p></li></ul><p>Fleurir ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
-                }
-            }
-        },
-        "runeLightning000": {
-            "name": "Rune : Foudre",
-            "description": "<p>La force chaotique de l'énergie électrique brute. La Rune de Foudre gouverne les sources de charge et de décharge électrique.</p><p>La Rune de Foudre évolue avec l'<strong>Intellect</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts <strong>Électriques</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Terre</strong>.</p>",
-            "actions": {
-                "energize": {
-                    "name": "Dynamiser",
-                    "description": "<p>Votre maîtrise de la Rune de Foudre vous permet de conduire le flux d'air et d'électricité, en manipulant la charge et l'aérodynamisme pour produire l'un des effets suivants :</p><ul><li><p>Imprégner un objet métallique que vous touchez, d'une taille maximale d'un pied cube, d'une charge électromagnétique, ce qui le rendra fortement adhérent à d'autres métaux. Un seul objet peut être chargé de cette manière à la fois, lancer ce sort sur un autre objet entraîne la perte de l'effet magnétique du premier.</p></li><li><p>Rassembler une bourrasque de vent à votre emplacement actuel dans un rayon de six pieds, soufflant soit sous forme de rafale dans une seule direction contrôlée, soit sous forme de cyclone avec une force centripète dans toutes les directions. Les effets aériens dans la zone immédiate sont dispersés et les objets non fixés d'un poids inférieur à 1 livre sont projetés dans la direction de la rafale.</p></li><li><p>Produire le bruit sec d'un coup de tonnerre à un endroit que vous pouvez voir à moins de 15 pieds de votre position actuelle.</p></li></ul><p>Dynamiser ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
                 }
             }
         },
@@ -1645,7 +1636,7 @@
         },
         "shapeshifter0000": {
             "name": "Métamorphe",
-            "description": "<p>Vous possédez la capacité surnaturelle de transformer votre corps en formes de bêtes.</p><p>Vous subissez une transformation où vous assumez la forme d'une bête avec laquelle vous êtes familier et qui est de la moitié de votre niveau ou moins. Tant que vous êtes transformé, vous avez les attributs et capacités exacts de la bête choisie.</p><p>Votre équipement est magiquement incorporé dans la forme que vous prenez, cependant vous ne gagnez aucun bénéfice de cet équipement tant que vous êtes transformé.</p><p>Si votre forme bestiale devient @Condition[incapacitated], vous revenez à votre forme normale avec tout dégât excédentaire devenant des <strong>Lésions</strong>. Si votre <strong>Moral</strong> est @Condition[broken] tant que vous êtes sous forme de bête, votre transformation se termine et tout dégât excédentaire devient de la <strong>Folie</strong>.</p><h3 class=\"divider\">Notes de playtest</h3><p>Ce talent et ses actions associées ne sont pas encore automatisées.</p>",
+            "description": "<p>Vous possédez la capacité surnaturelle de transformer votre corps pour prendre la forme de créatures bestiales.</p><p>Vous subissez une transformation au cours de laquelle vous adoptez la forme d'une bête qui vous est familière et dont le niveau est égal ou inférieur à la moitié du vôtre. Tant que vous êtes transformé, vous possédez exactement les caractéristiques et les capacités de la bête choisie.</p><p>Votre équipement est magiquement incorporé dans la forme que vous prenez, cependant vous ne bénéficiez d'aucun avantage de cet équipement tant que vous êtes transformé.</p><p>Si votre forme bestiale subit la condition @Condition[incapacitated], vous reprenez votre forme normale et tout dégât excédentaire est converti en <strong>Lésions</strong>. Si votre <strong>Moral</strong> subit la condition @Condition[broken] tant que vous êtes sous forme de bête, votre transformation prend fin et tout dégât excédentaire est converti en <strong>Folie</strong>.</p><h3 class=\"divider\">Notes de Playtest</h3><p>Ce talent et ses actions associées ne sont pas encore automatisés.</p>",
             "actions": {
                 "beastShape": {
                     "name": "Forme bestiale",
@@ -1809,7 +1800,7 @@
         },
         "stronggrip000000": {
             "name": "Prise solide",
-            "description": "Votre prise sur votre armement est ferme et inflexible. Vous pouvez effectuer des Actions qui nécessitent une main libre tout en maniant une arme à deux mains de mêlée. Les tentatives pour vous Désarmer sont faites avec +2 Fléaux."
+            "description": "<p>Votre prise sur votre armement est ferme et inflexible. Lorsque vous maniez une arme à deux mains basée sur la Force, vous pouvez lancer des sorts qui nécessitent deux mains, et les tentatives de Désarmement contre vous sont faites avec +2 Fléaux.</p><p>De plus, vous pouvez manier une arme Lourde à une main dans votre main secondaire.</p>"
         },
         "stunningstrike00": {
             "name": "Frappe étourdissante",
@@ -1847,7 +1838,7 @@
         },
         "surgeweaver00000": {
             "name": "Tissefoudre",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Foudre. Les sorts utilisant cette Rune causent la condition @Condition[shocked] sur les Coups critiques.</p><p>L'effet Électrocuté dure <strong>3 Rounds</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts de <strong>Foudre</strong> au <strong>Moral</strong>, et applique la condition @Condition[staggered].</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Orage. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[shocked].</p><p>L'effet Électrocuté dure <strong>3 Rounds</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts <strong>Électriques</strong> au <strong>Moral</strong>, et applique la condition @Condition[staggered].</p>"
         },
         "swashbuckler0000": {
             "name": "Bretteur",
@@ -1905,7 +1896,7 @@
         },
         "thoughtbinder000": {
             "name": "Censeur",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Contrôle. Les sorts utilisant cette Rune causent la condition @Condition[dominated] sur les Coups critiques.</p><p>L'effet Dominé dure <strong>3 Rounds</strong> et inflige votre score de caractéristique de <strong>Sagesse</strong> comme dégâts <strong>Psychiques</strong> additionnels au <strong>Moral</strong>.</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Contrôle. Lorsque vous lancez un Sort ou utilisez une action qui implique cette rune, vos Coups critiques qui infligent des dégâts appliquent également la condition @Condition[dominated].</p><p>L'effet Dominé dure <strong>3 Rounds</strong> et inflige un montant de dégâts <strong>Psychiques</strong> supplémentaires au <strong>Moral</strong> égal à votre score de caractéristique de <strong>Sagesse</strong>.</p>"
         },
         "threadtheneedle0": {
             "name": "Enfiler l'aiguille",
@@ -1997,7 +1988,7 @@
         },
         "voidcaller000000": {
             "name": "Héraut du Néant",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Néant. Les sorts utilisant cette Rune causent la condition @Condition[entropy] sur les Coups critiques.</p><p>L'effet Entropie dure <strong>1 Round</strong>, inflige la moitié de votre score de <strong>Présence</strong> comme dégâts de <strong>Vide</strong> à la <strong>Santé</strong>, et applique la condition @Condition[frightened].</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune du Néant. Lorsque vous lancez un Sort ou utilisez une action qui implique cette rune, vos Coups critiques qui infligent des dégâts appliquent également la condition @Condition[entropy].</p><p>L'effet Dérangé dure <strong>1 Round</strong>, inflige un montant de dégâts de <strong>Vide</strong> à la <strong>Santé</strong> égal à la moitié de votre score de <strong>Présence</strong>, et applique la condition @Condition[frightened].</p>"
         },
         "vowofanimus00000": {
             "name": "Serment d'animosité",
@@ -2016,7 +2007,7 @@
         },
         "warmage000000000": {
             "name": "Mage de guerre",
-            "description": "<p>Votre sorcellerie est affûtée comme une arme de guerre pour contrecarrer les incantations d'autres mages. Vous pouvez demander au Maître du jeu si vous connaissez une Rune capable de contrer un sort ennemi, même si vous ne reconnaissez pas le sort lancé. Vous gagnez +2 Faveurs à toute tentative de Contresort.</p>"
+            "description": "<p>Votre sorcellerie est affûtée comme une arme de guerre pour contrecarrer les incantations d'autres mages. Vous pouvez demander au Maître du jeu si vous connaissez une <strong>Rune</strong> capable de contrer un sort ennemi, même si vous ne reconnaissez pas le sort lancé. Vous gagnez +2 Faveurs à toute tentative de @Action[Compendium.crucible.talent.Item.counterspell0000 counterspell].</p>"
         },
         "weakpoints000000": {
             "name": "Points faibles",
@@ -2058,6 +2049,329 @@
                     "description": "<p>Vous <strong>Frappez</strong> en utilisant une arme basée sur la Force. L'attaque devient <strong>Mortelle</strong> et tout dégât infligé est <strong>Radiant</strong>.</p>"
                 }
             }
+        },
+        "runeStorm0000000": {
+            "description": "<p>La force chaotique de l'énergie électrique brute. La rune d'Orage gouverne les sources de charge et de décharge électriques.</p><p>La rune d'Orage évolue avec l'<strong>Intellect</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts <strong>Électriques</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Terre</strong>.</p>",
+            "actions": {
+                "energize": {
+                    "description": "<p>Votre maîtrise de la Rune d'Orage vous permet de conduire le flux d'air et d'électricité, en manipulant la charge et l'aérodynamisme pour produire l'un des effets suivants :</p><ul><li><p>Imprégner un objet métallique que vous touchez, d'une taille maximale d'un pied cube, d'une charge électromagnétique, ce qui le rendra fortement adhérent à d'autres métaux. Un seul objet peut être chargé de cette manière à la fois, lancer ce sort sur un autre objet entraîne la perte de l'effet magnétique du premier.</p></li><li><p>Rassembler une bourrasque de vent à votre emplacement actuel dans un rayon de six pieds, soufflant soit sous forme de rafale dans une seule direction contrôlée, soit sous forme de cyclone avec une force centripète dans toutes les directions. Les effets aériens dans la zone immédiate sont dispersés et les objets non fixés d'un poids inférieur à 1 livre sont projetés dans la direction de la rafale.</p></li><li><p>Produire le bruit sec d'un coup de tonnerre à un endroit que vous pouvez voir à moins de 15 pieds de votre position actuelle.</p></li></ul><p>Dynamiser ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>",
+                    "name": "Dynamiser"
+                }
+            },
+            "name": "Rune : Orage"
+        },
+        "acridEarth000000": {
+            "name": "Terre âcre",
+            "description": "<p>Vous maniez la terre comme un chimiste manie ses réactifs, son mordant caustique répondant à un esprit vif et incisif. Votre utilisation de la <strong>Rune de Terre</strong> dépend de l'<strong>Intellect</strong> au lieu de la <strong>Sagesse</strong>.</p>"
+        },
+        "acrobat000000000": {
+            "description": "<p>Vous combattez avec la grâce fluide d'un acrobate, utilisant votre arme aussi bien comme une perche de saut que comme un instrument de guerre. Tant que vous maniez une arme <strong>Équilibrée (2m)</strong>, vos déplacements ne provoquent pas de Désengagement. Votre arme tourbillonnante repousse également les projectiles, infligeant <strong>+2 Fléaux</strong> aux attaques à distance ciblées contre vous.</p>",
+            "name": "Acrobate",
+            "actions": {
+                "vaultingSweep": {
+                    "description": "<p>Vous vous élancez dans les airs pour vous abattre au milieu de vos ennemis, votre arme tourbillonnant dans un arc éblouissant. Choisissez un point à portée de votre <strong>Vitesse</strong> et bondissez vers lui, puis effectuez une <strong>Frappe</strong> contre chaque créature à portée de votre arme depuis votre point d'atterrissage.</p>",
+                    "name": "Balayage aérien"
+                }
+            }
+        },
+        "artificer0000000": {
+            "name": "Artificier",
+            "description": "<p>Vous excellez dans l'application des compétences d'<strong>Arcanes</strong>, de <strong>Tissage de glyphes</strong> et d'<strong>Enchantement</strong> pour créer des équipements innovants et pratiques. Vous pouvez modifier temporairement des équipements pour y appliquer des enchantements d'affixes ou pour renforcer la puissance d'un enchantement particulier.</p>",
+            "actions": {
+                "imbueAffix": {
+                    "description": "<p>Au cours d'un @Action[default rest], vous canalisez de l'énergie arcane dans votre équipement pour y inscrire un <strong>Affixe</strong> sous forme d'enchantement temporaire. Choisissez un objet physique capable de recevoir un enchantement et imprégnez-le temporairement d'un Affixe de <strong>Palier 1</strong> de votre choix. L'Affixe imprégné persiste jusqu'à ce que vous utilisiez à nouveau Imprégner un affixe.</p><h3 class=\"divider\">Notes de Playtest</h3><p>Vous pouvez actuellement imprégner n'importe quel affixe que l'objet choisi peut recevoir. Dans une prochaine mise à jour, cela sera limité aux affixes que vous êtes capable d'<strong>Enchanter</strong>.</p>",
+                    "name": "Imprégner un affixe"
+                },
+                "amplifyAffix": {
+                    "name": "Amplifier un affixe",
+                    "description": "<p>Au cours d'un @Action[default rest], vous renforcez la puissance d'un enchantement d'<strong>Affixe</strong> sur l'un de vos objets. Choisissez un Affixe sur un objet physique que vous avez équipé et augmentez le Palier de cet affixe de un, jusqu'à son maximum. Cette amplification persiste jusqu'à ce que vous utilisiez à nouveau l'action d'Amplification d'affixe.</p>"
+                }
+            }
+        },
+        "bastion000000000": {
+            "name": "Bastion",
+            "description": "<p>Vous maîtrisez l'art de la posture défensive, devenant un rempart inébranlable. Tant que vous avez la condition @Condition[guarded], vous bénéficiez des avantages suivants :</p><ul><li><p>Vous ne pouvez pas être déplacé contre votre gré ni être mis @Condition[prone].</p></li><li><p>Votre espace ne peut pas être traversé par des ennemis, même lorsqu'ils utilisent des capacités qui leur permettraient normalement de traverser une créature.</p></li><li><p>Votre <strong>Engagement</strong> augmente de +1, maintenant davantage d'ennemis à distance.</p></li><li><p>Votre défense de <strong>Réflexe</strong> est considérée comme la somme de vos défenses d'<strong>Armure</strong> et de <strong>Blocage</strong>, si celle-ci est supérieure, car vous encaissez les attaques plutôt que de les esquiver. Une attaque contre votre <strong>Réflexe</strong> à laquelle vous résistez est considérée comme ayant été parée par un <strong>Blocage</strong>.</p></li></ul>",
+            "actions": {
+                "getBehindMe": {
+                    "name": "Passez derrière moi",
+                    "description": "<p>Choisissez un allié adjacent et repositionnez-le directement derrière vous, selon la direction vers laquelle vous faites face au moment où cette action est utilisée, vous interposant ainsi entre cet allié et ses attaquants.</p><p>Ce déplacement ne provoque pas de réactions de Désengagement et l'allié protégé obtient la condition @Condition[guarded] jusqu'au début de son prochain tour.</p>",
+                    "effects": {
+                        "Guarded": {
+                            "name": "Protégé"
+                        }
+                    }
+                }
+            }
+        },
+        "champion00000000": {
+            "name": "Champion",
+            "description": "<p>Vous savourez le frisson du combat singulier, aspirant à devenir un provocateur hors pair qui domine ses rivaux par une puissance écrasante et une volonté inébranlable. Vous pouvez lancer un <strong>Défi</strong>, marquant une créature rivale comme votre cible <strong>Défiée</strong>, et obtenant des dégâts bonus pour vos attaques contre elle.</p><p>Votre concentration est si intense qu'aucun rival ne peut échapper à votre emprise. Vous pouvez effectuer une @Action[default reactiveStrike] contre votre rival <strong>Défié</strong> même lorsque vous êtes @Condition[flanked], et tant que vous avez du Focus à dépenser, cela ne vous coûte que <strong>1 Focus</strong> au lieu d'une Action.</p>",
+            "actions": {
+                "challenge": {
+                    "name": "Défi",
+                    "description": "<p>Vous ciblez un adversaire digne de ce nom, le liant à un duel par la seule force de votre présence. La cible devient votre rival <strong>Défié</strong> jusqu'à la fin du Combat, jusqu'à ce qu'elle soit vaincue ou que vous lanciez un Défi à un autre adversaire. Vous ne pouvez avoir qu'un seul rival Défié à la fois.</p><p>Tant que votre rival Défié est le seul ennemi avec lequel vous êtes engagé, votre immersion dans le duel s'intensifie : à la fin de chacun de vos tours, vous obtenez un bonus cumulable de +1 aux <strong>Dégâts bonus</strong> de vos <strong>Frappes</strong> de mêlée contre ce rival, jusqu'à un maximum égal à votre <strong>Présence</strong>. Ce bonus retombe à zéro si le duel est rompu, ce qui se produit si un autre ennemi vous engage, si votre rival échappe à votre <strong>Engagement</strong> ou si vous effectuez une Frappe contre toute autre créature.</p>",
+                    "effects": {
+                        "Dominance": {
+                            "name": "Dominance"
+                        }
+                    }
+                }
+            }
+        },
+        "disarmingriposte": {
+            "name": "Riposte désarmante",
+            "description": "<p>Vos ripostes sont assez précises pour arracher une arme de l'emprise de votre ennemi. Lorsque votre @UUID[Compendium.crucible.talent.Item.counterriposte00]{Contre-Riposte} obtient un <strong>Coup critique</strong>, la cible est désarmée et laisse tomber son arme en main principale.</p>"
+        },
+        "duelist000000000": {
+            "name": "Duelliste",
+            "description": "<p>Vous savourez le frisson et la maîtrise technique du combat singulier, employant un style de combat qui utilise une arme à une main tout en gardant votre main secondaire libre.</p><p>Tant que vous maniez une arme de mêlée à une main et que votre autre main est vide, vous obtenez un bonus de <strong>+2</strong> à votre défense de <strong>Parade</strong> tant que vous n'êtes pas @Condition[flanked]. Tant que vous remplissez ces critères, toute attaque qui se solde par un <strong>Coup superficiel</strong> contre votre <strong>Armure</strong> devient à la place une <strong>Parade</strong>.</p>",
+            "actions": {
+                "estocade": {
+                    "name": "Estocade",
+                    "description": "<p>Vous portez une estocade précise et décisive contre un ennemi pris au dépourvu. Vous effectuez une <strong>Frappe</strong> avec votre arme en main principale, qui est <strong>Améliorée</strong> et <strong>Aiguisée</strong>.</p><p>Vous ne pouvez effectuer cette attaque que contre une cible qui est @Condition[exposed], @Condition[prone], @Condition[slowed], @Condition[staggered], @Condition[paralyzed] ou qui a été désarmée de son arme en main principale.</p>"
+                }
+            }
+        },
+        "flashFrost000000": {
+            "name": "Givre-éclair",
+            "description": "<p>Vous gelez à la vitesse de la pensée, le froid frappant en un instant au lieu de s'installer lentement. Votre utilisation de la <strong>Rune de Givre</strong> évolue avec l'<strong>Intellect</strong> au lieu de la <strong>Sagesse</strong>.</p>"
+        },
+        "gambit0000000000": {
+            "name": "Gambit",
+            "description": "<p>Certains se battent selon les règles, vous vous battez selon les probabilités. Chaque échange est un pari : vous lisez l'intention de votre adversaire, faites des paris risqués pour le pousser à l'erreur, puis misez tout sur un coup d'éclat qui change la donne. Vous faites confiance à votre instinct, à votre esprit et à quelques ruses arcaniques pour faire pencher la balance en votre faveur, obtenant ainsi les avantages suivants :</p><ul><li><p><em>Le Présage.</em> Vous voyez un coup venir avant qu'il ne soit porté. Votre défense d'<strong>Esquive</strong> est calculée en utilisant votre <strong>Intellect</strong> au lieu de votre <strong>Dextérité</strong>, si celui-ci est supérieur.</p></li><li><p><em>Dés pipés.</em> La chance sourit aux audacieux. Une fois par round, la première fois que vous obtenez un 1 sur n'importe quel dé, ce dé est relancé et vous conservez le nouveau résultat.</p></li><li><p><em>Mise de départ.</em> Lorsque vous effectuez une @Action[default strike], vous pouvez choisir d'y ajouter délibérément des <strong>Fléaux</strong>. Si la Frappe réussit, un effet spécial de <strong>Gambit</strong> augmente d'un nombre de charges égal au nombre de Fléaux misés. Ces charges durent jusqu'à la fin du Combat ou jusqu'à ce qu'elles soient dépensées.</p></li></ul>",
+            "actions": {
+                "gambitAllIn": {
+                    "name": "Tapis",
+                    "description": "<p>Tous vos paris portent enfin leurs fruits, et vous raclez la mise d'un coup. Le prochain jet d'attaque ou de test obtient le résultat maximal possible sur tous ses dés. Vous pouvez activer cette action en dépensant soit 6 charges de <strong>Gambit</strong>, soit 1 point d'<strong>Héroïsme</strong>.</p>"
+                }
+            }
+        },
+        "gatheringStorm00": {
+            "name": "Orage imminent",
+            "description": "<p>Vous comprenez qu'un orage n'est pas un chaos soudain, mais une force patiente qui s'accumule pour n'éclater que lorsque c'est nécessaire. Votre utilisation de la <strong>Rune d'Orage</strong> évolue avec la <strong>Sagesse</strong> au lieu de l'<strong>Intellect</strong>.</p>"
+        },
+        "harrier000000000": {
+            "name": "Harceleur",
+            "description": "<p>Vous harcelez les ennemis qui préfèrent vous combattre à distance. Vous pouvez effectuer une @Action[default reactiveStrike] contre un ennemi engagé avec vous chaque fois qu'il effectue une attaque qui n'a pas l'étiquette <strong>Mêlée</strong>.</p>"
+        },
+        "hulkingphysique0": {
+            "name": "Carrure colossale",
+            "description": "<p>Votre carrure colossale se développe avec une masse brute. Votre <strong>Taille</strong> augmente de 1, mais votre encombrement vous ralentit : votre <strong>Foulée</strong> et votre défense d'<strong>Esquive</strong> diminuent chacune de 2.</p>"
+        },
+        "juggernaut000000": {
+            "name": "Juggernaut",
+            "description": "<p>Vous excellez dans l'affrontement physique, utilisant votre force et votre hargne extraordinaires pour maîtriser des créatures dont la corpulence dépasse la vôtre. Lorsque vous @Action[Compendium.crucible.talent.Item.unarmedCombatTra grapple] une créature, vous n'êtes pas vous-même @Condition[restrained]. La <strong>Taille</strong> maximale de créature que vous pouvez empoigner ou par laquelle vous pouvez être empoigné augmente de +1.</p>",
+            "actions": {
+                "throw": {
+                    "name": "Projection",
+                    "condition": "Vous avez agrippé une créature.",
+                    "description": "<p>Vous projetez la cible de votre @Action[Compendium.crucible.talent.Item.unarmedCombatTra grapple] dans les airs vers un point cible situé à une distance maximale de deux fois votre score de <strong>Force</strong>.</p><p>Vous effectuez une attaque de compétence d'<strong>Athlétisme</strong> contre la défense de <strong>Réflexe</strong> de votre cible agrippée. En cas de réussite, la cible est projetée et se retrouve @Condition[prone]. Si son déplacement est stoppé net par un mur ou une autre créature, elle s'écrase contre l'obstacle et subit des dégâts <strong>Contondants</strong> liés à l'attaque. Une créature projetée dans un espace vide ne subit aucun dégât de la projection elle-même, bien qu'elle puisse faire une @Action[default fall].</p><p>Quel que soit le résultat, votre Lutte prend fin dans le cadre de cette action.</p>",
+                    "effects": {
+                        "Throw": {
+                            "name": "Projection"
+                        }
+                    }
+                },
+                "overrun": {
+                    "name": "Bousculade",
+                    "description": "<p>Vous baissez l'épaule et chargez en ligne droite, renversant tous ceux qui se dressent sur votre chemin.</p><p>Déplacez-vous d'une distance allant jusqu'à deux fois votre <strong>Foulée</strong> en ligne droite, en traversant l'espace de toute créature que vous pourriez @Action[Compendium.crucible.talent.Item.unarmedCombatTra grapple]. Vous effectuez une attaque de compétence d'<strong>Athlétisme</strong> contre la défense de <strong>Réflexe</strong> de chaque cible. En cas de réussite, vous infligez des dégâts <strong>Contondants</strong> et mettez la créature @Condition[prone].</p><p>Votre charge est interrompue par toute créature trop massive pour que vous puissiez l'empoigner, celle-ci n'étant pas affectée par l'attaque.</p>",
+                    "effects": {
+                        "Overrun": {
+                            "name": "Bousculade"
+                        }
+                    }
+                }
+            }
+        },
+        "peltast000000000": {
+            "name": "Peltaste",
+            "description": "<p>Pour vous, une arme de jet n'est pas simplement lancée, elle est dirigée. Les armes qui quittent votre main sont guidées par une discipline arcanique qui courbe leur trajectoire selon votre volonté, conférant à vos lancers une portée et une précision qu'aucun bras non assisté ne pourrait égaler. Les armes que vous lancez reviennent infailliblement dans votre main. Vous bénéficiez des avantages suivants :</p><ul><li><p>Vous pouvez utiliser l'action @Action[default throwWeapon] avec n'importe quelle arme de mêlée ou bouclier avec une efficacité totale, même s'ils ne sont pas conçus pour être lancés.</p></li><li><p>Une arme conçue pour le jet possédant la propriété <strong>Lancer</strong> gagne +10 pieds de portée entre vos mains, atteignant ainsi 20 pieds.</p></li><li><p>Les armes que vous lancez reviennent automatiquement et immédiatement dans votre main.</p></li></ul>",
+            "actions": {
+                "ricochet": {
+                    "name": "Ricochet",
+                    "description": "<p>Effectuez une attaque avec une arme ayant la propriété <strong>Lancer</strong> contre un ennemi à portée. Guidée par votre instinct arcanique, votre arme ricoche de cible en cible vers l'ennemi le plus proche situé à une distance maximale égale à votre <strong>Intellect</strong>, sauf si un mur bloque sa trajectoire.</p><p>L'arme continue de ricocher d'ennemi en ennemi, ne frappant chacun d'eux qu'une seule fois, jusqu'à ce qu'elle ait touché un nombre maximal d'ennemis égal à la moitié de votre <strong>Intellect</strong>.</p><p>Résolvez une attaque distincte pour chaque ennemi touché. Chaque cible après la première subit un malus cumulatif de -1 aux <strong>Dégâts</strong> à mesure que le projectile perd de son élan.</p>"
+                }
+            }
+        },
+        "primalist0000000": {
+            "name": "Primaliste",
+            "description": "<p>La puissance des Runes élémentaires coule en vous. En adoptant une <strong>Posture</strong> élémentaire, vous canalisez une Rune à travers vos Frappes d'arme. Vous pouvez adopter une Posture pour l'une des Runes élémentaires que vous connaissez : </p><ul><li><p>@UUID[Compendium.crucible.talent.Item.runeEarth0000000]{Rune : Terre}</p></li><li><p>@UUID[Compendium.crucible.talent.Item.runeFlame0000000]{Rune : Flamme}</p></li><li><p>@UUID[Compendium.crucible.talent.Item.runeFrost0000000]{Rune : Givre}</p></li><li><p>@UUID[Compendium.crucible.talent.Item.runeStorm0000000]{Rune : Orage}</p></li></ul><p>Vous pouvez adopter ou changer de Posture une fois par <strong>Tour</strong>, et celle-ci dure jusqu'à ce que vous en changiez ou que le Combat se termine. Tant que vous êtes dans une Posture, les talents ou aptitudes qui appliquent des effets de Coup critique pour les actions utilisant cette Rune s'appliquent également à vos Frappes d'arme.</p>",
+            "actions": {
+                "stormStance": {
+                    "name": "Posture de l'orage",
+                    "condition": "Vous connaissez la Rune d'Orage.",
+                    "description": "<p>Vous adoptez la <strong>Posture de l'orage</strong>, canalisant la Rune d'Orage. Tant que vous êtes dans cette Posture, votre <strong>Foulée</strong> augmente de 2.</p>",
+                    "effects": {
+                        "Storm Stance": {
+                            "name": "Posture de l'orage"
+                        }
+                    }
+                },
+                "cinderStance": {
+                    "name": "Posture de la cendre",
+                    "condition": "Vous connaissez la Rune de Flamme.",
+                    "description": "<p>Vous adoptez la <strong>Posture de la cendre</strong>, canalisant la Rune de Flamme. Tant que vous êtes dans cette Posture, vos Frappes d'arme infligent 2 points de dégâts de <strong>Feu</strong> supplémentaires.</p>",
+                    "effects": {
+                        "Cinder Stance": {
+                            "name": "Posture de la cendre"
+                        }
+                    }
+                },
+                "waterStance": {
+                    "name": "Posture de l'eau",
+                    "effects": {
+                        "Water Stance": {
+                            "name": "Posture de l'eau"
+                        }
+                    },
+                    "condition": "Vous connaissez la Rune de Givre.",
+                    "description": "<p>Vous adoptez la <strong>Posture de l'eau</strong>, canalisant la Rune de Givre. Tant que vous êtes dans cette Posture, vous gagnez +1 à vos défenses de <strong>Réflexe</strong>, de <strong>Fortitude</strong> et de <strong>Volonté</strong>.</p>"
+                },
+                "stoneStance": {
+                    "name": "Posture de la pierre",
+                    "effects": {
+                        "Stone Stance": {
+                            "name": "Posture de la pierre"
+                        }
+                    },
+                    "condition": "Vous connaissez la Rune de Terre.",
+                    "description": "<p>Vous adoptez la <strong>Posture de la pierre</strong>, canalisant la Rune de Terre. Tant que vous êtes dans cette Posture, vous gagnez +2 en <strong>Résistance</strong> aux dégâts Contondants, Perforants et Tranchants.</p>"
+                }
+            }
+        },
+        "sage000000000000": {
+            "name": "Sage",
+            "description": "<p>Votre érudition encyclopédique s'étend à tous les domaines d'étude. Grâce à des recherches rigoureuses et à de soudaines illuminations, vous pouvez faire appel à vos <strong>Connaissances</strong> pour vous aider dans les moments clés.</p>",
+            "actions": {
+                "flashBrilliance": {
+                    "name": "Éclat de génie",
+                    "description": "<p>Vous dépensez de l'<strong>Héroïsme</strong> et vivez un instant de clarté totale et fulgurante. Jusqu'à la fin de votre prochain tour, vous êtes considéré comme possédant toutes les formes de <strong>Connaissances</strong>.</p>",
+                    "effects": {
+                        "Flash of Brilliance": {
+                            "name": "Éclat de génie"
+                        }
+                    }
+                },
+                "fieldStudy": {
+                    "name": "Étude de terrain",
+                    "description": "<p>Au cours d'un @Action[default rest], vous vous consacrez à l'étude d'un domaine de <strong>Connaissances</strong> choisi. Une fois le Repos terminé, vous acquérez cette Connaissance pour les prochaines 24 heures ou jusqu'à ce que vous utilisiez à nouveau cette action.</p>",
+                    "effects": {
+                        "Field Study": {
+                            "name": "Étude de terrain"
+                        }
+                    }
+                }
+            }
+        },
+        "sentinel00000000": {
+            "name": "Sentinelle",
+            "description": "<p>Vous punissez ceux qui tentent de contourner votre garde. Lorsque vous infligez des dégâts à un ennemi avec une @Action[default reactiveStrike], cette créature se retrouve @Condition[slowed] jusqu'à la fin de son prochain tour.</p>"
+        },
+        "spiritbreaker000": {
+            "name": "Brise-esprit",
+            "description": "<p>Vous menez une guerre contre l'esprit même, sapant la détermination de vos ennemis. Vos actions qui attaquent directement le <strong>Moral</strong> trouvent plus facilement les failles dans la volonté d'une créature, réduisant votre <strong>Seuil de critique</strong> de 2.</p><p>Lorsque vous amenez une cible à être @Condition[broken], le choc psychologique la laisse @Condition[stunned] jusqu'à la fin de son prochain tour.</p>"
+        },
+        "stormProficiency": {
+            "name": "Maîtrise de l'Orage",
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune d'Orage. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de Playtest</h3><p>Ce talent permettra à terme d'améliorer l'action <strong>Dynamiser</strong>, en augmentant son efficacité ou en proposant de nouvelles façons de l'utiliser.</p>"
+        },
+        "telekinetic00000": {
+            "name": "Télékinésiste",
+            "description": "<p>Vous maniez la force cinétique avec une facilité déconcertante, courbant la trajectoire des objets et des créatures selon votre volonté.</p><ul><li><p>Une fois par tour, lorsque vous appliquez l' @UUID[Compendium.crucible.talent.Item.inflectionpush00]{Inflexion : Rejeter} ou l' @UUID[Compendium.crucible.talent.Item.inflectionpull00]{Inflexion : Rappeler} à un Sort, vous ignorez le coût en <strong>Focus</strong> de cette inflexion.</p></li><li><p>Vous doublez la distance à laquelle vous pouvez Rappeler, Propulser ou Suspendre en utilisant l'action @Action[Compendium.crucible.talent.Item.runeKinesis00000 propel].</p></li><li><p>Vous débloquez l'action <strong>Vol télékinétique</strong>, vous suspendant dans les airs pour voler et faire du surplace.</p></li></ul>",
+            "actions": {
+                "telekineticFlight": {
+                    "name": "Vol télékinétique",
+                    "description": "<p>Vous vous suspendez dans les airs grâce aux courants de force cinétique, obtenant la condition @Condition[flying] pour voler et planer. Vous maintenez cet effet avec du <strong>Focus</strong> à chaque round ; il prend fin si vous vous retrouvez @Condition[incapacitated].</p>",
+                    "effects": {
+                        "Telekinetic Flight": {
+                            "name": "Vol télékinétique"
+                        }
+                    }
+                }
+            }
+        },
+        "warchanter000000": {
+            "name": "Chante-guerre",
+            "description": "<p>Vous êtes un chanteur de combat qui transforme la clameur de la guerre en puissance, vos chants portés par le rythme de vos propres coups. Vous connaissez six <strong>Chants</strong> : trois <strong>Hymnes</strong> qui renforcent vos alliés et trois <strong>Complaintes</strong> qui affaiblissent vos ennemis. Vous pouvez entremêler plusieurs Chants pour façonner un chœur de bataille en constante évolution, mais vous devez porter des frappes d'arme continues pour alimenter leur mélodie.</p><p>Entonner un chant crée une aura autour de vous qui affecte les autres créatures lors de leurs tours respectifs et dure un Round. Chaque fois que vous réussissez une attaque de <strong>Mêlée</strong>, votre Chant le plus proche d'expirer est prolongé d'un <strong>Round</strong>.</p>",
+            "actions": {
+                "songOfMight": {
+                    "name": "Hymne de la force du Titan",
+                    "description": "<p>Vous élevez un hymne tonitruant en l'honneur du <strong>Titan</strong>, dont la force a jadis terrassé des léviathans. Vous et les créatures alliées situées à moins de <strong>15 pieds</strong> gagnez <strong>+1 en Force</strong> et <strong>+1 en Sagesse</strong>.</p>",
+                    "effects": {
+                        "Song of the Titan's Might": {
+                            "name": "Hymne de la force du Titan"
+                        }
+                    }
+                },
+                "songOfAlacrity": {
+                    "name": "Hymne de la vivacité du Chasseur",
+                    "effects": {
+                        "Song of the Hunter's Alacrity": {
+                            "name": "Hymne de la vivacité du Chasseur"
+                        }
+                    },
+                    "description": "<p>Vous entonnez une mélodie vibrante dédiée au <strong>Chasseur</strong>, au pas leste et à l'œil infaillible. Vous et les créatures alliées situées à moins de <strong>15 pieds</strong> gagnez <strong>+1 en Dextérité</strong> et <strong>+1 en Intellect</strong>.</p>"
+                },
+                "songOfEndurance": {
+                    "name": "Hymne de l'endurance de la Montagne",
+                    "description": "<p>Vous entonnez un hymne profondément ancré dédié à la <strong>Montagne</strong>, qui a traversé tous les âges sans faillir. Vous et les créatures alliées situées à moins de <strong>15 pieds</strong> gagnez <strong>+1 en Robustesse</strong> et <strong>+1 en Présence</strong>.</p>",
+                    "effects": {
+                        "Song of the Mountain's Endurance": {
+                            "name": "Hymne de l'endurance de la Montagne"
+                        }
+                    }
+                },
+                "dirgeOfFeebleness": {
+                    "name": "Complainte de la faiblesse du Ver",
+                    "description": "<p>Vous fredonnez une complainte moqueuse comparant vos ennemis au <strong>Ver</strong>, tout juste bon à ramper. Les créatures ennemies situées à moins de <strong>15 pieds</strong> subissent <strong>1 Fléau</strong> sur toutes leurs actions.</p>",
+                    "effects": {
+                        "Dirge of the Worm's Feebleness": {
+                            "name": "Complainte de la faiblesse du Ver"
+                        }
+                    }
+                },
+                "dirgeOfLethargy": {
+                    "name": "Complainte de la léthargie du Glouton",
+                    "description": "<p>Vous psalmodiez un requiem pesant dédié au <strong>Glouton</strong>, trop bouffi et oisif pour bouger. Les créatures ennemies situées à moins de <strong>15 pieds</strong> perdent tout <strong>Déplacement gratuit</strong> et réduisent leur <strong>Foulée</strong> de 2.</p>",
+                    "effects": {
+                        "Dirge of the Glutton's Lethargy": {
+                            "name": "Complainte de la léthargie du Glouton"
+                        }
+                    }
+                },
+                "dirgeOfFragility": {
+                    "name": "Complainte de la fragilité de la Carcasse",
+                    "description": "<p>Vous entonnez une complainte fragile pour la <strong>Carcasse</strong>, vide et prête à s'effondrer. Les créatures ennemies situées à moins de <strong>15 pieds</strong> subissent une <strong>Vulnérabilité</strong> de 2 à tous les types de dégâts.</p>",
+                    "effects": {
+                        "Dirge of the Husk's Fragility": {
+                            "name": "Complainte de la fragilité de la Carcasse"
+                        }
+                    }
+                }
+            }
+        },
+        "warden0000000000": {
+            "name": "Gardien",
+            "description": "<p>Vous êtes un gardien des anciennes coutumes, un druide de combat qui invoque les esprits de la nature de ses ancêtres pour abriter ceux qui sont sous sa protection.</p><p>Vous utilisez @Action[Compendium.crucible.talent.Item.warden0000000000 ancestralGrove] pour faire apparaître une zone de protection naturelle provenant de la projection spirituelle d'un Gardien ancestral.</p><h3 class=\"divider\">Playtest</h3><p>L'aura passive de Résistance diffusée par le Gardien ancestral n'est pas encore entièrement automatisée, en attendant de futures améliorations sur les auras et les régions.</p>",
+            "actions": {
+                "ancestralGrove": {
+                    "name": "Bosquet ancestral",
+                    "description": "<p>Vous invoquez un @UUID[Compendium.crucible.summons.Actor.ancestralGuard00]{Gardien ancestral} qui se manifeste en un point visible à moins de 30 pieds. Le Gardien est un esprit incorporel qui ne peut être ni blessé ni déplacé. Les créatures peuvent traverser son espace, mais il compte comme trois créatures pour déterminer si un ennemi est @Condition[flanked].</p><p>Le Gardien émet une aura d'un rayon de 20 pieds qui augmente la <strong>Résistance</strong> des alliés à tous les types de dégâts de +2.</p><p>Tant que le Gardien subsiste, vos attaques d'arme contre des ennemis situés dans cette aura provoquent un transfert de force vitale de vos ennemis vers vos alliés. Votre cible subit des dégâts de <strong>Poison</strong> supplémentaires égaux à la moitié de votre <strong>Sagesse</strong>, ce qui est transféré sous forme de restauration de <strong>Santé</strong> à vous-même ou à un allié dans le bosquet qui a actuellement la Santé la plus basse.</p><p>Le Gardien reste en place jusqu'à la fin du Combat, ou jusqu'à ce que le Gardien utilise à nouveau cette action.</p><p></p>",
+                    "effects": {
+                        "Ancestral Grove": {
+                            "name": "Bosquet ancestral"
+                        }
+                    }
+                }
+            }
+        },
+        "wizard0000000000": {
+            "name": "Mage",
+            "description": "<p>Vous êtes un érudit accompli des arcanes qui sait maintenir la fluidité et l'élan de ses sortilèges. Une fois par Tour lorsque vous lancez un <strong>Sort</strong>, vous pouvez reporter une partie de sa magie pour réduire de 1 le coût en <strong>Focus</strong> du Sort qui suit immédiatement.</p>"
+        },
+        "wrestler00000000": {
+            "name": "Lutteur",
+            "description": "<p>Grâce à vos leviers et à votre technique, vous saisissez et immobilisez des créatures bien plus grandes que vous. La Taille maximale de créature que vous pouvez @Action[Compendium.crucible.talent.Item.unarmedCombatTra grapple], ou par laquelle vous pouvez être Agrippé, augmente de 1.</p>"
         }
     },
     "mapping": {

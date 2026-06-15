@@ -203,7 +203,7 @@
                 },
                 "assassin00000000": {
                     "name": "Assassin",
-                    "description": "<p>Vous vous spécialisez dans l'art d'apporter la mort aux imprudents. Toute <strong>Frappe</strong> ou Attaque de <strong>Sort</strong> contre une cible @Condition[unaware] devient <strong>Mortelle</strong>.</p><p>Une créature <strong>Distraite</strong> touchée par votre attaque ne peut pas alerter ses alliés avant son propre tour de <strong>Combat</strong>.</p>",
+                    "description": "<p>Vous vous spécialisez dans l'art d'apporter la mort aux imprudents. Toute <strong>Frappe</strong> ou attaque de <strong>Sort</strong> contre une cible @Condition[unaware] devient <strong>Mortelle</strong>.</p><p>Une créature <strong>Distraite</strong> touchée par votre attaque ne peut pas alerter ses alliés avant son propre tour de <strong>Combat</strong>.</p>",
                     "actions": {
                         "markForDeath": {
                             "name": "Marquer pour la Mort",
@@ -393,7 +393,7 @@
                 },
                 "surgeweaver00000": {
                     "name": "Tissefoudre",
-                    "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Foudre. Les sorts utilisant cette Rune causent la condition @Condition[shocked] sur les Coups critiques.</p><p>L'effet Électrocuté dure <strong>3 Rounds</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts de <strong>Foudre</strong> au <strong>Moral</strong>, et applique la condition @Condition[staggered].</p>"
+                    "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Orage. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[shocked].</p><p>L'effet Électrocuté dure <strong>3 Rounds</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts <strong>Électriques</strong> au <strong>Moral</strong>, et applique la condition @Condition[staggered].</p>"
                 },
                 "awarenessNovice0": {
                     "name": "Vigilance : Novice",
@@ -430,16 +430,6 @@
                         }
                     }
                 },
-                "runeLightning000": {
-                    "name": "Rune : Foudre",
-                    "description": "<p>La force chaotique de l'énergie électrique brute. La Rune de Foudre gouverne les sources de charge et de décharge électrique.</p><p>La Rune de Foudre évolue avec l'<strong>Intellect</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts <strong>Électriques</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Terre</strong>.</p>",
-                    "actions": {
-                        "energize": {
-                            "name": "Dynamiser",
-                            "description": "<p>Votre maîtrise de la Rune de Foudre vous permet de conduire le flux d'air et d'électricité, en manipulant la charge et l'aérodynamisme pour produire l'un des effets suivants :</p><ul><li><p>Imprégner un objet métallique que vous touchez, d'une taille maximale d'un pied cube, d'une charge électromagnétique, ce qui le rendra fortement adhérent à d'autres métaux. Un seul objet peut être chargé de cette manière à la fois, lancer ce sort sur un autre objet entraîne la perte de l'effet magnétique du premier.</p></li><li><p>Rassembler une bourrasque de vent à votre emplacement actuel dans un rayon de six pieds, soufflant soit sous forme de rafale dans une seule direction contrôlée, soit sous forme de cyclone avec une force centripète dans toutes les directions. Les effets aériens dans la zone immédiate sont dispersés et les objets non fixés d'un poids inférieur à 1 livre sont projetés dans la direction de la rafale.</p></li><li><p>Produire le bruit sec d'un coup de tonnerre à un endroit que vous pouvez voir à moins de 15 pieds de votre position actuelle.</p></li></ul><p>Dynamiser ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
-                        }
-                    }
-                },
                 "projectileWeapon": {
                     "name": "Armes de projectile : Entraînement",
                     "description": "<p>Vous avez une éducation de base en archerie et autres armes à projectile. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes des catégories <strong>Projectile</strong>.</p>",
@@ -455,6 +445,16 @@
                     "description": {
                         "public": "<p>Compact et rapide à armer, l'arc court excelle dans l'archerie rapide et rapprochée ainsi que dans les escarmouches, et est prisé des éclaireurs, des chasseurs et des pillards agiles.</p>"
                     }
+                },
+                "runeStorm0000000": {
+                    "description": "<p>La force chaotique de l'énergie électrique brute. La rune d'Orage gouverne les sources de charge et de décharge électriques.</p><p>La rune d'Orage évolue avec l'<strong>Intellect</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts <strong>Électriques</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Terre</strong>.</p>",
+                    "actions": {
+                        "energize": {
+                            "description": "<p>Votre maîtrise de la Rune d'Orage vous permet de conduire le flux d'air et d'électricité, en manipulant la charge et l'aérodynamisme pour produire l'un des effets suivants :</p><ul><li><p>Imprégner un objet métallique que vous touchez, d'une taille maximale d'un pied cube, d'une charge électromagnétique, ce qui le rendra fortement adhérent à d'autres métaux. Un seul objet peut être chargé de cette manière à la fois, lancer ce sort sur un autre objet entraîne la perte de l'effet magnétique du premier.</p></li><li><p>Rassembler une bourrasque de vent à votre emplacement actuel dans un rayon de six pieds, soufflant soit sous forme de rafale dans une seule direction contrôlée, soit sous forme de cyclone avec une force centripète dans toutes les directions. Les effets aériens dans la zone immédiate sont dispersés et les objets non fixés d'un poids inférieur à 1 livre sont projetés dans la direction de la rafale.</p></li><li><p>Produire le bruit sec d'un coup de tonnerre à un endroit que vous pouvez voir à moins de 15 pieds de votre position actuelle.</p></li></ul><p>Dynamiser ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>",
+                            "name": "Dynamiser"
+                        }
+                    },
+                    "name": "Rune : Orage"
                 }
             },
             "ancestry": {
@@ -483,7 +483,7 @@
                 },
                 "cadence000000000": {
                     "name": "Cadence",
-                    "description": "<p>Vous êtes entraîné à effectuer des séquences d'attaques de mêlée avec une précision rythmique. Lorsque vous <strong>Frappez</strong> plusieurs fois de suite en utilisant une arme de mêlée à une main, vous gagnez une <strong>+1 Faveur</strong> cumulative pour chaque attaque successive.</p><p></p>"
+                    "description": "<p>Vous êtes entraîné à effectuer des séquences d'attaques de mêlée avec une précision rythmique. Lorsque vous <strong>Frappez</strong> plusieurs fois de suite en utilisant une arme de mêlée à une main, vous gagnez une <strong>+1 Faveur</strong> cumulative pour chaque attaque successive.</p>"
                 },
                 "gesturearrow0000": {
                     "name": "Signe : Flèche",
@@ -495,7 +495,7 @@
                 },
                 "stronggrip000000": {
                     "name": "Prise solide",
-                    "description": "Votre prise sur votre armement est ferme et inflexible. Vous pouvez effectuer des Actions qui nécessitent une main libre tout en maniant une arme de mêlée à deux mains. Les tentatives pour vous Désarmer sont faites avec +2 Fléaux."
+                    "description": "<p>Votre prise sur votre armement est ferme et inflexible. Lorsque vous maniez une arme à deux mains basée sur la Force, vous pouvez lancer des sorts qui nécessitent deux mains, et les tentatives de Désarmement contre vous sont faites avec +2 Fléaux.</p><p>De plus, vous pouvez manier une arme Lourde à une main dans votre main secondaire.</p>"
                 },
                 "gesturestrike000": {
                     "name": "Signe : Frappe",
@@ -588,21 +588,11 @@
                 },
                 "pyromancer000000": {
                     "name": "Pyromancien",
-                    "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Flamme. Les sorts utilisant cette Rune causent la condition @Condition[burning] sur les Coups critiques.</p><p>L'effet Enflammé dure <strong>3 Rounds</strong> et inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts de <strong>Feu</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
+                    "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Flamme. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[burning].</p><p>L'effet Enflammé dure <strong>3 Rounds</strong> et inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts de <strong>Feu</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
                 },
                 "gestureBlast0000": {
                     "name": "Signe : Explosion",
                     "description": "<p>Vous projetez la puissance arcanique d'une Rune en une intense explosion d'énergie vers un point proche que vous pouvez voir.</p><p>Le signe d'Explosion évolue avec l'<strong>Intellect</strong> et produit une explosion de 6 pieds de rayon centrée sur un point à moins de 60 pieds du lanceur. L'explosion inflige <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>5 Actions</strong> et <strong>2 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent est actuellement placé au <strong>palier 4</strong>. Il ne sera accessible qu'à un niveau supérieur (probablement le Niveau 6). Il est actuellement disponible en avant-première pour les tests.</p>"
-                },
-                "runeLightning000": {
-                    "name": "Rune : Foudre",
-                    "description": "<p>La force chaotique de l'énergie électrique brute. La Rune de Foudre gouverne les sources de charge et de décharge électrique.</p><p>La Rune de Foudre évolue avec l'<strong>Intellect</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts <strong>Électriques</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Terre</strong>.</p>",
-                    "actions": {
-                        "energize": {
-                            "name": "Dynamiser",
-                            "description": "<p>Votre maîtrise de la Rune de Foudre vous permet de conduire le flux d'air et d'électricité, en manipulant la charge et l'aérodynamisme pour produire l'un des effets suivants :</p><ul><li><p>Imprégner un objet métallique que vous touchez, d'une taille maximale d'un pied cube, d'une charge électromagnétique, ce qui le rendra fortement adhérent à d'autres métaux. Un seul objet peut être chargé de cette manière à la fois, lancer ce sort sur un autre objet entraîne la perte de l'effet magnétique du premier.</p></li><li><p>Rassembler une bourrasque de vent à votre emplacement actuel dans un rayon de six pieds, soufflant soit sous forme de rafale dans une seule direction contrôlée, soit sous forme de cyclone avec une force centripète dans toutes les directions. Les effets aériens dans la zone immédiate sont dispersés et les objets non fixés d'un poids inférieur à 1 livre sont projetés dans la direction de la rafale.</p></li><li><p>Produire le bruit sec d'un coup de tonnerre à un endroit que vous pouvez voir à moins de 15 pieds de votre position actuelle.</p></li></ul><p>Dynamiser ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
-                        }
-                    }
                 },
                 "runeFlame0000000": {
                     "name": "Rune : Flamme",
@@ -613,6 +603,16 @@
                             "description": "<p>Votre maîtrise de la Rune de Flamme vous permet de manipuler le feu et les énergies thermales de manière créative, produisant l'un des effets suivants :</p><ul><li><p>Manifester une explosion de flamme élémentaire dans une sphère d'un pouce capable d'enflammer une bougie, une torche ou d'autres matériaux inflammables.</p></li><li><p>Imprégner votre corps d'une protection thermique momentanée qui vous immunise contre les dégâts de feu lors d'une action immédiatement suivante coûtant <strong>1 Action</strong> ou moins.</p></li><li><p>Contrôler le mouvement des flammes dans une petite zone, en les faisant vaciller, danser ou se déplacer en un spectacle animé de lumière et d'ombre.</p></li></ul><p>Allumer ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
                         }
                     }
+                },
+                "runeStorm0000000": {
+                    "description": "<p>La force chaotique de l'énergie électrique brute. La rune d'Orage gouverne les sources de charge et de décharge électriques.</p><p>La rune d'Orage évolue avec l'<strong>Intellect</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts <strong>Électriques</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Terre</strong>.</p>",
+                    "actions": {
+                        "energize": {
+                            "description": "<p>Votre maîtrise de la Rune d'Orage vous permet de conduire le flux d'air et d'électricité, en manipulant la charge et l'aérodynamisme pour produire l'un des effets suivants :</p><ul><li><p>Imprégner un objet métallique que vous touchez, d'une taille maximale d'un pied cube, d'une charge électromagnétique, ce qui le rendra fortement adhérent à d'autres métaux. Un seul objet peut être chargé de cette manière à la fois, lancer ce sort sur un autre objet entraîne la perte de l'effet magnétique du premier.</p></li><li><p>Rassembler une bourrasque de vent à votre emplacement actuel dans un rayon de six pieds, soufflant soit sous forme de rafale dans une seule direction contrôlée, soit sous forme de cyclone avec une force centripète dans toutes les directions. Les effets aériens dans la zone immédiate sont dispersés et les objets non fixés d'un poids inférieur à 1 livre sont projetés dans la direction de la rafale.</p></li><li><p>Produire le bruit sec d'un coup de tonnerre à un endroit que vous pouvez voir à moins de 15 pieds de votre position actuelle.</p></li></ul><p>Dynamiser ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>",
+                            "name": "Dynamiser"
+                        }
+                    },
+                    "name": "Rune : Orage"
                 }
             },
             "ancestry": {
@@ -661,16 +661,6 @@
                         }
                     }
                 },
-                "dualwield0000000": {
-                    "name": "Ambidextrie",
-                    "description": "<p>Vous êtes adepte du combat à deux armes en simultané. Vous pouvez enchaîner les attaques pour frapper plus rapidement qu'il n'est possible avec une seule arme.</p>",
-                    "actions": {
-                        "offhandStrike": {
-                            "name": "Frappe Main-secondaire",
-                            "description": "<p>Immédiatement après avoir effectué une Frappe basique avec l'arme de votre main principale, vous réalisez une <strong>Frappe</strong> à coût réduit avec l'arme de votre <strong>main secondaire</strong>.</p>"
-                        }
-                    }
-                },
                 "flurry0000000000": {
                     "name": "Déluge de coups",
                     "description": "<p>Une technique martiale utilisant deux armes pour submerger une cible unique avec une séquence implacable d'attaques.</p>",
@@ -707,6 +697,16 @@
                         "lunge": {
                             "name": "Fente",
                             "description": "<p>Vous vous élancez avec agilité, portant un coup d'une rapidité soudaine et inattendue pour effectuer une <strong>Frappe</strong> avec une arme basée sur la <strong>Dextérité</strong> contre une cible unique, à une portée accrue de <strong>+2 pieds</strong>.</p><p>L'attaque est <strong>Difficile</strong>, mais vous ne quittez pas votre position actuelle et elle ne provoque pas de Désengagement.</p>"
+                        }
+                    }
+                },
+                "dualWield0000000": {
+                    "name": "Ambidextrie",
+                    "description": "<p>Vous êtes adepte du combat à deux armes en simultané. Vous pouvez enchaîner les attaques pour frapper plus rapidement qu'il n'est possible avec une seule arme.</p>",
+                    "actions": {
+                        "offhandStrike": {
+                            "name": "Frappe Main-secondaire",
+                            "description": "<p>Immédiatement après avoir effectué une Frappe basique avec l'arme de votre main principale, vous réalisez une <strong>Frappe</strong> à coût réduit avec l'arme de votre <strong>main secondaire</strong>.</p>"
                         }
                     }
                 }
@@ -778,7 +778,7 @@
                 },
                 "dustbinder000000": {
                     "name": "Terramancien",
-                    "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Terre. Les sorts utilisant cette Rune causent la condition @Condition[corroding] sur les Coups critiques.</p><p>L'effet Corrodé dure <strong>3 Rounds</strong> et inflige la moitié de votre score de <strong>Sagesse</strong> en dégâts d'<strong>Acide</strong> à la <strong>Santé</strong> chaque Round.</p>"
+                    "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Terre. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[corroding].</p><p>L'effet Corrodé dure <strong>3 Rounds</strong> et inflige la moitié de votre score de <strong>Sagesse</strong> comme dégâts d'<strong>Acide</strong> à la <strong>Santé</strong> chaque Round.</p>"
                 },
                 "talismanWeaponTr": {
                     "name": "Talismans : Entraînement",
@@ -838,11 +838,11 @@
                 },
                 "inspirator000000": {
                     "name": "Inspirateur",
-                    "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Âme. Les sorts utilisant cette Rune causent la condition @Condition[inspired] sur les Coups critiques.</p><p>L'effet Inspiré dure <strong>1 Round</strong> et offre votre score de <strong>Présence</strong> comme <strong>Restauration</strong> additionnelle au <strong>Moral</strong>.</p>"
+                    "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Âme. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui restaurent du Moral causent la condition @Condition[inspired].</p><p>L'effet Inspiré dure <strong>1 Round</strong> et offre votre score de <strong>Présence</strong> comme <strong>Restauration</strong> additionnelle au <strong>Moral</strong>.</p>"
                 },
                 "mender0000000000": {
                     "name": "Vivificateur",
-                    "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Vie. Les sorts utilisant cette Rune causent la condition @Condition[mending] sur les Coups critiques.</p><p>L'effet Guérison dure <strong>1 Round</strong> et applique votre score de <strong>Sagesse</strong> comme <strong>Restauration</strong> additionnelle à la <strong>Santé</strong>.</p>"
+                    "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Vie. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui restaurent de la Santé causent la condition @Condition[mending].</p><p>L'effet Vivifié dure <strong>1 Round</strong> et offre votre score de <strong>Sagesse</strong> comme <strong>Restauration</strong> additionnelle à la <strong>Santé</strong>.</p>"
                 },
                 "arcanaNovice0000": {
                     "name": "Arcanes : Novice",
@@ -868,7 +868,7 @@
                 },
                 "runeEarth0000000": {
                     "name": "Rune : Terre",
-                    "description": "<p>La force ordonnée de la terre élémentaire, responsable de la matière physique. La Rune de Terre gouverne les minéraux, les métaux, les sols et autres composés physiques.</p><p>La Rune de Terre évolue avec la <strong>Sagesse</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts d'<strong>Acide</strong> à la <strong>Santé</strong>. Elle est opposée par la rune chaotique de <strong>Foudre</strong>.</p>",
+                    "description": "<p>La force ordonnée de la terre élémentaire, responsable de la matière physique. La Rune de Terre gouverne les minéraux, les métaux, les sols et autres composés physiques.</p><p>La Rune de Terre évolue avec la <strong>Sagesse</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts d'<strong>Acide</strong> à la <strong>Santé</strong>. Elle est opposée par la rune chaotique d'<strong>Orage</strong>.</p>",
                     "actions": {
                         "mould": {
                             "name": "Façonner",
@@ -935,17 +935,6 @@
                     "name": "Signe : Protection",
                     "description": "<p>Vous façonnez la puissance arcanique d'une Rune en une barrière protectrice utilisée pour vous prémunir du mal.</p><p>Le signe de Protection évolue avec la <strong>Robustesse</strong> et fournit <strong>+6 Résistance</strong> contre le type de dégâts de la Rune utilisée dans le sort. Cette résistance dure <strong>1 Round</strong> et vous ne pouvez avoir qu'une seule Protection à la fois. Lancer un autre sort utilisant le signe de Protection remplace votre Protection antérieure. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>2 Actions</strong> et <strong>1 Focus</strong>.</p>"
                 },
-                "bodyblock0000000": {
-                    "name": "Opposition corporelle",
-                    "description": "Vous positionnez votre corps face une attaque qui était autrement défendue par votre Armure, pour convertir son résultat en un Blocage à la place.",
-                    "actions": {
-                        "bodyBlock": {
-                            "name": "Opposition corporelle",
-                            "condition": "Vous vous défendez contre une attaque de mêlée avec votre Armure ou subissez un Coup superficiel.",
-                            "description": "<p>Une attaque qui devrait être défendue par votre Armure ou produire un Coup superficiel est convertie en Blocage et n'inflige aucun dégât.</p>"
-                        }
-                    }
-                },
                 "counterstrike000": {
                     "name": "Contre-Attaque",
                     "description": "<p>Vous êtes entraîné à transitionner entre la défense avec votre bouclier et une contre-attaque rapide.</p>",
@@ -967,21 +956,6 @@
                             "effects": {
                                 "Formidable Presence": {
                                     "name": "Présence formidable"
-                                }
-                            }
-                        }
-                    }
-                },
-                "rallyingcry00000": {
-                    "name": "Cri de ralliement",
-                    "description": "Vous êtes un meneur de champ de bataille, utilisant votre présence et votre voix pour renforcer la résolution de vos alliés.",
-                    "actions": {
-                        "rallyingCry": {
-                            "name": "Cri de ralliement",
-                            "description": "<p>Vous émettez un hurlement de courage qui inspire vos alliés dans un rayon de 12 pieds à rester inébranlables face au danger. Vous effectuez un test de compétence d'<strong>Intimidation</strong> contre le seuil de Folie de vos alliés. sur un succès, les alliés affectés deviennent @Condition[resolute] pendant un Round.</p>",
-                            "effects": {
-                                "Rallying Cry": {
-                                    "name": "Cri de ralliement"
                                 }
                             }
                         }
@@ -1132,6 +1106,25 @@
                     "description": {
                         "public": "<p>Arbalète puissante à branches d'acier, nécessitant une manivelle ou un levier pour être armée, elle projette des carreaux dévastateurs capables de perforer les armures ou de clouer les ennemis aux murs.</p>"
                     }
+                },
+                "mentalfortress00": {
+                    "name": "Forteresse mentale",
+                    "description": "<p>Votre forte volonté vous rend extrêmement difficile à influencer. Vous gagnez +1 à votre défense de <strong>Volonté</strong> et +5 de résistance aux dégâts <strong>Psychiques</strong>.</p>"
+                },
+                "rallyingCry00000": {
+                    "name": "Cri de ralliement",
+                    "description": "<p>Votre présence en tant que chef sur le champ de bataille fortifie et restaure le moral de vos alliés.</p>",
+                    "actions": {
+                        "rallyingCry": {
+                            "name": "Cri de ralliement",
+                            "description": "<p>Vous émettez un hurlement de courage qui inspire vos alliés dans un rayon de 12 pieds à rester inébranlables face au danger. Tous les alliés à portée récupèrent immédiatement votre score de <strong>Présence</strong> en <strong>Moral</strong> et deviennent @Condition[resolute] pendant 3 rounds.</p>",
+                            "effects": {
+                                "Rallying Cry": {
+                                    "name": "Cri de ralliement"
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "ancestry": {
@@ -1166,7 +1159,7 @@
                 },
                 "cadence000000000": {
                     "name": "Cadence",
-                    "description": "<p>Vous êtes entraîné à effectuer des séquences d'attaques de mêlée avec une précision rythmique. Lorsque vous <strong>Frappez</strong> plusieurs fois de suite en utilisant une arme de mêlée à une main, vous gagnez une <strong>+1 Faveur</strong> cumulative pour chaque attaque successive.</p><p></p>"
+                    "description": "<p>Vous êtes entraîné à effectuer des séquences d'attaques de mêlée avec une précision rythmique. Lorsque vous <strong>Frappez</strong> plusieurs fois de suite en utilisant une arme de mêlée à une main, vous gagnez une <strong>+1 Faveur</strong> cumulative pour chaque attaque successive.</p>"
                 },
                 "athleticsNovice0": {
                     "name": "Athlétisme : Novice",
@@ -1373,7 +1366,7 @@
                 },
                 "stronggrip000000": {
                     "name": "Prise solide",
-                    "description": "Votre prise sur votre armement est ferme et inflexible. Vous pouvez effectuer des Actions qui nécessitent une main libre tout en maniant une arme de mêlée à deux mains. Les tentatives pour vous Désarmer sont faites avec +2 Fléaux."
+                    "description": "<p>Votre prise sur votre armement est ferme et inflexible. Lorsque vous maniez une arme à deux mains basée sur la Force, vous pouvez lancer des sorts qui nécessitent deux mains, et les tentatives de Désarmement contre vous sont faites avec +2 Fléaux.</p><p>De plus, vous pouvez manier une arme Lourde à une main dans votre main secondaire.</p>"
                 },
                 "bloodfrenzy00000": {
                     "name": "Frénésie sanguinaire",
@@ -1581,7 +1574,7 @@
                 },
                 "rimecaller000000": {
                     "name": "Héraut du Givre",
-                    "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Givre. Les sorts utilisant cette Rune causent la condition @Condition[freezing] sur les Coups critiques.</p><p>L'effet Gelé dure <strong>1 Round</strong>, inflige la moitié de votre score de <strong>Sagesse</strong> comme dégâts de <strong>Froid</strong> à la <strong>Santé</strong>, et applique la condition @Condition[slowed].</p>"
+                    "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Givre. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[freezing].</p><p>L'effet Gelé dure <strong>1 Round</strong>, inflige la moitié de votre score de <strong>Sagesse</strong> comme dégâts de <strong>Givre</strong> à la <strong>Santé</strong>, et applique la condition @Condition[slowed].</p>"
                 },
                 "recognizespellcr": {
                     "name": "Reconnaître la Sorcellerie",
@@ -1630,21 +1623,11 @@
                 },
                 "surgeweaver00000": {
                     "name": "Tissefoudre",
-                    "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Foudre. Les sorts utilisant cette Rune causent la condition @Condition[shocked] sur les Coups critiques.</p><p>L'effet Électrocuté dure <strong>3 Rounds</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts de <strong>Foudre</strong> au <strong>Moral</strong>, et applique la condition @Condition[staggered].</p>"
+                    "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Orage. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[shocked].</p><p>L'effet Électrocuté dure <strong>3 Rounds</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts <strong>Électriques</strong> au <strong>Moral</strong>, et applique la condition @Condition[staggered].</p>"
                 },
                 "mesmer0000000000": {
                     "name": "Envoûteur",
-                    "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Illusion. Les sorts utilisant cette Rune causent la condition @Condition[confused] sur les Coups critiques.</p><p>L'effet Confus dure <strong>1 Round</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts <strong>Psychiques</strong> au <strong>Moral</strong>, et applique la condition @Condition[disoriented].</p>"
-                },
-                "runeLightning000": {
-                    "name": "Rune : Foudre",
-                    "description": "<p>La force chaotique de l'énergie électrique brute. La Rune de Foudre gouverne les sources de charge et de décharge électrique.</p><p>La Rune de Foudre évolue avec l'<strong>Intellect</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts <strong>Électriques</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Terre</strong>.</p>",
-                    "actions": {
-                        "energize": {
-                            "name": "Dynamiser",
-                            "description": "<p>Votre maîtrise de la Rune de Foudre vous permet de conduire le flux d'air et d'électricité, en manipulant la charge et l'aérodynamisme pour produire l'un des effets suivants :</p><ul><li><p>Imprégner un objet métallique que vous touchez, d'une taille maximale d'un pied cube, d'une charge électromagnétique, ce qui le rendra fortement adhérent à d'autres métaux. Un seul objet peut être chargé de cette manière à la fois, lancer ce sort sur un autre objet entraîne la perte de l'effet magnétique du premier.</p></li><li><p>Rassembler une bourrasque de vent à votre emplacement actuel dans un rayon de six pieds, soufflant soit sous forme de rafale dans une seule direction contrôlée, soit sous forme de cyclone avec une force centripète dans toutes les directions. Les effets aériens dans la zone immédiate sont dispersés et les objets non fixés d'un poids inférieur à 1 livre sont projetés dans la direction de la rafale.</p></li><li><p>Produire le bruit sec d'un coup de tonnerre à un endroit que vous pouvez voir à moins de 15 pieds de votre position actuelle.</p></li></ul><p>Dynamiser ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
-                        }
-                    }
+                    "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Illusion. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[confused].</p><p>L'effet Confus dure <strong>1 Round</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts <strong>Psychiques</strong> au <strong>Moral</strong>, et applique la condition @Condition[disoriented].</p>"
                 },
                 "runeKinesis00000": {
                     "name": "Rune : Kinésie",
@@ -1705,6 +1688,16 @@
                     "description": {
                         "public": "<p>Fin, effilé et conçu pour percer, le stylet est une arme de tueur — pensé pour se glisser entre les côtes ou dans les interstices d'une armure et ne laisser quasiment aucune trace.</p>"
                     }
+                },
+                "runeStorm0000000": {
+                    "description": "<p>La force chaotique de l'énergie électrique brute. La rune d'Orage gouverne les sources de charge et de décharge électriques.</p><p>La rune d'Orage évolue avec l'<strong>Intellect</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts <strong>Électriques</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Terre</strong>.</p>",
+                    "actions": {
+                        "energize": {
+                            "description": "<p>Votre maîtrise de la Rune d'Orage vous permet de conduire le flux d'air et d'électricité, en manipulant la charge et l'aérodynamisme pour produire l'un des effets suivants :</p><ul><li><p>Imprégner un objet métallique que vous touchez, d'une taille maximale d'un pied cube, d'une charge électromagnétique, ce qui le rendra fortement adhérent à d'autres métaux. Un seul objet peut être chargé de cette manière à la fois, lancer ce sort sur un autre objet entraîne la perte de l'effet magnétique du premier.</p></li><li><p>Rassembler une bourrasque de vent à votre emplacement actuel dans un rayon de six pieds, soufflant soit sous forme de rafale dans une seule direction contrôlée, soit sous forme de cyclone avec une force centripète dans toutes les directions. Les effets aériens dans la zone immédiate sont dispersés et les objets non fixés d'un poids inférieur à 1 livre sont projetés dans la direction de la rafale.</p></li><li><p>Produire le bruit sec d'un coup de tonnerre à un endroit que vous pouvez voir à moins de 15 pieds de votre position actuelle.</p></li></ul><p>Dynamiser ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>",
+                            "name": "Dynamiser"
+                        }
+                    },
+                    "name": "Rune : Orage"
                 }
             },
             "ancestry": {
@@ -1955,7 +1948,7 @@
                 },
                 "warmage000000000": {
                     "name": "Mage de guerre",
-                    "description": "<p>Votre sorcellerie est affûtée comme une arme de guerre pour contrecarrer les incantations d'autres mages. Vous pouvez demander au Maître du jeu si vous connaissez une Rune capable de contrer un sort ennemi, même si vous ne reconnaissez pas le sort lancé. Vous gagnez +2 Faveurs à toute tentative de Contresort.</p>"
+                    "description": "<p>Votre sorcellerie est affûtée comme une arme de guerre pour contrecarrer les incantations d'autres mages. Vous pouvez demander au Maître du jeu si vous connaissez une <strong>Rune</strong> capable de contrer un sort ennemi, même si vous ne reconnaissez pas le sort lancé. Vous gagnez +2 Faveurs à toute tentative de @Action[Compendium.crucible.talent.Item.counterspell0000 counterspell].</p>"
                 },
                 "gesturearrow0000": {
                     "name": "Signe : Flèche",
@@ -1971,7 +1964,7 @@
                 },
                 "pyromancer000000": {
                     "name": "Pyromancien",
-                    "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Flamme. Les sorts utilisant cette Rune causent la condition @Condition[burning] sur les Coups critiques.</p><p>L'effet Enflammé dure <strong>3 Rounds</strong> et inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts de <strong>Feu</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
+                    "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Flamme. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[burning].</p><p>L'effet Enflammé dure <strong>3 Rounds</strong> et inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts de <strong>Feu</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
                 },
                 "gesturepulse0000": {
                     "name": "Signe : Onde",
@@ -1997,7 +1990,7 @@
                 },
                 "lightbringer0000": {
                     "name": "Porteur de lumière",
-                    "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Illumination. Les sorts utilisant cette Rune causent la condition @Condition[irradiated] sur les Coups critiques.</p><p>L'effet Irradié dure <strong>1 Round</strong> et inflige votre score de <strong>Présence</strong> comme dégâts <strong>Radiants</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
+                    "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Illumination. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[irradiated].</p><p>L'effet Irradié dure <strong>1 Round</strong> et inflige votre score de <strong>Présence</strong> comme dégâts <strong>Radiants</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
                 },
                 "awarenessNovice0": {
                     "name": "Vigilance : Novice",
@@ -2105,16 +2098,6 @@
                     "name": "Signe : Création",
                     "description": "<p>Vous coalescez la puissance arcanique en forme tangible, manifestant un <strong>Lutin</strong> qui apparaît dans les 10 pieds et rejoint le Combat avec une Initiative de 1. Votre Lutin est un <strong>Minion</strong> de la moitié de votre propre Niveau.</p><p>Le signe de Création évolue avec la <strong>Sagesse</strong> et le Lutin survit pendant <strong>6 Rounds</strong>. Vous ne pouvez avoir qu'un seul Lutin actif, lancer un autre sort utilisant le signe de Création remplace votre Lutin précédent. Ce signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>4 Actions</strong> et <strong>1 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Toutes les Runes n'ont pas encore d'acteur Lutin défini. Les Runes qui n'ont pas encore de Création définie manifesteront – pour l'instant – un <strong>Lutin de Flamme</strong>.</p>"
                 },
-                "runeLightning000": {
-                    "name": "Rune : Foudre",
-                    "description": "<p>La force chaotique de l'énergie électrique brute. La Rune de Foudre gouverne les sources de charge et de décharge électrique.</p><p>La Rune de Foudre évolue avec l'<strong>Intellect</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts <strong>Électriques</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Terre</strong>.</p>",
-                    "actions": {
-                        "energize": {
-                            "name": "Dynamiser",
-                            "description": "<p>Votre maîtrise de la Rune de Foudre vous permet de conduire le flux d'air et d'électricité, en manipulant la charge et l'aérodynamisme pour produire l'un des effets suivants :</p><ul><li><p>Imprégner un objet métallique que vous touchez, d'une taille maximale d'un pied cube, d'une charge électromagnétique, ce qui le rendra fortement adhérent à d'autres métaux. Un seul objet peut être chargé de cette manière à la fois, lancer ce sort sur un autre objet entraîne la perte de l'effet magnétique du premier.</p></li><li><p>Rassembler une bourrasque de vent à votre emplacement actuel dans un rayon de six pieds, soufflant soit sous forme de rafale dans une seule direction contrôlée, soit sous forme de cyclone avec une force centripète dans toutes les directions. Les effets aériens dans la zone immédiate sont dispersés et les objets non fixés d'un poids inférieur à 1 livre sont projetés dans la direction de la rafale.</p></li><li><p>Produire le bruit sec d'un coup de tonnerre à un endroit que vous pouvez voir à moins de 15 pieds de votre position actuelle.</p></li></ul><p>Dynamiser ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
-                        }
-                    }
-                },
                 "runeKinesis00000": {
                     "name": "Rune : Kinésie",
                     "description": "<p>La force chaotique de l'espace et du mouvement physique. La Rune de Kinésie gouverne toutes choses liées à l'acte de mouvement et à la physicalité.</p><p>La Rune de Kinésie évolue avec la <strong>Présence</strong>, cible la défense <strong>Physique</strong>, et inflige des dégâts <strong>Contondants</strong>, <strong>Perforants</strong>, ou <strong>Tranchants</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Contrôle</strong>.</p>",
@@ -2144,6 +2127,16 @@
                             "description": "<p>Vous vous concentrez intensément et calmez vos nerfs pour <strong>Recharger</strong> rapidement votre arme mécanique avec une rapidité exceptionnelle.</p>"
                         }
                     }
+                },
+                "runeStorm0000000": {
+                    "description": "<p>La force chaotique de l'énergie électrique brute. La rune d'Orage gouverne les sources de charge et de décharge électriques.</p><p>La rune d'Orage évolue avec l'<strong>Intellect</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts <strong>Électriques</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Terre</strong>.</p>",
+                    "actions": {
+                        "energize": {
+                            "description": "<p>Votre maîtrise de la Rune d'Orage vous permet de conduire le flux d'air et d'électricité, en manipulant la charge et l'aérodynamisme pour produire l'un des effets suivants :</p><ul><li><p>Imprégner un objet métallique que vous touchez, d'une taille maximale d'un pied cube, d'une charge électromagnétique, ce qui le rendra fortement adhérent à d'autres métaux. Un seul objet peut être chargé de cette manière à la fois, lancer ce sort sur un autre objet entraîne la perte de l'effet magnétique du premier.</p></li><li><p>Rassembler une bourrasque de vent à votre emplacement actuel dans un rayon de six pieds, soufflant soit sous forme de rafale dans une seule direction contrôlée, soit sous forme de cyclone avec une force centripète dans toutes les directions. Les effets aériens dans la zone immédiate sont dispersés et les objets non fixés d'un poids inférieur à 1 livre sont projetés dans la direction de la rafale.</p></li><li><p>Produire le bruit sec d'un coup de tonnerre à un endroit que vous pouvez voir à moins de 15 pieds de votre position actuelle.</p></li></ul><p>Dynamiser ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>",
+                            "name": "Dynamiser"
+                        }
+                    },
+                    "name": "Rune : Orage"
                 }
             },
             "ancestry": {
@@ -2296,7 +2289,7 @@
                 },
                 "runeEarth0000000": {
                     "name": "Rune : Terre",
-                    "description": "<p>La force ordonnée de la terre élémentaire, responsable de la matière physique. La Rune de Terre gouverne les minéraux, les métaux, les sols et autres composés physiques.</p><p>La Rune de Terre évolue avec la <strong>Sagesse</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts d'<strong>Acide</strong> à la <strong>Santé</strong>. Elle est opposée par la rune chaotique de <strong>Foudre</strong>.</p>",
+                    "description": "<p>La force ordonnée de la terre élémentaire, responsable de la matière physique. La Rune de Terre gouverne les minéraux, les métaux, les sols et autres composés physiques.</p><p>La Rune de Terre évolue avec la <strong>Sagesse</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts d'<strong>Acide</strong> à la <strong>Santé</strong>. Elle est opposée par la rune chaotique d'<strong>Orage</strong>.</p>",
                     "actions": {
                         "mould": {
                             "name": "Façonner",

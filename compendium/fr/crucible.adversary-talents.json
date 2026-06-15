@@ -114,6 +114,10 @@
                     "name": "Émergence explosive",
                     "condition": "Être Enfoui.",
                     "description": "<p>La @ref[actor.name]{créature} surgit d’une position souterraine avec une force soudaine et surprenante. Cette action ne peut être activée qu’immédiatement après que la créature ait quitté l’état @Condition[burrowing].</p><p>La @ref[actor.name]{créature} <strong>Frappe</strong> toutes les cibles ennemies à portée de son arme avec une attaque <strong>Améliorée</strong>.</p>"
+                },
+                "submergingWithdrawal": {
+                    "name": "Repli submersif",
+                    "description": "<p>@ref[actor.name]{La créature} se rétracte sous la surface en utilisant un déplacement de <strong>Fouissement</strong>, s'éloignant de sa position actuelle. Terminer ce déplacement sous terre lui confère la condition @Condition[burrowing], qui l'empêche d'être vue par une perception basée sur la lumière.</p><p>Cette action ne peut pas être utilisée en étant @Condition[staggered], @Condition[stunned], @Condition[slowed], ou @Condition[paralyzed].</p>"
                 }
             }
         },
@@ -182,7 +186,13 @@
         },
         "glider0000000000": {
             "name": "Planeur",
-            "description": "<p>La @ref[actor.name]{créature} peut contrôler son mouvement quand elle tombe et effectuer une action de <strong>Déplacement</strong> jusqu'à une distance maximale égale à sa <strong>Foulée</strong> pour chaque 20 pieds de chute.</p><p>Si elle dépense des Actions pour se déplacer de cette manière, elle ne subit pas de dégâts de chute lors de son atterrissage.</p>"
+            "description": "<p>@ref[actor.name]{La créature} contrôle sa descente quand elle tombe. À moins qu'elle ne soit Neutralisée ou Entravée, la chute devient un <strong>Vol plané</strong> : Un déplacement de Vol descendant plutôt qu'un impact, ne subissant aucun dégât de chute.</p><p>En planant, la <strong>Foulée</strong> de la créature est doublée et un déplacement gratuit lui est alloué, afin qu'elle puisse toujours planer au moins sur une courte distance. Son vol plané doit descendre, et elle s'immobilise là où le déplacement s'achève ; si elle termine son vol plané en l'air, elle obtient la condition @Condition[flying].</p>",
+            "actions": {
+                "fallGlide": {
+                    "name": "Vol plané",
+                    "description": "<p>@ref[actor.name]{La créature} plane au lieu de tomber, volant vers le bas avec contrôle. Le déplacement doit être descendant et n'inflige aucun dégât de chute. Si la créature termine son vol plané en l'air, elle obtient la condition @Condition[flying].</p>"
+                }
+            }
         },
         "gloomSight000000": {
             "name": "Vision obscure",
@@ -709,6 +719,52 @@
                     }
                 }
             }
+        },
+        "blindsight000000": {
+            "name": "Vision aveugle",
+            "description": "<p>@ref[actor.name]{Cette créature} perçoit son environnement sans utiliser la vue, détectant la position précise des créatures et des objets dans un rayon de 60 pieds. Elle n'est pas affectée par la condition @Condition[blinded], les ténèbres, ou l'invisibilité, et toute créature qu'elle détecte de cette manière est traitée comme étant visible pour elle.</p>"
+        },
+        "bloodless0000000": {
+            "name": "Exsangue",
+            "description": "<p>@ref[actor.name]{La créature} n'a pas de sang, d'organes vitaux, ou de points faibles exploitables. Elle est immunisée à la condition @Condition[bleeding], et le seuil de coup critique pour les <strong>Frappes</strong> contre elle est augmenté de 2.</p>"
+        },
+        "corrosiveStrikes": {
+            "name": "Frappes corrosives",
+            "description": "<p>Le corps caustique de @ref[actor.name]{la créature} brûle tout ce qu'il touche. Lorsqu'elle réalise un <strong>Coup critique</strong> avec une attaque de mêlée qui inflige des dégâts à la Santé, la cible devient @Condition[corroding] pour 3 rounds.</p>"
+        },
+        "crushingLeap0000": {
+            "name": "Saut écrasant",
+            "description": "<p>Cette créature projette sa masse dans les airs et s'abat sur ses ennemis avec une force colossale qui fait trembler le sol.</p>",
+            "actions": {
+                "crushingLeap": {
+                    "name": "Saut écrasant",
+                    "description": "<p>Vous sautez en l'air, atterrissez à un point visible à moins de 30 pieds et vous vous écrasez au sol avec une force écrasante. Toutes les créatures dans la zone de l'<strong>Explosion</strong> résultante font face à une attaque contre leur <strong>Réflexe</strong>, subissant des dégâts <strong>Contondants</strong> et tombent @Condition[prone]. L'Explosion se propage à partir de votre empreinte, de sorte que les créatures plus grandes s'écrasent sur une zone plus étendue. Cette action est basée sur votre caractéristique la plus haute entre la <strong>Force</strong> et la <strong>Robustesse</strong>.</p>",
+                    "effects": {
+                        "Crushing Leap": {
+                            "name": "Saut écrasant"
+                        }
+                    }
+                }
+            }
+        },
+        "ensnare000000000": {
+            "name": "Piéger",
+            "description": "<p>@ref[actor.name]{La créature} utilise un tentacule, un filin, ou un membre pour saisir sa proie à distance et l'entraîner dans une étreinte écrasante.</p>",
+            "actions": {
+                "ensnare": {
+                    "name": "Piéger",
+                    "description": "<p>@ref[actor.name]{La créature} tente de saisir une unique cible à distance, attaquant son <strong>Réflexe</strong>. Sur une réussite, la cible est tirée à portée et devient @Condition[restrained]. Cette action ne peut être utilisée que sur les créatures qui sont des cibles éligibles pour @Action[Compendium.crucible.talent.Item.unarmedCombatTra grapple].</p><p>L'emprise est maintenue jusqu'à ce que @ref[actor.name]{la créature} la relâche, la cible s'échappe, ou qu'une autre créature soit ciblée avec Piéger.</p>",
+                    "effects": {
+                        "Ensnared": {
+                            "name": "Piégé"
+                        }
+                    }
+                }
+            }
+        },
+        "livingBoulder000": {
+            "name": "Rocher vivant",
+            "description": "<p>@ref[actor.name]{La créature} canalise la terre à travers sa propre masse physique plutôt que par son esprit. Son utilisation de la <strong>rune de Terre</strong> se base sur la <strong>Robustesse</strong> au lieu de la <strong>Sagesse</strong>.</p>"
         }
     },
     "mapping": {

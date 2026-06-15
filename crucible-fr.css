@@ -1,0 +1,10 @@
+/* Masque l'icône ::before du style "condition" sur les badges @[feet N] */
+enriched-content.cfr-no-icon::before {
+  display: none;
+}
+
+/* Mètres sur la règle de déplacement */
+.crucible-fr-meters {
+  opacity: 0.8;
+  font-size: 0.88em;
+}

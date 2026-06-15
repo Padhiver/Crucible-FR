@@ -40,6 +40,7 @@
 | Standart Check | Test standard |
 | Boon | Faveur |
 | Bane | Fléau |
+| Removal DC | DD de suppression |
 
 ---
 

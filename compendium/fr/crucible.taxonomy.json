@@ -43,7 +43,7 @@
         },
         "earthElemental00": {
             "name": "Élémentaire de terre",
-            "description": "<p>Créatures élémentaires correspondant à l'élément de la Terre.</p>"
+            "description": "<p>Créatures élémentaires correspondant à l'élément de Terre.</p>"
         },
         "fireElemental000": {
             "name": "Élémentaire de feu",
@@ -83,7 +83,7 @@
         },
         "stormElemental00": {
             "name": "Élémentaire de tempête",
-            "description": "<p>Créatures élémentaires correspondant à l'élément de la Foudre.</p>"
+            "description": "<p>Créatures élémentaires correspondant à l'élément de l'Orage.</p>"
         },
         "taxCrystalSpider": {
             "name": "Araignée de cristal",
@@ -112,6 +112,18 @@
         "zombie0000000000": {
             "name": "Zombi",
             "description": "<p>Cadavres traînants de morts sans repos, leurs corps en décomposition gonflés par la putrescence. Ils se déplacent sans se soucier des blessures qu'ils subissent et ne cherchent qu'à consommer tout ce qu'ils croisent de manière insensée.</p>"
+        },
+        "dustDevil0000000": {
+            "name": "Diable de poussière",
+            "description": "<p>Incarnations élémentaires de poussière et de sable tourbillonnants. Les plus petits, les Particules de poussière, sont parmi les plus faibles de tous les élémentaires ; les spécimens plus grands se transforment en diables, en tourbillons et en tempêtes de poussière rugissantes.</p>"
+        },
+        "mudElemental0000": {
+            "name": "Élémentaire de boue",
+            "description": "<p>Élémentaires informes de boue et de vase caustiques : mous, insensibles et corrosifs. Ils engloutissent et dissolvent ce qu'ils ne peuvent broyer.</p>"
+        },
+        "stoneElemental00": {
+            "name": "Élémentaire de pierre",
+            "description": "<p>Élémentaires colossaux de roche vivante et solide : massifs, inébranlables et éternels. Ils canalisent la puissance brute de la terre à travers leur propre masse immense.</p>"
         }
     },
     "mapping": {

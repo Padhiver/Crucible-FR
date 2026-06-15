@@ -2,7 +2,8 @@
     "label": "Créatures invoquées",
     "folders": {
         "Gesture: Create": "Signe : Création",
-        "Gesture: Conjure": "Signe : Conjuration"
+        "Gesture: Conjure": "Signe : Conjuration",
+        "Talents": "Talents"
     },
     "entries": {
         "56puGK932Qc0cowe": {
@@ -83,10 +84,6 @@
                 "name": "Lutin de Tempête"
             },
             "items": {
-                "runelightning000": {
-                    "name": "Rune : Foudre",
-                    "description": "<p>La force chaotique de l'énergie électrique brute. La Rune de Foudre gouverne les sources d'énergie électrique et de décharge électrique. Elle est opposée par la rune ordonnée de la Terre.</p><p>La Rune de Foudre évolue avec l'<strong>Intellect</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts <strong>Électriques</strong> à la <strong>Santé</strong>.</p>"
-                },
                 "electricityAbsor": {
                     "name": "Absorption d'Électricité",
                     "description": "<p>La @ref[actor.name]{créature} possède une capacité exceptionnelle à encaisser les décharges de foudre. Sa résistance à l'<strong>Électricité</strong> est doublée et si cette résistance réduit une quantité de dégâts en dessous de zéro, le montant négatif est reçu comme <strong>Guérison</strong> à la place.</p>"
@@ -104,6 +101,10 @@
                 "gestureaspect000": {
                     "name": "Signe : Aspect",
                     "description": "<p>Vous infusez l'essence d'une Rune dans votre corps, renforçant votre propre forme physique ou psyché.</p><p>Lorsque vous assumez un certain Aspect, vous devenez plus étroitement harmonisé avec le type de dégâts de la Rune utilisée dans votre sort. Vous gagnez <strong>+2 Résistance</strong> à ce type de dégâts, et infligez <strong>+2 Dégâts</strong> supplémentaires lorsque vous infligez des dégâts de ce type.</p><p>Votre Aspect dure <strong>6 Rounds</strong>. Vous ne pouvez avoir qu'un seul Aspect actif, lancer un autre sort utilisant le signe d'Aspect remplace l'effet précédent.</p>"
+                },
+                "runeStorm0000000": {
+                    "name": "Rune : Orage",
+                    "description": "<p>La force chaotique de l'énergie électrique brute. La rune d'Orage gouverne les sources d'énergie électrique et de décharge électrique. Elle est opposée par la rune ordonnée de Terre.</p>\n<p>La rune d'Orage évolue avec l'<strong>Intellect</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts <strong>Électriques</strong> à la <strong>Santé</strong>.</p>"
                 }
             },
             "archetype": {
@@ -112,7 +113,7 @@
             },
             "taxonomy": {
                 "name": "Élémentaire de tempête",
-                "description": "<p>Créatures élémentaires correspondant à l'élément de la foudre.</p>"
+                "description": "<p>Créatures élémentaires correspondant à l'élément de l'Orage.</p>"
             }
         },
         "me5glbOshiijlVUH": {
@@ -239,10 +240,6 @@
                     "name": "Signe : Flèche",
                     "description": "<p>Vous apprenez le Signe Flèche, vous permettant de projeter un trait dirigé de puissance arcanique vers une cible lointaine.</p>\n<p>Le Signe Flèche inflige des dégâts correspondant à la Rune utilisée à une cible ennemie unique à portée.</p>"
                 },
-                "runelightning000": {
-                    "name": "Rune : Foudre",
-                    "description": "<p>La force chaotique de l'énergie électrique brute. La Rune de Foudre gouverne les sources d'énergie électrique et de décharge électrique. Elle est opposée par la rune ordonnée de la Terre.</p><p>La Rune de Foudre évolue avec l'<strong>Intellect</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts <strong>Électriques</strong> à la <strong>Santé</strong>.</p>"
-                },
                 "electricityAbsor": {
                     "name": "Absorption d'Électricité",
                     "description": "<p>La @ref[actor.name]{créature} possède une capacité exceptionnelle à encaisser les décharges de foudre. Sa résistance à l'<strong>Électricité</strong> est doublée et si cette résistance réduit une quantité de dégâts en dessous de zéro, le montant négatif est reçu comme <strong>Guérison</strong> à la place.</p>"
@@ -254,6 +251,10 @@
                 "gesturefan000000": {
                     "name": "Signe : Éventail",
                     "description": "<p>Canalisez l'essence d'une rune en un arc balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate. Utilisé avec la Terre, cela peut projeter une gerbe de pierres en arc de cercle, tandis qu'avec la Kinésie, cela peut trancher plusieurs ennemis d'un coup.</p><p>Le signe Éventail dépend de l'<strong>Intellect</strong> et cible un cône de 120 degrés sur 6 pieds, infligeant 6 dégâts de base en cas d'attaque réussie.</p>"
+                },
+                "runeStorm0000000": {
+                    "name": "Rune : Orage",
+                    "description": "<p>La force chaotique de l'énergie électrique brute. La rune d'Orage gouverne les sources d'énergie électrique et de décharge électrique. Elle est opposée par la rune ordonnée de Terre.</p>\n<p>La rune d'Orage évolue avec l'<strong>Intellect</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts <strong>Électriques</strong> à la <strong>Santé</strong>.</p>"
                 }
             },
             "archetype": {
@@ -262,7 +263,7 @@
             },
             "taxonomy": {
                 "name": "Élémentaire de tempête",
-                "description": "<p>Créatures élémentaires correspondant à l'élément de la foudre.</p>"
+                "description": "<p>Créatures élémentaires correspondant à l'élément de l'Orage.</p>"
             }
         },
         "RuNh1bFGiHKdHeKI": {
@@ -338,7 +339,7 @@
             },
             "taxonomy": {
                 "name": "Élémentaire de terre",
-                "description": "<p>Créatures élémentaires correspondant à l'élément de la terre.</p>"
+                "description": "<p>Créatures élémentaires correspondant à l'élément de Terre.</p>"
             }
         },
         "xTFgTg5Rh2s0s5gZ": {
@@ -380,7 +381,31 @@
             },
             "taxonomy": {
                 "name": "Élémentaire de terre",
-                "description": "<p>Créatures élémentaires correspondant à l'élément de la terre.</p>"
+                "description": "<p>Créatures élémentaires correspondant à l'élément de Terre.</p>"
+            }
+        },
+        "ancestralGuard00": {
+            "name": "Gardien ancestral",
+            "tokenName": {
+                "name": "Gardien ancestral"
+            },
+            "items": {
+                "ancestralForm000": {
+                    "name": "Manifestation ancestrale",
+                    "description": "<p>Le Gardien ancestral est une manifestation incorporelle d'esprits vigilants. Il est invulnérable, inamovible et indestructible, et les autres créatures peuvent traverser librement son espace. Sa présence écrasante sur le champ de bataille fait qu'il compte pour <strong>trois créatures</strong> lorsqu'il s'agit de déterminer si un ennemi est Débordé.</p>"
+                }
+            },
+            "biography": {
+                "public": "<p>Le Gardien ancestral est moins une créature qu'une présence : les esprits rassemblés de ceux qui sont venus avant, appelés par un @UUID[Compendium.crucible.talent.Item.warden0000000000]{Varden} utilisant le Bosquet ancestral. On ne peut ni lui donner d'ordres ni le raisonner, et il ne parle pas. Il veille simplement sur les vivants tant que dure la communion du Varden.</p>",
+                "appearance": "<p>Une figure translucide tissée d'écorce, de feuilles et de racines changeantes, illuminée de l'intérieur par une douce lueur verte. Il n'a pas de forme fixe, flottant entre les silhouettes d'ancêtres à demi oubliés, et ne projette ni ombre ni poids sur le sol qu'il garde.</p>"
+            },
+            "archetype": {
+                "description": "<p>Un esprit vigilant qui surveille un bosquet protecteur.</p>",
+                "name": "Tuteur ancestral"
+            },
+            "taxonomy": {
+                "name": "Esprit ancestral",
+                "description": "<p>Manifestation incorporelle des esprits ancestraux, invoquée pour veiller sur les vivants. Elle n'a ni corps physique à blesser, ni volonté à briser.</p>"
             }
         }
     },

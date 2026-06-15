@@ -42,7 +42,7 @@
             "actions": {
                 "alchemistsFire": {
                     "name": "Feu de l'alchimiste",
-                    "description": "<p>Vous jetez le @ref[name], infligeant des dégâts @Condition[weakened] immédiats mais causant la condition @Condition[burning] à tous les ennemis qui ne parviennent pas à éviter l'attaque dans un rayon d'<strong>Explosion</strong> de 4 pieds.</p><p>Le montant des dégâts enflammés et leur durée dépendent de la qualité du @ref[name]:</p><ul><li><p><strong>Bâclée</strong> - 2 dégâts pendant 2 rounds</p></li><li><p><strong>Commune</strong> - 3 dégâts pendant 3 rounds</p></li><li><p><strong>Raffinée</strong> - 4 dégâts pendant 4 rounds</p></li><li><p><strong>Supérieure</strong> - 6 dégâts pendant 5 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - 8 dégâts pendant 6 rounds</p></li></ul>",
+                    "description": "<p>Vous jetez le @ref[name], infligeant des dégâts <strong>Affaiblis</strong> immédiats mais causant la condition @Condition[burning] à tous les ennemis qui ne parviennent pas à éviter l'attaque dans un rayon d'<strong>Explosion</strong> de 4 pieds.</p><p>Le montant des dégâts enflammés et leur durée dépendent de la qualité du @ref[name]:</p><ul><li><p><strong>Bâclée</strong> - 2 dégâts pendant 2 rounds</p></li><li><p><strong>Commune</strong> - 3 dégâts pendant 3 rounds</p></li><li><p><strong>Raffinée</strong> - 4 dégâts pendant 4 rounds</p></li><li><p><strong>Supérieure</strong> - 6 dégâts pendant 5 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - 8 dégâts pendant 6 rounds</p></li></ul>",
                     "effects": {
                         "Alchemist's Fire": {
                             "name": "Feu de l'alchimiste"
@@ -172,7 +172,7 @@
             "actions": {
                 "causticPhial": {
                     "name": "Fiole d'acide",
-                    "description": "<p>Vous jetez la @ref[name], infligeant des dégâts @Condition[weakened] immédiats mais causant la condition @Condition[corroding] à tous les ennemis qui ne parviennent pas à éviter l'attaque, dans un rayon d'<strong>Explosion</strong> de 4 pieds.</p><p>Le montant de dégâts corrodés et leur durée dépend de la qualité de la @ref[name]:</p><ul><li><p><strong>Bâclée</strong> - 2 damage for 2 rounds</p></li><li><p><strong>Commune</strong> - 3 dégâts pendant 3 rounds</p></li><li><p><strong>Raffinée</strong> - 4 dégâts pendant 4 rounds</p></li><li><p><strong>Supérieure</strong> - 6 dégâts pendant 5 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - 8 dégâts pendant 6 rounds</p></li></ul>",
+                    "description": "<p>Vous jetez la @ref[name], infligeant des dégâts <strong>Affaiblis</strong> immédiats mais causant la condition @Condition[corroding] à tous les ennemis qui ne parviennent pas à éviter l'attaque, dans un rayon d'<strong>Explosion</strong> de 4 pieds.</p><p>Le montant de dégâts corrodés et leur durée dépend de la qualité de la @ref[name]:</p><ul><li><p><strong>Bâclée</strong> - 2 damage for 2 rounds</p></li><li><p><strong>Commune</strong> - 3 dégâts pendant 3 rounds</p></li><li><p><strong>Raffinée</strong> - 4 dégâts pendant 4 rounds</p></li><li><p><strong>Supérieure</strong> - 6 dégâts pendant 5 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - 8 dégâts pendant 6 rounds</p></li></ul>",
                     "effects": {
                         "Caustic Phial": {
                             "name": "Fiole d'acide"
@@ -672,7 +672,7 @@
         "javelin000000000": {
             "name": "Javeline",
             "description": {
-                "public": "<p>Dotée d'une pointe métallique acérée fixée au sommet d'une longue tige, la javeline est suffisamment légère pour être lancée mais suffisamment robuste pour rester utile en combat rapproché.</p>"
+                "public": "<p>Dotée d'une pointe métallique acérée fixée au sommet d'une longue tige, la javeline est suffisamment légère pour être lancée mais suffisamment robuste pour rester utile en combat rapproché. Conçu pour voler, elle peut être projetée jusqu'à <strong>60 pieds</strong> lors d'une attaque de lancer.</p>"
             }
         },
         "jewelersPortable": {
@@ -1178,10 +1178,10 @@
             "effects": {
                 "focusing00000000": {
                     "name": "Focalisation",
-                    "description": "<p>Fournit l'action <strong>Restauration de focus</strong>, permettant au porteur de récupérer du <strong>Focus</strong> dans les moments difficiles. Le montant restauré dépend du <strong>Palier</strong> de ce préfixe.</p>",
+                    "description": "<p>Fournit l'action <strong>Restauration de focus</strong>, permettant au porteur de récupérer du <strong>Focus</strong> dans les moments difficiles. Le montant restauré dépend du <strong>Palier</strong> de cet affixe.</p>",
                     "adjective": "Focalisation",
                     "actions": {
-                        "affixFocus": {
+                        "affixFocusing": {
                             "name": "Restauration de focus",
                             "description": "<p>En cas de difficulté, vous pouvez puiser dans une réserve supplémentaire de <strong>Focus</strong> depuis cet objet. Le montant de Focus restauré dépend du <strong>Palier</strong> de ce préfixe.</p><ul><li><p><strong>Palier 1 :</strong> <strong>4 Focus</strong></p></li><li><p><strong>Palier 2 :</strong> <strong>6 Focus</strong></p></li><li><p><strong>Palier 3 :</strong> <strong>8 Focus</strong></p></li></ul>"
                         }
@@ -1385,6 +1385,12 @@
             "description": {
                 "public": "<p>Instrument en bois sculpté ou en os qui, lorsqu'on souffle dedans, produit un son aigu et strident audible à grande distance. Souvent utilisé par les chasseurs et les pêcheurs pour communiquer entre eux en pleine nature ou en mer.</p>"
             }
+        },
+        "boStaff000000000": {
+            "description": {
+                "public": "<p>Un bâton en bois dur équilibré, prisé des pratiquants d'arts martiaux, plus léger et plus maniable qu'un bâton classique. Son poids uniforme favorise l'habileté du manieur, qui peut enchaîner parades et frappes rapides.</p>"
+            },
+            "name": "Bâton Bo"
         }
     },
     "mapping": {

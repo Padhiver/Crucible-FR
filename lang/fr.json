@@ -190,6 +190,10 @@
                 "permanent": {
                     "hint": "Cette invocation doit-elle persister jusqu'à sa mort ?",
                     "label": "Permanent"
+                },
+                "combatant": {
+                    "hint": "La créature invoquée doit-elle être ajoutée à la phase de combat en cours ?",
+                    "label": "Rejoindre le combat"
                 }
             },
             "tags": {

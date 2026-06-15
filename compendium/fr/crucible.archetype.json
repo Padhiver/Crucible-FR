@@ -171,6 +171,18 @@
         "assassin00000000": {
             "name": "Assassin",
             "description": "<p>Personnages impitoyables, passés maîtres dans l'art de l'infiltration et du meurtre sans pitié.</p>"
+        },
+        "archetypeConstri": {
+            "name": "Constricteur",
+            "description": "<p>Prédateurs qui s'emparent de leurs proies avec leurs anneaux, leurs tentacules ou leurs mâchoires, les traînent à portée et les broient jusqu'à la mort tandis qu'elles se débattent pour se libérer.</p>"
+        },
+        "archetypeJuggern": {
+            "name": "Juggernaut",
+            "description": "<p>Bagarreurs implacables qui réduisent la distance, saisissent leurs ennemis dans des prises implacables et les dominent par leur force brute et leur résistance. Ils combattent à mains nues, faisant de leur propre masse une arme et un bouclier.</p>"
+        },
+        "archetypeTelekin": {
+            "name": "Télékinésiste",
+            "description": "<p>Mages télékinésiques qui tissent la Rune de Kinésie pour projeter, traîner et écraser leurs ennemis par une force kinésique brute, dominant le champ de bataille avec les inflexions Rejeter et Rappeler incessantes.</p>"
         }
     },
     "mapping": {

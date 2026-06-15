@@ -1,25 +1,16 @@
 /**
- * ruler.mjs
  * Affichage des mètres sur la règle de déplacement.
  *
  * Un unique setting client (enableRulerMeters, activé par défaut) contrôle
  * la fonctionnalité — visible directement dans le panneau des réglages.
  */
 
-import { MODULE_ID, feetToMeters } from "./constants.mjs";
+import { MODULE_ID } from "./common/constants.mjs";
+import { feetToMeters } from "./common/utils.mjs";
 
-export function registerRulerSetting() {
-  game.settings.register(MODULE_ID, "enableRulerMeters", {
-    name: "Afficher les mètres sur la règle",
-    hint: "Affiche la distance en mètres entre parenthèses lors du déplacement d'un token.",
-    scope: "client",
-    config: true,
-    type: Boolean,
-    default: true,
-    onChange: () => {} // pas de rechargement nécessaire
-  });
-}
-
+/**
+ * Démarre l'observer sur "canvasReady"
+ */
 export function registerRulerObserver() {
   if (!game.settings.get(MODULE_ID, "enableRulerMeters")) return;
 
@@ -27,10 +18,17 @@ export function registerRulerObserver() {
   if (canvas?.ready) _startObserver();
 }
 
+/* -------------------------------------------- */
+
+/**
+ * Créé un observer sur l'élément "hud"
+ */
 function _startObserver() {
   const hud = document.getElementById("hud");
   if (!hud) {
-    console.warn("Crucible FR | #hud introuvable, MutationObserver non démarré.");
+    console.warn(
+      "Crucible FR | #hud introuvable, MutationObserver non démarré.",
+    );
     return;
   }
 
@@ -46,6 +44,12 @@ function _startObserver() {
   console.log("Crucible FR | MutationObserver sur #hud démarré.");
 }
 
+/* -------------------------------------------- */
+
+/**
+ * Traverse les labels et injecte le système métrique
+ * @param {HTMLElement} root
+ */
 function _processWaypointLabels(root) {
   const labels = root.classList?.contains("waypoint-label")
     ? [root]
@@ -54,13 +58,19 @@ function _processWaypointLabels(root) {
   for (const label of labels) _injectMetersInLabel(label);
 }
 
+/* -------------------------------------------- */
+
+/**
+ * Injecte le système métrique dans un label
+ * @param {HTMLElement} label
+ */
 function _injectMetersInLabel(label) {
   const measureEl = label.querySelector(".total-measurement:not(.total-cost)");
   if (!measureEl || label.querySelector(".crucible-fr-meters")) return;
 
   const rawText = Array.from(measureEl.childNodes)
-    .filter(n => n.nodeType === Node.TEXT_NODE)
-    .map(n => n.textContent)
+    .filter((n) => n.nodeType === Node.TEXT_NODE)
+    .map((n) => n.textContent)
     .join("")
     .trim();
 

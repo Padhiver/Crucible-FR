@@ -39,9 +39,8 @@
       "path": "lang/fr.json"
     }
   ],
-  "esmodules": [
-    "babele-register.js"
-  ],
+  "esmodules": ["babele-register.mjs", "crucible-fr.mjs"],
+  "styles": ["crucible-fr.css"],
   "media": [
     {
       "type": "setup",

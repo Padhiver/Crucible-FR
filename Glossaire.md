@@ -378,6 +378,7 @@
 | Dual Wield | Ambidextrie |
 | One Handed | À une main |
 | Finesse | Finesse |
+| Keen | Aiguisé |
 | Brute | Brutal |
 | Projectile | Projectile |
 | Mechanical | Mécanique |

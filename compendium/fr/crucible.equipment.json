@@ -42,7 +42,7 @@
             "actions": {
                 "alchemistsFire": {
                     "name": "Feu de l'alchimiste",
-                    "description": "<p>Vous jetez le @ref[name], infligeant des dégâts <strong>Affaiblis</strong> immédiats mais causant la condition @Condition[burning] à tous les ennemis qui ne parviennent pas à éviter l'attaque dans un rayon d'<strong>Explosion</strong> de 4 pieds.</p><p>Le montant des dégâts enflammés et leur durée dépendent de la qualité du @ref[name]:</p><ul><li><p><strong>Bâclée</strong> - 2 dégâts pendant 2 rounds</p></li><li><p><strong>Commune</strong> - 3 dégâts pendant 3 rounds</p></li><li><p><strong>Raffinée</strong> - 4 dégâts pendant 4 rounds</p></li><li><p><strong>Supérieure</strong> - 6 dégâts pendant 5 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - 8 dégâts pendant 6 rounds</p></li></ul>",
+                    "description": "<p>Vous jetez le @ref[name], infligeant des dégâts <strong>Affaiblis</strong> immédiats mais causant la condition @Condition[burning] à tous les ennemis qui ne parviennent pas à éviter l'attaque dans un rayon d'<strong>Explosion</strong> de @[feet 4].</p><p>Le montant des dégâts enflammés et leur durée dépendent de la qualité du @ref[name]:</p><ul><li><p><strong>Bâclée</strong> - 2 dégâts pendant 2 rounds</p></li><li><p><strong>Commune</strong> - 3 dégâts pendant 3 rounds</p></li><li><p><strong>Raffinée</strong> - 4 dégâts pendant 4 rounds</p></li><li><p><strong>Supérieure</strong> - 6 dégâts pendant 5 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - 8 dégâts pendant 6 rounds</p></li></ul>",
                     "effects": {
                         "Alchemist's Fire": {
                             "name": "Feu de l'alchimiste"
@@ -172,7 +172,7 @@
             "actions": {
                 "causticPhial": {
                     "name": "Fiole d'acide",
-                    "description": "<p>Vous jetez la @ref[name], infligeant des dégâts <strong>Affaiblis</strong> immédiats mais causant la condition @Condition[corroding] à tous les ennemis qui ne parviennent pas à éviter l'attaque, dans un rayon d'<strong>Explosion</strong> de 4 pieds.</p><p>Le montant de dégâts corrodés et leur durée dépend de la qualité de la @ref[name]:</p><ul><li><p><strong>Bâclée</strong> - 2 damage for 2 rounds</p></li><li><p><strong>Commune</strong> - 3 dégâts pendant 3 rounds</p></li><li><p><strong>Raffinée</strong> - 4 dégâts pendant 4 rounds</p></li><li><p><strong>Supérieure</strong> - 6 dégâts pendant 5 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - 8 dégâts pendant 6 rounds</p></li></ul>",
+                    "description": "<p>Vous jetez la @ref[name], infligeant des dégâts <strong>Affaiblis</strong> immédiats mais causant la condition @Condition[corroding] à tous les ennemis qui ne parviennent pas à éviter l'attaque, dans un rayon d'<strong>Explosion</strong> de @[feet 4].</p><p>Le montant de dégâts corrodés et leur durée dépend de la qualité de la @ref[name]:</p><ul><li><p><strong>Bâclée</strong> - 2 damage for 2 rounds</p></li><li><p><strong>Commune</strong> - 3 dégâts pendant 3 rounds</p></li><li><p><strong>Raffinée</strong> - 4 dégâts pendant 4 rounds</p></li><li><p><strong>Supérieure</strong> - 6 dégâts pendant 5 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - 8 dégâts pendant 6 rounds</p></li></ul>",
                     "effects": {
                         "Caustic Phial": {
                             "name": "Fiole d'acide"
@@ -190,7 +190,7 @@
         "chain00000000000": {
             "name": "Chaîne",
             "description": {
-                "public": "<p>Une chaîne en acier de 30 pieds de long, pouvant servir à faciliter l'escalade ou être utilisée avec des dispositifs de fixation pour immobiliser des objets.</p>"
+                "public": "<p>Une chaîne en acier de @[feet 30] de long, pouvant servir à faciliter l'escalade ou être utilisée avec des dispositifs de fixation pour immobiliser des objets.</p>"
             }
         },
         "chainHook0000000": {
@@ -233,7 +233,7 @@
             "actions": {
                 "chokingAmpoule": {
                     "name": "Ampoule d'étouffement",
-                    "description": "<p>Vous lancez l'@ref[name], qui a un effet immédiat <strong>Inoffensif</strong>, mais cause la condition @Condition[poisoned] à tous les ennemis qui échouent à résister à l'attaque contre leur <strong>Fortitude</strong>, dans une <strong>Explosion</strong> de 8 pieds de rayon.</p><p>Le gaz inflige des dégâts de poison au <strong>Moral</strong> d'un montant dépendant de la Qualité de l'@ref[name]. Sur un succès critique, la cible affectée devient également @Condition[silenced] pour la même durée.</p><ul><li><p><strong>Bâclée</strong> - 2 dégâts pendant 3 rounds</p></li><li><p><strong>Commune</strong> - 6 dégâts pendant 3 rounds</p></li><li><p><strong>Raffinée</strong> - 12 dégâts pendant 3 rounds</p></li><li><p><strong>Supérieure</strong> - 20 dégâts pendant 3 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - 30 dégâts pendant 3 rounds</p></li></ul>",
+                    "description": "<p>Vous lancez l'@ref[name], qui a un effet immédiat <strong>Inoffensif</strong>, mais cause la condition @Condition[poisoned] à tous les ennemis qui échouent à résister à l'attaque contre leur <strong>Fortitude</strong>, dans une <strong>Explosion</strong> de @[feet 8] de rayon.</p><p>Le gaz inflige des dégâts de poison au <strong>Moral</strong> d'un montant dépendant de la Qualité de l'@ref[name]. Sur un succès critique, la cible affectée devient également @Condition[silenced] pour la même durée.</p><ul><li><p><strong>Bâclée</strong> - 2 dégâts pendant 3 rounds</p></li><li><p><strong>Commune</strong> - 6 dégâts pendant 3 rounds</p></li><li><p><strong>Raffinée</strong> - 12 dégâts pendant 3 rounds</p></li><li><p><strong>Supérieure</strong> - 20 dégâts pendant 3 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - 30 dégâts pendant 3 rounds</p></li></ul>",
                     "effects": {
                         "Choking Ampoule": {
                             "name": "Ampoule d'étouffement"
@@ -355,7 +355,7 @@
             "actions": {
                 "electrochargeAmpoule": {
                     "name": "Ampoule de charge électrique",
-                    "description": "<p>Vous lancez l'@ref[name], infligeant des dégâts amoindris d'<strong>Électricité</strong> à tous les ennemis dans le rayon de la décharge et les laissant @Condition[staggered] brièvement. Le rayon de la <strong>Décharge</strong> dépend de la qualité de la bombe :</p><ul><li><p><strong>Bâclée</strong> - 3 pieds</p></li><li><p><strong>Commune</strong> - 4 pieds</p></li><li><p><strong>Raffinée</strong> - 6 pieds</p></li><li><p><strong>Supérieure</strong> - 8 pieds</p></li><li><p><strong>Chef-d’œuvre</strong> - 10 pieds</p></li></ul>",
+                    "description": "<p>Vous lancez l'@ref[name], infligeant des dégâts amoindris d'<strong>Électricité</strong> à tous les ennemis dans le rayon de la décharge et les laissant @Condition[staggered] brièvement. Le rayon de la <strong>Décharge</strong> dépend de la qualité de la bombe :</p><ul><li><p><strong>Bâclée</strong> - @[feet 3]</p></li><li><p><strong>Commune</strong> - @[feet 4]</p></li><li><p><strong>Raffinée</strong> - @[feet 6]</p></li><li><p><strong>Supérieure</strong> - @[feet 8]</p></li><li><p><strong>Chef-d’œuvre</strong> - @[feet 10]</p></li></ul>",
                     "effects": {
                         "Electrocharge Ampoule": {
                             "name": "Ampoule de charge électrique"
@@ -435,7 +435,7 @@
             "actions": {
                 "frostFlask": {
                     "name": "Flacon de gouttes de givre",
-                    "description": "<p>Vous lancez la @ref[name], infligeant des dégâts amoindris de <strong>Froid</strong> à tous les ennemis dans le rayon de l'explosion et les rendant @Condition[slowed] brièvement. Le rayon de l'<strong>Explosion</strong> dépend de la qualité de la bombe :</p><ul><li><p><strong>Bâclée</strong> - 3 pieds</p></li><li><p><strong>Commune</strong> - 4 pieds</p></li><li><p><strong>Raffinée</strong> - 6 pieds</p></li><li><p><strong>Supérieure</strong> - 8 pieds</p></li><li><p><strong>Chef-d’œuvre</strong> - 10 pieds</p></li></ul>",
+                    "description": "<p>Vous lancez la @ref[name], infligeant des dégâts amoindris de <strong>Froid</strong> à tous les ennemis dans le rayon de l'explosion et les rendant @Condition[slowed] brièvement. Le rayon de l'<strong>Explosion</strong> dépend de la qualité de la bombe :</p><ul><li><p><strong>Bâclée</strong> - @[feet 3]</p></li><li><p><strong>Commune</strong> - @[feet 4]</p></li><li><p><strong>Raffinée</strong> - @[feet 6]</p></li><li><p><strong>Supérieure</strong> - @[feet 8]</p></li><li><p><strong>Chef-d’œuvre</strong> - @[feet 10]</p></li></ul>",
                     "effects": {
                         "Frostdrop Flask": {
                             "name": "Flacon de gouttes de givre"
@@ -470,7 +470,7 @@
                     "actions": {
                         "affixLuminous": {
                             "name": "Activer l'illumination",
-                            "description": "<p>Vous prononcez le mot de commande et la @ref[name] s'illumine d'une lueur stable et surnaturelle. Le rayon de lumière vive émise dépend du <strong>Palier</strong> de ce préfixe, avec un rayon supplémentaire de lumière tamisée s'étendant à une distance égale au-delà.</p><ul><li><p><strong>Palier 1 :</strong> 20 pieds de lumière vive, 40 pieds de lumière tamisée</p></li><li><p><strong>Palier 2 :</strong> 40 pieds de lumière vive, 80 pieds de lumière tamisée</p></li><li><p><strong>Palier 3 :</strong> 60 pieds de lumière vive, 120 pieds de lumière tamisée</p></li></ul> <p>La lumière persiste jusqu'à ce que vous désactiviez l'effet ou retiriez l'objet.</p>"
+                            "description": "<p>Vous prononcez le mot de commande et la @ref[name] s'illumine d'une lueur stable et surnaturelle. Le rayon de lumière vive émise dépend du <strong>Palier</strong> de ce préfixe, avec un rayon supplémentaire de lumière tamisée s'étendant à une distance égale au-delà.</p><ul><li><p><strong>Palier 1 :</strong> @[feet 20] de lumière vive, @[feet 40] de lumière tamisée</p></li><li><p><strong>Palier 2 :</strong> @[feet 40] de lumière vive, @[feet 80] de lumière tamisée</p></li><li><p><strong>Palier 3 :</strong> @[feet 60] de lumière vive, @[feet 120] de lumière tamisée</p></li></ul> <p>La lumière persiste jusqu'à ce que vous désactiviez l'effet ou retiriez l'objet.</p>"
                         }
                     }
                 }
@@ -672,7 +672,7 @@
         "javelin000000000": {
             "name": "Javeline",
             "description": {
-                "public": "<p>Dotée d'une pointe métallique acérée fixée au sommet d'une longue tige, la javeline est suffisamment légère pour être lancée mais suffisamment robuste pour rester utile en combat rapproché. Conçu pour voler, elle peut être projetée jusqu'à <strong>60 pieds</strong> lors d'une attaque de lancer.</p>"
+                "public": "<p>Dotée d'une pointe métallique acérée fixée au sommet d'une longue tige, la javeline est suffisamment légère pour être lancée mais suffisamment robuste pour rester utile en combat rapproché. Conçu pour voler, elle peut être projetée jusqu'à <strong>@[feet 60]</strong> lors d'une attaque de lancer.</p>"
             }
         },
         "jewelersPortable": {
@@ -708,7 +708,7 @@
             "actions": {
                 "blastFlask": {
                     "name": "Fiole explosive",
-                    "description": "<p>Vous allumez et lancez la @ref[name], infligeant des dégâts de <strong>Feu</strong> à tous les ennemis dans le rayon de l'explosion. Le rayon de l'<strong>Explosion</strong> dépend de la qualité de la bombe :</p><ul><li><p><strong>Bâclée</strong> - 3 pieds</p></li><li><p><strong>Commune</strong> - 4 pieds</p></li><li><p><strong>Raffinée</strong> - 6 pieds</p></li><li><p><strong>Supérieure</strong> - 8 pieds</p></li><li><p><strong>Chef-d’œuvre</strong> - 10 pieds</p></li></ul>"
+                    "description": "<p>Vous allumez et lancez la @ref[name], infligeant des dégâts de <strong>Feu</strong> à tous les ennemis dans le rayon de l'explosion. Le rayon de l'<strong>Explosion</strong> dépend de la qualité de la bombe :</p><ul><li><p><strong>Bâclée</strong> - @[feet 3]</p></li><li><p><strong>Commune</strong> - @[feet 4]</p></li><li><p><strong>Raffinée</strong> - @[feet 6]</p></li><li><p><strong>Supérieure</strong> - @[feet 8]</p></li><li><p><strong>Chef-d’œuvre</strong> - @[feet 10]</p></li></ul>"
                 }
             }
         },
@@ -721,7 +721,7 @@
         "lantern000000000": {
             "name": "Lanterne",
             "description": {
-                "public": "<p>Une lanterne à huile ou illuminée magiquement qui projette une lumière vive dans un rayon de 20 pieds et une lumière tamisée dans un rayon de 40 pieds.</p>"
+                "public": "<p>Une lanterne à huile ou illuminée magiquement qui projette une lumière vive dans un rayon de @[feet 20] et une lumière tamisée dans un rayon de @[feet 40].</p>"
             },
             "actions": {
                 "lightLantern": {
@@ -944,7 +944,7 @@
         "quarterstaff0000": {
             "name": "Bâton de combat",
             "description": {
-                "public": "<p>Le bâton de combat, une simple canne en bois d'environ 6 à 8 pieds de long, est une arme d'un équilibre trompeur qui peut se révéler mortelle entre des mains expertes.</p>"
+                "public": "<p>Le bâton de combat, une simple canne en bois d'environ 6 à @[feet 8] de long, est une arme d'un équilibre trompeur qui peut se révéler mortelle entre des mains expertes.</p>"
             }
         },
         "rallyingElixir00": {
@@ -1047,7 +1047,7 @@
                     "actions": {
                         "gliding": {
                             "name": "Planant",
-                            "description": "<p>Utilisé durant une @Condition[falling], vous pouvez vous déplacer latéralement d'un nombre d'espaces depuis votre position initiale en planant. La distance planée dépend du <strong>Palier</strong> de ce préfixe.</p><ul><li><p><strong>Palier 1 :</strong> <strong>1 pied</strong> par 20 pieds de descente.</p></li><li><p><strong>Palier 2 :</strong> <strong>2 pieds</strong> par 20 pieds de descente.</p></li><li><p><strong>Palier 3 :</strong> <strong>4 pieds</strong> par 20 pieds de descente.</p></li></ul><p>Vous ne subissez aucun dégât de chute à l'atterrissage, et n'êtes pas @Condition[prone].</p>"
+                            "description": "<p>Utilisé durant une @Condition[falling], vous pouvez vous déplacer latéralement d'un nombre d'espaces depuis votre position initiale en planant. La distance planée dépend du <strong>Palier</strong> de ce préfixe.</p><ul><li><p><strong>Palier 1 :</strong> <strong>@[feet 1]</strong> par @[feet 20] de descente.</p></li><li><p><strong>Palier 2 :</strong> <strong>@[feet 2]</strong> par @[feet 20] de descente.</p></li><li><p><strong>Palier 3 :</strong> <strong>@[feet 4]</strong> par @[feet 20] de descente.</p></li></ul><p>Vous ne subissez aucun dégât de chute à l'atterrissage, et n'êtes pas @Condition[prone].</p>"
                         }
                     }
                 }
@@ -1070,13 +1070,13 @@
         "rope000000000000": {
             "name": "Corde",
             "description": {
-                "public": "<p>Une corde en fibres végétales de 30 pieds de long, pouvant servir à faciliter l'escalade ou à de nombreuses autres fins.</p>"
+                "public": "<p>Une corde en fibres végétales de @[feet 30] de long, pouvant servir à faciliter l'escalade ou à de nombreuses autres fins.</p>"
             }
         },
         "ropeLadder000000": {
             "name": "Échelle de corde",
             "description": {
-                "public": "<p>Un système de 25 pieds de lattes de bois et de corde nouée liés ensemble, formant un dispositif d'escalade pratique. Fixé à une extrémité, il réduit considérablement les risques de chute.</p>"
+                "public": "<p>Un système de @[feet 25] de lattes de bois et de corde nouée liés ensemble, formant un dispositif d'escalade pratique. Fixé à une extrémité, il réduit considérablement les risques de chute.</p>"
             }
         },
         "roundShield00000": {
@@ -1272,7 +1272,7 @@
             "actions": {
                 "steelJawArm": {
                     "name": "Armer le piège à mâchoire de fer",
-                    "description": "<p>La mise en place de ce piège représente un péril important pouvant causer des dégâts considérables en cas de déclenchement. Il doit être fixé par une chaîne solide à un objet immobile, tel qu'un arbre ou un pieu enfoncé dans le sol. La zone du piège est un cercle de 2 pieds de rayon.</p>"
+                    "description": "<p>La mise en place de ce piège représente un péril important pouvant causer des dégâts considérables en cas de déclenchement. Il doit être fixé par une chaîne solide à un objet immobile, tel qu'un arbre ou un pieu enfoncé dans le sol. La zone du piège est un cercle de @[feet 2] de rayon.</p>"
                 },
                 "steelJawTrigger": {
                     "name": "Déclencher le piège à mâchoire de fer",

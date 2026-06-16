@@ -331,7 +331,7 @@
             "actions": {
                 "gliding": {
                     "name": "Planant",
-                    "description": "<p>Utilisé durant une @Condition[falling], vous pouvez vous déplacer latéralement d'un nombre d'espaces depuis votre position initiale en planant. La distance planée dépend du <strong>Palier</strong> de ce préfixe.</p><ul><li><p><strong>Palier 1 :</strong> <strong>1 pied</strong> par 20 pieds de descente.</p></li><li><p><strong>Palier 2 :</strong> <strong>2 pieds</strong> par 20 pieds de descente.</p></li><li><p><strong>Palier 3 :</strong> <strong>4 pieds</strong> par 20 pieds de descente.</p></li></ul><p>Vous ne subissez aucun dégât de chute à l'atterrissage, et n'êtes pas @Condition[prone].</p>"
+                    "description": "<p>Utilisé durant une @Condition[falling], vous pouvez vous déplacer latéralement d'un nombre d'espaces depuis votre position initiale en planant. La distance planée dépend du <strong>Palier</strong> de ce préfixe.</p><ul><li><p><strong>Palier 1 :</strong> <strong>@[feet 1]</strong> par @[feet 20] de descente.</p></li><li><p><strong>Palier 2 :</strong> <strong>@[feet 2]</strong> par @[feet 20] de descente.</p></li><li><p><strong>Palier 3 :</strong> <strong>@[feet 4]</strong> par @[feet 20] de descente.</p></li></ul><p>Vous ne subissez aucun dégât de chute à l'atterrissage, et n'êtes pas @Condition[prone].</p>"
                 }
             }
         },
@@ -407,7 +407,7 @@
             "actions": {
                 "affixLuminous": {
                     "name": "Activer l'illumination",
-                    "description": "<p>Vous prononcez le mot de commande et @ref[item.name]{l'objet} s'illumine d'une lueur stable et surnaturelle. Le rayon de lumière vive émise dépend du <strong>Palier</strong> de ce préfixe, avec un rayon supplémentaire de lumière tamisée s'étendant à une distance égale au-delà.</p><ul><li><p><strong>Palier 1 :</strong> 20 pieds de lumière vive, 40 pieds de lumière tamisée.</p></li><li><p><strong>Palier 2 :</strong> 40 pieds de lumière vive, 80 pieds de lumière tamisée.</p></li><li><p><strong>Palier 3 :</strong> 60 pieds de lumière vive, 120 pieds de lumière tamisée.</p></li></ul><p>La lumière persiste jusqu'à ce que vous désactiviez l'effet ou retiriez l'objet.</p>",
+                    "description": "<p>Vous prononcez le mot de commande et @ref[item.name]{l'objet} s'illumine d'une lueur stable et surnaturelle. Le rayon de lumière vive émise dépend du <strong>Palier</strong> de ce préfixe, avec un rayon supplémentaire de lumière tamisée s'étendant à une distance égale au-delà.</p><ul><li><p><strong>Palier 1 :</strong> @[feet 20] de lumière vive, @[feet 40] de lumière tamisée.</p></li><li><p><strong>Palier 2 :</strong> @[feet 40] de lumière vive, @[feet 80] de lumière tamisée.</p></li><li><p><strong>Palier 3 :</strong> @[feet 60] de lumière vive, @[feet 120] de lumière tamisée.</p></li></ul><p>La lumière persiste jusqu'à ce que vous désactiviez l'effet ou retiriez l'objet.</p>",
                     "effects": {
                         "Luminous": {
                             "name": "Lumineux"

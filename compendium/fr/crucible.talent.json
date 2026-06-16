@@ -75,7 +75,7 @@
             "actions": {
                 "alchemicalResolve": {
                     "name": "Détermination alchimique",
-                    "description": "<p>Vous remontez rapidement le Moral d'un allié à 4 pieds en projetant des vapeurs. Effectuez un Test de <strong>Médecine</strong> contre le <strong>seuil de Folie</strong> de la cible. Des réussites restaurent son <strong>Moral</strong>.</p>"
+                    "description": "<p>Vous remontez rapidement le Moral d'un allié à @[feet 4] en projetant des vapeurs. Effectuez un Test de <strong>Médecine</strong> contre le <strong>seuil de Folie</strong> de la cible. Des réussites restaurent son <strong>Moral</strong>.</p>"
                 }
             }
         },
@@ -94,7 +94,7 @@
                 "anticipateHarm": {
                     "name": "Anticipation du danger",
                     "condition": "Vous êtes ciblé par une attaque à zone d'effet, dont vous pouvez voir la source.",
-                    "description": "<p>Vous pouvez bouger de 4 pieds immédiatement après que la zone d'effet de l'attaque soit déclarée. Si ce déplacement vous permet de sortir de la zone de l'attaque, vous n'êtes pas affecté par celle-ci.</p>"
+                    "description": "<p>Vous pouvez bouger de @[feet 4] immédiatement après que la zone d'effet de l'attaque soit déclarée. Si ce déplacement vous permet de sortir de la zone de l'attaque, vous n'êtes pas affecté par celle-ci.</p>"
                 }
             }
         },
@@ -340,7 +340,7 @@
             "actions": {
                 "clarifyIntent": {
                     "name": "Clarifier l'intention",
-                    "description": "<p>Vous expliquez vos intentions à un allié dans un rayon de 12 pieds. Effectuez une attaque de compétence de <strong>Diplomatie</strong> contre le seuil de Folie de votre allié. Sur un succès, il gagne +1 <strong>Focus</strong> et +1 <strong>Faveur</strong> à ses actions du prochain Round.</p>",
+                    "description": "<p>Vous expliquez vos intentions à un allié dans un rayon de @[feet 12]. Effectuez une attaque de compétence de <strong>Diplomatie</strong> contre le seuil de Folie de votre allié. Sur un succès, il gagne +1 <strong>Focus</strong> et +1 <strong>Faveur</strong> à ses actions du prochain Round.</p>",
                     "effects": {
                         "Clarify Intent": {
                             "name": "Clarifier l'intention"
@@ -365,7 +365,7 @@
             "actions": {
                 "combatMedicine": {
                     "name": "Médecine de guerre",
-                    "description": "<p>Vous traitez rapidement les blessures d'un allié à 4 pieds. Effectuez un <strong>Test de Médecine</strong> contre le seuil de Lésions de la cible. La Santé de votre allié est augmentée du montant du jet dépassant le seuil.</p>"
+                    "description": "<p>Vous traitez rapidement les blessures d'un allié à @[feet 4]. Effectuez un <strong>Test de Médecine</strong> contre le seuil de Lésions de la cible. La Santé de votre allié est augmentée du montant du jet dépassant le seuil.</p>"
                 }
             }
         },
@@ -422,7 +422,7 @@
                 "counterspell": {
                     "name": "Contresort",
                     "condition": "Une autre créature que vous pouvez voir est en train de lancer un sort.",
-                    "description": "<p>Vous formez une énergie arcanique en une sorcellerie compensatrice, ciblant un lanceur de sort que vous pouvez voir à 30 pieds.</p><p>Désignez une <strong>Rune</strong> et un <strong>Signe</strong> que vous connaissez pour tenter de contrer le sort. Choisir une Rune opposée à celle utilisée par le sort offre <strong>+2 Faveurs</strong> à votre tentative. Sélectionner le même Signe que celui qui est en cours de lancement ajoute également <strong>+2 Faveurs</strong> à votre tentative.</p><p>Effectuez une Attaque de Sort inoffensive contre la défense de <strong>Volonté</strong> de votre cible. Si votre jet surpasse sa défense, le sort est contré et sa magie est annulée, ne produisant aucun effet.</p>"
+                    "description": "<p>Vous formez une énergie arcanique en une sorcellerie compensatrice, ciblant un lanceur de sort que vous pouvez voir à @[feet 30].</p><p>Désignez une <strong>Rune</strong> et un <strong>Signe</strong> que vous connaissez pour tenter de contrer le sort. Choisir une Rune opposée à celle utilisée par le sort offre <strong>+2 Faveurs</strong> à votre tentative. Sélectionner le même Signe que celui qui est en cours de lancement ajoute également <strong>+2 Faveurs</strong> à votre tentative.</p><p>Effectuez une Attaque de Sort inoffensive contre la défense de <strong>Volonté</strong> de votre cible. Si votre jet surpasse sa défense, le sort est contré et sa magie est annulée, ne produisant aucun effet.</p>"
                 }
             }
         },
@@ -551,7 +551,7 @@
             "actions": {
                 "distract": {
                     "name": "Distraire",
-                    "description": "<p>Vous effectuez une <strong>Attaque de Compétence</strong> basée sur la <strong>Duperie</strong> contre la défense de <strong>Volonté</strong> d'une cible à 30 pieds qui peut voir ou vous entendre. Sur un succès, la cible perd <strong>1 Focus</strong>.</p>"
+                    "description": "<p>Vous effectuez une <strong>Attaque de Compétence</strong> basée sur la <strong>Duperie</strong> contre la défense de <strong>Volonté</strong> d'une cible à @[feet 30] qui peut voir ou vous entendre. Sur un succès, la cible perd <strong>1 Focus</strong>.</p>"
                 }
             }
         },
@@ -561,7 +561,7 @@
             "actions": {
                 "formidablePresence": {
                     "name": "Présence formidable",
-                    "description": "<p>Vous effectuez une attaque de compétence d'Intimidation contre la défense de Volonté d'ennemis dans un rayon de 12 pieds, infligeant des dégâts de Vide au Moral et causant la condition Paniqué pendant 1 Round à ceux dont vous surpassez la défense.</p>",
+                    "description": "<p>Vous effectuez une attaque de compétence d'Intimidation contre la défense de Volonté d'ennemis dans un rayon de @[feet 12], infligeant des dégâts de Vide au Moral et causant la condition Paniqué pendant 1 Round à ceux dont vous surpassez la défense.</p>",
                     "effects": {
                         "Formidable Presence": {
                             "name": "Présence formidable"
@@ -646,7 +646,7 @@
             "actions": {
                 "fanOfArrows": {
                     "name": "Déluge de flèches",
-                    "description": "<p>Vous tirez plusieurs projectiles dans un arc de cercle avec votre arme à distance, frappant toutes les cibles ennemies dans un cône de 40 pieds.</p>"
+                    "description": "<p>Vous tirez plusieurs projectiles dans un arc de cercle avec votre arme à distance, frappant toutes les cibles ennemies dans un cône de @[feet 40].</p>"
                 }
             }
         },
@@ -666,7 +666,7 @@
             "actions": {
                 "ferociousLeap": {
                     "name": "Bond féroce",
-                    "description": "<p>Vous bondissez sur 10 pieds et effectuez une Frappe de mêlée contre un ennemi à portée de votre point de chute. Votre déplacement ignore les terrains difficiles et n'est pas bloqué par des créatures ennemies.</p>"
+                    "description": "<p>Vous bondissez sur @[feet 10] et effectuez une Frappe de mêlée contre un ennemi à portée de votre point de chute. Votre déplacement ignore les terrains difficiles et n'est pas bloqué par des créatures ennemies.</p>"
                 }
             }
         },
@@ -723,7 +723,7 @@
             "actions": {
                 "flyingKick": {
                     "name": "Coup de pied volant",
-                    "description": "<p>Vous vous <strong>Déplacez</strong> en ligne droite d'au moins 3 pieds jusqu'à votre valeur de foulée pour donner un coup de pied à un ennemi avec une <strong>Frappe</strong> améliorée.</p>"
+                    "description": "<p>Vous vous <strong>Déplacez</strong> en ligne droite d'au moins @[feet 3] jusqu'à votre valeur de foulée pour donner un coup de pied à un ennemi avec une <strong>Frappe</strong> améliorée.</p>"
                 }
             }
         },
@@ -748,7 +748,7 @@
         },
         "gesturearrow0000": {
             "name": "Signe : Flèche",
-            "description": "<p>Vous lancez un projectile imprégné du pouvoir magique d'une Rune sur une cible distante.</p><p>Le signe de Flèche évolue avec l'<strong>Intellect</strong> et cible une créature unique jusqu'à une distance de 60 pieds, infligeant <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
+            "description": "<p>Vous lancez un projectile imprégné du pouvoir magique d'une Rune sur une cible distante.</p><p>Le signe de Flèche évolue avec l'<strong>Intellect</strong> et cible une créature unique jusqu'à une distance de @[feet 60], infligeant <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
         },
         "gestureaspect000": {
             "name": "Signe : Aspect",
@@ -756,27 +756,27 @@
         },
         "gestureAura00000": {
             "name": "Signe : Aura",
-            "description": "<p>Vous concentrez le pouvoir arcanique d'une Rune pour créer un champ d'énergie maintenu qui baigne les alliés et ennemis proches de vous.</p><p>Le signe d'Aura évolue avec la <strong>Présence</strong> et produit une émanation de 20 pieds de rayon centrée sur le lanceur de sorts. Le centre de cette Aura se déplace avec le lanceur.</p><p>Selon la Rune utilisée, l'Aura inflige des dégâts ou fournit des soins à toute créature qui commence son tour à l'intérieur de l'Aura. Ce signe nécessite <strong>2 Mains</strong> pour être lancé, a un coût de base de <strong>5 Actions</strong> et <strong>1 Focus</strong>, et doit être <strong>Maintenu</strong> coûtant <strong>1 Focus</strong> supplémentaire chaque round suivant.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent est actuellement placé au <strong>palier 4</strong>. Il ne sera accessible qu'à un niveau supérieur (probablement le niveau 6). Il est actuellement disponible en avant-première pour les tests.</p><p>Les modèles d'émanation liés au token et se déplaçant avec lui sont une fonctionnalité qui sera disponible dans la version 14 de Foundry VTT. L'automatisation du Signe d'Aura sera mise en place lorsque Crucible dépendra de la version 14 de Foundry VTT.</p>"
+            "description": "<p>Vous concentrez le pouvoir arcanique d'une Rune pour créer un champ d'énergie maintenu qui baigne les alliés et ennemis proches de vous.</p><p>Le signe d'Aura évolue avec la <strong>Présence</strong> et produit une émanation de @[feet 20] de rayon centrée sur le lanceur de sorts. Le centre de cette Aura se déplace avec le lanceur.</p><p>Selon la Rune utilisée, l'Aura inflige des dégâts ou fournit des soins à toute créature qui commence son tour à l'intérieur de l'Aura. Ce signe nécessite <strong>2 Mains</strong> pour être lancé, a un coût de base de <strong>5 Actions</strong> et <strong>1 Focus</strong>, et doit être <strong>Maintenu</strong> coûtant <strong>1 Focus</strong> supplémentaire chaque round suivant.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent est actuellement placé au <strong>palier 4</strong>. Il ne sera accessible qu'à un niveau supérieur (probablement le niveau 6). Il est actuellement disponible en avant-première pour les tests.</p><p>Les modèles d'émanation liés au token et se déplaçant avec lui sont une fonctionnalité qui sera disponible dans la version 14 de Foundry VTT. L'automatisation du Signe d'Aura sera mise en place lorsque Crucible dépendra de la version 14 de Foundry VTT.</p>"
         },
         "gestureBlast0000": {
             "name": "Signe : Explosion",
-            "description": "<p>Vous projetez la puissance arcanique d'une Rune en une intense explosion d'énergie vers un point proche que vous pouvez voir.</p><p>Le signe d'Explosion évolue avec l'<strong>Intellect</strong> et produit une explosion de 6 pieds de rayon centrée sur un point à moins de 60 pieds du lanceur. L'explosion inflige <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>5 Actions</strong> et <strong>2 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent est actuellement placé au <strong>palier 4</strong>. Il ne sera accessible qu'à un niveau supérieur (probablement le Niveau 6). Il est actuellement disponible en avant-première pour les tests.</p>"
+            "description": "<p>Vous projetez la puissance arcanique d'une Rune en une intense explosion d'énergie vers un point proche que vous pouvez voir.</p><p>Le signe d'Explosion évolue avec l'<strong>Intellect</strong> et produit une explosion de @[feet 6] de rayon centrée sur un point à moins de @[feet 60] du lanceur. L'explosion inflige <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>5 Actions</strong> et <strong>2 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent est actuellement placé au <strong>palier 4</strong>. Il ne sera accessible qu'à un niveau supérieur (probablement le Niveau 6). Il est actuellement disponible en avant-première pour les tests.</p>"
         },
         "gestureCone00000": {
             "name": "Signe : Cône",
-            "description": "<p>Vous concentrez la puissance arcanique d'une Rune en un cône étroit qui se projette vers l'extérieur depuis votre position.</p><p>Le signe Cône évolue avec l'<strong>Intellect</strong> et produit un cône de 60 degrés avec un rayon de 30 pieds partant du lanceur. Le Cône inflige <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>5 Actions</strong> et <strong>2 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent est actuellement placé au <strong>palier 4</strong> . Il ne sera accessible qu'à un niveau supérieur (probablement le Niveau 6). Il est actuellement disponible en avant-première pour les tests.</p>"
+            "description": "<p>Vous concentrez la puissance arcanique d'une Rune en un cône étroit qui se projette vers l'extérieur depuis votre position.</p><p>Le signe Cône évolue avec l'<strong>Intellect</strong> et produit un cône de 60 degrés avec un rayon de @[feet 30] partant du lanceur. Le Cône inflige <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>5 Actions</strong> et <strong>2 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent est actuellement placé au <strong>palier 4</strong> . Il ne sera accessible qu'à un niveau supérieur (probablement le Niveau 6). Il est actuellement disponible en avant-première pour les tests.</p>"
         },
         "gestureConjure00": {
             "name": "Signe : Conjuration",
-            "description": "<p>Vous coalescez la puissance arcanique en une forme supérieure, manifestant un <strong>Visiteur</strong> qui apparaît dans les 30 pieds et rejoint le Combat avec une <strong>Initiative</strong> de 1. Votre Visiteur est un Minion de niveau égal au vôtre.</p><p>Le signe de Conjuration évolue avec la <strong>Sagesse</strong> et le Visiteur survit pendant <strong>12 Rounds</strong>. Vous ne pouvez avoir qu'un seul Visiteur actif. Lancer un autre sort utilisant le signe de Conjuration remplace votre Visiteur précédent. Ce signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>5 Actions</strong> et <strong>2 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent est actuellement placé au <strong>palier 4</strong>. Il ne sera accessible qu'à un niveau supérieur (probablement le Niveau 6). Il est actuellement disponible en avant-première pour les tests.</p><p>Toutes les Runes n'ont pas encore d'acteur Visiteur défini. Les Runes qui n'ont pas encore de Conjuration définie manifesteront – pour l'instant – un <strong>Visiteur de Flamme</strong>.</p>"
+            "description": "<p>Vous coalescez la puissance arcanique en une forme supérieure, manifestant un <strong>Visiteur</strong> qui apparaît dans les @[feet 30] et rejoint le Combat avec une <strong>Initiative</strong> de 1. Votre Visiteur est un Minion de niveau égal au vôtre.</p><p>Le signe de Conjuration évolue avec la <strong>Sagesse</strong> et le Visiteur survit pendant <strong>12 Rounds</strong>. Vous ne pouvez avoir qu'un seul Visiteur actif. Lancer un autre sort utilisant le signe de Conjuration remplace votre Visiteur précédent. Ce signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>5 Actions</strong> et <strong>2 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent est actuellement placé au <strong>palier 4</strong>. Il ne sera accessible qu'à un niveau supérieur (probablement le Niveau 6). Il est actuellement disponible en avant-première pour les tests.</p><p>Toutes les Runes n'ont pas encore d'acteur Visiteur défini. Les Runes qui n'ont pas encore de Conjuration définie manifesteront – pour l'instant – un <strong>Visiteur de Flamme</strong>.</p>"
         },
         "gesturecreate000": {
             "name": "Signe : Création",
-            "description": "<p>Vous coalescez la puissance arcanique en forme tangible, manifestant un <strong>Lutin</strong> qui apparaît dans les 10 pieds et rejoint le Combat avec une Initiative de 1. Votre Lutin est un <strong>Minion</strong> de la moitié de votre propre Niveau.</p><p>Le signe de Création évolue avec la <strong>Sagesse</strong> et le Lutin survit pendant <strong>6 Rounds</strong>. Vous ne pouvez avoir qu'un seul Lutin actif, lancer un autre sort utilisant le signe de Création remplace votre Lutin précédent. Ce signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>4 Actions</strong> et <strong>1 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Toutes les Runes n'ont pas encore d'acteur Lutin défini. Les Runes qui n'ont pas encore de Création définie manifesteront – pour l'instant – un <strong>Lutin de Flamme</strong>.</p>"
+            "description": "<p>Vous coalescez la puissance arcanique en forme tangible, manifestant un <strong>Lutin</strong> qui apparaît dans les @[feet 10] et rejoint le Combat avec une Initiative de 1. Votre Lutin est un <strong>Minion</strong> de la moitié de votre propre Niveau.</p><p>Le signe de Création évolue avec la <strong>Sagesse</strong> et le Lutin survit pendant <strong>6 Rounds</strong>. Vous ne pouvez avoir qu'un seul Lutin actif, lancer un autre sort utilisant le signe de Création remplace votre Lutin précédent. Ce signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>4 Actions</strong> et <strong>1 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Toutes les Runes n'ont pas encore d'acteur Lutin défini. Les Runes qui n'ont pas encore de Création définie manifesteront – pour l'instant – un <strong>Lutin de Flamme</strong>.</p>"
         },
         "gesturefan000000": {
             "name": "Signe : Éventail",
-            "description": "<p>Vous façonnez l'essence d'une Rune en un arc de cercle balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate.</p><p>Le signe Éventail évolue avec l'<strong>Intellect</strong> et cible un arc de 120 degrés avec un rayon de 6 pieds. Il inflige <strong>6 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
+            "description": "<p>Vous façonnez l'essence d'une Rune en un arc de cercle balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate.</p><p>Le signe Éventail évolue avec l'<strong>Intellect</strong> et cible un arc de 120 degrés avec un rayon de @[feet 6]. Il inflige <strong>6 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p>"
         },
         "gestureinfluence": {
             "name": "Signe : Influence",
@@ -784,19 +784,19 @@
         },
         "gesturepulse0000": {
             "name": "Signe : Onde",
-            "description": "<p>Expulsez la puissance arcanique d'une Rune dans un rayon qui se propage vers l'extérieur avec vous en son centre.</p><p>Le signe d'Onde évolue avec la <strong>Présence</strong> et produit une émanation de 10 pieds de rayon, infligeant <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Le signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>5 Actions</strong> et <strong>2 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent est actuellement placé au <strong>palier 4</strong>. Il ne sera accessible qu'à un niveau supérieur (probablement le Niveau 6). Il est actuellement disponible en avant-première pour les tests.</p>"
+            "description": "<p>Expulsez la puissance arcanique d'une Rune dans un rayon qui se propage vers l'extérieur avec vous en son centre.</p><p>Le signe d'Onde évolue avec la <strong>Présence</strong> et produit une émanation de @[feet 10] de rayon, infligeant <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Le signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>5 Actions</strong> et <strong>2 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent est actuellement placé au <strong>palier 4</strong>. Il ne sera accessible qu'à un niveau supérieur (probablement le Niveau 6). Il est actuellement disponible en avant-première pour les tests.</p>"
         },
         "gestureray000000": {
             "name": "Signe : Rayon",
-            "description": "<p>Vous canalisez la puissance arcanique d'une Rune en un point et la projetez vers l'extérieur en un faisceau.</p><p>Le signe de Rayon évolue avec la <strong>Sagesse</strong> et produit une ligne de 1 pied de large et 30 pieds de long partant du lanceur, infligeant <strong>6 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Le signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>4 Actions</strong> et <strong>1 Focus</strong>.</p>"
+            "description": "<p>Vous canalisez la puissance arcanique d'une Rune en un point et la projetez vers l'extérieur en un faisceau.</p><p>Le signe de Rayon évolue avec la <strong>Sagesse</strong> et produit une ligne de @[feet 1] de large et @[feet 30] de long partant du lanceur, infligeant <strong>6 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Le signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>4 Actions</strong> et <strong>1 Focus</strong>.</p>"
         },
         "gestureSense0000": {
             "name": "Signe : Résonance",
-            "description": "<p>Vous harmonisez votre esprit avec la puissance arcanique d'une Rune pour sentir les sources d'énergie proches.</p><p>Le signe de Résonance évolue avec la <strong>Présence</strong> et produit une émanation de 30 pieds de rayon dont la position reste centrée sur le lanceur. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>. Il peut optionnellement être <strong>Maintenu</strong> au coût supplémentaire de <strong>1 Focus</strong> chaque round suivant.</p><p>Ce sort permet au lanceur de détecter la présence de sorcellerie utilisant la même Rune que celle incorporée dans ce sort. La Résonance détectera aussi momentanément la présence de créatures selon leur type.</p><ul><li><p><strong>Contrôle</strong> : Fiélons</p></li><li><p><strong>Mort</strong> : Morts-vivants</p></li><li><p><strong>Terre</strong> : Vases et Élémentaires de terre</p></li><li><p><strong>Flamme</strong> : Dragons et Élémentaires de feu</p></li><li><p><strong>Givre</strong> : Géants et Élémentaires de givre</p></li><li><p><strong>Illumination</strong> : Célestes</p></li><li><p><strong>Illusion</strong> : Fées</p></li><li><p><strong>Kinésie</strong> : Monstruosités</p></li><li><p><strong>Vie</strong> : Plantes et Bêtes</p></li><li><p><strong>Orage</strong> : Artificiels et Élémentaires de tempête</p></li><li><p><strong>Néant</strong> : Extérieurs</p></li><li><p><strong>Âme</strong> : Humanoïdes</p></li></ul>"
+            "description": "<p>Vous harmonisez votre esprit avec la puissance arcanique d'une Rune pour sentir les sources d'énergie proches.</p><p>Le signe de Résonance évolue avec la <strong>Présence</strong> et produit une émanation de @[feet 30] de rayon dont la position reste centrée sur le lanceur. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>. Il peut optionnellement être <strong>Maintenu</strong> au coût supplémentaire de <strong>1 Focus</strong> chaque round suivant.</p><p>Ce sort permet au lanceur de détecter la présence de sorcellerie utilisant la même Rune que celle incorporée dans ce sort. La Résonance détectera aussi momentanément la présence de créatures selon leur type.</p><ul><li><p><strong>Contrôle</strong> : Fiélons</p></li><li><p><strong>Mort</strong> : Morts-vivants</p></li><li><p><strong>Terre</strong> : Vases et Élémentaires de terre</p></li><li><p><strong>Flamme</strong> : Dragons et Élémentaires de feu</p></li><li><p><strong>Givre</strong> : Géants et Élémentaires de givre</p></li><li><p><strong>Illumination</strong> : Célestes</p></li><li><p><strong>Illusion</strong> : Fées</p></li><li><p><strong>Kinésie</strong> : Monstruosités</p></li><li><p><strong>Vie</strong> : Plantes et Bêtes</p></li><li><p><strong>Orage</strong> : Artificiels et Élémentaires de tempête</p></li><li><p><strong>Néant</strong> : Extérieurs</p></li><li><p><strong>Âme</strong> : Humanoïdes</p></li></ul>"
         },
         "gesturestep00000": {
             "name": "Signe : Charge",
-            "description": "<p>Vous infusez le pouvoir runique dans un mouvement, traversant les frontières physiques et spatiales.</p><p>Le signe de Charge évolue avec la <strong>Dextérité</strong> et vous permet de vous déplacer jusqu'à 20 pieds sur une ligne droite de largeur égale à votre <strong>Taille</strong>. Il inflige <strong>2 Dégâts de Base</strong> aux cibles le long de cette ligne qui échouent à Résister au sort. Ce signe ne nécessite aucune main libre pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>L'aspect déplacement de ce talent n'est pas encore automatisé et doit être effectué manuellement en conséquence du sort.</p>"
+            "description": "<p>Vous infusez le pouvoir runique dans un mouvement, traversant les frontières physiques et spatiales.</p><p>Le signe de Charge évolue avec la <strong>Dextérité</strong> et vous permet de vous déplacer jusqu'à @[feet 20] sur une ligne droite de largeur égale à votre <strong>Taille</strong>. Il inflige <strong>2 Dégâts de Base</strong> aux cibles le long de cette ligne qui échouent à Résister au sort. Ce signe ne nécessite aucune main libre pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>L'aspect déplacement de ce talent n'est pas encore automatisé et doit être effectué manuellement en conséquence du sort.</p>"
         },
         "gesturestrike000": {
             "name": "Signe : Frappe",
@@ -804,7 +804,7 @@
         },
         "gestureSurge0000": {
             "name": "Signe : Afflux",
-            "description": "<p>Vous canalisez la puissance arcanique d'une Rune en une vague déferlante d'énergie qui se précipite vers l'avant depuis votre position actuelle.</p><p>Le signe d'Afflux évolue avec la <strong>Sagesse</strong> et produit une ligne de 10 pieds de large et 15 pieds de long partant du lanceur, infligeant <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Le signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>5 Actions</strong> et <strong>2 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent est actuellement placé au <strong>palier 4</strong>. Il ne sera accessible qu'à un niveau supérieur (probablement le Niveau 6). Il est actuellement disponible en avant-première pour les tests.</p>"
+            "description": "<p>Vous canalisez la puissance arcanique d'une Rune en une vague déferlante d'énergie qui se précipite vers l'avant depuis votre position actuelle.</p><p>Le signe d'Afflux évolue avec la <strong>Sagesse</strong> et produit une ligne de @[feet 10] de large et @[feet 15] de long partant du lanceur, infligeant <strong>8 Dégâts de Base</strong> aux cibles qui échouent à Résister au sort. Le signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>5 Actions</strong> et <strong>2 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent est actuellement placé au <strong>palier 4</strong>. Il ne sera accessible qu'à un niveau supérieur (probablement le Niveau 6). Il est actuellement disponible en avant-première pour les tests.</p>"
         },
         "gestureward00000": {
             "name": "Signe : Protection",
@@ -858,7 +858,7 @@
             "actions": {
                 "fontOfLife": {
                     "name": "Fonts de vie",
-                    "description": "<p>Vous faites naître une aura magique donneuse de vie. Immédiatement après l'activation et au début de votre tour pour une duré de <strong>3 Rounds</strong>, chaque allié dans un rayon de 20 pieds est soigné d'un montant égal à votre score de <strong>Sagesse</strong>.</p><p><strong>En cours de développement : Cette action est actuellement considérée comme une zone d'effet, conférant des soins progressifs aux cibles dans la portée initiale. Lorsque les auras seront automatisées par le système dans Foundry VTT version 14, l'implémentation mécanique de cette action correspondra à la description.</strong></p>",
+                    "description": "<p>Vous faites naître une aura magique donneuse de vie. Immédiatement après l'activation et au début de votre tour pour une duré de <strong>3 Rounds</strong>, chaque allié dans un rayon de @[feet 20] est soigné d'un montant égal à votre score de <strong>Sagesse</strong>.</p><p><strong>En cours de développement : Cette action est actuellement considérée comme une zone d'effet, conférant des soins progressifs aux cibles dans la portée initiale. Lorsque les auras seront automatisées par le système dans Foundry VTT version 14, l'implémentation mécanique de cette action correspondra à la description.</strong></p>",
                     "effects": {
                         "Font of Life": {
                             "name": "Fonts de vie"
@@ -951,7 +951,7 @@
             "actions": {
                 "abjure": {
                     "name": "Abjurer",
-                    "description": "<p>Vous opposez votre volonté entraînée à la sorcellerie hostile, brisant son emprise sur vous et vos alliés proches. Pour vous-même et chaque allié situé à moins de 12 pieds souffrant d'un état magique infligé par un ennemi, effectuez un test d'<strong>Arcane</strong> contre le <strong>DD de suppression</strong> le plus bas parmi les états qui les affligent. Chaque état dont votre résultat dépasse le DD de suppression est retiré.</p>"
+                    "description": "<p>Vous opposez votre volonté entraînée à la sorcellerie hostile, brisant son emprise sur vous et vos alliés proches. Pour vous-même et chaque allié situé à moins de @[feet 12] souffrant d'un état magique infligé par un ennemi, effectuez un test d'<strong>Arcane</strong> contre le <strong>DD de suppression</strong> le plus bas parmi les états qui les affligent. Chaque état dont votre résultat dépasse le DD de suppression est retiré.</p>"
                 }
             }
         },
@@ -965,7 +965,7 @@
             "actions": {
                 "inspireHeroism": {
                     "name": "Inspirer l'Héroïsme",
-                    "description": "<p>Chaque allié, en vous excluant, dans un rayon de <strong>10 Pieds</strong> gagne <strong>+1 Faveur</strong> aux actions effectuées jusqu'à la fin de son prochain Tour.</p>",
+                    "description": "<p>Chaque allié, en vous excluant, dans un rayon de <strong>@[feet 10]</strong> gagne <strong>+1 Faveur</strong> aux actions effectuées jusqu'à la fin de son prochain Tour.</p>",
                     "effects": {
                         "Inspire Heroism": {
                             "name": "Inspirer l'Héroïsme"
@@ -1134,7 +1134,7 @@
             "actions": {
                 "lunge": {
                     "name": "Fente",
-                    "description": "<p>Vous vous élancez avec agilité, portant un coup d'une rapidité soudaine et inattendue pour effectuer une <strong>Frappe</strong> avec une arme basée sur la <strong>Dextérité</strong> contre une cible unique, à une portée accrue de <strong>+2 pieds</strong>.</p><p>L'attaque est <strong>Difficile</strong>, mais vous ne quittez pas votre position actuelle et elle ne provoque pas de Désengagement.</p>"
+                    "description": "<p>Vous vous élancez avec agilité, portant un coup d'une rapidité soudaine et inattendue pour effectuer une <strong>Frappe</strong> avec une arme basée sur la <strong>Dextérité</strong> contre une cible unique, à une portée accrue de <strong>+@[feet 2]</strong>.</p><p>L'attaque est <strong>Difficile</strong>, mais vous ne quittez pas votre position actuelle et elle ne provoque pas de Désengagement.</p>"
                 }
             }
         },
@@ -1439,7 +1439,7 @@
             "actions": {
                 "rallyingCry": {
                     "name": "Cri de ralliement",
-                    "description": "<p>Vous émettez un hurlement de courage qui inspire vos alliés dans un rayon de 12 pieds à rester inébranlables face au danger. Tous les alliés à portée récupèrent immédiatement votre score de <strong>Présence</strong> en <strong>Moral</strong> et deviennent @Condition[resolute] pendant 3 rounds.</p>",
+                    "description": "<p>Vous émettez un hurlement de courage qui inspire vos alliés dans un rayon de @[feet 12] à rester inébranlables face au danger. Tous les alliés à portée récupèrent immédiatement votre score de <strong>Présence</strong> en <strong>Moral</strong> et deviennent @Condition[resolute] pendant 3 rounds.</p>",
                     "effects": {
                         "Rallying Cry": {
                             "name": "Cri de ralliement"
@@ -1450,7 +1450,7 @@
         },
         "recognizespellcr": {
             "name": "Reconnaître la Sorcellerie",
-            "description": "<p>Vous pouvez interpréter les incantations arcaniques des autres pour discerner la nature de leur sorcellerie. Lorsqu'un ennemi que vous pouvez voir et entendre dans les 40 pieds commence à lancer un sort, vous pouvez identifier sa Rune si vous connaissez aussi cette Rune.</p>"
+            "description": "<p>Vous pouvez interpréter les incantations arcaniques des autres pour discerner la nature de leur sorcellerie. Lorsqu'un ennemi que vous pouvez voir et entendre dans les @[feet 40] commence à lancer un sort, vous pouvez identifier sa Rune si vous connaissez aussi cette Rune.</p>"
         },
         "repercussiveBloc": {
             "name": "Blocage répercutant",
@@ -1487,7 +1487,7 @@
             "actions": {
                 "ennervate": {
                     "name": "Affaiblir",
-                    "description": "<p>Votre maîtrise de la Rune de Mort permet une communion basique avec les morts et une manipulation rudimentaire des forces impies, produisant l'un des effets suivants :</p><ul><li><p>Répandre la corruption sur un objet qui n'est pas plus large qu'un cube de 1 pied d'arête, provoquant le flétrissement des plantes, la rouille des objets métalliques, la pourriture du bois, la détérioration des aliments ou la décomposition rapide d'un cadavre. Les objets magiques ne sont généralement pas affectés.</p></li><li><p>Faire en sorte qu'un cadavre mort depuis moins de sept jours ou autrement conservé exécute une reconstitution de ses derniers instants. Ses mouvements imitent ceux qui se sont produits durant les 30 dernières secondes de la vie de la créature. Vous n'avez aucun contrôle sur la créature et elle ne peut communiquer d'aucune autre manière.</p></li><li><p>Hâter la mort d'une créature consentante qui est en train de mourir, en lui offrant un décès rapide et paisible.</p></li></ul><p>Affaiblir ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
+                    "description": "<p>Votre maîtrise de la Rune de Mort permet une communion basique avec les morts et une manipulation rudimentaire des forces impies, produisant l'un des effets suivants :</p><ul><li><p>Répandre la corruption sur un objet qui n'est pas plus large qu'un cube de @[feet 1] d'arête, provoquant le flétrissement des plantes, la rouille des objets métalliques, la pourriture du bois, la détérioration des aliments ou la décomposition rapide d'un cadavre. Les objets magiques ne sont généralement pas affectés.</p></li><li><p>Faire en sorte qu'un cadavre mort depuis moins de sept jours ou autrement conservé exécute une reconstitution de ses derniers instants. Ses mouvements imitent ceux qui se sont produits durant les 30 dernières secondes de la vie de la créature. Vous n'avez aucun contrôle sur la créature et elle ne peut communiquer d'aucune autre manière.</p></li><li><p>Hâter la mort d'une créature consentante qui est en train de mourir, en lui offrant un décès rapide et paisible.</p></li></ul><p>Affaiblir ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
                 }
             }
         },
@@ -1527,7 +1527,7 @@
             "actions": {
                 "reveal": {
                     "name": "Révéler",
-                    "description": "<p>Votre maîtrise de la Rune d'Illumination vous permet de créer de la lumière et d'exercer un contrôle basique sur sa radiance, produisant l'un des effets suivants :</p><ul><li><p>Créer une boule de lumière appelée \"astre\" qui diffuse une lumière vive dans un rayon de 20 pieds et une lumière tamisée dans un rayon de 40 pieds. La lumière peut léviter à votre côté, être fixée sur un objet ou une surface, ou être envoyée à une distance de 30 pieds. Vous pouvez congédier votre astre à tout moment et ne pouvez avoir qu'un seul astre à la fois, relancer ce sort cause la disparition de votre astre précédent.</p></li><li><p>Inscrire jusqu'à 200 mots de texte invisible sur du papier comme un parchemin, une page ou un livre. Le texte est écrit à partir de la lumière elle-même et invisible à la détection non magique. Il peut être rendu visible par vous-même ou par une autre personne en utilisant ce sort combiné à la prononciation d'une phrase secrète que vous définissez au moment de l'inscription.</p></li><li><p>Toucher un objet physique qui émet une lumière tamisée, pour lui faire émettre une lumière vive tant que vous gardez le contact physique. Une seule source lumineuse peut être intensifiée de cette manière à un moment donné.</p></li></ul><p>Révéler ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
+                    "description": "<p>Votre maîtrise de la Rune d'Illumination vous permet de créer de la lumière et d'exercer un contrôle basique sur sa radiance, produisant l'un des effets suivants :</p><ul><li><p>Créer une boule de lumière appelée \"astre\" qui diffuse une lumière vive dans un rayon de @[feet 20] et une lumière tamisée dans un rayon de @[feet 40]. La lumière peut léviter à votre côté, être fixée sur un objet ou une surface, ou être envoyée à une distance de @[feet 30]. Vous pouvez congédier votre astre à tout moment et ne pouvez avoir qu'un seul astre à la fois, relancer ce sort cause la disparition de votre astre précédent.</p></li><li><p>Inscrire jusqu'à 200 mots de texte invisible sur du papier comme un parchemin, une page ou un livre. Le texte est écrit à partir de la lumière elle-même et invisible à la détection non magique. Il peut être rendu visible par vous-même ou par une autre personne en utilisant ce sort combiné à la prononciation d'une phrase secrète que vous définissez au moment de l'inscription.</p></li><li><p>Toucher un objet physique qui émet une lumière tamisée, pour lui faire émettre une lumière vive tant que vous gardez le contact physique. Une seule source lumineuse peut être intensifiée de cette manière à un moment donné.</p></li></ul><p>Révéler ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
                 }
             }
         },
@@ -1537,7 +1537,7 @@
             "actions": {
                 "seeming": {
                     "name": "Apparence trompeuse",
-                    "description": "<p>Votre maîtrise de la Rune d'Illusion vous permet de créer des illusions d'optique de diverses manières simples et de manipuler l'ombre et la lumière pour créer une distraction ou un divertissement, produisant l'un des effets suivants :</p><ul><li><p>Modifier un unique aspect de votre apparence physique. Ces modifications pourraient inclure le changement de la tonalité de votre voix, la modification de la couleur de vos yeux, l'apparition de cornes illusoires, ou le fait de paraître légèrement plus grand ou plus petit. L'altération persiste jusqu'à votre Repos ou que vous décidiez d'une modification différente et peut être découverte comme illusoire par une inspection physique.</p></li><li><p>Recréer de manière convaincante un son bref ou une odeur unique dont vous vous souvenez clairement. L'illusion provient de votre position et dure 10 secondes. Vous pouvez contrôler le volume du son ou l'odeur du parfum pour être perceptible à une portée de 60 pieds ou moins.</p></li><li><p>Dissocier votre ombre de votre forme, en contrôlant spécifiquement ses mouvements indépendamment des vôtres. Vous pouvez maintenir cette illusion tant que vous n'effectuez aucune autre action qui consume du <strong>Focus</strong>.</p></li></ul><p>Apparence trompeuse ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
+                    "description": "<p>Votre maîtrise de la Rune d'Illusion vous permet de créer des illusions d'optique de diverses manières simples et de manipuler l'ombre et la lumière pour créer une distraction ou un divertissement, produisant l'un des effets suivants :</p><ul><li><p>Modifier un unique aspect de votre apparence physique. Ces modifications pourraient inclure le changement de la tonalité de votre voix, la modification de la couleur de vos yeux, l'apparition de cornes illusoires, ou le fait de paraître légèrement plus grand ou plus petit. L'altération persiste jusqu'à votre Repos ou que vous décidiez d'une modification différente et peut être découverte comme illusoire par une inspection physique.</p></li><li><p>Recréer de manière convaincante un son bref ou une odeur unique dont vous vous souvenez clairement. L'illusion provient de votre position et dure 10 secondes. Vous pouvez contrôler le volume du son ou l'odeur du parfum pour être perceptible à une portée de @[feet 60] ou moins.</p></li><li><p>Dissocier votre ombre de votre forme, en contrôlant spécifiquement ses mouvements indépendamment des vôtres. Vous pouvez maintenir cette illusion tant que vous n'effectuez aucune autre action qui consume du <strong>Focus</strong>.</p></li></ul><p>Apparence trompeuse ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
                 }
             }
         },
@@ -1547,7 +1547,7 @@
             "actions": {
                 "propel": {
                     "name": "Propulser",
-                    "description": "<p>Votre maîtrise de la Rune de Kinésie vous permet d'exercer un contrôle local sur les forces gravitationnelles pour effectuer des manipulations télékinésiques de base, produisant l'un des effets suivants :</p><ul><li><p>Tirer vers vous un objet non fixé, d'un poids n'excédant pas 1 livre, situé à moins de 15 pieds et l'attraper. Un objet équipé ou possédé par une créature n'est jamais considéré comme non fixé, à moins que la créature soit disposée à le libérer.</p></li><li><p>Projeter un objet que vous tenez et dont le poids ne dépasse pas 1 livre vers une cible située à une distance maximale de 30 pieds. L'objet vole infailliblement en ligne droite vers cette cible à une vitesse modérée. Toute créature se trouvant sur la trajectoire de l'objet peut réagir pour l'attraper si elle a une main libre pour le faire.</p></li><li><p>Faire léviter un objet ou une créature consentante que vous touchez dont le poids est inférieur ou égal à 10 fois votre <strong>Presence</strong>, modifiant sa position jusqu'à 20 pieds dans n'importe quelle direction par rapport à son emplacement d'origine. Vous pouvez maintenir cette lévitation indéfiniment tant que vous ne faites pas d'autre Action et n'êtes pas @Condition[incapacitated].</p></li></ul><p>Propulser ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement à moins que cela ne soit autrement spécifié. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
+                    "description": "<p>Votre maîtrise de la Rune de Kinésie vous permet d'exercer un contrôle local sur les forces gravitationnelles pour effectuer des manipulations télékinésiques de base, produisant l'un des effets suivants :</p><ul><li><p>Tirer vers vous un objet non fixé, d'un poids n'excédant pas 1 livre, situé à moins de @[feet 15] et l'attraper. Un objet équipé ou possédé par une créature n'est jamais considéré comme non fixé, à moins que la créature soit disposée à le libérer.</p></li><li><p>Projeter un objet que vous tenez et dont le poids ne dépasse pas 1 livre vers une cible située à une distance maximale de @[feet 30]. L'objet vole infailliblement en ligne droite vers cette cible à une vitesse modérée. Toute créature se trouvant sur la trajectoire de l'objet peut réagir pour l'attraper si elle a une main libre pour le faire.</p></li><li><p>Faire léviter un objet ou une créature consentante que vous touchez dont le poids est inférieur ou égal à 10 fois votre <strong>Presence</strong>, modifiant sa position jusqu'à @[feet 20] dans n'importe quelle direction par rapport à son emplacement d'origine. Vous pouvez maintenir cette lévitation indéfiniment tant que vous ne faites pas d'autre Action et n'êtes pas @Condition[incapacitated].</p></li></ul><p>Propulser ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement à moins que cela ne soit autrement spécifié. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
                 }
             }
         },
@@ -1557,7 +1557,7 @@
             "actions": {
                 "bloom": {
                     "name": "Fleurir",
-                    "description": "<p>Votre maîtrise de la Rune de Vie vous permet de stimuler la croissance biologique et de nourrir la santé physique, produisant l'un des effets suivants :</p><ul><li><p>Cultiver 1 pied cube de plantes ou de champignons existants pour les faire croître rapidement jusqu'à un état sain, florissant ou prêt à être récolté.</p></li><li><p>Identifier une condition physique négative affectant une créature telle que @Condition[diseased], @Condition[poisoned], @Condition[bleeding], or @Condition[weakened].</p></li><li><p>Vérifier si une portion d'aliment ou de boisson est exempte de contamination par des bactéries, des parasites ou du poison.</p></li></ul><p>Fleurir ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
+                    "description": "<p>Votre maîtrise de la Rune de Vie vous permet de stimuler la croissance biologique et de nourrir la santé physique, produisant l'un des effets suivants :</p><ul><li><p>Cultiver @[feet 1] cube de plantes ou de champignons existants pour les faire croître rapidement jusqu'à un état sain, florissant ou prêt à être récolté.</p></li><li><p>Identifier une condition physique négative affectant une créature telle que @Condition[diseased], @Condition[poisoned], @Condition[bleeding], or @Condition[weakened].</p></li><li><p>Vérifier si une portion d'aliment ou de boisson est exempte de contamination par des bactéries, des parasites ou du poison.</p></li></ul><p>Fleurir ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>"
                 }
             }
         },
@@ -1655,7 +1655,7 @@
         },
         "shieldcharge0000": {
             "name": "Charge au bouclier",
-            "description": "<p>Une technique défensive dans laquelle vous foncez en avant, percutant et poussant les ennemis hors de votre chemin. Vous chargez jusqu'à 20 pieds en ligne droite et effectuez une <strong>Frappe</strong> de bouclier en main secondaire contre chaque ennemi successif le long de votre chemin.</p>",
+            "description": "<p>Une technique défensive dans laquelle vous foncez en avant, percutant et poussant les ennemis hors de votre chemin. Vous chargez jusqu'à @[feet 20] en ligne droite et effectuez une <strong>Frappe</strong> de bouclier en main secondaire contre chaque ennemi successif le long de votre chemin.</p>",
             "actions": {
                 "shieldCharge": {
                     "name": "Charge au bouclier",
@@ -1735,7 +1735,7 @@
             "actions": {
                 "soothe": {
                     "name": "Apaiser",
-                    "description": "<p>Vous déclamez des vers calmes, profitant à tous les alliés qui peuvent vous entendre dans un rayon de 12 pieds. Effectuez un <strong>Test de Performance</strong> contre le seuil de Folie de chaque allié. Sur des succès, le Moral de chaque allié est restauré.</p>"
+                    "description": "<p>Vous déclamez des vers calmes, profitant à tous les alliés qui peuvent vous entendre dans un rayon de @[feet 12]. Effectuez un <strong>Test de Performance</strong> contre le seuil de Folie de chaque allié. Sur des succès, le Moral de chaque allié est restauré.</p>"
                 }
             }
         },
@@ -1792,7 +1792,7 @@
         },
         "strategicreposit": {
             "name": "Repositionnement stratégique",
-            "description": "<p>Vous pensez toujours à l'avance à l'endroit où vous positionner si le danger menace. Avant le <strong>Tour 1</strong> d'une rencontre de Combat, à condition que vous ne soyez pas @Condition[unaware], vous pouvez immédiatement vous déplacer de 4 pieds dans n'importe quelle direction permise.</p><p>Si plusieurs combattants ont cette caractéristique, le repositionnement se produit dans l'ordre inverse de l'Initiative.</p><h3 class=\"divider\">Notes de playtest</h3><p>Ce talent n'est pas encore automatisé.</p>"
+            "description": "<p>Vous pensez toujours à l'avance à l'endroit où vous positionner si le danger menace. Avant le <strong>Tour 1</strong> d'une rencontre de Combat, à condition que vous ne soyez pas @Condition[unaware], vous pouvez immédiatement vous déplacer de @[feet 4] dans n'importe quelle direction permise.</p><p>Si plusieurs combattants ont cette caractéristique, le repositionnement se produit dans l'ordre inverse de l'Initiative.</p><h3 class=\"divider\">Notes de playtest</h3><p>Ce talent n'est pas encore automatisé.</p>"
         },
         "strikefirst00000": {
             "name": "Frapper le premier",
@@ -2054,7 +2054,7 @@
             "description": "<p>La force chaotique de l'énergie électrique brute. La rune d'Orage gouverne les sources de charge et de décharge électriques.</p><p>La rune d'Orage évolue avec l'<strong>Intellect</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts <strong>Électriques</strong> à la <strong>Santé</strong>. Elle est opposée par la rune ordonnée de <strong>Terre</strong>.</p>",
             "actions": {
                 "energize": {
-                    "description": "<p>Votre maîtrise de la Rune d'Orage vous permet de conduire le flux d'air et d'électricité, en manipulant la charge et l'aérodynamisme pour produire l'un des effets suivants :</p><ul><li><p>Imprégner un objet métallique que vous touchez, d'une taille maximale d'un pied cube, d'une charge électromagnétique, ce qui le rendra fortement adhérent à d'autres métaux. Un seul objet peut être chargé de cette manière à la fois, lancer ce sort sur un autre objet entraîne la perte de l'effet magnétique du premier.</p></li><li><p>Rassembler une bourrasque de vent à votre emplacement actuel dans un rayon de six pieds, soufflant soit sous forme de rafale dans une seule direction contrôlée, soit sous forme de cyclone avec une force centripète dans toutes les directions. Les effets aériens dans la zone immédiate sont dispersés et les objets non fixés d'un poids inférieur à 1 livre sont projetés dans la direction de la rafale.</p></li><li><p>Produire le bruit sec d'un coup de tonnerre à un endroit que vous pouvez voir à moins de 15 pieds de votre position actuelle.</p></li></ul><p>Dynamiser ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>",
+                    "description": "<p>Votre maîtrise de la Rune d'Orage vous permet de conduire le flux d'air et d'électricité, en manipulant la charge et l'aérodynamisme pour produire l'un des effets suivants :</p><ul><li><p>Imprégner un objet métallique que vous touchez, d'une taille maximale d'un pied cube, d'une charge électromagnétique, ce qui le rendra fortement adhérent à d'autres métaux. Un seul objet peut être chargé de cette manière à la fois, lancer ce sort sur un autre objet entraîne la perte de l'effet magnétique du premier.</p></li><li><p>Rassembler une bourrasque de vent à votre emplacement actuel dans un rayon de six pieds, soufflant soit sous forme de rafale dans une seule direction contrôlée, soit sous forme de cyclone avec une force centripète dans toutes les directions. Les effets aériens dans la zone immédiate sont dispersés et les objets non fixés d'un poids inférieur à 1 livre sont projetés dans la direction de la rafale.</p></li><li><p>Produire le bruit sec d'un coup de tonnerre à un endroit que vous pouvez voir à moins de @[feet 15] de votre position actuelle.</p></li></ul><p>Dynamiser ne peut affecter qu'une créature ou un objet que vous pouvez toucher physiquement. Vous pouvez tenter d'autres utilisations similaires à celles données ci-dessus, leur efficacité étant décidée par le Maître du jeu.</p>",
                     "name": "Dynamiser"
                 }
             },
@@ -2185,7 +2185,7 @@
         },
         "peltast000000000": {
             "name": "Peltaste",
-            "description": "<p>Pour vous, une arme de jet n'est pas simplement lancée, elle est dirigée. Les armes qui quittent votre main sont guidées par une discipline arcanique qui courbe leur trajectoire selon votre volonté, conférant à vos lancers une portée et une précision qu'aucun bras non assisté ne pourrait égaler. Les armes que vous lancez reviennent infailliblement dans votre main. Vous bénéficiez des avantages suivants :</p><ul><li><p>Vous pouvez utiliser l'action @Action[default throwWeapon] avec n'importe quelle arme de mêlée ou bouclier avec une efficacité totale, même s'ils ne sont pas conçus pour être lancés.</p></li><li><p>Une arme conçue pour le jet possédant la propriété <strong>Lancer</strong> gagne +10 pieds de portée entre vos mains, atteignant ainsi 20 pieds.</p></li><li><p>Les armes que vous lancez reviennent automatiquement et immédiatement dans votre main.</p></li></ul>",
+            "description": "<p>Pour vous, une arme de jet n'est pas simplement lancée, elle est dirigée. Les armes qui quittent votre main sont guidées par une discipline arcanique qui courbe leur trajectoire selon votre volonté, conférant à vos lancers une portée et une précision qu'aucun bras non assisté ne pourrait égaler. Les armes que vous lancez reviennent infailliblement dans votre main. Vous bénéficiez des avantages suivants :</p><ul><li><p>Vous pouvez utiliser l'action @Action[default throwWeapon] avec n'importe quelle arme de mêlée ou bouclier avec une efficacité totale, même s'ils ne sont pas conçus pour être lancés.</p></li><li><p>Une arme conçue pour le jet possédant la propriété <strong>Lancer</strong> gagne +@[feet 10] de portée entre vos mains, atteignant ainsi @[feet 20].</p></li><li><p>Les armes que vous lancez reviennent automatiquement et immédiatement dans votre main.</p></li></ul>",
             "actions": {
                 "ricochet": {
                     "name": "Ricochet",
@@ -2296,7 +2296,7 @@
             "actions": {
                 "songOfMight": {
                     "name": "Hymne de la force du Titan",
-                    "description": "<p>Vous élevez un hymne tonitruant en l'honneur du <strong>Titan</strong>, dont la force a jadis terrassé des léviathans. Vous et les créatures alliées situées à moins de <strong>15 pieds</strong> gagnez <strong>+1 en Force</strong> et <strong>+1 en Sagesse</strong>.</p>",
+                    "description": "<p>Vous élevez un hymne tonitruant en l'honneur du <strong>Titan</strong>, dont la force a jadis terrassé des léviathans. Vous et les créatures alliées situées à moins de <strong>@[feet 15]</strong> gagnez <strong>+1 en Force</strong> et <strong>+1 en Sagesse</strong>.</p>",
                     "effects": {
                         "Song of the Titan's Might": {
                             "name": "Hymne de la force du Titan"
@@ -2310,11 +2310,11 @@
                             "name": "Hymne de la vivacité du Chasseur"
                         }
                     },
-                    "description": "<p>Vous entonnez une mélodie vibrante dédiée au <strong>Chasseur</strong>, au pas leste et à l'œil infaillible. Vous et les créatures alliées situées à moins de <strong>15 pieds</strong> gagnez <strong>+1 en Dextérité</strong> et <strong>+1 en Intellect</strong>.</p>"
+                    "description": "<p>Vous entonnez une mélodie vibrante dédiée au <strong>Chasseur</strong>, au pas leste et à l'œil infaillible. Vous et les créatures alliées situées à moins de <strong>@[feet 15]</strong> gagnez <strong>+1 en Dextérité</strong> et <strong>+1 en Intellect</strong>.</p>"
                 },
                 "songOfEndurance": {
                     "name": "Hymne de l'endurance de la Montagne",
-                    "description": "<p>Vous entonnez un hymne profondément ancré dédié à la <strong>Montagne</strong>, qui a traversé tous les âges sans faillir. Vous et les créatures alliées situées à moins de <strong>15 pieds</strong> gagnez <strong>+1 en Robustesse</strong> et <strong>+1 en Présence</strong>.</p>",
+                    "description": "<p>Vous entonnez un hymne profondément ancré dédié à la <strong>Montagne</strong>, qui a traversé tous les âges sans faillir. Vous et les créatures alliées situées à moins de <strong>@[feet 15]</strong> gagnez <strong>+1 en Robustesse</strong> et <strong>+1 en Présence</strong>.</p>",
                     "effects": {
                         "Song of the Mountain's Endurance": {
                             "name": "Hymne de l'endurance de la Montagne"
@@ -2323,7 +2323,7 @@
                 },
                 "dirgeOfFeebleness": {
                     "name": "Complainte de la faiblesse du Ver",
-                    "description": "<p>Vous fredonnez une complainte moqueuse comparant vos ennemis au <strong>Ver</strong>, tout juste bon à ramper. Les créatures ennemies situées à moins de <strong>15 pieds</strong> subissent <strong>1 Fléau</strong> sur toutes leurs actions.</p>",
+                    "description": "<p>Vous fredonnez une complainte moqueuse comparant vos ennemis au <strong>Ver</strong>, tout juste bon à ramper. Les créatures ennemies situées à moins de <strong>@[feet 15]</strong> subissent <strong>1 Fléau</strong> sur toutes leurs actions.</p>",
                     "effects": {
                         "Dirge of the Worm's Feebleness": {
                             "name": "Complainte de la faiblesse du Ver"
@@ -2332,7 +2332,7 @@
                 },
                 "dirgeOfLethargy": {
                     "name": "Complainte de la léthargie du Glouton",
-                    "description": "<p>Vous psalmodiez un requiem pesant dédié au <strong>Glouton</strong>, trop bouffi et oisif pour bouger. Les créatures ennemies situées à moins de <strong>15 pieds</strong> perdent tout <strong>Déplacement gratuit</strong> et réduisent leur <strong>Foulée</strong> de 2.</p>",
+                    "description": "<p>Vous psalmodiez un requiem pesant dédié au <strong>Glouton</strong>, trop bouffi et oisif pour bouger. Les créatures ennemies situées à moins de <strong>@[feet 15]</strong> perdent tout <strong>Déplacement gratuit</strong> et réduisent leur <strong>Foulée</strong> de 2.</p>",
                     "effects": {
                         "Dirge of the Glutton's Lethargy": {
                             "name": "Complainte de la léthargie du Glouton"
@@ -2341,7 +2341,7 @@
                 },
                 "dirgeOfFragility": {
                     "name": "Complainte de la fragilité de la Carcasse",
-                    "description": "<p>Vous entonnez une complainte fragile pour la <strong>Carcasse</strong>, vide et prête à s'effondrer. Les créatures ennemies situées à moins de <strong>15 pieds</strong> subissent une <strong>Vulnérabilité</strong> de 2 à tous les types de dégâts.</p>",
+                    "description": "<p>Vous entonnez une complainte fragile pour la <strong>Carcasse</strong>, vide et prête à s'effondrer. Les créatures ennemies situées à moins de <strong>@[feet 15]</strong> subissent une <strong>Vulnérabilité</strong> de 2 à tous les types de dégâts.</p>",
                     "effects": {
                         "Dirge of the Husk's Fragility": {
                             "name": "Complainte de la fragilité de la Carcasse"
@@ -2356,7 +2356,7 @@
             "actions": {
                 "ancestralGrove": {
                     "name": "Bosquet ancestral",
-                    "description": "<p>Vous invoquez un @UUID[Compendium.crucible.summons.Actor.ancestralGuard00]{Gardien ancestral} qui se manifeste en un point visible à moins de 30 pieds. Le Gardien est un esprit incorporel qui ne peut être ni blessé ni déplacé. Les créatures peuvent traverser son espace, mais il compte comme trois créatures pour déterminer si un ennemi est @Condition[flanked].</p><p>Le Gardien émet une aura d'un rayon de 20 pieds qui augmente la <strong>Résistance</strong> des alliés à tous les types de dégâts de +2.</p><p>Tant que le Gardien subsiste, vos attaques d'arme contre des ennemis situés dans cette aura provoquent un transfert de force vitale de vos ennemis vers vos alliés. Votre cible subit des dégâts de <strong>Poison</strong> supplémentaires égaux à la moitié de votre <strong>Sagesse</strong>, ce qui est transféré sous forme de restauration de <strong>Santé</strong> à vous-même ou à un allié dans le bosquet qui a actuellement la Santé la plus basse.</p><p>Le Gardien reste en place jusqu'à la fin du Combat, ou jusqu'à ce que le Gardien utilise à nouveau cette action.</p><p></p>",
+                    "description": "<p>Vous invoquez un @UUID[Compendium.crucible.summons.Actor.ancestralGuard00]{Gardien ancestral} qui se manifeste en un point visible à moins de @[feet 30]. Le Gardien est un esprit incorporel qui ne peut être ni blessé ni déplacé. Les créatures peuvent traverser son espace, mais il compte comme trois créatures pour déterminer si un ennemi est @Condition[flanked].</p><p>Le Gardien émet une aura d'un rayon de @[feet 20] qui augmente la <strong>Résistance</strong> des alliés à tous les types de dégâts de +2.</p><p>Tant que le Gardien subsiste, vos attaques d'arme contre des ennemis situés dans cette aura provoquent un transfert de force vitale de vos ennemis vers vos alliés. Votre cible subit des dégâts de <strong>Poison</strong> supplémentaires égaux à la moitié de votre <strong>Sagesse</strong>, ce qui est transféré sous forme de restauration de <strong>Santé</strong> à vous-même ou à un allié dans le bosquet qui a actuellement la Santé la plus basse.</p><p>Le Gardien reste en place jusqu'à la fin du Combat, ou jusqu'à ce que le Gardien utilise à nouveau cette action.</p><p></p>",
                     "effects": {
                         "Ancestral Grove": {
                             "name": "Bosquet ancestral"

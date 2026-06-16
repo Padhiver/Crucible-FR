@@ -32,7 +32,7 @@
             "actions": {
                 "acidSpit": {
                     "name": "Crachat acide",
-                    "description": "<p>La @ref[actor.name]{créature} crache un globe de bile acide sur une cible à moins de 20 pieds.</p><p>Sur un <strong>Coup critique</strong>, cette attaque cause la condition @Condition[corroding] pendant <strong>3 Tours</strong>.</p>",
+                    "description": "<p>La @ref[actor.name]{créature} crache un globe de bile acide sur une cible à moins de @[feet 20].</p><p>Sur un <strong>Coup critique</strong>, cette attaque cause la condition @Condition[corroding] pendant <strong>3 Tours</strong>.</p>",
                     "effects": {
                         "Acid Spit": {
                             "name": "Crachat acide"
@@ -47,7 +47,7 @@
             "actions": {
                 "acidSpray": {
                     "name": "Aspersion acide",
-                    "description": "<p>La créature expulse un jet de bile acide dans un cône de 10 pieds.</p><p>Sur un <strong>Coup critique</strong>, cette attaque cause la condition @Condition[corroding] pendant <strong>3 Tours</strong>.</p>",
+                    "description": "<p>La créature expulse un jet de bile acide dans un cône de @[feet 10].</p><p>Sur un <strong>Coup critique</strong>, cette attaque cause la condition @Condition[corroding] pendant <strong>3 Tours</strong>.</p>",
                     "effects": {
                         "Acid Spray": {
                             "name": "Aspersion acide"
@@ -74,7 +74,7 @@
             "actions": {
                 "aqueousTransmission": {
                     "name": "Transmission aqueuse",
-                    "description": "<p>Lorsque la @ref[actor.name]{créature} est dans l'eau, elle peut se transporter instantanément vers n'importe quel espace inoccupé dans la même étendue d'eau jusqu'à 120 pieds de distance. Elle n'a pas besoin de voir la destination pour effectuer ce <strong>Déplacement</strong>.</p>"
+                    "description": "<p>Lorsque la @ref[actor.name]{créature} est dans l'eau, elle peut se transporter instantanément vers n'importe quel espace inoccupé dans la même étendue d'eau jusqu'à @[feet 120] de distance. Elle n'a pas besoin de voir la destination pour effectuer ce <strong>Déplacement</strong>.</p>"
                 }
             }
         },
@@ -84,11 +84,11 @@
         },
         "bloodSense000000": {
             "name": "Traque sanguinaire",
-            "description": "<p>La @ref[actor.name]{créature} peut détecter avec précision toute créature de sang située à moins de 20 pieds et n'ayant pas tous ses points de vie. Toute attaque d'arme ou de compétence contre une créature blessée ne subit pas les <strong>Fléaux</strong> qui s'appliqueraient normalement si la créature était @Condition[blinded].</p>"
+            "description": "<p>La @ref[actor.name]{créature} peut détecter avec précision toute créature de sang située à moins de @[feet 20] et n'ayant pas tous ses points de vie. Toute attaque d'arme ou de compétence contre une créature blessée ne subit pas les <strong>Fléaux</strong> qui s'appliqueraient normalement si la créature était @Condition[blinded].</p>"
         },
         "bondedMind000000": {
             "name": "Esprit lié",
-            "description": "<p>L'esprit d'une @ref[actor.name]{créature} qui possède ce talent est inextricablement lié aux autres membres de son groupe. Il est capable de communication télépathique instantanée avec n'importe quelle autre @ref[actor.taxonomy.name]{créature de cette taxonomie} à moins de 60 pieds.</p>"
+            "description": "<p>L'esprit d'une @ref[actor.name]{créature} qui possède ce talent est inextricablement lié aux autres membres de son groupe. Il est capable de communication télépathique instantanée avec n'importe quelle autre @ref[actor.taxonomy.name]{créature de cette taxonomie} à moins de @[feet 60].</p>"
         },
         "burnout000000000": {
             "name": "Surchauffe",
@@ -225,7 +225,7 @@
                 "horrificCritical": {
                     "name": "Critique horrible",
                     "condition": "Immédiatement après que la créature réussit un Coup critique avec une attaque de mêlée.",
-                    "description": "<p>Lorsque la @ref[actor.name]{créature} réussit un <strong>Coup critique</strong> avec une attaque de mêlée, elle peut exagérer la violence du coup au point de susciter la peur chez ceux qui en sont témoins.</p><p>Tous les ennemis à moins de 30 pieds pouvant voir la créature subissent une attaque <strong>Inoffensive</strong> contre leur <strong>Volonté</strong> ou deviennent @Condition[frightened] pendant <strong>3 Tours</strong>.</p>",
+                    "description": "<p>Lorsque la @ref[actor.name]{créature} réussit un <strong>Coup critique</strong> avec une attaque de mêlée, elle peut exagérer la violence du coup au point de susciter la peur chez ceux qui en sont témoins.</p><p>Tous les ennemis à moins de @[feet 30] pouvant voir la créature subissent une attaque <strong>Inoffensive</strong> contre leur <strong>Volonté</strong> ou deviennent @Condition[frightened] pendant <strong>3 Tours</strong>.</p>",
                     "effects": {
                         "Horrific Critical": {
                             "name": "Critique horrible"
@@ -244,7 +244,7 @@
             "actions": {
                 "lightningBurst": {
                     "name": "Explosion de foudre",
-                    "description": "<p>La @ref[actor.name]{créature} expulse un éclair dans une explosion de 15 pieds, attaquant le <strong>Réflexe</strong> de chaque cible dans cette portée et infligeant des dégâts <strong>Électriques</strong>.</p><p>Sur un <strong>Coup critique</strong>, l'attaque cause la condition @Condition[shocked] pendant <strong>3 Tours</strong>.</p>",
+                    "description": "<p>La @ref[actor.name]{créature} expulse un éclair dans une explosion de @[feet 15], attaquant le <strong>Réflexe</strong> de chaque cible dans cette portée et infligeant des dégâts <strong>Électriques</strong>.</p><p>Sur un <strong>Coup critique</strong>, l'attaque cause la condition @Condition[shocked] pendant <strong>3 Tours</strong>.</p>",
                     "effects": {
                         "Lightning Burst": {
                             "name": "Explosion de foudre"
@@ -259,7 +259,7 @@
             "actions": {
                 "lightningSpit": {
                     "name": "Crachat de foudre",
-                    "description": "<p>La @ref[actor.name]{créature} crache un petit éclair sur une créature ciblée à moins de 20 pieds, attaquant son <strong>Réflexe</strong> et infligeant des dégâts <strong>Électriques</strong>.</p><p>Sur un <strong>Coup critique</strong>, l'attaque cause la condition @Condition[shocked] pendant <strong>3 Tours</strong>.</p>",
+                    "description": "<p>La @ref[actor.name]{créature} crache un petit éclair sur une créature ciblée à moins de @[feet 20], attaquant son <strong>Réflexe</strong> et infligeant des dégâts <strong>Électriques</strong>.</p><p>Sur un <strong>Coup critique</strong>, l'attaque cause la condition @Condition[shocked] pendant <strong>3 Tours</strong>.</p>",
                     "effects": {
                         "Lightning Spit": {
                             "name": "Crachat de foudre"
@@ -274,7 +274,7 @@
             "actions": {
                 "lightningSpray": {
                     "name": "Spray de foudre",
-                    "description": "<p>La @ref[actor.name]{créature} expulse un éclair dans un rayon de 30 pieds de long et 4 pieds de large, attaquant le <strong>Réflexe</strong> de chaque cible sur son chemin et infligeant des dégâts <strong>Électriques</strong>.</p><p>Sur un <strong>Coup critique</strong>, l'attaque cause la condition @Condition[shocked] pendant <strong>3 Tours</strong>.</p>",
+                    "description": "<p>La @ref[actor.name]{créature} expulse un éclair dans un rayon de @[feet 30] de long et @[feet 4] de large, attaquant le <strong>Réflexe</strong> de chaque cible sur son chemin et infligeant des dégâts <strong>Électriques</strong>.</p><p>Sur un <strong>Coup critique</strong>, l'attaque cause la condition @Condition[shocked] pendant <strong>3 Tours</strong>.</p>",
                     "effects": {
                         "Lightning Spray": {
                             "name": "Spray de foudre"
@@ -319,7 +319,7 @@
             "actions": {
                 "noxiousSpit": {
                     "name": "Crachat nocif",
-                    "description": "<p>La @ref[actor.name]{créature} crache un globule de toxine sur une créature ciblée à moins de 20 pieds, attaquant son <strong>Réflexe</strong> et infligeant des dégâts de <strong>Poison</strong>.</p><p>Sur un <strong>Coup critique</strong>, l'attaque cause la condition @Condition[poisoned] pendant <strong>3 Tours</strong>.</p>",
+                    "description": "<p>La @ref[actor.name]{créature} crache un globule de toxine sur une créature ciblée à moins de @[feet 20], attaquant son <strong>Réflexe</strong> et infligeant des dégâts de <strong>Poison</strong>.</p><p>Sur un <strong>Coup critique</strong>, l'attaque cause la condition @Condition[poisoned] pendant <strong>3 Tours</strong>.</p>",
                     "effects": {
                         "Noxious Spit": {
                             "name": "Crachat nocif"
@@ -334,7 +334,7 @@
             "actions": {
                 "noxiousSpray": {
                     "name": "Spray nocif",
-                    "description": "<p>La @ref[actor.name]{créature} expulse une décharge toxique dans une rayon de 30 pieds de long et 4 pieds de large, attaquant le <strong>Réflexe</strong> de chaque cible sur son chemin et infligeant des dégâts de <strong>Poison</strong>.</p><p>Sur un <strong>Coup critique</strong>, l'attaque cause la condition @Condition[poisoned] pendant <strong>3 Tours</strong>.</p>",
+                    "description": "<p>La @ref[actor.name]{créature} expulse une décharge toxique dans une rayon de @[feet 30] de long et @[feet 4] de large, attaquant le <strong>Réflexe</strong> de chaque cible sur son chemin et infligeant des dégâts de <strong>Poison</strong>.</p><p>Sur un <strong>Coup critique</strong>, l'attaque cause la condition @Condition[poisoned] pendant <strong>3 Tours</strong>.</p>",
                     "effects": {
                         "Noxious Spray": {
                             "name": "Spray nocif"
@@ -384,7 +384,7 @@
             "actions": {
                 "pouncingStrike": {
                     "name": "Frappe bondissante",
-                    "description": "<p>Cette attaque peut être utilisée après un <strong>Déplacement</strong> qui rapproche la @ref[actor.name]{créature} d'au moins 10 pieds de sa cible. Si la créature était au-dessus de la cible, cette attaque gagne <strong>+1 Faveur</strong> par tranche de 10 pieds de diminution d'élévation dans ce mouvement.</p><p>Si cette attaque est un <strong>Coup critique</strong>, la cible de l'attaque est immédiatement mise @Condition[prone].</p>",
+                    "description": "<p>Cette attaque peut être utilisée après un <strong>Déplacement</strong> qui rapproche la @ref[actor.name]{créature} d'au moins @[feet 10] de sa cible. Si la créature était au-dessus de la cible, cette attaque gagne <strong>+1 Faveur</strong> par tranche de @[feet 10] de diminution d'élévation dans ce mouvement.</p><p>Si cette attaque est un <strong>Coup critique</strong>, la cible de l'attaque est immédiatement mise @Condition[prone].</p>",
                     "effects": {
                         "Pouncing Strike": {
                             "name": "Frappe bondissante"
@@ -438,7 +438,7 @@
             "actions": {
                 "repugnantPustules": {
                     "name": "Pustules répugnantes",
-                    "description": "<p>Lorsque la @ref[actor.name]{créature} est touchée par une <strong>Frappe</strong>, elle peut partiellement éclater pour libérer un jet de fluide écœurant qui inflige des dégâts de <strong>Corruption</strong>. Cette action dépend de la <strong>Robustesse</strong> et cible la défense de <strong>Réflexes</strong> de toute créature à moins de 3 pieds.</p><p>Sur une <strong>Réussite critique</strong>, la cible affectée devient temporairement @Condition[diseased] pendant 3 rounds.</p>",
+                    "description": "<p>Lorsque la @ref[actor.name]{créature} est touchée par une <strong>Frappe</strong>, elle peut partiellement éclater pour libérer un jet de fluide écœurant qui inflige des dégâts de <strong>Corruption</strong>. Cette action dépend de la <strong>Robustesse</strong> et cible la défense de <strong>Réflexes</strong> de toute créature à moins de @[feet 3].</p><p>Sur une <strong>Réussite critique</strong>, la cible affectée devient temporairement @Condition[diseased] pendant 3 rounds.</p>",
                     "effects": {
                         "Repugnant Pustules": {
                             "name": "Pustules répugnantes"
@@ -572,7 +572,7 @@
             "actions": {
                 "swoopingStrike": {
                     "name": "Frappe en piqué",
-                    "description": "<p>Cette attaque peut être utilisée après un <strong>Déplacement</strong> avec une descente d'au moins 10 pieds vers la cible. L'attaque gagne <strong>+1 Faveur</strong> par tranche de 10 pieds de diminution d'élévation dans ce déplacement.</p><p>Si cette attaque est un <strong>Coup critique</strong>, la cible de l'attaque est immédiatement mise @Condition[prone].</p>",
+                    "description": "<p>Cette attaque peut être utilisée après un <strong>Déplacement</strong> avec une descente d'au moins @[feet 10] vers la cible. L'attaque gagne <strong>+1 Faveur</strong> par tranche de @[feet 10] de diminution d'élévation dans ce déplacement.</p><p>Si cette attaque est un <strong>Coup critique</strong>, la cible de l'attaque est immédiatement mise @Condition[prone].</p>",
                     "effects": {
                         "Swooping Strike": {
                             "name": "Frappe en piqué"
@@ -598,7 +598,7 @@
         },
         "thermalVision000": {
             "name": "Vision thermique",
-            "description": "<p>La @ref[actor.name]{créature} perçoit le monde avec précision grâce aux différences de température, lui permettant de localiser les créatures dont la température corporelle s'écarte des normes ambiantes.</p><p>Cela permet de détecter les créatures dont la température corporelle est <strong>Glaciale</strong>, <strong>Fraîche</strong>, <strong>Chaude</strong>, ou <strong>Bouillante</strong> jusqu'à 60 pieds de distance, à condition qu'elles ne disposent pas d'une couverture totale et que la @ref[actor.name]{céeature} n'est pas @Condition[blinded] ou @Condition[incapacitated]. Une créature détectée par ce biais est considérée comme visible pour les Actions nécessitant la vision.</p>"
+            "description": "<p>La @ref[actor.name]{créature} perçoit le monde avec précision grâce aux différences de température, lui permettant de localiser les créatures dont la température corporelle s'écarte des normes ambiantes.</p><p>Cela permet de détecter les créatures dont la température corporelle est <strong>Glaciale</strong>, <strong>Fraîche</strong>, <strong>Chaude</strong>, ou <strong>Bouillante</strong> jusqu'à @[feet 60] de distance, à condition qu'elles ne disposent pas d'une couverture totale et que la @ref[actor.name]{céeature} n'est pas @Condition[blinded] ou @Condition[incapacitated]. Une créature détectée par ce biais est considérée comme visible pour les Actions nécessitant la vision.</p>"
         },
         "thrash0000000000": {
             "name": "Violenter",
@@ -670,7 +670,7 @@
             "actions": {
                 "webSpinner": {
                     "name": "Tisseur de toile",
-                    "description": "<p>La créature peut passer 10 minutes à tisser une nouvelle section de toile qui couvre une zone de 5 pieds.</p>"
+                    "description": "<p>La créature peut passer 10 minutes à tisser une nouvelle section de toile qui couvre une zone de @[feet 5].</p>"
                 }
             }
         },
@@ -710,8 +710,8 @@
             "actions": {
                 "terrifyingPresence": {
                     "name": "Présence terrifiante",
-                    "condition": "Un ennemi se déplace à moins de 20 pieds.",
-                    "description": "<p>Lorsqu'un ennemi se déplace à moins de 20 pieds de la @ref[actor.name]{créature}, il se retrouve exposé à sa terrible présence, ce qui attaque sa <strong>Volonté</strong> et lui inflige la condition @Condition[frightened] en cas de réussite.</p>",
+                    "condition": "Un ennemi se déplace à moins de @[feet 20].",
+                    "description": "<p>Lorsqu'un ennemi se déplace à moins de @[feet 20] de la @ref[actor.name]{créature}, il se retrouve exposé à sa terrible présence, ce qui attaque sa <strong>Volonté</strong> et lui inflige la condition @Condition[frightened] en cas de réussite.</p>",
                     "effects": {
                         "Terrifying Presence": {
                             "name": "Présence terrifiante"
@@ -722,7 +722,7 @@
         },
         "blindsight000000": {
             "name": "Vision aveugle",
-            "description": "<p>@ref[actor.name]{Cette créature} perçoit son environnement sans utiliser la vue, détectant la position précise des créatures et des objets dans un rayon de 60 pieds. Elle n'est pas affectée par la condition @Condition[blinded], les ténèbres, ou l'invisibilité, et toute créature qu'elle détecte de cette manière est traitée comme étant visible pour elle.</p>"
+            "description": "<p>@ref[actor.name]{Cette créature} perçoit son environnement sans utiliser la vue, détectant la position précise des créatures et des objets dans un rayon de @[feet 60]. Elle n'est pas affectée par la condition @Condition[blinded], les ténèbres, ou l'invisibilité, et toute créature qu'elle détecte de cette manière est traitée comme étant visible pour elle.</p>"
         },
         "bloodless0000000": {
             "name": "Exsangue",
@@ -738,7 +738,7 @@
             "actions": {
                 "crushingLeap": {
                     "name": "Saut écrasant",
-                    "description": "<p>Vous sautez en l'air, atterrissez à un point visible à moins de 30 pieds et vous vous écrasez au sol avec une force écrasante. Toutes les créatures dans la zone de l'<strong>Explosion</strong> résultante font face à une attaque contre leur <strong>Réflexe</strong>, subissant des dégâts <strong>Contondants</strong> et tombent @Condition[prone]. L'Explosion se propage à partir de votre empreinte, de sorte que les créatures plus grandes s'écrasent sur une zone plus étendue. Cette action est basée sur votre caractéristique la plus haute entre la <strong>Force</strong> et la <strong>Robustesse</strong>.</p>",
+                    "description": "<p>Vous sautez en l'air, atterrissez à un point visible à moins de @[feet 30] et vous vous écrasez au sol avec une force écrasante. Toutes les créatures dans la zone de l'<strong>Explosion</strong> résultante font face à une attaque contre leur <strong>Réflexe</strong>, subissant des dégâts <strong>Contondants</strong> et tombent @Condition[prone]. L'Explosion se propage à partir de votre empreinte, de sorte que les créatures plus grandes s'écrasent sur une zone plus étendue. Cette action est basée sur votre caractéristique la plus haute entre la <strong>Force</strong> et la <strong>Robustesse</strong>.</p>",
                     "effects": {
                         "Crushing Leap": {
                             "name": "Saut écrasant"

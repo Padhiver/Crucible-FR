@@ -24,7 +24,7 @@
                 },
                 "gesturefan000000": {
                     "name": "Signe : Éventail",
-                    "description": "<p>Canalisez l'essence d'une rune en un arc balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate. Utilisé avec la Terre, cela peut projeter une gerbe de pierres en arc de cercle, tandis qu'avec la Kinésie, cela peut trancher plusieurs ennemis d'un coup.</p><p>Le signe Éventail dépend de l'<strong>Intellect</strong> et cible un cône de 120 degrés sur 6 pieds, infligeant 6 dégâts de base en cas d'attaque réussie.</p>"
+                    "description": "<p>Canalisez l'essence d'une rune en un arc balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate. Utilisé avec la Terre, cela peut projeter une gerbe de pierres en arc de cercle, tandis qu'avec la Kinésie, cela peut trancher plusieurs ennemis d'un coup.</p><p>Le signe Éventail dépend de l'<strong>Intellect</strong> et cible un cône de 120 degrés sur @[feet 6], infligeant 6 dégâts de base en cas d'attaque réussie.</p>"
                 },
                 "falseAppearance0": {
                     "name": "Faux-semblant",
@@ -56,7 +56,7 @@
                 },
                 "gesturefan000000": {
                     "name": "Signe : Éventail",
-                    "description": "<p>Canalisez l'essence d'une rune en un arc balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate. Utilisé avec la Terre, cela peut projeter une gerbe de pierres en arc de cercle, tandis qu'avec la Kinésie, cela peut trancher plusieurs ennemis d'un coup.</p><p>Le signe Éventail dépend de l'<strong>Intellect</strong> et cible un cône de 120 degrés sur 6 pieds, infligeant 6 dégâts de base en cas d'attaque réussie.</p>"
+                    "description": "<p>Canalisez l'essence d'une rune en un arc balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate. Utilisé avec la Terre, cela peut projeter une gerbe de pierres en arc de cercle, tandis qu'avec la Kinésie, cela peut trancher plusieurs ennemis d'un coup.</p><p>Le signe Éventail dépend de l'<strong>Intellect</strong> et cible un cône de 120 degrés sur @[feet 6], infligeant 6 dégâts de base en cas d'attaque réussie.</p>"
                 },
                 "n9O5nEIhY2OgZFsO": {
                     "name": "Armure élémentaire"
@@ -90,7 +90,7 @@
                 },
                 "gesturefan000000": {
                     "name": "Signe : Éventail",
-                    "description": "<p>Canalisez l'essence d'une rune en un arc balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate. Utilisé avec la Terre, cela peut projeter une gerbe de pierres en arc de cercle, tandis qu'avec la Kinésie, cela peut trancher plusieurs ennemis d'un coup.</p><p>Le signe Éventail dépend de l'<strong>Intellect</strong> et cible un cône de 120 degrés sur 6 pieds, infligeant 6 dégâts de base en cas d'attaque réussie.</p>"
+                    "description": "<p>Canalisez l'essence d'une rune en un arc balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate. Utilisé avec la Terre, cela peut projeter une gerbe de pierres en arc de cercle, tandis qu'avec la Kinésie, cela peut trancher plusieurs ennemis d'un coup.</p><p>Le signe Éventail dépend de l'<strong>Intellect</strong> et cible un cône de 120 degrés sur @[feet 6], infligeant 6 dégâts de base en cas d'attaque réussie.</p>"
                 },
                 "feNVndyyNP8lNnqr": {
                     "name": "Griffe Voltaïque"
@@ -150,7 +150,7 @@
                     "actions": {
                         "aqueousTransmission": {
                             "name": "Transmission aqueuse",
-                            "description": "<p>Lorsque la @ref[name] est dans l'eau, elle peut se transporter instantanément vers n'importe quel espace inoccupé dans la même étendue d'eau jusqu'à 120 pieds de distance. Elle n'a pas besoin de voir la destination pour effectuer ce <strong>Déplacement</strong>.</p>"
+                            "description": "<p>Lorsque la @ref[name] est dans l'eau, elle peut se transporter instantanément vers n'importe quel espace inoccupé dans la même étendue d'eau jusqu'à @[feet 120] de distance. Elle n'a pas besoin de voir la destination pour effectuer ce <strong>Déplacement</strong>.</p>"
                         }
                     }
                 },
@@ -160,7 +160,7 @@
                 },
                 "gesturefan000000": {
                     "name": "Signe : Éventail",
-                    "description": "<p>Canalisez l'essence d'une rune en un arc balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate. Utilisé avec la Terre, cela peut projeter une gerbe de pierres en arc de cercle, tandis qu'avec la Kinésie, cela peut trancher plusieurs ennemis d'un coup.</p><p>Le signe Éventail dépend de l'<strong>Intellect</strong> et cible un cône de 120 degrés sur 6 pieds, infligeant 6 dégâts de base en cas d'attaque réussie.</p>"
+                    "description": "<p>Canalisez l'essence d'une rune en un arc balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate. Utilisé avec la Terre, cela peut projeter une gerbe de pierres en arc de cercle, tandis qu'avec la Kinésie, cela peut trancher plusieurs ennemis d'un coup.</p><p>Le signe Éventail dépend de l'<strong>Intellect</strong> et cible un cône de 120 degrés sur @[feet 6], infligeant 6 dégâts de base en cas d'attaque réussie.</p>"
                 }
             },
             "archetype": {
@@ -196,13 +196,13 @@
                     "actions": {
                         "aqueousTransmission": {
                             "name": "Transmission aqueuse",
-                            "description": "<p>Lorsque la @ref[name] est dans l'eau, elle peut se transporter instantanément vers n'importe quel espace inoccupé dans la même étendue d'eau jusqu'à 120 pieds de distance. Elle n'a pas besoin de voir la destination pour effectuer ce <strong>Déplacement</strong>.</p>"
+                            "description": "<p>Lorsque la @ref[name] est dans l'eau, elle peut se transporter instantanément vers n'importe quel espace inoccupé dans la même étendue d'eau jusqu'à @[feet 120] de distance. Elle n'a pas besoin de voir la destination pour effectuer ce <strong>Déplacement</strong>.</p>"
                         }
                     }
                 },
                 "gesturefan000000": {
                     "name": "Signe : Éventail",
-                    "description": "<p>Canalisez l'essence d'une rune en un arc balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate. Utilisé avec la Terre, cela peut projeter une gerbe de pierres en arc de cercle, tandis qu'avec la Kinésie, cela peut trancher plusieurs ennemis d'un coup.</p><p>Le signe Éventail dépend de l'<strong>Intellect</strong> et cible un cône de 120 degrés sur 6 pieds, infligeant 6 dégâts de base en cas d'attaque réussie.</p>"
+                    "description": "<p>Canalisez l'essence d'une rune en un arc balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate. Utilisé avec la Terre, cela peut projeter une gerbe de pierres en arc de cercle, tandis qu'avec la Kinésie, cela peut trancher plusieurs ennemis d'un coup.</p><p>Le signe Éventail dépend de l'<strong>Intellect</strong> et cible un cône de 120 degrés sur @[feet 6], infligeant 6 dégâts de base en cas d'attaque réussie.</p>"
                 },
                 "k0YORkxCqPLxrdNj": {
                     "name": "Armure élémentaire"
@@ -250,7 +250,7 @@
                 },
                 "gesturefan000000": {
                     "name": "Signe : Éventail",
-                    "description": "<p>Canalisez l'essence d'une rune en un arc balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate. Utilisé avec la Terre, cela peut projeter une gerbe de pierres en arc de cercle, tandis qu'avec la Kinésie, cela peut trancher plusieurs ennemis d'un coup.</p><p>Le signe Éventail dépend de l'<strong>Intellect</strong> et cible un cône de 120 degrés sur 6 pieds, infligeant 6 dégâts de base en cas d'attaque réussie.</p>"
+                    "description": "<p>Canalisez l'essence d'une rune en un arc balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate. Utilisé avec la Terre, cela peut projeter une gerbe de pierres en arc de cercle, tandis qu'avec la Kinésie, cela peut trancher plusieurs ennemis d'un coup.</p><p>Le signe Éventail dépend de l'<strong>Intellect</strong> et cible un cône de 120 degrés sur @[feet 6], infligeant 6 dégâts de base en cas d'attaque réussie.</p>"
                 },
                 "runeStorm0000000": {
                     "name": "Rune : Orage",
@@ -278,7 +278,7 @@
                 },
                 "gesturefan000000": {
                     "name": "Signe : Éventail",
-                    "description": "<p>Canalisez l'essence d'une rune en un arc balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate. Utilisé avec la Terre, cela peut projeter une gerbe de pierres en arc de cercle, tandis qu'avec la Kinésie, cela peut trancher plusieurs ennemis d'un coup.</p><p>Le signe Éventail dépend de l'<strong>Intellect</strong> et cible un cône de 120 degrés sur 6 pieds, infligeant 6 dégâts de base en cas d'attaque réussie.</p>"
+                    "description": "<p>Canalisez l'essence d'une rune en un arc balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate. Utilisé avec la Terre, cela peut projeter une gerbe de pierres en arc de cercle, tandis qu'avec la Kinésie, cela peut trancher plusieurs ennemis d'un coup.</p><p>Le signe Éventail dépend de l'<strong>Intellect</strong> et cible un cône de 120 degrés sur @[feet 6], infligeant 6 dégâts de base en cas d'attaque réussie.</p>"
                 },
                 "vk1SK4IwNZkxQEQL": {
                     "name": "Griffe de Flamme"
@@ -320,7 +320,7 @@
                 },
                 "gesturefan000000": {
                     "name": "Signe : Éventail",
-                    "description": "<p>Canalisez l'essence d'une rune en un arc balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate. Utilisé avec la Terre, cela peut projeter une gerbe de pierres en arc de cercle, tandis qu'avec la Kinésie, cela peut trancher plusieurs ennemis d'un coup.</p><p>Le signe Éventail dépend de l'<strong>Intellect</strong> et cible un cône de 120 degrés sur 6 pieds, infligeant 6 dégâts de base en cas d'attaque réussie.</p>"
+                    "description": "<p>Canalisez l'essence d'une rune en un arc balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate. Utilisé avec la Terre, cela peut projeter une gerbe de pierres en arc de cercle, tandis qu'avec la Kinésie, cela peut trancher plusieurs ennemis d'un coup.</p><p>Le signe Éventail dépend de l'<strong>Intellect</strong> et cible un cône de 120 degrés sur @[feet 6], infligeant 6 dégâts de base en cas d'attaque réussie.</p>"
                 },
                 "70JmOia6MhgONfpq": {
                     "name": "Griffe de Terre"
@@ -372,7 +372,7 @@
                 },
                 "gesturefan000000": {
                     "name": "Signe : Éventail",
-                    "description": "<p>Canalisez l'essence d'une rune en un arc balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate. Utilisé avec la Terre, cela peut projeter une gerbe de pierres en arc de cercle, tandis qu'avec la Kinésie, cela peut trancher plusieurs ennemis d'un coup.</p><p>Le signe Éventail dépend de l'<strong>Intellect</strong> et cible un cône de 120 degrés sur 6 pieds, infligeant 6 dégâts de base en cas d'attaque réussie.</p>"
+                    "description": "<p>Canalisez l'essence d'une rune en un arc balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate. Utilisé avec la Terre, cela peut projeter une gerbe de pierres en arc de cercle, tandis qu'avec la Kinésie, cela peut trancher plusieurs ennemis d'un coup.</p><p>Le signe Éventail dépend de l'<strong>Intellect</strong> et cible un cône de 120 degrés sur @[feet 6], infligeant 6 dégâts de base en cas d'attaque réussie.</p>"
                 }
             },
             "archetype": {

@@ -499,7 +499,8 @@
             "OncePerTurn": "Vous ne pouvez effectuer l'action {action} qu'une seule fois par tour.",
             "RequiresRune": "Vous devez connaître la Rune nécessaire pour cette action.",
             "CannotUseTagGeneric": "avec l'étiquette {tag}",
-            "InvalidTargetScope": "Cette créature n'est pas une cible valide pour l'action {action}."
+            "InvalidTargetScope": "Cette créature n'est pas une cible valide pour l'action {action}.",
+            "TargetTooLarge": "La cible « {target} » est trop grande pour {action}."
         },
         "Action": "Action",
         "AffectsScope": "Affecte {scope}",
@@ -2762,6 +2763,9 @@
             "Charges": "Gambit ({count})",
             "ChargeDescription": "Un nombre de charges de Gambit qui doivent être dépensées à la place de l'<strong>Héroïsme</strong> pour effectuer votre action \"Tapis\".",
             "LoadedDice": "Dés chargés"
+        },
+        "Swallow": {
+            "AlreadySwallowing": "Vous êtes déjà en train d'avaler une autre créature."
         }
     }
 }

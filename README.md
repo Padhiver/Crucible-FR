@@ -20,7 +20,7 @@ Le projet original est en constante évolution, et de ce fait, une traduction co
             - [x] Pregenerated Heroes
             - [x] Summoned Creatures
         - [x] Adversary Options
-            - [ ] Adversary Equipment (Vide pour le moment)
+            - [x] Adversary Equipment
             - [x] Adversary Talents
             - [x] Archetypes
             - [x] Taxonomies
@@ -30,6 +30,7 @@ Le projet original est en constante évolution, et de ce fait, une traduction co
             - [x] Iconic Spells
             - [x] Talents
         - [x] Items
+            - [x] Affixes
             - [x] Equipment
             - [ ] Crafting (Vide pour le moment)
         - [x] Playtest

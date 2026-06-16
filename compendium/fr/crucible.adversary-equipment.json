@@ -1,0 +1,342 @@
+{
+    "label": "Équipement d'Adversaire",
+    "folders": {
+        "Creature Parts": "Parties de créatures",
+        "Damage-Typed Bites": "Morsures à type de dégâts",
+        "Damage-Typed Limbs": "Membres à type de dégâts",
+        "Giant Parts": "Parties géantes",
+        "Natural Armor": "Armure naturelle",
+        "Natural Weapons": "Armes naturelles"
+    },
+    "entries": {
+        "beak000000000000": {
+            "name": "Bec",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} possède un bec acéré et déchirant.</p>"
+            }
+        },
+        "bite000000000000": {
+            "name": "Morsure",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} est dotée d'une formidable mâchoire aux dents acérées.</p>"
+            }
+        },
+        "burningBite00000": {
+            "name": "Morsure enflammée",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} mord avec des mâchoires enveloppées de flammes ardentes.</p>"
+            }
+        },
+        "burningLimb00000": {
+            "name": "Membre enflammé",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} frappe avec un membre de flamme concentrées.</p>"
+            }
+        },
+        "causticBite00000": {
+            "name": "Morsure caustique",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} possède une morsure dégoulinant d'acides corrosifs.</p>"
+            }
+        },
+        "causticLimb00000": {
+            "name": "Membre caustique",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} frappe avec un membre dégoulinant d'ichor corrosif.</p>"
+            }
+        },
+        "chargedBite00000": {
+            "name": "Morsure surchargée",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} mord avec des mâchoires crépitant d'énergie de l'orage.</p>"
+            }
+        },
+        "chargedLimb00000": {
+            "name": "Membre surchargé",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} frappe avec un membre crépitant d'énergie de l'orage.</p>"
+            }
+        },
+        "claws00000000000": {
+            "name": "Griffes",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} possède des griffes allongées et acérées.</p>"
+            }
+        },
+        "densePelt0000000": {
+            "name": "Pelage dense",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} est couverte d'une fourrure épaisse et en couches qui amortit les coups.</p>"
+            }
+        },
+        "elementalArmor00": {
+            "name": "Armure élémentaire",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} est enveloppée d'une carapace élémentaire renforcée qui forme une barrière défensive.</p>"
+            }
+        },
+        "exoskeleton00000": {
+            "name": "Exosquelette",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} possède un squelette externe articulé fait de plaques durcies.</p>"
+            }
+        },
+        "fangs00000000000": {
+            "name": "Crocs",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} possède de longs crocs perforants.</p>"
+            }
+        },
+        "fists00000000000": {
+            "name": "Poings",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} écrase ses ennemis de ses poings massifs.</p>"
+            }
+        },
+        "frigidBite000000": {
+            "name": "Morsure glaciale",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} possède une morsure d'un froid engourdissant et impitoyable.</p>"
+            }
+        },
+        "frigidLimb000000": {
+            "name": "Membre glacial",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} frappe avec un membre aqueux, glacial de froid.</p>"
+            }
+        },
+        "fusedExoskeleton": {
+            "name": "Exosquelette fusionné",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} est protégée par un épais os externe fusionné en une coquille rigide.</p>"
+            }
+        },
+        "giantBeak0000000": {
+            "name": "Bec géant",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} possède un bec surdimensionné qui inflige des morsures tranchantes.</p>"
+            }
+        },
+        "giantClaws000000": {
+            "name": "Griffes géantes",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} possède de formidables griffes, chacune de la taille d'une lame d'acier.</p>"
+            }
+        },
+        "giantJaws0000000": {
+            "name": "Mâchoires géantes",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} possède des mâchoires caverneuses qui engloutissent et broient sa proie.</p>"
+            }
+        },
+        "giantTail0000000": {
+            "name": "Queue géante",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} possède une queue aussi épaisse qu'un tronc qui balaie et percute.</p>"
+            }
+        },
+        "heavyCarapace000": {
+            "name": "Carapace lourde",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} est dotée d'une carapace lourde et articulée qui la protège des dégâts.</p>"
+            }
+        },
+        "heavyPlating0000": {
+            "name": "Blindage lourd",
+            "description": {
+                "public": "<p>L'@ref[actor.name]{artificiel} est recouvert d'un blindage lourd.</p>"
+            }
+        },
+        "heavyScales00000": {
+            "name": "Écailles lourdes",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} est couverte d'une peau rugueuse aux écailles épaisses et imbriquées.</p>"
+            }
+        },
+        "hooves0000000000": {
+            "name": "Sabots",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} possède de lourds sabots qui ruent et piétinent tout ce qui se trouve sous ses pattes.</p>"
+            }
+        },
+        "horns00000000000": {
+            "name": "Corne",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} possède une corne centrale robuste et redoutable avec laquelle elle peut encorner sa cible.</p>"
+            }
+        },
+        "kineticLimb00000": {
+            "name": "Membre cinétique",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} frappe avec des membres invisibles de pure force cinétique.</p>"
+            }
+        },
+        "lightCarapace000": {
+            "name": "Carapace légère",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} est protégée par une carapace chitineuse souple.</p>"
+            }
+        },
+        "lightHide0000000": {
+            "name": "Peau légère",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} possède une peau résistante qui dévie les coups superficiels.</p>"
+            }
+        },
+        "lightPelt0000000": {
+            "name": "Pelage léger",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} possède un pelage court qui amortit les impacts.</p>"
+            }
+        },
+        "lightPlating0000": {
+            "name": "Blindage léger",
+            "description": {
+                "public": "<p>L'@ref[actor.name]{artificiel} est protégé par un blindage léger ajusté.</p>"
+            }
+        },
+        "lightScales00000": {
+            "name": "Écailles légères",
+            "description": {
+                "public": "<p>La peau de la @ref[actor.name]{créature} est couverte d'écailles légères qui offrent une protection sans la ralentir.</p>"
+            }
+        },
+        "obsidianThorns00": {
+            "name": "Épines d'obsidienne",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} cingle avec une longueur d'épines de verre noir tranchant comme un rasoir.</p>"
+            }
+        },
+        "pestilentBite000": {
+            "name": "Morsure pestilentielle",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} possède une morsure infectée qui s'infecte et ronge.</p>"
+            }
+        },
+        "pestilentLimb000": {
+            "name": "Membre pestilentiel",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} frappe avec un membre en putréfaction qui suinte la corruption.</p>"
+            }
+        },
+        "pincers000000000": {
+            "name": "Pinces",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} possède des pinces broyeuses et cisaillantes.</p>"
+            }
+        },
+        "pseudopod0000000": {
+            "name": "Pseudopode",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} fouette avec un membre amorphe de slime.</p>"
+            }
+        },
+        "psychicBite00000": {
+            "name": "Morsure psychique",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} possède une morsure qui blesse davantage l'esprit que le corps.</p>"
+            }
+        },
+        "psychicLimb00000": {
+            "name": "Membre psychique",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} frappe avec un membre fantasmatique qui blesse l'esprit.</p>"
+            }
+        },
+        "quills0000000000": {
+            "name": "Piquants",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} peut projeter une volée de piquants barbelés depuis ses flancs.</p>"
+            }
+        },
+        "radiantBite00000": {
+            "name": "Morsure radiante",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} mord avec des mâchoires rayonnant d'une lumière ardente.</p>"
+            }
+        },
+        "radiantLimb00000": {
+            "name": "Membre radiant",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} frappe avec un membre d'énergie lumineuse et ardente.</p>"
+            }
+        },
+        "shadowBite000000": {
+            "name": "Morsure des ombres",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} mord avec des mâchoires de ténèbres dévorantes.</p>"
+            }
+        },
+        "shadowLimb000000": {
+            "name": "Membre des ombres",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} frappe avec un membre de ténèbres saisissantes.</p>"
+            }
+        },
+        "stinger000000000": {
+            "name": "Dard",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} possède un dard barbelé qui perce la chair et injecte du venin.</p>"
+            }
+        },
+        "stoneSkin0000000": {
+            "name": "Peau de pierre",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} possède une peau escarpée semblable à la roche.</p>"
+            }
+        },
+        "tail000000000000": {
+            "name": "Queue",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} peut cingler avec sa queue allongée et musclée.</p>"
+            }
+        },
+        "talons0000000000": {
+            "name": "Serres",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} possède des serres recourbées pour agripper et déchirer sa proie.</p>"
+            }
+        },
+        "tentacles0000000": {
+            "name": "Tentacules",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} attaque avec des tentacules ondulants et agrippants.</p>"
+            }
+        },
+        "thickHide0000000": {
+            "name": "Peau épaisse",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} possède une peau épaisse et coriace, résiliente face aux attaques.</p>"
+            }
+        },
+        "tusks00000000000": {
+            "name": "Défenses",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} possède des défenses saillantes qui lacèrent et déchirent à chaque charge.</p>"
+            }
+        },
+        "venomousBite0000": {
+            "name": "Morsure venimeuse",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} possède une morsure qui injecte un venin puissant.</p>"
+            }
+        },
+        "venomousLimb0000": {
+            "name": "Membre venimeux",
+            "description": {
+                "public": "<p>La @ref[actor.name]{créature} frappe avec un membre enduit de toxines qui empoisonne tout ce qu'il touche.</p>"
+            }
+        }
+    },
+    "mapping": {
+        "description": {
+            "path": "system.description",
+            "converter": "structured",
+            "cardinality": "one",
+            "mapping": {
+                "public": "public",
+                "private": "private"
+            }
+        }
+    }
+}

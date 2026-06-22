@@ -240,13 +240,6 @@
             "ItemInvested": "Investi",
             "ItemDivested": "Non-investi"
         },
-        "TABS": {
-            "Description": "Description",
-            "Effects": "Effets",
-            "Hooks": "Hooks",
-            "Target": "Cible",
-            "Usage": "Utilisation"
-        },
         "TAG": {
             "Accurate": "Précis",
             "AccurateTooltip": "Cette action est particulièrement précise. Vous obtenez 2 Faveurs supplémentaires en l'effectuant.",
@@ -500,7 +493,8 @@
             "RequiresRune": "Vous devez connaître la Rune nécessaire pour cette action.",
             "CannotUseTagGeneric": "avec l'étiquette {tag}",
             "InvalidTargetScope": "Cette créature n'est pas une cible valide pour l'action {action}.",
-            "TargetTooLarge": "La cible « {target} » est trop grande pour {action}."
+            "TargetTooLarge": "La cible « {target} » est trop grande pour {action}.",
+            "WeaponDropped": "Votre arme a été lâchée et doit être récupérée pour pouvoir utiliser cette action."
         },
         "Action": "Action",
         "AffectsScope": "Affecte {scope}",
@@ -537,7 +531,14 @@
         "UseAction": "Utiliser l'Action",
         "DragToHotbar": "Glissez dans la barre de raccourcis pour créer une Macro de cette action.",
         "MaintainContent": "<p>Dépenser {cost} Focus pour maintenir l'effet {effect} ?</p>",
-        "MaintainTitle": "Maintenir le Focus : {effect}"
+        "MaintainTitle": "Maintenir le Focus : {effect}",
+        "TABS": {
+            "description": "Description",
+            "effects": "Effets",
+            "hooks": "Hooks",
+            "target": "Cible",
+            "usage": "Utilisation"
+        }
     },
     "ACTIVE_EFFECT": {
         "ACTIONS": {
@@ -889,16 +890,6 @@
             "PointsSpent": "Utilisé",
             "Resources": "Ressources"
         },
-        "TABS": {
-            "Actions": "Actions",
-            "Attributes": "Attributs",
-            "Biography": "Biographie",
-            "Effects": "Effets",
-            "Inventory": "Inventaire",
-            "Skills": "Compétences",
-            "Spells": "Sorts",
-            "Talents": "Talents"
-        },
         "WARNINGS": {
             "InsufficientCurrency": "Monnaie insuffisante pour déduire {delta} {denom}",
             "MacroNoToken": "Vous devez avoir un Token contrôlé pour utiliser cette Macro",
@@ -920,7 +911,17 @@
         "ResistanceSpecific": "Résistance : {resistance}",
         "SizeSpecific": "Taille {size}",
         "StrideSpecific": "Foulée {stride}",
-        "VulnerabilitySpecific": "Vulnérabilité : {vulnerability}"
+        "VulnerabilitySpecific": "Vulnérabilité : {vulnerability}",
+        "TABS": {
+            "actions": "Actions",
+            "attributes": "Attributs",
+            "biography": "Biographie",
+            "effects": "Effets",
+            "inventory": "Inventaire",
+            "skills": "Compétences",
+            "spells": "Sorts",
+            "talents": "Talents"
+        }
     },
     "AFFIX": {
         "FIELDS": {
@@ -1735,17 +1736,6 @@
             "Type": "Type d'équipement",
             "EquipmentScale": "Adapter automatiquement le niveau de qualité au niveau de la créature"
         },
-        "TABS": {
-            "Actions": "Actions",
-            "Affixes": "Affixes",
-            "Configuration": "Configuration",
-            "Description": "Description",
-            "Equipment": "Équipement",
-            "Hooks": "Hooks",
-            "Secrets": "Secrets",
-            "Spells": "Sorts",
-            "Talents": "Talents"
-        },
         "WARNINGS": {
             "HookAlreadyExists": "{item} possède déjà une fonction pour le hook \"{hook}\".",
             "InvalidIdentifier": "Valeur d'identifiant Crucible invalide \"{id}\", qui doit être alphanumérique sans espaces ou caractères spéciaux",
@@ -1780,7 +1770,18 @@
         "QualityShoddy": "Bâclée",
         "QualityStandard": "Commune",
         "QualitySuperior": "Supérieure",
-        "QuantityNone": "Aucun"
+        "QuantityNone": "Aucun",
+        "TABS": {
+            "actions": "Actions",
+            "affixes": "Affixes",
+            "config": "Configuration",
+            "description": "Description",
+            "equipment": "Équipement",
+            "hooks": "Hooks",
+            "secrets": "Secrets",
+            "spells": "Sorts",
+            "talents": "Talents"
+        }
     },
     "KEYBINDINGS": {
         "ConfirmAction": "Confirmer l'Action",
@@ -2711,7 +2712,7 @@
             "Thrown": "Lancer",
             "ThrownTooltip": "Cette arme est conçue pour être adaptée au lancer et ne subit pas la pénalité de Fléaux qui est habituellement appliquée à l'action Lancer une Arme.",
             "Versatile": "Flexible",
-            "VersatileTooltip": "Cette arme peut être maniée à une ou deux mains, et changée entre ces modes sans aucun coût en point d'Action. Lorsqu'elle est maniée à deux mains, l'arme gagne +2 dégâts de base supplémentaires mais occasionne 1 coût d'Action supplémentaire pour Frapper.",
+            "VersatileTooltip": "Cette arme peut être maniée à une ou deux mains, alternant entre ces prises sans aucun coût en point d'Action. L'alternance de prise la fait correspondre à une arme de ce type : une arme à une main devient une arme plus grande à deux mains, et une arme à deux mains devient une arme plus petite à une main.",
             "UntrainedTooltip": "Votre personnage manque de formation aux armes {training} et subit un malus de Compétence de -4 lorsqu'il attaque avec cette arme."
         }
     },

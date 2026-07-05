@@ -947,7 +947,7 @@
         },
         "inquisitor000000": {
             "name": "Brise-sort",
-            "description": "p>Vous êtes un expert du combat contre les utilisateurs de magie, entraîné à économiser votre énergie et à frapper au moment précis pour contrecarrer une incantation.</p><p>Le coût de votre @Action[default reactiveStrike] est réduit de 1 <strong>Action</strong> supplémentaire, mais coûte toujours 1 <strong>Focus</strong>. Lorsque vous effectuez une Frappe contre un ennemi en réaction au lancement d'un sort, un coup réussi draine <strong>1 Focus</strong> à cet ennemi et vous restitue le vôtre ; sur un <strong>Coup critique</strong>, son sort est interrompu et la magie est perdue.</p>",
+            "description": "<p>Vous êtes un expert du combat contre les utilisateurs de magie, entraîné à économiser votre énergie et à frapper au moment précis pour contrecarrer une incantation.</p><p>Le coût de votre @Action[default reactiveStrike] est réduit de 1 <strong>Action</strong> supplémentaire, mais coûte toujours 1 <strong>Focus</strong>. Lorsque vous effectuez une Frappe contre un ennemi en réaction au lancement d'un sort, un coup réussi draine <strong>1 Focus</strong> à cet ennemi et vous restitue le vôtre ; sur un <strong>Coup critique</strong>, son sort est interrompu et la magie est perdue.</p>",
             "actions": {
                 "abjure": {
                     "name": "Abjurer",

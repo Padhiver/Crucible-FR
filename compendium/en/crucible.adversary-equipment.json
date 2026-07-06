@@ -202,9 +202,9 @@
             }
         },
         "obsidianThorns00": {
-            "name": "Obsidian Thorns",
+            "name": "Thorns",
             "description": {
-                "public": "<p>The @ref[actor.name]{creature} lashes out with a thorned length of razor-sharp black glass.</p>"
+                "public": "<p>The @ref[actor.name]{creature} lashes out with a thorn-covered vine, limb, or tendril.</p>"
             }
         },
         "pestilentBite000": {

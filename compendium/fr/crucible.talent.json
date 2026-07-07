@@ -75,7 +75,7 @@
             "actions": {
                 "alchemicalResolve": {
                     "name": "Détermination alchimique",
-                    "description": "<p>Vous remontez rapidement le Moral d'un allié à @[feet 4] en projetant des vapeurs. Effectuez un Test de <strong>Médecine</strong> contre le <strong>seuil de Folie</strong> de la cible. Des réussites restaurent son <strong>Moral</strong>.</p>"
+                    "description": "<p>Vous remontez rapidement le Moral d'un allié à @[feet 4] en projetant des vapeurs. Effectuez un Test de <strong>Médecine</strong> contre le <strong>seuil de Ralliement</strong> de la cible. Des réussites restaurent son <strong>Moral</strong>.</p>"
                 }
             }
         },
@@ -309,7 +309,7 @@
         },
         "bulwark000000000": {
             "name": "Rempart",
-            "description": "<p>Vous êtes expert dans l'utilisation d'un <strong>Bouclier</strong> pour vous défendre et défendre les autres.</p><p>Une fois par Tour tant que vous avez un Bouclier équipé, vous pouvez utiliser l'action <strong>Défendre</strong> à un coût réduit de 1 Point d'Action.</p>"
+            "description": "<p>Vous êtes expert dans l'utilisation d'un <strong>Bouclier</strong> pour vous défendre et défendre les autres.</p><p>Une fois par Tour tant que vous avez un Bouclier équipé, vous pouvez utiliser l'action @Action[default defend] à un coût réduit de 1 Point d'Action.</p>"
         },
         "cadence000000000": {
             "name": "Cadence",
@@ -317,7 +317,7 @@
         },
         "carefree00000000": {
             "name": "Insouciant",
-            "description": "<p>Vous êtes capable de compartimenter et d'ignorer les revers, offrant une capacité remarquable à récupérer des dégâts à votre Moral.</p>\n<p>Votre <strong>seuil de Folie</strong> est réduit de 1, vous rendant plus facile à soigner.</p>"
+            "description": "<p>Vous êtes capable de compartimenter et d'ignorer les revers, offrant une capacité remarquable à récupérer des dégâts à votre Moral.</p>\n<p>Votre <strong>seuil de Ralliement</strong> est réduit de 1, vous rendant plus facile à soigner.</p>"
         },
         "chirurgeon000000": {
             "name": "Chirurgien",
@@ -340,7 +340,7 @@
             "actions": {
                 "clarifyIntent": {
                     "name": "Clarifier l'intention",
-                    "description": "<p>Vous expliquez vos intentions à un allié dans un rayon de @[feet 12]. Effectuez une attaque de compétence de <strong>Diplomatie</strong> contre le seuil de Folie de votre allié. Sur un succès, il gagne +1 <strong>Focus</strong> et +1 <strong>Faveur</strong> à ses actions du prochain Round.</p>",
+                    "description": "<p>Vous expliquez vos intentions à un allié dans un rayon de @[feet 12]. Effectuez une attaque de compétence de <strong>Diplomatie</strong> contre le seuil de Folie de votre allié. Sur un succès, il gagne +1 <strong>Focus</strong> et +1 <strong>Faveur</strong> aux actions effectuées lors de son prochain tour.</p>",
                     "effects": {
                         "Clarify Intent": {
                             "name": "Clarifier l'intention"
@@ -365,7 +365,7 @@
             "actions": {
                 "combatMedicine": {
                     "name": "Médecine de guerre",
-                    "description": "<p>Vous traitez rapidement les blessures d'un allié à @[feet 4]. Effectuez un <strong>Test de Médecine</strong> contre le seuil de Lésions de la cible. La Santé de votre allié est augmentée du montant du jet dépassant le seuil.</p>"
+                    "description": "<p>Vous traitez rapidement les blessures d'un allié à @[feet 4]. Effectuez un <strong>Test de Médecine</strong> contre le seuil de Guérison de la cible. La Santé de votre allié est augmentée du montant du jet dépassant le seuil.</p>"
                 }
             }
         },
@@ -383,7 +383,7 @@
         },
         "controlProficien": {
             "name": "Maîtrise du Contrôle",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Contrôle. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Motiver</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Contrôle. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action @Action[Compendium.crucible.talent.Item.runeControl00000 motivate], étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "cookingJourneyma": {
             "name": "Cuisine : Compagnon",
@@ -439,7 +439,7 @@
         },
         "deathProficiency": {
             "name": "Maîtrise de la Mort",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Mort. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Énerver</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Mort. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action @Action[Compendium.crucible.talent.Item.runeDeath0000000 ennervate], étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "deceptionAdept00": {
             "name": "Duperie : Adepte",
@@ -533,7 +533,7 @@
         },
         "disarmingstrike0": {
             "name": "Frappe désarmante",
-            "description": "<p>Une technique martiale conçue pour désarmer votre adversaire, le forçant à lâcher un objet tenu dans l'une de ses mains.</p>",
+            "description": "<p>Une technique martiale conçue pour désarmer votre adversaire, le forçant à lâcher un objet tenu dans sa main pricipale.</p>",
             "actions": {
                 "disarmingStrike": {
                     "name": "Frappe désarmante",
@@ -582,11 +582,11 @@
         },
         "dustbinder000000": {
             "name": "Terramancien",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Terre. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[corroding].</p><p>L'effet Corrodé dure <strong>3 Rounds</strong> et inflige la moitié de votre score de <strong>Sagesse</strong> comme dégâts d'<strong>Acide</strong> à la <strong>Santé</strong> chaque Round.</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Terre. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[corroding].</p><p>L'effet Corrodé dure <strong>3 Rounds</strong> et inflige la moitié du score de caractéristique que votre <strong>Rune de terre</strong> utilise en tant que dégâts d'<strong>Acide</strong> à la <strong>Santé</strong> chaque Round.</p>"
         },
         "earthProficiency": {
             "name": "Maîtrise de la Terre",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Terre. Vous obtenez un <strong>Bonus de compétence de +1</strong> pour les sorts utilisant cette Rune.</p><h3 class=\"divider\">Notes de Playtest</h3><p> Ce talent permettra également éventuellement d'améliorer l'action <strong>Façonner</strong>, augmentant son efficacité ou incluant de nouvelles options quant à son utilisation.</p>"
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Terre. Vous obtenez un <strong>Bonus de compétence de +1</strong> pour les sorts utilisant cette Rune.</p><h3 class=\"divider\">Notes de Playtest</h3><p> Ce talent permettra également éventuellement d'améliorer l'action @Action[Compendium.crucible.talent.Item.runeEarth0000000 mould], augmentant son efficacité ou incluant de nouvelles options quant à son utilisation.</p>"
         },
         "enchantingJourne": {
             "name": "Enchantement : Compagnon",
@@ -627,7 +627,7 @@
         },
         "extolldeeds00000": {
             "name": "Exalter les exploits",
-            "description": "Vous inspirez le courage chez vos alliés en exaltant les actes héroïques d'un compagnon. Vous pouvez réagir en composant un vers, en faisant une boutade ou un cri de guerre lorsqu'un allié que vous voyez <strong>Neutralise</strong> ou réussit un <strong>Coup critique</strong> contre une créature ennemie. La célébration de ces actes héroïques restaure le Moral de vos alliés dans un rayon de 6 cases.",
+            "description": "Vous inspirez le courage chez vos alliés en exaltant les actes héroïques d'un compagnon. Vous pouvez réagir en composant un vers, en faisant une boutade ou un cri de guerre lorsqu'un allié que vous voyez <strong>Neutralise</strong> ou réussit un <strong>Coup critique</strong> contre une créature ennemie. La célébration de ces actes héroïques restaure le Moral de vos alliés dans un rayon de @[feet 10].",
             "actions": {
                 "extollDeeds": {
                     "name": "Exalter les exploits",
@@ -666,13 +666,13 @@
             "actions": {
                 "ferociousLeap": {
                     "name": "Bond féroce",
-                    "description": "<p>Vous bondissez sur @[feet 10] et effectuez une Frappe de mêlée contre un ennemi à portée de votre point de chute. Votre déplacement ignore les terrains difficiles et n'est pas bloqué par des créatures ennemies.</p>"
+                    "description": "<p>Vous <strong>Sautez</strong> jusqu'à @[feet 10] et effectuez une <strong>Frappe</strong> de mêlée contre un ennemi à portée de votre point de chute. Votre déplacement ignore les terrains difficiles et n'est pas bloqué par des créatures ennemies.</p>"
                 }
             }
         },
         "flameProficiency": {
             "name": "Maîtrise de la Flamme",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Flamme. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Enflammer</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Flamme. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action @Action[Compendium.crucible.talent.Item.runeFlame0000000 enkindle], étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "flamingArrow0000": {
             "name": "Flèche enflammée",
@@ -733,7 +733,7 @@
         },
         "frostProficiency": {
             "name": "Maîtrise du Givre",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Givre. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Condenser</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Givre. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action @Action[Compendium.crucible.talent.Item.runeFrost0000000 condense], étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "fulcrum000000000": {
             "name": "Pivot",
@@ -768,11 +768,11 @@
         },
         "gestureConjure00": {
             "name": "Signe : Conjuration",
-            "description": "<p>Vous coalescez la puissance arcanique en une forme supérieure, manifestant un <strong>Visiteur</strong> qui apparaît dans les @[feet 30] et rejoint le Combat avec une <strong>Initiative</strong> de 1. Votre Visiteur est un Minion de niveau égal au vôtre.</p><p>Le signe de Conjuration évolue avec la <strong>Sagesse</strong> et le Visiteur survit pendant <strong>12 Rounds</strong>. Vous ne pouvez avoir qu'un seul Visiteur actif. Lancer un autre sort utilisant le signe de Conjuration remplace votre Visiteur précédent. Ce signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>5 Actions</strong> et <strong>2 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent est actuellement placé au <strong>palier 4</strong>. Il ne sera accessible qu'à un niveau supérieur (probablement le Niveau 6). Il est actuellement disponible en avant-première pour les tests.</p><p>Toutes les Runes n'ont pas encore d'acteur Visiteur défini. Les Runes qui n'ont pas encore de Conjuration définie manifesteront – pour l'instant – un <strong>Visiteur de Flamme</strong>.</p>"
+            "description": "<p>Vous coalescez la puissance arcanique en une forme supérieure, manifestant un <strong>Visiteur</strong> qui apparaît dans les @[feet 30] et rejoint le Combat avec une <strong>Initiative</strong> de 1. Votre Visiteur est un Minion de niveau égal au vôtre.</p><p>Le signe de Conjuration évolue avec la <strong>Sagesse</strong> et le Visiteur survit pendant <strong>12 Rounds</strong>. Vous ne pouvez avoir qu'un seul Visiteur actif. Lancer un autre sort utilisant le signe de Conjuration remplace votre Visiteur précédent. Ce signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>5 Actions</strong> et <strong>2 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent est actuellement placé au <strong>palier 4</strong>. Il ne sera accessible qu'à un niveau supérieur (probablement le Niveau 6). Il est actuellement disponible en avant-première pour les tests.</p><p>Toutes les Runes n'ont pas encore d'acteur Visiteur défini. Les Runes qui n'ont pas encore de Conjuration définie manifesteront – pour l'instant – un @UUID[Compendium.crucible.summons.Actor.AlwoqQKoL1BnnZjd].</p>"
         },
         "gesturecreate000": {
             "name": "Signe : Création",
-            "description": "<p>Vous coalescez la puissance arcanique en forme tangible, manifestant un <strong>Lutin</strong> qui apparaît dans les @[feet 10] et rejoint le Combat avec une Initiative de 1. Votre Lutin est un <strong>Minion</strong> de la moitié de votre propre Niveau.</p><p>Le signe de Création évolue avec la <strong>Sagesse</strong> et le Lutin survit pendant <strong>6 Rounds</strong>. Vous ne pouvez avoir qu'un seul Lutin actif, lancer un autre sort utilisant le signe de Création remplace votre Lutin précédent. Ce signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>4 Actions</strong> et <strong>1 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Toutes les Runes n'ont pas encore d'acteur Lutin défini. Les Runes qui n'ont pas encore de Création définie manifesteront – pour l'instant – un <strong>Lutin de Flamme</strong>.</p>"
+            "description": "<p>Vous coalescez la puissance arcanique en forme tangible, manifestant un <strong>Lutin</strong> qui apparaît dans les @[feet 10] et rejoint le Combat avec une Initiative de 1. Votre Lutin est un <strong>Minion</strong> de la moitié de votre propre Niveau.</p><p>Le signe de Création évolue avec la <strong>Sagesse</strong> et le Lutin survit pendant <strong>6 Rounds</strong>. Vous ne pouvez avoir qu'un seul Lutin actif, lancer un autre sort utilisant le signe de Création remplace votre Lutin précédent. Ce signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>4 Actions</strong> et <strong>1 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Toutes les Runes n'ont pas encore d'acteur Lutin défini. Les Runes qui n'ont pas encore de Création définie manifesteront – pour l'instant – un @UUID[Compendium.crucible.summons.Actor.RuNh1bFGiHKdHeKI].</p>"
         },
         "gesturefan000000": {
             "name": "Signe : Éventail",
@@ -843,7 +843,7 @@
             "actions": {
                 "headbutt": {
                     "name": "Coup de boule",
-                    "description": "<p>Effectuez une <strong>Frappe</strong> à mains nues contre la défense de <strong>Fortitude</strong> d'un ennemi adjacent. Si votre <strong>Initiative</strong> est supérieure à celle de votre cible, vous obtenez <strong>+1 Faveur</strong> à cette attaque.</p><p>L'attaque est <strong>Difficile</strong> et n'inflige que des dégâts <strong>Réduits</strong>, mais sur une réussite, elle inflige la condition @Condition[staggered] pendant un round.</p><p>Cette action utilise toujours une arme à mains nues, même si vos emplacements d'arme sont occupés.</p>",
+                    "description": "<p>Effectuez une <strong>Frappe</strong> à mains nues contre la défense de <strong>Fortitude</strong> d'un ennemi adjacent. Si votre <strong>Initiative</strong> est supérieure à celle de votre cible, vous obtenez <strong>+1 Faveur</strong> à cette attaque.</p><p>L'attaque est <strong>Difficile</strong> et n'inflige que des dégâts @Rule[action.weakened], mais sur une réussite, elle inflige la condition @Condition[staggered] pendant un round.</p><p>Cette action utilise toujours une arme à mains nues, même si vos emplacements d'arme sont occupés.</p>",
                     "effects": {
                         "Headbutt": {
                             "name": "Coup de boule"
@@ -887,11 +887,11 @@
         },
         "illuminationProf": {
             "name": "Maîtrise de l'Illumination",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune d'Illumination. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Révéler</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune d'Illumination. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action @Action[Compendium.crucible.talent.Item.runeIllumination reveal], étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "illusionProficie": {
             "name": "Maîtrise de l'Illusion",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune d'Illusion. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Sembler</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune d'Illusion. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action @Action[Compendium.crucible.talent.Item.runeIllusion0000 seeming], étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "impenetrableGuar": {
             "name": "Garde impénetrable",
@@ -957,7 +957,7 @@
         },
         "inspirator000000": {
             "name": "Inspirateur",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Âme. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui restaurent du Moral causent la condition @Condition[inspired].</p><p>L'effet Inspiré dure <strong>1 Round</strong> et offre votre score de <strong>Présence</strong> comme <strong>Restauration</strong> additionnelle au <strong>Moral</strong>.</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Âme. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui restaurent du Moral causent la condition @Condition[inspired].</p><p>L'effet Inspiré dure <strong>1 Round</strong> et offre le score de caractéristique que votre <strong>Rune d'âme</strong> utilise en tant que <strong>Restauration</strong> additionnelle au <strong>Moral</strong>.</p>"
         },
         "inspireheroism00": {
             "name": "Inspirer l'Héroïsme",
@@ -1072,11 +1072,11 @@
         },
         "kinesisProficien": {
             "name": "Maîtrise de la Kinésie",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Kinésie. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Propulser</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Kinésie. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action @Action[Compendium.crucible.talent.Item.runeKinesis00000 propel], étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "kineturge0000000": {
             "name": "Kinéthurge",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Kinésie. Lorsque vous lancez un Sort ou utilisez une action qui implique cette rune, vos Coups critiques qui infligent des dégâts appliquent également la condition @Condition[bleeding].</p><p>L'effet de Saignement dure <strong>1 Round</strong> et inflige un montant de dégâts <strong>Perforants</strong> supplémentaires à la <strong>Santé</strong> égal à votre score de caractéristique de <strong>Présence</strong>.</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Kinésie. Lorsque vous lancez un Sort ou utilisez une action qui implique cette rune, vos Coups critiques qui infligent des dégâts appliquent également la condition @Condition[bleeding].</p><p>L'effet de Saignement dure <strong>1 Round</strong> et inflige le score de caractéristique que votre <strong>Rune de kinésie</strong> utilise en tant que dégâts <strong>Perforants</strong> supplémentaires à la <strong>Santé</strong>.</p>"
         },
         "lastStand0000000": {
             "name": "Dernier combat",
@@ -1118,11 +1118,11 @@
         },
         "lifeProficiency0": {
             "name": "Maîtrise de la Vie",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Vie. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Fleurir</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Vie. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action @Action[Compendium.crucible.talent.Item.runeLife00000000 bloom], étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "lightbringer0000": {
             "name": "Porteur de lumière",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Illumination. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[irradiated].</p><p>L'effet Irradié dure <strong>1 Round</strong> et inflige votre score de <strong>Présence</strong> comme dégâts <strong>Radiants</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Illumination. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[irradiated].</p><p>L'effet Irradié dure <strong>1 Round</strong> et inflige le score de caractéristique que votre <strong>Rune d'illumination</strong> utilise en tant que dégâts <strong>Radiants</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
         },
         "lightWeaponProfi": {
             "name": "Armes légères : Maîtrise",
@@ -1189,7 +1189,7 @@
         },
         "mender0000000000": {
             "name": "Vivificateur",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Vie. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui restaurent de la Santé causent la condition @Condition[mending].</p><p>L'effet Vivifié dure <strong>1 Round</strong> et offre votre score de <strong>Sagesse</strong> comme <strong>Restauration</strong> additionnelle à la <strong>Santé</strong>.</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Vie. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui restaurent de la Santé causent la condition @Condition[mending].</p><p>L'effet Vivifié dure <strong>1 Round</strong> et offre le score de caractéristique que votre <strong>Rune de vie</strong> utilise en tant que <strong>Restauration</strong> additionnelle à la <strong>Santé</strong>.</p>"
         },
         "mentalfortress00": {
             "name": "Forteresse mentale",
@@ -1197,7 +1197,7 @@
         },
         "mesmer0000000000": {
             "name": "Envoûteur",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Illusion. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[confused].</p><p>L'effet Confus dure <strong>1 Round</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts <strong>Psychiques</strong> au <strong>Moral</strong>, et applique la condition @Condition[disoriented].</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Illusion. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[confused].</p><p>L'effet Confus dure <strong>1 Round</strong>, inflige la moitié du score de caractéristique que votre <strong>Rune d'illusion</strong> utilise en tant que dégâts <strong>Psychiques</strong> au <strong>Moral</strong>, et applique la condition @Condition[disoriented].</p>"
         },
         "mnemonicrealizat": {
             "name": "Réalisation mnémonique",
@@ -1235,7 +1235,7 @@
         },
         "necromancer00000": {
             "name": "Nécromancien",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la rune de Mort. Lorsque vous lancez un Sort ou utilisez une action qui implique cette rune, vos Coups critiques qui infligent des dégâts appliquent également la condition @Condition[decaying].</p><p>L'effet de Décomposition dure <strong>3 Rounds</strong> et inflige un montant de dégâts de <strong>Corruption</strong> à la <strong>Santé</strong> égal à la moitié de votre score de <strong>Présence</strong> chaque Round.</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la rune de Mort. Lorsque vous lancez un Sort ou utilisez une action qui implique cette rune, vos Coups critiques qui infligent des dégâts appliquent également la condition @Condition[decaying].</p><p>L'effet de Décomposition dure <strong>3 Rounds</strong> et inflige la moitié du score de caractéristique que votre <strong>Rune de mort</strong> utilise en tant que dégâts de <strong>Corruption</strong> à la <strong>Santé</strong> chaque Round.</p>"
         },
         "neverYield000000": {
             "name": "Ne jamais céder",
@@ -1254,7 +1254,7 @@
         },
         "oblivionProficie": {
             "name": "Maîtrise du Néant",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Néant. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Effacer</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Néant. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action @Action[Compendium.crucible.talent.Item.runeOblivion0000 erase], étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "operator00000000": {
             "name": "Opérateur",
@@ -1287,7 +1287,7 @@
         },
         "patientdeflectio": {
             "name": "Déviation patiente",
-            "description": "Votre expertise des arts martiaux vous permet d'esquiver ou de dévier les coups aussi efficacement qu'un combattant lourdement armuré. Tant que vous êtes à mains nues, la moitié de votre score de Sagesse contribue à votre défense de Parade."
+            "description": "Votre expertise des arts martiaux vous permet d'esquiver ou de dévier les coups aussi efficacement qu'un combattant lourdement armuré. Tant que vous êtes à mains nues ou ne portez que des armes naturelles, la moitié de votre score de Sagesse contribue à votre défense de Parade."
         },
         "penetratingshot0": {
             "name": "Tir pénétrant",
@@ -1305,7 +1305,7 @@
             "actions": {
                 "penetratingThrow": {
                     "name": "Lancer pénétrant",
-                    "description": "<p>Vous effectuez une attaque d'arme de <strong>Lancer</strong> qui s'insinue pour toucher tous les ennemis sur une ligne droite.</p>"
+                    "description": "<p>Vous effectuez une attaque d'arme de @Rule[action.thrown] qui s'insinue pour toucher tous les ennemis sur une ligne droite.</p>"
                 }
             }
         },
@@ -1335,7 +1335,7 @@
             "actions": {
                 "pinningShot": {
                     "name": "Tir de fixation",
-                    "description": "<p>Vous <strong>Frappez</strong> à distance. L'attaque est <strong>Difficile</strong>, mais si vous touchez votre cible, celle-ci devient @Condition[restrained] jusqu'à la fin de son prochain Tour.</p>",
+                    "description": "<p>Vous <strong>Frappez</strong> à distance. L'attaque est @Rule[action.difficult], mais si vous touchez votre cible, celle-ci devient @Condition[restrained] jusqu'à la fin de son prochain <strong>Tour</strong>.</p>",
                     "effects": {
                         "Pinning Shot": {
                             "name": "Tir de fixation"
@@ -1350,7 +1350,7 @@
             "actions": {
                 "salvo": {
                     "name": "Salve",
-                    "description": "Vous effectuez un tir de barrage avec une arme mécanique à une main, tirant trois fois sur une cible sans avoir besoin de recharger entre les tirs."
+                    "description": "<p>Vous effectuez un tir de barrage avec une arme mécanique à une main, tirant trois fois sur une cible sans avoir besoin de recharger entre les tirs.</p>"
                 }
             }
         },
@@ -1379,7 +1379,7 @@
         },
         "powerfulThrow000": {
             "name": "Lancer puissant",
-            "description": "<p>La portée maximale des actions avec l'étiquette <strong>Lancer</strong> ou des actions de consommables : <strong>Bombe</strong> est doublée.</p>"
+            "description": "<p>La portée maximale des actions avec l'étiquette @Rule[action.thrown] ou des actions de consommables : <strong>Bombe</strong> est doublée.</p>"
         },
         "precisionshot000": {
             "name": "Tir de précision",
@@ -1431,7 +1431,7 @@
         },
         "pyromancer000000": {
             "name": "Pyromancien",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Flamme. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[burning].</p><p>L'effet Enflammé dure <strong>3 Rounds</strong> et inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts de <strong>Feu</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Flamme. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[burning].</p><p>L'effet Enflammé dure <strong>3 Rounds</strong> et inflige la moitié du score de caractéristique que votre <strong>Rune de flamme</strong> utilise en tant que dégâts de <strong>Feu</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
         },
         "rallyingCry00000": {
             "name": "Cri de ralliement",
@@ -1465,11 +1465,11 @@
         },
         "resilient0000000": {
             "name": "Résilient",
-            "description": "<p>Votre corps répond avidement à la guérison, démontrant une capacité remarquable à récupérer des blessures.</p>\n<p>Votre <strong>seuil de Lésions</strong> est réduit de 1, vous rendant plus facile à soigner.</p>"
+            "description": "<p>Votre corps répond avidement à la guérison, démontrant une capacité remarquable à récupérer des blessures.</p>\n<p>Votre <strong>seuil de Guérison</strong> est réduit de 1, vous rendant plus facile à soigner.</p>"
         },
         "rimecaller000000": {
             "name": "Héraut du Givre",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Givre. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[freezing].</p><p>L'effet Gelé dure <strong>1 Round</strong>, inflige la moitié de votre score de <strong>Sagesse</strong> comme dégâts de <strong>Givre</strong> à la <strong>Santé</strong>, et applique la condition @Condition[slowed].</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Givre. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[freezing].</p><p>L'effet Gelé dure <strong>1 Round</strong>, inflige la moitié du score de caractéristique que votre <strong>Rune de givre</strong> utilise en tant que dégâts de <strong>Givre</strong> à la <strong>Santé</strong>, et applique la condition @Condition[slowed].</p>"
         },
         "runeControl00000": {
             "name": "Rune : Contrôle",
@@ -1745,7 +1745,7 @@
         },
         "soulProficiency0": {
             "name": "Maîtrise de l'Âme",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune d'Âme. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Évoquer</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune d'Âme. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action @Action[Compendium.crucible.talent.Item.runeSoul00000000 evoke], étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "spellblade000000": {
             "name": "Sorcelame",
@@ -1808,7 +1808,7 @@
             "actions": {
                 "stunningStrike": {
                     "name": "Frappe étourdissante",
-                    "description": "<p>Vous <strong>Frappez</strong> un point de pression vital, infligeant la condition <strong>Étourdi</strong> à votre ennemi pendant 1 Round sur une réussite.</p>",
+                    "description": "<p>Vous <strong>Frappez</strong> un point de pression vital, infligeant la condition @Rule[condition.stunned] à votre ennemi pendant 1 Round sur une réussite.</p>",
                     "effects": {
                         "Stunning Strike": {
                             "name": "Frappe étourdissante"
@@ -1819,7 +1819,7 @@
         },
         "subtleextricatio": {
             "name": "Extraction subtile",
-            "description": "<p>Vous comprenez comment vous éloigner d'un adversaire sans vous exposer aux pires attaques en retour. Toute <strong>Frappe réactive</strong> contre vous est effectuée avec <strong>+1 Fléau</strong>.</p>"
+            "description": "<p>Vous comprenez comment vous éloigner d'un adversaire sans vous exposer aux pires attaques en retour. Toute @Action[default reactiveStrike] contre vous est effectuée avec <strong>+1 Fléau</strong>.</p>"
         },
         "sunderingstrike0": {
             "name": "Frappe fracturante",
@@ -1838,7 +1838,7 @@
         },
         "surgeweaver00000": {
             "name": "Tissefoudre",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Orage. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[shocked].</p><p>L'effet Électrocuté dure <strong>3 Rounds</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts <strong>Électriques</strong> au <strong>Moral</strong>, et applique la condition @Condition[staggered].</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Orage. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[shocked].</p><p>L'effet Électrocuté dure <strong>3 Rounds</strong>, inflige la moitié du score de caractéristique que votre <strong>Rune d'orage</strong> utilise en tant que dégâts <strong>Électriques</strong> au <strong>Moral</strong>, et applique la condition @Condition[staggered].</p>"
         },
         "swashbuckler0000": {
             "name": "Bretteur",
@@ -1896,7 +1896,7 @@
         },
         "thoughtbinder000": {
             "name": "Censeur",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Contrôle. Lorsque vous lancez un Sort ou utilisez une action qui implique cette rune, vos Coups critiques qui infligent des dégâts appliquent également la condition @Condition[dominated].</p><p>L'effet Dominé dure <strong>3 Rounds</strong> et inflige un montant de dégâts <strong>Psychiques</strong> supplémentaires au <strong>Moral</strong> égal à votre score de caractéristique de <strong>Sagesse</strong>.</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Contrôle. Lorsque vous lancez un Sort ou utilisez une action qui implique cette rune, vos Coups critiques qui infligent des dégâts appliquent également la condition @Condition[dominated].</p><p>L'effet Dominé dure <strong>3 Rounds</strong> et inflige le score de caractéristique que votre <strong>Rune de contrôle</strong> utilise en tant que dégâts <strong>Psychiques</strong> supplémentaires au <strong>Moral</strong>.</p>"
         },
         "threadtheneedle0": {
             "name": "Enfiler l'aiguille",
@@ -1934,7 +1934,7 @@
         },
         "unarmedblocking0": {
             "name": "Blocage à Mains nues",
-            "description": "Vos réflexes affinés et votre robustesse physique vous permettent de bloquer les coups ennemis en utilisant vos bras nus. Tant que vous êtes <strong>À mains nues</strong>, la moitié de votre score de Robustesse contribue à votre défense de <strong>Blocage</strong>."
+            "description": "Vos réflexes affinés et votre robustesse physique vous permettent de bloquer les coups ennemis en utilisant vos membres nus. Tant que vous êtes <strong>À mains nues</strong> ou ne portez que des armes naturelles, la moitié de votre score de Robustesse contribue à votre défense de <strong>Blocage</strong>."
         },
         "unarmedCombatPro": {
             "name": "Combat à mains nues : Maîtrise",
@@ -1988,7 +1988,7 @@
         },
         "voidcaller000000": {
             "name": "Héraut du Néant",
-            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune du Néant. Lorsque vous lancez un Sort ou utilisez une action qui implique cette rune, vos Coups critiques qui infligent des dégâts appliquent également la condition @Condition[entropy].</p><p>L'effet Dérangé dure <strong>1 Round</strong>, inflige un montant de dégâts de <strong>Vide</strong> à la <strong>Santé</strong> égal à la moitié de votre score de <strong>Présence</strong>, et applique la condition @Condition[frightened].</p>"
+            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune du Néant. Lorsque vous lancez un Sort ou utilisez une action qui implique cette rune, vos Coups critiques qui infligent des dégâts appliquent également la condition @Condition[entropy].</p><p>L'effet Dérangé dure <strong>1 Round</strong>, inflige la moitié du score de caractéristique que votre <strong>Rune de néant</strong> utilise en tant que dégâts de <strong>Vide</strong> à la <strong>Santé</strong>, et applique la condition @Condition[frightened].</p>"
         },
         "vowofanimus00000": {
             "name": "Serment d'animosité",
@@ -2138,11 +2138,11 @@
         },
         "gambit0000000000": {
             "name": "Gambit",
-            "description": "<p>Certains se battent selon les règles, vous vous battez selon les probabilités. Chaque échange est un pari : vous lisez l'intention de votre adversaire, faites des paris risqués pour le pousser à l'erreur, puis misez tout sur un coup d'éclat qui change la donne. Vous faites confiance à votre instinct, à votre esprit et à quelques ruses arcaniques pour faire pencher la balance en votre faveur, obtenant ainsi les avantages suivants :</p><ul><li><p><em>Le Présage.</em> Vous voyez un coup venir avant qu'il ne soit porté. Votre défense d'<strong>Esquive</strong> est calculée en utilisant votre <strong>Intellect</strong> au lieu de votre <strong>Dextérité</strong>, si celui-ci est supérieur.</p></li><li><p><em>Dés pipés.</em> La chance sourit aux audacieux. Une fois par round, la première fois que vous obtenez un 1 sur n'importe quel dé, ce dé est relancé et vous conservez le nouveau résultat.</p></li><li><p><em>Mise de départ.</em> Lorsque vous effectuez une @Action[default strike], vous pouvez choisir d'y ajouter délibérément des <strong>Fléaux</strong>. Si la Frappe réussit, un effet spécial de <strong>Gambit</strong> augmente d'un nombre de charges égal au nombre de Fléaux misés. Ces charges durent jusqu'à la fin du Combat ou jusqu'à ce qu'elles soient dépensées.</p></li></ul>",
+            "description": "<p>Certains se battent selon les règles, vous vous battez selon les probabilités. Chaque échange est un pari : vous lisez l'intention de votre adversaire, faites des paris risqués pour le pousser à l'erreur, puis misez tout sur un coup d'éclat qui change la donne. Vous faites confiance à votre instinct, à votre esprit et à quelques ruses arcaniques pour faire pencher la balance en votre faveur, obtenant ainsi les avantages suivants :</p><ul><li><p><em>Le Présage.</em> Vous voyez un coup venir avant qu'il ne soit porté. Votre défense d'<strong>Esquive</strong> est calculée en utilisant votre <strong>Intellect</strong> au lieu de votre <strong>Dextérité</strong>, si votre <strong>Intellect</strong> est supérieur.</p></li><li><p><em>Dés pipés.</em> La chance sourit aux audacieux. Une fois par round, la première fois que vous obtenez un 1 sur n'importe quel dé, ce dé est relancé et vous conservez le nouveau résultat.</p></li><li><p><em>Mise de départ.</em> Lorsque vous effectuez une @Action[default strike], vous pouvez choisir de parier des <strong>Fléaux</strong> supplémentaires contre vous-même. Si la Frappe touche un ennemi, vous obtenez un nombre de charges de <strong>Gambit</strong> égal au nombre de Fléaux misés. Ces charges s'accumulent jusqu'à la fin du Combat ou jusqu'à ce qu'elles soient dépensées.</p></li></ul>",
             "actions": {
                 "gambitAllIn": {
                     "name": "Tapis",
-                    "description": "<p>Tous vos paris portent enfin leurs fruits, et vous raclez la mise d'un coup. Le prochain jet d'attaque ou de test obtient le résultat maximal possible sur tous ses dés. Vous pouvez activer cette action en dépensant soit 6 charges de <strong>Gambit</strong>, soit 1 point d'<strong>Héroïsme</strong>.</p>"
+                    "description": "<p>Tous vos paris portent enfin leurs fruits, et vous raclez la mise d'un coup. Le prochain jet d'attaque ou de test que vous faites pendant ce tour obtient le résultat maximal possible sur tous les dés de cette pool. Si cette action effectue un ou plusieurs jets de dés, seul le premier est maximisé. Vous pouvez activer cette action en dépensant 6 charges de <strong>Gambit</strong> ou 1 point d'<strong>Héroïsme</strong>.</p>"
                 }
             }
         },
@@ -2273,7 +2273,7 @@
         },
         "stormProficiency": {
             "name": "Maîtrise de l'Orage",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune d'Orage. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de Playtest</h3><p>Ce talent permettra à terme d'améliorer l'action <strong>Dynamiser</strong>, en augmentant son efficacité ou en proposant de nouvelles façons de l'utiliser.</p>"
+            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune d'Orage. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de Playtest</h3><p>Ce talent permettra à terme d'améliorer l'action @Action[Compendium.crucible.talent.Item.runeStorm0000000 energize], en augmentant son efficacité ou en proposant de nouvelles façons de l'utiliser.</p>"
         },
         "telekinetic00000": {
             "name": "Télékinésiste",

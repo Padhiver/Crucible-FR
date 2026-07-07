@@ -332,7 +332,7 @@
                         },
                         "gesturecreate000": {
                             "name": "Signe : Création",
-                            "description": "<p>Vous coalescez la puissance arcanique en forme tangible, manifestant un <strong>Lutin</strong> qui apparaît dans les @[feet 10] et rejoint le Combat avec une Initiative de 1. Votre Lutin est un <strong>Minion</strong> de la moitié de votre propre Niveau.</p><p>Le signe de Création évolue avec la <strong>Sagesse</strong> et le Lutin survit pendant <strong>6 Rounds</strong>. Vous ne pouvez avoir qu'un seul Lutin actif, lancer un autre sort utilisant le signe de Création remplace votre Lutin précédent. Ce signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>4 Actions</strong> et <strong>1 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Toutes les Runes n'ont pas encore d'acteur Lutin défini. Les Runes qui n'ont pas encore de Création définie manifesteront – pour l'instant – un <strong>Lutin de Flamme</strong>.</p>"
+                            "description": "<p>Vous coalescez la puissance arcanique en forme tangible, manifestant un <strong>Lutin</strong> qui apparaît dans les @[feet 10] et rejoint le Combat avec une Initiative de 1. Votre Lutin est un <strong>Minion</strong> de la moitié de votre propre Niveau.</p><p>Le signe de Création évolue avec la <strong>Sagesse</strong> et le Lutin survit pendant <strong>6 Rounds</strong>. Vous ne pouvez avoir qu'un seul Lutin actif, lancer un autre sort utilisant le signe de Création remplace votre Lutin précédent. Ce signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>4 Actions</strong> et <strong>1 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Toutes les Runes n'ont pas encore d'acteur Lutin défini. Les Runes qui n'ont pas encore de Création définie manifesteront – pour l'instant – un @UUID[Compendium.crucible.summons.Actor.RuNh1bFGiHKdHeKI].</p>"
                         },
                         "gesturearrow0000": {
                             "name": "Signe : Flèche",
@@ -489,7 +489,7 @@
                         },
                         "bulwark000000000": {
                             "name": "Rempart",
-                            "description": "<p>Vous êtes expert dans l'utilisation d'un <strong>Bouclier</strong> pour vous défendre et défendre les autres.</p><p>Une fois par Tour tant que vous avez un Bouclier équipé, vous pouvez utiliser l'action <strong>Défendre</strong> à un coût réduit de 1 Point d'Action.</p>"
+                            "description": "<p>Vous êtes expert dans l'utilisation d'un <strong>Bouclier</strong> pour vous défendre et défendre les autres.</p><p>Une fois par Tour tant que vous avez un Bouclier équipé, vous pouvez utiliser l'action @Action[default defend] à un coût réduit de 1 Point d'Action.</p>"
                         },
                         "armoredefficienc": {
                             "name": "Efficacité en armure",
@@ -601,7 +601,7 @@
                             "actions": {
                                 "ferociousLeap": {
                                     "name": "Bond féroce",
-                                    "description": "<p>Vous bondissez sur @[feet 10] et effectuez une Frappe de mêlée contre un ennemi à portée de votre point de chute. Votre déplacement ignore les terrains difficiles et n'est pas bloqué par des créatures ennemies.</p>"
+                                    "description": "<p>Vous <strong>Sautez</strong> jusqu'à @[feet 10] et effectuez une <strong>Frappe</strong> de mêlée contre un ennemi à portée de votre point de chute. Votre déplacement ignore les terrains difficiles et n'est pas bloqué par des créatures ennemies.</p>"
                                 }
                             }
                         },
@@ -1046,7 +1046,7 @@
                         },
                         "pyromancer000000": {
                             "name": "Pyromancien",
-                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Flamme. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[burning].</p><p>L'effet Enflammé dure <strong>3 Rounds</strong> et inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts de <strong>Feu</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
+                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Flamme. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[burning].</p><p>L'effet Enflammé dure <strong>3 Rounds</strong> et inflige la moitié du score de caractéristique que votre <strong>Rune de flamme</strong> utilise en tant que dégâts de <strong>Feu</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
                         },
                         "gestureBlast0000": {
                             "name": "Signe : Explosion",
@@ -1224,7 +1224,7 @@
                             "actions": {
                                 "antitoxin": {
                                     "name": "Antidote",
-                                    "description": "<p>Consommer cet @ref[name] permet de neutraliser toutes les conditions @Condition[poisoned] affectant la cible. Les poisons plus puissants nécessitent un antidote plus puissant pour être neutralisés.</p><p>La catégorie de poison annulée par cet @ref[name] dépend de sa qualité :</p><ul><li><p><strong>Bâclée</strong> - Poisons infligeant 3 dégâts ou moins par round</p></li><li><p><strong>Commune</strong> - Poisons infligeant 5 dégâts ou moins par round</p></li><li><p><strong>Raffinée</strong> - Poisons infligeant 7 dégâts ou moins par round</p></li><li><p><strong>Supérieure</strong> - Poisons infligeant 9 dégâts ou moins par round</p></li><li><p><strong>Chef-d’œuvre</strong> - Poisons infligeant 11 dégâts ou moins par round</p></li></ul>"
+                                    "description": "<p>Consommer cet @ref[item.name] permet de neutraliser toutes les conditions @Condition[poisoned] affectant la cible. Les poisons plus puissants nécessitent un antidote plus puissant pour être neutralisés.</p><p>La catégorie de poison annulée par cet @ref[item.name] dépend de sa qualité :</p><ul><li><p><strong>Bâclée</strong> - Poisons infligeant 3 dégâts ou moins par round</p></li><li><p><strong>Commune</strong> - Poisons infligeant 5 dégâts ou moins par round</p></li><li><p><strong>Raffinée</strong> - Poisons infligeant 7 dégâts ou moins par round</p></li><li><p><strong>Supérieure</strong> - Poisons infligeant 9 dégâts ou moins par round</p></li><li><p><strong>Chef-d’œuvre</strong> - Poisons infligeant 11 dégâts ou moins par round</p></li></ul>"
                                 }
                             }
                         },
@@ -1236,7 +1236,7 @@
                             "actions": {
                                 "poisonIngest": {
                                     "name": "Poison d'ingestion",
-                                    "description": "<p>Lorsque cette toxine est ingérée ou entre autrement dans le sang d'une créature, elle est initialement <strong>Inoffensive</strong>, mais la cible doit se défendre d'une attaque contre sa <strong>Fortitude</strong> ou être @Condition[poisoned].</p><p>Le montant des dégâts de poison et leur durée dépendent de la qualité du @ref[name]:</p><ul><li><p><strong>Bâclée</strong> - 2 dégâts pendant 4 rounds</p></li><li><p><strong>Commune</strong> - 4 dégâts pendant 6 rounds</p></li><li><p><strong>Raffinée</strong> - 6 dégâts pendant 8 rounds</p></li><li><p><strong>Supérieure</strong> - 8 dégâts pendant 10 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - 10 dégâts pendant 12 rounds</p></li></ul><p><em>Cette action doit être utilisée lorsque le poison est ingéré plutôt que lors de sa première application.</em></p>",
+                                    "description": "<p>Lorsque cette toxine est ingérée ou entre autrement dans le sang d'une créature, elle est initialement <strong>Inoffensive</strong>, mais la cible doit se défendre d'une attaque contre sa <strong>Fortitude</strong> ou être @Condition[poisoned].</p><p>Le montant des dégâts de poison et leur durée dépendent de la qualité du @ref[item.name] :</p><ul><li><p><strong>Bâclée</strong> - 2 dégâts pendant 4 rounds</p></li><li><p><strong>Commune</strong> - 4 dégâts pendant 6 rounds</p></li><li><p><strong>Raffinée</strong> - 6 dégâts pendant 8 rounds</p></li><li><p><strong>Supérieure</strong> - 8 dégâts pendant 10 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - 10 dégâts pendant 12 rounds</p></li></ul><p><em>Cette action doit être utilisée lorsque le poison est ingéré plutôt que lors de sa première application.</em></p>",
                                     "effects": {
                                         "Poisoned": {
                                             "name": "Empoisonné"
@@ -1405,7 +1405,7 @@
                         },
                         "bulwark000000000": {
                             "name": "Rempart",
-                            "description": "<p>Vous êtes expert dans l'utilisation d'un <strong>Bouclier</strong> pour vous défendre et défendre les autres.</p><p>Une fois par Tour tant que vous avez un Bouclier équipé, vous pouvez utiliser l'action <strong>Défendre</strong> à un coût réduit de 1 Point d'Action.</p>"
+                            "description": "<p>Vous êtes expert dans l'utilisation d'un <strong>Bouclier</strong> pour vous défendre et défendre les autres.</p><p>Une fois par Tour tant que vous avez un Bouclier équipé, vous pouvez utiliser l'action @Action[default defend] à un coût réduit de 1 Point d'Action.</p>"
                         },
                         "testudo000000000": {
                             "name": "Tortue",
@@ -1603,7 +1603,7 @@
                             "actions": {
                                 "pinningShot": {
                                     "name": "Tir de fixation",
-                                    "description": "<p>Vous <strong>Frappez</strong> à distance. L'attaque est <strong>Difficile</strong>, mais si vous touchez votre cible, celle-ci devient @Condition[restrained] jusqu'à la fin de son prochain Tour.</p>",
+                                    "description": "<p>Vous <strong>Frappez</strong> à distance. L'attaque est @Rule[action.difficult], mais si vous touchez votre cible, celle-ci devient @Condition[restrained] jusqu'à la fin de son prochain <strong>Tour</strong>.</p>",
                                     "effects": {
                                         "Pinning Shot": {
                                             "name": "Tir de fixation"
@@ -1707,7 +1707,7 @@
                         },
                         "surgeweaver00000": {
                             "name": "Tissefoudre",
-                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Orage. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[shocked].</p><p>L'effet Électrocuté dure <strong>3 Rounds</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts <strong>Électriques</strong> au <strong>Moral</strong>, et applique la condition @Condition[staggered].</p>"
+                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Orage. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[shocked].</p><p>L'effet Électrocuté dure <strong>3 Rounds</strong>, inflige la moitié du score de caractéristique que votre <strong>Rune d'orage</strong> utilise en tant que dégâts <strong>Électriques</strong> au <strong>Moral</strong>, et applique la condition @Condition[staggered].</p>"
                         },
                         "awarenessNovice0": {
                             "name": "Vigilance : Novice",
@@ -1725,7 +1725,7 @@
                         },
                         "subtleextricatio": {
                             "name": "Extraction subtile",
-                            "description": "<p>Vous comprenez comment vous éloigner d'un adversaire sans vous exposer aux pires attaques en retour. Toute <strong>Frappe réactive</strong> contre vous est effectuée avec <strong>+1 Fléau</strong>.</p>"
+                            "description": "<p>Vous comprenez comment vous éloigner d'un adversaire sans vous exposer aux pires attaques en retour. Toute @Action[default reactiveStrike] contre vous est effectuée avec <strong>+1 Fléau</strong>.</p>"
                         },
                         "focusedanticipat": {
                             "name": "Anticipation focalisée",
@@ -1740,7 +1740,7 @@
                             "actions": {
                                 "blastFlask": {
                                     "name": "Fiole explosive",
-                                    "description": "<p>Vous allumez et lancez la @ref[name], infligeant des dégâts de <strong>Feu</strong> à tous les ennemis dans le rayon de l'explosion. Le rayon de l'<strong>Explosion</strong> dépend de la qualité de la bombe :</p><ul><li><p><strong>Bâclée</strong> - @[feet 3]</p></li><li><p><strong>Commune</strong> - @[feet 4]</p></li><li><p><strong>Raffinée</strong> - @[feet 6]</p></li><li><p><strong>Supérieure</strong> - @[feet 8]</p></li><li><p><strong>Chef-d’œuvre</strong> - @[feet 10]</p></li></ul>"
+                                    "description": "<p>Vous allumez et lancez la @ref[item.name], infligeant des dégâts de <strong>Feu</strong> à tous les ennemis dans le rayon de l'explosion qui ne parviennent pas à éviter l'attaque. Le rayon de l'<strong>Explosion</strong> dépend de la qualité de la bombe :</p><ul><li><p><strong>Bâclée</strong> - @[feet 3]</p></li><li><p><strong>Commune</strong> - @[feet 4]</p></li><li><p><strong>Raffinée</strong> - @[feet 6]</p></li><li><p><strong>Supérieure</strong> - @[feet 8]</p></li><li><p><strong>Chef-d’œuvre</strong> - @[feet 10]</p></li></ul>"
                                 }
                             }
                         },
@@ -1769,6 +1769,12 @@
                                 }
                             },
                             "name": "Rune : Orage"
+                        },
+                        "gSJwMBCibQjN3hqL": {
+                            "name": "Pistolet",
+                            "description": {
+                                "public": "<p>Arme à feu à poudre noire primitive, à tir unique et tonitruant, le pistolet à silex est l'arme du joueur — mortel en un éclair, mais lent à recharger dans le chaos du combat.</p>"
+                            }
                         }
                     },
                     "ancestry": {
@@ -1821,7 +1827,7 @@
                         },
                         "gesturecreate000": {
                             "name": "Signe : Création",
-                            "description": "<p>Vous coalescez la puissance arcanique en forme tangible, manifestant un <strong>Lutin</strong> qui apparaît dans les @[feet 10] et rejoint le Combat avec une Initiative de 1. Votre Lutin est un <strong>Minion</strong> de la moitié de votre propre Niveau.</p><p>Le signe de Création évolue avec la <strong>Sagesse</strong> et le Lutin survit pendant <strong>6 Rounds</strong>. Vous ne pouvez avoir qu'un seul Lutin actif, lancer un autre sort utilisant le signe de Création remplace votre Lutin précédent. Ce signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>4 Actions</strong> et <strong>1 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Toutes les Runes n'ont pas encore d'acteur Lutin défini. Les Runes qui n'ont pas encore de Création définie manifesteront – pour l'instant – un <strong>Lutin de Flamme</strong>.</p>"
+                            "description": "<p>Vous coalescez la puissance arcanique en forme tangible, manifestant un <strong>Lutin</strong> qui apparaît dans les @[feet 10] et rejoint le Combat avec une Initiative de 1. Votre Lutin est un <strong>Minion</strong> de la moitié de votre propre Niveau.</p><p>Le signe de Création évolue avec la <strong>Sagesse</strong> et le Lutin survit pendant <strong>6 Rounds</strong>. Vous ne pouvez avoir qu'un seul Lutin actif, lancer un autre sort utilisant le signe de Création remplace votre Lutin précédent. Ce signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>4 Actions</strong> et <strong>1 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Toutes les Runes n'ont pas encore d'acteur Lutin défini. Les Runes qui n'ont pas encore de Création définie manifesteront – pour l'instant – un @UUID[Compendium.crucible.summons.Actor.RuNh1bFGiHKdHeKI].</p>"
                         },
                         "inflectioncompos": {
                             "name": "Inflexion : Façonner",
@@ -1833,7 +1839,7 @@
                         },
                         "rimecaller000000": {
                             "name": "Héraut du Givre",
-                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Givre. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[freezing].</p><p>L'effet Gelé dure <strong>1 Round</strong>, inflige la moitié de votre score de <strong>Sagesse</strong> comme dégâts de <strong>Givre</strong> à la <strong>Santé</strong>, et applique la condition @Condition[slowed].</p>"
+                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Givre. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[freezing].</p><p>L'effet Gelé dure <strong>1 Round</strong>, inflige la moitié du score de caractéristique que votre <strong>Rune de givre</strong> utilise en tant que dégâts de <strong>Givre</strong> à la <strong>Santé</strong>, et applique la condition @Condition[slowed].</p>"
                         },
                         "recognizespellcr": {
                             "name": "Reconnaître la Sorcellerie",
@@ -1882,11 +1888,11 @@
                         },
                         "surgeweaver00000": {
                             "name": "Tissefoudre",
-                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Orage. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[shocked].</p><p>L'effet Électrocuté dure <strong>3 Rounds</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts <strong>Électriques</strong> au <strong>Moral</strong>, et applique la condition @Condition[staggered].</p>"
+                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Orage. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[shocked].</p><p>L'effet Électrocuté dure <strong>3 Rounds</strong>, inflige la moitié du score de caractéristique que votre <strong>Rune d'orage</strong> utilise en tant que dégâts <strong>Électriques</strong> au <strong>Moral</strong>, et applique la condition @Condition[staggered].</p>"
                         },
                         "mesmer0000000000": {
                             "name": "Envoûteur",
-                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Illusion. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[confused].</p><p>L'effet Confus dure <strong>1 Round</strong>, inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts <strong>Psychiques</strong> au <strong>Moral</strong>, et applique la condition @Condition[disoriented].</p>"
+                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Illusion. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[confused].</p><p>L'effet Confus dure <strong>1 Round</strong>, inflige la moitié du score de caractéristique que votre <strong>Rune d'illusion</strong> utilise en tant que dégâts <strong>Psychiques</strong> au <strong>Moral</strong>, et applique la condition @Condition[disoriented].</p>"
                         },
                         "runeKinesis00000": {
                             "name": "Rune : Kinésie",
@@ -1940,7 +1946,7 @@
                         },
                         "gestureConjure00": {
                             "name": "Signe : Conjuration",
-                            "description": "<p>Vous coalescez la puissance arcanique en une forme supérieure, manifestant un <strong>Visiteur</strong> qui apparaît dans les @[feet 30] et rejoint le Combat avec une <strong>Initiative</strong> de 1. Votre Visiteur est un Minion de niveau égal au vôtre.</p><p>Le signe de Conjuration évolue avec la <strong>Sagesse</strong> et le Visiteur survit pendant <strong>12 Rounds</strong>. Vous ne pouvez avoir qu'un seul Visiteur actif. Lancer un autre sort utilisant le signe de Conjuration remplace votre Visiteur précédent. Ce signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>5 Actions</strong> et <strong>2 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent est actuellement placé au <strong>palier 4</strong>. Il ne sera accessible qu'à un niveau supérieur (probablement le Niveau 6). Il est actuellement disponible en avant-première pour les tests.</p><p>Toutes les Runes n'ont pas encore d'acteur Visiteur défini. Les Runes qui n'ont pas encore de Conjuration définie manifesteront – pour l'instant – un <strong>Visiteur de Flamme</strong>.</p>"
+                            "description": "<p>Vous coalescez la puissance arcanique en une forme supérieure, manifestant un <strong>Visiteur</strong> qui apparaît dans les @[feet 30] et rejoint le Combat avec une <strong>Initiative</strong> de 1. Votre Visiteur est un Minion de niveau égal au vôtre.</p><p>Le signe de Conjuration évolue avec la <strong>Sagesse</strong> et le Visiteur survit pendant <strong>12 Rounds</strong>. Vous ne pouvez avoir qu'un seul Visiteur actif. Lancer un autre sort utilisant le signe de Conjuration remplace votre Visiteur précédent. Ce signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>5 Actions</strong> et <strong>2 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent est actuellement placé au <strong>palier 4</strong>. Il ne sera accessible qu'à un niveau supérieur (probablement le Niveau 6). Il est actuellement disponible en avant-première pour les tests.</p><p>Toutes les Runes n'ont pas encore d'acteur Visiteur défini. Les Runes qui n'ont pas encore de Conjuration définie manifesteront – pour l'instant – un @UUID[Compendium.crucible.summons.Actor.AlwoqQKoL1BnnZjd].</p>"
                         },
                         "Lo3qsvBe64PplA10": {
                             "name": "Stylet",
@@ -2024,7 +2030,7 @@
                         },
                         "dustbinder000000": {
                             "name": "Terramancien",
-                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Terre. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[corroding].</p><p>L'effet Corrodé dure <strong>3 Rounds</strong> et inflige la moitié de votre score de <strong>Sagesse</strong> comme dégâts d'<strong>Acide</strong> à la <strong>Santé</strong> chaque Round.</p>"
+                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Terre. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[corroding].</p><p>L'effet Corrodé dure <strong>3 Rounds</strong> et inflige la moitié du score de caractéristique que votre <strong>Rune de terre</strong> utilise en tant que dégâts d'<strong>Acide</strong> à la <strong>Santé</strong> chaque Round.</p>"
                         },
                         "talismanWeaponTr": {
                             "name": "Talismans : Entraînement",
@@ -2084,11 +2090,11 @@
                         },
                         "inspirator000000": {
                             "name": "Inspirateur",
-                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Âme. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui restaurent du Moral causent la condition @Condition[inspired].</p><p>L'effet Inspiré dure <strong>1 Round</strong> et offre votre score de <strong>Présence</strong> comme <strong>Restauration</strong> additionnelle au <strong>Moral</strong>.</p>"
+                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Âme. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui restaurent du Moral causent la condition @Condition[inspired].</p><p>L'effet Inspiré dure <strong>1 Round</strong> et offre le score de caractéristique que votre <strong>Rune d'âme</strong> utilise en tant que <strong>Restauration</strong> additionnelle au <strong>Moral</strong>.</p>"
                         },
                         "mender0000000000": {
                             "name": "Vivificateur",
-                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Vie. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui restaurent de la Santé causent la condition @Condition[mending].</p><p>L'effet Vivifié dure <strong>1 Round</strong> et offre votre score de <strong>Sagesse</strong> comme <strong>Restauration</strong> additionnelle à la <strong>Santé</strong>.</p>"
+                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Vie. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui restaurent de la Santé causent la condition @Condition[mending].</p><p>L'effet Vivifié dure <strong>1 Round</strong> et offre le score de caractéristique que votre <strong>Rune de vie</strong> utilise en tant que <strong>Restauration</strong> additionnelle à la <strong>Santé</strong>.</p>"
                         },
                         "arcanaNovice0000": {
                             "name": "Arcanes : Novice",
@@ -2215,10 +2221,6 @@
                             "name": "Prise solide",
                             "description": "<p>Votre prise sur votre armement est ferme et inflexible. Lorsque vous maniez une arme à deux mains basée sur la Force, vous pouvez lancer des sorts qui nécessitent deux mains, et les tentatives de Désarmement contre vous sont faites avec +2 Fléaux.</p><p>De plus, vous pouvez manier une arme Lourde à une main dans votre main secondaire.</p>"
                         },
-                        "bloodfrenzy00000": {
-                            "name": "Frénésie sanguinaire",
-                            "description": "<p>Votre soif de bataille vous pousse à des exploits d'action accrue. Lorsque vous réussissez un <strong>Coup critique</strong> infligeant des dégâts à la Santé, vous gagnez immédiatement +1 Action. Ce bénéfice ne peut se produire qu'une fois par Round.</p>"
-                        },
                         "executionersstri": {
                             "name": "Frappe du bourreau",
                             "description": "<p>Vous délivrez une frappe décisive unique contre un ennemi blessé.</p>",
@@ -2325,16 +2327,6 @@
                             "name": "Efficacité en armure",
                             "description": "<p>Vous êtes entraîné à porter les types d'armures les plus lourds tout en conservant votre mobilité. Vous pouvez utiliser une action de Déplacement gratuit une fois par Tour tout en portant une armure Lourde.</p>"
                         },
-                        "penetratingThrow": {
-                            "name": "Lancer pénétrant",
-                            "description": "<p>Vous pouvez lancer votre arme avec une telle férocité qu'elle frappe toutes les cibles sur une ligne directe.</p>",
-                            "actions": {
-                                "penetratingThrow": {
-                                    "name": "Lancer pénétrant",
-                                    "description": "<p>Vous effectuez une attaque d'arme de <strong>Lancer</strong> qui s'insinue pour toucher tous les ennemis sur une ligne droite.</p>"
-                                }
-                            }
-                        },
                         "WTzwacTfNem5ilp9": {
                             "name": "Stylet",
                             "description": {
@@ -2353,6 +2345,16 @@
                                             "name": "Poussée d'adrénaline"
                                         }
                                     }
+                                }
+                            }
+                        },
+                        "ferociousleap000": {
+                            "name": "Bond féroce",
+                            "description": "<p>Vous bondissez puissamment dans la bataille pour délivrer un coup punitif à un ennemi proche avec l'arme de votre main principale.</p>",
+                            "actions": {
+                                "ferociousLeap": {
+                                    "name": "Bond féroce",
+                                    "description": "<p>Vous <strong>Sautez</strong> jusqu'à @[feet 10] et effectuez une <strong>Frappe</strong> de mêlée contre un ennemi à portée de votre point de chute. Votre déplacement ignore les terrains difficiles et n'est pas bloqué par des créatures ennemies.</p>"
                                 }
                             }
                         }
@@ -2422,7 +2424,7 @@
                         },
                         "pyromancer000000": {
                             "name": "Pyromancien",
-                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Flamme. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[burning].</p><p>L'effet Enflammé dure <strong>3 Rounds</strong> et inflige la moitié de votre score d'<strong>Intellect</strong> comme dégâts de <strong>Feu</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
+                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Flamme. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[burning].</p><p>L'effet Enflammé dure <strong>3 Rounds</strong> et inflige la moitié du score de caractéristique que votre <strong>Rune de flamme</strong> utilise en tant que dégâts de <strong>Feu</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
                         },
                         "gesturepulse0000": {
                             "name": "Signe : Onde",
@@ -2448,7 +2450,7 @@
                         },
                         "lightbringer0000": {
                             "name": "Porteur de lumière",
-                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Illumination. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[irradiated].</p><p>L'effet Irradié dure <strong>1 Round</strong> et inflige votre score de <strong>Présence</strong> comme dégâts <strong>Radiants</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
+                            "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Illumination. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[irradiated].</p><p>L'effet Irradié dure <strong>1 Round</strong> et inflige le score de caractéristique que votre <strong>Rune d'illumination</strong> utilise en tant que dégâts <strong>Radiants</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
                         },
                         "awarenessNovice0": {
                             "name": "Vigilance : Novice",
@@ -2495,7 +2497,7 @@
                         },
                         "flameProficiency": {
                             "name": "Maîtrise de la Flamme",
-                            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Flamme. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action <strong>Enflammer</strong>, étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
+                            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Flamme. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action @Action[Compendium.crucible.talent.Item.runeFlame0000000 enkindle], étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
                         },
                         "runeKinesis00000": {
                             "name": "Rune : Kinésie",
@@ -2779,7 +2781,7 @@
                         },
                         "bulwark000000000": {
                             "name": "Rempart",
-                            "description": "<p>Vous êtes expert dans l'utilisation d'un <strong>Bouclier</strong> pour vous défendre et défendre les autres.</p><p>Une fois par Tour tant que vous avez un Bouclier équipé, vous pouvez utiliser l'action <strong>Défendre</strong> à un coût réduit de 1 Point d'Action.</p>"
+                            "description": "<p>Vous êtes expert dans l'utilisation d'un <strong>Bouclier</strong> pour vous défendre et défendre les autres.</p><p>Une fois par Tour tant que vous avez un Bouclier équipé, vous pouvez utiliser l'action @Action[default defend] à un coût réduit de 1 Point d'Action.</p>"
                         }
                     },
                     "ancestry": {
@@ -2820,7 +2822,7 @@
                             "actions": {
                                 "pinningShot": {
                                     "name": "Tir de fixation",
-                                    "description": "<p>Vous <strong>Frappez</strong> à distance. L'attaque est <strong>Difficile</strong>, mais si vous touchez votre cible, celle-ci devient @Condition[restrained] jusqu'à la fin de son prochain Tour.</p>",
+                                    "description": "<p>Vous <strong>Frappez</strong> à distance. L'attaque est @Rule[action.difficult], mais si vous touchez votre cible, celle-ci devient @Condition[restrained] jusqu'à la fin de son prochain <strong>Tour</strong>.</p>",
                                     "effects": {
                                         "Pinning Shot": {
                                             "name": "Tir de fixation"
@@ -2910,7 +2912,7 @@
                         },
                         "gesturecreate000": {
                             "name": "Signe : Création",
-                            "description": "<p>Vous coalescez la puissance arcanique en forme tangible, manifestant un <strong>Lutin</strong> qui apparaît dans les @[feet 10] et rejoint le Combat avec une Initiative de 1. Votre Lutin est un <strong>Minion</strong> de la moitié de votre propre Niveau.</p><p>Le signe de Création évolue avec la <strong>Sagesse</strong> et le Lutin survit pendant <strong>6 Rounds</strong>. Vous ne pouvez avoir qu'un seul Lutin actif, lancer un autre sort utilisant le signe de Création remplace votre Lutin précédent. Ce signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>4 Actions</strong> et <strong>1 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Toutes les Runes n'ont pas encore d'acteur Lutin défini. Les Runes qui n'ont pas encore de Création définie manifesteront – pour l'instant – un <strong>Lutin de Flamme</strong>.</p>"
+                            "description": "<p>Vous coalescez la puissance arcanique en forme tangible, manifestant un <strong>Lutin</strong> qui apparaît dans les @[feet 10] et rejoint le Combat avec une Initiative de 1. Votre Lutin est un <strong>Minion</strong> de la moitié de votre propre Niveau.</p><p>Le signe de Création évolue avec la <strong>Sagesse</strong> et le Lutin survit pendant <strong>6 Rounds</strong>. Vous ne pouvez avoir qu'un seul Lutin actif, lancer un autre sort utilisant le signe de Création remplace votre Lutin précédent. Ce signe nécessite <strong>2 Mains</strong> pour être lancé et a un coût de base de <strong>4 Actions</strong> et <strong>1 Focus</strong>.</p><h3 class=\"divider\">Notes de test</h3><p>Toutes les Runes n'ont pas encore d'acteur Lutin défini. Les Runes qui n'ont pas encore de Création définie manifesteront – pour l'instant – un @UUID[Compendium.crucible.summons.Actor.RuNh1bFGiHKdHeKI].</p>"
                         },
                         "runeKinesis00000": {
                             "name": "Rune : Kinésie",

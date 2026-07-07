@@ -548,17 +548,24 @@
             }
         },
         "swallow000000000": {
-            "name": "Engloutissement",
-            "description": "<p>@Ref[actor.name]{Cette créature} a la capacité d'avaler en entier des créatures plus petites qu'elle, bien qu'une seule créature puisse être affectée par cette action à la fois.</p>",
+            "name": "Engloutir",
+            "description": "<p>@Ref[actor.name]{Cette créature} peut avaler en entier des créatures dont la Taille est inférieure d'au moins 2 à la sienne. Une seule créature peut être avalée à la fois, à moins qu'une créature supplémentaire ne soit d'une Taille égale ou inférieure au quart de celle de cette créature.</p>",
             "actions": {
                 "swallow": {
-                    "name": "Engloutissement",
-                    "description": "<p>Vous avalez un ennemi ciblé, le mettant ainsi hors de combat. La cible engloutie est @Condition[blinded] et @Condition[restrained] jusqu'à sa libération.</p><p>Si vous subissez des dégâts <strong>Graves</strong>, des <strong>Lésions</strong>, ou devenez @Condition[incapacitated], vous régurgitez la créature engloutie.</p>",
+                    "name": "Engloutir",
+                    "description": "<p>Vous avalez un ennemi ciblé, le mettant ainsi hors de combat. La cible engloutie est @Condition[blinded] et @Condition[restrained] jusqu'à sa libération.</p><p>Si vous devenez @Condition[stunned], @Condition[incapacitated], ou @Condition[weakened], vous régurgitez toute créature engloutie.</p>",
                     "effects": {
                         "Swallow": {
+                            "name": "Engloutir"
+                        },
+                        "Swallowing": {
                             "name": "Engloutissement"
                         }
                     }
+                },
+                "regurgitate": {
+                    "name": "Régurgiter",
+                    "description": "<p>Vous expulsez toutes les créatures que vous avez avalées, les renvoyant dans l'espace qui vous entoure, mettant fin aux conditions @Condition[blinded] et @Condition[restrained] imposées par votre œsophage.</p>"
                 }
             }
         },

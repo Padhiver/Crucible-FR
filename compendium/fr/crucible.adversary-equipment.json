@@ -202,9 +202,9 @@
             }
         },
         "obsidianThorns00": {
-            "name": "Épines d'obsidienne",
+            "name": "Épines",
             "description": {
-                "public": "<p>La @ref[actor.name]{créature} cingle avec une longueur d'épines de verre noir tranchant comme un rasoir.</p>"
+                "public": "<p>La @ref[actor.name]{créature} cingle à l'aide d'une liane, d'une branche ou d'une vrille couverte d'épines.</p>"
             }
         },
         "pestilentBite000": {

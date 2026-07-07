@@ -183,6 +183,10 @@
         "archetypeTelekin": {
             "name": "Télékinésiste",
             "description": "<p>Mages télékinésiques qui tissent la Rune de Kinésie pour projeter, traîner et écraser leurs ennemis par une force kinésique brute, dominant le champ de bataille avec les inflexions Rejeter et Rappeler incessantes.</p>"
+        },
+        "prankster0000000": {
+            "name": "Farceur",
+            "description": "<p>Créatures humanoïdes qui se nourrissent de nuisances, de contrariétés, de ruses et de tromperies.</p>"
         }
     },
     "mapping": {

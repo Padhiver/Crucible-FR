@@ -42,7 +42,7 @@
             "actions": {
                 "alchemistsFire": {
                     "name": "Feu de l'alchimiste",
-                    "description": "<p>Vous jetez le @ref[name], infligeant des dégâts <strong>Affaiblis</strong> immédiats mais causant la condition @Condition[burning] à tous les ennemis qui ne parviennent pas à éviter l'attaque dans un rayon d'<strong>Explosion</strong> de @[feet 4].</p><p>Le montant des dégâts enflammés et leur durée dépendent de la qualité du @ref[name]:</p><ul><li><p><strong>Bâclée</strong> - 2 dégâts pendant 2 rounds</p></li><li><p><strong>Commune</strong> - 3 dégâts pendant 3 rounds</p></li><li><p><strong>Raffinée</strong> - 4 dégâts pendant 4 rounds</p></li><li><p><strong>Supérieure</strong> - 6 dégâts pendant 5 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - 8 dégâts pendant 6 rounds</p></li></ul>",
+                    "description": "<p>Vous jetez le @ref[item.name], infligeant des dégâts immédiats de <strong>Feu</strong> @Rule[action.weakened] mais causant la condition @Condition[burning] à tous les ennemis qui ne parviennent pas à éviter l'attaque dans un rayon d'<strong>Explosion</strong> de @[feet 4].</p><p>Le montant des dégâts enflammés et leur durée dépendent de la qualité du @ref[item.name] :</p><ul><li><p><strong>Bâclée</strong> - 2 dégâts pendant 2 rounds</p></li><li><p><strong>Commune</strong> - 3 dégâts pendant 3 rounds</p></li><li><p><strong>Raffinée</strong> - 4 dégâts pendant 4 rounds</p></li><li><p><strong>Supérieure</strong> - 6 dégâts pendant 5 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - 8 dégâts pendant 6 rounds</p></li></ul>",
                     "effects": {
                         "Alchemist's Fire": {
                             "name": "Feu de l'alchimiste"
@@ -92,7 +92,7 @@
             "actions": {
                 "antitoxin": {
                     "name": "Antidote",
-                    "description": "<p>Consommer cet @ref[name] permet de neutraliser toutes les conditions @Condition[poisoned] affectant la cible. Les poisons plus puissants nécessitent un antidote plus puissant pour être neutralisés.</p><p>La catégorie de poison annulée par cet @ref[name] dépend de sa qualité :</p><ul><li><p><strong>Bâclée</strong> - Poisons infligeant 3 dégâts ou moins par round</p></li><li><p><strong>Commune</strong> - Poisons infligeant 5 dégâts ou moins par round</p></li><li><p><strong>Raffinée</strong> - Poisons infligeant 7 dégâts ou moins par round</p></li><li><p><strong>Supérieure</strong> - Poisons infligeant 9 dégâts ou moins par round</p></li><li><p><strong>Chef-d’œuvre</strong> - Poisons infligeant 11 dégâts ou moins par round</p></li></ul>"
+                    "description": "<p>Consommer cet @ref[item.name] permet de neutraliser toutes les conditions @Condition[poisoned] affectant la cible. Les poisons plus puissants nécessitent un antidote plus puissant pour être neutralisés.</p><p>La catégorie de poison annulée par cet @ref[item.name] dépend de sa qualité :</p><ul><li><p><strong>Bâclée</strong> - Poisons infligeant 3 dégâts ou moins par round</p></li><li><p><strong>Commune</strong> - Poisons infligeant 5 dégâts ou moins par round</p></li><li><p><strong>Raffinée</strong> - Poisons infligeant 7 dégâts ou moins par round</p></li><li><p><strong>Supérieure</strong> - Poisons infligeant 9 dégâts ou moins par round</p></li><li><p><strong>Chef-d’œuvre</strong> - Poisons infligeant 11 dégâts ou moins par round</p></li></ul>"
                 }
             }
         },
@@ -172,7 +172,7 @@
             "actions": {
                 "causticPhial": {
                     "name": "Fiole d'acide",
-                    "description": "<p>Vous jetez la @ref[name], infligeant des dégâts <strong>Affaiblis</strong> immédiats mais causant la condition @Condition[corroding] à tous les ennemis qui ne parviennent pas à éviter l'attaque, dans un rayon d'<strong>Explosion</strong> de @[feet 4].</p><p>Le montant de dégâts corrodés et leur durée dépend de la qualité de la @ref[name]:</p><ul><li><p><strong>Bâclée</strong> - 2 damage for 2 rounds</p></li><li><p><strong>Commune</strong> - 3 dégâts pendant 3 rounds</p></li><li><p><strong>Raffinée</strong> - 4 dégâts pendant 4 rounds</p></li><li><p><strong>Supérieure</strong> - 6 dégâts pendant 5 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - 8 dégâts pendant 6 rounds</p></li></ul>",
+                    "description": "<p>Vous jetez la @ref[item.name], infligeant des dégâts immédiats d'<strong>Acide</strong> @Rule[action.weakened] mais causant la condition @Condition[corroding] à tous les ennemis qui ne parviennent pas à éviter l'attaque, dans un rayon d'<strong>Explosion</strong> de @[feet 4].</p><p>Le montant de dégâts corrodés et leur durée dépend de la qualité de la @ref[item.name] :</p><ul><li><p><strong>Bâclée</strong> - 2 damage for 2 rounds</p></li><li><p><strong>Commune</strong> - 3 dégâts pendant 3 rounds</p></li><li><p><strong>Raffinée</strong> - 4 dégâts pendant 4 rounds</p></li><li><p><strong>Supérieure</strong> - 6 dégâts pendant 5 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - 8 dégâts pendant 6 rounds</p></li></ul>",
                     "effects": {
                         "Caustic Phial": {
                             "name": "Fiole d'acide"
@@ -233,7 +233,7 @@
             "actions": {
                 "chokingAmpoule": {
                     "name": "Ampoule d'étouffement",
-                    "description": "<p>Vous lancez l'@ref[name], qui a un effet immédiat <strong>Inoffensif</strong>, mais cause la condition @Condition[poisoned] à tous les ennemis qui échouent à résister à l'attaque contre leur <strong>Fortitude</strong>, dans une <strong>Explosion</strong> de @[feet 8] de rayon.</p><p>Le gaz inflige des dégâts de poison au <strong>Moral</strong> d'un montant dépendant de la Qualité de l'@ref[name]. Sur un succès critique, la cible affectée devient également @Condition[silenced] pour la même durée.</p><ul><li><p><strong>Bâclée</strong> - 2 dégâts pendant 3 rounds</p></li><li><p><strong>Commune</strong> - 6 dégâts pendant 3 rounds</p></li><li><p><strong>Raffinée</strong> - 12 dégâts pendant 3 rounds</p></li><li><p><strong>Supérieure</strong> - 20 dégâts pendant 3 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - 30 dégâts pendant 3 rounds</p></li></ul>",
+                    "description": "<p>Vous lancez l'@ref[item.name], qui a un effet immédiat <strong>Inoffensif</strong>, mais cause la condition @Condition[poisoned] à tous les ennemis qui échouent à résister à l'attaque contre leur <strong>Fortitude</strong>, dans une <strong>Explosion</strong> de @[feet 8] de rayon.</p><p>Le gaz inflige des dégâts de poison au <strong>Moral</strong> d'un montant dépendant de la Qualité de l'@ref[item.name]. Sur un succès critique, la cible affectée devient également @Condition[silenced] pour la même durée.</p><ul><li><p><strong>Bâclée</strong> - 2 dégâts pendant 3 rounds</p></li><li><p><strong>Commune</strong> - 6 dégâts pendant 3 rounds</p></li><li><p><strong>Raffinée</strong> - 12 dégâts pendant 3 rounds</p></li><li><p><strong>Supérieure</strong> - 20 dégâts pendant 3 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - 30 dégâts pendant 3 rounds</p></li></ul>",
                     "effects": {
                         "Choking Ampoule": {
                             "name": "Ampoule d'étouffement"
@@ -355,7 +355,7 @@
             "actions": {
                 "electrochargeAmpoule": {
                     "name": "Ampoule de charge électrique",
-                    "description": "<p>Vous lancez l'@ref[name], infligeant des dégâts amoindris d'<strong>Électricité</strong> à tous les ennemis dans le rayon de la décharge et les laissant @Condition[staggered] brièvement. Le rayon de la <strong>Décharge</strong> dépend de la qualité de la bombe :</p><ul><li><p><strong>Bâclée</strong> - @[feet 3]</p></li><li><p><strong>Commune</strong> - @[feet 4]</p></li><li><p><strong>Raffinée</strong> - @[feet 6]</p></li><li><p><strong>Supérieure</strong> - @[feet 8]</p></li><li><p><strong>Chef-d’œuvre</strong> - @[feet 10]</p></li></ul>",
+                    "description": "<p>Vous lancez l'@ref[item.name], infligeant des dégâts amoindris d'<strong>Électricité</strong> à tous les ennemis dans le rayon de la décharge qui ne parviennent pas à éviter l'attaque et les laissant @Condition[staggered] brièvement. Le rayon de la <strong>Décharge</strong> dépend de la qualité de la bombe :</p><ul><li><p><strong>Bâclée</strong> - @[feet 3]</p></li><li><p><strong>Commune</strong> - @[feet 4]</p></li><li><p><strong>Raffinée</strong> - @[feet 6]</p></li><li><p><strong>Supérieure</strong> - @[feet 8]</p></li><li><p><strong>Chef-d’œuvre</strong> - @[feet 10]</p></li></ul>",
                     "effects": {
                         "Electrocharge Ampoule": {
                             "name": "Ampoule de charge électrique"
@@ -434,11 +434,11 @@
             },
             "actions": {
                 "frostFlask": {
-                    "name": "Flacon de gouttes de givre",
-                    "description": "<p>Vous lancez la @ref[name], infligeant des dégâts amoindris de <strong>Froid</strong> à tous les ennemis dans le rayon de l'explosion et les rendant @Condition[slowed] brièvement. Le rayon de l'<strong>Explosion</strong> dépend de la qualité de la bombe :</p><ul><li><p><strong>Bâclée</strong> - @[feet 3]</p></li><li><p><strong>Commune</strong> - @[feet 4]</p></li><li><p><strong>Raffinée</strong> - @[feet 6]</p></li><li><p><strong>Supérieure</strong> - @[feet 8]</p></li><li><p><strong>Chef-d’œuvre</strong> - @[feet 10]</p></li></ul>",
+                    "name": "Fiole de gouttes de givre",
+                    "description": "<p>Vous lancez la @ref[item.name], infligeant des dégâts amoindris de <strong>Froid</strong> à tous les ennemis dans le rayon de l'explosion qui ne parviennent pas à éviter l'attaque et les rendant @Condition[slowed] brièvement. Le rayon de l'<strong>Explosion</strong> dépend de la qualité de la bombe :</p><ul><li><p><strong>Bâclée</strong> - @[feet 3]</p></li><li><p><strong>Commune</strong> - @[feet 4]</p></li><li><p><strong>Raffinée</strong> - @[feet 6]</p></li><li><p><strong>Supérieure</strong> - @[feet 8]</p></li><li><p><strong>Chef-d’œuvre</strong> - @[feet 10]</p></li></ul>",
                     "effects": {
-                        "Frostdrop Flask": {
-                            "name": "Flacon de gouttes de givre"
+                        "Frostdrop Phial": {
+                            "name": "Fiole de gouttes de givre"
                         }
                     }
                 }
@@ -452,7 +452,7 @@
             "actions": {
                 "gemOfConjuredFlame": {
                     "name": "Invocation d'élémentaire de feu",
-                    "description": "<p>La @ref[name] se brise dans une explosion de flammes, laissant à sa place un élémentaire flamboyant. Les élémentaires invoqués par cette gemme restent 6 Rounds (1 minute).</p><ul><li><p><strong>Bâclée</strong> - Aucun élémentaire n'est invoqué</p></li><li><p><strong>Commune</strong> - Particule</p></li><li><p><strong>Raffinée</strong> - Lutin</p></li><li><p><strong>Supérieure</strong> - Visiteur</p></li><li><p><strong>Chef-d’œuvre</strong> - Vagabond</p></li></ul>"
+                    "description": "<p>La @ref[item.name] se brise dans une explosion de flammes, laissant à sa place un élémentaire flamboyant. Les élémentaires invoqués par cette gemme restent 6 Rounds (1 minute).</p><ul><li><p><strong>Bâclée</strong> - Aucun élémentaire n'est invoqué</p></li><li><p><strong>Commune</strong> - Particule</p></li><li><p><strong>Raffinée</strong> - Lutin</p></li><li><p><strong>Supérieure</strong> - Visiteur</p></li><li><p><strong>Chef-d’œuvre</strong> - Vagabond</p></li></ul>"
                 }
             }
         },
@@ -470,7 +470,7 @@
                     "actions": {
                         "affixLuminous": {
                             "name": "Activer l'illumination",
-                            "description": "<p>Vous prononcez le mot de commande et la @ref[name] s'illumine d'une lueur stable et surnaturelle. Le rayon de lumière vive émise dépend du <strong>Palier</strong> de ce préfixe, avec un rayon supplémentaire de lumière tamisée s'étendant à une distance égale au-delà.</p><ul><li><p><strong>Palier 1 :</strong> @[feet 20] de lumière vive, @[feet 40] de lumière tamisée</p></li><li><p><strong>Palier 2 :</strong> @[feet 40] de lumière vive, @[feet 80] de lumière tamisée</p></li><li><p><strong>Palier 3 :</strong> @[feet 60] de lumière vive, @[feet 120] de lumière tamisée</p></li></ul> <p>La lumière persiste jusqu'à ce que vous désactiviez l'effet ou retiriez l'objet.</p>"
+                            "description": "<p>Vous prononcez le mot de commande et l'@ref[item.name]{objet} s'illumine d'une lueur stable et surnaturelle. Le rayon de lumière vive émise dépend du <strong>Palier</strong> de ce préfixe, avec un rayon supplémentaire de lumière tamisée s'étendant à une distance égale au-delà.</p><ul><li><p><strong>Palier 1 :</strong> @[feet 20] de lumière vive, @[feet 40] de lumière tamisée.</p></li><li><p><strong>Palier 2 :</strong> @[feet 40] de lumière vive, @[feet 80] de lumière tamisée.</p></li><li><p><strong>Palier 3 :</strong> @[feet 60] de lumière vive, @[feet 120] de lumière tamisée.</p></li></ul><p>La lumière persiste jusqu'à ce que vous désactiviez l'effet ou retiriez l'objet.</p>"
                         }
                     }
                 }
@@ -708,7 +708,7 @@
             "actions": {
                 "blastFlask": {
                     "name": "Fiole explosive",
-                    "description": "<p>Vous allumez et lancez la @ref[name], infligeant des dégâts de <strong>Feu</strong> à tous les ennemis dans le rayon de l'explosion. Le rayon de l'<strong>Explosion</strong> dépend de la qualité de la bombe :</p><ul><li><p><strong>Bâclée</strong> - @[feet 3]</p></li><li><p><strong>Commune</strong> - @[feet 4]</p></li><li><p><strong>Raffinée</strong> - @[feet 6]</p></li><li><p><strong>Supérieure</strong> - @[feet 8]</p></li><li><p><strong>Chef-d’œuvre</strong> - @[feet 10]</p></li></ul>"
+                    "description": "<p>Vous allumez et lancez la @ref[item.name], infligeant des dégâts de <strong>Feu</strong> à tous les ennemis dans le rayon de l'explosion qui ne parviennent pas à éviter l'attaque. Le rayon de l'<strong>Explosion</strong> dépend de la qualité de la bombe :</p><ul><li><p><strong>Bâclée</strong> - @[feet 3]</p></li><li><p><strong>Commune</strong> - @[feet 4]</p></li><li><p><strong>Raffinée</strong> - @[feet 6]</p></li><li><p><strong>Supérieure</strong> - @[feet 8]</p></li><li><p><strong>Chef-d’œuvre</strong> - @[feet 10]</p></li></ul>"
                 }
             }
         },
@@ -726,7 +726,7 @@
             "actions": {
                 "lightLantern": {
                     "name": "Allumer une lanterne",
-                    "description": "<p>Vous allumez la @ref[name], produisant un éclairage constant dans un large rayon. Cette action consume une unité de @UUID[Compendium.crucible.equipment.Item.lanternOil000000]{Huile pour lanterne} de votre inventaire ; la durée de combustion dépend de la qualité de l'huile consommée :</p><ul><li><p><strong>Bâclée</strong> - 1 heure</p></li><li><p><strong>Commune</strong> - 4 heures</p></li><li><p><strong>Raffinée</strong> - 12 heures</p></li><li><p><strong>Supérieure</strong> - 24 heures</p></li><li><p><strong>Chef-d’œuvre</strong> - 48 heures</p></li></ul>",
+                    "description": "<p>Vous allumez la @ref[item.name], produisant un éclairage constant dans un large rayon. Cette action consume une unité de @UUID[Compendium.crucible.equipment.Item.lanternOil000000]{Huile pour lanterne} de votre inventaire ; la durée de combustion dépend de la qualité de l'huile consommée :</p><ul><li><p><strong>Bâclée</strong> - 1 heure</p></li><li><p><strong>Commune</strong> - 4 heures</p></li><li><p><strong>Raffinée</strong> - 12 heures</p></li><li><p><strong>Supérieure</strong> - 24 heures</p></li><li><p><strong>Chef-d’œuvre</strong> - 48 heures</p></li></ul>",
                     "effects": {
                         "Lantern": {
                             "name": "Lanterne"
@@ -851,7 +851,7 @@
             "actions": {
                 "paralyticIngest": {
                     "name": "Ingestion paralytique",
-                    "description": "<p>Lorsque cette toxine est ingérée ou pénètre d'une autre manière dans le flux sanguin d'une créature, cela est initialement <strong>Inoffensif</strong>, mais la cible doit se défendre d'une attaque contre sa <strong>Fortitude</strong> ou être @Condition[paralyzed].</p><p>La durée dépend de la qualité de la @ref[name]{fiole} :</p><ul><li><p><strong>Bâclée</strong> - 1 rounds</p></li><li><p><strong>Commune</strong> - 2 rounds</p></li><li><p><strong>Raffinée</strong> - 4 rounds</p></li><li><p><strong>Supérieure</strong> - 8 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - Indéfini</p></li></ul><p><em>Cette action doit être prise lorsque le poison est ingéré plutôt que lors de sa première application.</em></p>",
+                    "description": "<p>Lorsque cette toxine est ingérée ou pénètre d'une autre manière dans le flux sanguin d'une créature, cela est initialement <strong>Inoffensif</strong>, mais la cible doit se défendre d'une attaque contre sa <strong>Fortitude</strong> ou être @Condition[paralyzed].</p><p>La durée dépend de la qualité de la @ref[item.name] :</p><ul><li><p><strong>Bâclée</strong> - 1 rounds</p></li><li><p><strong>Commune</strong> - 2 rounds</p></li><li><p><strong>Raffinée</strong> - 4 rounds</p></li><li><p><strong>Supérieure</strong> - 8 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - Indéfini</p></li></ul><p><em>Cette action doit être prise lorsque le poison est ingéré plutôt que lors de sa première application.</em></p>",
                     "effects": {
                         "Paralytic Toxin": {
                             "name": "Toxine paralytique"
@@ -922,7 +922,7 @@
             "actions": {
                 "poisonIngest": {
                     "name": "Poison d'ingestion",
-                    "description": "<p>Lorsque cette toxine est ingérée ou entre autrement dans le sang d'une créature, elle est initialement <strong>Inoffensive</strong>, mais la cible doit se défendre d'une attaque contre sa <strong>Fortitude</strong> ou être @Condition[poisoned].</p><p>Le montant des dégâts de poison et leur durée dépendent de la qualité du @ref[name]:</p><ul><li><p><strong>Bâclée</strong> - 2 dégâts pendant 4 rounds</p></li><li><p><strong>Commune</strong> - 4 dégâts pendant 6 rounds</p></li><li><p><strong>Raffinée</strong> - 6 dégâts pendant 8 rounds</p></li><li><p><strong>Supérieure</strong> - 8 dégâts pendant 10 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - 10 dégâts pendant 12 rounds</p></li></ul><p><em>Cette action doit être utilisée lorsque le poison est ingéré plutôt que lors de sa première application.</em></p>",
+                    "description": "<p>Lorsque cette toxine est ingérée ou entre autrement dans le sang d'une créature, elle est initialement <strong>Inoffensive</strong>, mais la cible doit se défendre d'une attaque contre sa <strong>Fortitude</strong> ou être @Condition[poisoned].</p><p>Le montant des dégâts de poison et leur durée dépendent de la qualité du @ref[item.name] :</p><ul><li><p><strong>Bâclée</strong> - 2 dégâts pendant 4 rounds</p></li><li><p><strong>Commune</strong> - 4 dégâts pendant 6 rounds</p></li><li><p><strong>Raffinée</strong> - 6 dégâts pendant 8 rounds</p></li><li><p><strong>Supérieure</strong> - 8 dégâts pendant 10 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - 10 dégâts pendant 12 rounds</p></li></ul><p><em>Cette action doit être utilisée lorsque le poison est ingéré plutôt que lors de sa première application.</em></p>",
                     "effects": {
                         "Poisoned": {
                             "name": "Empoisonné"
@@ -1335,7 +1335,7 @@
             "actions": {
                 "lightTorch": {
                     "name": "Allumer une torche",
-                    "description": "<p>Vous allumer la @ref[name], produisant une illumination vacillante dans un large rayon pendant une heure. La torche est consumée par cette action et ne peut plus être utilisée, mais sa lumière persiste jusqu'à ce qu'elle s'éteigne complètement.</p>",
+                    "description": "<p>Vous allumer la @ref[item.name], produisant une illumination vacillante dans un large rayon pendant une heure. La torche est consumée par cette action et ne peut plus être utilisée, mais sa lumière persiste jusqu'à ce qu'elle s'éteigne complètement.</p>",
                     "effects": {
                         "Torch": {
                             "name": "Torche"

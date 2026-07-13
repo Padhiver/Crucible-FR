@@ -446,7 +446,7 @@
             "InvalidTarget": "Vous devez désigner au moins une cible de type {type} pour l'action {action} !",
             "InvalidTargetsGeneric": "Cibles invalides pour cette action !",
             "LastCriticallyMissed": "You ne pouvez utiliser {action} qu'après une Frappe basique sans échec critique.",
-            "LastNotMeleeCrit": "Vous ne pouvez effectuer {action} qu'immédiatement après une Frappe en mêlée ayant abouti à un succès critique.",
+            "LastNotMeleeCrit": "Vous ne pouvez effectuer {action} qu'immédiatement après une Frappe en mêlée ayant abouti à une réussite critique.",
             "MaximumRange": "Une cible sélectionnée est plus éloignée que la portée maximale de {max} pieds.",
             "MinimumRange": "Une cible sélectionnée est plus proche que la portée minimale de {min} pieds.",
             "MinimumSize": "Vous devez être au moins de taille {size} pour utiliser {action}",
@@ -2081,7 +2081,7 @@
                 "label": "Non spécialisé"
             },
             "UNTRAINED": {
-                "hint": "Vous n'avez aucune formation formelle dans ce domaine. Tout succès que vous avez en appliquant cette compétence est dû au bon sens ou à la chance.",
+                "hint": "Vous n'avez aucune formation formelle dans ce domaine. Toute réussite que vous avez en appliquant cette compétence est dû au bon sens ou à la chance.",
                 "label": "Non formé"
             }
         },

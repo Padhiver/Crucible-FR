@@ -35,7 +35,7 @@
                     "actions": {
                         "distract": {
                             "name": "Distraire",
-                            "description": "<p>Vous effectuez une <strong>Attaque de Compétence</strong> basée sur la <strong>Duperie</strong> contre la défense de <strong>Volonté</strong> d'une cible à @[feet 30] qui peut voir ou vous entendre. Sur un succès, la cible perd <strong>1 Focus</strong>.</p>"
+                            "description": "<p>Vous effectuez une <strong>Attaque de Compétence</strong> basée sur la <strong>Duperie</strong> contre la défense de <strong>Volonté</strong> d'une cible à @[feet 30] qui peut voir ou vous entendre. Sur une réussite, la cible perd <strong>1 Focus</strong>.</p>"
                         }
                     }
                 },
@@ -387,7 +387,7 @@
                     "actions": {
                         "distract": {
                             "name": "Distraire",
-                            "description": "<p>Vous effectuez une <strong>Attaque de Compétence</strong> basée sur la <strong>Duperie</strong> contre la défense de <strong>Volonté</strong> d'une cible à @[feet 30] qui peut voir ou vous entendre. Sur un succès, la cible perd <strong>1 Focus</strong>.</p>"
+                            "description": "<p>Vous effectuez une <strong>Attaque de Compétence</strong> basée sur la <strong>Duperie</strong> contre la défense de <strong>Volonté</strong> d'une cible à @[feet 30] qui peut voir ou vous entendre. Sur une réussite, la cible perd <strong>1 Focus</strong>.</p>"
                         }
                     }
                 },

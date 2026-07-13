@@ -663,7 +663,7 @@
                     "actions": {
                         "distract": {
                             "name": "Distraire",
-                            "description": "<p>Vous effectuez une <strong>Attaque de Compétence</strong> basée sur la <strong>Duperie</strong> contre la défense de <strong>Volonté</strong> d'une cible à @[feet 30] qui peut voir ou vous entendre. sur une réussite, la cible perd <strong>1 Focus</strong>.</p>"
+                            "description": "<p>Vous effectuez une <strong>Attaque de Compétence</strong> basée sur la <strong>Duperie</strong> contre la défense de <strong>Volonté</strong> d'une cible à @[feet 30] qui peut voir ou vous entendre. Sur une réussite, la cible perd <strong>1 Focus</strong>.</p>"
                         }
                     }
                 },
@@ -923,7 +923,7 @@
                     "actions": {
                         "intimidate": {
                             "name": "Intimider",
-                            "description": "<p>Vous intimidez physiquement un ennemi dans votre rayon d'engagement, effectuant une attaque de compétence d'Intimidation contre votre cible. sur une réussite, il subit des dégâts de Vide au Moral.</p>"
+                            "description": "<p>Vous intimidez physiquement un ennemi dans votre rayon d'engagement, effectuant une attaque de compétence d'Intimidation contre votre cible. Sur une réussite, il subit des dégâts de Vide au Moral.</p>"
                         }
                     }
                 },
@@ -1326,7 +1326,7 @@
                     "actions": {
                         "intimidate": {
                             "name": "Intimider",
-                            "description": "<p>Vous intimidez physiquement un ennemi dans votre rayon d'engagement, effectuant une attaque de compétence d'Intimidation contre votre cible. sur une réussite, il subit des dégâts de Vide au Moral.</p>"
+                            "description": "<p>Vous intimidez physiquement un ennemi dans votre rayon d'engagement, effectuant une attaque de compétence d'Intimidation contre votre cible. Sur une réussite, il subit des dégâts de Vide au Moral.</p>"
                         }
                     }
                 },
@@ -1550,7 +1550,7 @@
                 },
                 "intuitweakness00": {
                     "name": "Intuition de faiblesse",
-                    "description": "<p>Vous calmez votre esprit et étudiez la physiologie de votre ennemi, cherchant une vulnérabilité dans ses défenses.</p><p>Effectuez un <strong>Test de connaissances</strong> utilisant une Compétence appropriée choisie par le Maître du jeu. en cas de réussite, vous apprenez le type de Dégâts envers lequel la créature a la plus grande vulnérabilité, le cas échéant. Sur une Réussite critique, vous apprenez les deux types de Dégâts qui ont la plus grande vulnérabilité.</p>",
+                    "description": "<p>Vous calmez votre esprit et étudiez la physiologie de votre ennemi, cherchant une vulnérabilité dans ses défenses.</p><p>Effectuez un <strong>Test de connaissances</strong> utilisant une Compétence appropriée choisie par le Maître du jeu. En cas de réussite, vous apprenez le type de Dégâts envers lequel la créature a la plus grande vulnérabilité, le cas échéant. Sur une Réussite critique, vous apprenez les deux types de Dégâts qui ont la plus grande vulnérabilité.</p>",
                     "actions": {
                         "intuitWeakness": {
                             "name": "Intuition de faiblesse",
@@ -1744,7 +1744,7 @@
                     "actions": {
                         "intimidate": {
                             "name": "Intimider",
-                            "description": "<p>Vous intimidez physiquement un ennemi dans votre rayon d'engagement, effectuant une attaque de compétence d'Intimidation contre votre cible. sur une réussite, il subit des dégâts de Vide au Moral.</p>"
+                            "description": "<p>Vous intimidez physiquement un ennemi dans votre rayon d'engagement, effectuant une attaque de compétence d'Intimidation contre votre cible. Sur une réussite, il subit des dégâts de Vide au Moral.</p>"
                         }
                     }
                 },
@@ -2177,7 +2177,7 @@
                     "actions": {
                         "intimidate": {
                             "name": "Intimider",
-                            "description": "<p>Vous intimidez physiquement un ennemi dans votre rayon d'engagement, effectuant une attaque de compétence d'Intimidation contre votre cible. sur une réussite, il subit des dégâts de Vide au Moral.</p>"
+                            "description": "<p>Vous intimidez physiquement un ennemi dans votre rayon d'engagement, effectuant une attaque de compétence d'Intimidation contre votre cible. Sur une réussite, il subit des dégâts de Vide au Moral.</p>"
                         }
                     }
                 },

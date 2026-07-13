@@ -639,7 +639,7 @@
             "actions": {
                 "tuskCharge": {
                     "name": "Charge du sanglier",
-                    "description": "<p>Charge en ligne directe sur une distance égale à la Foulée au maximum pour effectuer une Frappe contre la première créature rencontrée. en cas de réussite, la cible est mise @Condition[prone].</p>",
+                    "description": "<p>Charge en ligne directe sur une distance égale à la Foulée au maximum pour effectuer une Frappe contre la première créature rencontrée. En cas de réussite, la cible est mise @Condition[prone].</p>",
                     "effects": {
                         "Tusk Charge": {
                             "name": "Charge du sanglier"

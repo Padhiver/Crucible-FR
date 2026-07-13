@@ -340,7 +340,7 @@
             "actions": {
                 "clarifyIntent": {
                     "name": "Clarifier l'intention",
-                    "description": "<p>Vous expliquez vos intentions à un allié dans un rayon de @[feet 12]. Effectuez une attaque de compétence de <strong>Diplomatie</strong> contre le seuil de Folie de votre allié. sur une réussite, il gagne +1 <strong>Focus</strong> et +1 <strong>Faveur</strong> aux actions effectuées lors de son prochain tour.</p>",
+                    "description": "<p>Vous expliquez vos intentions à un allié dans un rayon de @[feet 12]. Effectuez une attaque de compétence de <strong>Diplomatie</strong> contre le seuil de Folie de votre allié. Sur une réussite, il gagne +1 <strong>Focus</strong> et +1 <strong>Faveur</strong> aux actions effectuées lors de son prochain tour.</p>",
                     "effects": {
                         "Clarify Intent": {
                             "name": "Clarifier l'intention"
@@ -537,7 +537,7 @@
             "actions": {
                 "disarmingStrike": {
                     "name": "Frappe désarmante",
-                    "description": "<p>Vous réalisez une <strong>Frappe</strong>contre la défense de <strong>Réflexe</strong> d'une cible unique. La technique est <strong>Difficile</strong> à effectuer et inflige des dégâts réduits. sur une réussite, l'arme de la main principale de la cible est <strong>Lâchée</strong>.</p>"
+                    "description": "<p>Vous réalisez une <strong>Frappe</strong>contre la défense de <strong>Réflexe</strong> d'une cible unique. La technique est <strong>Difficile</strong> à effectuer et inflige des dégâts réduits. Sur une réussite, l'arme de la main principale de la cible est <strong>Lâchée</strong>.</p>"
                 }
             }
         },
@@ -551,7 +551,7 @@
             "actions": {
                 "distract": {
                     "name": "Distraire",
-                    "description": "<p>Vous effectuez une <strong>Attaque de Compétence</strong> basée sur la <strong>Duperie</strong> contre la défense de <strong>Volonté</strong> d'une cible à @[feet 30] qui peut voir ou vous entendre. sur une réussite, la cible perd <strong>1 Focus</strong>.</p>"
+                    "description": "<p>Vous effectuez une <strong>Attaque de Compétence</strong> basée sur la <strong>Duperie</strong> contre la défense de <strong>Volonté</strong> d'une cible à @[feet 30] qui peut voir ou vous entendre. Sur une réussite, la cible perd <strong>1 Focus</strong>.</p>"
                 }
             }
         },
@@ -1032,13 +1032,13 @@
             "actions": {
                 "intimidate": {
                     "name": "Intimider",
-                    "description": "<p>Vous intimidez physiquement un ennemi dans votre rayon d'engagement, effectuant une attaque de compétence d'Intimidation contre votre cible. sur une réussite, il subit des dégâts de Vide au Moral.</p>"
+                    "description": "<p>Vous intimidez physiquement un ennemi dans votre rayon d'engagement, effectuant une attaque de compétence d'Intimidation contre votre cible. Sur une réussite, il subit des dégâts de Vide au Moral.</p>"
                 }
             }
         },
         "intuitweakness00": {
             "name": "Intuition de faiblesse",
-            "description": "<p>Vous calmez votre esprit et étudiez la physiologie de votre ennemi, cherchant une vulnérabilité dans ses défenses.</p><p>Effectuez un <strong>Test de connaissances</strong> utilisant une Compétence appropriée choisie par le Maître du jeu. en cas de réussite, vous apprenez le type de Dégâts envers lequel la créature a la plus grande vulnérabilité, le cas échéant. Sur une Réussite critique, vous apprenez les deux types de Dégâts qui ont la plus grande vulnérabilité.</p>",
+            "description": "<p>Vous calmez votre esprit et étudiez la physiologie de votre ennemi, cherchant une vulnérabilité dans ses défenses.</p><p>Effectuez un <strong>Test de connaissances</strong> utilisant une Compétence appropriée choisie par le Maître du jeu. En cas de réussite, vous apprenez le type de Dégâts envers lequel la créature a la plus grande vulnérabilité, le cas échéant. Sur une Réussite critique, vous apprenez les deux types de Dégâts qui ont la plus grande vulnérabilité.</p>",
             "actions": {
                 "intuitWeakness": {
                     "name": "Intuition de faiblesse",

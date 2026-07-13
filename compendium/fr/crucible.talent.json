@@ -164,7 +164,7 @@
         },
         "assessstrength00": {
             "name": "Évaluer la force",
-            "description": "<p>Vous prenez un moment pour observer une créature que vous pouvez voir et développez une intuition sur ses points forts.</p>\n<p>Effectuez un <strong>Test de connaissances</strong> utilisant une Compétence choisie par le Maître du jeu. En cas de succès, vous apprenez quel type de Défense entre Physique, Fortitude, Volonté ou Réflexe est le plus élevé chez la créature. Sur une Réussite critique, vous apprenez les deux types de défense les plus élevés.</p>",
+            "description": "<p>Vous prenez un moment pour observer une créature que vous pouvez voir et développez une intuition sur ses points forts.</p>\n<p>Effectuez un <strong>Test de connaissances</strong> utilisant une Compétence choisie par le Maître du jeu. En cas de réussite, vous apprenez quel type de Défense entre Physique, Fortitude, Volonté ou Réflexe est le plus élevé chez la créature. Sur une Réussite critique, vous apprenez les deux types de défense les plus élevés.</p>",
             "actions": {
                 "assessStrength": {
                     "name": "Évaluer la force",
@@ -222,7 +222,7 @@
                 "laughingMatter": {
                     "name": "Importance du rire",
                     "condition": "L'attaque d'un ennemi ne parvient pas à infliger de dégâts ni à produire d'effet sur vous ou sur un allié.",
-                    "description": "<p>Lorsqu'une attaque ennemie ne parvient pas à infliger de dégâts ni à produire d'effet sur vous ou sur un allié, vous créez une plaisanterie mordante ou une pantomime qui ridiculise ses faibles efforts.</p><p>Effectuez une attaque de compétence de <strong>Performance</strong> contre la <strong>Fortitude</strong> de la cible, lui infligeant des dégâts <strong>Psychiques</strong> au <strong>Moral</strong> sur un succès. De plus, sur une réussite, la cible souffre de 1 <strong>Fléau</strong> à tous ses jets jusqu'au début de son prochain tour.</p><p>La cible doit pouvoir vous voir et vous comprendre pour être affectée par cette capacité.</p>",
+                    "description": "<p>Lorsqu'une attaque ennemie ne parvient pas à infliger de dégâts ni à produire d'effet sur vous ou sur un allié, vous créez une plaisanterie mordante ou une pantomime qui ridiculise ses faibles efforts.</p><p>Effectuez une attaque de compétence de <strong>Performance</strong> contre la <strong>Fortitude</strong> de la cible, lui infligeant des dégâts <strong>Psychiques</strong> au <strong>Moral</strong> sur une réussite. De plus, sur une réussite, la cible souffre de 1 <strong>Fléau</strong> à tous ses jets jusqu'au début de son prochain tour.</p><p>La cible doit pouvoir vous voir et vous comprendre pour être affectée par cette capacité.</p>",
                     "effects": {
                         "Laughing Matter": {
                             "name": "Importance du rire"
@@ -298,7 +298,7 @@
             "actions": {
                 "bullrush": {
                     "name": "Charge du taureau",
-                    "description": "<p>Effectuez une Attaque de compétence d'<strong>Athlétisme</strong> contre la défense de Fortitude d'un ennemi adjacent. Sur un succès, vous pouvez vous déplacer de votre <strong>Foulée</strong> directement à travers l'espace de l'ennemi. Votre ennemi se retrouve @Condition[prone] et ne peut effectuer d'assaut opportuniste contre vous. Sur un échec, votre déplacement est bloqué et vous restez à votre position présente.</p>",
+                    "description": "<p>Effectuez une Attaque de compétence d'<strong>Athlétisme</strong> contre la défense de Fortitude d'un ennemi adjacent. Sur une réussite, vous pouvez vous déplacer de votre <strong>Foulée</strong> directement à travers l'espace de l'ennemi. Votre ennemi se retrouve @Condition[prone] et ne peut effectuer d'assaut opportuniste contre vous. Sur un échec, votre déplacement est bloqué et vous restez à votre position présente.</p>",
                     "effects": {
                         "Bull Rush": {
                             "name": "Charge du taureau"

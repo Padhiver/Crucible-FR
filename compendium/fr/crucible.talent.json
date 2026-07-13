@@ -164,7 +164,7 @@
         },
         "assessstrength00": {
             "name": "Évaluer la force",
-            "description": "<p>Vous prenez un moment pour observer une créature que vous pouvez voir et développez une intuition sur ses points forts.</p>\n<p>Effectuez un <strong>Test de connaissances</strong> utilisant une Compétence choisie par le Maître du jeu. En cas de succès, vous apprenez quel type de Défense entre Physique, Fortitude, Volonté ou Réflexe est le plus élevé chez la créature. Sur une Réussite critique, vous apprenez les deux types de défense les plus élevés.</p>",
+            "description": "<p>Vous prenez un moment pour observer une créature que vous pouvez voir et développez une intuition sur ses points forts.</p>\n<p>Effectuez un <strong>Test de connaissances</strong> utilisant une Compétence choisie par le Maître du jeu. en cas de réussite, vous apprenez quel type de Défense entre Physique, Fortitude, Volonté ou Réflexe est le plus élevé chez la créature. Sur une Réussite critique, vous apprenez les deux types de défense les plus élevés.</p>",
             "actions": {
                 "assessStrength": {
                     "name": "Évaluer la force",
@@ -222,7 +222,7 @@
                 "laughingMatter": {
                     "name": "Importance du rire",
                     "condition": "L'attaque d'un ennemi ne parvient pas à infliger de dégâts ni à produire d'effet sur vous ou sur un allié.",
-                    "description": "<p>Lorsqu'une attaque ennemie ne parvient pas à infliger de dégâts ni à produire d'effet sur vous ou sur un allié, vous créez une plaisanterie mordante ou une pantomime qui ridiculise ses faibles efforts.</p><p>Effectuez une attaque de compétence de <strong>Performance</strong> contre la <strong>Fortitude</strong> de la cible, lui infligeant des dégâts <strong>Psychiques</strong> au <strong>Moral</strong> sur un succès. De plus, sur une réussite, la cible souffre de 1 <strong>Fléau</strong> à tous ses jets jusqu'au début de son prochain tour.</p><p>La cible doit pouvoir vous voir et vous comprendre pour être affectée par cette capacité.</p>",
+                    "description": "<p>Lorsqu'une attaque ennemie ne parvient pas à infliger de dégâts ni à produire d'effet sur vous ou sur un allié, vous créez une plaisanterie mordante ou une pantomime qui ridiculise ses faibles efforts.</p><p>Effectuez une attaque de compétence de <strong>Performance</strong> contre la <strong>Fortitude</strong> de la cible, lui infligeant des dégâts <strong>Psychiques</strong> au <strong>Moral</strong> sur une réussite. De plus, sur une réussite, la cible souffre de 1 <strong>Fléau</strong> à tous ses jets jusqu'au début de son prochain tour.</p><p>La cible doit pouvoir vous voir et vous comprendre pour être affectée par cette capacité.</p>",
                     "effects": {
                         "Laughing Matter": {
                             "name": "Importance du rire"
@@ -298,7 +298,7 @@
             "actions": {
                 "bullrush": {
                     "name": "Charge du taureau",
-                    "description": "<p>Effectuez une Attaque de compétence d'<strong>Athlétisme</strong> contre la défense de Fortitude d'un ennemi adjacent. Sur un succès, vous pouvez vous déplacer de votre <strong>Foulée</strong> directement à travers l'espace de l'ennemi. Votre ennemi se retrouve @Condition[prone] et ne peut effectuer d'assaut opportuniste contre vous. Sur un échec, votre déplacement est bloqué et vous restez à votre position présente.</p>",
+                    "description": "<p>Effectuez une Attaque de compétence d'<strong>Athlétisme</strong> contre la défense de Fortitude d'un ennemi adjacent. sur une réussite, vous pouvez vous déplacer de votre <strong>Foulée</strong> directement à travers l'espace de l'ennemi. Votre ennemi se retrouve @Condition[prone] et ne peut effectuer d'assaut opportuniste contre vous. Sur un échec, votre déplacement est bloqué et vous restez à votre position présente.</p>",
                     "effects": {
                         "Bull Rush": {
                             "name": "Charge du taureau"
@@ -340,7 +340,7 @@
             "actions": {
                 "clarifyIntent": {
                     "name": "Clarifier l'intention",
-                    "description": "<p>Vous expliquez vos intentions à un allié dans un rayon de @[feet 12]. Effectuez une attaque de compétence de <strong>Diplomatie</strong> contre le seuil de Folie de votre allié. Sur un succès, il gagne +1 <strong>Focus</strong> et +1 <strong>Faveur</strong> aux actions effectuées lors de son prochain tour.</p>",
+                    "description": "<p>Vous expliquez vos intentions à un allié dans un rayon de @[feet 12]. Effectuez une attaque de compétence de <strong>Diplomatie</strong> contre le seuil de Folie de votre allié. sur une réussite, il gagne +1 <strong>Focus</strong> et +1 <strong>Faveur</strong> aux actions effectuées lors de son prochain tour.</p>",
                     "effects": {
                         "Clarify Intent": {
                             "name": "Clarifier l'intention"
@@ -537,7 +537,7 @@
             "actions": {
                 "disarmingStrike": {
                     "name": "Frappe désarmante",
-                    "description": "<p>Vous réalisez une <strong>Frappe</strong>contre la défense de <strong>Réflexe</strong> d'une cible unique. La technique est <strong>Difficile</strong> à effectuer et inflige des dégâts réduits. Sur un succès, l'arme de la main principale de la cible est <strong>Lâchée</strong>.</p>"
+                    "description": "<p>Vous réalisez une <strong>Frappe</strong>contre la défense de <strong>Réflexe</strong> d'une cible unique. La technique est <strong>Difficile</strong> à effectuer et inflige des dégâts réduits. sur une réussite, l'arme de la main principale de la cible est <strong>Lâchée</strong>.</p>"
                 }
             }
         },
@@ -551,7 +551,7 @@
             "actions": {
                 "distract": {
                     "name": "Distraire",
-                    "description": "<p>Vous effectuez une <strong>Attaque de Compétence</strong> basée sur la <strong>Duperie</strong> contre la défense de <strong>Volonté</strong> d'une cible à @[feet 30] qui peut voir ou vous entendre. Sur un succès, la cible perd <strong>1 Focus</strong>.</p>"
+                    "description": "<p>Vous effectuez une <strong>Attaque de Compétence</strong> basée sur la <strong>Duperie</strong> contre la défense de <strong>Volonté</strong> d'une cible à @[feet 30] qui peut voir ou vous entendre. sur une réussite, la cible perd <strong>1 Focus</strong>.</p>"
                 }
             }
         },
@@ -656,7 +656,7 @@
             "actions": {
                 "feintingStrike": {
                     "name": "Frappe feintée",
-                    "description": "<p>Vous feintez avec l'arme de votre main principale, effectuant une attaque de <strong>Duperie</strong> contre la défense de <strong>Réflexe</strong> de la cible. Vous réalisez immédiatement une <strong>Frappe</strong> avec l'arme de votre <strong>main secondaire</strong>.</p><p>Si votre Duperie était un succès, vous gagnez <strong>+2 Faveurs</strong> pour votre Frappe qui inflige <strong>+6 Dégâts</strong> supplémentaires.</p>"
+                    "description": "<p>Vous feintez avec l'arme de votre main principale, effectuant une attaque de <strong>Duperie</strong> contre la défense de <strong>Réflexe</strong> de la cible. Vous réalisez immédiatement une <strong>Frappe</strong> avec l'arme de votre <strong>main secondaire</strong>.</p><p>Si votre Duperie était une réussite, vous gagnez <strong>+2 Faveurs</strong> pour votre Frappe qui inflige <strong>+6 Dégâts</strong> supplémentaires.</p>"
                 }
             }
         },
@@ -1032,13 +1032,13 @@
             "actions": {
                 "intimidate": {
                     "name": "Intimider",
-                    "description": "<p>Vous intimidez physiquement un ennemi dans votre rayon d'engagement, effectuant une attaque de compétence d'Intimidation contre votre cible. Sur un succès, il subit des dégâts de Vide au Moral.</p>"
+                    "description": "<p>Vous intimidez physiquement un ennemi dans votre rayon d'engagement, effectuant une attaque de compétence d'Intimidation contre votre cible. sur une réussite, il subit des dégâts de Vide au Moral.</p>"
                 }
             }
         },
         "intuitweakness00": {
             "name": "Intuition de faiblesse",
-            "description": "<p>Vous calmez votre esprit et étudiez la physiologie de votre ennemi, cherchant une vulnérabilité dans ses défenses.</p><p>Effectuez un <strong>Test de connaissances</strong> utilisant une Compétence appropriée choisie par le Maître du jeu. En cas de succès, vous apprenez le type de Dégâts envers lequel la créature a la plus grande vulnérabilité, le cas échéant. Sur une Réussite critique, vous apprenez les deux types de Dégâts qui ont la plus grande vulnérabilité.</p>",
+            "description": "<p>Vous calmez votre esprit et étudiez la physiologie de votre ennemi, cherchant une vulnérabilité dans ses défenses.</p><p>Effectuez un <strong>Test de connaissances</strong> utilisant une Compétence appropriée choisie par le Maître du jeu. en cas de réussite, vous apprenez le type de Dégâts envers lequel la créature a la plus grande vulnérabilité, le cas échéant. Sur une Réussite critique, vous apprenez les deux types de Dégâts qui ont la plus grande vulnérabilité.</p>",
             "actions": {
                 "intuitWeakness": {
                     "name": "Intuition de faiblesse",
@@ -1052,7 +1052,7 @@
         },
         "ironResolve00000": {
             "name": "Résolution de fer",
-            "description": "<p>Votre résistance physique vous rend trop robuste pour être profondément affecté par un coup puissant. Le seuil de succès critique pour les <strong>Frappes</strong> contre vous est augmenté de +1, vous rendant plus difficile à toucher avec un critique.</p>"
+            "description": "<p>Votre résistance physique vous rend trop robuste pour être profondément affecté par un coup puissant. Le seuil de réussite critique pour les <strong>Frappes</strong> contre vous est augmenté de +1, vous rendant plus difficile à toucher avec un critique.</p>"
         },
         "irrepressiblespi": {
             "name": "Esprit irrépressible",
@@ -1459,7 +1459,7 @@
                 "repercussiveBlock": {
                     "name": "Blocage répercutant",
                     "condition": "Vous Bloquez une attaque de Mêlée avec un bouclier équipé.",
-                    "description": "<p>Lorsque vous <strong>Bloquez</strong> une attaque de <strong>Mêlée</strong>, vous pouvez réagir pour contre attaquer avec votre bouclier équipé. Cette technique est <strong>Inoffensive</strong>, mais sur un succès, désarmera votre ennemi, forçant son arme a être <strong>Lâchée</strong>.</p>"
+                    "description": "<p>Lorsque vous <strong>Bloquez</strong> une attaque de <strong>Mêlée</strong>, vous pouvez réagir pour contre attaquer avec votre bouclier équipé. Cette technique est <strong>Inoffensive</strong>, mais sur une réussite, désarmera votre ennemi, forçant son arme a être <strong>Lâchée</strong>.</p>"
                 }
             }
         },
@@ -1735,7 +1735,7 @@
             "actions": {
                 "soothe": {
                     "name": "Apaiser",
-                    "description": "<p>Vous déclamez des vers calmes, profitant à tous les alliés qui peuvent vous entendre dans un rayon de @[feet 12]. Effectuez un <strong>Test de Performance</strong> contre le seuil de Folie de chaque allié. Sur des succès, le Moral de chaque allié est restauré.</p>"
+                    "description": "<p>Vous déclamez des vers calmes, profitant à tous les alliés qui peuvent vous entendre dans un rayon de @[feet 12]. Effectuez un <strong>Test de Performance</strong> contre le seuil de Folie de chaque allié. Sur des réussites, le Moral de chaque allié est restauré.</p>"
                 }
             }
         },
@@ -1827,7 +1827,7 @@
             "actions": {
                 "sunderingStrike": {
                     "name": "Frappe fracturante",
-                    "description": "<p>Vous effectuez une <strong>Frappe</strong> avec une arme basée sur la Force qui, sur un succès, applique la condition @Condition[exposed] à votre cible pendant 3 rounds. Cette attaque est <strong>Difficile</strong> à effectuer et inflige des dégâts réduits.</p>",
+                    "description": "<p>Vous effectuez une <strong>Frappe</strong> avec une arme basée sur la Force qui, sur une réussite, applique la condition @Condition[exposed] à votre cible pendant 3 rounds. Cette attaque est <strong>Difficile</strong> à effectuer et inflige des dégâts réduits.</p>",
                     "effects": {
                         "Sundered Armor": {
                             "name": "Armure fracturée"

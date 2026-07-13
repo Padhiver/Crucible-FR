@@ -834,7 +834,7 @@
                     "actions": {
                         "soothe": {
                             "name": "Apaiser",
-                            "description": "<p>Vous déclamez des vers calmes, profitant à tous les alliés qui peuvent vous entendre dans un rayon de @[feet 12]. Effectuez un <strong>Test de Performance</strong> contre le seuil de Folie de chaque allié. Sur des succès, le Moral de chaque allié est restauré.</p>"
+                            "description": "<p>Vous déclamez des vers calmes, profitant à tous les alliés qui peuvent vous entendre dans un rayon de @[feet 12]. Effectuez un <strong>Test de Performance</strong> contre le seuil de Folie de chaque allié. Sur des réussites, le Moral de chaque allié est restauré.</p>"
                         }
                     }
                 },

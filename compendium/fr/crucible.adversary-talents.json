@@ -147,7 +147,7 @@
                 "corruptingDeathBurst": {
                     "name": "Explosion corruptrice mortelle",
                     "condition": "La créature meurt.",
-                    "description": "<p>Lorsque la @ref[actor.name]{créature} devient @Condition[dead], elle explose en une onde de spores qui inflige des dégâts de <strong>Corruption</strong>, attaquant la défense de <strong>Fortitude</strong> de toutes les créatures proches qui ne parviennent pas à résister à l'effet et, en cas de succès critique, les afflige de la condition [decaying] pour <strong>3 rounds</strong>.</p>",
+                    "description": "<p>Lorsque la @ref[actor.name]{créature} devient @Condition[dead], elle explose en une onde de spores qui inflige des dégâts de <strong>Corruption</strong>, attaquant la défense de <strong>Fortitude</strong> de toutes les créatures proches qui ne parviennent pas à résister à l'effet et, en cas de réussite critique, les afflige de la condition [decaying] pour <strong>3 rounds</strong>.</p>",
                     "effects": {
                         "Corrupting Death Burst": {
                             "name": "Explosion corruptrice mortelle"
@@ -209,7 +209,7 @@
                 "graveMark": {
                     "name": "Marque funéraire",
                     "condition": "Lors d'un Coup critique avec une attaque de mêlée.",
-                    "description": "<p>Après avoir réussi un <strong>Coup critique</strong> avec une attaque de mêlée, la @ref[actor.name]{créature} attaque la défense de <strong>Volonté</strong> de la cible, laissant une Marque funéraire sur un succès, ce qui inflige la condition @Condition[exhausted] qui persiste jusqu'à ce que la cible termine un <strong>Repos</strong>.</p><p>Si une créature humanoïde portant une Marque funéraire meurt sous l'effet de cette marque, elle se relève à son tour suivant en tant que @UUID[Compendium.crucible.taxonomy.Item.ghoul00000000000]{Goule}.</p>",
+                    "description": "<p>Après avoir réussi un <strong>Coup critique</strong> avec une attaque de mêlée, la @ref[actor.name]{créature} attaque la défense de <strong>Volonté</strong> de la cible, laissant une Marque funéraire sur une réussite, ce qui inflige la condition @Condition[exhausted] qui persiste jusqu'à ce que la cible termine un <strong>Repos</strong>.</p><p>Si une créature humanoïde portant une Marque funéraire meurt sous l'effet de cette marque, elle se relève à son tour suivant en tant que @UUID[Compendium.crucible.taxonomy.Item.ghoul00000000000]{Goule}.</p>",
                     "effects": {
                         "Grave Mark": {
                             "name": "Marque funéraire"

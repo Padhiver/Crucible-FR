@@ -277,7 +277,7 @@
             "DualWield": "Ambidextrie",
             "DualWieldTooltip": "Cette action requiert de manier deux armes distinctes ou d'être entièrement à mains nues pour être effectuée.",
             "Empowered": "Amélioré",
-            "EmpoweredTooltip": "Cette action est puissante et inflige des dégâts supplémentaires, obtenant un bonus de dégâts de +6 en cas de succès.",
+            "EmpoweredTooltip": "Cette action est puissante et inflige des dégâts supplémentaires, obtenant un bonus de dégâts de +6 en cas de réussite.",
             "Finesse": "Finesse",
             "FinesseTooltip": "Cette action requiert une certaine finesse pour être effectuée. Vous devez manier une arme basée sur la Dextérité.",
             "Flanking": "Débordement",

@@ -408,7 +408,7 @@
                 "radiantDeathBurst": {
                     "name": "Flamboiement funeste",
                     "condition": "La créature meurt.",
-                    "description": "<p>Lorsque la @ref[actor.name]{créature} devient @Condition[dead], elle explose en une impulsion d’énergie <strong>Radiante</strong> qui attaque la défense de <strong>Fortitude</strong> de toutes les créatures proches ayant échoué à résister à l’effet, et sur un succès critique, les afflige de la condition @Condition[irradiated] pour <strong>3 rounds</strong>.</p>",
+                    "description": "<p>Lorsque la @ref[actor.name]{créature} devient @Condition[dead], elle explose en une impulsion d’énergie <strong>Radiante</strong> qui attaque la défense de <strong>Fortitude</strong> de toutes les créatures proches ayant échoué à résister à l’effet, et sur une réussite critique, les afflige de la condition @Condition[irradiated] pour <strong>3 rounds</strong>.</p>",
                     "effects": {
                         "Radiant Death Burst": {
                             "name": "Flamboiement funeste"
@@ -639,7 +639,7 @@
             "actions": {
                 "tuskCharge": {
                     "name": "Charge du sanglier",
-                    "description": "<p>Charge en ligne directe sur une distance égale à la Foulée au maximum pour effectuer une Frappe contre la première créature rencontrée. En cas de succès, la cible est mise @Condition[prone].</p>",
+                    "description": "<p>Charge en ligne directe sur une distance égale à la Foulée au maximum pour effectuer une Frappe contre la première créature rencontrée. en cas de réussite, la cible est mise @Condition[prone].</p>",
                     "effects": {
                         "Tusk Charge": {
                             "name": "Charge du sanglier"
@@ -658,7 +658,7 @@
             "actions": {
                 "venomousBite": {
                     "name": "Morsure venimeuse",
-                    "description": "<p>La @ref[actor.name]{créature} attaque, injecte une toxine qui, en cas de succès, inflige la condition @Condition[poisoned] pendant <strong>6 Tours</strong>.</p>",
+                    "description": "<p>La @ref[actor.name]{créature} attaque, injecte une toxine qui, en cas de réussite, inflige la condition @Condition[poisoned] pendant <strong>6 Tours</strong>.</p>",
                     "effects": {
                         "Venomous Bite": {
                             "name": "Morsure venimeuse"

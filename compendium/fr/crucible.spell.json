@@ -190,7 +190,7 @@
             "actions": {
                 "revive": {
                     "name": "Réanimation",
-                    "description": "<p>Vous ramenez à la vie une créature récemment devenue @Condition[dead], réduisant ses <strong>Lésions</strong> d'une valeur égale à votre score de <strong>Sagesse</strong>. En cas de succès, la créature ranimée est @Condition[disoriented] et @Condition[staggered] pendant 10 minutes.</p>",
+                    "description": "<p>Vous ramenez à la vie une créature récemment devenue @Condition[dead], réduisant ses <strong>Lésions</strong> d'une valeur égale à votre score de <strong>Sagesse</strong>. En cas de réussite, la créature ranimée est @Condition[disoriented] et @Condition[staggered] pendant 10 minutes.</p>",
                     "effects": {
                         "Revived": {
                             "name": "Réanimé"

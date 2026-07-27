@@ -607,6 +607,9 @@
         },
         "CHANGE_TYPES": {
             "scaleResource": "Évolution de la Ressource"
+        },
+        "WARNINGS": {
+            "ReferenceNotDeleted": "Il est possible de supprimer \"{name}\" mais pas automatiquement. Veuillez le supprimer manuellement si nécessaire."
         }
     },
     "ACTOR": {

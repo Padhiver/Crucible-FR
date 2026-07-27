@@ -24,7 +24,7 @@
                 },
                 "gesturefan000000": {
                     "name": "Signe : Éventail",
-                    "description": "<p>Canalisez l'essence d'une rune en un arc balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate. Utilisé avec la Terre, cela peut projeter une gerbe de pierres en arc de cercle, tandis qu'avec la Kinésie, cela peut trancher plusieurs ennemis d'un coup.</p><p>Le signe Éventail dépend de l'<strong>Intellect</strong> et cible un cône de 120 degrés sur @[feet 6], infligeant 6 dégâts de base en cas d'attaque réussie.</p>"
+                    "description": "Vous apprenez le signe Éventail, vous permettant de projeter une puissance arcanique dans un arc limité."
                 },
                 "falseAppearance0": {
                     "name": "Faux-semblant",
@@ -48,7 +48,7 @@
             "items": {
                 "runeflame0000000": {
                     "name": "Rune : Flamme",
-                    "description": "Vous apprenez la Rune de Flamme, vous permettant de tisser l'élément arcanique du feu."
+                    "description": "<p>La force chaotique élémentaire, l'énergie thermique. La rune de Flamme régit le feu et la chaleur. Elle est opposée à la rune ordonnée du Givre.</p>\n<p>La rune de Flamme est basée sur l'<strong>Intellect</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts de <strong>Feu</strong> à la <strong>Santé</strong>.</p>"
                 },
                 "fireAbsorption00": {
                     "name": "Absorption de Feu",
@@ -188,7 +188,7 @@
                 },
                 "runefrost0000000": {
                     "name": "Rune : Givre",
-                    "description": "Vous apprenez la Rune de Givre, vous permettant de canaliser l'élément arcanique de la glace."
+                    "description": "<p>La force ordonnée élémentaire, l'énergie thermique. La rune de Givre régit la glace et le froid. Elle est opposée à la rune chaotique de Flamme.</p>\n<p>La rune de Givre est basée sur la <strong>Sagesse</strong>, cible la <strong>Fortitude</strong>, et inflige des dégâts de <strong>Froid</strong> à la <strong>Santé</strong>.</p>"
                 },
                 "aqueousTransmiss": {
                     "name": "Transmission aqueuse",
@@ -234,7 +234,7 @@
                     "name": "Armure élémentaire"
                 },
                 "Qu8kL7eiBNkcOXpn": {
-                    "name": "Griffe de Terre"
+                    "name": "Griffe Voltaïque"
                 },
                 "gesturearrow0000": {
                     "name": "Signe : Flèche",
@@ -254,7 +254,7 @@
                 },
                 "runeStorm0000000": {
                     "name": "Rune : Orage",
-                    "description": "<p>La force chaotique de l'énergie électrique brute. La rune d'Orage gouverne les sources d'énergie électrique et de décharge électrique. Elle est opposée par la rune ordonnée de Terre.</p>\n<p>La rune d'Orage évolue avec l'<strong>Intellect</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts <strong>Électriques</strong> à la <strong>Santé</strong>.</p>"
+                    "description": "Vous apprenez la rune d'Orage, vous permettant de contrôler des déferlements d'électricité arcanique instables."
                 }
             },
             "archetype": {
@@ -278,7 +278,7 @@
                 },
                 "gesturefan000000": {
                     "name": "Signe : Éventail",
-                    "description": "<p>Canalisez l'essence d'une rune en un arc balayant ou éclaté pour frapper plusieurs cibles à proximité immédiate. Utilisé avec la Terre, cela peut projeter une gerbe de pierres en arc de cercle, tandis qu'avec la Kinésie, cela peut trancher plusieurs ennemis d'un coup.</p><p>Le signe Éventail dépend de l'<strong>Intellect</strong> et cible un cône de 120 degrés sur @[feet 6], infligeant 6 dégâts de base en cas d'attaque réussie.</p>"
+                    "description": "Vous apprenez le signe Éventail, vous permettant de projeter une puissance arcanique dans un arc limité."
                 },
                 "vk1SK4IwNZkxQEQL": {
                     "name": "Griffe de Flamme"
@@ -312,7 +312,7 @@
             "items": {
                 "runeearth0000000": {
                     "name": "Rune : Terre",
-                    "description": "Vous apprenez la Rune de Terre, vous permettant de contrôler les forces tectoniques et corrosives."
+                    "description": "<p>La force ordonnée de la terre élémentaire, responsable de la matière physique. La rune de Terre régit la santé et les questions relatives à la croissance biologique. Elle est opposée à la rune chaotique d'Orage.</p>\n<p>La rune de Terre est basée sur la <strong>Sagesse</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts d'<strong>Acide</strong> à la <strong>Santé</strong>.</p>"
                 },
                 "acidAbsorption00": {
                     "name": "Absorption d'Acide",

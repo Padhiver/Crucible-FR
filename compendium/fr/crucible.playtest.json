@@ -49,6 +49,32 @@
                     "name": "Arène de la Vaillance",
                     "levels": {
                         "defaultLevel0000": "Arène de la Vaillance"
+                    },
+                    "deltaTokens": {
+                        "wVFqwoorT9aOxftx": {
+                            "name": "Duurath"
+                        },
+                        "ymBOx6ffIsc29s5H": {
+                            "name": "Kagura"
+                        },
+                        "tRy2LL8mZnjeyKD9": {
+                            "name": "Agnath"
+                        },
+                        "f9iW1gfTF2J3gyh1": {
+                            "name": "Fizzit"
+                        },
+                        "FhkahWVKKbsjdpdW": {
+                            "name": "Ulfen"
+                        },
+                        "dZ5dcZbXsT6r5TAg": {
+                            "name": "Zarajah"
+                        },
+                        "MndNelKUCSPSmp4x": {
+                            "name": "Eliorwen"
+                        },
+                        "Xiewo9EnaZhriY6O": {
+                            "name": "Belladonna"
+                        }
                     }
                 }
             },
@@ -3211,6 +3237,10 @@
                     "converter": "embedded_biography_converter"
                 }
             }
+        },
+        "folders": {
+            "path": "folders",
+            "converter": "ember_folders_converter"
         }
     }
 }

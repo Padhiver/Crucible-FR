@@ -1,5 +1,5 @@
 // Généré automatiquement par generate-register.js
-// Converters actifs : embedded_effects_converter, actions_converter, item_effects_converter, ember_pages_converter, ember_journals_converter, ember_scene_levels_converter, ember_macros_converter, ember_tables_converter, embedded_items_converter, embedded_object_with_actions_converter, embedded_biography_converter, adventure_items_converter, nested_object_converter, categories_converter
+// Converters actifs : embedded_effects_converter, actions_converter, item_effects_converter, ember_folders_converter, ember_pages_converter, ember_journals_converter, ember_scene_levels_converter, ember_macros_converter, ember_tables_converter, embedded_items_converter, embedded_object_with_actions_converter, embedded_biography_converter, adventure_items_converter, nested_object_converter, categories_converter
 
 Hooks.once("babele.init", (babele) => {
   if (!game.modules.get("babele")?.active) return;
@@ -172,6 +172,26 @@ Hooks.once("babele.init", (babele) => {
   };
 
   /**
+   * Traduit les dossiers embarqués dans une Adventure Ember.
+   * Format FR : { "Nom anglais": "Traduction" }
+   * Format EN : [{ _id, name, ... }] ou { id: { name, ... } }
+   */
+  const emberFoldersConverter = (folders, translations) => {
+    if (!folders || !translations) return folders;
+
+    const arr = asArray(folders);
+    for (const folder of arr) {
+      if (!folder?.name) continue;
+      const translated = translations[folder.name];
+      if (typeof translated === 'string' && translated.trim()) {
+        folder.name = translated;
+      }
+    }
+
+    return folders;
+  };
+
+  /**
    * Traduit les pages de journaux Ember.
    * Gère les champs standards (name, text) et les champs spécifiques Ember
    * (overview, gamemaster, exposition, summary, pronunciation, subtitle, outcomes)
@@ -265,7 +285,10 @@ Hooks.once("babele.init", (babele) => {
   };
 
   /**
-   * Traduit les scenes, levels et notes embarquées d'une Adventure Ember.
+   * Traduit les scenes, levels, notes, regions/behaviors et deltaTokens
+   * embarqués dans une Adventure. Regions/behaviors et deltaTokens sont
+   * des fonctionnalités Foundry core (indépendantes du système de jeu) ;
+   * levels reste spécifique au module Ember.
    * Lookup : _id en priorité, name/text en fallback.
    */
 const emberSceneLevelsConverter = (scenes, translations) => {
@@ -301,6 +324,40 @@ const emberSceneLevelsConverter = (scenes, translations) => {
         const t = sceneTranslation.notes[note._id]
                ?? sceneTranslation.notes[note.text];
         if (t?.text !== undefined) note.text = t.text;
+      }
+    }
+
+    // Scene Regions & behaviors (fonctionnalité Foundry core)
+    if (sceneTranslation.regions) {
+      const regionArr = asArray(scene.regions);
+      for (const region of regionArr) {
+        if (!region) continue;
+        const regionTranslation = sceneTranslation.regions[region._id]
+                                ?? sceneTranslation.regions[region.name];
+        if (!regionTranslation || typeof regionTranslation !== 'object') continue;
+
+        if (regionTranslation.name !== undefined) region.name = regionTranslation.name;
+
+        if (regionTranslation.behaviors) {
+          const behaviorArr = asArray(region.behaviors);
+          for (const behavior of behaviorArr) {
+            if (!behavior) continue;
+            const t = regionTranslation.behaviors[behavior._id]
+                   ?? regionTranslation.behaviors[behavior.name];
+            if (t?.name !== undefined) behavior.name = t.name;
+          }
+        }
+      }
+    }
+
+    // Tokens déposés sur la scène (nom personnalisé, différent de l'acteur source)
+    if (sceneTranslation.deltaTokens) {
+      const tokenArr = asArray(scene.tokens);
+      for (const token of tokenArr) {
+        if (!token) continue;
+        const t = sceneTranslation.deltaTokens[token._id]
+               ?? sceneTranslation.deltaTokens[token.name];
+        if (t?.name !== undefined) token.name = t.name;
       }
     }
   }
@@ -502,6 +559,7 @@ const emberSceneLevelsConverter = (scenes, translations) => {
     embedded_effects_converter: embeddedEffectsConverter,
     actions_converter: actionsConverter,
     item_effects_converter: itemEffectsConverter,
+    ember_folders_converter: emberFoldersConverter,
     ember_pages_converter: emberPagesConverter,
     ember_journals_converter: emberJournalsConverter,
     ember_scene_levels_converter: emberSceneLevelsConverter,

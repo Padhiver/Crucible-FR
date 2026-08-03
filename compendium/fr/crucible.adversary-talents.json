@@ -773,16 +773,5 @@
             "name": "Rocher vivant",
             "description": "<p>@ref[actor.name]{La créature} canalise la terre à travers sa propre masse physique plutôt que par son esprit. Son utilisation de la <strong>rune de Terre</strong> se base sur la <strong>Robustesse</strong> au lieu de la <strong>Sagesse</strong>.</p>"
         }
-    },
-    "mapping": {
-        "actions": {
-            "path": "system.actions",
-            "converter": "actions_converter"
-        },
-        "effects": {
-            "path": "effects",
-            "converter": "embedded_effects_converter"
-        },
-        "description": "system.description"
     }
 }

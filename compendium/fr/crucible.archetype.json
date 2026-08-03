@@ -188,8 +188,5 @@
             "name": "Farceur",
             "description": "<p>Créatures humanoïdes qui se nourrissent de nuisances, de contrariétés, de ruses et de tromperies.</p>"
         }
-    },
-    "mapping": {
-        "description": "system.description"
     }
 }

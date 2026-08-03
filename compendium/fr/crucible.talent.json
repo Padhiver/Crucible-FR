@@ -792,7 +792,7 @@
         },
         "gestureSense0000": {
             "name": "Signe : Résonance",
-            "description": "<p>Vous harmonisez votre esprit avec la puissance arcanique d'une Rune pour sentir les sources d'énergie proches.</p><p>Le signe de Résonance évolue avec la <strong>Présence</strong> et produit une émanation de @[feet 30] de rayon dont la position reste centrée sur le lanceur. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>. Il peut optionnellement être <strong>Maintenu</strong> au coût supplémentaire de <strong>1 Focus</strong> chaque round suivant.</p><p>Ce sort permet au lanceur de détecter la présence de sorcellerie utilisant la même Rune que celle incorporée dans ce sort. La Résonance détectera aussi momentanément la présence de créatures selon leur type.</p><ul><li><p><strong>Contrôle</strong> : Fiélons</p></li><li><p><strong>Mort</strong> : Morts-vivants</p></li><li><p><strong>Terre</strong> : Vases et Élémentaires de terre</p></li><li><p><strong>Flamme</strong> : Dragons et Élémentaires de feu</p></li><li><p><strong>Givre</strong> : Géants et Élémentaires de givre</p></li><li><p><strong>Illumination</strong> : Célestes</p></li><li><p><strong>Illusion</strong> : Fées</p></li><li><p><strong>Kinésie</strong> : Monstruosités</p></li><li><p><strong>Vie</strong> : Plantes et Bêtes</p></li><li><p><strong>Orage</strong> : Artificiels et Élémentaires de tempête</p></li><li><p><strong>Néant</strong> : Extérieurs</p></li><li><p><strong>Âme</strong> : Humanoïdes</p></li></ul>"
+            "description": "<p>Vous harmonisez votre esprit avec la puissance arcanique d'une Rune pour sentir les sources d'énergie proches.</p><p>Le signe de Résonance évolue avec la <strong>Présence</strong> et produit une émanation de @[feet 30] de rayon dont la position reste centrée sur le lanceur. Ce signe nécessite <strong>1 Main</strong> pour être lancé et a un coût de base de <strong>3 Actions</strong> et <strong>1 Focus</strong>. Il peut optionnellement être <strong>Maintenu</strong> au coût supplémentaire de <strong>1 Focus</strong> chaque round suivant.</p><p>Ce sort permet au lanceur de détecter la présence de sorcellerie utilisant la même Rune que celle incorporée dans ce sort. La Résonance détectera aussi momentanément la présence de créatures selon leur type.</p><ul><li><p><strong>Contrôle</strong> : Fiélons</p></li><li><p><strong>Mort</strong> : Morts-vivants</p></li><li><p><strong>Terre</strong> : Vases et Élémentaires de terre</p></li><li><p><strong>Flamme</strong> : Dragons et Élémentaires de feu</p></li><li><p><strong>Givre</strong> : Géants et Élémentaires de givre</p></li><li><p><strong>Illumination</strong> : Célestes</p></li><li><p><strong>Illusion</strong> : Fées</p></li><li><p><strong>Kinésie</strong> : Monstruosités</p></li><li><p><strong>Vie</strong> : Plantes et Bêtes</p></li><li><p><strong>Orage</strong> : Artificiels et Élémentaires d'orage</p></li><li><p><strong>Néant</strong> : Extérieurs</p></li><li><p><strong>Âme</strong> : Humanoïdes</p></li></ul>"
         },
         "gesturestep00000": {
             "name": "Signe : Charge",
@@ -2373,12 +2373,5 @@
             "name": "Lutteur",
             "description": "<p>Grâce à vos leviers et à votre technique, vous saisissez et immobilisez des créatures bien plus grandes que vous. La Taille maximale de créature que vous pouvez @Action[Compendium.crucible.talent.Item.unarmedCombatTra grapple], ou par laquelle vous pouvez être Agrippé, augmente de 1.</p>"
         }
-    },
-    "mapping": {
-        "actions": {
-            "path": "system.actions",
-            "converter": "actions_converter"
-        },
-        "description": "system.description"
     }
 }

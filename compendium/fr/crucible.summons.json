@@ -8,9 +8,6 @@
     "entries": {
         "56puGK932Qc0cowe": {
             "name": "Squelette moisi",
-            "tokenName": {
-                "name": "Création de Mort"
-            },
             "items": {
                 "mRRdlP89QJPwBeHp": {
                     "name": "Armure mortelle"
@@ -38,13 +35,11 @@
             "taxonomy": {
                 "name": "Squelette",
                 "description": "<p>Créatures non-mortes faites d'os et de tendons.</p>"
-            }
+            },
+            "tokenName": "Création de Mort"
         },
         "AlwoqQKoL1BnnZjd": {
             "name": "Visiteur de Flamme",
-            "tokenName": {
-                "name": "Conjuration de Flamme"
-            },
             "items": {
                 "runeflame0000000": {
                     "name": "Rune : Flamme",
@@ -76,13 +71,11 @@
             "taxonomy": {
                 "name": "Élémentaire de feu",
                 "description": "<p>Créatures élémentaires correspondant à l'élément du feu.</p>"
-            }
+            },
+            "tokenName": "Conjuration de Flamme"
         },
         "c5B0l3VQPNMSw0MQ": {
-            "name": "Visiteur de Tempête",
-            "tokenName": {
-                "name": "Lutin de Tempête"
-            },
+            "name": "Visiteur d'orage",
             "items": {
                 "electricityAbsor": {
                     "name": "Absorption d'Électricité",
@@ -112,15 +105,13 @@
                 "description": "<p>Les Visiteurs sont des incarnations d'énergie élémentaire brute qui assument des formes vaguement humanoïdes. Contrairement à leurs parents plus petits, les Visiteurs élémentaires sont capables de communication et de compréhension, bien que leurs motivations soient rarement alignées avec celles des mortels.</p>"
             },
             "taxonomy": {
-                "name": "Élémentaire de tempête",
+                "name": "Élémentaire d'orage",
                 "description": "<p>Créatures élémentaires correspondant à l'élément de l'Orage.</p>"
-            }
+            },
+            "tokenName": "Lutin d'orage"
         },
         "me5glbOshiijlVUH": {
             "name": "Lutin de Givre",
-            "tokenName": {
-                "name": "Création de Givre"
-            },
             "items": {
                 "rJmycH98CA6nkh5f": {
                     "name": "Armure élémentaire"
@@ -170,13 +161,11 @@
             "taxonomy": {
                 "name": "Élémentaire de givre",
                 "description": "<p>Créatures élémentaires correspondant à l'élément du givre.</p>"
-            }
+            },
+            "tokenName": "Création de Givre"
         },
         "mMBMYzpipJdqVf7k": {
             "name": "Visiteur de Givre",
-            "tokenName": {
-                "name": "Lutin de Givre"
-            },
             "items": {
                 "coldAbsorption00": {
                     "name": "Absorption de Froid",
@@ -222,13 +211,11 @@
             "taxonomy": {
                 "name": "Élémentaire de givre",
                 "description": "<p>Créatures élémentaires correspondant à l'élément du givre.</p>"
-            }
+            },
+            "tokenName": "Lutin de Givre"
         },
         "Ne25xsSqYijgcrm0": {
-            "name": "Lutin de Tempête",
-            "tokenName": {
-                "name": "Création de Tempête"
-            },
+            "name": "Lutin d'orage",
             "items": {
                 "kxuUSxeLhkQ5J1Nn": {
                     "name": "Armure élémentaire"
@@ -262,15 +249,13 @@
                 "description": "<p>Les Lutins sont des élémentaires moindres qui sont des incarnations de leur élément brut, mais manquent de la sapience de leurs parents plus imposants.</p>"
             },
             "taxonomy": {
-                "name": "Élémentaire de tempête",
+                "name": "Élémentaire d'orage",
                 "description": "<p>Créatures élémentaires correspondant à l'élément de l'Orage.</p>"
-            }
+            },
+            "tokenName": "Création d'Orage"
         },
         "RuNh1bFGiHKdHeKI": {
             "name": "Lutin de Flamme",
-            "tokenName": {
-                "name": "Création de Flamme"
-            },
             "items": {
                 "runeflame0000000": {
                     "name": "Rune : Flamme",
@@ -302,13 +287,11 @@
             "taxonomy": {
                 "name": "Élémentaire de feu",
                 "description": "<p>Créatures élémentaires correspondant à l'élément du feu.</p>"
-            }
+            },
+            "tokenName": "Création de Flamme"
         },
         "ugQYiiEmj9idwvqW": {
             "name": "Visiteur de Terre",
-            "tokenName": {
-                "name": "Lutin de Terre"
-            },
             "items": {
                 "runeearth0000000": {
                     "name": "Rune : Terre",
@@ -340,13 +323,11 @@
             "taxonomy": {
                 "name": "Élémentaire de terre",
                 "description": "<p>Créatures élémentaires correspondant à l'élément de Terre.</p>"
-            }
+            },
+            "tokenName": "Lutin de Terre"
         },
         "xTFgTg5Rh2s0s5gZ": {
             "name": "Lutin de Terre",
-            "tokenName": {
-                "name": "Création de Terre"
-            },
             "items": {
                 "kxuUSxeLhkQ5J1Nn": {
                     "name": "Armure élémentaire"
@@ -382,13 +363,11 @@
             "taxonomy": {
                 "name": "Élémentaire de terre",
                 "description": "<p>Créatures élémentaires correspondant à l'élément de Terre.</p>"
-            }
+            },
+            "tokenName": "Création de Terre"
         },
         "ancestralGuard00": {
             "name": "Gardien ancestral",
-            "tokenName": {
-                "name": "Gardien ancestral"
-            },
             "items": {
                 "ancestralForm000": {
                     "name": "Manifestation ancestrale",
@@ -406,37 +385,8 @@
             "taxonomy": {
                 "name": "Esprit ancestral",
                 "description": "<p>Manifestation incorporelle des esprits ancestraux, invoquée pour veiller sur les vivants. Elle n'a ni corps physique à blesser, ni volonté à briser.</p>"
-            }
-        }
-    },
-    "mapping": {
-        "items": {
-            "path": "items",
-            "converter": "adventure_items_converter"
-        },
-        "actions": {
-            "path": "system.actions",
-            "converter": "actions_converter"
-        },
-        "ancestry": {
-            "path": "system.details.ancestry",
-            "converter": "nested_object_converter"
-        },
-        "background": {
-            "path": "system.details.background",
-            "converter": "nested_object_converter"
-        },
-        "biography": {
-            "path": "system.details.biography",
-            "converter": "nested_object_converter"
-        },
-        "archetype": {
-            "path": "system.details.archetype",
-            "converter": "nested_object_converter"
-        },
-        "taxonomy": {
-            "path": "system.details.taxonomy",
-            "converter": "nested_object_converter"
+            },
+            "tokenName": "Gardien ancestral"
         }
     }
 }

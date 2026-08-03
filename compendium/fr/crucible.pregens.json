@@ -7,9 +7,6 @@
     "entries": {
         "0crVYYsPvV9KDEJ2": {
             "name": "Belladonna",
-            "tokenName": {
-                "name": "Belladonna"
-            },
             "items": {
                 "YBeEb4tg4QxDtNIx": {
                     "name": "Dague",
@@ -263,13 +260,11 @@
             },
             "biography": {
                 "public": "<p>Belladonna est une voleuse rusée qui combat à l'aide de deux dagues, infligeant une rapide succession de coups à ses adversaires imprudents. Belladonna aspire à obtenir le Talent signature <strong>Empoisonneur</strong>.</p>"
-            }
+            },
+            "tokenName": "Belladonna"
         },
         "2lvTCCOj4dnBI774": {
             "name": "Eliorwen",
-            "tokenName": {
-                "name": "Eliorwen"
-            },
             "items": {
                 "CItsWhgzGd5hXOQD": {
                     "name": "Cimeterre",
@@ -473,13 +468,11 @@
             },
             "biography": {
                 "public": "<p>Eliorwen est une combattante agile qui utilise le tir à l'arc et la magie pour neutraliser et éliminer ses ennemis à grande distance. Eliorwen aspire à obtenir le Talent signature <strong>Archer arcanique</strong>.</p>"
-            }
+            },
+            "tokenName": "Eliorwen"
         },
         "B40EKua2Q7zQ8CFZ": {
             "name": "Agnath",
-            "tokenName": {
-                "name": "Agnath"
-            },
             "items": {
                 "f4uwtWGdrCKeoxb7": {
                     "name": "Clibanion",
@@ -631,13 +624,11 @@
             },
             "biography": {
                 "public": "<p>Agnath est un nécromancien maniant l'épée qui imprègne ses coups de la magie de la Mort. Agnath aspire à obtenir le Talent signature <strong>Sorcelame</strong>.</p>"
-            }
+            },
+            "tokenName": "Agnath"
         },
         "hfOaEbw4ObPXu6Qa": {
             "name": "Belladonna",
-            "tokenName": {
-                "name": "Belladonna"
-            },
             "items": {
                 "YBeEb4tg4QxDtNIx": {
                     "name": "Dague",
@@ -727,13 +718,11 @@
             },
             "biography": {
                 "public": "<p>Belladonna est une voleuse rusée qui combat à l'aide de deux dagues, infligeant une rapide succession de coups à ses adversaires imprudents. Belladonna aspire à obtenir le Talent signature <strong>Empoisonneur</strong>.</p>"
-            }
+            },
+            "tokenName": "Belladonna"
         },
         "Il4NDaNBdHNcjJ9d": {
             "name": "Kagura",
-            "tokenName": {
-                "name": "Kagura"
-            },
             "items": {
                 "teHqGUKkPcrk8Pvm": {
                     "name": "Bâton de glace",
@@ -903,13 +892,11 @@
             },
             "biography": {
                 "public": "<p>Kagura est une guérisseuse infatigable qui soutient la santé et le moral de ses alliés au cœur de la frénésie des combats. Kagura aspire à obtenir le Talent signature <strong>Guérisseur</strong>.</p>"
-            }
+            },
+            "tokenName": "Kagura"
         },
         "iLUfMcYjAbZFY4CJ": {
             "name": "Duurath",
-            "tokenName": {
-                "name": "Duurath"
-            },
             "items": {
                 "uzOVLLoRYLWoQjWV": {
                     "name": "Armure d’écailles",
@@ -1143,13 +1130,11 @@
             },
             "biography": {
                 "public": "<p>Duurath est un robuste défenseur nain qui utilise un marteau et un bouclier pour protéger ses alliés et punir ses ennemis en sapant leur moral. Duurath aspire à obtenir le Talent signature <strong>Gardien des Runes</strong>.</p>"
-            }
+            },
+            "tokenName": "Duurath"
         },
         "iPMperuo6ZvBLnp9": {
             "name": "Agnath",
-            "tokenName": {
-                "name": "Agnath"
-            },
             "items": {
                 "ZKTHoQXGY0mBBq7B": {
                     "name": "Épée à deux mains",
@@ -1210,13 +1195,11 @@
             },
             "biography": {
                 "public": "<p>Agnath est un nécromancien maniant l'épée qui imprègne ses coups de la magie de la Mort. Agnath aspire à obtenir le Talent signature <strong>Sorcelame</strong>.</p>"
-            }
+            },
+            "tokenName": "Agnath"
         },
         "kSGFBe6ZaLDC8wRy": {
             "name": "Eliorwen",
-            "tokenName": {
-                "name": "Eliorwen"
-            },
             "items": {
                 "CItsWhgzGd5hXOQD": {
                     "name": "Cimeterre",
@@ -1300,13 +1283,11 @@
             },
             "biography": {
                 "public": "<p>Eliorwen est une combattante agile qui utilise le tir à l'arc et la magie pour neutraliser et éliminer ses ennemis à grande distance. Eliorwen aspire à obtenir le Talent signature <strong>Archer arcanique</strong>.</p>"
-            }
+            },
+            "tokenName": "Eliorwen"
         },
         "L0qEPpUQBZQPCxN3": {
             "name": "Ulfen",
-            "tokenName": {
-                "name": "Ulfen"
-            },
             "items": {
                 "5ImsYEoZ5PjW0Ltw": {
                     "name": "Armure d’écailles",
@@ -1522,13 +1503,11 @@
             },
             "biography": {
                 "public": "<p>Ulfen est un guerrier féroce qui combat à l'aide d'une grande hache à deux mains, privilégiant les coups puissants qui infligent des dégâts importants ou touchent plusieurs cibles. Ulfen aspire à obtenir le Talent signature <strong>Berserker</strong>.</p>"
-            }
+            },
+            "tokenName": "Ulfen"
         },
         "lP2MOJyk5oHs6oSS": {
             "name": "Fizzit",
-            "tokenName": {
-                "name": "Fizzit"
-            },
             "items": {
                 "wdzOn8u66F9Yiehc": {
                     "name": "Broigne",
@@ -1712,13 +1691,11 @@
             },
             "biography": {
                 "public": "<p>Fizzit est un habile lanceur de sorts et érudit qui jette des sorts à distance et cherche à exploiter les forces élémentaires pour les mettre à son service. Fizzit aspire à obtenir le Talent signature <strong>Conjurateur</strong>.</p>"
-            }
+            },
+            "tokenName": "Fizzit"
         },
         "nPOVNsOFhqA7SUud": {
             "name": "Duurath",
-            "tokenName": {
-                "name": "Duurath"
-            },
             "items": {
                 "jLQ5DTwKfZBUnt7R": {
                     "name": "Marteau de guerre",
@@ -1825,13 +1802,11 @@
             },
             "biography": {
                 "public": "<p>Duurath est un robuste défenseur nain qui utilise un marteau et un bouclier pour protéger ses alliés et punir ses ennemis en sapant leur moral. Duurath aspire à obtenir le Talent signature <strong>Gardien des Runes</strong>.</p>"
-            }
+            },
+            "tokenName": "Duurath"
         },
         "sqTUaPrXpwCzk3xs": {
             "name": "Zarajah",
-            "tokenName": {
-                "name": "Zarajah"
-            },
             "items": {
                 "5HWc3RX8F46IJt9g": {
                     "name": "Bâton de flamme",
@@ -1909,13 +1884,11 @@
             },
             "biography": {
                 "public": "<p>Zarajah est une diablotine fougueuse qui affectionne particulièrement la pyromancie et qui tisse des sorts dangereux et protecteurs pour contrôler le champ de bataille. Zarajah aspire à obtenir le Talent signature <strong>Mage de guerre</strong>.</p>"
-            }
+            },
+            "tokenName": "Zarajah"
         },
         "tCBBi3Kyc3M4KHGZ": {
             "name": "Zarajah",
-            "tokenName": {
-                "name": "Zarajah"
-            },
             "items": {
                 "5HWc3RX8F46IJt9g": {
                     "name": "Bâton de flamme",
@@ -2066,13 +2039,11 @@
             },
             "biography": {
                 "public": "<p>Zarajah est une diablotine fougueuse qui affectionne particulièrement la pyromancie et qui tisse des sorts dangereux et protecteurs pour contrôler le champ de bataille. Zarajah aspire à obtenir le Talent signature <strong>Mage de guerre</strong>.</p>"
-            }
+            },
+            "tokenName": "Zarajah"
         },
         "TffJlCvt39DEhFX7": {
             "name": "Fizzit",
-            "tokenName": {
-                "name": "Fizzit"
-            },
             "items": {
                 "wdzOn8u66F9Yiehc": {
                     "name": "Broigne",
@@ -2151,13 +2122,11 @@
             },
             "biography": {
                 "public": "<p>Fizzit est un habile lanceur de sorts et érudit qui jette des sorts à distance et cherche à exploiter les forces élémentaires pour les mettre à son service. Fizzit aspire à obtenir le Talent signature <strong>Conjurateur</strong>.</p>"
-            }
+            },
+            "tokenName": "Fizzit"
         },
         "vT1UpPCVxKRg2A1J": {
             "name": "Ulfen",
-            "tokenName": {
-                "name": "Ulfen"
-            },
             "items": {
                 "5ImsYEoZ5PjW0Ltw": {
                     "name": "Armure d’écailles",
@@ -2241,13 +2210,11 @@
             },
             "biography": {
                 "public": "<p>Ulfen est un guerrier féroce qui combat à l'aide d'une grande hache à deux mains, privilégiant les coups puissants qui infligent des dégâts importants ou touchent plusieurs cibles. Ulfen aspire à obtenir le Talent signature <strong>Berserker</strong>.</p>"
-            }
+            },
+            "tokenName": "Ulfen"
         },
         "z8PYWkq3bxce7vwb": {
             "name": "Kagura",
-            "tokenName": {
-                "name": "Kagura"
-            },
             "items": {
                 "teHqGUKkPcrk8Pvm": {
                     "name": "Bâton de glace",
@@ -2320,37 +2287,8 @@
             },
             "biography": {
                 "public": "<p>Kagura est une guérisseuse infatigable qui soutient la santé et le moral de ses alliés au cœur de la frénésie des combats. Kagura aspire à obtenir le Talent signature <strong>Guérisseur</strong>.</p>"
-            }
-        }
-    },
-    "mapping": {
-        "items": {
-            "path": "items",
-            "converter": "adventure_items_converter"
-        },
-        "actions": {
-            "path": "system.actions",
-            "converter": "actions_converter"
-        },
-        "ancestry": {
-            "path": "system.details.ancestry",
-            "converter": "nested_object_converter"
-        },
-        "background": {
-            "path": "system.details.background",
-            "converter": "nested_object_converter"
-        },
-        "biography": {
-            "path": "system.details.biography",
-            "converter": "nested_object_converter"
-        },
-        "archetype": {
-            "path": "system.details.archetype",
-            "converter": "nested_object_converter"
-        },
-        "taxonomy": {
-            "path": "system.details.taxonomy",
-            "converter": "nested_object_converter"
+            },
+            "tokenName": "Kagura"
         }
     }
 }

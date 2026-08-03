@@ -6,9 +6,9 @@
  *  - Règle de déplacement   : affiche les mètres sur le ruler (option client).
  */
 
-import { registerSettings } from "./scripts/common/settings.mjs";
-import { registerFeetEnricher } from "./scripts/enricher.mjs";
-import { registerRulerObserver } from "./scripts/ruler.mjs";
+import { registerSettings } from "./common/settings.mjs";
+import { registerFeetEnricher } from "./enricher.mjs";
+import { registerRulerObserver } from "./ruler.mjs";
 
 /* -------------------------------------------- */
 /*  FoundryVTT Initialization

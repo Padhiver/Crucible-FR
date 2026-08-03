@@ -82,7 +82,7 @@
             "description": "<p>Créatures éternelles et malveillantes ramenées à la vie par la nécromancie, créées à partir des restes squelettiques d'humanoïdes morts depuis longtemps. Animés par des forces impies échappant à leur contrôle, les @ref[name] existent rarement de leur propre chef et sont souvent rencontrés en tant que serviteurs de lanceurs de sorts maléfiques ou de morts-vivants supérieurs.</p>"
         },
         "stormElemental00": {
-            "name": "Élémentaire de tempête",
+            "name": "Élémentaire d'orage",
             "description": "<p>Créatures élémentaires correspondant à l'élément de l'Orage.</p>"
         },
         "taxCrystalSpider": {
@@ -125,8 +125,5 @@
             "name": "Élémentaire de pierre",
             "description": "<p>Élémentaires colossaux de roche vivante et solide : massifs, inébranlables et éternels. Ils canalisent la puissance brute de la terre à travers leur propre masse immense.</p>"
         }
-    },
-    "mapping": {
-        "description": "system.description"
     }
 }

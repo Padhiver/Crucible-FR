@@ -275,7 +275,12 @@
                     "actions": {
                         "affixDisguise": {
                             "name": "Déguisement",
-                            "description": "<p>Une fois par repos, vous adoptez une apparence illusoire qui modifie aussi bien votre visage que votre tenue. L’illusion ne peut pas changer votre ascendance, mais peut altérer d’autres aspects de votre anatomie, y compris votre genre apparent. L'objet lui-même ne change pas d’apparence et reste visible.</p><p>L’illusion persiste indéfiniment et peut être dissipée à volonté. Une fois activé, cet objet ne peut pas produire une nouvelle illusion de cette manière avant que 24 heures ne se soient écoulées.</p>"
+                            "description": "<p>Une fois par repos, vous adoptez une apparence illusoire qui modifie aussi bien votre visage que votre tenue. L’illusion ne peut pas changer votre ascendance, mais peut altérer d’autres aspects de votre anatomie, y compris votre genre apparent. L'objet lui-même ne change pas d’apparence et reste visible.</p><p>L’illusion persiste indéfiniment et peut être dissipée à volonté. Une fois activé, cet objet ne peut pas produire une nouvelle illusion de cette manière avant que 24 heures ne se soient écoulées.</p>",
+                            "effects": {
+                                "Disguise": {
+                                    "name": "Déguisement"
+                                }
+                            }
                         }
                     }
                 },
@@ -470,7 +475,12 @@
                     "actions": {
                         "affixLuminous": {
                             "name": "Activer l'illumination",
-                            "description": "<p>Vous prononcez le mot de commande et l'@ref[item.name]{objet} s'illumine d'une lueur stable et surnaturelle. Le rayon de lumière vive émise dépend du <strong>Palier</strong> de ce préfixe, avec un rayon supplémentaire de lumière tamisée s'étendant à une distance égale au-delà.</p><ul><li><p><strong>Palier 1 :</strong> @[feet 20] de lumière vive, @[feet 40] de lumière tamisée.</p></li><li><p><strong>Palier 2 :</strong> @[feet 40] de lumière vive, @[feet 80] de lumière tamisée.</p></li><li><p><strong>Palier 3 :</strong> @[feet 60] de lumière vive, @[feet 120] de lumière tamisée.</p></li></ul><p>La lumière persiste jusqu'à ce que vous désactiviez l'effet ou retiriez l'objet.</p>"
+                            "description": "<p>Vous prononcez le mot de commande et l'@ref[item.name]{objet} s'illumine d'une lueur stable et surnaturelle. Le rayon de lumière vive émise dépend du <strong>Palier</strong> de ce préfixe, avec un rayon supplémentaire de lumière tamisée s'étendant à une distance égale au-delà.</p><ul><li><p><strong>Palier 1 :</strong> @[feet 20] de lumière vive, @[feet 40] de lumière tamisée.</p></li><li><p><strong>Palier 2 :</strong> @[feet 40] de lumière vive, @[feet 80] de lumière tamisée.</p></li><li><p><strong>Palier 3 :</strong> @[feet 60] de lumière vive, @[feet 120] de lumière tamisée.</p></li></ul><p>La lumière persiste jusqu'à ce que vous désactiviez l'effet ou retiriez l'objet.</p>",
+                            "effects": {
+                                "Luminous": {
+                                    "name": "Lumineux"
+                                }
+                            }
                         }
                     }
                 }
@@ -1391,25 +1401,6 @@
                 "public": "<p>Un bâton en bois dur équilibré, prisé des pratiquants d'arts martiaux, plus léger et plus maniable qu'un bâton classique. Son poids uniforme favorise l'habileté du manieur, qui peut enchaîner parades et frappes rapides.</p>"
             },
             "name": "Bâton Bo"
-        }
-    },
-    "mapping": {
-        "actions": {
-            "path": "system.actions",
-            "converter": "actions_converter"
-        },
-        "effects": {
-            "path": "effects",
-            "converter": "item_effects_converter"
-        },
-        "description": {
-            "path": "system.description",
-            "converter": "structured",
-            "cardinality": "one",
-            "mapping": {
-                "public": "public",
-                "private": "private"
-            }
         }
     }
 }

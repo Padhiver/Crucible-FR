@@ -327,16 +327,5 @@
                 "public": "<p>La @ref[actor.name]{créature} frappe avec un membre enduit de toxines qui empoisonne tout ce qu'il touche.</p>"
             }
         }
-    },
-    "mapping": {
-        "description": {
-            "path": "system.description",
-            "converter": "structured",
-            "cardinality": "one",
-            "mapping": {
-                "public": "public",
-                "private": "private"
-            }
-        }
     }
 }

@@ -254,8 +254,8 @@
             "adjective": "Fléau givré"
         },
         "elementalStormBa": {
-            "name": "Fléau des élémentaires de tempête",
-            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Élémentaire de tempête</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de <strong>Faveurs</strong> égal au <strong>Palier</strong> de ce préfixe.</p>",
+            "name": "Fléau des élémentaires d'orage",
+            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Élémentaire d'orage</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de <strong>Faveurs</strong> égal au <strong>Palier</strong> de ce préfixe.</p>",
             "adjective": "Fléau tempétueux"
         },
         "evasion000000000": {
@@ -736,13 +736,5 @@
             "description": "<p>Une Frappe qui obtient un <strong>Coup critique</strong> avec cette arme exploite brutalement la blessure.</p><ul><li><p>Les armes qui infligent des dégâts <strong>Perforants</strong> ou <strong>Tranchants</strong> amènent la cible à se retrouver @Condition[bleeding].</p></li><li><p>Les armes qui infligent des dégâts <strong>Contondants</strong> amènent la cible à se retrouver @Condition[staggered].</p></li></ul>",
             "adjective": "Vicieuse"
         }
-    },
-    "mapping": {
-        "adjective": "system.adjective",
-        "actions": {
-            "path": "system.actions",
-            "converter": "actions_converter"
-        },
-        "description": "description"
     }
 }

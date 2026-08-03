@@ -327,16 +327,5 @@
                 "public": "<p>The @ref[actor.name]{creature} strikes with a toxin-slicked limb that poisons whatever it touches.</p>"
             }
         }
-    },
-    "mapping": {
-        "description": {
-            "path": "system.description",
-            "converter": "structured",
-            "cardinality": "one",
-            "mapping": {
-                "public": "public",
-                "private": "private"
-            }
-        }
     }
 }

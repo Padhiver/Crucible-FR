@@ -2373,12 +2373,5 @@
                 }
             }
         }
-    },
-    "mapping": {
-        "actions": {
-            "path": "system.actions",
-            "converter": "actions_converter"
-        },
-        "description": "system.description"
     }
 }

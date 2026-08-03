@@ -125,8 +125,5 @@
             "name": "Zombie",
             "description": "<p>The shambling corpses of the restless dead, their still-rotting bodies bloated with putrescence. They move without regard for the wounds they sustain and seek only mindless consumption.</p>"
         }
-    },
-    "mapping": {
-        "description": "system.description"
     }
 }

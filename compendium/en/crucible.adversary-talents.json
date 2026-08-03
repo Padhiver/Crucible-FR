@@ -773,16 +773,5 @@
                 }
             }
         }
-    },
-    "mapping": {
-        "actions": {
-            "path": "system.actions",
-            "converter": "actions_converter"
-        },
-        "effects": {
-            "path": "effects",
-            "converter": "embedded_effects_converter"
-        },
-        "description": "system.description"
     }
 }

@@ -188,8 +188,5 @@
             "name": "Ultra Drake",
             "description": "<p>Mature drakes who are the apex predators of their kind.</p>"
         }
-    },
-    "mapping": {
-        "description": "system.description"
     }
 }

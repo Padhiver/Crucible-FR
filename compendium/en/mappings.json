@@ -1,0 +1,113 @@
+{
+    "Item": {
+        "description": {
+            "path": "system.description",
+            "converter": "crucibleDescription"
+        },
+        "adjective": "system.adjective",
+        "actions": {
+            "path": "system.actions",
+            "converter": "crucibleActions"
+        },
+        "results": {
+            "path": "results",
+            "converter": "ember_table_results_converter"
+        }
+    },
+    "ActiveEffect": {
+        "adjective": "system.adjective",
+        "actions": {
+            "path": "system.actions",
+            "converter": "crucibleActions"
+        }
+    },
+    "Actor": {
+        "tokenName": "prototypeToken.name",
+        "actions": {
+            "path": "system.actions",
+            "converter": "crucibleActions"
+        },
+        "biography": {
+            "path": "system.details.biography",
+            "converter": "structured",
+            "cardinality": "one",
+            "mapping": {
+                "public": "public",
+                "private": "private",
+                "appearance": "appearance"
+            }
+        },
+        "ancestry": {
+            "path": "system.details.ancestry",
+            "converter": "crucibleDetailReference"
+        },
+        "background": {
+            "path": "system.details.background",
+            "converter": "crucibleDetailReference"
+        },
+        "archetype": {
+            "path": "system.details.archetype",
+            "converter": "crucibleDetailReference"
+        },
+        "taxonomy": {
+            "path": "system.details.taxonomy",
+            "converter": "crucibleDetailReference"
+        }
+    },
+    "Adventure": {
+        "folders": {
+            "path": "folders",
+            "converter": "ember_folders_converter"
+        },
+        "journals": {
+            "path": "journal",
+            "converter": "ember_journals_converter"
+        },
+        "scenes": {
+            "path": "scenes",
+            "converter": "ember_scene_levels_converter"
+        },
+        "macros": {
+            "path": "macros",
+            "converter": "ember_macros_converter"
+        },
+        "tables": {
+            "path": "tables",
+            "converter": "ember_tables_converter"
+        }
+    },
+    "JournalEntry": {
+        "categories": {
+            "path": "categories",
+            "converter": "categories_converter"
+        },
+        "pages": {
+            "path": "pages",
+            "converter": "pages_converter"
+        }
+    },
+    "RollTable": {
+        "results": {
+            "path": "results",
+            "converter": "ember_table_results_converter"
+        }
+    },
+    "Playlist": {
+        "sounds": {
+            "path": "sounds",
+            "converter": "sounds_converter"
+        }
+    },
+    "Scene": {
+        "notes": {
+            "path": "notes",
+            "converter": "notes_converter"
+        }
+    },
+    "Cards": {
+        "cards": {
+            "path": "cards",
+            "converter": "cards_converter"
+        }
+    }
+}

@@ -37,8 +37,5 @@
             "name": "Wanderer",
             "description": "<p>Yours has been an itinerant life. You enjoy nothing more than the feeling of a cart or mount below you, watching some foreign sky slowly pass above you. You learned to pay careful attention to your surroundings and their needs, to tend the creatures on which you rely, and to make do with what you can find.</p>"
         }
-    },
-    "mapping": {
-        "description": "system.description"
     }
 }

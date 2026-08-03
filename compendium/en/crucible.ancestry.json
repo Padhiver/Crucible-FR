@@ -33,8 +33,5 @@
             "name": "Orcish",
             "description": "<p>Your birth was marked by the stars and traditions of a proud and enduring people. Your tall and well-toned body and natural propensity for toughness has origins amid a people exposed to the relentless struggle of a harsh northern clime. Your people are known for their strength and resilience above all else.</p>"
         }
-    },
-    "mapping": {
-        "description": "system.description"
     }
 }

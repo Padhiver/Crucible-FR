@@ -542,11 +542,5 @@
                 }
             }
         }
-    },
-    "mapping": {
-        "categories": {
-            "path": "categories",
-            "converter": "categories_converter"
-        }
     }
 }
